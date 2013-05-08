@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Product</key>
+	<string>TruliaMap</string>
+	<key>KeychainService</key>
+	<string>com.Trulia.TruliaMap</string>
+	<key>ListingSearchPageSize</key>
+	<integer>50</integer>
+	<key>NearbySearchDistance</key>
+	<string>1.5</string>
+	<key>SyncService</key>
+	<array>
+		<string>Log</string>
+		<string>Home</string>
+		<string>Search</string>
+		<string>State</string>
+	</array>
+	<key>NearbyText</key>
+	<string>Current Location</string>
+	<key>MapAreaText</key>
+	<string>Viewable Map Area</string>
+	<key>AppStoreLink</key>
+	<string>http://itunes.apple.com/us/app/trulia-real-estate-search/id288487321</string>
+	<key>TapSenseAppId</key>
+	<string>425585109</string>
+	<key>BugsenseKeyProd</key>
+	<string>3e11d75f</string>
+	<key>BugsenseKeyDebug</key>
+	<string>945deefb</string>
+	<key>IndexTypes</key>
+	<array>
+		<string>for sale</string>
+		<string>for rent</string>
+		<string>sold</string>
+		<string>assessor</string>
+	</array>
+</dict>
+</plist>

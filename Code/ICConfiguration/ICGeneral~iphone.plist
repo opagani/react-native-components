@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Settings</key>
+	<array>
+		<dict>
+			<key>DefaultValue</key>
+			<string>25</string>
+			<key>Key</key>
+			<string>searchresults_preference</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<true/>
+			<key>Key</key>
+			<string>autorefresh_preference</string>
+		</dict>
+	</array>
+	<key>Product</key>
+	<string>Trulia</string>
+	<key>KeychainService</key>
+	<string>com.trulia.Trulia</string>
+	<key>ListingSearchPageSize</key>
+	<integer>25</integer>
+	<key>NearbySearchDistance</key>
+	<string>0.25</string>
+	<key>SyncService</key>
+	<array>
+		<string>Account</string>
+		<string>Home</string>
+		<string>Search</string>
+		<string>State</string>
+		<string>Notification</string>
+		<string>Log</string>
+	</array>
+	<key>NearbyText</key>
+	<string>Nearby</string>
+	<key>MapAreaText</key>
+	<string>Viewable Map Area</string>
+	<key>AppStoreLink</key>
+	<string>http://itunes.apple.com/us/app/trulia-real-estate-search/id288487321</string>
+	<key>BugsenseKeyProd</key>
+	<string>bbdab139</string>
+	<key>BugsenseKeyDebug</key>
+	<string>dde0ef05</string>
+	<key>TapSenseAppId</key>
+	<string>288487321</string>
+	<key>NotificationsSupported</key>
+	<array>
+		<integer>2</integer>
+		<integer>3</integer>
+		<integer>4</integer>
+		<integer>5</integer>
+		<integer>6</integer>
+		<integer>7</integer>
+		<integer>8</integer>
+	</array>
+	<key>AppStoreReviewLink</key>
+	<string>http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=288487321&amp;pageNumber=0&amp;sortOrdering=1&amp;type=Purple+Software&amp;mt=8</string>
+	<key>IndexTypes</key>
+	<array>
+		<string>for sale</string>
+		<string>for rent</string>
+		<string>sold</string>
+		<string>assessor</string>
+	</array>
+	<key>MBSAdParameters</key>
+	<dict>
+		<key>MBSAdAppID</key>
+		<string>44D965502C500130643912313D276CB2</string>
+		<key>MBSAdMode</key>
+		<string>stage</string>
+		<key>MBSAdProduct</key>
+		<string>${PRODUCT_NAME}</string>
+		<key>MBSAdPublisherID</key>
+		<string>111228</string>
+		<key>MBSAdServer</key>
+		<string>http://mrp.rubiconproject.com/</string>
+		<key>MBSAdTestAdID</key>
+		<string>0</string>
+	</dict>
+</dict>
+</plist>
