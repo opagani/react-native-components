@@ -35,6 +35,8 @@
 		2E8E0DDF16F7A9B000A5EB26 /* Splash-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8E0DDE16F7A9B000A5EB26 /* Splash-Landscape~ipad.png */; };
 		2E8E0DE216F7AA6700A5EB26 /* Splash-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8E0DE016F7AA6700A5EB26 /* Splash-Portrait@2x~ipad.png */; };
 		2E8E0DE316F7AA6700A5EB26 /* Splash-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8E0DE116F7AA6700A5EB26 /* Splash-Portrait~ipad.png */; };
+		2EE5C358173C5ABC006D42BC /* IRMainViewControllerPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE5C357173C5ABC006D42BC /* IRMainViewControllerPad.m */; };
+		2EE5C35F173C5B10006D42BC /* IRFilterViewControllerPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE5C35E173C5B10006D42BC /* IRFilterViewControllerPad.m */; };
 		3B1836381652B4AB009923F7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6A2E14CF2F0D007F2584 /* SenTestingKit.framework */; };
 		3B1836391652B4AB009923F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6A1614CF2F0D007F2584 /* UIKit.framework */; };
 		3B18363A1652B4AB009923F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6A1814CF2F0D007F2584 /* Foundation.framework */; };
@@ -1776,6 +1778,10 @@
 		2E8E0DDE16F7A9B000A5EB26 /* Splash-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Landscape~ipad.png"; sourceTree = "<group>"; };
 		2E8E0DE016F7AA6700A5EB26 /* Splash-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		2E8E0DE116F7AA6700A5EB26 /* Splash-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Portrait~ipad.png"; sourceTree = "<group>"; };
+		2EE5C356173C5ABC006D42BC /* IRMainViewControllerPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMainViewControllerPad.h; sourceTree = "<group>"; };
+		2EE5C357173C5ABC006D42BC /* IRMainViewControllerPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMainViewControllerPad.m; sourceTree = "<group>"; };
+		2EE5C35D173C5B10006D42BC /* IRFilterViewControllerPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFilterViewControllerPad.h; sourceTree = "<group>"; };
+		2EE5C35E173C5B10006D42BC /* IRFilterViewControllerPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFilterViewControllerPad.m; sourceTree = "<group>"; };
 		3B1836371652B4AB009923F7 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B18363D1652B4AB009923F7 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		3B1836441652B4AC009923F7 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -3724,6 +3730,10 @@
 				9D94F5A115DEECF90068FC85 /* GRMailComposer.m */,
 				9D94F5A415DEECF90068FC85 /* InternalFeedbackViewController.h */,
 				9D94F5A515DEECF90068FC85 /* InternalFeedbackViewController.m */,
+				2EE5C356173C5ABC006D42BC /* IRMainViewControllerPad.h */,
+				2EE5C357173C5ABC006D42BC /* IRMainViewControllerPad.m */,
+				2EE5C35D173C5B10006D42BC /* IRFilterViewControllerPad.h */,
+				2EE5C35E173C5B10006D42BC /* IRFilterViewControllerPad.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -5769,6 +5779,8 @@
 				266139DB164AF82E00D19093 /* IAURLCache.m in Sources */,
 				9DB1B94616B0B782009D3C4D /* IAListingPDPSneakView.m in Sources */,
 				9DB8DF2216E51367007A0DED /* UIButton+SaveUnSaveSearch.m in Sources */,
+				2EE5C358173C5ABC006D42BC /* IRMainViewControllerPad.m in Sources */,
+				2EE5C35F173C5B10006D42BC /* IRFilterViewControllerPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

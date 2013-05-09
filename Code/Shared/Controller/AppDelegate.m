@@ -8,7 +8,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ICMainViewControllerPad.h"
 
 #import "ICPreference.h"
 #import "ICMetricsController.h"
@@ -47,6 +46,7 @@
 #import "ICMoreViewController.h"
 #import "ICMainMenuViewControllerPhone.h"
 #import "ICMyAccountViewControllerPhone.h"
+#import "IRMainViewControllerPad.h"
 
 #define MENU_FIND_AN_AGENT_STRING @"Find an Agent"
 #define MENU_OPEN_HOUSES_STRING   @"Open Houses"
@@ -106,13 +106,13 @@
 - (void)initializeRootViewControllerForIpad
 {
     ICMainMenuViewControllerPhone *menu = [[ICMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle] menuItems:[self getMainMenuForIdiom:UI_USER_INTERFACE_IDIOM()]];
-    self.viewController = [[ICLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController: [ICMainViewControllerPad sharedInstance]];
+    self.viewController = [[ICLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController: [IRMainViewControllerPad sharedInstance]];
     
-    [ICMainViewControllerPad sharedInstance].toggleMenuBlock = ^(BOOL show){
+    [IRMainViewControllerPad sharedInstance].toggleMenuBlock = ^(BOOL show){
         [self.viewController toggleMenu:show];
     };
     
-    [ICMainViewControllerPad sharedInstance].leftMenuViewController = self.viewController;
+    [IRMainViewControllerPad sharedInstance].leftMenuViewController = self.viewController;
 }
 
 - (void)setupAppConfigurationForIpad
@@ -477,7 +477,7 @@
 
             [[ICListingSearchController sharedInstance] searchWithParameters:searchParams];
 
-            [[ICMainViewControllerPad sharedInstance] navigateDirectlyToPdp:route.parsedParam];
+            [[IRMainViewControllerPad sharedInstance] navigateDirectlyToPdp:route.parsedParam];
         }
         else
         {
