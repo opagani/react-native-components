@@ -1781,7 +1781,7 @@
 		3B1836441652B4AC009923F7 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		3B18364D1652B7E3009923F7 /* DeepLinkingTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepLinkingTests.h; sourceTree = "<group>"; };
 		3B18364E1652B7E3009923F7 /* DeepLinkingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeepLinkingTests.m; sourceTree = "<group>"; };
-		3B3B5C80166D889800E421D1 /* TruliaStressTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruliaStressTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3B5C80166D889800E421D1 /* IosRentalUniversalStressTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosRentalUniversalStressTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B48548E1652BA4400C5A46D /* ICStateTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICStateTests.h; sourceTree = "<group>"; };
 		3B48548F1652BA4400C5A46D /* ICStateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICStateTests.m; sourceTree = "<group>"; };
 		3B5EF54A170B8DFC003F00ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Shared/en.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
@@ -1791,14 +1791,14 @@
 		3BDE130616A4D934008E6754 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		3BEF4F741702257500BA8529 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = ../lib/Crashlytics/Crashlytics.framework; sourceTree = "<group>"; };
 		3BF8D8BD170E4611003EE773 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		3BFD1F65166FBC9E00C95E91 /* TruliaMonkey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruliaMonkey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BFD1F65166FBC9E00C95E91 /* IosRentalUniversalMonkey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosRentalUniversalMonkey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0CEEEA14D6634A00A1D325 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C0CEEED14D6634A00A1D325 /* IA+UIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IA+UIColor.h"; sourceTree = "<group>"; };
 		4C0CEEEE14D6634A00A1D325 /* IA+UIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IA+UIColor.m"; sourceTree = "<group>"; };
 		4C0CEEF814D6634A00A1D325 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C0CEEF914D6634A00A1D325 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4C0CEF1A14D6634A00A1D325 /* Trulia-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Trulia-Info.plist"; sourceTree = "<group>"; };
-		4C0CEF1B14D6634A00A1D325 /* Trulia-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Trulia-Prefix.pch"; sourceTree = "<group>"; };
+		4C0CEF1A14D6634A00A1D325 /* IosRentalUniversal-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IosRentalUniversal-Info.plist"; sourceTree = "<group>"; };
+		4C0CEF1B14D6634A00A1D325 /* IosRentalUniversal-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IosRentalUniversal-Prefix.pch"; sourceTree = "<group>"; };
 		4C0CF11114D6643E00A1D325 /* ICConfiguration.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICConfiguration.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFABE1D14D66A5400A4006F /* IosCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosCoreResources.bundle; path = code/Build/IosCoreResources.bundle; sourceTree = IOSCORE_LIB; };
 		51197FE1152516CF000EB2EE /* _TruliaBaseProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TruliaBaseProperty.h; sourceTree = "<group>"; };
@@ -1832,7 +1832,7 @@
 		51978FB9152613AD00391ED8 /* TruliaDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TruliaDataController.m; sourceTree = "<group>"; };
 		51978FBB152613FD00391ED8 /* GRStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRStorageManager.h; sourceTree = "<group>"; };
 		51978FBC152613FD00391ED8 /* GRStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRStorageManager.m; sourceTree = "<group>"; };
-		51DA6A1214CF2F0D007F2584 /* Trulia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trulia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51DA6A1214CF2F0D007F2584 /* IosRentalUniversal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosRentalUniversal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DA6A1614CF2F0D007F2584 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		51DA6A1814CF2F0D007F2584 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		51DA6A1A14CF2F0D007F2584 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -2839,19 +2839,19 @@
 				51DA6C1A14CF51D1007F2584 /* ICConfiguration */,
 				51DA6A1314CF2F0D007F2584 /* Products */,
 				4C0CEEEA14D6634A00A1D325 /* main.m */,
-				4C0CEF1A14D6634A00A1D325 /* Trulia-Info.plist */,
-				4C0CEF1B14D6634A00A1D325 /* Trulia-Prefix.pch */,
+				4C0CEF1A14D6634A00A1D325 /* IosRentalUniversal-Info.plist */,
+				4C0CEF1B14D6634A00A1D325 /* IosRentalUniversal-Prefix.pch */,
 			);
 			sourceTree = "<group>";
 		};
 		51DA6A1314CF2F0D007F2584 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				51DA6A1214CF2F0D007F2584 /* Trulia.app */,
+				51DA6A1214CF2F0D007F2584 /* IosRentalUniversal.app */,
 				4C0CF11114D6643E00A1D325 /* ICConfiguration.bundle */,
 				3B1836371652B4AB009923F7 /* UnitTests.octest */,
-				3B3B5C80166D889800E421D1 /* TruliaStressTests.app */,
-				3BFD1F65166FBC9E00C95E91 /* TruliaMonkey.app */,
+				3B3B5C80166D889800E421D1 /* IosRentalUniversalStressTests.app */,
+				3BFD1F65166FBC9E00C95E91 /* IosRentalUniversalMonkey.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3912,9 +3912,9 @@
 			productReference = 3B1836371652B4AB009923F7 /* UnitTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		3B3B59E5166D889800E421D1 /* TruliaStressTests */ = {
+		3B3B59E5166D889800E421D1 /* IosRentalUniversalStressTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B3B5C7D166D889800E421D1 /* Build configuration list for PBXNativeTarget "TruliaStressTests" */;
+			buildConfigurationList = 3B3B5C7D166D889800E421D1 /* Build configuration list for PBXNativeTarget "IosRentalUniversalStressTests" */;
 			buildPhases = (
 				3B3B59E6166D889800E421D1 /* Sources */,
 				3B3B5A4D166D889800E421D1 /* Frameworks */,
@@ -3925,14 +3925,14 @@
 			);
 			dependencies = (
 			);
-			name = TruliaStressTests;
+			name = IosRentalUniversalStressTests;
 			productName = Trulia;
-			productReference = 3B3B5C80166D889800E421D1 /* TruliaStressTests.app */;
+			productReference = 3B3B5C80166D889800E421D1 /* IosRentalUniversalStressTests.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3BFD1CCA166FBC9E00C95E91 /* TruliaMonkey */ = {
+		3BFD1CCA166FBC9E00C95E91 /* IosRentalUniversalMonkey */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BFD1F62166FBC9E00C95E91 /* Build configuration list for PBXNativeTarget "TruliaMonkey" */;
+			buildConfigurationList = 3BFD1F62166FBC9E00C95E91 /* Build configuration list for PBXNativeTarget "IosRentalUniversalMonkey" */;
 			buildPhases = (
 				3BFD1CCB166FBC9E00C95E91 /* Sources */,
 				3BFD1D32166FBC9E00C95E91 /* Frameworks */,
@@ -3943,9 +3943,9 @@
 			);
 			dependencies = (
 			);
-			name = TruliaMonkey;
+			name = IosRentalUniversalMonkey;
 			productName = Trulia;
-			productReference = 3BFD1F65166FBC9E00C95E91 /* TruliaMonkey.app */;
+			productReference = 3BFD1F65166FBC9E00C95E91 /* IosRentalUniversalMonkey.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4C0CF11014D6643E00A1D325 /* ICConfiguration */ = {
@@ -3965,9 +3965,9 @@
 			productReference = 4C0CF11114D6643E00A1D325 /* ICConfiguration.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		51DA6A1114CF2F0D007F2584 /* Trulia */ = {
+		51DA6A1114CF2F0D007F2584 /* IosRentalUniversal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 51DA6A3F14CF2F0D007F2584 /* Build configuration list for PBXNativeTarget "Trulia" */;
+			buildConfigurationList = 51DA6A3F14CF2F0D007F2584 /* Build configuration list for PBXNativeTarget "IosRentalUniversal" */;
 			buildPhases = (
 				51DA6A0E14CF2F0D007F2584 /* Sources */,
 				51DA6A0F14CF2F0D007F2584 /* Frameworks */,
@@ -3979,9 +3979,9 @@
 			dependencies = (
 				9DCE6C2816E162700064AA94 /* PBXTargetDependency */,
 			);
-			name = Trulia;
+			name = IosRentalUniversal;
 			productName = Trulia;
-			productReference = 51DA6A1214CF2F0D007F2584 /* Trulia.app */;
+			productReference = 51DA6A1214CF2F0D007F2584 /* IosRentalUniversal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -3993,7 +3993,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Trulia Inc";
 			};
-			buildConfigurationList = 51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "Trulia" */;
+			buildConfigurationList = 51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "IosRentalUniversal" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -4011,11 +4011,11 @@
 			);
 			projectRoot = "";
 			targets = (
-				51DA6A1114CF2F0D007F2584 /* Trulia */,
+				51DA6A1114CF2F0D007F2584 /* IosRentalUniversal */,
 				4C0CF11014D6643E00A1D325 /* ICConfiguration */,
 				3B1836361652B4AB009923F7 /* UnitTests */,
-				3B3B59E5166D889800E421D1 /* TruliaStressTests */,
-				3BFD1CCA166FBC9E00C95E91 /* TruliaMonkey */,
+				3B3B59E5166D889800E421D1 /* IosRentalUniversalStressTests */,
+				3BFD1CCA166FBC9E00C95E91 /* IosRentalUniversalMonkey */,
 			);
 		};
 /* End PBXProject section */
@@ -5777,7 +5777,7 @@
 /* Begin PBXTargetDependency section */
 		9D3728991666B0900018B275 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 51DA6A1114CF2F0D007F2584 /* Trulia */;
+			target = 51DA6A1114CF2F0D007F2584 /* IosRentalUniversal */;
 			targetProxy = 9D3728981666B0900018B275 /* PBXContainerItemProxy */;
 		};
 		9DCE6C2816E162700064AA94 /* PBXTargetDependency */ = {
@@ -6065,7 +6065,7 @@
 					"-fprofile-arcs",
 					"-ftest-coverage",
 				);
-				PRODUCT_NAME = TruliaStressTests;
+				PRODUCT_NAME = IosRentalUniversalStressTests;
 				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -6097,7 +6097,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../lib/REVV\"",
 				);
-				PRODUCT_NAME = TruliaStressTests;
+				PRODUCT_NAME = IosRentalUniversalStressTests;
 				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -6138,7 +6138,7 @@
 					"-all_load",
 					"-lstdc++",
 				);
-				PRODUCT_NAME = TruliaMonkey;
+				PRODUCT_NAME = IosRentalUniversalMonkey;
 				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -6175,7 +6175,7 @@
 					"-all_load",
 					"-lstdc++",
 				);
-				PRODUCT_NAME = TruliaMonkey;
+				PRODUCT_NAME = IosRentalUniversalMonkey;
 				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -6330,10 +6330,10 @@
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Trulia-Prefix.pch";
+				GCC_PREFIX_HEADER = "IosRentalUniversal-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				HEADER_SEARCH_PATHS = "$(IOSCORE_LIB)/**";
-				INFOPLIST_FILE = "Trulia-Info.plist";
+				INFOPLIST_FILE = "IosRentalUniversal-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6343,7 +6343,7 @@
 					"-fprofile-arcs",
 					"-ftest-coverage",
 				);
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = IosRentalUniversal;
 				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -6370,16 +6370,16 @@
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Trulia-Prefix.pch";
+				GCC_PREFIX_HEADER = "IosRentalUniversal-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				HEADER_SEARCH_PATHS = "$(IOSCORE_LIB)/**";
-				INFOPLIST_FILE = "Trulia-Info.plist";
+				INFOPLIST_FILE = "IosRentalUniversal-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = IosRentalUniversal;
 				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -6401,7 +6401,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B3B5C7D166D889800E421D1 /* Build configuration list for PBXNativeTarget "TruliaStressTests" */ = {
+		3B3B5C7D166D889800E421D1 /* Build configuration list for PBXNativeTarget "IosRentalUniversalStressTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B3B5C7E166D889800E421D1 /* Debug */,
@@ -6410,7 +6410,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BFD1F62166FBC9E00C95E91 /* Build configuration list for PBXNativeTarget "TruliaMonkey" */ = {
+		3BFD1F62166FBC9E00C95E91 /* Build configuration list for PBXNativeTarget "IosRentalUniversalMonkey" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3BFD1F63166FBC9E00C95E91 /* Debug */,
@@ -6428,7 +6428,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "Trulia" */ = {
+		51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "IosRentalUniversal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51DA6A3D14CF2F0D007F2584 /* Debug */,
@@ -6437,7 +6437,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51DA6A3F14CF2F0D007F2584 /* Build configuration list for PBXNativeTarget "Trulia" */ = {
+		51DA6A3F14CF2F0D007F2584 /* Build configuration list for PBXNativeTarget "IosRentalUniversal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51DA6A4014CF2F0D007F2584 /* Debug */,

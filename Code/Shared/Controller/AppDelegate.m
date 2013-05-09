@@ -200,25 +200,11 @@
 }
 
 - (NSArray *)menuItems {
-    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
-        return [[NSArray alloc] initWithObjects:
-                [NSDictionary dictionaryWithObjectsAndKeys:MENU_MY_SAVES_STRING, @"title", [NSNumber numberWithInt:My_Saves], @"search",[[ICMyAccountViewControllerPhone alloc] initWithNibName:@"ICMyAccountViewControllerPhone" bundle:[NSBundle coreResourcesBundle]], @"target", @"IconMenuMySaves", @"image",@"my-saves", @"track", nil],
-                [NSDictionary dictionaryWithObjectsAndKeys:MENU_SALE_STRING, @"title",[NSNumber numberWithInt:For_Sale], @"search", @"IconMenuForSale", @"image",@"search-for-sale", @"track", nil],
-                [NSDictionary dictionaryWithObjectsAndKeys:MENU_RENT_STRING, @"title",[NSNumber numberWithInt:For_Rent], @"search" , @"IconMenuForRent", @"image",@"search-for-rent", @"track", nil],
-                [NSDictionary dictionaryWithObjectsAndKeys:MENU_OPEN_HOUSES_STRING, @"title",[NSNumber numberWithInt:Open_Houses], @"search",  @"IconMenuOpenHouse", @"image",@"search-open-homes", @"track", nil],
-                [NSDictionary dictionaryWithObjectsAndKeys:MENU_FIND_AN_AGENT_STRING, @"title", [[ICFindAgentViewController alloc] init], @"target", @"IconMenuFindAgent", @"image", nil],
-                [NSDictionary dictionaryWithObjectsAndKeys:MENU_SETTINGS_STRING, @"title",[[ICMoreViewController alloc] initWithStyle:UITableViewStylePlain],@"target", @"IconMenuSettings", @"image",@"more", @"track", nil],
-                nil];
-    }
-    else{
-        return [[NSArray alloc] initWithObjects:
-                [NSDictionary dictionaryWithObjectsAndKeys:MENU_MY_SAVES_STRING, @"title", [NSNumber numberWithInt:My_Saves], @"search",[[ICMyAccountViewControllerPhone alloc] initWithNibName:@"ICMyAccountViewControllerPhone" bundle:[NSBundle coreResourcesBundle]], @"target", @"IconMenuMySaves", @"image",@"my-saves", @"track", nil],
-                [NSDictionary dictionaryWithObjectsAndKeys:MENU_SALE_STRING, @"title",[NSNumber numberWithInt:For_Sale], @"search", @"IconMenuForSale", @"image",@"search-for-sale", @"track", nil],
-                [NSDictionary dictionaryWithObjectsAndKeys:MENU_RENT_STRING, @"title",[NSNumber numberWithInt:For_Rent], @"search" , @"IconMenuForRent", @"image",@"search-for-rent", @"track", nil],
-                [NSDictionary dictionaryWithObjectsAndKeys:MENU_OPEN_HOUSES_STRING, @"title",[NSNumber numberWithInt:Open_Houses], @"search",  @"IconMenuOpenHouse", @"image",@"search-open-homes", @"track", nil],
-                [NSDictionary dictionaryWithObjectsAndKeys:MENU_SETTINGS_STRING, @"title",[[ICMoreViewController alloc] initWithStyle:UITableViewStylePlain],@"target", @"IconMenuSettings", @"image",@"more", @"track", nil],
-                nil];
-    }
+    return [[NSArray alloc] initWithObjects:
+            [NSDictionary dictionaryWithObjectsAndKeys:MENU_MY_SAVES_STRING, @"title", [NSNumber numberWithInt:My_Saves], @"search",[[ICMyAccountViewControllerPhone alloc] initWithNibName:@"ICMyAccountViewControllerPhone" bundle:[NSBundle coreResourcesBundle]], @"target", @"IconMenuMySaves", @"image",@"my-saves", @"track", nil],
+            [NSDictionary dictionaryWithObjectsAndKeys:MENU_RENT_STRING, @"title",[NSNumber numberWithInt:For_Rent], @"search" , @"IconMenuForRent", @"image",@"search-for-rent", @"track", nil],
+            [NSDictionary dictionaryWithObjectsAndKeys:MENU_SETTINGS_STRING, @"title",[[ICMoreViewController alloc] initWithStyle:UITableViewStylePlain],@"target", @"IconMenuSettings", @"image",@"more", @"track", nil],
+            nil];
 }
 
 #pragma mark-

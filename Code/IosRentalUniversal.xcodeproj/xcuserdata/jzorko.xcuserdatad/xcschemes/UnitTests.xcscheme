@@ -19,7 +19,7 @@
                BlueprintIdentifier = "3B1836361652B4AB009923F7"
                BuildableName = "UnitTests.octest"
                BlueprintName = "UnitTests"
-               ReferencedContainer = "container:Trulia.xcodeproj">
+               ReferencedContainer = "container:IosRentalUniversal.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

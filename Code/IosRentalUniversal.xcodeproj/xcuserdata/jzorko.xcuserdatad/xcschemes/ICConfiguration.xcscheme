@@ -17,7 +17,7 @@
                BlueprintIdentifier = "4C0CF11014D6643E00A1D325"
                BuildableName = "ICConfiguration.bundle"
                BlueprintName = "ICConfiguration"
-               ReferencedContainer = "container:Trulia.xcodeproj">
+               ReferencedContainer = "container:IosRentalUniversal.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
                BuildableName = "Trulia.app"
-               BlueprintName = "Trulia"
-               ReferencedContainer = "container:Trulia.xcodeproj">
+               BlueprintName = "IosRentalUniversal"
+               ReferencedContainer = "container:IosRentalUniversal.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
             BuildableName = "Trulia.app"
-            BlueprintName = "Trulia"
-            ReferencedContainer = "container:Trulia.xcodeproj">
+            BlueprintName = "IosRentalUniversal"
+            ReferencedContainer = "container:IosRentalUniversal.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -54,8 +54,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
             BuildableName = "Trulia.app"
-            BlueprintName = "Trulia"
-            ReferencedContainer = "container:Trulia.xcodeproj">
+            BlueprintName = "IosRentalUniversal"
+            ReferencedContainer = "container:IosRentalUniversal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
             BuildableName = "Trulia.app"
-            BlueprintName = "Trulia"
-            ReferencedContainer = "container:Trulia.xcodeproj">
+            BlueprintName = "IosRentalUniversal"
+            ReferencedContainer = "container:IosRentalUniversal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
