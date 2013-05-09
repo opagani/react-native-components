@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3BFD1CCA166FBC9E00C95E91"
-               BuildableName = "TruliaMonkey.app"
+               BuildableName = "IosRentalUniversalMonkey.app"
                BlueprintName = "IosRentalUniversalMonkey"
                ReferencedContainer = "container:IosRentalUniversal.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3BFD1CCA166FBC9E00C95E91"
-            BuildableName = "TruliaMonkey.app"
+            BuildableName = "IosRentalUniversalMonkey.app"
             BlueprintName = "IosRentalUniversalMonkey"
             ReferencedContainer = "container:IosRentalUniversal.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3BFD1CCA166FBC9E00C95E91"
-            BuildableName = "TruliaMonkey.app"
+            BuildableName = "IosRentalUniversalMonkey.app"
             BlueprintName = "IosRentalUniversalMonkey"
             ReferencedContainer = "container:IosRentalUniversal.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3BFD1CCA166FBC9E00C95E91"
-            BuildableName = "TruliaMonkey.app"
+            BuildableName = "IosRentalUniversalMonkey.app"
             BlueprintName = "IosRentalUniversalMonkey"
             ReferencedContainer = "container:IosRentalUniversal.xcodeproj">
          </BuildableReference>
