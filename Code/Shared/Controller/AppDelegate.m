@@ -87,7 +87,7 @@
 
 - (void)initializeRootViewControllerForIpad
 {
-    ICMainMenuViewControllerPhone *menu = [[IRMainMenuViewController alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
+    IRMainMenuViewController *menu = [[IRMainMenuViewController alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
     self.viewController = [[ICLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController: [ICMainViewControllerPad sharedInstance]];
     
     [ICMainViewControllerPad sharedInstance].toggleMenuBlock = ^(BOOL show){
@@ -234,8 +234,6 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];    
-    
-    //self.delegate = self;
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
         self.isShowingGalleryView = NO;
