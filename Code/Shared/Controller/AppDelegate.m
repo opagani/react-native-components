@@ -43,17 +43,7 @@
 #import <Crashlytics/Crashlytics.h>
 #import "ICListingDetailViewControllerPhone.h"
 #import "IAConstants.h"
-#import "ICFindAgentViewController.h"
-#import "ICMoreViewController.h"
-
-
-#define MENU_FIND_AN_AGENT_STRING @"Find an Agent"
-#define MENU_OPEN_HOUSES_STRING   @"Open Houses"
-#define MENU_RENT_STRING          @"Homes For Rent"
-#define MENU_SALE_STRING          @"Homes For Sale"
-#define MENU_MY_SAVES_STRING      @"My Saves"
-#define MENU_SETTINGS_STRING      @"Settings & More"
-
+#import "IRMainMenuViewController.h"
 
 @implementation AppDelegate
 
@@ -97,7 +87,7 @@
 
 - (void)initializeRootViewControllerForIpad
 {
-    ICMainMenuViewControllerPhone *menu = [[ICMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
+    ICMainMenuViewControllerPhone *menu = [[IRMainMenuViewController alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
     self.viewController = [[ICLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController: [ICMainViewControllerPad sharedInstance]];
     
     [ICMainViewControllerPad sharedInstance].toggleMenuBlock = ^(BOOL show){
@@ -193,20 +183,6 @@
     }
 }
 
-#pragma mark - ICApplicationTypeDelegate
-
-- (APP_TYPE)typeOfApplication {
-    return APP_TYPE_RENTALS;
-}
-
-- (NSArray *)menuItems {
-    return [[NSArray alloc] initWithObjects:
-            [NSDictionary dictionaryWithObjectsAndKeys:MENU_MY_SAVES_STRING, @"title", [NSNumber numberWithInt:My_Saves], @"search",[[ICMyAccountViewControllerPhone alloc] initWithNibName:@"ICMyAccountViewControllerPhone" bundle:[NSBundle coreResourcesBundle]], @"target", @"IconMenuMySaves", @"image",@"my-saves", @"track", nil],
-            [NSDictionary dictionaryWithObjectsAndKeys:MENU_RENT_STRING, @"title",[NSNumber numberWithInt:For_Rent], @"search" , @"IconMenuForRent", @"image",@"search-for-rent", @"track", nil],
-            [NSDictionary dictionaryWithObjectsAndKeys:MENU_SETTINGS_STRING, @"title",[[ICMoreViewController alloc] initWithStyle:UITableViewStylePlain],@"target", @"IconMenuSettings", @"image",@"more", @"track", nil],
-            nil];
-}
-
 #pragma mark-
 #pragma mark Splash Screen Delegate for iPhone
 
@@ -259,7 +235,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];    
     
-    self.delegate = self;
+    //self.delegate = self;
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
         self.isShowingGalleryView = NO;
