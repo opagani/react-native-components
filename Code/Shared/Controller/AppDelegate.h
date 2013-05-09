@@ -18,7 +18,7 @@
 @class ICMainViewControllerPad,ICSwipeNavigationController, ICLeftMenuViewController;
 
 
-@interface AppDelegate : AppDelegate_Shared <ICApplicationConfigurationRequestDelegate, SplashViewDelegate, ICStartupViewControllerDelegate, ICApplicationTypeDelegate>{
+@interface AppDelegate : AppDelegate_Shared <ICApplicationConfigurationRequestDelegate, SplashViewDelegate, ICStartupViewControllerDelegate>{
     // only being used by the iPad
 
     ICSwipeNavigationController* deckController;
