@@ -6,6 +6,8 @@
 	<integer>1</integer>
 	<key>Product</key>
 	<string>TruliaMap</string>
+	<key>RentOnlySearches</key>
+	<string>1</string>
 	<key>KeychainService</key>
 	<string>com.Trulia.TruliaMap</string>
 	<key>ListingSearchPageSize</key>

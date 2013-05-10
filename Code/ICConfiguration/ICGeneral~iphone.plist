@@ -4,6 +4,8 @@
 <dict>
 	<key>RentOnlyListings</key>
 	<string>1</string>
+	<key>RentOnlySearches</key>
+	<string>1</string>
 	<key>Settings</key>
 	<array>
 		<dict>
