@@ -149,19 +149,18 @@
     }
 }
 
+- (void)setupListingParameters {
+    ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
+    currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
+    [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
+}
+
 - (void)initializeRootViewControllerForIphone{
     
     self.isShowingGalleryView = NO;
     ICMainMenuViewControllerPhone *leftController = [[ICMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle] menuItems:[self getMainMenuForIdiom:UI_USER_INTERFACE_IDIOM()]];
-    ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
-    
-    if ([currentParameters.indexType count] <= 0) {
-        currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORSALE, nil];
-    }
     
     ICListingSearchViewControllerDefault *searchController = [ICListingSearchViewControllerDefault sharedInstance];
-    
-    [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
     
     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
     
@@ -244,6 +243,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self setupListingParameters];
     
     if (![[ICCoreDataController sharedInstance] persistentStoreExists]) {
         TruliaDataMigrationUtility *migrationUtility = [[TruliaDataMigrationUtility alloc] init];
