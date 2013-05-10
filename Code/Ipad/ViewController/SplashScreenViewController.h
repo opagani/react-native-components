@@ -6,7 +6,6 @@
 //  Copyright 2011 Trulia Inc. All rights reserved.
 //
 
-#import "GRViewController.h"
 
 @protocol SplashViewDelegate <NSObject>
 -(void)goingOutOfView:(UIViewController*)viewController;
