@@ -9,7 +9,7 @@
 	<key>RentOnlySearches</key>
 	<string>1</string>
 	<key>KeychainService</key>
-	<string>com.Trulia.TruliaMap</string>
+	<string>com.Trulia.IosRental</string>
 	<key>ListingSearchPageSize</key>
 	<integer>50</integer>
 	<key>NearbySearchDistance</key>

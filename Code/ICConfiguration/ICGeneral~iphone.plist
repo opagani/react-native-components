@@ -24,7 +24,7 @@
 	<key>Product</key>
 	<string>Trulia</string>
 	<key>KeychainService</key>
-	<string>com.trulia.Trulia</string>
+	<string>com.Trulia.IosRental</string>
 	<key>ListingSearchPageSize</key>
 	<integer>25</integer>
 	<key>NearbySearchDistance</key>
