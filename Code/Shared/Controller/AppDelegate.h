@@ -23,15 +23,12 @@
 
     ICSwipeNavigationController* deckController;
 }
-@property(nonatomic, strong) ICLeftMenuViewController *viewController;
 @property (nonatomic, strong) ICApplicationConfigurationRequest    *applicationConfigRequest;
 
 @property (nonatomic, strong) UIWindow *window;
 
 // navController is only being used by the iphone
 @property (nonatomic, strong) ICNavigationController *navController;
-
-@property (nonatomic,assign) BOOL isShowingGalleryView;
 
 - (void)showUpgradeAppPopup;
 - (void)processUpgradeAppPopup:(NSString *)bundleAPI;
