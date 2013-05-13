@@ -33,6 +33,7 @@
 		2E309C38167024BF00A31BD0 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E309C2D167024BF00A31BD0 /* OpenSans-SemiboldItalic.ttf */; };
 		2E309C41167028D700A31BD0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E309C40167028D700A31BD0 /* CoreText.framework */; };
 		2E493CA11630C941004C361A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E493CA01630C940004C361A /* libxml2.dylib */; };
+		2E49744B1741A11200D8F5E7 /* IRListingSearchToolBarPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E49744A1741A11200D8F5E7 /* IRListingSearchToolBarPad.m */; };
 		2E8E0DD916F79F5F00A5EB26 /* Splash-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8E0DD816F79F5F00A5EB26 /* Splash-Landscape@2x~ipad.png */; };
 		2E8E0DDF16F7A9B000A5EB26 /* Splash-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8E0DDE16F7A9B000A5EB26 /* Splash-Landscape~ipad.png */; };
 		2E8E0DE216F7AA6700A5EB26 /* Splash-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8E0DE016F7AA6700A5EB26 /* Splash-Portrait@2x~ipad.png */; };
@@ -1780,6 +1781,8 @@
 		2E309C2D167024BF00A31BD0 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		2E309C40167028D700A31BD0 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		2E493CA01630C940004C361A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		2E4974491741A11200D8F5E7 /* IRListingSearchToolBarPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRListingSearchToolBarPad.h; sourceTree = "<group>"; };
+		2E49744A1741A11200D8F5E7 /* IRListingSearchToolBarPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRListingSearchToolBarPad.m; sourceTree = "<group>"; };
 		2E8E0DD816F79F5F00A5EB26 /* Splash-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		2E8E0DDE16F7A9B000A5EB26 /* Splash-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Landscape~ipad.png"; sourceTree = "<group>"; };
 		2E8E0DE016F7AA6700A5EB26 /* Splash-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
@@ -3753,6 +3756,8 @@
 			children = (
 				9D94F5AD15DEECF90068FC85 /* CalloutMapAnnotation.h */,
 				9D94F5AE15DEECF90068FC85 /* CalloutMapAnnotation.m */,
+				2E4974491741A11200D8F5E7 /* IRListingSearchToolBarPad.h */,
+				2E49744A1741A11200D8F5E7 /* IRListingSearchToolBarPad.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5793,6 +5798,7 @@
 				2EE5C35F173C5B10006D42BC /* IRFilterViewControllerPad.m in Sources */,
 				26AE6106173DAF2500E0410D /* IRListingSearchViewControllerPhone.m in Sources */,
 				26AC16D817416415005D4FFE /* IRListingRefineViewControllerPhone.m in Sources */,
+				2E49744B1741A11200D8F5E7 /* IRListingSearchToolBarPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
