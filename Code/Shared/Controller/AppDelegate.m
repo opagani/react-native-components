@@ -47,6 +47,7 @@
 #import "ICMainMenuViewControllerPhone.h"
 #import "ICMyAccountViewControllerPhone.h"
 #import "IRMainViewControllerPad.h"
+#import "IRListingSearchViewControllerPhone.h"
 
 #define MENU_FIND_AN_AGENT_STRING @"Find an Agent"
 #define MENU_OPEN_HOUSES_STRING   @"Open Houses"
@@ -160,7 +161,7 @@
     self.isShowingGalleryView = NO;
     ICMainMenuViewControllerPhone *leftController = [[ICMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle] menuItems:[self getMainMenuForIdiom:UI_USER_INTERFACE_IDIOM()]];
     
-    ICListingSearchViewControllerDefault *searchController = [ICListingSearchViewControllerDefault sharedInstance];
+    IRListingSearchViewControllerPhone *searchController = (IRListingSearchViewControllerPhone *)[IRListingSearchViewControllerPhone sharedInstance];
     
     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
     

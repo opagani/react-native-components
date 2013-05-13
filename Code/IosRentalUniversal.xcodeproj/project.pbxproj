@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		266139DB164AF82E00D19093 /* IAURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 266139DA164AF82E00D19093 /* IAURLCache.m */; };
+		26AC16D817416415005D4FFE /* IRListingRefineViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AC16D717416415005D4FFE /* IRListingRefineViewControllerPhone.m */; };
+		26AE6106173DAF2500E0410D /* IRListingSearchViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AE6105173DAF2500E0410D /* IRListingSearchViewControllerPhone.m */; };
 		2E1AD2F2165436B500C81545 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1AD2F1165436B500C81545 /* libz.dylib */; };
 		2E309BF81670227E00A31BD0 /* MapMarkerNew.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E309BF21670227E00A31BD0 /* MapMarkerNew.png */; };
 		2E309BF91670227E00A31BD0 /* MapMarkerNew@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E309BF31670227E00A31BD0 /* MapMarkerNew@2x.png */; };
@@ -1751,6 +1753,10 @@
 /* Begin PBXFileReference section */
 		266139D9164AF82E00D19093 /* IAURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAURLCache.h; path = ../../Ipad/Shared/Controller/IAURLCache.h; sourceTree = "<group>"; };
 		266139DA164AF82E00D19093 /* IAURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IAURLCache.m; path = ../../Ipad/Shared/Controller/IAURLCache.m; sourceTree = "<group>"; };
+		26AC16D617416415005D4FFE /* IRListingRefineViewControllerPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRListingRefineViewControllerPhone.h; sourceTree = "<group>"; };
+		26AC16D717416415005D4FFE /* IRListingRefineViewControllerPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRListingRefineViewControllerPhone.m; sourceTree = "<group>"; };
+		26AE6104173DAF2500E0410D /* IRListingSearchViewControllerPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRListingSearchViewControllerPhone.h; sourceTree = "<group>"; };
+		26AE6105173DAF2500E0410D /* IRListingSearchViewControllerPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRListingSearchViewControllerPhone.m; sourceTree = "<group>"; };
 		2E1AD2F1165436B500C81545 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		2E309BF21670227E00A31BD0 /* MapMarkerNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapMarkerNew.png; sourceTree = "<group>"; };
 		2E309BF31670227E00A31BD0 /* MapMarkerNew@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MapMarkerNew@2x.png"; sourceTree = "<group>"; };
@@ -2759,6 +2765,10 @@
 			isa = PBXGroup;
 			children = (
 				4C0CEEDA14D6634A00A1D325 /* View */,
+				26AE6104173DAF2500E0410D /* IRListingSearchViewControllerPhone.h */,
+				26AE6105173DAF2500E0410D /* IRListingSearchViewControllerPhone.m */,
+				26AC16D617416415005D4FFE /* IRListingRefineViewControllerPhone.h */,
+				26AC16D717416415005D4FFE /* IRListingRefineViewControllerPhone.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -5781,6 +5791,8 @@
 				9DB8DF2216E51367007A0DED /* UIButton+SaveUnSaveSearch.m in Sources */,
 				2EE5C358173C5ABC006D42BC /* IRMainViewControllerPad.m in Sources */,
 				2EE5C35F173C5B10006D42BC /* IRFilterViewControllerPad.m in Sources */,
+				26AE6106173DAF2500E0410D /* IRListingSearchViewControllerPhone.m in Sources */,
+				26AC16D817416415005D4FFE /* IRListingRefineViewControllerPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
