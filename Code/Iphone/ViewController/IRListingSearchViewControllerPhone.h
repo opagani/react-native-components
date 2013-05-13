@@ -7,6 +7,7 @@
 //
 
 #import "ICListingSearchViewControllerDefault.h"
+#import "IRListingRefineViewControllerPhone.h"
 
 @interface IRListingSearchViewControllerPhone : ICListingSearchViewControllerDefault
 

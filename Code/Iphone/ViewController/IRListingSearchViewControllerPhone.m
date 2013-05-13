@@ -23,6 +23,17 @@
     return self;
 }
 
+- (void)actionShowRefine:(id)sender {
+    [[ICMetricsController sharedInstance] trackToolbarClick:[ICMetricsController VAR_ACTION_REFINE]];
+    
+    IRListingRefineViewControllerPhone *viewController = [[IRListingRefineViewControllerPhone alloc] initWithNibName:@"ICListingRefineViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
+    self.isFilterViewVisible = YES;
+    
+    viewController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    
+    [self presentModalViewController:viewController animated:YES];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
