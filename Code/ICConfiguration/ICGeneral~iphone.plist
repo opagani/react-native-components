@@ -50,16 +50,6 @@
 	<string>dde0ef05</string>
 	<key>TapSenseAppId</key>
 	<string>288487321</string>
-	<key>NotificationsSupported</key>
-	<array>
-		<integer>2</integer>
-		<integer>3</integer>
-		<integer>4</integer>
-		<integer>5</integer>
-		<integer>6</integer>
-		<integer>7</integer>
-		<integer>8</integer>
-	</array>
 	<key>AppStoreReviewLink</key>
 	<string>http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=288487321&amp;pageNumber=0&amp;sortOrdering=1&amp;type=Purple+Software&amp;mt=8</string>
 	<key>IndexTypes</key>
