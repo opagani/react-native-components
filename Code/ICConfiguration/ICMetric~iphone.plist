@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Product</key>
-	<string>iPhone_Application</string>
+	<string>IosRental</string>
 	<key>Source</key>
-	<string>IphoneApp</string>
+	<string>IosRental</string>
 	<key>Chrome</key>
-	<string>IphoneApp</string>
+	<string>IosRental</string>
 </dict>
 </plist>
