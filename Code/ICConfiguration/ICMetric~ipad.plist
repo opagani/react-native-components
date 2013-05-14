@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Product</key>
-	<string>TruliaMap</string>
+	<string>IpadRental</string>
 	<key>Source</key>
-	<string>TruliaMap</string>
+	<string>IpadRental</string>
 	<key>Chrome</key>
-	<string>truliamap</string>
+	<string>IpadRental</string>
 </dict>
 </plist>
