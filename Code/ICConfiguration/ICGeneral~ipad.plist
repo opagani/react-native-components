@@ -5,7 +5,7 @@
 	<key>RentOnlyListings</key>
 	<integer>1</integer>
 	<key>Product</key>
-	<string>TruliaMap</string>
+	<string>IpadRental</string>
 	<key>RentOnlySearches</key>
 	<string>1</string>
 	<key>KeychainService</key>

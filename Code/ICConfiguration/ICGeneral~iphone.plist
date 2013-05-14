@@ -22,7 +22,7 @@
 		</dict>
 	</array>
 	<key>Product</key>
-	<string>Trulia</string>
+	<string>IosRental</string>
 	<key>KeychainService</key>
 	<string>com.Trulia.IosRental</string>
 	<key>ListingSearchPageSize</key>
