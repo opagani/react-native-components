@@ -1533,6 +1533,7 @@
 		9DCFF7B616B73B7200EECE3C /* animation_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DCFF7B416B73B7200EECE3C /* animation_arrow.png */; };
 		9DCFF7B716B73B7200EECE3C /* animation_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DCFF7B516B73B7200EECE3C /* animation_arrow@2x.png */; };
 		9DEF832B1607AE430087FA1A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEF832A1607AE430087FA1A /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B70EF2571743022D0018A01A /* IRLayersMenuViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */; };
 		B7EA94C51635E0CD00B02F3F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C41635E0CC00B02F3F /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B7EA94C71635E14800B02F3F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C61635E14800B02F3F /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E012E3FC1676A8180086305D /* IconMenuOpenHouseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = E012E3EC1676A8170086305D /* IconMenuOpenHouseSelected.png */; };
@@ -2357,6 +2358,8 @@
 		9DCFF7B416B73B7200EECE3C /* animation_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animation_arrow.png; sourceTree = "<group>"; };
 		9DCFF7B516B73B7200EECE3C /* animation_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animation_arrow@2x.png"; sourceTree = "<group>"; };
 		9DEF832A1607AE430087FA1A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		B70EF2551743022D0018A01A /* IRLayersMenuViewControllerPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRLayersMenuViewControllerPhone.h; sourceTree = "<group>"; };
+		B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLayersMenuViewControllerPhone.m; sourceTree = "<group>"; };
 		B7EA94C41635E0CC00B02F3F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		B7EA94C61635E14800B02F3F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		E012E3EC1676A8170086305D /* IconMenuOpenHouseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconMenuOpenHouseSelected.png; sourceTree = "<group>"; };
@@ -2772,6 +2775,8 @@
 				26AE6105173DAF2500E0410D /* IRListingSearchViewControllerPhone.m */,
 				26AC16D617416415005D4FFE /* IRListingRefineViewControllerPhone.h */,
 				26AC16D717416415005D4FFE /* IRListingRefineViewControllerPhone.m */,
+				B70EF2551743022D0018A01A /* IRLayersMenuViewControllerPhone.h */,
+				B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -5799,6 +5804,7 @@
 				26AE6106173DAF2500E0410D /* IRListingSearchViewControllerPhone.m in Sources */,
 				26AC16D817416415005D4FFE /* IRListingRefineViewControllerPhone.m in Sources */,
 				2E49744B1741A11200D8F5E7 /* IRListingSearchToolBarPad.m in Sources */,
+				B70EF2571743022D0018A01A /* IRLayersMenuViewControllerPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
