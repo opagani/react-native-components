@@ -2,43 +2,62 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>RentOnlyListings</key>
-	<integer>1</integer>
+	<key>AccountType</key>
+	<string>Home Buyer</string>
+	<key>AccountSubType</key>
+	<string>Agent</string>
 	<key>Product</key>
-	<string>IpadRental</string>
-	<key>RentOnlySearches</key>
-	<string>1</string>
+	<string>IosRental</string>
 	<key>KeychainService</key>
 	<string>com.Trulia.IosRental</string>
 	<key>ListingSearchPageSize</key>
 	<integer>50</integer>
+	<key>CheckinLeaderboardPageSize</key>
+	<integer>11</integer>
+	<key>CheckinNearbyPageSize</key>
+	<string>4</string>
 	<key>NearbySearchDistance</key>
-	<string>1.5</string>
+	<string>0.25</string>
 	<key>SyncService</key>
 	<array>
-		<string>Log</string>
+		<string>Account</string>
 		<string>Home</string>
 		<string>Search</string>
 		<string>State</string>
+		<string>Log</string>
 	</array>
 	<key>NearbyText</key>
-	<string>Current Location</string>
+	<string>Nearby</string>
 	<key>MapAreaText</key>
 	<string>Viewable Map Area</string>
+	<key>RentOnlySearches</key>
+	<integer>1</integer>
+	<key>DFPAdID</key>
+	<string>/7449/iPhone_Rentals_App/iPhone_Rentals_App_PDP</string>
 	<key>AppStoreLink</key>
-	<string>http://itunes.apple.com/us/app/trulia-real-estate-search/id288487321</string>
-	<key>TapSenseAppId</key>
-	<string>425585109</string>
-	<key>BugsenseKeyProd</key>
-	<string>3e11d75f</string>
+	<string>http://itunes.apple.com/us/app/trulia-for-agents/id489692273?ls=1&amp;mt=8</string>
+	<key>RentOnlyListings</key>
+	<integer>1</integer>
 	<key>BugsenseKeyDebug</key>
-	<string>945deefb</string>
-	<key>IndexTypes</key>
-	<array>
-		<string>for sale</string>
-		<string>for rent</string>
-		<string>sold</string>
-		<string>assessor</string>
-	</array>
+	<string>5a511168</string>
+	<key>BugsenseKeyProd</key>
+	<string>791b518b</string>
+	<key>MBSAdParameters</key>
+	<dict>
+		<key>MBSAdAppID</key>
+		<string>E3872E80124A0130638B12313D276CB2</string>
+		<key>MBSAdMode</key>
+		<string>stage</string>
+		<key>MBSAdProduct</key>
+		<string>${PRODUCT_NAME}</string>
+		<key>MBSAdPublisherID</key>
+		<string>111228</string>
+		<key>MBSAdServer</key>
+		<string>http://mrp.rubiconproject.com/</string>
+		<key>MBSAdTestAdID</key>
+		<string>0</string>
+	</dict>
+	<key>AppStoreReviewLink</key>
+	<string>http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=508163604&amp;pageNumber=0&amp;sortOrdering=1&amp;type=Purple+Software&amp;mt=8</string>
 </dict>
 </plist>
