@@ -7,6 +7,7 @@
 //
 
 #import "IRListingSearchViewControllerPhone.h"
+#import "IRLayersMenuViewControllerPhone.h"
 
 @interface IRListingSearchViewControllerPhone ()
 
@@ -32,6 +33,10 @@
     viewController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     
     [self presentModalViewController:viewController animated:YES];
+}
+
+- (void) initLayersMenuTable {
+    self.layersMenuTable = [[IRLayersMenuViewControllerPhone alloc] initWithNibName:@"ICLayersMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
 }
 
 - (void)viewDidLoad
