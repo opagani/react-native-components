@@ -34,8 +34,11 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    theTabView.hidden = YES;
-    refineOptionsTableView.frame = CGRectMake(refineOptionsTableView.frame.origin.x, refineOptionsTableView.frame.origin.y - theTabView.frame.size.height + OFFSET, refineOptionsTableView.frame.size.width, refineOptionsTableView.frame.size.height + HEIGHT_ADJUSTMENT);
+    
+    if (!theTabView.hidden) {
+        theTabView.hidden = YES;
+        refineOptionsTableView.frame = CGRectMake(refineOptionsTableView.frame.origin.x, refineOptionsTableView.frame.origin.y - theTabView.frame.size.height + OFFSET, refineOptionsTableView.frame.size.width, refineOptionsTableView.frame.size.height + HEIGHT_ADJUSTMENT);
+    }
 }
 
 - (void)didReceiveMemoryWarning
