@@ -12,10 +12,6 @@
 	<string>com.Trulia.IosRental</string>
 	<key>ListingSearchPageSize</key>
 	<integer>50</integer>
-	<key>CheckinLeaderboardPageSize</key>
-	<integer>11</integer>
-	<key>CheckinNearbyPageSize</key>
-	<string>4</string>
 	<key>NearbySearchDistance</key>
 	<string>0.25</string>
 	<key>SyncService</key>
@@ -38,10 +34,6 @@
 	<string>http://itunes.apple.com/us/app/trulia-for-agents/id489692273?ls=1&amp;mt=8</string>
 	<key>RentOnlyListings</key>
 	<integer>1</integer>
-	<key>BugsenseKeyDebug</key>
-	<string>5a511168</string>
-	<key>BugsenseKeyProd</key>
-	<string>791b518b</string>
 	<key>MBSAdParameters</key>
 	<dict>
 		<key>MBSAdAppID</key>

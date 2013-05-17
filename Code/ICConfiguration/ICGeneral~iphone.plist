@@ -12,10 +12,6 @@
 	<string>com.Trulia.IosRental</string>
 	<key>ListingSearchPageSize</key>
 	<integer>25</integer>
-	<key>CheckinLeaderboardPageSize</key>
-	<integer>11</integer>
-	<key>CheckinNearbyPageSize</key>
-	<string>4</string>
 	<key>NearbySearchDistance</key>
 	<string>0.25</string>
 	<key>SyncService</key>
