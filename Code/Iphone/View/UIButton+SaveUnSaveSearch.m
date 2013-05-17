@@ -27,7 +27,7 @@
     else
         postLoginActionType = PostLoginActionTypeFavorite;
 
-    /*__weak __typeof__ (self) weakself = self;
+    __weak __typeof__ (self) weakself = self;
     //Force Login for saving properties
     [ICLoginViewControllerUtil presentLoginViewControllerIfNotAuthenticated:viewController postLoginActionType:postLoginActionType dismissBlock:^(BOOL animated)
     {
@@ -48,7 +48,7 @@
                 [weakself saveSearch:search animationBlock:animationBlock currentMode:currentMode];
             }
         }
-    }];*/
+    }];
 }
 
 -(void)toggleSearchSaveButtonState:(BOOL)isAlreadySaved{
