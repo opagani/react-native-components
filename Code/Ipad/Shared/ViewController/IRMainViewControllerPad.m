@@ -34,4 +34,8 @@
     return (ICHeatmapTypeCrime | ICHeatmapTypeFlood | ICHeatmapTypeSeismic | ICHeatmapTypeRentalPrice);
 }
 
+- (NSString *)getIndexTypeForTopBar {
+    return @"";
+}
+
 @end
