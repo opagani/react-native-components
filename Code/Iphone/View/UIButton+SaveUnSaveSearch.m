@@ -33,7 +33,7 @@
     {
         [viewController dismissModalViewControllerAnimated:animated];
 
-    } postAttemptActionBlock:^(PostLoginActionType actionType)
+    } postAttemptActionBlock:^(PostLoginActionType actionType, ICPostLoginAuthenticationMethod loginMethod)
     {
        if ([[ICAccountController sharedInstance] isLoggedIn])
         {
