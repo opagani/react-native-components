@@ -59,6 +59,8 @@
 		<string>sold</string>
 		<string>assessor</string>
 	</array>
+	<key>adUnitIdForProperty</key>
+	<string>/7449/iPhone_Main_App/iPhone_App_Property_Results</string>
 	<key>MBSAdParameters</key>
 	<dict>
 		<key>MBSAdAppID</key>
