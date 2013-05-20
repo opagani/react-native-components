@@ -64,9 +64,9 @@
 	<key>CFBundleVersion</key>
 	<string>43</string>
 	<key>FacebookAppID</key>
-	<string>107187662675870</string>
+	<string>410970538982032</string>
 	<key>FacebookAppIDTest</key>
-	<string>107187662675870</string>
+	<string>410970538982032</string>
 	<key>FacebookPermissions</key>
 	<array>
 		<string>offline_access</string>
