@@ -2,10 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AccountType</key>
-	<string>Home Buyer</string>
-	<key>AccountSubType</key>
-	<string>Agent</string>
+	<key>RentOnlyListings</key>
+	<string>1</string>
+	<key>RentOnlySearches</key>
+	<string>1</string>
+	<key>Settings</key>
+	<array>
+		<dict>
+			<key>DefaultValue</key>
+			<string>25</string>
+			<key>Key</key>
+			<string>searchresults_preference</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<true/>
+			<key>Key</key>
+			<string>autorefresh_preference</string>
+		</dict>
+	</array>
 	<key>Product</key>
 	<string>IosRental</string>
 	<key>KeychainService</key>
@@ -20,28 +35,36 @@
 		<string>Home</string>
 		<string>Search</string>
 		<string>State</string>
+		<string>Notification</string>
 		<string>Log</string>
 	</array>
 	<key>NearbyText</key>
 	<string>Nearby</string>
 	<key>MapAreaText</key>
 	<string>Viewable Map Area</string>
-	<key>RentOnlySearches</key>
-	<integer>1</integer>
-	<key>DFPAdID</key>
-	<string>/7449/iPhone_Rentals_App/iPhone_Rentals_App_PDP</string>
 	<key>AppStoreLink</key>
-	<string>http://itunes.apple.com/us/app/trulia-for-agents/id489692273?ls=1&amp;mt=8</string>
-	<key>RentOnlyListings</key>
-	<integer>1</integer>
-	<key>BugsenseKeyDebug</key>
-	<string>5a511168</string>
+	<string>http://itunes.apple.com/us/app/trulia-real-estate-search/id288487321</string>
 	<key>BugsenseKeyProd</key>
-	<string>791b518b</string>
+	<string>bbdab139</string>
+	<key>BugsenseKeyDebug</key>
+	<string>dde0ef05</string>
+	<key>TapSenseAppId</key>
+	<string>288487321</string>
+	<key>AppStoreReviewLink</key>
+	<string>http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=288487321&amp;pageNumber=0&amp;sortOrdering=1&amp;type=Purple+Software&amp;mt=8</string>
+	<key>IndexTypes</key>
+	<array>
+		<string>for sale</string>
+		<string>for rent</string>
+		<string>sold</string>
+		<string>assessor</string>
+	</array>
+	<key>adUnitIdForProperty</key>
+	<string>/7449/iPhone_Main_App/iPhone_App_Property_Results</string>
 	<key>MBSAdParameters</key>
 	<dict>
 		<key>MBSAdAppID</key>
-		<string>E3872E80124A0130638B12313D276CB2</string>
+		<string>44D965502C500130643912313D276CB2</string>
 		<key>MBSAdMode</key>
 		<string>stage</string>
 		<key>MBSAdProduct</key>
@@ -53,7 +76,5 @@
 		<key>MBSAdTestAdID</key>
 		<string>0</string>
 	</dict>
-	<key>AppStoreReviewLink</key>
-	<string>http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=508163604&amp;pageNumber=0&amp;sortOrdering=1&amp;type=Purple+Software&amp;mt=8</string>
 </dict>
 </plist>

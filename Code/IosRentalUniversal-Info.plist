@@ -62,11 +62,11 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>42</string>
+	<string>45</string>
 	<key>FacebookAppID</key>
-	<string>107187662675870</string>
+	<string>468741039850614</string>
 	<key>FacebookAppIDTest</key>
-	<string>107187662675870</string>
+	<string>468741039850614</string>
 	<key>FacebookPermissions</key>
 	<array>
 		<string>offline_access</string>
