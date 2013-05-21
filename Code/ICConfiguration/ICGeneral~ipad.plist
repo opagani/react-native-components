@@ -7,7 +7,7 @@
 	<key>AccountSubType</key>
 	<string>Agent</string>
 	<key>Product</key>
-	<string>IosRental</string>
+	<string>iPadRental</string>
 	<key>KeychainService</key>
 	<string>com.Trulia.IosRental</string>
 	<key>ListingSearchPageSize</key>
