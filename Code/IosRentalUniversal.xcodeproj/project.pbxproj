@@ -13,6 +13,7 @@
 		26732BE6174BE34C0065A106 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 26732BE2174BE34C0065A106 /* Default-Portrait@2x~ipad.png */; };
 		26732BE7174BE34C0065A106 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 26732BE3174BE34C0065A106 /* Default-Portrait~ipad.png */; };
 		26732BE9174BE4B80065A106 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26732BE8174BE4B80065A106 /* Default-568h@2x.png */; };
+		26732BEB174C015F0065A106 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26732BEA174C015F0065A106 /* Default@2x.png */; };
 		26AC16D817416415005D4FFE /* IRListingRefineViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AC16D717416415005D4FFE /* IRListingRefineViewControllerPhone.m */; };
 		26AE6106173DAF2500E0410D /* IRListingSearchViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AE6105173DAF2500E0410D /* IRListingSearchViewControllerPhone.m */; };
 		2E1AD2F2165436B500C81545 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1AD2F1165436B500C81545 /* libz.dylib */; };
@@ -103,8 +104,6 @@
 		3B3B5A8C166D889800E421D1 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D24A161A0B5C0089CEEC /* HomeViewController.xib */; };
 		3B3B5A95166D889800E421D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D25C161A0B5C0089CEEC /* InfoPlist.strings */; };
 		3B3B5A96166D889800E421D1 /* ICStartupViewControllerPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D25E161A0B5C0089CEEC /* ICStartupViewControllerPhone.xib */; };
-		3B3B5C2E166D889800E421D1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D425161A0D7A0089CEEC /* Default.png */; };
-		3B3B5C2F166D889800E421D1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D426161A0D7A0089CEEC /* Default@2x.png */; };
 		3B4854901652BA4400C5A46D /* ICStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B48548F1652BA4400C5A46D /* ICStateTests.m */; };
 		3B5EF54B170B8DFC003F00ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B5EF549170B8DFC003F00ED /* Localizable.strings */; };
 		3BAC7D5816F7A0E0005E4508 /* NewRelicAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAC7D5716F7A0E0005E4508 /* NewRelicAgent.framework */; };
@@ -179,8 +178,6 @@
 		3BFD1D71166FBC9E00C95E91 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D24A161A0B5C0089CEEC /* HomeViewController.xib */; };
 		3BFD1D7A166FBC9E00C95E91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D25C161A0B5C0089CEEC /* InfoPlist.strings */; };
 		3BFD1D7B166FBC9E00C95E91 /* ICStartupViewControllerPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D25E161A0B5C0089CEEC /* ICStartupViewControllerPhone.xib */; };
-		3BFD1F13166FBC9E00C95E91 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D425161A0D7A0089CEEC /* Default.png */; };
-		3BFD1F14166FBC9E00C95E91 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D426161A0D7A0089CEEC /* Default@2x.png */; };
 		4C0CF0BE14D6634B00A1D325 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0CEEEA14D6634A00A1D325 /* main.m */; };
 		4C0CF0BF14D6634B00A1D325 /* IA+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0CEEEE14D6634A00A1D325 /* IA+UIColor.m */; };
 		4C0CF0C414D6634B00A1D325 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0CEEF914D6634A00A1D325 /* AppDelegate.m */; };
@@ -243,8 +240,6 @@
 		9D94D270161A0B5C0089CEEC /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D24A161A0B5C0089CEEC /* HomeViewController.xib */; };
 		9D94D279161A0B5C0089CEEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D25C161A0B5C0089CEEC /* InfoPlist.strings */; };
 		9D94D27A161A0B5C0089CEEC /* ICStartupViewControllerPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D25E161A0B5C0089CEEC /* ICStartupViewControllerPhone.xib */; };
-		9D94D606161A0D7B0089CEEC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D425161A0D7A0089CEEC /* Default.png */; };
-		9D94D607161A0D7B0089CEEC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D426161A0D7A0089CEEC /* Default@2x.png */; };
 		9D94DEAC15D992F20068FC85 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D94DEAB15D992F20068FC85 /* OpenGLES.framework */; };
 		9D94F5EE15DEECF90068FC85 /* FakeLoadingScreenViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F3FC15DEECF80068FC85 /* FakeLoadingScreenViewController_iPad.xib */; };
 		9D94F5EF15DEECF90068FC85 /* FilmStripLandscapeViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F3FE15DEECF80068FC85 /* FilmStripLandscapeViewController_iPad.xib */; };
@@ -340,6 +335,7 @@
 		26732BE2174BE34C0065A106 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = SOURCE_ROOT; };
 		26732BE3174BE34C0065A106 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = SOURCE_ROOT; };
 		26732BE8174BE4B80065A106 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		26732BEA174C015F0065A106 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		26AC16D617416415005D4FFE /* IRListingRefineViewControllerPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRListingRefineViewControllerPhone.h; sourceTree = "<group>"; };
 		26AC16D717416415005D4FFE /* IRListingRefineViewControllerPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRListingRefineViewControllerPhone.m; sourceTree = "<group>"; };
 		26AE6104173DAF2500E0410D /* IRListingSearchViewControllerPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRListingSearchViewControllerPhone.h; sourceTree = "<group>"; };
@@ -450,8 +446,6 @@
 		9D94D24B161A0B5C0089CEEC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = HomeViewController.xib; sourceTree = "<group>"; };
 		9D94D25D161A0B5C0089CEEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		9D94D25F161A0B5C0089CEEC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ICStartupViewControllerPhone.xib; sourceTree = "<group>"; };
-		9D94D425161A0D7A0089CEEC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		9D94D426161A0D7A0089CEEC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9D94DEAB15D992F20068FC85 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		9D94F3FD15DEECF80068FC85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FakeLoadingScreenViewController_iPad.xib; sourceTree = "<group>"; };
 		9D94F3FF15DEECF80068FC85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FilmStripLandscapeViewController_iPad.xib; sourceTree = "<group>"; };
@@ -979,9 +973,8 @@
 		9D94D3A5161A0D7A0089CEEC /* iPhoneImages */ = {
 			isa = PBXGroup;
 			children = (
+				26732BEA174C015F0065A106 /* Default@2x.png */,
 				26732BE8174BE4B80065A106 /* Default-568h@2x.png */,
-				9D94D425161A0D7A0089CEEC /* Default.png */,
-				9D94D426161A0D7A0089CEEC /* Default@2x.png */,
 			);
 			path = iPhoneImages;
 			sourceTree = "<group>";
@@ -1314,8 +1307,6 @@
 				3B3B5A8C166D889800E421D1 /* HomeViewController.xib in Resources */,
 				3B3B5A95166D889800E421D1 /* InfoPlist.strings in Resources */,
 				3B3B5A96166D889800E421D1 /* ICStartupViewControllerPhone.xib in Resources */,
-				3B3B5C2E166D889800E421D1 /* Default.png in Resources */,
-				3B3B5C2F166D889800E421D1 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1341,8 +1332,6 @@
 				3BFD1D71166FBC9E00C95E91 /* HomeViewController.xib in Resources */,
 				3BFD1D7A166FBC9E00C95E91 /* InfoPlist.strings in Resources */,
 				3BFD1D7B166FBC9E00C95E91 /* ICStartupViewControllerPhone.xib in Resources */,
-				3BFD1F13166FBC9E00C95E91 /* Default.png in Resources */,
-				3BFD1F14166FBC9E00C95E91 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1380,8 +1369,6 @@
 				9D94D270161A0B5C0089CEEC /* HomeViewController.xib in Resources */,
 				9D94D279161A0B5C0089CEEC /* InfoPlist.strings in Resources */,
 				9D94D27A161A0B5C0089CEEC /* ICStartupViewControllerPhone.xib in Resources */,
-				9D94D606161A0D7B0089CEEC /* Default.png in Resources */,
-				9D94D607161A0D7B0089CEEC /* Default@2x.png in Resources */,
 				2E309C2E167024BF00A31BD0 /* LICENSE.txt in Resources */,
 				2E309C2F167024BF00A31BD0 /* OpenSans-Bold.ttf in Resources */,
 				2E309C30167024BF00A31BD0 /* OpenSans-BoldItalic.ttf in Resources */,
@@ -1399,6 +1386,7 @@
 				26732BE6174BE34C0065A106 /* Default-Portrait@2x~ipad.png in Resources */,
 				26732BE7174BE34C0065A106 /* Default-Portrait~ipad.png in Resources */,
 				26732BE9174BE4B80065A106 /* Default-568h@2x.png in Resources */,
+				26732BEB174C015F0065A106 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

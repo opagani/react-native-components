@@ -2,12 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IndexTypes</key>
+	<array>
+		<string>for rent</string>
+	</array>
 	<key>AccountType</key>
 	<string>Home Buyer</string>
 	<key>AccountSubType</key>
 	<string>Agent</string>
 	<key>Product</key>
-	<string>iPadRental</string>
+	<string>IpadRental</string>
 	<key>KeychainService</key>
 	<string>com.Trulia.IosRental</string>
 	<key>ListingSearchPageSize</key>
@@ -51,5 +55,9 @@
 	</dict>
 	<key>AppStoreReviewLink</key>
 	<string>http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=508163604&amp;pageNumber=0&amp;sortOrdering=1&amp;type=Purple+Software&amp;mt=8</string>
+	<key>NotificationsSupported</key>
+	<array>
+		<integer>2</integer>
+	</array>
 </dict>
 </plist>

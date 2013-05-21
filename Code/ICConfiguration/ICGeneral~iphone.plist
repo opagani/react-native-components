@@ -44,23 +44,20 @@
 	<string>Viewable Map Area</string>
 	<key>AppStoreLink</key>
 	<string>http://itunes.apple.com/us/app/trulia-real-estate-search/id288487321</string>
-	<key>BugsenseKeyProd</key>
-	<string>bbdab139</string>
-	<key>BugsenseKeyDebug</key>
-	<string>dde0ef05</string>
 	<key>TapSenseAppId</key>
 	<string>288487321</string>
 	<key>AppStoreReviewLink</key>
 	<string>http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=288487321&amp;pageNumber=0&amp;sortOrdering=1&amp;type=Purple+Software&amp;mt=8</string>
 	<key>IndexTypes</key>
 	<array>
-		<string>for sale</string>
 		<string>for rent</string>
-		<string>sold</string>
-		<string>assessor</string>
 	</array>
 	<key>adUnitIdForProperty</key>
 	<string>/7449/iPhone_Main_App/iPhone_App_Property_Results</string>
+	<key>NotificationsSupported</key>
+	<array>
+		<integer>2</integer>
+	</array>
 	<key>MBSAdParameters</key>
 	<dict>
 		<key>MBSAdAppID</key>
