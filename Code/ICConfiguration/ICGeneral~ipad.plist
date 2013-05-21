@@ -7,9 +7,7 @@
 		<string>for rent</string>
 	</array>
 	<key>AccountType</key>
-	<string>Home Buyer</string>
-	<key>AccountSubType</key>
-	<string>Agent</string>
+	<string>Renter</string>
 	<key>Product</key>
 	<string>IpadRental</string>
 	<key>KeychainService</key>
