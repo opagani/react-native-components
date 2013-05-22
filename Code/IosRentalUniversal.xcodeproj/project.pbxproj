@@ -34,6 +34,10 @@
 		2E493CA11630C941004C361A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E493CA01630C940004C361A /* libxml2.dylib */; };
 		2E49744B1741A11200D8F5E7 /* IRListingSearchToolBarPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E49744A1741A11200D8F5E7 /* IRListingSearchToolBarPad.m */; };
 		2E58F49D174AE8D000202715 /* libIosCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE1D403174AE7FC001B59D3 /* libIosCore.a */; };
+		2E8171B8174D8F8F00CF539B /* Splash-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8171B4174D8F8F00CF539B /* Splash-Landscape@2x~ipad.png */; };
+		2E8171B9174D8F8F00CF539B /* Splash-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8171B5174D8F8F00CF539B /* Splash-Landscape~ipad.png */; };
+		2E8171BA174D8F8F00CF539B /* Splash-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8171B6174D8F8F00CF539B /* Splash-Portrait@2x~ipad.png */; };
+		2E8171BB174D8F8F00CF539B /* Splash-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8171B7174D8F8F00CF539B /* Splash-Portrait~ipad.png */; };
 		2EE5C358173C5ABC006D42BC /* IRMainViewControllerPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE5C357173C5ABC006D42BC /* IRMainViewControllerPad.m */; };
 		2EE5C35F173C5B10006D42BC /* IRFilterViewControllerPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE5C35E173C5B10006D42BC /* IRFilterViewControllerPad.m */; };
 		3B1836381652B4AB009923F7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6A2E14CF2F0D007F2584 /* SenTestingKit.framework */; };
@@ -360,6 +364,10 @@
 		2E493CA01630C940004C361A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		2E4974491741A11200D8F5E7 /* IRListingSearchToolBarPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRListingSearchToolBarPad.h; sourceTree = "<group>"; };
 		2E49744A1741A11200D8F5E7 /* IRListingSearchToolBarPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRListingSearchToolBarPad.m; sourceTree = "<group>"; };
+		2E8171B4174D8F8F00CF539B /* Splash-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		2E8171B5174D8F8F00CF539B /* Splash-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Landscape~ipad.png"; sourceTree = "<group>"; };
+		2E8171B6174D8F8F00CF539B /* Splash-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		2E8171B7174D8F8F00CF539B /* Splash-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Portrait~ipad.png"; sourceTree = "<group>"; };
 		2EE5C356173C5ABC006D42BC /* IRMainViewControllerPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMainViewControllerPad.h; sourceTree = "<group>"; };
 		2EE5C357173C5ABC006D42BC /* IRMainViewControllerPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMainViewControllerPad.m; sourceTree = "<group>"; };
 		2EE5C35D173C5B10006D42BC /* IRFilterViewControllerPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFilterViewControllerPad.h; sourceTree = "<group>"; };
@@ -966,6 +974,10 @@
 		9D94D283161A0D7A0089CEEC /* iPadImages */ = {
 			isa = PBXGroup;
 			children = (
+				2E8171B4174D8F8F00CF539B /* Splash-Landscape@2x~ipad.png */,
+				2E8171B5174D8F8F00CF539B /* Splash-Landscape~ipad.png */,
+				2E8171B6174D8F8F00CF539B /* Splash-Portrait@2x~ipad.png */,
+				2E8171B7174D8F8F00CF539B /* Splash-Portrait~ipad.png */,
 				26732BE0174BE34C0065A106 /* Default-Landscape@2x~ipad.png */,
 				26732BE1174BE34C0065A106 /* Default-Landscape~ipad.png */,
 				26732BE2174BE34C0065A106 /* Default-Portrait@2x~ipad.png */,
@@ -1395,6 +1407,10 @@
 				26732BEB174C015F0065A106 /* Default@2x.png in Resources */,
 				26DCA9AE174D356F00A52B51 /* icon.png in Resources */,
 				26DCA9AF174D356F00A52B51 /* icon@2x.png in Resources */,
+				2E8171B8174D8F8F00CF539B /* Splash-Landscape@2x~ipad.png in Resources */,
+				2E8171B9174D8F8F00CF539B /* Splash-Landscape~ipad.png in Resources */,
+				2E8171BA174D8F8F00CF539B /* Splash-Portrait@2x~ipad.png in Resources */,
+				2E8171BB174D8F8F00CF539B /* Splash-Portrait~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
