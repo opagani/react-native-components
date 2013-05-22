@@ -28,6 +28,7 @@
     [[ICMetricsController sharedInstance] trackToolbarClick:[ICMetricsController VAR_ACTION_REFINE]];
     
     IRListingRefineViewControllerPhone *viewController = [[IRListingRefineViewControllerPhone alloc] initWithNibName:@"ICListingRefineViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
+    viewController.delegate = self;
     self.isFilterViewVisible = YES;
     
     viewController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
