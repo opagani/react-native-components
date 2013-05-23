@@ -257,8 +257,8 @@
 		4C0CEEEE14D6634A00A1D325 /* IA+UIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IA+UIColor.m"; sourceTree = "<group>"; };
 		4C0CEEF814D6634A00A1D325 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C0CEEF914D6634A00A1D325 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4C0CEF1A14D6634A00A1D325 /* For Rent-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "For Rent-Info.plist"; sourceTree = "<group>"; };
-		4C0CEF1B14D6634A00A1D325 /* For Rent-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "For Rent-Prefix.pch"; sourceTree = "<group>"; };
+		4C0CEF1A14D6634A00A1D325 /* ForRent-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ForRent-Info.plist"; sourceTree = "<group>"; };
+		4C0CEF1B14D6634A00A1D325 /* ForRent-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ForRent-Prefix.pch"; sourceTree = "<group>"; };
 		4C0CF11114D6643E00A1D325 /* ICConfiguration.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICConfiguration.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFABE1D14D66A5400A4006F /* IosCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosCoreResources.bundle; path = code/Build/IosCoreResources.bundle; sourceTree = IOSCORE_LIB; };
 		51197FE1152516CF000EB2EE /* _TruliaBaseProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TruliaBaseProperty.h; sourceTree = "<group>"; };
@@ -661,8 +661,8 @@
 				51DA6C1A14CF51D1007F2584 /* ICConfiguration */,
 				51DA6A1314CF2F0D007F2584 /* Products */,
 				4C0CEEEA14D6634A00A1D325 /* main.m */,
-				4C0CEF1A14D6634A00A1D325 /* For Rent-Info.plist */,
-				4C0CEF1B14D6634A00A1D325 /* For Rent-Prefix.pch */,
+				4C0CEF1A14D6634A00A1D325 /* ForRent-Info.plist */,
+				4C0CEF1B14D6634A00A1D325 /* ForRent-Prefix.pch */,
 			);
 			sourceTree = "<group>";
 		};
@@ -966,9 +966,9 @@
 			productReference = 4C0CF11114D6643E00A1D325 /* ICConfiguration.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		51DA6A1114CF2F0D007F2584 /* For Rent */ = {
+		51DA6A1114CF2F0D007F2584 /* ForRent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 51DA6A3F14CF2F0D007F2584 /* Build configuration list for PBXNativeTarget "For Rent" */;
+			buildConfigurationList = 51DA6A3F14CF2F0D007F2584 /* Build configuration list for PBXNativeTarget "ForRent" */;
 			buildPhases = (
 				51DA6A0E14CF2F0D007F2584 /* Sources */,
 				51DA6A0F14CF2F0D007F2584 /* Frameworks */,
@@ -980,7 +980,7 @@
 			dependencies = (
 				2E58F497174AE8B400202715 /* PBXTargetDependency */,
 			);
-			name = "For Rent";
+			name = ForRent;
 			productName = Trulia;
 			productReference = 51DA6A1214CF2F0D007F2584 /* For Rent.app */;
 			productType = "com.apple.product-type.application";
@@ -994,7 +994,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Trulia Inc";
 			};
-			buildConfigurationList = 51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "For Rent" */;
+			buildConfigurationList = 51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "ForRent" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1012,7 +1012,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				51DA6A1114CF2F0D007F2584 /* For Rent */,
+				51DA6A1114CF2F0D007F2584 /* ForRent */,
 				4C0CF11014D6643E00A1D325 /* ICConfiguration */,
 				3B1836361652B4AB009923F7 /* UnitTests */,
 			);
@@ -1224,7 +1224,7 @@
 		};
 		9D3728991666B0900018B275 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 51DA6A1114CF2F0D007F2584 /* For Rent */;
+			target = 51DA6A1114CF2F0D007F2584 /* ForRent */;
 			targetProxy = 9D3728981666B0900018B275 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1605,10 +1605,10 @@
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "For Rent-Prefix.pch";
+				GCC_PREFIX_HEADER = "ForRent-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				HEADER_SEARCH_PATHS = "$(IOSRENTALCORE_LIB)/**";
-				INFOPLIST_FILE = "For Rent-Info.plist";
+				INFOPLIST_FILE = "ForRent-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1645,10 +1645,10 @@
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "For Rent-Prefix.pch";
+				GCC_PREFIX_HEADER = "ForRent-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				HEADER_SEARCH_PATHS = "$(IOSRENTALCORE_LIB)/**";
-				INFOPLIST_FILE = "For Rent-Info.plist";
+				INFOPLIST_FILE = "ForRent-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1685,7 +1685,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "For Rent" */ = {
+		51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "ForRent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51DA6A3D14CF2F0D007F2584 /* Debug */,
@@ -1694,7 +1694,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51DA6A3F14CF2F0D007F2584 /* Build configuration list for PBXNativeTarget "For Rent" */ = {
+		51DA6A3F14CF2F0D007F2584 /* Build configuration list for PBXNativeTarget "ForRent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51DA6A4014CF2F0D007F2584 /* Debug */,

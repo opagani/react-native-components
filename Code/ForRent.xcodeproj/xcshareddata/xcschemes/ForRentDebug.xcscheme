@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
                BuildableName = "For Rent.app"
-               BlueprintName = "For Rent"
-               ReferencedContainer = "container:For Rent.xcodeproj">
+               BlueprintName = "ForRent"
+               ReferencedContainer = "container:ForRent.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "3B1836361652B4AB009923F7"
                BuildableName = "UnitTests.octest"
                BlueprintName = "UnitTests"
-               ReferencedContainer = "container:For Rent.xcodeproj">
+               ReferencedContainer = "container:ForRent.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
             BuildableName = "For Rent.app"
-            BlueprintName = "For Rent"
-            ReferencedContainer = "container:For Rent.xcodeproj">
+            BlueprintName = "ForRent"
+            ReferencedContainer = "container:ForRent.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
             BuildableName = "For Rent.app"
-            BlueprintName = "For Rent"
-            ReferencedContainer = "container:For Rent.xcodeproj">
+            BlueprintName = "ForRent"
+            ReferencedContainer = "container:ForRent.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
             BuildableName = "For Rent.app"
-            BlueprintName = "For Rent"
-            ReferencedContainer = "container:For Rent.xcodeproj">
+            BlueprintName = "ForRent"
+            ReferencedContainer = "container:ForRent.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
