@@ -24,7 +24,7 @@
 		<string>iTunesArtwork@2x</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>com.truliainc.Rental</string>
+	<string>com.truliainc.IosRental</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
