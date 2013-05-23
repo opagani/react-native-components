@@ -51,7 +51,7 @@
 	</dict>
 	<key>AppStoreReviewLink</key>
 	<string>http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=508163604&amp;pageNumber=0&amp;sortOrdering=1&amp;type=Purple+Software&amp;mt=8</string>
-	<key>DRPAdIDForSRP</key>
+	<key>DFPAdIDForSRP</key>
 	<string>/7449/iPhone_Rentals_App/iPhone_Rentals_App_PDP</string>
 	<key>NotificationsSupported</key>
 	<array>
