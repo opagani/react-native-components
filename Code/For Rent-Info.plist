@@ -42,7 +42,7 @@
 			<string>com.trulia.TruliaIphoneApp</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb107187662675870</string>
+				<string>fb468741039850614</string>
 				<string>trulia</string>
 				<string>TruliaMap</string>
 			</array>
@@ -55,7 +55,7 @@
 			<string>com.trulia.TruliaIphoneApp</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb107187662675870</string>
+				<string>fb468741039850614</string>
 				<string>trulia</string>
 				<string>TruliaIphone</string>
 			</array>

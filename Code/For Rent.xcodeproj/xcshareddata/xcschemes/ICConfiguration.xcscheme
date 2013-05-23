@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B3B59E5166D889800E421D1"
-               BuildableName = "IosRentalUniversalStressTests.app"
-               BlueprintName = "IosRentalUniversalStressTests"
-               ReferencedContainer = "container:IosRentalUniversal.xcodeproj">
+               BlueprintIdentifier = "4C0CF11014D6643E00A1D325"
+               BuildableName = "ICConfiguration.bundle"
+               BlueprintName = "ICConfiguration"
+               ReferencedContainer = "container:For Rent.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B3B59E5166D889800E421D1"
-            BuildableName = "IosRentalUniversalStressTests.app"
-            BlueprintName = "IosRentalUniversalStressTests"
-            ReferencedContainer = "container:IosRentalUniversal.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -48,15 +39,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B3B59E5166D889800E421D1"
-            BuildableName = "IosRentalUniversalStressTests.app"
-            BlueprintName = "IosRentalUniversalStressTests"
-            ReferencedContainer = "container:IosRentalUniversal.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -66,15 +48,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B3B59E5166D889800E421D1"
-            BuildableName = "IosRentalUniversalStressTests.app"
-            BlueprintName = "IosRentalUniversalStressTests"
-            ReferencedContainer = "container:IosRentalUniversal.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
