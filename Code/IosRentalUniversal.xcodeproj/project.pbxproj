@@ -1454,7 +1454,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${IOSCORE_LIB}/lib/Crashlytics/Crashlytics.framework/run 69c46441eff2d4c6f8a043fd66d16ff159cd9812";
+			shellScript = "#${IOSRENTALCORE_LIB}/lib/Crashlytics/Crashlytics.framework/run 69c46441eff2d4c6f8a043fd66d16ff159cd9812\n./Crashlytics.framework/run 69c46441eff2d4c6f8a043fd66d16ff159cd9812";
 		};
 		3BFD1D4C166FBC9E00C95E91 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
