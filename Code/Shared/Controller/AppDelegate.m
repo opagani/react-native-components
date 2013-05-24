@@ -14,7 +14,6 @@
 #import "ICConfiguration.h"
 #import "UINavigationBar+TruliaNavBackground.h"
 #import "ICStartupViewControllerPhone.h"
-#import "TruliaDataMigrationUtility.h"
 #import "ICCoreDataController.h"
 #import "ICMyAccountViewControllerPhone.h"
 #import "ICSyncController.h"
@@ -244,11 +243,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self setupListingParameters];
-    
-    if (![[ICCoreDataController sharedInstance] persistentStoreExists]) {
-        TruliaDataMigrationUtility *migrationUtility = [[TruliaDataMigrationUtility alloc] init];
-        [migrationUtility migrateTruliaDataStoreToIosCore];
-    }
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];    
