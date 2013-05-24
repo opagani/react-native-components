@@ -61,14 +61,6 @@
 		4C0CF11E14D6648200A1D325 /* ICMetric~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51DA6C2514CF5896007F2584 /* ICMetric~iphone.plist */; };
 		4C0CF11F14D6648200A1D325 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51DA6C1D14CF51D1007F2584 /* InfoPlist.strings */; };
 		4CFABE1E14D66A5400A4006F /* IosCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4CFABE1D14D66A5400A4006F /* IosCoreResources.bundle */; };
-		51197FF0152516CF000EB2EE /* _TruliaBaseProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 51197FE2152516CF000EB2EE /* _TruliaBaseProperty.m */; };
-		51197FF1152516CF000EB2EE /* _TruliaSearchParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 51197FE4152516CF000EB2EE /* _TruliaSearchParameters.m */; };
-		51197FF2152516CF000EB2EE /* TruliaBaseProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 51197FE6152516CF000EB2EE /* TruliaBaseProperty.m */; };
-		51197FF3152516CF000EB2EE /* TruliaDataMigrationPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51197FE8152516CF000EB2EE /* TruliaDataMigrationPolicy.m */; };
-		51197FF4152516CF000EB2EE /* TruliaSearchParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 51197FEA152516CF000EB2EE /* TruliaSearchParameters.m */; };
-		51197FF5152516CF000EB2EE /* TruliaDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51197FEB152516CF000EB2EE /* TruliaDataModel.xcdatamodeld */; };
-		51197FF6152516CF000EB2EE /* TruliaMappingModel41.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 51197FEF152516CF000EB2EE /* TruliaMappingModel41.xcmappingmodel */; };
-		5119803615251AE6000EB2EE /* TruliaDataMigrationUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5119803515251AE6000EB2EE /* TruliaDataMigrationUtility.m */; };
 		5142AD091565A88200BBB7F8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5142AD081565A88200BBB7F8 /* AudioToolbox.framework */; };
 		51802F4514CF793A00199144 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51802F4414CF793900199144 /* AVFoundation.framework */; };
 		51802F4714CF794500199144 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51802F4614CF794500199144 /* CoreLocation.framework */; };
@@ -80,8 +72,6 @@
 		51802F5314CF799500199144 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51802F5214CF799500199144 /* QuartzCore.framework */; };
 		51802F5514CF799E00199144 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51802F5414CF799E00199144 /* Security.framework */; };
 		51802F5714CF79AA00199144 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51802F5614CF79AA00199144 /* SystemConfiguration.framework */; };
-		51978FBA152613AD00391ED8 /* TruliaDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51978FB9152613AD00391ED8 /* TruliaDataController.m */; };
-		51978FBD152613FD00391ED8 /* GRStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51978FBC152613FD00391ED8 /* GRStorageManager.m */; };
 		51DA6A1714CF2F0D007F2584 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6A1614CF2F0D007F2584 /* UIKit.framework */; };
 		51DA6A1914CF2F0D007F2584 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6A1814CF2F0D007F2584 /* Foundation.framework */; };
 		51DA6A1B14CF2F0D007F2584 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6A1A14CF2F0D007F2584 /* CoreGraphics.framework */; };
@@ -263,22 +253,6 @@
 		4C0CEF1B14D6634A00A1D325 /* ForRent-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ForRent-Prefix.pch"; sourceTree = "<group>"; };
 		4C0CF11114D6643E00A1D325 /* ICConfiguration.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICConfiguration.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFABE1D14D66A5400A4006F /* IosCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosCoreResources.bundle; path = code/Build/IosCoreResources.bundle; sourceTree = IOSCORE_LIB; };
-		51197FE1152516CF000EB2EE /* _TruliaBaseProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TruliaBaseProperty.h; sourceTree = "<group>"; };
-		51197FE2152516CF000EB2EE /* _TruliaBaseProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TruliaBaseProperty.m; sourceTree = "<group>"; };
-		51197FE3152516CF000EB2EE /* _TruliaSearchParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TruliaSearchParameters.h; sourceTree = "<group>"; };
-		51197FE4152516CF000EB2EE /* _TruliaSearchParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TruliaSearchParameters.m; sourceTree = "<group>"; };
-		51197FE5152516CF000EB2EE /* TruliaBaseProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TruliaBaseProperty.h; sourceTree = "<group>"; };
-		51197FE6152516CF000EB2EE /* TruliaBaseProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TruliaBaseProperty.m; sourceTree = "<group>"; };
-		51197FE7152516CF000EB2EE /* TruliaDataMigrationPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TruliaDataMigrationPolicy.h; sourceTree = "<group>"; };
-		51197FE8152516CF000EB2EE /* TruliaDataMigrationPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TruliaDataMigrationPolicy.m; sourceTree = "<group>"; };
-		51197FE9152516CF000EB2EE /* TruliaSearchParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TruliaSearchParameters.h; sourceTree = "<group>"; };
-		51197FEA152516CF000EB2EE /* TruliaSearchParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TruliaSearchParameters.m; sourceTree = "<group>"; };
-		51197FEC152516CF000EB2EE /* TruliaDataModel-4.1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "TruliaDataModel-4.1.1.xcdatamodel"; sourceTree = "<group>"; };
-		51197FED152516CF000EB2EE /* TruliaDataModel-4.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "TruliaDataModel-4.1.xcdatamodel"; sourceTree = "<group>"; };
-		51197FEE152516CF000EB2EE /* TruliaDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TruliaDataModel.xcdatamodel; sourceTree = "<group>"; };
-		51197FEF152516CF000EB2EE /* TruliaMappingModel41.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = TruliaMappingModel41.xcmappingmodel; sourceTree = "<group>"; };
-		5119803415251AE6000EB2EE /* TruliaDataMigrationUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TruliaDataMigrationUtility.h; sourceTree = "<group>"; };
-		5119803515251AE6000EB2EE /* TruliaDataMigrationUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TruliaDataMigrationUtility.m; sourceTree = "<group>"; };
 		5142AD081565A88200BBB7F8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		51802F4414CF793900199144 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		51802F4614CF794500199144 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -290,10 +264,6 @@
 		51802F5214CF799500199144 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		51802F5414CF799E00199144 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		51802F5614CF79AA00199144 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		51978FB8152613AD00391ED8 /* TruliaDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TruliaDataController.h; sourceTree = "<group>"; };
-		51978FB9152613AD00391ED8 /* TruliaDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TruliaDataController.m; sourceTree = "<group>"; };
-		51978FBB152613FD00391ED8 /* GRStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRStorageManager.h; sourceTree = "<group>"; };
-		51978FBC152613FD00391ED8 /* GRStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRStorageManager.m; sourceTree = "<group>"; };
 		51DA6A1214CF2F0D007F2584 /* For Rent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "For Rent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DA6A1614CF2F0D007F2584 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		51DA6A1814CF2F0D007F2584 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -587,7 +557,6 @@
 				4CFABE1D14D66A5400A4006F /* IosCoreResources.bundle */,
 				9D94F88C15E2FBC60068FC85 /* ICConfiguration.bundle */,
 				2E309C21167024BF00A31BD0 /* Fonts */,
-				51197FDF15251699000EB2EE /* OldCoreDataModel */,
 				4C0CEEEC14D6634A00A1D325 /* Category */,
 				4C0CEEF714D6634A00A1D325 /* Controller */,
 				3B8AF40916F2925500357462 /* ViewController */,
@@ -615,39 +584,6 @@
 				4C0CEEF914D6634A00A1D325 /* AppDelegate.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		51197FDF15251699000EB2EE /* OldCoreDataModel */ = {
-			isa = PBXGroup;
-			children = (
-				51197FE0152516CF000EB2EE /* TruliaDataModel */,
-				51197FEB152516CF000EB2EE /* TruliaDataModel.xcdatamodeld */,
-				51197FEF152516CF000EB2EE /* TruliaMappingModel41.xcmappingmodel */,
-			);
-			path = OldCoreDataModel;
-			sourceTree = "<group>";
-		};
-		51197FE0152516CF000EB2EE /* TruliaDataModel */ = {
-			isa = PBXGroup;
-			children = (
-				51978FBB152613FD00391ED8 /* GRStorageManager.h */,
-				51978FBC152613FD00391ED8 /* GRStorageManager.m */,
-				51978FB8152613AD00391ED8 /* TruliaDataController.h */,
-				51978FB9152613AD00391ED8 /* TruliaDataController.m */,
-				51197FE1152516CF000EB2EE /* _TruliaBaseProperty.h */,
-				51197FE2152516CF000EB2EE /* _TruliaBaseProperty.m */,
-				51197FE3152516CF000EB2EE /* _TruliaSearchParameters.h */,
-				51197FE4152516CF000EB2EE /* _TruliaSearchParameters.m */,
-				51197FE5152516CF000EB2EE /* TruliaBaseProperty.h */,
-				51197FE6152516CF000EB2EE /* TruliaBaseProperty.m */,
-				51197FE7152516CF000EB2EE /* TruliaDataMigrationPolicy.h */,
-				51197FE8152516CF000EB2EE /* TruliaDataMigrationPolicy.m */,
-				51197FE9152516CF000EB2EE /* TruliaSearchParameters.h */,
-				51197FEA152516CF000EB2EE /* TruliaSearchParameters.m */,
-				5119803415251AE6000EB2EE /* TruliaDataMigrationUtility.h */,
-				5119803515251AE6000EB2EE /* TruliaDataMigrationUtility.m */,
-			);
-			path = TruliaDataModel;
 			sourceTree = "<group>";
 		};
 		51DA6A0714CF2F0D007F2584 = {
@@ -1184,16 +1120,6 @@
 				4C0CF0BE14D6634B00A1D325 /* main.m in Sources */,
 				4C0CF0BF14D6634B00A1D325 /* IA+UIColor.m in Sources */,
 				4C0CF0C414D6634B00A1D325 /* AppDelegate.m in Sources */,
-				51197FF0152516CF000EB2EE /* _TruliaBaseProperty.m in Sources */,
-				51197FF1152516CF000EB2EE /* _TruliaSearchParameters.m in Sources */,
-				51197FF2152516CF000EB2EE /* TruliaBaseProperty.m in Sources */,
-				51197FF3152516CF000EB2EE /* TruliaDataMigrationPolicy.m in Sources */,
-				51197FF4152516CF000EB2EE /* TruliaSearchParameters.m in Sources */,
-				51197FF5152516CF000EB2EE /* TruliaDataModel.xcdatamodeld in Sources */,
-				51197FF6152516CF000EB2EE /* TruliaMappingModel41.xcmappingmodel in Sources */,
-				5119803615251AE6000EB2EE /* TruliaDataMigrationUtility.m in Sources */,
-				51978FBA152613AD00391ED8 /* TruliaDataController.m in Sources */,
-				51978FBD152613FD00391ED8 /* GRStorageManager.m in Sources */,
 				9D94F73115DEECFA0068FC85 /* ForeclosureVisitTargetController.m in Sources */,
 				9D94F73215DEECFA0068FC85 /* ICApplicationConfigurationRequest.m in Sources */,
 				9D94F73415DEECFA0068FC85 /* MapViewGestureRecognizer.m in Sources */,
@@ -1708,21 +1634,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		51197FEB152516CF000EB2EE /* TruliaDataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				51197FEC152516CF000EB2EE /* TruliaDataModel-4.1.1.xcdatamodel */,
-				51197FED152516CF000EB2EE /* TruliaDataModel-4.1.xcdatamodel */,
-				51197FEE152516CF000EB2EE /* TruliaDataModel.xcdatamodel */,
-			);
-			currentVersion = 51197FEC152516CF000EB2EE /* TruliaDataModel-4.1.1.xcdatamodel */;
-			path = TruliaDataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 51DA6A0914CF2F0D007F2584 /* Project object */;
 }
