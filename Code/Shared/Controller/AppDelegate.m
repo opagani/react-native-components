@@ -47,6 +47,7 @@
 #import "ICMyAccountViewControllerPhone.h"
 #import "IRMainViewControllerPad.h"
 #import "IRListingSearchViewControllerPhone.h"
+#import "IRStartupViewControllerPhone.h"
 
 #define MENU_FIND_AN_AGENT_STRING @"Find an Agent"
 #define MENU_OPEN_HOUSES_STRING   @"Open Houses"
@@ -181,7 +182,7 @@
 
 - (void)showSplashScreenForIphone
 {
-    ICStartupViewControllerPhone *startupView = [[ICStartupViewControllerPhone alloc] initWithNibName:@"IRStartupViewController_iPhone" bundle:[NSBundle coreResourcesBundle]];
+    IRStartupViewControllerPhone *startupView = [[IRStartupViewControllerPhone alloc] initWithNibName:@"IRStartupViewController_iPhone" bundle:[NSBundle coreResourcesBundle]];
     startupView.delegate = self;
     [_window setRootViewController:startupView];
     [_window makeKeyAndVisible];
