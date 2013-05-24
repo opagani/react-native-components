@@ -36,10 +36,9 @@
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
-        [super applicationWillEnterForeground:application];
-    }
+
+    [super applicationWillEnterForeground:application];
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
