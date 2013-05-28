@@ -14,6 +14,7 @@
 		26732BE7174BE34C0065A106 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 26732BE3174BE34C0065A106 /* Default-Portrait~ipad.png */; };
 		26732BE9174BE4B80065A106 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26732BE8174BE4B80065A106 /* Default-568h@2x.png */; };
 		26732BEB174C015F0065A106 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26732BEA174C015F0065A106 /* Default@2x.png */; };
+		26867400174FFC130078C3AA /* MobileAppTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268673FF174FFC130078C3AA /* MobileAppTracker.framework */; };
 		26AC16D817416415005D4FFE /* IRListingRefineViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AC16D717416415005D4FFE /* IRListingRefineViewControllerPhone.m */; };
 		26AE6106173DAF2500E0410D /* IRListingSearchViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AE6105173DAF2500E0410D /* IRListingSearchViewControllerPhone.m */; };
 		26D95CDC174EE92A00A805DF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D95CDB174EE92A00A805DF /* Default.png */; };
@@ -209,6 +210,7 @@
 		26732BE3174BE34C0065A106 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = SOURCE_ROOT; };
 		26732BE8174BE4B80065A106 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		26732BEA174C015F0065A106 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		268673FF174FFC130078C3AA /* MobileAppTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileAppTracker.framework; sourceTree = "<group>"; };
 		26AC16D617416415005D4FFE /* IRListingRefineViewControllerPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRListingRefineViewControllerPhone.h; sourceTree = "<group>"; };
 		26AC16D717416415005D4FFE /* IRListingRefineViewControllerPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRListingRefineViewControllerPhone.m; sourceTree = "<group>"; };
 		26AE6104173DAF2500E0410D /* IRListingSearchViewControllerPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRListingSearchViewControllerPhone.h; sourceTree = "<group>"; };
@@ -447,6 +449,7 @@
 				51DA6A1714CF2F0D007F2584 /* UIKit.framework in Frameworks */,
 				3BAC7D5816F7A0E0005E4508 /* NewRelicAgent.framework in Frameworks */,
 				3BEF4F751702257500BA8529 /* Crashlytics.framework in Frameworks */,
+				26867400174FFC130078C3AA /* MobileAppTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,6 +684,7 @@
 		51DA6A1514CF2F0D007F2584 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				268673FF174FFC130078C3AA /* MobileAppTracker.framework */,
 				3BB379F916C42AA1006A253B /* libicucore.dylib */,
 				2E1AD2F1165436B500C81545 /* libz.dylib */,
 				2E493CA01630C940004C361A /* libxml2.dylib */,
