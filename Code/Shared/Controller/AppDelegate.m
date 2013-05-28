@@ -14,7 +14,6 @@
 #import "ICConfiguration.h"
 #import "UINavigationBar+TruliaNavBackground.h"
 #import "ICStartupViewControllerPhone.h"
-#import "TruliaDataMigrationUtility.h"
 #import "ICCoreDataController.h"
 #import "ICMyAccountViewControllerPhone.h"
 #import "ICSyncController.h"
@@ -49,6 +48,7 @@
 #import "IRMainViewControllerPad.h"
 #import "IRListingSearchViewControllerPhone.h"
 #import <MobileAppTracker/MobileAppTracker.h>
+#import "IRStartupViewControllerPhone.h"
 
 #define MENU_FIND_AN_AGENT_STRING @"Find an Agent"
 #define MENU_OPEN_HOUSES_STRING   @"Open Houses"
@@ -183,7 +183,7 @@
 
 - (void)showSplashScreenForIphone
 {
-    ICStartupViewControllerPhone *startupView = [[ICStartupViewControllerPhone alloc] initWithNibName:@"IRStartupViewController_iPhone" bundle:[NSBundle coreResourcesBundle]];
+    IRStartupViewControllerPhone *startupView = [[IRStartupViewControllerPhone alloc] initWithNibName:@"IRStartupViewController_iPhone" bundle:[NSBundle coreResourcesBundle]];
     startupView.delegate = self;
     [_window setRootViewController:startupView];
     [_window makeKeyAndVisible];
@@ -245,11 +245,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self setupListingParameters];
-    
-    if (![[ICCoreDataController sharedInstance] persistentStoreExists]) {
-        TruliaDataMigrationUtility *migrationUtility = [[TruliaDataMigrationUtility alloc] init];
-        [migrationUtility migrateTruliaDataStoreToIosCore];
-    }
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];    
