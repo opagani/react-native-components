@@ -56,6 +56,11 @@
 #define MENU_MY_SAVES_STRING      @"My Saves"
 #define MENU_SETTINGS_STRING      @"Settings & More"
 
+static void uncaughtExceptionHandler(NSException *exception) {
+    NSLog(@"CRASH: %@", exception);
+    NSLog(@"Stack Trace: %@", [exception callStackSymbols]);
+}
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -261,6 +266,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    
     [self setupTracking];
 
     [self setupListingParameters];
