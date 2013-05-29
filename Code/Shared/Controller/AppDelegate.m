@@ -240,36 +240,33 @@
 - (void)setupTracking
 {
     [NewRelicAgent startWithApplicationToken:TRULIA_NEW_RELIC_API_KEY];
-}
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    [self setupListingParameters];
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];    
-    
     // init HasOffers library
     
     NSString * const MAT_CONVERSION_KEY = [[ICConfiguration sharedInstance] generalItem:@"HasOffersConversionKey"];
     NSString * const MAT_ADVERTISER_ID = [[ICConfiguration sharedInstance] generalItem:@"HasOffersAdvertiserID"];
     
-#ifndef DEBUG
-    if ([MAT_CONVERSION_KEY length] && [MAT_ADVERTISER_ID length]) {
-#endif
-    [[MobileAppTracker sharedManager] startTrackerWithMATAdvertiserId:MAT_ADVERTISER_ID
-                                                     MATConversionKey:MAT_CONVERSION_KEY];
+    [[MobileAppTracker sharedManager] startTrackerWithMATAdvertiserId:MAT_ADVERTISER_ID MATConversionKey:MAT_CONVERSION_KEY];
     
-    if ([SplashScreenViewController shouldShowMe]) {
-        if ([[ICCoreDataController sharedInstance] persistentStoreExists]) {
-            [[MobileAppTracker sharedManager] trackInstall];
-        } else {
+    bool newInstall = [SplashScreenViewController isNewInstall];
+    
+    if (newInstall) {
+        [[MobileAppTracker sharedManager] trackInstall];
+    } else {
+        if ([SplashScreenViewController shouldShowMe]) {
             [[MobileAppTracker sharedManager] trackUpdate];
         }
     }
-#ifndef DEBUG
-    }
-#endif
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [self setupTracking];
+
+    [self setupListingParameters];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];    
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
         self.isShowingGalleryView = NO;
@@ -283,7 +280,6 @@
     [self setupDebugUtilities];
 #endif
 
-    [self setupTracking];
     [self setupCrashReporting];
     
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
