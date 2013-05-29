@@ -254,6 +254,9 @@
     NSString * const MAT_CONVERSION_KEY = [[ICConfiguration sharedInstance] generalItem:@"HasOffersConversionKey"];
     NSString * const MAT_ADVERTISER_ID = [[ICConfiguration sharedInstance] generalItem:@"HasOffersAdvertiserID"];
     
+#ifndef DEBUG
+    if ([MAT_CONVERSION_KEY length] && [MAT_ADVERTISER_ID length]) {
+#endif
     [[MobileAppTracker sharedManager] startTrackerWithMATAdvertiserId:MAT_ADVERTISER_ID
                                                      MATConversionKey:MAT_CONVERSION_KEY];
     
@@ -264,6 +267,9 @@
             [[MobileAppTracker sharedManager] trackUpdate];
         }
     }
+#ifndef DEBUG
+    }
+#endif
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
         self.isShowingGalleryView = NO;
