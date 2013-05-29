@@ -281,7 +281,7 @@
 		51802F5214CF799500199144 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		51802F5414CF799E00199144 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		51802F5614CF79AA00199144 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		51DA6A1214CF2F0D007F2584 /* For Rent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "For Rent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51DA6A1214CF2F0D007F2584 /* Trulia Rent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trulia Rent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DA6A1614CF2F0D007F2584 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		51DA6A1814CF2F0D007F2584 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		51DA6A1A14CF2F0D007F2584 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -627,7 +627,7 @@
 		51DA6A1314CF2F0D007F2584 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				51DA6A1214CF2F0D007F2584 /* For Rent.app */,
+				51DA6A1214CF2F0D007F2584 /* Trulia Rent.app */,
 				4C0CF11114D6643E00A1D325 /* ICConfiguration.bundle */,
 				3B1836371652B4AB009923F7 /* UnitTests.octest */,
 			);
@@ -948,7 +948,7 @@
 			);
 			name = ForRent;
 			productName = Trulia;
-			productReference = 51DA6A1214CF2F0D007F2584 /* For Rent.app */;
+			productReference = 51DA6A1214CF2F0D007F2584 /* Trulia Rent.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1582,7 +1582,7 @@
 					"-fprofile-arcs",
 					"-ftest-coverage",
 				);
-				PRODUCT_NAME = "For Rent";
+				PRODUCT_NAME = "Trulia Rent";
 				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1618,7 +1618,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
-				PRODUCT_NAME = "For Rent";
+				PRODUCT_NAME = "Trulia Rent";
 				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
