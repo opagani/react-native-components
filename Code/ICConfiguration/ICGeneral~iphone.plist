@@ -75,5 +75,15 @@
 		<key>MBSAdTestAdID</key>
 		<string>0</string>
 	</dict>
+	<key>HasOffersConversionKey</key>
+	<string>82ede779dbe629124139125f19d180f0</string>
+	<key>HasOffersAdvertiserID</key>
+	<string>3050</string>
+	<key>HasOffersSendLeadEventID</key>
+	<string>823281206</string>
+	<key>HasOffersRegistrationEventID</key>
+	<string>823281490</string>
+	<key>HasOffersSaveEventID</key>
+	<string>823281438</string>
 </dict>
 </plist>

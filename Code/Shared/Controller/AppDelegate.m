@@ -47,6 +47,7 @@
 #import "ICMyAccountViewControllerPhone.h"
 #import "IRMainViewControllerPad.h"
 #import "IRListingSearchViewControllerPhone.h"
+#import <MobileAppTracker/MobileAppTracker.h>
 #import "IRStartupViewControllerPhone.h"
 
 #define MENU_FIND_AN_AGENT_STRING @"Find an Agent"
@@ -247,6 +248,22 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];    
+    
+    // init HasOffers library
+    
+    NSString * const MAT_CONVERSION_KEY = [[ICConfiguration sharedInstance] generalItem:@"HasOffersConversionKey"];
+    NSString * const MAT_ADVERTISER_ID = [[ICConfiguration sharedInstance] generalItem:@"HasOffersAdvertiserID"];
+    
+    [[MobileAppTracker sharedManager] startTrackerWithMATAdvertiserId:MAT_ADVERTISER_ID
+                                                     MATConversionKey:MAT_CONVERSION_KEY];
+    
+    if ([SplashScreenViewController shouldShowMe]) {
+        if ([[ICCoreDataController sharedInstance] persistentStoreExists]) {
+            [[MobileAppTracker sharedManager] trackInstall];
+        } else {
+            [[MobileAppTracker sharedManager] trackUpdate];
+        }
+    }
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
         self.isShowingGalleryView = NO;
