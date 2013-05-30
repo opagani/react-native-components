@@ -245,32 +245,35 @@ static void uncaughtExceptionHandler(NSException *exception) {
 - (void)setupTracking
 {
     [NewRelicAgent startWithApplicationToken:TRULIA_NEW_RELIC_API_KEY];
+
+    // init HasOffers library
+    
+    NSString * const MAT_CONVERSION_KEY = [[ICConfiguration sharedInstance] generalItem:@"HasOffersConversionKey"];
+    NSString * const MAT_ADVERTISER_ID = [[ICConfiguration sharedInstance] generalItem:@"HasOffersAdvertiserID"];
+    
+    [[MobileAppTracker sharedManager] startTrackerWithMATAdvertiserId:MAT_ADVERTISER_ID MATConversionKey:MAT_CONVERSION_KEY];
+    
+    bool newInstall = [SplashScreenViewController isNewInstall];
+    
+    if (newInstall) {
+        [[MobileAppTracker sharedManager] trackInstall];
+    } else {
+        if ([SplashScreenViewController shouldShowMe]) {
+            [[MobileAppTracker sharedManager] trackUpdate];
+        }
+    }
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     
+    [self setupTracking];
+
     [self setupListingParameters];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];    
-    
-    // init HasOffers library
-    
-    NSString * const MAT_CONVERSION_KEY = [[ICConfiguration sharedInstance] generalItem:@"HasOffersConversionKey"];
-    NSString * const MAT_ADVERTISER_ID = [[ICConfiguration sharedInstance] generalItem:@"HasOffersAdvertiserID"];
-    
-    [[MobileAppTracker sharedManager] startTrackerWithMATAdvertiserId:MAT_ADVERTISER_ID
-                                                     MATConversionKey:MAT_CONVERSION_KEY];
-    
-    if ([SplashScreenViewController shouldShowMe]) {
-        if ([[ICCoreDataController sharedInstance] persistentStoreExists]) {
-            [[MobileAppTracker sharedManager] trackInstall];
-        } else {
-            [[MobileAppTracker sharedManager] trackUpdate];
-        }
-    }
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
         self.isShowingGalleryView = NO;
@@ -284,7 +287,6 @@ static void uncaughtExceptionHandler(NSException *exception) {
     [self setupDebugUtilities];
 #endif
 
-    [self setupTracking];
     [self setupCrashReporting];
     
     return [super application:application didFinishLaunchingWithOptions:launchOptions];

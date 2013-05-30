@@ -21,6 +21,7 @@
 @property(nonatomic,weak) id <SplashViewDelegate> delegate;
 
 + (BOOL)shouldShowMe;
++ (BOOL)isNewInstall;
 
 -(void)updateVersion;
 

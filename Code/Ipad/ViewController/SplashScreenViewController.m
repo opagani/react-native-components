@@ -41,6 +41,17 @@ static NSString *WHATSNEW_MARKER = @"WHATSNEW_MARKER";
     }
 }
 
++ (BOOL)isNewInstall {
+    BOOL ret = NO;
+    NSString *check = [[ICPreference sharedInstance] getAppForKey:@"HasBeenRunOnce"];
+    
+    if (!check) {
+        ret = YES;
+    }
+    
+    return ret;
+}
+
 + (BOOL)shouldShowMe{
     
     NSString *lastVersionForWhichWhatsNewWasShown = (NSString *)[[ICPreference sharedInstance] getAppForKey:WHATSNEW_MARKER];
