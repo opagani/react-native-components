@@ -40,6 +40,7 @@
 		2E8171B9174D8F8F00CF539B /* Splash-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8171B5174D8F8F00CF539B /* Splash-Landscape~ipad.png */; };
 		2E8171BA174D8F8F00CF539B /* Splash-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8171B6174D8F8F00CF539B /* Splash-Portrait@2x~ipad.png */; };
 		2E8171BB174D8F8F00CF539B /* Splash-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8171B7174D8F8F00CF539B /* Splash-Portrait~ipad.png */; };
+		2EB43D111757D41300B642D8 /* IRMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB43D101757D41300B642D8 /* IRMoreViewController.m */; };
 		2EE397F517502AEF0052B6C7 /* TutorialHeatmaps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE397F317502AEF0052B6C7 /* TutorialHeatmaps@2x.png */; };
 		2EE397F617502AEF0052B6C7 /* TutorialMapMarkers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE397F417502AEF0052B6C7 /* TutorialMapMarkers@2x.png */; };
 		2EE397F817502B2C0052B6C7 /* IRStartupViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE397F717502B2C0052B6C7 /* IRStartupViewControllerPhone.m */; };
@@ -242,6 +243,8 @@
 		2E8171B5174D8F8F00CF539B /* Splash-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Landscape~ipad.png"; sourceTree = "<group>"; };
 		2E8171B6174D8F8F00CF539B /* Splash-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		2E8171B7174D8F8F00CF539B /* Splash-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Portrait~ipad.png"; sourceTree = "<group>"; };
+		2EB43D0F1757D41300B642D8 /* IRMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMoreViewController.h; sourceTree = "<group>"; };
+		2EB43D101757D41300B642D8 /* IRMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMoreViewController.m; sourceTree = "<group>"; };
 		2EE397E81750271A0052B6C7 /* IRStartupViewControllerPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRStartupViewControllerPhone.h; sourceTree = "<group>"; };
 		2EE397F317502AEF0052B6C7 /* TutorialHeatmaps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TutorialHeatmaps@2x.png"; sourceTree = "<group>"; };
 		2EE397F417502AEF0052B6C7 /* TutorialMapMarkers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TutorialMapMarkers@2x.png"; sourceTree = "<group>"; };
@@ -574,6 +577,8 @@
 				B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */,
 				2EE397E81750271A0052B6C7 /* IRStartupViewControllerPhone.h */,
 				2EE397F717502B2C0052B6C7 /* IRStartupViewControllerPhone.m */,
+				2EB43D0F1757D41300B642D8 /* IRMoreViewController.h */,
+				2EB43D101757D41300B642D8 /* IRMoreViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1183,6 +1188,7 @@
 				2E49744B1741A11200D8F5E7 /* IRListingSearchToolBarPad.m in Sources */,
 				B70EF2571743022D0018A01A /* IRLayersMenuViewControllerPhone.m in Sources */,
 				2EE397F817502B2C0052B6C7 /* IRStartupViewControllerPhone.m in Sources */,
+				2EB43D111757D41300B642D8 /* IRMoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
