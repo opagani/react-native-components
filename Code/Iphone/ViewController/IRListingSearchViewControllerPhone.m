@@ -40,6 +40,16 @@
     self.layersMenuTable = [[IRLayersMenuViewControllerPhone alloc] initWithNibName:@"ICLayersMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
 }
 
+- (void)showLayersAndNearbyButton {
+    self.btnLayers.hidden = NO;
+    self.btnNearby.hidden = NO;
+}
+
+- (void)hideLayersAndNearbyButton {
+    self.btnLayers.hidden = YES;
+    self.btnNearby.hidden = YES;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
