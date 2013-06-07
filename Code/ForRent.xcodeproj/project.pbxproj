@@ -151,13 +151,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2E3900C41756C2E3000D0BED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 51DA6A0914CF2F0D007F2584 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C0CF11014D6643E00A1D325;
-			remoteInfo = ICConfiguration;
-		};
 		2E58F496174AE8B400202715 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D6C9D7716CAEDB200ED8AD2 /* IosCore.xcodeproj */;
@@ -965,7 +958,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				2E3900C51756C2E3000D0BED /* PBXTargetDependency */,
 				2E58F497174AE8B400202715 /* PBXTargetDependency */,
 			);
 			name = ForRent;
@@ -1207,11 +1199,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2E3900C51756C2E3000D0BED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C0CF11014D6643E00A1D325 /* ICConfiguration */;
-			targetProxy = 2E3900C41756C2E3000D0BED /* PBXContainerItemProxy */;
-		};
 		2E58F497174AE8B400202715 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IosCore;
