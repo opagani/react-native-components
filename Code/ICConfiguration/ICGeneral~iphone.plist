@@ -48,8 +48,6 @@
 	<string>http://itunes.apple.com/us/app/trulia-real-estate-search/id288487321</string>
 	<key>TapSenseAppId</key>
 	<string>288487321</string>
-	<key>AppStoreReviewLink</key>
-	<string>http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=288487321&amp;pageNumber=0&amp;sortOrdering=1&amp;type=Purple+Software&amp;mt=8</string>
 	<key>IndexTypes</key>
 	<array>
 		<string>for rent</string>
@@ -85,5 +83,7 @@
 	<string>823281490</string>
 	<key>HasOffersSaveEventID</key>
 	<string>823281438</string>
+	<key>AppstoreAppID</key>
+	<string>508163604</string>
 </dict>
 </plist>
