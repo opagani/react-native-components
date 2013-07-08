@@ -28,6 +28,7 @@
 	<string>0.25</string>
 	<key>SyncService</key>
 	<array>
+		<string>Notification</string>
 		<string>Account</string>
 		<string>Home</string>
 		<string>Search</string>
