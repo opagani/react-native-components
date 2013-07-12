@@ -37,7 +37,8 @@
 			<array>
 				<string>fb468741039850614</string>
 				<string>trulia</string>
-				<string>TruliaMap</string>
+				<string>TruliaSRPForRent</string>
+				<string>TruliaPDPForRent</string>
 			</array>
 		</dict>
 	</array>
@@ -50,7 +51,8 @@
 			<array>
 				<string>fb468741039850614</string>
 				<string>trulia</string>
-				<string>TruliaIphone</string>
+				<string>TruliaSRPForRent</string>
+				<string>TruliaPDPForRent</string>
 			</array>
 		</dict>
 	</array>
