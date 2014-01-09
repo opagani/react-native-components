@@ -52,7 +52,7 @@
     [_lastSyncedLabel setHidden:YES];
     [[ICMetricsController sharedInstance] trackClick:@"general|sync"];
     
-    [[ICSyncController sharedInstance] forceFullSync];
+    [[ICSyncController sharedInstance] sync];
     
 }
 
@@ -128,7 +128,7 @@
     [_loggedInView setHidden:NO];
     [_notLoggedInView setHidden:YES];
     
-    NSDate *lastSyncDate = [[ICSyncController sharedInstance] lastSync];
+    NSDate *lastSyncDate = nil;
     
     if (lastSyncDate != nil) {
         NSString *dateString = [NSDateFormatter localizedStringFromDate:lastSyncDate dateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterShortStyle];
@@ -245,7 +245,7 @@
         [_loggedInView setHidden:NO];
         [_notLoggedInView setHidden:YES];
         
-        NSDate *lastSyncDate = [[ICSyncController sharedInstance] lastSync];
+        NSDate *lastSyncDate = nil;
         
         //format this date....
         
@@ -272,7 +272,7 @@
 
 - (void)loginViewController:(UIViewController *)loginViewController dismissViewAnimated:(BOOL)animated{
     
-    [[ICMainViewControllerPad sharedInstance] dismissModalViewControllerAnimated:animated];
+    [[ICMainViewControllerPad sharedInstance] dismissViewControllerAnimated:YES completion:nil];
     
 }
 

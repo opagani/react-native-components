@@ -235,7 +235,7 @@ static CGFloat LABEL_MAX_WIDTH = 180.0f;
 	_addressLabel.textColor = [UIColor blackColor];
 	_addressLabel.highlightedTextColor = [UIColor whiteColor];
 	_addressLabel.font = [ICFont extraSmallFont];
-    _addressLabel.textAlignment = UITextAlignmentLeft;
+    _addressLabel.textAlignment = NSTextAlignmentLeft;
 	[self addSubview:_addressLabel];
 	
 	_priceLabel = [[UILabel alloc] initWithFrame:CGRectZero];

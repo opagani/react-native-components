@@ -14,10 +14,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "ICMetricsController.h"
 
-#import "constants.h"
-#import "TruliaLog.h"
-#import "AnalyticsManager.h"
-//#import "TMImageUtil.h"
+#import "IosCoreConstants.h"
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "NSBundle+TruliaAdditions.h"

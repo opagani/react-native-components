@@ -25,7 +25,6 @@
     if ([super application:application didFinishLaunchingWithOptions:launchOptions]) {
         [[UIApplication sharedApplication] setStatusBarHidden:NO];
         
-        
         return YES;
     }
     else {
@@ -84,7 +83,7 @@
      Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
      */
     CLSLog(@"%s ** memory warning **", __func__);
-
+    
     [[ICAdSearchController sharedInstance] flush];
 }
 
