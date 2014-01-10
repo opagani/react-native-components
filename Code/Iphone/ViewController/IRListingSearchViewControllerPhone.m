@@ -33,7 +33,7 @@
     
     viewController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     
-    [self presentModalViewController:viewController animated:YES];
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 - (void) initLayersMenuTable {

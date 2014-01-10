@@ -15,8 +15,8 @@
     
 @private
     NSManagedObjectContext *managedObjectContext_;
-//    NSManagedObjectModel *managedObjectModel_;
-//    NSPersistentStoreCoordinator *persistentStoreCoordinator_;
+    //    NSManagedObjectModel *managedObjectModel_;
+    //    NSPersistentStoreCoordinator *persistentStoreCoordinator_;
 }
 
 @property(nonatomic,strong) IBOutlet UIWindow *window;
@@ -24,4 +24,3 @@
 - (NSString *)applicationDocumentsDirectory;
 
 @end
-

@@ -43,7 +43,6 @@
 		2E8171B9174D8F8F00CF539B /* Splash-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8171B5174D8F8F00CF539B /* Splash-Landscape~ipad.png */; };
 		2E8171BA174D8F8F00CF539B /* Splash-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8171B6174D8F8F00CF539B /* Splash-Portrait@2x~ipad.png */; };
 		2E8171BB174D8F8F00CF539B /* Splash-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8171B7174D8F8F00CF539B /* Splash-Portrait~ipad.png */; };
-		2EB43D111757D41300B642D8 /* IRMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB43D101757D41300B642D8 /* IRMoreViewController.m */; };
 		2EE397F517502AEF0052B6C7 /* TutorialHeatmaps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE397F317502AEF0052B6C7 /* TutorialHeatmaps@2x.png */; };
 		2EE397F617502AEF0052B6C7 /* TutorialMapMarkers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE397F417502AEF0052B6C7 /* TutorialMapMarkers@2x.png */; };
 		2EE397F817502B2C0052B6C7 /* IRStartupViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE397F717502B2C0052B6C7 /* IRStartupViewControllerPhone.m */; };
@@ -128,26 +127,28 @@
 		9D94F60515DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F42A15DEECF80068FC85 /* SchoolMapCalloutViewController_iPad.xib */; };
 		9D94F60615DEECF90068FC85 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F42C15DEECF80068FC85 /* SplashScreenViewController.xib */; };
 		9D94F73115DEECFA0068FC85 /* ForeclosureVisitTargetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D94F56C15DEECF80068FC85 /* ForeclosureVisitTargetController.m */; };
-		9D94F73215DEECFA0068FC85 /* ICApplicationConfigurationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D94F56E15DEECF80068FC85 /* ICApplicationConfigurationRequest.m */; };
 		9D94F73415DEECFA0068FC85 /* MapViewGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D94F57215DEECF80068FC85 /* MapViewGestureRecognizer.m */; };
 		9D94F73515DEECFA0068FC85 /* RecentSearchesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D94F57415DEECF80068FC85 /* RecentSearchesController.m */; };
-		9D94F73D15DEECFA0068FC85 /* ICApplicationConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D94F58315DEECF90068FC85 /* ICApplicationConfiguration.m */; };
 		9D94F74B15DEECFA0068FC85 /* GRMailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D94F5A115DEECF90068FC85 /* GRMailComposer.m */; };
 		9D94F74D15DEECFA0068FC85 /* InternalFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D94F5A515DEECF90068FC85 /* InternalFeedbackViewController.m */; };
 		9D94F75115DEECFA0068FC85 /* CalloutMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D94F5AE15DEECF90068FC85 /* CalloutMapAnnotation.m */; };
 		9D94F76515DEECFA0068FC85 /* MyAccountViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D94F5D715DEECF90068FC85 /* MyAccountViewController_iPad.m */; };
 		9D94F76A15DEECFA0068FC85 /* SchoolMapCalloutViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D94F5E115DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.m */; };
 		9D94F76B15DEECFA0068FC85 /* SchoolMapCalloutViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F5E215DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.xib */; };
-		9D94F76C15DEECFA0068FC85 /* SplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D94F5E415DEECF90068FC85 /* SplashScreenViewController.m */; };
 		9D94F88A15E2FA590068FC85 /* ICGeneral~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F88815E2FA590068FC85 /* ICGeneral~ipad.plist */; };
 		9D94F88B15E2FA590068FC85 /* ICMetric~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F88915E2FA590068FC85 /* ICMetric~ipad.plist */; };
 		9D94F88D15E2FBC70068FC85 /* ICConfiguration.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F88C15E2FBC60068FC85 /* ICConfiguration.bundle */; };
 		9DB1B94616B0B782009D3C4D /* IAListingPDPSneakView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1B94516B0B782009D3C4D /* IAListingPDPSneakView.m */; };
-		9DB8DF2216E51367007A0DED /* UIButton+SaveUnSaveSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8DF2116E51367007A0DED /* UIButton+SaveUnSaveSearch.m */; };
 		9DEF832B1607AE430087FA1A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEF832A1607AE430087FA1A /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B70EF2571743022D0018A01A /* IRLayersMenuViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */; };
 		B7EA94C51635E0CD00B02F3F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C41635E0CC00B02F3F /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B7EA94C71635E14800B02F3F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C61635E14800B02F3F /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E0C3C3141880BDE000639AC7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C3C3131880BDE000639AC7 /* Accelerate.framework */; };
+		E0C6CE4F1880A85A00C0C960 /* MainMenuItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = E0C6CE4D1880A85A00C0C960 /* MainMenuItems~iphone.json */; };
+		E0C6CE501880A85A00C0C960 /* MainMenuItems~ipad.json in Resources */ = {isa = PBXBuildFile; fileRef = E0C6CE4E1880A85A00C0C960 /* MainMenuItems~ipad.json */; };
+		E0C6CE681880AF1000C0C960 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C6CE661880AF1000C0C960 /* EventKit.framework */; };
+		E0C6CE691880AF1000C0C960 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C6CE671880AF1000C0C960 /* EventKitUI.framework */; };
+		E0C6CE6B1880AFD000C0C960 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C6CE6A1880AFD000C0C960 /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -242,8 +243,6 @@
 		2E8171B5174D8F8F00CF539B /* Splash-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Landscape~ipad.png"; sourceTree = "<group>"; };
 		2E8171B6174D8F8F00CF539B /* Splash-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		2E8171B7174D8F8F00CF539B /* Splash-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Portrait~ipad.png"; sourceTree = "<group>"; };
-		2EB43D0F1757D41300B642D8 /* IRMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMoreViewController.h; sourceTree = "<group>"; };
-		2EB43D101757D41300B642D8 /* IRMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMoreViewController.m; sourceTree = "<group>"; };
 		2EE397E81750271A0052B6C7 /* IRStartupViewControllerPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRStartupViewControllerPhone.h; sourceTree = "<group>"; };
 		2EE397F317502AEF0052B6C7 /* TutorialHeatmaps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TutorialHeatmaps@2x.png"; sourceTree = "<group>"; };
 		2EE397F417502AEF0052B6C7 /* TutorialMapMarkers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TutorialMapMarkers@2x.png"; sourceTree = "<group>"; };
@@ -333,14 +332,10 @@
 		9D94F56915DEECF80068FC85 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 		9D94F56B15DEECF80068FC85 /* ForeclosureVisitTargetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForeclosureVisitTargetController.h; sourceTree = "<group>"; };
 		9D94F56C15DEECF80068FC85 /* ForeclosureVisitTargetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForeclosureVisitTargetController.m; sourceTree = "<group>"; };
-		9D94F56D15DEECF80068FC85 /* ICApplicationConfigurationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICApplicationConfigurationRequest.h; sourceTree = "<group>"; };
-		9D94F56E15DEECF80068FC85 /* ICApplicationConfigurationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICApplicationConfigurationRequest.m; sourceTree = "<group>"; };
 		9D94F57115DEECF80068FC85 /* MapViewGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewGestureRecognizer.h; sourceTree = "<group>"; };
 		9D94F57215DEECF80068FC85 /* MapViewGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewGestureRecognizer.m; sourceTree = "<group>"; };
 		9D94F57315DEECF80068FC85 /* RecentSearchesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentSearchesController.h; sourceTree = "<group>"; };
 		9D94F57415DEECF80068FC85 /* RecentSearchesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentSearchesController.m; sourceTree = "<group>"; };
-		9D94F58215DEECF90068FC85 /* ICApplicationConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICApplicationConfiguration.h; sourceTree = "<group>"; };
-		9D94F58315DEECF90068FC85 /* ICApplicationConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICApplicationConfiguration.m; sourceTree = "<group>"; };
 		9D94F5A015DEECF90068FC85 /* GRMailComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRMailComposer.h; sourceTree = "<group>"; };
 		9D94F5A115DEECF90068FC85 /* GRMailComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRMailComposer.m; sourceTree = "<group>"; };
 		9D94F5A415DEECF90068FC85 /* InternalFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternalFeedbackViewController.h; sourceTree = "<group>"; };
@@ -352,20 +347,22 @@
 		9D94F5E015DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolMapCalloutViewController_iPad.h; sourceTree = "<group>"; };
 		9D94F5E115DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolMapCalloutViewController_iPad.m; sourceTree = "<group>"; };
 		9D94F5E215DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolMapCalloutViewController_iPad.xib; sourceTree = "<group>"; };
-		9D94F5E315DEECF90068FC85 /* SplashScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreenViewController.h; sourceTree = "<group>"; };
-		9D94F5E415DEECF90068FC85 /* SplashScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashScreenViewController.m; sourceTree = "<group>"; };
 		9D94F88815E2FA590068FC85 /* ICGeneral~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICGeneral~ipad.plist"; sourceTree = "<group>"; };
 		9D94F88915E2FA590068FC85 /* ICMetric~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~ipad.plist"; sourceTree = "<group>"; };
 		9D94F88C15E2FBC60068FC85 /* ICConfiguration.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ICConfiguration.bundle; path = Build/ICConfiguration.bundle; sourceTree = SOURCE_ROOT; };
 		9DB1B94416B0B782009D3C4D /* IAListingPDPSneakView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAListingPDPSneakView.h; sourceTree = "<group>"; };
 		9DB1B94516B0B782009D3C4D /* IAListingPDPSneakView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAListingPDPSneakView.m; sourceTree = "<group>"; };
-		9DB8DF2016E51367007A0DED /* UIButton+SaveUnSaveSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SaveUnSaveSearch.h"; sourceTree = "<group>"; };
-		9DB8DF2116E51367007A0DED /* UIButton+SaveUnSaveSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SaveUnSaveSearch.m"; sourceTree = "<group>"; };
 		9DEF832A1607AE430087FA1A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		B70EF2551743022D0018A01A /* IRLayersMenuViewControllerPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRLayersMenuViewControllerPhone.h; sourceTree = "<group>"; };
 		B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLayersMenuViewControllerPhone.m; sourceTree = "<group>"; };
 		B7EA94C41635E0CC00B02F3F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		B7EA94C61635E14800B02F3F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		E0C3C3131880BDE000639AC7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		E0C6CE4D1880A85A00C0C960 /* MainMenuItems~iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "MainMenuItems~iphone.json"; sourceTree = "<group>"; };
+		E0C6CE4E1880A85A00C0C960 /* MainMenuItems~ipad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "MainMenuItems~ipad.json"; sourceTree = "<group>"; };
+		E0C6CE661880AF1000C0C960 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		E0C6CE671880AF1000C0C960 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		E0C6CE6A1880AFD000C0C960 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -412,6 +409,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C3C3141880BDE000639AC7 /* Accelerate.framework in Frameworks */,
+				E0C6CE6B1880AFD000C0C960 /* Twitter.framework in Frameworks */,
+				E0C6CE681880AF1000C0C960 /* EventKit.framework in Frameworks */,
+				E0C6CE691880AF1000C0C960 /* EventKitUI.framework in Frameworks */,
 				2E58F49D174AE8D000202715 /* libIosCore.a in Frameworks */,
 				9D23EC5E17205D300048E737 /* ImageIO.framework in Frameworks */,
 				3BB379FA16C42AA1006A253B /* libicucore.dylib in Frameworks */,
@@ -557,8 +558,6 @@
 			children = (
 				9DB1B94416B0B782009D3C4D /* IAListingPDPSneakView.h */,
 				9DB1B94516B0B782009D3C4D /* IAListingPDPSneakView.m */,
-				9DB8DF2016E51367007A0DED /* UIButton+SaveUnSaveSearch.h */,
-				9DB8DF2116E51367007A0DED /* UIButton+SaveUnSaveSearch.m */,
 			);
 			name = View;
 			path = ../View;
@@ -576,8 +575,6 @@
 				B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */,
 				2EE397E81750271A0052B6C7 /* IRStartupViewControllerPhone.h */,
 				2EE397F717502B2C0052B6C7 /* IRStartupViewControllerPhone.m */,
-				2EB43D0F1757D41300B642D8 /* IRMoreViewController.h */,
-				2EB43D101757D41300B642D8 /* IRMoreViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -585,6 +582,8 @@
 		4C0CEEEB14D6634A00A1D325 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E0C6CE4D1880A85A00C0C960 /* MainMenuItems~iphone.json */,
+				E0C6CE4E1880A85A00C0C960 /* MainMenuItems~ipad.json */,
 				4CFABE1D14D66A5400A4006F /* IosCoreResources.bundle */,
 				9D94F88C15E2FBC60068FC85 /* ICConfiguration.bundle */,
 				2E309C21167024BF00A31BD0 /* Fonts */,
@@ -648,6 +647,10 @@
 		51DA6A1514CF2F0D007F2584 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E0C3C3131880BDE000639AC7 /* Accelerate.framework */,
+				E0C6CE6A1880AFD000C0C960 /* Twitter.framework */,
+				E0C6CE661880AF1000C0C960 /* EventKit.framework */,
+				E0C6CE671880AF1000C0C960 /* EventKitUI.framework */,
 				268673FF174FFC130078C3AA /* MobileAppTracker.framework */,
 				3BB379F916C42AA1006A253B /* libicucore.dylib */,
 				2E1AD2F1165436B500C81545 /* libz.dylib */,
@@ -824,8 +827,6 @@
 			children = (
 				9D94F56B15DEECF80068FC85 /* ForeclosureVisitTargetController.h */,
 				9D94F56C15DEECF80068FC85 /* ForeclosureVisitTargetController.m */,
-				9D94F56D15DEECF80068FC85 /* ICApplicationConfigurationRequest.h */,
-				9D94F56E15DEECF80068FC85 /* ICApplicationConfigurationRequest.m */,
 				9D94F57115DEECF80068FC85 /* MapViewGestureRecognizer.h */,
 				9D94F57215DEECF80068FC85 /* MapViewGestureRecognizer.m */,
 				9D94F57315DEECF80068FC85 /* RecentSearchesController.h */,
@@ -837,8 +838,6 @@
 		9D94F57D15DEECF90068FC85 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9D94F58215DEECF90068FC85 /* ICApplicationConfiguration.h */,
-				9D94F58315DEECF90068FC85 /* ICApplicationConfiguration.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -884,8 +883,6 @@
 				9D94F5E015DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.h */,
 				9D94F5E115DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.m */,
 				9D94F5E215DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.xib */,
-				9D94F5E315DEECF90068FC85 /* SplashScreenViewController.h */,
-				9D94F5E415DEECF90068FC85 /* SplashScreenViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1090,6 +1087,7 @@
 				2E309C38167024BF00A31BD0 /* OpenSans-SemiboldItalic.ttf in Resources */,
 				3B5EF54B170B8DFC003F00ED /* Localizable.strings in Resources */,
 				26732BE4174BE34C0065A106 /* Default-Landscape@2x~ipad.png in Resources */,
+				E0C6CE4F1880A85A00C0C960 /* MainMenuItems~iphone.json in Resources */,
 				26732BE5174BE34C0065A106 /* Default-Landscape~ipad.png in Resources */,
 				26732BE6174BE34C0065A106 /* Default-Portrait@2x~ipad.png in Resources */,
 				26732BE7174BE34C0065A106 /* Default-Portrait~ipad.png in Resources */,
@@ -1103,6 +1101,7 @@
 				2E8171BB174D8F8F00CF539B /* Splash-Portrait~ipad.png in Resources */,
 				26D95CDC174EE92A00A805DF /* Default.png in Resources */,
 				2EE397F517502AEF0052B6C7 /* TutorialHeatmaps@2x.png in Resources */,
+				E0C6CE501880A85A00C0C960 /* MainMenuItems~ipad.json in Resources */,
 				2EE397F617502AEF0052B6C7 /* TutorialMapMarkers@2x.png in Resources */,
 				2EE397FA17502D610052B6C7 /* TutorialSave@2x.png in Resources */,
 				2EE397FC17502D960052B6C7 /* TutorialSave.png in Resources */,
@@ -1171,20 +1170,16 @@
 				4C0CF0BF14D6634B00A1D325 /* IA+UIColor.m in Sources */,
 				4C0CF0C414D6634B00A1D325 /* AppDelegate.m in Sources */,
 				9D94F73115DEECFA0068FC85 /* ForeclosureVisitTargetController.m in Sources */,
-				9D94F73215DEECFA0068FC85 /* ICApplicationConfigurationRequest.m in Sources */,
 				9D94F73415DEECFA0068FC85 /* MapViewGestureRecognizer.m in Sources */,
 				9D94F73515DEECFA0068FC85 /* RecentSearchesController.m in Sources */,
-				9D94F73D15DEECFA0068FC85 /* ICApplicationConfiguration.m in Sources */,
 				9D94F74B15DEECFA0068FC85 /* GRMailComposer.m in Sources */,
 				9D94F74D15DEECFA0068FC85 /* InternalFeedbackViewController.m in Sources */,
 				9D94F75115DEECFA0068FC85 /* CalloutMapAnnotation.m in Sources */,
 				9D94F76515DEECFA0068FC85 /* MyAccountViewController_iPad.m in Sources */,
 				9D94F76A15DEECFA0068FC85 /* SchoolMapCalloutViewController_iPad.m in Sources */,
-				9D94F76C15DEECFA0068FC85 /* SplashScreenViewController.m in Sources */,
 				9D94D244161A0B520089CEEC /* AppDelegate_Shared.m in Sources */,
 				266139DB164AF82E00D19093 /* IAURLCache.m in Sources */,
 				9DB1B94616B0B782009D3C4D /* IAListingPDPSneakView.m in Sources */,
-				9DB8DF2216E51367007A0DED /* UIButton+SaveUnSaveSearch.m in Sources */,
 				2EE5C358173C5ABC006D42BC /* IRMainViewControllerPad.m in Sources */,
 				2EE5C35F173C5B10006D42BC /* IRFilterViewControllerPad.m in Sources */,
 				26AE6106173DAF2500E0410D /* IRListingSearchViewControllerPhone.m in Sources */,
@@ -1192,7 +1187,6 @@
 				2E49744B1741A11200D8F5E7 /* IRListingSearchToolBarPad.m in Sources */,
 				B70EF2571743022D0018A01A /* IRLayersMenuViewControllerPhone.m in Sources */,
 				2EE397F817502B2C0052B6C7 /* IRStartupViewControllerPhone.m in Sources */,
-				2EB43D111757D41300B642D8 /* IRMoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1522,7 +1516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(IOSCORE_LIB)/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1556,7 +1550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(IOSCORE_LIB)/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1573,7 +1567,7 @@
 		51DA6A4014CF2F0D007F2584 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -1589,23 +1583,28 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ForRent-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				HEADER_SEARCH_PATHS = "$(IOSRENTALCORE_LIB)/**";
+				HEADER_SEARCH_PATHS = (
+					"$(IOSRENTALCORE_LIB)/**",
+					"$(MORTGAGE_LIB)/**",
+				);
 				INFOPLIST_FILE = "ForRent-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-fprofile-arcs",
 					"-ftest-coverage",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "For Rent";
 				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv7 armv6";
+				VALID_ARCHS = "armv7s armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1613,7 +1612,7 @@
 		51DA6A4114CF2F0D007F2584 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -1629,19 +1628,23 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ForRent-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				HEADER_SEARCH_PATHS = "$(IOSRENTALCORE_LIB)/**";
+				HEADER_SEARCH_PATHS = (
+					"$(IOSRENTALCORE_LIB)/**",
+					"$(MORTGAGE_LIB)/**",
+				);
 				INFOPLIST_FILE = "ForRent-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "For Rent";
 				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv7 armv6";
+				VALID_ARCHS = "armv7s armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
