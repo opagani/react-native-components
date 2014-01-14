@@ -143,6 +143,8 @@
 		B70EF2571743022D0018A01A /* IRLayersMenuViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */; };
 		B7EA94C51635E0CD00B02F3F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C41635E0CC00B02F3F /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B7EA94C71635E14800B02F3F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C61635E14800B02F3F /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E03A78A01884749600317FB6 /* MortgageResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E03A789F1884749600317FB6 /* MortgageResources.bundle */; };
+		E09D2BAA1884A52A000BE18D /* IRLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E09D2BA91884A52A000BE18D /* IRLeftMenuViewController.m */; };
 		E0C3C3141880BDE000639AC7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C3C3131880BDE000639AC7 /* Accelerate.framework */; };
 		E0C6CE4F1880A85A00C0C960 /* MainMenuItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = E0C6CE4D1880A85A00C0C960 /* MainMenuItems~iphone.json */; };
 		E0C6CE501880A85A00C0C960 /* MainMenuItems~ipad.json in Resources */ = {isa = PBXBuildFile; fileRef = E0C6CE4E1880A85A00C0C960 /* MainMenuItems~ipad.json */; };
@@ -200,6 +202,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 51DA6A1114CF2F0D007F2584;
 			remoteInfo = Trulia;
+		};
+		E03A789B1884731E00317FB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51DA6A0914CF2F0D007F2584 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C0CF11014D6643E00A1D325;
+			remoteInfo = ICConfiguration;
+		};
+		E03A789D1884732500317FB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D6C9D7716CAEDB200ED8AD2 /* IosCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 51F6199E13A91F3A00151311;
+			remoteInfo = IosCoreResources;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -357,6 +373,9 @@
 		B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLayersMenuViewControllerPhone.m; sourceTree = "<group>"; };
 		B7EA94C41635E0CC00B02F3F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		B7EA94C61635E14800B02F3F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		E03A789F1884749600317FB6 /* MortgageResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MortgageResources.bundle; sourceTree = "<group>"; };
+		E09D2BA81884A52A000BE18D /* IRLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRLeftMenuViewController.h; sourceTree = "<group>"; };
+		E09D2BA91884A52A000BE18D /* IRLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLeftMenuViewController.m; sourceTree = "<group>"; };
 		E0C3C3131880BDE000639AC7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		E0C6CE4D1880A85A00C0C960 /* MainMenuItems~iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "MainMenuItems~iphone.json"; sourceTree = "<group>"; };
 		E0C6CE4E1880A85A00C0C960 /* MainMenuItems~ipad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "MainMenuItems~ipad.json"; sourceTree = "<group>"; };
@@ -575,6 +594,8 @@
 				B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */,
 				2EE397E81750271A0052B6C7 /* IRStartupViewControllerPhone.h */,
 				2EE397F717502B2C0052B6C7 /* IRStartupViewControllerPhone.m */,
+				E09D2BA81884A52A000BE18D /* IRLeftMenuViewController.h */,
+				E09D2BA91884A52A000BE18D /* IRLeftMenuViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -619,6 +640,7 @@
 		51DA6A0714CF2F0D007F2584 = {
 			isa = PBXGroup;
 			children = (
+				E03A789F1884749600317FB6 /* MortgageResources.bundle */,
 				9D94F3F815DEECF80068FC85 /* Ipad */,
 				4C0CEED814D6634A00A1D325 /* Iphone */,
 				4C0CEEEB14D6634A00A1D325 /* Shared */,
@@ -955,6 +977,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				E03A789E1884732500317FB6 /* PBXTargetDependency */,
+				E03A789C1884731E00317FB6 /* PBXTargetDependency */,
 				2E58F497174AE8B400202715 /* PBXTargetDependency */,
 			);
 			name = ForRent;
@@ -1058,6 +1082,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E03A78A01884749600317FB6 /* MortgageResources.bundle in Resources */,
 				4CFABE1E14D66A5400A4006F /* IosCoreResources.bundle in Resources */,
 				9D94F5EE15DEECF90068FC85 /* FakeLoadingScreenViewController_iPad.xib in Resources */,
 				9D94F5EF15DEECF90068FC85 /* FilmStripLandscapeViewController_iPad.xib in Resources */,
@@ -1187,6 +1212,7 @@
 				2E49744B1741A11200D8F5E7 /* IRListingSearchToolBarPad.m in Sources */,
 				B70EF2571743022D0018A01A /* IRLayersMenuViewControllerPhone.m in Sources */,
 				2EE397F817502B2C0052B6C7 /* IRStartupViewControllerPhone.m in Sources */,
+				E09D2BAA1884A52A000BE18D /* IRLeftMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1202,6 +1228,16 @@
 			isa = PBXTargetDependency;
 			target = 51DA6A1114CF2F0D007F2584 /* ForRent */;
 			targetProxy = 9D3728981666B0900018B275 /* PBXContainerItemProxy */;
+		};
+		E03A789C1884731E00317FB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C0CF11014D6643E00A1D325 /* ICConfiguration */;
+			targetProxy = E03A789B1884731E00317FB6 /* PBXContainerItemProxy */;
+		};
+		E03A789E1884732500317FB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IosCoreResources;
+			targetProxy = E03A789D1884732500317FB6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1491,7 +1527,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -1515,8 +1551,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(IOSCORE_LIB)/**";
+				HEADER_SEARCH_PATHS = (
+					"$(IOSRENTALCORE_LIB)/**",
+					"$(MORTGAGE_LIB)/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1532,7 +1572,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -1549,8 +1589,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(IOSCORE_LIB)/**";
+				HEADER_SEARCH_PATHS = (
+					"$(IOSRENTALCORE_LIB)/**",
+					"$(MORTGAGE_LIB)/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1593,7 +1637,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-fprofile-arcs",
 					"-ftest-coverage",

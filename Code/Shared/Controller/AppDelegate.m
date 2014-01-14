@@ -18,7 +18,7 @@
 #import "ICSyncController.h"
 #import "ICSyncServiceNotification.h"
 #import "ICMainMenuViewControllerPhone.h"
-#import "ICLeftMenuViewController.h"
+#import "IRLeftMenuViewController.h"
 #import "IRListingSearchViewControllerPhone.h"
 #import "IRMainViewControllerPad.h"
 
@@ -138,7 +138,7 @@ void uncaughtExceptionHandler(NSException *exception) {
      [IRMainViewControllerPad sharedInstance].leftMenuViewController = self.viewController;*/
     
     ICMainMenuViewControllerPhone *menu = [[ICMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
-    self.leftViewController = [[ICLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController: [IRMainViewControllerPad sharedInstance]];
+    self.leftViewController = [[IRLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController: [IRMainViewControllerPad sharedInstance]];
     
     [IRMainViewControllerPad sharedInstance].toggleMenuBlock = ^(BOOL show){
         [self.leftViewController toggleMenu:show];
@@ -214,7 +214,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
     
     
-    self.leftViewController = [[ICLeftMenuViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
+    self.leftViewController = [[IRLeftMenuViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
     self.navController = navCtr;
     
 }
@@ -283,7 +283,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 - (void)setupTracking
 {
     [super setupTracking];
-    [NewRelicAgent startWithApplicationToken:TRULIA_NEW_RELIC_API_KEY_RENTALS];
+   // [NewRelicAgent startWithApplicationToken:TRULIA_NEW_RELIC_API_KEY_RENTALS];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

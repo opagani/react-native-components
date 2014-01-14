@@ -7,6 +7,7 @@
 //
 
 #import "IRListingRefineViewControllerPhone.h"
+#import "ICAppearance.h"
 
 #define OFFSET              3
 #define HEIGHT_ADJUSTMENT   40
@@ -17,11 +18,13 @@
 
 @implementation IRListingRefineViewControllerPhone
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil searchController:(ICListingSearchController*)searchController
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithNibName:@"ICListingRefineViewControllerPhone" bundle:[NSBundle coreResourcesBundle] searchController:searchController];
     if (self) {
         // Custom initialization
+        
+        //[self initWithNibName:@"ICListingRefineViewControllerPhone" bundle:[NSBundle coreResourcesBundle] searchController:self.searchController];
     }
     return self;
 }
