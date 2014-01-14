@@ -10,4 +10,6 @@
 
 @interface IRFilterViewControllerPad : ICFilterViewControllerPad
 
+- (id)initWithSearchController:(ICListingSearchController*)searchController;
+
 @end

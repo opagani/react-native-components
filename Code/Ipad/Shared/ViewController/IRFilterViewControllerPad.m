@@ -21,6 +21,11 @@
    return [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 }
 
+- (id)initWithSearchController:(ICListingSearchController*)searchController{
+    
+    return [super initWithSearchController:searchController];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
