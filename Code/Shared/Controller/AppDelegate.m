@@ -137,6 +137,11 @@ void uncaughtExceptionHandler(NSException *exception) {
      
      [IRMainViewControllerPad sharedInstance].leftMenuViewController = self.viewController;*/
     
+    ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
+    currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
+    
+    [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
+    
     ICMainMenuViewControllerPhone *menu = [[ICMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
     self.leftViewController = [[IRLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController: [IRMainViewControllerPad sharedInstance]];
     
