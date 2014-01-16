@@ -9,6 +9,9 @@
 #import "IRMainViewControllerPad.h"
 #import "IRFilterViewControllerPad.h"
 #import "IRListingSearchToolBarPad.h"
+#import "UIApplication+ICAdditions.h"
+#import "IRListingSearchViewControllerPhone.h"
+
 
 #define TABLE_WIDTH_TOOLBAR 320
 
@@ -36,6 +39,41 @@
 
 - (NSString *)getIndexTypeForTopBar {
     return @"";
+}
+
+-(void)loadMapAndTable{
+    
+    if (!self.searchViewController) {
+        
+        self.searchViewController = [IRListingSearchViewControllerPhone sharedInstance];
+        self.searchViewController.delegate = self;
+        [self.view insertSubview:self.searchViewController.view belowSubview:self.searchBarBackground];
+        
+        // for the black line between map and table
+        self.searchViewController.view.backgroundColor = [UIColor blackColor];
+        [super updateChildViewsWithFrameSize:[UIApplication currentSize]];
+        
+        
+#ifdef DEBUG
+        UILabel *labelVersion = [[UILabel alloc] init];
+        labelVersion.font = [UIFont systemFontOfSize:12.0];
+        labelVersion.textColor = [UIColor whiteColor];
+        labelVersion.backgroundColor = [UIColor blackColor];
+        [labelVersion setAutoresizingMask:UIViewAutoresizingFlexibleRightMargin];
+        
+        NSDictionary* infoDictionary = [[NSBundle mainBundle] infoDictionary];
+        labelVersion.text = [NSString stringWithFormat:@"build %@-%@", [infoDictionary valueForKey:@"CFBundleShortVersionString"], [infoDictionary valueForKey:@"CFBundleVersion"]];
+        CGSize labelSize = [labelVersion.text sizeWithFont:labelVersion.font];
+        [labelVersion setFrame:CGRectMake(0, 109.0, labelSize.width, labelSize.height)];
+        
+        [self.searchViewController.mapViewController.mapViewMap addSubview:labelVersion];
+#endif
+	}
+}
+
+- (void)updateChildViewsWithFrameSize:(CGSize)frameSize{
+    
+    [super updateChildViewsWithFrameSize:frameSize];
 }
 
 @end

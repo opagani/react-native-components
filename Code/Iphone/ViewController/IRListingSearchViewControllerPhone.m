@@ -10,6 +10,9 @@
 #import "IRLayersMenuViewControllerPhone.h"
 #import "ICLeftMenuViewController.h"
 #import "ICMainMenuViewControllerPhone.h"
+#import "IRListingDetailViewControllerPad.h"
+#import "UIApplication+ICAdditions.h"
+#import "IRMainViewControllerPad.h"
 
 @interface IRListingSearchViewControllerPhone ()
 
@@ -51,6 +54,50 @@
     self.btnLayers.hidden = YES;
     self.btnNearby.hidden = YES;
 }
+
+
+-(void)pushdDetailViewForListing:(ICListing*)currentListing {
+    
+    if ([UIDevice isPad])
+    {
+        
+        if (self.listingDetailViewController)
+        {
+            [self.listingDetailViewController.view removeFromSuperview];
+            
+            self.listingDetailViewController = nil;
+        }
+        
+        self.listingDetailViewController = [IRListingDetailViewControllerPad new];
+        
+        [((IRListingDetailViewControllerPad *) self.listingDetailViewController) setDelegate:self];
+        
+        [((IRListingDetailViewControllerPad *) self.listingDetailViewController) setListing:currentListing];
+        
+        UIView * parent = [IRMainViewControllerPad sharedInstance].view;
+        CGFloat statusBarOffset = [UIDevice isOS7OrAbove] ? [UIApplication sharedApplication].statusBarHeight : 0;
+        
+        self.listingDetailViewController.view.frame = CGRectMake(0, statusBarOffset, parent.bounds.size.width, parent.bounds.size.height - statusBarOffset);
+        
+        [[ICMainViewControllerPad sharedInstance].view addSubview:self.listingDetailViewController.view];
+        
+        [((ICListingDetailViewControllerPad *) self.listingDetailViewController) animateSlideInOutAnimation:kCATransitionFromRight];
+        
+    }
+    else
+    {
+        self.listingDetailViewController = [[ICListingDetailViewControllerPhone alloc] initWithNibName:@"ICListingDetailViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
+        [((ICListingDetailViewControllerPhone *) self.listingDetailViewController) setDelegate:self];
+        
+        //we don't need to refresh since this will be the first time the view controller is appearing
+        [(ICListingDetailViewControllerPhone *) self.listingDetailViewController setWithListing:currentListing andRefresh:NO];
+        
+        [self.navigationController pushViewController:self.listingDetailViewController animated:YES];
+        
+        
+    }
+}
+
 
 -(AnimationBlock)animationBlockForSave{
     AnimationBlock block = ^(UIView* view){
