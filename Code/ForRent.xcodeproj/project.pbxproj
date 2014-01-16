@@ -144,6 +144,7 @@
 		B7EA94C51635E0CD00B02F3F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C41635E0CC00B02F3F /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B7EA94C71635E14800B02F3F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C61635E14800B02F3F /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E03A78A01884749600317FB6 /* MortgageResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E03A789F1884749600317FB6 /* MortgageResources.bundle */; };
+		E04CF5E118876C9A0079C064 /* IRListingDetailViewControllerPad.m in Sources */ = {isa = PBXBuildFile; fileRef = E04CF5E018876C9A0079C064 /* IRListingDetailViewControllerPad.m */; };
 		E09D2BAA1884A52A000BE18D /* IRLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E09D2BA91884A52A000BE18D /* IRLeftMenuViewController.m */; };
 		E0C3C3141880BDE000639AC7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C3C3131880BDE000639AC7 /* Accelerate.framework */; };
 		E0C6CE4F1880A85A00C0C960 /* MainMenuItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = E0C6CE4D1880A85A00C0C960 /* MainMenuItems~iphone.json */; };
@@ -374,6 +375,8 @@
 		B7EA94C41635E0CC00B02F3F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		B7EA94C61635E14800B02F3F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		E03A789F1884749600317FB6 /* MortgageResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MortgageResources.bundle; sourceTree = "<group>"; };
+		E04CF5DF18876C9A0079C064 /* IRListingDetailViewControllerPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRListingDetailViewControllerPad.h; sourceTree = "<group>"; };
+		E04CF5E018876C9A0079C064 /* IRListingDetailViewControllerPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRListingDetailViewControllerPad.m; sourceTree = "<group>"; };
 		E09D2BA81884A52A000BE18D /* IRLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRLeftMenuViewController.h; sourceTree = "<group>"; };
 		E09D2BA91884A52A000BE18D /* IRLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLeftMenuViewController.m; sourceTree = "<group>"; };
 		E0C3C3131880BDE000639AC7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -882,6 +885,8 @@
 				2EE5C357173C5ABC006D42BC /* IRMainViewControllerPad.m */,
 				2EE5C35D173C5B10006D42BC /* IRFilterViewControllerPad.h */,
 				2EE5C35E173C5B10006D42BC /* IRFilterViewControllerPad.m */,
+				E04CF5DF18876C9A0079C064 /* IRListingDetailViewControllerPad.h */,
+				E04CF5E018876C9A0079C064 /* IRListingDetailViewControllerPad.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1207,6 +1212,7 @@
 				9DB1B94616B0B782009D3C4D /* IAListingPDPSneakView.m in Sources */,
 				2EE5C358173C5ABC006D42BC /* IRMainViewControllerPad.m in Sources */,
 				2EE5C35F173C5B10006D42BC /* IRFilterViewControllerPad.m in Sources */,
+				E04CF5E118876C9A0079C064 /* IRListingDetailViewControllerPad.m in Sources */,
 				26AE6106173DAF2500E0410D /* IRListingSearchViewControllerPhone.m in Sources */,
 				26AC16D817416415005D4FFE /* IRListingRefineViewControllerPhone.m in Sources */,
 				2E49744B1741A11200D8F5E7 /* IRListingSearchToolBarPad.m in Sources */,
