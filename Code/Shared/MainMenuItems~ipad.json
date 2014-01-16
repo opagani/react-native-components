@@ -15,7 +15,7 @@
         ]
         }
         ,{"title":"MORE","items":[
-             {"title":"Leave Feedback" , "trackEventName":"feedback", "url":"http://m.trulia.com/leave_feedback/?chrome=IphoneApp"}
+             {"title":"Leave Feedback" , "trackEventName":"feedback", "url":"http://m.trulia.com/leave_feedback/?chrome=IpadRental"}
             ,{"title":"Rate this App","showLeavingIcon":1, "urlSchemeLink":"https://itunes.apple.com/us/app/real-estate-by-trulia-homes/id288487321?mt=8&uo=4"}
             ,{"title":"Share this App" ,"promptToShare":1 }
             ,{"title":"Settings", "viewController":"ICSettingsViewControllerPhone" , "trackEventName": "more"}
