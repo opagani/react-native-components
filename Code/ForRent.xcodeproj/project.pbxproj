@@ -70,7 +70,6 @@
 		4C0CF11D14D6648200A1D325 /* ICGeneral~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51DA6C2414CF5896007F2584 /* ICGeneral~iphone.plist */; };
 		4C0CF11E14D6648200A1D325 /* ICMetric~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51DA6C2514CF5896007F2584 /* ICMetric~iphone.plist */; };
 		4C0CF11F14D6648200A1D325 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51DA6C1D14CF51D1007F2584 /* InfoPlist.strings */; };
-		4CFABE1E14D66A5400A4006F /* IosCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4CFABE1D14D66A5400A4006F /* IosCoreResources.bundle */; };
 		5142AD091565A88200BBB7F8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5142AD081565A88200BBB7F8 /* AudioToolbox.framework */; };
 		51802F4514CF793A00199144 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51802F4414CF793900199144 /* AVFoundation.framework */; };
 		51802F4714CF794500199144 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51802F4614CF794500199144 /* CoreLocation.framework */; };
@@ -115,7 +114,6 @@
 		9D94D279161A0B5C0089CEEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D25C161A0B5C0089CEEC /* InfoPlist.strings */; };
 		9D94D27A161A0B5C0089CEEC /* ICStartupViewControllerPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D25E161A0B5C0089CEEC /* ICStartupViewControllerPhone.xib */; };
 		9D94DEAC15D992F20068FC85 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D94DEAB15D992F20068FC85 /* OpenGLES.framework */; };
-		9D94F5EE15DEECF90068FC85 /* FakeLoadingScreenViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F3FC15DEECF80068FC85 /* FakeLoadingScreenViewController_iPad.xib */; };
 		9D94F5EF15DEECF90068FC85 /* FilmStripLandscapeViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F3FE15DEECF80068FC85 /* FilmStripLandscapeViewController_iPad.xib */; };
 		9D94F5F015DEECF90068FC85 /* FilmStripPortraitViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F40015DEECF80068FC85 /* FilmStripPortraitViewController_iPad.xib */; };
 		9D94F5F315DEECF90068FC85 /* HelpViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F40615DEECF80068FC85 /* HelpViewController_iPad.xib */; };
@@ -149,8 +147,8 @@
 		E052A210187E148800B0A358 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E052A20F187E148800B0A358 /* EventKitUI.framework */; };
 		E052A213187E1DEC00B0A358 /* MainMenuItems~ipad.json in Resources */ = {isa = PBXBuildFile; fileRef = E052A211187E1DEC00B0A358 /* MainMenuItems~ipad.json */; };
 		E052A214187E1DEC00B0A358 /* MainMenuItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = E052A212187E1DEC00B0A358 /* MainMenuItems~iphone.json */; };
-		E06A6F32187F3949007891FD /* libIosCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E06A6F30187F3949007891FD /* libIosCore.a */; };
-		E06A6F35187F3B28007891FD /* libMortgageLibExternal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E06A6F34187F3B28007891FD /* libMortgageLibExternal.a */; };
+		E05C232618C682E4009A3207 /* libIosCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E05C232518C682E4009A3207 /* libIosCore.a */; };
+		E0A7CC5418C6B1CB0005797A /* IosCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4CFABE1D14D66A5400A4006F /* IosCoreResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -324,9 +322,10 @@
 		E052A20F187E148800B0A358 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		E052A211187E1DEC00B0A358 /* MainMenuItems~ipad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "MainMenuItems~ipad.json"; sourceTree = "<group>"; };
 		E052A212187E1DEC00B0A358 /* MainMenuItems~iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "MainMenuItems~iphone.json"; sourceTree = "<group>"; };
+		E05C232518C682E4009A3207 /* libIosCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIosCore.a; path = "../../mob-ioscore-lib/code/build/Debug-iphoneos/libIosCore.a"; sourceTree = "<group>"; };
 		E06A6F30187F3949007891FD /* libIosCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIosCore.a; path = "../../../Library/Developer/Xcode/DerivedData/ForRent-buvcmktxcsthhoafzgprqyqdkkly/Build/Products/Debug-iphoneos/libIosCore.a"; sourceTree = "<group>"; };
-		E06A6F31187F3949007891FD /* libMortgageLibExternal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMortgageLibExternal.a; path = "../../mob-iosmortgage-lib/build/Debug-iphoneos/libMortgageLibExternal.a"; sourceTree = "<group>"; };
-		E06A6F34187F3B28007891FD /* libMortgageLibExternal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMortgageLibExternal.a; path = "../../../Library/Developer/Xcode/DerivedData/ForRent-buvcmktxcsthhoafzgprqyqdkkly/Build/Products/Debug-iphoneos/libMortgageLibExternal.a"; sourceTree = "<group>"; };
+		E081D88918C65440000C7B88 /* libMortgageLibExternal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMortgageLibExternal.a; path = "../../mob-iosmortgage-lib/build/Debug-iphoneos/libMortgageLibExternal.a"; sourceTree = "<group>"; };
+		E0C7957D18C6539D00DE6C19 /* MortgageResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MortgageResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,8 +372,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E06A6F35187F3B28007891FD /* libMortgageLibExternal.a in Frameworks */,
-				E06A6F32187F3949007891FD /* libIosCore.a in Frameworks */,
+				E05C232618C682E4009A3207 /* libIosCore.a in Frameworks */,
 				E052A210187E148800B0A358 /* EventKitUI.framework in Frameworks */,
 				E052A20E187E148100B0A358 /* EventKit.framework in Frameworks */,
 				E052A20C187E147000B0A358 /* Twitter.framework in Frameworks */,
@@ -571,6 +569,7 @@
 		51DA6A0714CF2F0D007F2584 = {
 			isa = PBXGroup;
 			children = (
+				E0C7957D18C6539D00DE6C19 /* MortgageResources.bundle */,
 				9D94F3F815DEECF80068FC85 /* Ipad */,
 				4C0CEED814D6634A00A1D325 /* Iphone */,
 				4C0CEEEB14D6634A00A1D325 /* Shared */,
@@ -599,9 +598,9 @@
 		51DA6A1514CF2F0D007F2584 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E06A6F34187F3B28007891FD /* libMortgageLibExternal.a */,
+				E05C232518C682E4009A3207 /* libIosCore.a */,
+				E081D88918C65440000C7B88 /* libMortgageLibExternal.a */,
 				E06A6F30187F3949007891FD /* libIosCore.a */,
-				E06A6F31187F3949007891FD /* libMortgageLibExternal.a */,
 				E052A20F187E148800B0A358 /* EventKitUI.framework */,
 				E052A20D187E148100B0A358 /* EventKit.framework */,
 				E052A20B187E147000B0A358 /* Twitter.framework */,
@@ -970,8 +969,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CFABE1E14D66A5400A4006F /* IosCoreResources.bundle in Resources */,
-				9D94F5EE15DEECF90068FC85 /* FakeLoadingScreenViewController_iPad.xib in Resources */,
+				E0A7CC5418C6B1CB0005797A /* IosCoreResources.bundle in Resources */,
 				9D94F5EF15DEECF90068FC85 /* FilmStripLandscapeViewController_iPad.xib in Resources */,
 				9D94F5F015DEECF90068FC85 /* FilmStripPortraitViewController_iPad.xib in Resources */,
 				9D94F5F315DEECF90068FC85 /* HelpViewController_iPad.xib in Resources */,
@@ -1052,7 +1050,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#${IOSRENTALCORE_LIB}/lib/Crashlytics/Crashlytics.framework/run 69c46441eff2d4c6f8a043fd66d16ff159cd9812\n./Crashlytics.framework/run 69c46441eff2d4c6f8a043fd66d16ff159cd9812";
+			shellScript = "../../mob-ioscore-lib/lib/Crashlytics/Crashlytics.framework/run 69c46441eff2d4c6f8a043fd66d16ff159cd9812\n./Crashlytics.framework/run 69c46441eff2d4c6f8a043fd66d16ff159cd9812";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1424,10 +1422,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(IOSRENTALCORE_LIB)/**",
-					"$(MORTGAGE_LIB)/**",
+					"../../mob-ioscore-lib/**",
+					"\"$(SRCROOT)/../lib/OCMock\"/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1461,10 +1459,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(IOSRENTALCORE_LIB)/**",
-					"$(MORTGAGE_LIB)/**",
+					"../../mob-ioscore-lib/**",
+					"\"$(SRCROOT)/../lib/OCMock\"/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
 					"-ObjC",
