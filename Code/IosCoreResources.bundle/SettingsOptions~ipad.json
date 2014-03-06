@@ -1,0 +1,32 @@
+ [
+  {
+  "url" : "REPLAY",
+  "title" : "Introduction",
+  "track" : ""
+  },
+  {
+  "url" : "\/help\/Trulia_iPhone-254\/?",
+  "title" : "Help",
+  "track" : ""
+  },
+  {
+  "url" : "\/terms\/?",
+  "title" : "Terms of Use",
+  "track" : "tos"
+  },
+  {
+  "url" : "\/privacy\/?",
+  "title" : "Privacy Policy",
+  "track" : "privacy"
+  },
+  {
+  "url" : "\/about\/?",
+  "title" : "About Trulia",
+  "track" : "about"
+  },
+  {
+  "file" : "copyright",
+  "title" : "Copyrights",
+  "track" : "copyright"
+  }
+  ]

@@ -35,9 +35,9 @@
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-
+    
     [super applicationWillEnterForeground:application];
-
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -48,7 +48,7 @@
         if ([managedObjectContext_ hasChanges] && ![managedObjectContext_ save:&error]) {
             GRLog(@"Unresolved error %@, %@", error, [error userInfo]);
             abort();
-        } 
+        }
     }
 }
 
@@ -100,4 +100,3 @@
 
 
 @end
-

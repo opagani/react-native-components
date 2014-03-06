@@ -57,7 +57,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>63</string>
+	<string>64</string>
 	<key>FacebookAppID</key>
 	<string>468741039850614</string>
 	<key>FacebookAppIDTest</key>
@@ -66,14 +66,8 @@
 	<array>
 		<string>offline_access</string>
 		<string>email</string>
-		<string>user_about_me</string>
 		<string>user_birthday</string>
-		<string>user_hometown</string>
 		<string>user_location</string>
-		<string>user_notes</string>
-		<string>user_status</string>
-		<string>user_website</string>
-		<string>user_work_history</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
