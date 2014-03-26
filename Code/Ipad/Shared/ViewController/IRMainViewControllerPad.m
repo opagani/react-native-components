@@ -66,7 +66,7 @@
         CGSize labelSize = [labelVersion.text sizeWithFont:labelVersion.font];
         [labelVersion setFrame:CGRectMake(0, 109.0, labelSize.width, labelSize.height)];
         
-        [self.searchViewController.mapViewController.mapViewMap addSubview:labelVersion];
+        [self.searchViewController.mapViewController.mapView addSubview:labelVersion];
 #endif
 	}
 }
