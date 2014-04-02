@@ -20,8 +20,8 @@
 }
 
 
-- (void)setupSort{
+/*- (void)setupSort{
     GRLog5(@"No sort for Rentals");
-}
+}*/
 
 @end

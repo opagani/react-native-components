@@ -167,13 +167,13 @@ void uncaughtExceptionHandler(NSException *exception) {
     [self setupAppConfigurationForIpad];
     [self getUserLocations];
     
-    /*if([SplashScreenViewController shouldShowMe]) {
-     [self initializeRootViewControllerForIpad]; //Cache rootview, so its ready when splash is dismissed
-     [self showSplashScreenForIpad];
-     }else{*/
-    [self initializeRootViewControllerForIpad];
-    [self setRootViewControllerForIpad];
-    //}
+    if([SplashScreenViewController shouldShowMe]) {
+        [self initializeRootViewControllerForIpad]; //Cache rootview, so its ready when splash is dismissed
+        [self showSplashScreenForIpad];
+    }else{
+        [self initializeRootViewControllerForIpad];
+        [self setRootViewControllerForIpad];
+    }
 }
 
 - (void)setRootViewControllerForIphone {
@@ -245,15 +245,9 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)launchIphoneApp
 {
-    /*if ([self shouldShowSplashScreenForIphone]){
-
-     // [self showSplashScreenForIphone];
-     [self initializeRootViewControllerForIphone]; //Cache rootview, so its ready when splash is dismissed
-     }else{*/
     [self initializeRootViewControllerForIphone];
     [self setRootViewControllerForIphone];
     [self showUpgradePopup];
-    //}
 }
 
 #pragma mark-

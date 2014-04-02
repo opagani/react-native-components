@@ -17,7 +17,7 @@ NSString *RecentSearchesKey = @"RecentSearchesKey";
     [super viewDidLoad];
 
     self.title = @"Recents";
-    self.contentSizeForViewInPopover = CGSizeMake(300.0, 264.0);
+    self.preferredContentSize = CGSizeMake(300.0, 264.0);
 
     // Set up the recent searches list, from user defaults or using an empty array.
     NSArray *recents = [[NSUserDefaults standardUserDefaults] objectForKey:RecentSearchesKey];

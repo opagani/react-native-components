@@ -18,8 +18,12 @@
 		<string>ssh://stash.sv2.trulia.com:7999/mob/mob-ios-rental-universal.git</string>
 		<key>4F418A28-C973-487A-956E-86420A89207C</key>
 		<string>https://github.com/samvermette/SVWebViewController.git</string>
+		<key>568CED94-8CEB-4DFA-A47B-2B6C31FC6DD0</key>
+		<string>https://github.com/grichards-trulia/FontAwesomeKit.git</string>
 		<key>5B0EBC62-1520-443B-ABA3-62B40AD6AC79</key>
 		<string>ssh://github.com/facebook/facebook-ios-sdk.git</string>
+		<key>69991231-A47F-4D36-955E-5351B11F78C0</key>
+		<string>ssh://github.com/samvermette/SVProgressHUD.git</string>
 		<key>7DB5B785-55D8-4DC6-94CA-EAC6A20C5442</key>
 		<string>https://github.com/rs/SDWebImage.git</string>
 		<key>9D750C83-D327-42E1-A78F-8286D360E999</key>
@@ -53,8 +57,12 @@
 		<string>../..</string>
 		<key>4F418A28-C973-487A-956E-86420A89207C</key>
 		<string>../../../mob-ioscore-lib/lib/SVWebViewController</string>
+		<key>568CED94-8CEB-4DFA-A47B-2B6C31FC6DD0</key>
+		<string>../../../mob-ioscore-lib/lib/FontAwesomeKit</string>
 		<key>5B0EBC62-1520-443B-ABA3-62B40AD6AC79</key>
 		<string>../../../mob-ioscore-lib/lib/facebook</string>
+		<key>69991231-A47F-4D36-955E-5351B11F78C0</key>
+		<string>../../../mob-ioscore-lib/lib/SVProgressHUD</string>
 		<key>7DB5B785-55D8-4DC6-94CA-EAC6A20C5442</key>
 		<string>../../../mob-ioscore-lib/lib/SDWebImage</string>
 		<key>9D750C83-D327-42E1-A78F-8286D360E999</key>
@@ -107,6 +115,14 @@
 			<string>5B0EBC62-1520-443B-ABA3-62B40AD6AC79</string>
 			<key>IDESourceControlWCCName</key>
 			<string>facebook</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>568CED94-8CEB-4DFA-A47B-2B6C31FC6DD0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FontAwesomeKit</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
@@ -187,6 +203,14 @@
 			<string>7DB5B785-55D8-4DC6-94CA-EAC6A20C5442</string>
 			<key>IDESourceControlWCCName</key>
 			<string>SDWebImage</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>69991231-A47F-4D36-955E-5351B11F78C0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SVProgressHUD</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

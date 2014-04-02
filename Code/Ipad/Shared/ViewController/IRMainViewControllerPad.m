@@ -63,7 +63,7 @@
         
         NSDictionary* infoDictionary = [[NSBundle mainBundle] infoDictionary];
         labelVersion.text = [NSString stringWithFormat:@"build %@-%@", [infoDictionary valueForKey:@"CFBundleShortVersionString"], [infoDictionary valueForKey:@"CFBundleVersion"]];
-        CGSize labelSize = [labelVersion.text sizeWithFont:labelVersion.font];
+        CGSize labelSize = [labelVersion.text sizeWithAttributes:@{NSFontAttributeName:labelVersion.font}];
         [labelVersion setFrame:CGRectMake(0, 109.0, labelSize.width, labelSize.height)];
         
         [self.searchViewController.mapViewController.mapView addSubview:labelVersion];
