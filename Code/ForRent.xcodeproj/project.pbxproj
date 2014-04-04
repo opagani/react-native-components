@@ -1277,12 +1277,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Fawad Haider (TA495TK554)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(IOSCORE_LIB)/lib\"/**",
 					"\"$(SRCROOT)/../lib/OCMock\"",
-					"\"$(BUILT_PRODUCTS_DIR)/../three20\"",
-					"\"$(BUILT_PRODUCTS_DIR)/../../three20\"",
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"\"$(SRCROOT)/../../IosCore/lib\"",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
@@ -1290,20 +1286,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(IOSCORE_LIB)/**",
-					"\"$(BUILT_PRODUCTS_DIR)/../three20\"",
-					"\"$(BUILT_PRODUCTS_DIR)/../../three20\"",
-					"\"$(SRCROOT)/../lib/OCMock\"/**",
-				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../lib/OCMock\"/**";
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../lib/OCMock\"",
-					"\"$(BUILT_PRODUCTS_DIR)/../three20\"",
-					"\"$(BUILT_PRODUCTS_DIR)/../../three20\"",
-					"\"$(IOSCORE_LIB)/lib\"/**",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
@@ -1334,30 +1322,22 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Fawad Haider (TA495TK554)";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 					"\"$(SRCROOT)/../lib/OCMock\"",
-					"$(BUILT_PRODUCTS_DIR)/../three20",
-					"$(BUILT_PRODUCTS_DIR)/../../three20",
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)/../../IosCore/lib\"",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				HEADER_SEARCH_PATHS = (
-					"\"$(IOSCORE_LIB)\"/**",
-					"\"$(BUILT_PRODUCTS_DIR)/../three20\"",
-					"\"$(BUILT_PRODUCTS_DIR)/../../three20\"",
-					"\"$(SRCROOT)/../lib/OCMock\"/**",
-				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../lib/OCMock\"/**";
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../lib/OCMock\"",
-					"\"$(SRCROOT)/../../IosCore/lib/three20/Build/Products/Release-iphoneos\"",
-					"$(BUILT_PRODUCTS_DIR)/../../three20",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1366,7 +1346,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				USER_HEADER_SEARCH_PATHS = "\"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts\"/** \"$(BUILT_PRODUCTS_DIR)/../three20\"/**";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
