@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
-               BuildableName = "For Rent.app"
+               BuildableName = "ForRent.app"
                BlueprintName = "ForRent"
                ReferencedContainer = "container:ForRent.xcodeproj">
             </BuildableReference>
@@ -28,7 +28,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3B1836361652B4AB009923F7"
+               BuildableName = "UnitTests.octest"
+               BlueprintName = "UnitTests"
+               ReferencedContainer = "container:ForRent.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
+            BuildableName = "ForRent.app"
+            BlueprintName = "ForRent"
+            ReferencedContainer = "container:ForRent.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -43,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
-            BuildableName = "For Rent.app"
+            BuildableName = "ForRent.app"
             BlueprintName = "ForRent"
             ReferencedContainer = "container:ForRent.xcodeproj">
          </BuildableReference>
@@ -61,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
-            BuildableName = "For Rent.app"
+            BuildableName = "ForRent.app"
             BlueprintName = "ForRent"
             ReferencedContainer = "container:ForRent.xcodeproj">
          </BuildableReference>
