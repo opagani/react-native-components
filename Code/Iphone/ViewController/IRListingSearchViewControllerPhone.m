@@ -44,7 +44,7 @@
 }
 
 - (void) initLayersMenuTable {
-    self.layersMenuTable = [[IRLayersMenuViewControllerPhone alloc] initWithNibName:@"ICLayersMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle] withSearchController:self.searchController];
+   // self.layersMenuTable = [[IRLayersMenuViewControllerPhone alloc] initWithNibName:@"ICLayersMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle] withSearchController:self.searchController];
 }
 
 - (void)showLayersAndNearbyButton {

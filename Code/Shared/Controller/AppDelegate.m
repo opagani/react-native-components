@@ -14,7 +14,7 @@
 #import "ICConfiguration.h"
 #import "ICStartupViewControllerPhone.h"
 #import "ICCoreDataController.h"
-#import "ICMyAccountViewControllerPhone.h"
+//#import "ICMyAccountViewControllerPhone.h"
 #import "ICSyncController.h"
 #import "ICSyncServiceNotification.h"
 #import "ICMainMenuViewControllerPhone.h"
@@ -27,10 +27,11 @@
 #endif
 
 #import "SplashScreenViewController.h"
-#import "ICPasteBoard.h"
+//#import "ICPasteBoard.h"
 #import "IAURLCache.h"
 #import "ICRouterInput.h"
 #import "ICApiRequest.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 #if TARGET_IPHONE_SIMULATOR
 //#import "PonyDebugger.h"
@@ -50,7 +51,7 @@
  #import "IRStartupViewControllerPhone.h"
  #import "IRMoreViewController.h"*/
 
-#import <NewRelicAgent/NewRelicAgent.h>
+
 #import <Crashlytics/Crashlytics.h>
 #import "ICListingDetailViewControllerPhone.h"
 #import "IAConstants.h"
@@ -64,6 +65,7 @@
 #import "IC+UIColor.h"
 #import "ICImageBundleUtil.h"
 #import "ICAppearance.h"
+#import "ICLog.h"
 
 #define MENU_FIND_AN_AGENT_STRING @"Find an Agent"
 #define MENU_OPEN_HOUSES_STRING   @"Open Houses"
@@ -79,8 +81,8 @@
 @synthesize isShowingGalleryView;
 
 void uncaughtExceptionHandler(NSException *exception) {
-    GRLog(@"CRASH: %@", exception);
-    GRLog(@"Stack Trace: %@", [exception callStackSymbols]);
+    GRLogCError(@"CRASH: %@", exception);
+    GRLogCError(@"Stack Trace: %@", [exception callStackSymbols]);
 }
 
 - (void)log:(NSString *)msg {
@@ -388,8 +390,9 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     ICListingSearchController *controller = [ICListingSearchController sharedInstance];
     if (![[controller currentSearch] isDeleted]) {
-        [[controller currentSearch] setIsHistory:YES];
+        [[controller currentSearch] markAsViewed];
     }
+    
     [[ICCoreDataController sharedInstance] saveWithNotification:YES];
 }
 
@@ -451,7 +454,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)showUpgradeAppPopup {
 	UIAlertView *upgradeAppAlert = [[UIAlertView alloc] initWithTitle: @"Get the new app" message: @"An updated version of the Trulia App is now available via iTunes." delegate: self cancelButtonTitle: @"Not Now" otherButtonTitles: @"Update", nil];
-    upgradeAppAlert.tag = TruliaPromoAlertTypeUpdate;
+    upgradeAppAlert.tag = TruliaAlertTypeUpdate;
 	
     [[ICMetricsController sharedInstance] trackPageView:@"promo|update app|view"];
     
@@ -471,11 +474,11 @@ void uncaughtExceptionHandler(NSException *exception) {
     //  **********************************************************************
     
     int tag = appAlert.tag;
-    if (tag == TruliaPromoAlertTypeUpdate || tag == TruliaPromoAlertTypeRateAppUniversal )
+    if (tag == TruliaAlertTypeUpdate || tag == TruliaPromoAlertTypeRateAppUniversal )
     {
         NSMutableString *trackingString = [NSMutableString stringWithString:@"promo"];
         
-        if (appAlert.tag == TruliaPromoAlertTypeUpdate)
+        if (appAlert.tag == TruliaAlertTypeUpdate)
         {
             [trackingString appendString:@"|update app"];
         }
@@ -594,7 +597,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     }
 }*/
 
--(void)routeInput:(ICRouterInput *)route
+/*-(void)routeInput:(ICRouterInput *)route
 {
     
     [[ICPreference sharedInstance] setAppForKey:@"TmaPrefetch" withAttribute:@"NO"];
@@ -658,7 +661,7 @@ void uncaughtExceptionHandler(NSException *exception) {
         
         [self.navController popToRootViewControllerAnimated:YES];
     }
-}
+}*/
 
 
 - (BOOL)application:(UIApplication *)application

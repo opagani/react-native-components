@@ -35,11 +35,9 @@
 		3B18364F1652B7E3009923F7 /* DeepLinkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B18364E1652B7E3009923F7 /* DeepLinkingTests.m */; };
 		3B4854901652BA4400C5A46D /* ICStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B48548F1652BA4400C5A46D /* ICStateTests.m */; };
 		3B5EF54B170B8DFC003F00ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B5EF549170B8DFC003F00ED /* Localizable.strings */; };
-		3BAC7D5816F7A0E0005E4508 /* NewRelicAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAC7D5716F7A0E0005E4508 /* NewRelicAgent.framework */; };
 		3BAC7D5E16F7A150005E4508 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAC7D5D16F7A150005E4508 /* CoreTelephony.framework */; };
 		3BB379FA16C42AA1006A253B /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB379F916C42AA1006A253B /* libicucore.dylib */; };
 		3BDE130716A4D934008E6754 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDE130616A4D934008E6754 /* MobileCoreServices.framework */; };
-		3BEF4F751702257500BA8529 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEF4F741702257500BA8529 /* Crashlytics.framework */; };
 		3BF8D8BE170E4611003EE773 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF8D8BD170E4611003EE773 /* StoreKit.framework */; };
 		4C0CF0BE14D6634B00A1D325 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0CEEEA14D6634A00A1D325 /* main.m */; };
 		4C0CF0C414D6634B00A1D325 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0CEEF914D6634A00A1D325 /* AppDelegate.m */; };
@@ -98,7 +96,6 @@
 		9D94F76B15DEECFA0068FC85 /* SchoolMapCalloutViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F5E215DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.xib */; };
 		9D94F88A15E2FA590068FC85 /* ICGeneral~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F88815E2FA590068FC85 /* ICGeneral~ipad.plist */; };
 		9D94F88B15E2FA590068FC85 /* ICMetric~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F88915E2FA590068FC85 /* ICMetric~ipad.plist */; };
-		9D94F88D15E2FBC70068FC85 /* ICConfiguration.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F88C15E2FBC60068FC85 /* ICConfiguration.bundle */; };
 		9DEF832B1607AE430087FA1A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEF832A1607AE430087FA1A /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B70EF2571743022D0018A01A /* IRLayersMenuViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */; };
 		B7EA94C51635E0CD00B02F3F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C41635E0CC00B02F3F /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -112,8 +109,16 @@
 		E052A20E187E148100B0A358 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E052A20D187E148100B0A358 /* EventKit.framework */; };
 		E052A210187E148800B0A358 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E052A20F187E148800B0A358 /* EventKitUI.framework */; };
 		E05C232618C682E4009A3207 /* libIosCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E05C232518C682E4009A3207 /* libIosCore.a */; };
-		E06C997118C7C63E00C1AAFB /* IosCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E06C997018C7C63E00C1AAFB /* IosCoreResources.bundle */; };
 		E06C997F18C7FBE300C1AAFB /* BgLoginPhoto@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E06C997E18C7FBE300C1AAFB /* BgLoginPhoto@2x.jpg */; };
+		E07EAABE19491426006BE023 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAABD19491426006BE023 /* FacebookSDK.framework */; };
+		E07EAAC419491E5D006BE023 /* NewRelicAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAAC319491E5D006BE023 /* NewRelicAgent.framework */; };
+		E07EAAC6194A30BA006BE023 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAAC5194A30BA006BE023 /* GoogleMaps.framework */; };
+		E07EAAC8194A30CF006BE023 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAAC7194A30CF006BE023 /* GLKit.framework */; };
+		E07EAACA194A30E9006BE023 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAAC9194A30E9006BE023 /* Parse.framework */; };
+		E07EAACC194A31B0006BE023 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAACB194A31B0006BE023 /* Crashlytics.framework */; };
+		E07EAACE194A34C3006BE023 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAACD194A34C2006BE023 /* libc++.dylib */; };
+		E07EAAD1194A7306006BE023 /* IosCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E07EAAD0194A7306006BE023 /* IosCoreResources.bundle */; };
+		E07EAAE8194A87F7006BE023 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E07EAAE7194A87F7006BE023 /* GoogleMaps.bundle */; };
 		E09036A318E3A383001200F2 /* logo-trulia.png in Resources */ = {isa = PBXBuildFile; fileRef = E09036A118E3A383001200F2 /* logo-trulia.png */; };
 		E09036A418E3A383001200F2 /* logo-trulia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E09036A218E3A383001200F2 /* logo-trulia@2x.png */; };
 		E09036A718E3A660001200F2 /* icon-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E09036A518E3A660001200F2 /* icon-logo.png */; };
@@ -149,6 +154,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 51DA6A1114CF2F0D007F2584;
 			remoteInfo = Trulia;
+		};
+		E07EAAD7194A7947006BE023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51DA6A0914CF2F0D007F2584 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C0CF11014D6643E00A1D325;
+			remoteInfo = ICConfiguration;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -252,7 +264,6 @@
 		9D94F5E215DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchoolMapCalloutViewController_iPad.xib; sourceTree = "<group>"; };
 		9D94F88815E2FA590068FC85 /* ICGeneral~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICGeneral~ipad.plist"; sourceTree = "<group>"; };
 		9D94F88915E2FA590068FC85 /* ICMetric~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~ipad.plist"; sourceTree = "<group>"; };
-		9D94F88C15E2FBC60068FC85 /* ICConfiguration.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ICConfiguration.bundle; path = Build/ICConfiguration.bundle; sourceTree = SOURCE_ROOT; };
 		9DEF832A1607AE430087FA1A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		B70EF2551743022D0018A01A /* IRLayersMenuViewControllerPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRLayersMenuViewControllerPhone.h; sourceTree = "<group>"; };
 		B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLayersMenuViewControllerPhone.m; sourceTree = "<group>"; };
@@ -271,6 +282,16 @@
 		E06A6F30187F3949007891FD /* libIosCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIosCore.a; path = "../../../Library/Developer/Xcode/DerivedData/ForRent-buvcmktxcsthhoafzgprqyqdkkly/Build/Products/Debug-iphoneos/libIosCore.a"; sourceTree = "<group>"; };
 		E06C997018C7C63E00C1AAFB /* IosCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IosCoreResources.bundle; sourceTree = "<group>"; };
 		E06C997E18C7FBE300C1AAFB /* BgLoginPhoto@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BgLoginPhoto@2x.jpg"; sourceTree = "<group>"; };
+		E07EAABD19491426006BE023 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = "../../mob-ioscore-lib/lib/FacebookSDK/FacebookSDK.framework"; sourceTree = "<group>"; };
+		E07EAAC319491E5D006BE023 /* NewRelicAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NewRelicAgent.framework; path = "../../mob-ioscore-lib/lib/NewRelicAgent.framework"; sourceTree = "<group>"; };
+		E07EAAC5194A30BA006BE023 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "../../mob-ioscore-lib/lib/GoogleMapsSDK/GoogleMaps-iOS-1.7.2/GoogleMaps.framework"; sourceTree = "<group>"; };
+		E07EAAC7194A30CF006BE023 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		E07EAAC9194A30E9006BE023 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../mob-ioscore-lib/lib/Parse.framework"; sourceTree = "<group>"; };
+		E07EAACB194A31B0006BE023 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = "../../mob-ioscore-lib/lib/Crashlytics/Crashlytics.framework"; sourceTree = "<group>"; };
+		E07EAACD194A34C2006BE023 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		E07EAAD0194A7306006BE023 /* IosCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosCoreResources.bundle; path = "../../mob-ioscore-lib/code/Build/IosCoreResources.bundle"; sourceTree = "<group>"; };
+		E07EAAD5194A78A8006BE023 /* ICConfiguration.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ICConfiguration.bundle; path = Build/ICConfiguration.bundle; sourceTree = "<group>"; };
+		E07EAAE7194A87F7006BE023 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "../../mob-ioscore-lib/lib/GoogleMapsSDK/GoogleMaps-iOS-1.7.2/GoogleMaps.bundle"; sourceTree = "<group>"; };
 		E081D88918C65440000C7B88 /* libMortgageLibExternal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMortgageLibExternal.a; path = "../../mob-iosmortgage-lib/build/Debug-iphoneos/libMortgageLibExternal.a"; sourceTree = "<group>"; };
 		E09036A118E3A383001200F2 /* logo-trulia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-trulia.png"; sourceTree = "<group>"; };
 		E09036A218E3A383001200F2 /* logo-trulia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-trulia@2x.png"; sourceTree = "<group>"; };
@@ -345,6 +366,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D94DEAC15D992F20068FC85 /* OpenGLES.framework in Frameworks */,
+				51802F5314CF799500199144 /* QuartzCore.framework in Frameworks */,
+				51802F5714CF79AA00199144 /* SystemConfiguration.framework in Frameworks */,
+				E07EAACE194A34C3006BE023 /* libc++.dylib in Frameworks */,
+				2E309C41167028D700A31BD0 /* CoreText.framework in Frameworks */,
+				51802F4714CF794500199144 /* CoreLocation.framework in Frameworks */,
+				E07EAACC194A31B0006BE023 /* Crashlytics.framework in Frameworks */,
+				E07EAACA194A30E9006BE023 /* Parse.framework in Frameworks */,
+				E07EAAC8194A30CF006BE023 /* GLKit.framework in Frameworks */,
+				E07EAAC6194A30BA006BE023 /* GoogleMaps.framework in Frameworks */,
+				E07EAAC419491E5D006BE023 /* NewRelicAgent.framework in Frameworks */,
+				E07EAABE19491426006BE023 /* FacebookSDK.framework in Frameworks */,
 				E05C232618C682E4009A3207 /* libIosCore.a in Frameworks */,
 				E052A210187E148800B0A358 /* EventKitUI.framework in Frameworks */,
 				E052A20E187E148100B0A358 /* EventKit.framework in Frameworks */,
@@ -362,24 +395,17 @@
 				51802F5514CF799E00199144 /* Security.framework in Frameworks */,
 				51802F4B14CF795800199144 /* CFNetwork.framework in Frameworks */,
 				3BDE130716A4D934008E6754 /* MobileCoreServices.framework in Frameworks */,
-				51802F5714CF79AA00199144 /* SystemConfiguration.framework in Frameworks */,
-				2E309C41167028D700A31BD0 /* CoreText.framework in Frameworks */,
 				B7EA94C71635E14800B02F3F /* Social.framework in Frameworks */,
 				B7EA94C51635E0CD00B02F3F /* Accounts.framework in Frameworks */,
 				9DEF832B1607AE430087FA1A /* AdSupport.framework in Frameworks */,
-				9D94DEAC15D992F20068FC85 /* OpenGLES.framework in Frameworks */,
 				5142AD091565A88200BBB7F8 /* AudioToolbox.framework in Frameworks */,
 				51E1597D14D2219800DB87CA /* AddressBook.framework in Frameworks */,
 				51E1597B14D2218F00DB87CA /* AddressBookUI.framework in Frameworks */,
-				51802F5314CF799500199144 /* QuartzCore.framework in Frameworks */,
 				51802F5114CF798C00199144 /* MessageUI.framework in Frameworks */,
 				51802F4F14CF798300199144 /* MapKit.framework in Frameworks */,
 				51DA6A1B14CF2F0D007F2584 /* CoreGraphics.framework in Frameworks */,
-				51802F4714CF794500199144 /* CoreLocation.framework in Frameworks */,
 				51802F4514CF793A00199144 /* AVFoundation.framework in Frameworks */,
 				51DA6A1714CF2F0D007F2584 /* UIKit.framework in Frameworks */,
-				3BAC7D5816F7A0E0005E4508 /* NewRelicAgent.framework in Frameworks */,
-				3BEF4F751702257500BA8529 /* Crashlytics.framework in Frameworks */,
 				26867400174FFC130078C3AA /* MobileAppTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,7 +533,6 @@
 			children = (
 				E047631A18C7B5DE0021210E /* MainMenuItems~ipad.json */,
 				E047631B18C7B5DE0021210E /* MainMenuItems~iphone.json */,
-				9D94F88C15E2FBC60068FC85 /* ICConfiguration.bundle */,
 				2E309C21167024BF00A31BD0 /* Fonts */,
 				4C0CEEEC14D6634A00A1D325 /* Category */,
 				4C0CEEF714D6634A00A1D325 /* Controller */,
@@ -539,6 +564,9 @@
 		51DA6A0714CF2F0D007F2584 = {
 			isa = PBXGroup;
 			children = (
+				E07EAAE7194A87F7006BE023 /* GoogleMaps.bundle */,
+				E07EAAD5194A78A8006BE023 /* ICConfiguration.bundle */,
+				E07EAAD0194A7306006BE023 /* IosCoreResources.bundle */,
 				E06C997018C7C63E00C1AAFB /* IosCoreResources.bundle */,
 				9D94F3F815DEECF80068FC85 /* Ipad */,
 				4C0CEED814D6634A00A1D325 /* Iphone */,
@@ -568,6 +596,13 @@
 		51DA6A1514CF2F0D007F2584 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E07EAACD194A34C2006BE023 /* libc++.dylib */,
+				E07EAACB194A31B0006BE023 /* Crashlytics.framework */,
+				E07EAAC9194A30E9006BE023 /* Parse.framework */,
+				E07EAAC7194A30CF006BE023 /* GLKit.framework */,
+				E07EAAC5194A30BA006BE023 /* GoogleMaps.framework */,
+				E07EAAC319491E5D006BE023 /* NewRelicAgent.framework */,
+				E07EAABD19491426006BE023 /* FacebookSDK.framework */,
 				E05C232518C682E4009A3207 /* libIosCore.a */,
 				E081D88918C65440000C7B88 /* libMortgageLibExternal.a */,
 				E06A6F30187F3949007891FD /* libIosCore.a */,
@@ -865,6 +900,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E07EAAD8194A7947006BE023 /* PBXTargetDependency */,
 			);
 			name = ForRent;
 			productName = Trulia;
@@ -923,6 +959,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07EAAE8194A87F7006BE023 /* GoogleMaps.bundle in Resources */,
+				E07EAAD1194A7306006BE023 /* IosCoreResources.bundle in Resources */,
 				E0A939FF18F27D4400222F2D /* ForRentIcon29x29.png in Resources */,
 				E0A93A0018F27D4400222F2D /* ForRentIcon58x58.png in Resources */,
 				E0A93A0118F27D4400222F2D /* ForRentIcon40x40.png in Resources */,
@@ -931,7 +969,6 @@
 				E0A93A0318F27D4400222F2D /* ForRentIcon76x76.png in Resources */,
 				E0A93A0418F27D4400222F2D /* ForRentIcon152x152.png in Resources */,
 				E0A93A0518F27D4400222F2D /* ForRentIcon120x120.png in Resources */,
-				E06C997118C7C63E00C1AAFB /* IosCoreResources.bundle in Resources */,
 				E047631C18C7B5DE0021210E /* MainMenuItems~ipad.json in Resources */,
 				E09036A818E3A660001200F2 /* icon-logo@2x.png in Resources */,
 				E0A939FA18F27A1E00222F2D /* trulia-rentals-768x1024@2x.png in Resources */,
@@ -944,7 +981,6 @@
 				9D94F60615DEECF90068FC85 /* SplashScreenViewController.xib in Resources */,
 				9D94F76B15DEECFA0068FC85 /* SchoolMapCalloutViewController_iPad.xib in Resources */,
 				E06C997F18C7FBE300C1AAFB /* BgLoginPhoto@2x.jpg in Resources */,
-				9D94F88D15E2FBC70068FC85 /* ICConfiguration.bundle in Resources */,
 				9D94D26F161A0B5C0089CEEC /* copyright.html in Resources */,
 				9D94D279161A0B5C0089CEEC /* InfoPlist.strings in Resources */,
 				E0A98EC318ECB64E006E5581 /* iPhoneSplash1@2x.jpg in Resources */,
@@ -1053,6 +1089,11 @@
 			isa = PBXTargetDependency;
 			target = 51DA6A1114CF2F0D007F2584 /* ForRent */;
 			targetProxy = 9D3728981666B0900018B275 /* PBXContainerItemProxy */;
+		};
+		E07EAAD8194A7947006BE023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C0CF11014D6643E00A1D325 /* ICConfiguration */;
+			targetProxy = E07EAAD7194A7947006BE023 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1259,6 +1300,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -1306,6 +1348,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -1347,6 +1390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Trulia Inc";
@@ -1355,9 +1399,13 @@
 				DEPLOYMENT_POSTPROCESSING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/../lib/NewRelic/NewRelic_iOS_Agent_1.300\"",
 					"\"$(SRCROOT)/../lib/Crashlytics\"",
+					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib/FacebookSDK",
+					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib",
+					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib/GoogleMapsSDK/GoogleMaps-iOS-1.7.2",
+					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib/Crashlytics",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
@@ -1396,6 +1444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Trulia Inc";
@@ -1404,9 +1453,13 @@
 				DEPLOYMENT_POSTPROCESSING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/../lib/NewRelic/NewRelic_iOS_Agent_1.300\"",
 					"\"$(SRCROOT)/../lib/Crashlytics\"",
+					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib/FacebookSDK",
+					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib",
+					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib/GoogleMapsSDK/GoogleMaps-iOS-1.7.2",
+					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib/Crashlytics",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;

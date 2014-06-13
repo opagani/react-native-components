@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Trulia Inc. All rights reserved.
 //
 
-#import "IRLayersMenuViewControllerPhone.h"
+/*#import "IRLayersMenuViewControllerPhone.h"
 
 @interface IRLayersMenuViewControllerPhone ()
 
@@ -50,4 +50,4 @@
     }
 }
 
-@end
+@end*/

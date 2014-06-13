@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Trulia Inc. All rights reserved.
 //
 
-#import "IRListingSearchToolBarPad.h"
+/*#import "IRListingSearchToolBarPad.h"
 
 @implementation IRListingSearchToolBarPad
 
@@ -20,8 +20,8 @@
 }
 
 
-/*- (void)setupSort{
+- (void)setupSort{
     GRLog5(@"No sort for Rentals");
-}*/
+}
 
-@end
+@end*/

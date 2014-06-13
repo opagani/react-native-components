@@ -84,7 +84,8 @@
             
         case 1:
             cell.title = @"My Searches";
-            int searchCount = [[ICManagedSearch managedObjectsWithCategoryName:MANAGED_CATEGORY_FAVORITES] count];
+            //int searchCount = [[ICManagedSearch managedObjectsWithCategoryName:MANAGED_CATEGORY_FAVORITES] count];
+            int searchCount = 0;
             cell.counter = [NSString stringWithFormat:@"%d", searchCount];
             break;
             

@@ -46,7 +46,7 @@
     NSError *error = nil;
     if (managedObjectContext_ != nil) {
         if ([managedObjectContext_ hasChanges] && ![managedObjectContext_ save:&error]) {
-            GRLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            //GRLog(@"Unresolved error %@, %@", error, [error userInfo]);
             abort();
         }
     }

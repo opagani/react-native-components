@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Trulia Inc. All rights reserved.
 //
 
-#import "ICListingSearchToolBarPad.h"
+/*#import "ICListingSearchToolBarPad.h"
 
 @interface IRListingSearchToolBarPad : ICListingSearchToolBarPad
 
-@end
+@end*/
