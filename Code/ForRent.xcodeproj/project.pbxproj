@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */; };
 		266139DB164AF82E00D19093 /* IAURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 266139DA164AF82E00D19093 /* IAURLCache.m */; };
 		26867400174FFC130078C3AA /* MobileAppTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268673FF174FFC130078C3AA /* MobileAppTracker.framework */; };
 		26AC16D817416415005D4FFE /* IRListingRefineViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AC16D717416415005D4FFE /* IRListingRefineViewControllerPhone.m */; };
 		26AE6106173DAF2500E0410D /* IRListingSearchViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AE6105173DAF2500E0410D /* IRListingSearchViewControllerPhone.m */; };
+		26AF8358194F638500F807EB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAABD19491426006BE023 /* FacebookSDK.framework */; };
+		26AF8359194F640D00F807EB /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAAC5194A30BA006BE023 /* GoogleMaps.framework */; };
+		26AF835F1950BC8F00F807EB /* ICConfiguration.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 26AF835E1950BC8F00F807EB /* ICConfiguration.bundle */; };
 		2E1AD2F2165436B500C81545 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1AD2F1165436B500C81545 /* libz.dylib */; };
 		2E309C2E167024BF00A31BD0 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E309C23167024BF00A31BD0 /* LICENSE.txt */; };
 		2E309C2F167024BF00A31BD0 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E309C24167024BF00A31BD0 /* OpenSans-Bold.ttf */; };
@@ -110,9 +114,7 @@
 		E052A210187E148800B0A358 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E052A20F187E148800B0A358 /* EventKitUI.framework */; };
 		E05C232618C682E4009A3207 /* libIosCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E05C232518C682E4009A3207 /* libIosCore.a */; };
 		E06C997F18C7FBE300C1AAFB /* BgLoginPhoto@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E06C997E18C7FBE300C1AAFB /* BgLoginPhoto@2x.jpg */; };
-		E07EAABE19491426006BE023 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAABD19491426006BE023 /* FacebookSDK.framework */; };
 		E07EAAC419491E5D006BE023 /* NewRelicAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAAC319491E5D006BE023 /* NewRelicAgent.framework */; };
-		E07EAAC6194A30BA006BE023 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAAC5194A30BA006BE023 /* GoogleMaps.framework */; };
 		E07EAAC8194A30CF006BE023 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAAC7194A30CF006BE023 /* GLKit.framework */; };
 		E07EAACA194A30E9006BE023 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAAC9194A30E9006BE023 /* Parse.framework */; };
 		E07EAACC194A31B0006BE023 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAACB194A31B0006BE023 /* Crashlytics.framework */; };
@@ -165,6 +167,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "LocalInfoItems~iphone.json"; path = "Resources/jsons/LocalInfoItems~iphone.json"; sourceTree = "<group>"; };
 		266139D9164AF82E00D19093 /* IAURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAURLCache.h; path = ../../Ipad/Shared/Controller/IAURLCache.h; sourceTree = "<group>"; };
 		266139DA164AF82E00D19093 /* IAURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IAURLCache.m; path = ../../Ipad/Shared/Controller/IAURLCache.m; sourceTree = "<group>"; };
 		268673FF174FFC130078C3AA /* MobileAppTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileAppTracker.framework; sourceTree = "<group>"; };
@@ -172,6 +175,7 @@
 		26AC16D717416415005D4FFE /* IRListingRefineViewControllerPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRListingRefineViewControllerPhone.m; sourceTree = "<group>"; };
 		26AE6104173DAF2500E0410D /* IRListingSearchViewControllerPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRListingSearchViewControllerPhone.h; sourceTree = "<group>"; };
 		26AE6105173DAF2500E0410D /* IRListingSearchViewControllerPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRListingSearchViewControllerPhone.m; sourceTree = "<group>"; };
+		26AF835E1950BC8F00F807EB /* ICConfiguration.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ICConfiguration.bundle; path = Build/ICConfiguration.bundle; sourceTree = "<group>"; };
 		2E1AD2F1165436B500C81545 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		2E309C23167024BF00A31BD0 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		2E309C24167024BF00A31BD0 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -290,7 +294,6 @@
 		E07EAACB194A31B0006BE023 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = "../../mob-ioscore-lib/lib/Crashlytics/Crashlytics.framework"; sourceTree = "<group>"; };
 		E07EAACD194A34C2006BE023 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		E07EAAD0194A7306006BE023 /* IosCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosCoreResources.bundle; path = "../../mob-ioscore-lib/code/Build/IosCoreResources.bundle"; sourceTree = "<group>"; };
-		E07EAAD5194A78A8006BE023 /* ICConfiguration.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ICConfiguration.bundle; path = Build/ICConfiguration.bundle; sourceTree = "<group>"; };
 		E07EAAE7194A87F7006BE023 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "../../mob-ioscore-lib/lib/GoogleMapsSDK/GoogleMaps-iOS-1.7.2/GoogleMaps.bundle"; sourceTree = "<group>"; };
 		E081D88918C65440000C7B88 /* libMortgageLibExternal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMortgageLibExternal.a; path = "../../mob-iosmortgage-lib/build/Debug-iphoneos/libMortgageLibExternal.a"; sourceTree = "<group>"; };
 		E09036A118E3A383001200F2 /* logo-trulia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-trulia.png"; sourceTree = "<group>"; };
@@ -366,6 +369,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26AF8359194F640D00F807EB /* GoogleMaps.framework in Frameworks */,
+				26AF8358194F638500F807EB /* FacebookSDK.framework in Frameworks */,
 				9D94DEAC15D992F20068FC85 /* OpenGLES.framework in Frameworks */,
 				51802F5314CF799500199144 /* QuartzCore.framework in Frameworks */,
 				51802F5714CF79AA00199144 /* SystemConfiguration.framework in Frameworks */,
@@ -375,9 +380,7 @@
 				E07EAACC194A31B0006BE023 /* Crashlytics.framework in Frameworks */,
 				E07EAACA194A30E9006BE023 /* Parse.framework in Frameworks */,
 				E07EAAC8194A30CF006BE023 /* GLKit.framework in Frameworks */,
-				E07EAAC6194A30BA006BE023 /* GoogleMaps.framework in Frameworks */,
 				E07EAAC419491E5D006BE023 /* NewRelicAgent.framework in Frameworks */,
-				E07EAABE19491426006BE023 /* FacebookSDK.framework in Frameworks */,
 				E05C232618C682E4009A3207 /* libIosCore.a in Frameworks */,
 				E052A210187E148800B0A358 /* EventKitUI.framework in Frameworks */,
 				E052A20E187E148100B0A358 /* EventKit.framework in Frameworks */,
@@ -413,6 +416,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		261196591950F3E200C4F392 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		26E2056315FFE2CA00B29DE6 /* lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,8 +575,9 @@
 		51DA6A0714CF2F0D007F2584 = {
 			isa = PBXGroup;
 			children = (
+				261196591950F3E200C4F392 /* Resources */,
+				26AF835E1950BC8F00F807EB /* ICConfiguration.bundle */,
 				E07EAAE7194A87F7006BE023 /* GoogleMaps.bundle */,
-				E07EAAD5194A78A8006BE023 /* ICConfiguration.bundle */,
 				E07EAAD0194A7306006BE023 /* IosCoreResources.bundle */,
 				E06C997018C7C63E00C1AAFB /* IosCoreResources.bundle */,
 				9D94F3F815DEECF80068FC85 /* Ipad */,
@@ -969,6 +981,7 @@
 				E0A93A0318F27D4400222F2D /* ForRentIcon76x76.png in Resources */,
 				E0A93A0418F27D4400222F2D /* ForRentIcon152x152.png in Resources */,
 				E0A93A0518F27D4400222F2D /* ForRentIcon120x120.png in Resources */,
+				26AF835F1950BC8F00F807EB /* ICConfiguration.bundle in Resources */,
 				E047631C18C7B5DE0021210E /* MainMenuItems~ipad.json in Resources */,
 				E09036A818E3A660001200F2 /* icon-logo@2x.png in Resources */,
 				E0A939FA18F27A1E00222F2D /* trulia-rentals-768x1024@2x.png in Resources */,
@@ -976,6 +989,7 @@
 				E0A939FB18F27A1E00222F2D /* trulia-rentals-1024@768@2x.png in Resources */,
 				E047631D18C7B5DE0021210E /* MainMenuItems~iphone.json in Resources */,
 				E03A78A01884749600317FB6 /* MortgageResources.bundle in Resources */,
+				2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */,
 				E0A98EBF18ECB597006E5581 /* QueSaveSearch@2x.png in Resources */,
 				9D94F60515DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.xib in Resources */,
 				9D94F60615DEECF90068FC85 /* SplashScreenViewController.xib in Resources */,
@@ -1305,7 +1319,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Trulia Inc";
+				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1335,7 +1349,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = ForRent;
-				PROVISIONING_PROFILE = "82FB6600-B17A-45E0-9D86-0301F6F75B28";
+				PROVISIONING_PROFILE = "42D525B8-9AED-4D7E-AF64-8617354F4F7A";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1353,7 +1367,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Trulia Inc";
+				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1377,7 +1391,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = ForRent;
-				PROVISIONING_PROFILE = "82FB6600-B17A-45E0-9D86-0301F6F75B28";
+				PROVISIONING_PROFILE = "42D525B8-9AED-4D7E-AF64-8617354F4F7A";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1392,8 +1406,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Trulia Inc";
+				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
@@ -1402,10 +1416,8 @@
 					"$(SRCROOT)",
 					"\"$(SRCROOT)/../lib/NewRelic/NewRelic_iOS_Agent_1.300\"",
 					"\"$(SRCROOT)/../lib/Crashlytics\"",
-					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib/FacebookSDK",
-					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib",
-					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib/GoogleMapsSDK/GoogleMaps-iOS-1.7.2",
-					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib/Crashlytics",
+					"\"$(SRCROOT)/../lib\"/**",
+					"\"$(SRCROOT)/../../mob-ioscore-lib/lib\"/**",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
@@ -1430,7 +1442,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ForRent;
-				PROVISIONING_PROFILE = "82FB6600-B17A-45E0-9D86-0301F6F75B28";
+				PROVISIONING_PROFILE = "42D525B8-9AED-4D7E-AF64-8617354F4F7A";
 				SEPARATE_STRIP = YES;
 				SKIP_INSTALL = NO;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1446,8 +1458,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Trulia Inc";
+				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
@@ -1456,10 +1468,8 @@
 					"$(SRCROOT)",
 					"\"$(SRCROOT)/../lib/NewRelic/NewRelic_iOS_Agent_1.300\"",
 					"\"$(SRCROOT)/../lib/Crashlytics\"",
-					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib/FacebookSDK",
-					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib",
-					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib/GoogleMapsSDK/GoogleMaps-iOS-1.7.2",
-					"/Users/nshevade/GirProjects/mob-ioscore-lib/lib/Crashlytics",
+					"\"$(SRCROOT)/../lib\"/**",
+					"\"$(SRCROOT)/../../mob-ioscore-lib/lib\"/**",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
@@ -1479,7 +1489,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ForRent;
-				PROVISIONING_PROFILE = "82FB6600-B17A-45E0-9D86-0301F6F75B28";
+				PROVISIONING_PROFILE = "42D525B8-9AED-4D7E-AF64-8617354F4F7A";
 				SEPARATE_STRIP = YES;
 				SKIP_INSTALL = NO;
 				STRIP_INSTALLED_PRODUCT = NO;
