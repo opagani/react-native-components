@@ -43,9 +43,9 @@
 
 }
 
-- (void) initLayersMenuTable {
+//- (void) initLayersMenuTable {
    // self.layersMenuTable = [[IRLayersMenuViewControllerPhone alloc] initWithNibName:@"ICLayersMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle] withSearchController:self.searchController];
-}
+//}
 
 - (void)showLayersAndNearbyButton {
     self.btnLayers.hidden = NO;
