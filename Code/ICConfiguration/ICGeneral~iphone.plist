@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>comScore</key>
+	<dict>
+		<key>CustomerC2</key>
+		<string>6036483</string>
+		<key>PublisherSecret</key>
+		<string>7d61af28edda3d4a46d945b37075d33b</string>
+	</dict>
 	<key>SupportsGeofencing</key>
 	<true/>
 	<key>validBathValues</key>
