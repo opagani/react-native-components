@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>GoogleMapsApiKeyDebug</key>
+	<string>AIzaSyBg2s4i7ObOQDtRlkswxPjTAE5ALs3IkKI</string>
+	<key>GoogleMapsApiKey</key>
+	<string>AIzaSyDaqoVTkn61OASjdVCHisA5JBpnsP7jaUo</string>
 	<key>comScore</key>
 	<dict>
 		<key>CustomerC2</key>
