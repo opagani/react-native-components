@@ -369,13 +369,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E309C41167028D700A31BD0 /* CoreText.framework in Frameworks */,
 				26AF8359194F640D00F807EB /* GoogleMaps.framework in Frameworks */,
 				26AF8358194F638500F807EB /* FacebookSDK.framework in Frameworks */,
 				9D94DEAC15D992F20068FC85 /* OpenGLES.framework in Frameworks */,
 				51802F5314CF799500199144 /* QuartzCore.framework in Frameworks */,
 				51802F5714CF79AA00199144 /* SystemConfiguration.framework in Frameworks */,
 				E07EAACE194A34C3006BE023 /* libc++.dylib in Frameworks */,
-				2E309C41167028D700A31BD0 /* CoreText.framework in Frameworks */,
 				51802F4714CF794500199144 /* CoreLocation.framework in Frameworks */,
 				E07EAACC194A31B0006BE023 /* Crashlytics.framework in Frameworks */,
 				E07EAACA194A30E9006BE023 /* Parse.framework in Frameworks */,
