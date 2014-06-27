@@ -5,7 +5,7 @@
             {"title":"Login" , "configureCellMethod":"configureLoginCell:atIndexPath:", "cellIdentifier":"loginCell" ,"customActionMethod":"actionLoginClicked:"}
         ]}
         ,{"title":"SEARCH","items":[
-            {"title":"My Saves","icon":"icon-mysaves.png" ,"trackEventName":"my-saves", "customActionMethod":"actionSavesClicked:","badge":{"show":1,"name":"mySaves"}}
+            {"title":"My Saves","icon":"icon-mySavesHeart.png" ,"trackEventName":"my-saves", "customActionMethod":"actionSavesClicked:","badge":{"show":1,"name":"mySaves"}}
             ,{"title":"For Rent","icon":"icon-forrent-search.png","idt":"for rent" , "trackEventName":"search-for-rent"}
         ]}
         ,{"title":"TRULIA APPS","items":[

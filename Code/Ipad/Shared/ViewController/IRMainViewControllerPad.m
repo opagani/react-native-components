@@ -25,6 +25,8 @@
 
     if(!self.filterViewController)
 		self.filterViewController = [[IRFilterViewControllerPad alloc] initWithSearchController:self.searchViewController.searchController];
+        
+
 }
 
 /*- (ICListingSearchToolBarPad *)searchToolBarPad{

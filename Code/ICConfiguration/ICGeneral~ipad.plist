@@ -236,6 +236,21 @@
 		<string>4</string>
 		<string>5</string>
 	</array>
+	<key>validLotSizesValues</key>
+	<array>
+		<string>Any</string>
+		<string>2,000+ sqft</string>
+		<string>3,000+ sqft</string>
+		<string>4,000+ sqft</string>
+		<string>5,000+ sqft</string>
+		<string>7,500+ sqft</string>
+		<string>1/4+ acre</string>
+		<string>1/2+ acre</string>
+		<string>1+ acre</string>
+		<string>2+ acre</string>
+		<string>5+ acre</string>
+		<string>10+ acre</string>
+	</array>
 	<key>comScore</key>
 	<dict>
 		<key>CustomerC2</key>

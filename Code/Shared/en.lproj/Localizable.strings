@@ -188,6 +188,8 @@
 "ForeClosurePromptTitle"                        = "Do you want to leave the Trulia App?";
 "ForeClosurePromptMessage"                      = "We'll take you to the foreclosure website.";
 "RedirectURLPromptMessage"                      = "We'll take you to the provider website.";
+"NameYourSearch"                                = "Name your Search";
+"ExampleSearchName"                             = "Ex Close to work, great schools";
 
 /* general error */
 "ListingsZoomedOutTooFar"= "Please zoom in to see your results.";
