@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Trulia Inc. All rights reserved.
 //
 
+#if 0
+
 #import "IRListingDetailViewControllerPad.h"
 #import "ICListing.h"
 #import "UIButton+UIButton_SaveUnSaveListing.h"
@@ -72,3 +74,5 @@
 }*/
 
 @end
+
+#endif
