@@ -11,7 +11,7 @@
 #import "IRListingSearchToolBarPad.h"
 #import "UIApplication+ICAdditions.h"
 #import "IRListingSearchViewControllerPhone.h"
-
+#import "IRListingRefineViewControllerPad.h"
 
 #define TABLE_WIDTH_TOOLBAR 320
 
@@ -21,13 +21,13 @@
 
 @implementation IRMainViewControllerPad
 
-- (void)initializeFilterView{
+/*- (void)initializeFilterView{
 
     if(!self.filterViewController)
 		self.filterViewController = [[IRFilterViewControllerPad alloc] initWithSearchController:self.searchViewController.searchController];
         
 
-}
+}*/
 
 /*- (ICListingSearchToolBarPad *)searchToolBarPad{
     
@@ -43,7 +43,34 @@
     return @"";
 }
 
--(void)loadMapAndTable{
+- (IBAction)actionShowRefine:(id)sender; {
+    
+    [[ICMetricsController sharedInstance] trackToolbarClick:[ICMetricsController VAR_ACTION_REFINE]];
+    IRListingRefineViewControllerPad *viewController = [[IRListingRefineViewControllerPad alloc] initWithSearchController:self.searchController];
+    [viewController setDelegate:self];
+    self.isFilterViewVisible = YES;
+    
+    viewController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    UINavigationController * navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    UIView* filterButton = nil;
+    if ([sender isKindOfClass:[UIView class]]){
+        filterButton = sender;
+    }
+    
+    if (filterButton){
+        CGRect rectToPopoverFrom = [self.view convertRect:filterButton.frame fromView:[filterButton superview]];
+        
+        if (![self.refinePopOverController isPopoverVisible]){
+            self.refinePopOverController = [[UIPopoverController alloc] initWithContentViewController:navController];
+            self.refinePopOverController.popoverContentSize = CGSizeMake(320.0f, 630.0f);
+            [self.refinePopOverController.contentViewController.view setBackgroundColor:[UIColor whiteColor]];
+            viewController.title = @"Search";
+            [self.refinePopOverController presentPopoverFromRect:rectToPopoverFrom inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+        }
+    }
+}
+
+/*-(void)loadMapAndTable{
     
     if (!self.searchViewController) {
         
@@ -71,7 +98,7 @@
         [self.searchViewController.mapViewController.mapView addSubview:labelVersion];
 #endif
 	}
-}
+}*/
 
 - (void)updateChildViewsWithFrameSize:(CGSize)frameSize{
     

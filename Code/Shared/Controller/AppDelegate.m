@@ -53,7 +53,7 @@
 
 
 #import <Crashlytics/Crashlytics.h>
-#import "ICListingDetailViewControllerPhone.h"
+//#import "ICListingDetailViewControllerPhone.h"
 #import "IAConstants.h"
 #import "ICFindAgentViewController.h"
 #import "IC+UIViewController.h"
@@ -325,7 +325,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     if ([self.window respondsToSelector:@selector(tintColor)])
-        [self.window setTintColor:[UIColor truliaLimeGreen]];
+        [self.window setTintColor:[UIColor truliaGreen]];
     // the color background is white so that it natches with the background when status bar hides in the photoviewcontroller
     self.window.backgroundColor = [UIColor whiteColor];
     

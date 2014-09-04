@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Trulia Inc. All rights reserved.
 //
 
+#if 0
+
 #import "IRFilterViewControllerPad.h"
 #import "ICListingSearchController.h"
 #import "ICManagedSearch.h"
@@ -119,3 +121,6 @@
 }
 
 @end
+
+#endif
+
