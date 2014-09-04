@@ -1,0 +1,131 @@
+{
+    "01.Crime":{
+        "icon":"iconLocalMenuCrime.png",
+        "iconLarge":"iconLocalMenuCrimeLarge.png",
+        "text":"Crime",
+        "allowMultiSelection":"NO",
+        "enumId":"101"
+    },
+    "02.Affordability":{
+        "icon":"iconLocalMenuAffordability.png",
+        "iconLarge":"iconLocalMenuAffordabilityLarge.png",
+        "isParent":"YES",
+        "text":"Affordability",
+        "allowMultiSelection":"NO",
+        "count":"4",
+        "kids":{
+            "17.Listing Price":{
+                "text":"Listing Price",
+                "parent":"01.Affordability",
+                "enumId":"105",
+            },
+            "18.Sale Price":{
+                "text":"Sale Price",
+                "parent":"01.Affordability",
+                "enumId":"106",
+            },
+            "19.Sale Price/Sqft":{
+                "text":"Sale Price/Sqft",
+                "parent":"01.Affordability",
+                "enumId":"107",
+            },
+            "20.Rental Price":{
+                "text":"Rental Price",
+                "parent":"01.Affordability",
+                "enumId":"104",
+            }
+        }
+    },
+    "03.Natural Disasters":{
+        "icon":"iconLocalMenuNaturalDisasters.png",
+        "iconLarge":"iconLocalMenuNaturalDisastersLarge.png",
+        "isVisible":"YES",
+        "isParent":"YES",
+        "text":"Natural Disasters",
+        "allowMultiSelection":"NO",
+        "count":"3",
+        "kids":{
+            "22.Flood":{
+                "text":"Flood",
+                "parent":"06.Natural Disasters",
+                "enumId":"102",
+            },
+            "23.Seismic":{
+                "text":"Earthquake",
+                "parent":"06.Natural Disasters",
+                "enumId":"103",
+            },
+            "24.Tornado":{
+                "text":"Tornado",
+                "parent":"06.Natural Disasters",
+                "enumId":"108",
+            },
+            "25.Hurricane":{
+                "text":"Hurricane",
+                "parent":"06.Natural Disasters",
+                "enumId":"110",
+            },
+            "26.Wildfire":{
+                "text":"Wildfire",
+                "parent":"06.Natural Disasters",
+                "enumId":"109",
+            }
+        }
+    },
+    "04.Schools":{
+        "icon":"iconLocalMenuSchools.png",
+        "iconLarge":"iconLocalMenuSchoolsLarge.png",
+        "text":"Schools",
+        "isParent":"YES",
+        "allowMultiSelection":"YES",
+        "count":"3",
+        "kids":{
+            "02.Elementary":{
+                "text":"Elementary",
+                "parent":"01.Schools",
+                "enumId":"205",
+            },
+            "03.Middle":{
+                "text":"Middle",
+                "parent":"01.Schools",
+                "enumId":"206",
+            },
+            "04.High":{
+                "text":"High",
+                "parent":"01.Schools",
+                "enumId":"207",
+            }
+        }
+    },
+    "05.Amenities":{
+        "icon":"iconLocalMenuAmenities.png",
+        "iconLarge":"iconLocalMenuAmenitiesLarge.png",
+        "text":"Amenities",
+        "isParent":"YES",
+        "allowMultiSelection":"YES",
+        "indented":"NO",
+        "count":"4",
+        "kids":{
+            "06.Restaurants":{
+                "text":"Restaurants",
+                "parent":"05.Amenities",
+                "enumId":"201",
+            },
+            "07.Groceries":{
+                "text":"Groceries",
+                "parent":"05.Amenities",
+                "enumId":"202",
+            },
+            "08.Gas Stations":{
+                "text":"Gas Stations",
+                "parent":"05.Amenities",
+                "enumId":"203",
+            },
+            "09.Banks":{
+                "text":"Banks",
+                "parent":"05.Amenities",
+                "enumId":"204",
+            }
+        }
+    }
+}

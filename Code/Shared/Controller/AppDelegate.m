@@ -130,26 +130,20 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)initializeRootViewControllerForIpad
 {
-    /*ICMainMenuViewControllerPhone *menu = [[ICMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle] menuItems:[self getMainMenuForIdiom:UI_USER_INTERFACE_IDIOM()]];
-     self.viewController = [[ICLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController: [IRMainViewControllerPad sharedInstance]];
-     
-     [IRMainViewControllerPad sharedInstance].toggleMenuBlock = ^(BOOL show){
-     [self.viewController toggleMenu:show];
-     };
-     
-     [IRMainViewControllerPad sharedInstance].leftMenuViewController = self.viewController;*/
-    
     ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
     currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
     
     [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
     
-    ICMainMenuViewControllerPhone *menu = [[ICMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
-    self.leftViewController = [[IRLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController: [IRMainViewControllerPad sharedInstance]];
-    
-    [IRMainViewControllerPad sharedInstance].toggleMenuBlock = ^(BOOL show){
+    IRMainViewControllerPad *searchController = [IRMainViewControllerPad sharedInstance];
+    searchController.toggleMenuBlock = ^(BOOL show){
         [self.leftViewController toggleMenu:show];
     };
+    
+    ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
+    
+    ICMainMenuViewControllerPhone *menu = [[ICMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
+    self.leftViewController = [[IRLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController:navCtr];
     
     [ICMainViewControllerPad sharedInstance].leftMenuViewController = self.leftViewController;
 }
