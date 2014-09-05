@@ -221,7 +221,6 @@
 	</array>
 	<key>validBedValues</key>
 	<array>
-		<string></string>
 		<string>Any</string>
 		<string>0</string>
 		<string>1</string>
@@ -229,9 +228,6 @@
 		<string>3</string>
 		<string>4</string>
 		<string>5</string>
-		<string></string>
-		<string></string>
-		<string></string>
 	</array>
 	<key>validLotSizesValues</key>
 	<array>
@@ -250,7 +246,6 @@
 	</array>
 	<key>validBathValues</key>
 	<array>
-		<string></string>
 		<string>Any</string>
 		<string>0</string>
 		<string>1</string>
@@ -258,9 +253,6 @@
 		<string>3</string>
 		<string>4</string>
 		<string>5</string>
-		<string></string>
-		<string></string>
-		<string></string>
 	</array>
 	<key>comScore</key>
 	<dict>
