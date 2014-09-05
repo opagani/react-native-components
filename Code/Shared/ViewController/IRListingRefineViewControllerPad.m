@@ -31,10 +31,15 @@
     self.refineModeSegmentedControl.selectedSegmentIndex = 0;
 }
 
+- (ICListingRefineMode)currentMode {
+    return ICListingRefineModeForRent;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation
