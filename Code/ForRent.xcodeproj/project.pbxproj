@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */; };
 		266139DB164AF82E00D19093 /* IAURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 266139DA164AF82E00D19093 /* IAURLCache.m */; };
+		26779DE519B93E88001EE88D /* MainMenuItems~ipad.json in Resources */ = {isa = PBXBuildFile; fileRef = 26779DE319B93E88001EE88D /* MainMenuItems~ipad.json */; };
+		26779DE619B93E88001EE88D /* MainMenuItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 26779DE419B93E88001EE88D /* MainMenuItems~iphone.json */; };
 		26867400174FFC130078C3AA /* MobileAppTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268673FF174FFC130078C3AA /* MobileAppTracker.framework */; };
 		269D198919B914AE000440BC /* IRListingRefineViewControllerPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D198819B914AE000440BC /* IRListingRefineViewControllerPad.m */; };
 		269D198B19B91579000440BC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 269D198A19B91579000440BC /* GoogleMaps.bundle */; };
@@ -172,6 +174,8 @@
 		2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "LocalInfoItems~iphone.json"; path = "Resources/jsons/LocalInfoItems~iphone.json"; sourceTree = "<group>"; };
 		266139D9164AF82E00D19093 /* IAURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAURLCache.h; path = ../../Ipad/Shared/Controller/IAURLCache.h; sourceTree = "<group>"; };
 		266139DA164AF82E00D19093 /* IAURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IAURLCache.m; path = ../../Ipad/Shared/Controller/IAURLCache.m; sourceTree = "<group>"; };
+		26779DE319B93E88001EE88D /* MainMenuItems~ipad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "MainMenuItems~ipad.json"; path = "Resources/jsons/MainMenuItems~ipad.json"; sourceTree = "<group>"; };
+		26779DE419B93E88001EE88D /* MainMenuItems~iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "MainMenuItems~iphone.json"; path = "Resources/jsons/MainMenuItems~iphone.json"; sourceTree = "<group>"; };
 		268673FF174FFC130078C3AA /* MobileAppTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileAppTracker.framework; sourceTree = "<group>"; };
 		269D198719B914AE000440BC /* IRListingRefineViewControllerPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRListingRefineViewControllerPad.h; path = ViewController/IRListingRefineViewControllerPad.h; sourceTree = "<group>"; };
 		269D198819B914AE000440BC /* IRListingRefineViewControllerPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRListingRefineViewControllerPad.m; path = ViewController/IRListingRefineViewControllerPad.m; sourceTree = "<group>"; };
@@ -423,6 +427,8 @@
 		261196591950F3E200C4F392 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				26779DE319B93E88001EE88D /* MainMenuItems~ipad.json */,
+				26779DE419B93E88001EE88D /* MainMenuItems~iphone.json */,
 				269D198D19B925F0000440BC /* LocalInfoItems~ipad.json */,
 				269D198A19B91579000440BC /* GoogleMaps.bundle */,
 				2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */,
@@ -987,6 +993,7 @@
 				E0A93A0518F27D4400222F2D /* ForRentIcon120x120.png in Resources */,
 				E047631C18C7B5DE0021210E /* MainMenuItems~ipad.json in Resources */,
 				E09036A818E3A660001200F2 /* icon-logo@2x.png in Resources */,
+				26779DE519B93E88001EE88D /* MainMenuItems~ipad.json in Resources */,
 				E0A939FA18F27A1E00222F2D /* trulia-rentals-768x1024@2x.png in Resources */,
 				E0A939F518F27A1E00222F2D /* trulia-rentals-320x480@2x.png in Resources */,
 				E0A939FB18F27A1E00222F2D /* trulia-rentals-1024@768@2x.png in Resources */,
@@ -994,6 +1001,7 @@
 				E03A78A01884749600317FB6 /* MortgageResources.bundle in Resources */,
 				2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */,
 				269D198B19B91579000440BC /* GoogleMaps.bundle in Resources */,
+				26779DE619B93E88001EE88D /* MainMenuItems~iphone.json in Resources */,
 				E0A98EBF18ECB597006E5581 /* QueSaveSearch@2x.png in Resources */,
 				9D94F60515DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.xib in Resources */,
 				269D198E19B925F0000440BC /* LocalInfoItems~ipad.json in Resources */,
