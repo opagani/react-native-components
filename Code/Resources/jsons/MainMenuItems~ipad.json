@@ -16,7 +16,7 @@
         ]}
         ,{"title":"MORE","items":[
              {"title":"Leave Feedback" , "trackEventName":"feedback", "customActionMethod":"actionShowFeedback"}
-            ,{"title":"Rate this App","showLeavingIcon":1, "urlSchemeLink":"https://itunes.apple.com/us/app/real-estate-by-trulia-homes/id288487321?mt=8&uo=4"}
+            ,{"title":"Rate this App","showLeavingIcon":1, "urlSchemeLink":"https://itunes.apple.com/us/app/trulia-rentals-find-homes/id508163604?mt=8"}
             ,{"title":"Share this App" ,"promptToShare":1 }
             ,{"title":"Settings", "viewController":"ICSettingsViewControllerPhone" , "trackEventName": "more"}
         ]}
