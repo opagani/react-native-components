@@ -9,7 +9,6 @@
 #import <Crashlytics/Crashlytics.h>
 #import "AppDelegate_Shared.h"
 #import "ICPreference.h"
-#import "SplashScreenViewController.h"
 #import "Appirater.h"
 #import "ICAdSearchController.h"
 #import "IAURLCache.h"
