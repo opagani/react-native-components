@@ -26,7 +26,6 @@
 #import "ICStressTestController.h"
 #endif
 
-#import "SplashScreenViewController.h"
 //#import "ICPasteBoard.h"
 #import "IAURLCache.h"
 #import "ICRouterInput.h"
@@ -66,6 +65,7 @@
 #import "ICImageBundleUtil.h"
 #import "ICAppearance.h"
 #import "ICLog.h"
+#import "ICUtility.h"
 
 #define MENU_FIND_AN_AGENT_STRING @"Find an Agent"
 #define MENU_OPEN_HOUSES_STRING   @"Open Houses"
@@ -163,11 +163,11 @@ void uncaughtExceptionHandler(NSException *exception) {
     [self setupAppConfigurationForIpad];
     [self getUserLocations];
     
-    if([SplashScreenViewController shouldShowMe]) {
-        [self initializeRootViewControllerForIpad]; //Cache rootview, so its ready when splash is dismissed
-        [self showSplashScreenForIpad];
-    }else{
-        [self initializeRootViewControllerForIpad];
+    [self initializeRootViewControllerForIpad];
+    
+    if ([ICUtility freshInstall]) {
+        [self showOnboardingScreensForIPad];
+    } else {
         [self setRootViewControllerForIpad];
     }
 }
@@ -182,6 +182,27 @@ void uncaughtExceptionHandler(NSException *exception) {
         [self showUpgradeAppPopup];
     }
 }
+
+- (BOOL) shouldShowOnboardingScreens {
+    return ([UIDevice isOS8OrAbove] && [ICUtility freshInstall]);
+}
+
+- (void)showOnboardingScreensForIPad {
+    self.onboardingControllerPad = [[ICOnboardingViewControllerPad alloc] initWithNibName:@"ICOnboardingViewControllerPad"
+                                                                                   bundle:[NSBundle coreResourcesBundle]];
+    [self.onboardingControllerPad setDelegate:self];
+    [_window setRootViewController:self.onboardingControllerPad];
+    [_window makeKeyAndVisible];
+}
+
+- (void)showOnboardingScreensForIPhone {
+    self.onboardingControllerPhone = [[ICOnboardingViewControllerPhone alloc] initWithNibName:@"ICOnboardingViewControllerPhone"
+                                                                                       bundle:[NSBundle coreResourcesBundle]];
+    [self.onboardingControllerPhone setDelegate:self];
+    [_window setRootViewController:self.onboardingControllerPhone];
+    [_window makeKeyAndVisible];
+}
+
 
 /*- (void)setupListingParameters {
  ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
@@ -239,11 +260,28 @@ void uncaughtExceptionHandler(NSException *exception) {
     [_window makeKeyAndVisible];
 }
 
-- (void)launchIphoneApp
-{
+- (void)launchIphoneApp{
+    
     [self initializeRootViewControllerForIphone];
-    [self setRootViewControllerForIphone];
+    
+    // show only for first install and not upgrade
+    if ([UIDevice isOS8OrAbove] && [ICUtility freshInstall]) {
+        [self showOnboardingScreensForIPhone];
+    } else {
+        [self setRootViewControllerForIphone];
+    }
     [self showUpgradePopup];
+}
+
+#pragma mark - onboarding delegate
+
+-(void)onBoardingScreensDimissed:(UIViewController *)onboardingVC {
+    [UIApplication sharedApplication].statusBarHidden = NO;
+    if ([UIDevice isPhone]){
+        [self setRootViewControllerForIphone];
+    } else {
+        [self setRootViewControllerForIpad];
+    }
 }
 
 #pragma mark-
@@ -252,14 +290,6 @@ void uncaughtExceptionHandler(NSException *exception) {
 -(void)dismissStartupScreen:(UIViewController*)viewController{
     
     [self setRootViewControllerForIphone];
-}
-
-- (void)showSplashScreenForIpad
-{
-    SplashScreenViewController *splashViewController = [[SplashScreenViewController alloc] init];
-    splashViewController.delegate = self;
-    [_window setRootViewController:splashViewController];
-    [_window makeKeyAndVisible];
 }
 
 #if TARGET_IPHONE_SIMULATOR

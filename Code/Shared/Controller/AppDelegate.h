@@ -11,17 +11,21 @@
 #import "AppDelegate_Shared.h"
 #import "ICListingParameters.h"
 #import "ICNavigationController.h"
-#import "SplashScreenViewController.h"
 #import "ICStartupViewControllerPhone.h"
+#import "ICOnboardingViewControllerPhone.h"
+#import "ICOnboardingViewControllerPad.h"
 
 
 @class ICMainViewControllerPad, ICLeftMenuViewController;
 
 
-@interface AppDelegate : AppDelegate_Shared <SplashViewDelegate, ICStartupViewControllerDelegate>{
+@interface AppDelegate : AppDelegate_Shared <ICOnboardingDelegate, ICStartupViewControllerDelegate>{
     // only being used by the iPad
 }
 @property (nonatomic, strong) UIWindow *window;
+
+@property (nonatomic, strong) ICOnboardingViewControllerPhone *onboardingControllerPhone;
+@property (nonatomic, strong) ICOnboardingViewControllerPad *onboardingControllerPad;
 
 // navController is only being used by the iphone
 @property (nonatomic, strong) ICNavigationController *navController;
