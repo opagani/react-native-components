@@ -17,7 +17,7 @@
                BlueprintIdentifier = "4C0CF11014D6643E00A1D325"
                BuildableName = "ICConfiguration.bundle"
                BlueprintName = "ICConfiguration"
-               ReferencedContainer = "container:ForRent.xcodeproj">
+               ReferencedContainer = "container:Trulia Rent.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -39,6 +39,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4C0CF11014D6643E00A1D325"
+            BuildableName = "ICConfiguration.bundle"
+            BlueprintName = "ICConfiguration"
+            ReferencedContainer = "container:Trulia Rent.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
