@@ -224,8 +224,8 @@
 		4C0CEEEA14D6634A00A1D325 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C0CEEF814D6634A00A1D325 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C0CEEF914D6634A00A1D325 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4C0CEF1A14D6634A00A1D325 /* ForRent-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ForRent-Info.plist"; sourceTree = "<group>"; };
-		4C0CEF1B14D6634A00A1D325 /* ForRent-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ForRent-Prefix.pch"; sourceTree = "<group>"; };
+		4C0CEF1A14D6634A00A1D325 /* Trulia Rent-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Trulia Rent-Info.plist"; sourceTree = "<group>"; };
+		4C0CEF1B14D6634A00A1D325 /* Trulia Rent-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Trulia Rent-Prefix.pch"; sourceTree = "<group>"; };
 		4C0CF11114D6643E00A1D325 /* ICConfiguration.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICConfiguration.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		5142AD081565A88200BBB7F8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		51802F4414CF793900199144 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -238,7 +238,7 @@
 		51802F5214CF799500199144 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		51802F5414CF799E00199144 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		51802F5614CF79AA00199144 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		51DA6A1214CF2F0D007F2584 /* ForRent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForRent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51DA6A1214CF2F0D007F2584 /* Trulia Rent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trulia Rent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DA6A1614CF2F0D007F2584 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		51DA6A1814CF2F0D007F2584 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		51DA6A1A14CF2F0D007F2584 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -602,15 +602,15 @@
 				51DA6C1A14CF51D1007F2584 /* ICConfiguration */,
 				51DA6A1314CF2F0D007F2584 /* Products */,
 				4C0CEEEA14D6634A00A1D325 /* main.m */,
-				4C0CEF1A14D6634A00A1D325 /* ForRent-Info.plist */,
-				4C0CEF1B14D6634A00A1D325 /* ForRent-Prefix.pch */,
+				4C0CEF1A14D6634A00A1D325 /* Trulia Rent-Info.plist */,
+				4C0CEF1B14D6634A00A1D325 /* Trulia Rent-Prefix.pch */,
 			);
 			sourceTree = "<group>";
 		};
 		51DA6A1314CF2F0D007F2584 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				51DA6A1214CF2F0D007F2584 /* ForRent.app */,
+				51DA6A1214CF2F0D007F2584 /* Trulia Rent.app */,
 				4C0CF11114D6643E00A1D325 /* ICConfiguration.bundle */,
 				3B1836371652B4AB009923F7 /* UnitTests.octest */,
 			);
@@ -910,9 +910,9 @@
 			productReference = 4C0CF11114D6643E00A1D325 /* ICConfiguration.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		51DA6A1114CF2F0D007F2584 /* ForRent */ = {
+		51DA6A1114CF2F0D007F2584 /* Trulia Rent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 51DA6A3F14CF2F0D007F2584 /* Build configuration list for PBXNativeTarget "ForRent" */;
+			buildConfigurationList = 51DA6A3F14CF2F0D007F2584 /* Build configuration list for PBXNativeTarget "Trulia Rent" */;
 			buildPhases = (
 				51DA6A0E14CF2F0D007F2584 /* Sources */,
 				51DA6A0F14CF2F0D007F2584 /* Frameworks */,
@@ -924,9 +924,9 @@
 			dependencies = (
 				E07EAAD8194A7947006BE023 /* PBXTargetDependency */,
 			);
-			name = ForRent;
+			name = "Trulia Rent";
 			productName = Trulia;
-			productReference = 51DA6A1214CF2F0D007F2584 /* ForRent.app */;
+			productReference = 51DA6A1214CF2F0D007F2584 /* Trulia Rent.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -938,7 +938,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Trulia Inc";
 			};
-			buildConfigurationList = 51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "ForRent" */;
+			buildConfigurationList = 51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "Trulia Rent" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -950,7 +950,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				51DA6A1114CF2F0D007F2584 /* ForRent */,
+				51DA6A1114CF2F0D007F2584 /* Trulia Rent */,
 				4C0CF11014D6643E00A1D325 /* ICConfiguration */,
 				3B1836361652B4AB009923F7 /* UnitTests */,
 			);
@@ -1115,7 +1115,7 @@
 /* Begin PBXTargetDependency section */
 		9D3728991666B0900018B275 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 51DA6A1114CF2F0D007F2584 /* ForRent */;
+			target = 51DA6A1114CF2F0D007F2584 /* Trulia Rent */;
 			targetProxy = 9D3728981666B0900018B275 /* PBXContainerItemProxy */;
 		};
 		E07EAAD8194A7947006BE023 /* PBXTargetDependency */ = {
@@ -1277,7 +1277,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -1291,7 +1291,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6bd51d2f-0b11-454d-a76b-c43dc97209b0";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				VALID_ARCHS = "armv7 i386";
 				WRAPPER_EXTENSION = bundle;
@@ -1302,7 +1302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1316,7 +1316,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6bd51d2f-0b11-454d-a76b-c43dc97209b0";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				VALID_ARCHS = "armv7 i386";
 				WRAPPER_EXTENSION = bundle;
@@ -1333,7 +1333,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1363,7 +1363,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = ForRent;
-				PROVISIONING_PROFILE = "6bd51d2f-0b11-454d-a76b-c43dc97209b0";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1381,7 +1381,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1405,7 +1405,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = ForRent;
-				PROVISIONING_PROFILE = "6bd51d2f-0b11-454d-a76b-c43dc97209b0";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1420,8 +1420,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daud Kabiri (23GSECU328)";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
@@ -1436,13 +1436,13 @@
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ForRent-Prefix.pch";
+				GCC_PREFIX_HEADER = "Trulia Rent-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../mob-ioscore-lib/**",
 					"$(SRCROOT)/../../mob-iosmortgage-lib/**",
 				);
-				INFOPLIST_FILE = "ForRent-Info.plist";
+				INFOPLIST_FILE = "Trulia Rent-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1455,8 +1455,8 @@
 					"-ftest-coverage",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = ForRent;
-				PROVISIONING_PROFILE = "6bd51d2f-0b11-454d-a76b-c43dc97209b0";
+				PRODUCT_NAME = "Trulia Rent";
+				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				SKIP_INSTALL = NO;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1472,8 +1472,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daud Kabiri (23GSECU328)";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
@@ -1488,13 +1488,13 @@
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ForRent-Prefix.pch";
+				GCC_PREFIX_HEADER = "Trulia Rent-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../mob-ioscore-lib/**",
 					"$(SRCROOT)/../../mob-iosmortgage-lib/**",
 				);
-				INFOPLIST_FILE = "ForRent-Info.plist";
+				INFOPLIST_FILE = "Trulia Rent-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1502,8 +1502,8 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ForRent-buvcmktxcsthhoafzgprqyqdkkly/Build/Products/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = ForRent;
-				PROVISIONING_PROFILE = "6bd51d2f-0b11-454d-a76b-c43dc97209b0";
+				PRODUCT_NAME = "Trulia Rent";
+				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				SKIP_INSTALL = NO;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1534,7 +1534,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "ForRent" */ = {
+		51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "Trulia Rent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51DA6A3D14CF2F0D007F2584 /* Debug */,
@@ -1543,7 +1543,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51DA6A3F14CF2F0D007F2584 /* Build configuration list for PBXNativeTarget "ForRent" */ = {
+		51DA6A3F14CF2F0D007F2584 /* Build configuration list for PBXNativeTarget "Trulia Rent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51DA6A4014CF2F0D007F2584 /* Debug */,
