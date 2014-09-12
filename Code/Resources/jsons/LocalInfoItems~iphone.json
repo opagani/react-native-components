@@ -146,30 +146,6 @@
                 "count":"4"
                 
             },
-            "02.Listing Price" : {
-                "text":"Listing Price",
-                "isVisible": "NO",
-                "isSelected":"NO",
-                "parent":"01.Affordability",
-                "enumId":"105",
-                "indented":"YES"
-            },
-            "03.Sale Price" : {
-                "text":"Sale Price",
-                "isVisible": "NO",
-                "isSelected":"NO",
-                "parent":"01.Affordability",
-                "enumId":"106",
-                "indented":"YES"
-            },
-            "04.Sale Price/Sq Feet" : {
-                "text":"Sale Price/Sq Feet",
-                "isVisible": "NO",
-                "isSelected":"NO",
-                "parent":"01.Affordability",
-                "enumId":"107",
-                "indented":"YES"
-            },
             "05.Rental Price" : {
                 "text":"Rental Price",
                 "isVisible": "NO",
@@ -201,30 +177,6 @@
                 "isSelected":"NO",
                 "parent":"06.Natural Disasters",
                 "enumId":"103",
-                "indented":"YES"
-            },
-            "09.Tornado" : {
-                "text":"Tornado",
-                "isSelected":"NO",
-                "isVisible": "NO",
-                "parent":"06.Natural Disasters",
-                "enumId":"108",
-                "indented":"YES"
-            },
-            "10.Hurricane" : {
-                "text":"Hurricane",
-                "isSelected":"NO",
-                "isVisible": "NO",
-                "parent":"06.Natural Disasters",
-                "enumId":"110",
-                "indented":"YES"
-            },
-            "11.Wildfire" : {
-                "text":"Wildfire",
-                "isSelected":"NO",
-                "isVisible": "NO",
-                "parent":"06.Natural Disasters",
-                "enumId":"109",
                 "indented":"YES"
             },
         },
