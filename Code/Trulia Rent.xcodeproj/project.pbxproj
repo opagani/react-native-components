@@ -69,6 +69,14 @@
 		51DA6A1B14CF2F0D007F2584 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6A1A14CF2F0D007F2584 /* CoreGraphics.framework */; };
 		51E1597B14D2218F00DB87CA /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597A14D2218F00DB87CA /* AddressBookUI.framework */; };
 		51E1597D14D2219800DB87CA /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597C14D2219800DB87CA /* AddressBook.framework */; };
+		6D8C5AB319C2775F00EF2937 /* OnboardingBeginIpadHero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C5AAF19C2775F00EF2937 /* OnboardingBeginIpadHero@2x.png */; };
+		6D8C5AB419C2775F00EF2937 /* OnboardingEndIpadHero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C5AB019C2775F00EF2937 /* OnboardingEndIpadHero@2x.png */; };
+		6D8C5AB519C2775F00EF2937 /* OnboardingLocationIpadHero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C5AB119C2775F00EF2937 /* OnboardingLocationIpadHero@2x.png */; };
+		6D8C5AB619C2775F00EF2937 /* OnboardingNotificationIpadHero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C5AB219C2775F00EF2937 /* OnboardingNotificationIpadHero@2x.png */; };
+		6D8C5ABB19C2777000EF2937 /* OnboardingBeginIphoneHero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C5AB719C2777000EF2937 /* OnboardingBeginIphoneHero@2x.png */; };
+		6D8C5ABC19C2777000EF2937 /* OnboardingEndIphoneHero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C5AB819C2777000EF2937 /* OnboardingEndIphoneHero@2x.png */; };
+		6D8C5ABD19C2777000EF2937 /* OnboardingLocationIphoneHero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C5AB919C2777000EF2937 /* OnboardingLocationIphoneHero@2x.png */; };
+		6D8C5ABE19C2777000EF2937 /* OnboardingNotificationIphoneHero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C5ABA19C2777000EF2937 /* OnboardingNotificationIphoneHero@2x.png */; };
 		9D23EC5E17205D300048E737 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D23EC5D17205D300048E737 /* ImageIO.framework */; };
 		9D37273716657DA00018B275 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D37273616657DA00018B275 /* libOCMock.a */; };
 		9D372747166680FD0018B275 /* ViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D372746166680FD0018B275 /* ViewControllerTests.m */; };
@@ -251,6 +259,14 @@
 		51DA6C2514CF5896007F2584 /* ICMetric~iphone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~iphone.plist"; sourceTree = "<group>"; };
 		51E1597A14D2218F00DB87CA /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		51E1597C14D2219800DB87CA /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		6D8C5AAF19C2775F00EF2937 /* OnboardingBeginIpadHero@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OnboardingBeginIpadHero@2x.png"; sourceTree = "<group>"; };
+		6D8C5AB019C2775F00EF2937 /* OnboardingEndIpadHero@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OnboardingEndIpadHero@2x.png"; sourceTree = "<group>"; };
+		6D8C5AB119C2775F00EF2937 /* OnboardingLocationIpadHero@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OnboardingLocationIpadHero@2x.png"; sourceTree = "<group>"; };
+		6D8C5AB219C2775F00EF2937 /* OnboardingNotificationIpadHero@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OnboardingNotificationIpadHero@2x.png"; sourceTree = "<group>"; };
+		6D8C5AB719C2777000EF2937 /* OnboardingBeginIphoneHero@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OnboardingBeginIphoneHero@2x.png"; sourceTree = "<group>"; };
+		6D8C5AB819C2777000EF2937 /* OnboardingEndIphoneHero@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OnboardingEndIphoneHero@2x.png"; sourceTree = "<group>"; };
+		6D8C5AB919C2777000EF2937 /* OnboardingLocationIphoneHero@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OnboardingLocationIphoneHero@2x.png"; sourceTree = "<group>"; };
+		6D8C5ABA19C2777000EF2937 /* OnboardingNotificationIphoneHero@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OnboardingNotificationIphoneHero@2x.png"; sourceTree = "<group>"; };
 		9D23EC5D17205D300048E737 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		9D37273016657DA00018B275 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
 		9D37273116657DA00018B275 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
@@ -729,6 +745,10 @@
 		9D94D283161A0D7A0089CEEC /* iPadImages */ = {
 			isa = PBXGroup;
 			children = (
+				6D8C5AAF19C2775F00EF2937 /* OnboardingBeginIpadHero@2x.png */,
+				6D8C5AB019C2775F00EF2937 /* OnboardingEndIpadHero@2x.png */,
+				6D8C5AB119C2775F00EF2937 /* OnboardingLocationIpadHero@2x.png */,
+				6D8C5AB219C2775F00EF2937 /* OnboardingNotificationIpadHero@2x.png */,
 				E0A93A0618F280E500222F2D /* Splash-Landscape@2x.png */,
 				E0A93A0718F280E500222F2D /* Splash-Portrait@2x.png */,
 				E0A939EE18F27A1E00222F2D /* trulia-rentals-320x480@2x.png */,
@@ -751,6 +771,10 @@
 		9D94D3A5161A0D7A0089CEEC /* iPhoneImages */ = {
 			isa = PBXGroup;
 			children = (
+				6D8C5AB719C2777000EF2937 /* OnboardingBeginIphoneHero@2x.png */,
+				6D8C5AB819C2777000EF2937 /* OnboardingEndIphoneHero@2x.png */,
+				6D8C5AB919C2777000EF2937 /* OnboardingLocationIphoneHero@2x.png */,
+				6D8C5ABA19C2777000EF2937 /* OnboardingNotificationIphoneHero@2x.png */,
 				E0A98EC018ECB64E006E5581 /* iPhoneSplash1-568h@2x.jpg */,
 				E0A98EC118ECB64E006E5581 /* iPhoneSplash1@2x.jpg */,
 				E0A98EBA18ECB597006E5581 /* QueSaveSearch.png */,
@@ -1004,6 +1028,7 @@
 				26779DE619B93E88001EE88D /* MainMenuItems~iphone.json in Resources */,
 				E0A98EBF18ECB597006E5581 /* QueSaveSearch@2x.png in Resources */,
 				9D94F60515DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.xib in Resources */,
+				6D8C5ABB19C2777000EF2937 /* OnboardingBeginIphoneHero@2x.png in Resources */,
 				269D198E19B925F0000440BC /* LocalInfoItems~ipad.json in Resources */,
 				9D94F60615DEECF90068FC85 /* SplashScreenViewController.xib in Resources */,
 				9D94F76B15DEECFA0068FC85 /* SchoolMapCalloutViewController_iPad.xib in Resources */,
@@ -1013,6 +1038,7 @@
 				E0A98EC318ECB64E006E5581 /* iPhoneSplash1@2x.jpg in Resources */,
 				E0A93A0818F280E600222F2D /* Splash-Landscape@2x.png in Resources */,
 				9D94D27A161A0B5C0089CEEC /* ICStartupViewControllerPhone.xib in Resources */,
+				6D8C5AB319C2775F00EF2937 /* OnboardingBeginIpadHero@2x.png in Resources */,
 				E0A939F718F27A1E00222F2D /* trulia-rentals-640x1136.png in Resources */,
 				2E309C2E167024BF00A31BD0 /* LICENSE.txt in Resources */,
 				2E309C2F167024BF00A31BD0 /* OpenSans-Bold.ttf in Resources */,
@@ -1025,16 +1051,22 @@
 				2E309C34167024BF00A31BD0 /* OpenSans-Light.ttf in Resources */,
 				2E309C35167024BF00A31BD0 /* OpenSans-LightItalic.ttf in Resources */,
 				2E309C36167024BF00A31BD0 /* OpenSans-Regular.ttf in Resources */,
+				6D8C5ABC19C2777000EF2937 /* OnboardingEndIphoneHero@2x.png in Resources */,
 				2E309C37167024BF00A31BD0 /* OpenSans-Semibold.ttf in Resources */,
 				2E309C38167024BF00A31BD0 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				6D8C5ABD19C2777000EF2937 /* OnboardingLocationIphoneHero@2x.png in Resources */,
 				3B5EF54B170B8DFC003F00ED /* Localizable.strings in Resources */,
 				E0A98EBE18ECB597006E5581 /* QueSaveSearch-568h@2x.png in Resources */,
+				6D8C5AB519C2775F00EF2937 /* OnboardingLocationIpadHero@2x.png in Resources */,
+				6D8C5AB619C2775F00EF2937 /* OnboardingNotificationIpadHero@2x.png in Resources */,
 				E0A98EBD18ECB597006E5581 /* QueSaveSearch.png in Resources */,
 				E09036A318E3A383001200F2 /* logo-trulia.png in Resources */,
 				E0A98EC218ECB64E006E5581 /* iPhoneSplash1-568h@2x.jpg in Resources */,
 				E0A939F618F27A1E00222F2D /* trulia-rentals-640x960@2x.png in Resources */,
 				E09036A418E3A383001200F2 /* logo-trulia@2x.png in Resources */,
 				E09036A718E3A660001200F2 /* icon-logo.png in Resources */,
+				6D8C5AB419C2775F00EF2937 /* OnboardingEndIpadHero@2x.png in Resources */,
+				6D8C5ABE19C2777000EF2937 /* OnboardingNotificationIphoneHero@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1277,7 +1309,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -1302,7 +1334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1333,7 +1365,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1381,7 +1413,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1420,8 +1452,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daud Kabiri (23GSECU328)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
@@ -1472,8 +1504,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daud Kabiri (23GSECU328)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
