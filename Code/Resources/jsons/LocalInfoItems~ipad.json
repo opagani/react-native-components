@@ -14,21 +14,6 @@
         "allowMultiSelection":"NO",
         "count":"4",
         "kids":{
-            "17.Listing Price":{
-                "text":"Listing Price",
-                "parent":"01.Affordability",
-                "enumId":"105",
-            },
-            "18.Sale Price":{
-                "text":"Sale Price",
-                "parent":"01.Affordability",
-                "enumId":"106",
-            },
-            "19.Sale Price/Sqft":{
-                "text":"Sale Price/Sqft",
-                "parent":"01.Affordability",
-                "enumId":"107",
-            },
             "20.Rental Price":{
                 "text":"Rental Price",
                 "parent":"01.Affordability",
@@ -55,21 +40,6 @@
                 "parent":"06.Natural Disasters",
                 "enumId":"103",
             },
-            "24.Tornado":{
-                "text":"Tornado",
-                "parent":"06.Natural Disasters",
-                "enumId":"108",
-            },
-            "25.Hurricane":{
-                "text":"Hurricane",
-                "parent":"06.Natural Disasters",
-                "enumId":"110",
-            },
-            "26.Wildfire":{
-                "text":"Wildfire",
-                "parent":"06.Natural Disasters",
-                "enumId":"109",
-            }
         }
     },
     "04.Schools":{
