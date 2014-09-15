@@ -17,10 +17,11 @@
 //#import "ICMyAccountViewControllerPhone.h"
 #import "ICSyncController.h"
 #import "ICSyncServiceNotification.h"
-#import "ICMainMenuViewControllerPhone.h"
 #import "IRLeftMenuViewController.h"
 #import "IRListingSearchViewControllerPhone.h"
 #import "IRMainViewControllerPad.h"
+#import "IRMainMenuViewControllerPhone.h"
+
 
 #if RUN_STRESS_TEST
 #import "ICStressTestController.h"
@@ -142,7 +143,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
     
-    ICMainMenuViewControllerPhone *menu = [[ICMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
+    IRMainMenuViewControllerPhone *menu = [[IRMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
     self.leftViewController = [[IRLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController:navCtr];
     
     [ICMainViewControllerPad sharedInstance].leftMenuViewController = self.leftViewController;
@@ -227,7 +228,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     self.isShowingGalleryView = NO;
     
-    ICMainMenuViewControllerPhone *menuController = [[ICMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle] ];
+    IRMainMenuViewControllerPhone *menuController = [[IRMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle] ];
     ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
     currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
     

@@ -69,6 +69,7 @@
 		51DA6A1B14CF2F0D007F2584 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6A1A14CF2F0D007F2584 /* CoreGraphics.framework */; };
 		51E1597B14D2218F00DB87CA /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597A14D2218F00DB87CA /* AddressBookUI.framework */; };
 		51E1597D14D2219800DB87CA /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597C14D2219800DB87CA /* AddressBook.framework */; };
+		62218F8319C75DC600247A5C /* IRMainMenuViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 62218F8219C75DC600247A5C /* IRMainMenuViewControllerPhone.m */; };
 		6D8C5AB319C2775F00EF2937 /* OnboardingBeginIpadHero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C5AAF19C2775F00EF2937 /* OnboardingBeginIpadHero@2x.png */; };
 		6D8C5AB419C2775F00EF2937 /* OnboardingEndIpadHero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C5AB019C2775F00EF2937 /* OnboardingEndIpadHero@2x.png */; };
 		6D8C5AB519C2775F00EF2937 /* OnboardingLocationIpadHero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C5AB119C2775F00EF2937 /* OnboardingLocationIpadHero@2x.png */; };
@@ -259,6 +260,8 @@
 		51DA6C2514CF5896007F2584 /* ICMetric~iphone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~iphone.plist"; sourceTree = "<group>"; };
 		51E1597A14D2218F00DB87CA /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		51E1597C14D2219800DB87CA /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		62218F8119C75DC600247A5C /* IRMainMenuViewControllerPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMainMenuViewControllerPhone.h; sourceTree = "<group>"; };
+		62218F8219C75DC600247A5C /* IRMainMenuViewControllerPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMainMenuViewControllerPhone.m; sourceTree = "<group>"; };
 		6D8C5AAF19C2775F00EF2937 /* OnboardingBeginIpadHero@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OnboardingBeginIpadHero@2x.png"; sourceTree = "<group>"; };
 		6D8C5AB019C2775F00EF2937 /* OnboardingEndIpadHero@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OnboardingEndIpadHero@2x.png"; sourceTree = "<group>"; };
 		6D8C5AB119C2775F00EF2937 /* OnboardingLocationIpadHero@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OnboardingLocationIpadHero@2x.png"; sourceTree = "<group>"; };
@@ -565,6 +568,8 @@
 				2EE397F717502B2C0052B6C7 /* IRStartupViewControllerPhone.m */,
 				E09D2BA81884A52A000BE18D /* IRLeftMenuViewController.h */,
 				E09D2BA91884A52A000BE18D /* IRLeftMenuViewController.m */,
+				62218F8119C75DC600247A5C /* IRMainMenuViewControllerPhone.h */,
+				62218F8219C75DC600247A5C /* IRMainMenuViewControllerPhone.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1130,6 +1135,7 @@
 				9D94D244161A0B520089CEEC /* AppDelegate_Shared.m in Sources */,
 				266139DB164AF82E00D19093 /* IAURLCache.m in Sources */,
 				2EE5C358173C5ABC006D42BC /* IRMainViewControllerPad.m in Sources */,
+				62218F8319C75DC600247A5C /* IRMainMenuViewControllerPhone.m in Sources */,
 				2EE5C35F173C5B10006D42BC /* IRFilterViewControllerPad.m in Sources */,
 				E04CF5E118876C9A0079C064 /* IRListingDetailViewControllerPad.m in Sources */,
 				26AE6106173DAF2500E0410D /* IRListingSearchViewControllerPhone.m in Sources */,
@@ -1309,7 +1315,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -1334,7 +1340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
