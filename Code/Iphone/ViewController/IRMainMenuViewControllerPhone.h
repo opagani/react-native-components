@@ -8,10 +8,12 @@
 
 #import "ICMainMenuViewControllerPhone.h"
 
-typedef enum {
+
+typedef NS_ENUM (NSInteger, Search_Categories_Rental ){
     My_Saves_Rental = 0,
     My_Saves_iPad_Rental =1
-} Search_Categories_Rental;
+};
+
 @interface IRMainMenuViewControllerPhone : ICMainMenuViewControllerPhone
 
 @end
