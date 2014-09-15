@@ -17,7 +17,9 @@
 
 #pragma mark Overridden Menu Items IndexPaths
 -(NSIndexPath*)savesIndexPath{
-    return [NSIndexPath indexPathForRow:([UIDevice isPhone] ? My_Saves_Rental : My_Saves_iPad_Rental) inSection:1];
+    return [NSIndexPath indexPathForRow:([UIDevice isPhone] ? IRMainMenuViewControllerPhoneSaveTypeMySavesRental :
+                                                              IRMainMenuViewControllerPhoneSaveTypeMySavesIpadRental)
+                                                              inSection:1];
 }
 
 @end

@@ -9,9 +9,9 @@
 #import "ICMainMenuViewControllerPhone.h"
 
 
-typedef NS_ENUM (NSInteger, Search_Categories_Rental ){
-    My_Saves_Rental = 0,
-    My_Saves_iPad_Rental =1
+typedef NS_ENUM (NSInteger, IRMainMenuViewControllerPhoneSaveTypeRental ){
+    IRMainMenuViewControllerPhoneSaveTypeMySavesRental = 0,
+    IRMainMenuViewControllerPhoneSaveTypeMySavesIpadRental =1
 };
 
 @interface IRMainMenuViewControllerPhone : ICMainMenuViewControllerPhone
