@@ -247,7 +247,7 @@
 		51802F5214CF799500199144 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		51802F5414CF799E00199144 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		51802F5614CF79AA00199144 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		51DA6A1214CF2F0D007F2584 /* Trulia Rent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trulia Rent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51DA6A1214CF2F0D007F2584 /* TruliaRent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruliaRent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DA6A1614CF2F0D007F2584 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		51DA6A1814CF2F0D007F2584 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		51DA6A1A14CF2F0D007F2584 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -631,7 +631,7 @@
 		51DA6A1314CF2F0D007F2584 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				51DA6A1214CF2F0D007F2584 /* Trulia Rent.app */,
+				51DA6A1214CF2F0D007F2584 /* TruliaRent.app */,
 				4C0CF11114D6643E00A1D325 /* ICConfiguration.bundle */,
 				3B1836371652B4AB009923F7 /* UnitTests.octest */,
 			);
@@ -955,7 +955,7 @@
 			);
 			name = "Trulia Rent";
 			productName = Trulia;
-			productReference = 51DA6A1214CF2F0D007F2584 /* Trulia Rent.app */;
+			productReference = 51DA6A1214CF2F0D007F2584 /* TruliaRent.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1315,7 +1315,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -1340,7 +1340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daud Kabiri (23GSECU328)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1493,7 +1493,7 @@
 					"-ftest-coverage",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "Trulia Rent";
+				PRODUCT_NAME = TruliaRent;
 				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				SKIP_INSTALL = NO;
@@ -1540,7 +1540,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ForRent-buvcmktxcsthhoafzgprqyqdkkly/Build/Products/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "Trulia Rent";
+				PRODUCT_NAME = TruliaRent;
 				PROVISIONING_PROFILE = "";
 				SEPARATE_STRIP = YES;
 				SKIP_INSTALL = NO;
