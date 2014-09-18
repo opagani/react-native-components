@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
-               BuildableName = "Trulia Rent.app"
+               BuildableName = "TruliaRent.app"
                BlueprintName = "Trulia Rent"
                ReferencedContainer = "container:Trulia Rent.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
-            BuildableName = "Trulia Rent.app"
+            BuildableName = "TruliaRent.app"
             BlueprintName = "Trulia Rent"
             ReferencedContainer = "container:Trulia Rent.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
-            BuildableName = "Trulia Rent.app"
+            BuildableName = "TruliaRent.app"
             BlueprintName = "Trulia Rent"
             ReferencedContainer = "container:Trulia Rent.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51DA6A1114CF2F0D007F2584"
-            BuildableName = "Trulia Rent.app"
+            BuildableName = "TruliaRent.app"
             BlueprintName = "Trulia Rent"
             ReferencedContainer = "container:Trulia Rent.xcodeproj">
          </BuildableReference>
