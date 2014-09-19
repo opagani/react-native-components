@@ -262,5 +262,9 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-</dict>
+
+	<key>NSLocationAlwaysUsageDescription</key>
+        	<string>Trulia needs your location to allow you to search and get updates on homes nearby.</string>
+        <key>NSLocationWhenInUseUsageDescription</key>
+        	<string>Trulia needs your location to allow you to search homes nearby.</string></dict>
 </plist>
