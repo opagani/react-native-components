@@ -375,5 +375,9 @@
 	<string>823281438</string>
 	<key>AppstoreAppID</key>
 	<string>508163604</string>
+	<key>AppiraterNumberOfSignificantEvents</key>
+        <integer>5</integer>
+        <key>AppiraterUseCountThreshold</key>
+        <integer>5</integer>
 </dict>
 </plist>
