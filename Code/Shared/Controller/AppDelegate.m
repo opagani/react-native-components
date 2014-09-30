@@ -285,6 +285,10 @@ void uncaughtExceptionHandler(NSException *exception) {
     }
 }
 
+- (void)requestNotificationsPermission {
+    [self registerNotification];
+}
+
 #pragma mark-
 #pragma mark Splash Screen Delegate for iPhone
 
