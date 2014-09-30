@@ -183,6 +183,12 @@
 "ManuallyInputLocationError"= "Please enter a city, state, or zip";
 "GenericNetworkError"= "Network error – please try again.";
 
+"LocationAndNotificationPermissionGeoFenceMessageIos8" = "Enable Location Services in Privacy -> Location Services -> Always. Enable Push Notifications in Notifications -> Allow Notifications";
+// Location and notification permissions for nearby alert feature
+"PermissionGeoFenceTitleIos8" = "Trulia cannot send you alerts of new homes nearby.";
+"LocationPermissionGeoFenceMessageIos8" = "Trulia needs your location to alert you of new homes nearby. Enable Location Services in Privacy -> Location Services -> Always";
+"BackgroundFetchPermissionGeoFenceMessageIos8" = "To get alerts of new homes nearby please enable Background App Refresh";
+
 /* Search-related messages and errors */
 "SearchFieldPlaceHolder"                        = "Enter location: City, State or Zip";
 "ForeClosurePromptTitle"                        = "Do you want to leave the Trulia App?";
