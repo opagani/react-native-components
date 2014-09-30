@@ -21,6 +21,7 @@
 #import "IRListingSearchViewControllerPhone.h"
 #import "IRMainViewControllerPad.h"
 #import "IRMainMenuViewControllerPhone.h"
+#import "ICSavedSearchNotificationsViewController.h"
 
 
 #if RUN_STRESS_TEST
@@ -712,6 +713,47 @@ void uncaughtExceptionHandler(NSException *exception) {
 - (NSString *)appIdentifier{
     
     return [[ICConfiguration sharedInstance] metricItem:@"Source"];
+}
+
+
+#pragma mark Handle Push Notifications
+
+- (void)handlePushNotification:(NSDictionary *)pushNotificationDictionary; {
+    
+    [super handlePushNotification:pushNotificationDictionary];
+    NSString *pushNotificationType = [pushNotificationDictionary objectForKey:@"type"];
+    
+    if([pushNotificationType intValue] != 0) {
+        switch ([pushNotificationType intValue]) {
+            case AGENT_LEAD_PUSH_NOTIFICATION:
+                break;
+            case SAVEDSEARCHNEWLISTING_PUSH_NOTIFICATION:
+            {
+                if ([[ICAccountController sharedInstance] isLoggedIn] && [UIDevice isPhone]){
+                    ICSavedSearchNotificationsViewController * nVc = [ICSavedSearchNotificationsViewController new];
+                    ICNavigationController * nav = [[ICNavigationController alloc] initWithRootViewController:nVc];
+                    UIViewController *rootView = [[[UIApplication sharedApplication] keyWindow] rootViewController];
+                    [rootView presentViewController:nav animated:YES completion:nil];
+                }
+                break;
+            }
+            case SAVEDSEARCHOPENHOUSE_PUSH_NOTIFICATION:
+                break;
+            case SAVEDHOMESTATUS_PUSH_NOTIFICATION:
+                break;
+            case SAVEDHOMEREDUCED_PUSH_NOTIFICATION:
+                break;
+            case SAVEDHOMEOPENHOUSE_PUSH_NOTIFICATION:
+                break;
+            case MESSAGE_PUSH_NOTIFICATION:
+                break;
+            case URL_PUSH_NOTIFICATION:
+                break;
+            default:
+                break;
+        }
+    }
+    
 }
 
 @end
