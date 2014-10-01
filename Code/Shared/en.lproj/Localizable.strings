@@ -189,6 +189,22 @@
 "LocationPermissionGeoFenceMessageIos8" = "Trulia needs your location to alert you of new homes nearby. Enable Location Services in Privacy -> Location Services -> Always";
 "BackgroundFetchPermissionGeoFenceMessageIos8" = "To get alerts of new homes nearby please enable Background App Refresh";
 
+"LocationPermissionGeoFenceTitle" = "Final Step to Enable Nearby Alerts";
+"LocationPermissionGeoFenceMessageIos8" = "Open Settings -> Privacy and set Allow Location Access to Always";
+
+
+"NotificationPermissionGeoFenceTitle" = "Nearby Alerts Need to Show You Notifications";
+"NotificationPermissionGeoFenceMessage" = "Open Settings and enable Notfication for Trulia";
+
+
+"BackgroundFetchPermissionGeoFenceTitle" = "Nearby Alerts";
+"BackgroundFetchPermissionGeoFenceMessageIos8" = "To get alerts of new homes nearby please enable Background App Refresh";
+"BackgroundFetchPermissionGeoFenceMessage" = "To get alerts of new homes nearby please enable Background App Refresh in Device Settings -> General -> Background App Refresh";
+
+
+"LocationServicesPermissionTitle" = "Turn On Location Services";
+"LocationServicesPermissionMessage" = "Please enable Location Services in your phone Settings -> Privacy -> Location";
+
 /* Search-related messages and errors */
 "SearchFieldPlaceHolder"                        = "Enter location: City, State or Zip";
 "ForeClosurePromptTitle"                        = "Do you want to leave the Trulia App?";
