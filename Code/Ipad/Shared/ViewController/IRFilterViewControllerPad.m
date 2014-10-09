@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Trulia Inc. All rights reserved.
 //
 
+#if 0
+
 #import "IRFilterViewControllerPad.h"
 #import "ICListingSearchController.h"
 #import "ICManagedSearch.h"
@@ -19,6 +21,11 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
    return [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+}
+
+- (id)initWithSearchController:(ICListingSearchController*)searchController{
+    
+    return [super initWithSearchController:searchController];
 }
 
 - (void)viewDidLoad
@@ -79,7 +86,8 @@
             
         case 1:
             cell.title = @"My Searches";
-            int searchCount = [[ICManagedSearch managedObjectsWithCategoryName:MANAGED_CATEGORY_FAVORITES] count];
+            //int searchCount = [[ICManagedSearch managedObjectsWithCategoryName:MANAGED_CATEGORY_FAVORITES] count];
+            int searchCount = 0;
             cell.counter = [NSString stringWithFormat:@"%d", searchCount];
             break;
             
@@ -113,3 +121,6 @@
 }
 
 @end
+
+#endif
+

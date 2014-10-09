@@ -1,0 +1,184 @@
+{
+    "02.MORE":
+    {
+        "text":"MORE",
+        "rows":
+        {
+            "01.Schools":{
+                "icon":"iconLocalMenuSchools.png",
+                "isVisible": "YES",
+                "text":"Schools",
+                "isParent":"YES",
+                "allowMultiSelection":"YES",
+                "indented":"NO",
+                "count":"3"
+            },
+            "02.Elementary" : {
+                "text":"Elementary",
+                "isVisible": "NO",
+                "isSelected":"NO",
+                "parent":"01.Schools",
+                "enumId":"205",
+                "indented":"YES"
+            },
+            "03.Middle" : {
+                "text":"Middle",
+                "isVisible": "NO",
+                "isSelected":"NO",
+                "parent":"01.Schools",
+                "enumId":"206",
+                "indented":"YES"
+            },
+            "04.High" : {
+                "text":"High",
+                "isVisible": "NO",
+                "isSelected":"NO",
+                "parent":"01.Schools",
+                "enumId":"207",
+                "indented":"YES"
+            },
+            
+            "05.Amenities":{
+                "icon":"iconLocalMenuAmenities.png",
+                "isVisible": "YES",
+                "text":"Amenities",
+                "isParent":"YES",
+                "allowMultiSelection":"YES",
+                "indented":"NO",
+                "count":"4"
+            },
+            "06.Restaurants" : {
+                "text":"Restaurants",
+                "isVisible": "NO",
+                "isSelected":"NO",
+                "parent":"05.Amenities",
+                "enumId":"201",
+                "indented":"YES"
+            },
+            "07.Groceries" : {
+                "text":"Groceries",
+                "isVisible": "NO",
+                "isSelected":"NO",
+                "parent":"05.Amenities",
+                "enumId":"202",
+                "indented":"YES"
+            },
+            "08.Gas Stations" : {
+                "text":"Gas Stations",
+                "isVisible": "NO",
+                "isSelected":"NO",
+                "parent":"05.Amenities",
+                "enumId":"203",
+                "indented":"YES"
+            },
+            "09.Banks" : {
+                "text":"Banks",
+                "isVisible": "NO",
+                "isSelected":"NO",
+                "parent":"05.Amenities",
+                "enumId":"204",
+                "indented":"YES"
+            },
+            "10.Boundaries":{
+                "icon":"iconLocalMenuBoundary.png",
+                "isVisible": "YES",
+                "isParent":"YES",
+                "text":"Boundaries",
+                "allowMultiSelection":"NO",
+                "indented":"NO",
+                "count":"4"
+            },
+            "11.Neighborhood" : {
+                "text":"Neighborhood",
+                "isVisible": "NO",
+                "isSelected":"NO",
+                "parent":"10.Boundaries",
+                "enumId":"301",
+                "indented":"YES"
+            },
+            "12.ZIP" : {
+                "text":"ZIP",
+                "isVisible": "NO",
+                "isSelected":"NO",
+                "parent":"10.Boundaries",
+                "enumId":"302",
+                "indented":"YES"
+            },
+            "13.County" : {
+                "text":"County",
+                "isVisible": "NO",
+                "isSelected":"NO",
+                "parent":"10.Boundaries",
+                "enumId":"303",
+                "indented":"YES"
+            },
+            "14.School" : {
+                "text":"School",
+                "isVisible": "NO",
+                "isSelected":"NO",
+                "parent":"10.Boundaries",
+                "enumId":"304",
+                "indented":"YES"
+            },
+        },
+    },
+    
+    "01.TRULIA HEATMAPS":{
+        "text":"TRULIA HEATMAPS",
+        "rows":
+        {
+            "00.Crime":{
+                "icon":"iconLocalMenuCrime.png",
+                "isVisible": "YES",
+                "text":"Crime",
+                "allowMultiSelection":"NO",
+                "indented":"NO",
+                "enumId":"101",
+
+            },
+            "01.Affordability":{
+                "icon":"iconLocalMenuAffordability.png",
+                "isVisible": "YES",
+                "isParent":"YES",
+                "text":"Affordability",
+                "allowMultiSelection":"NO",
+                "indented":"NO",
+                "count":"4"
+                
+            },
+            "05.Rental Price" : {
+                "text":"Rental Price",
+                "isVisible": "NO",
+                "isSelected":"NO",
+                "parent":"01.Affordability",
+                "enumId":"104",
+                "indented":"YES"
+            },
+            "06.Natural Disasters":{
+                "icon":"iconLocalMenuNaturalDisasters.png",
+                "isVisible": "YES",
+                "isParent":"YES",
+                "text":"Natural Disasters",
+                "allowMultiSelection":"NO",
+                "indented":"NO",
+                "count":"3"
+            },
+            "07.Flood" : {
+                "text":"Flood",
+                "isVisible": "NO",
+                "isSelected":"NO",
+                "parent":"06.Natural Disasters",
+                "enumId":"102",
+                "indented":"YES"
+            },
+            "08.Seismic" : {
+                "text":"Earthquake",
+                "isVisible": "NO",
+                "isSelected":"NO",
+                "parent":"06.Natural Disasters",
+                "enumId":"103",
+                "indented":"YES"
+            },
+        },
+    },
+}

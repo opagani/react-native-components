@@ -6,8 +6,14 @@
 //  Copyright (c) 2013 Trulia Inc. All rights reserved.
 //
 
+#if 0
+
 #import "ICFilterViewControllerPad.h"
 
 @interface IRFilterViewControllerPad : ICFilterViewControllerPad
 
+- (id)initWithSearchController:(ICListingSearchController*)searchController;
+
 @end
+
+#endif

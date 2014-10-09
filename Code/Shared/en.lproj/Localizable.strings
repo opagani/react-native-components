@@ -1,16 +1,16 @@
-/* 
-   Localizable.strings
-   Trulia
-
-   Created by Nicholas Letourneau on 7/3/08.
-   Copyright 2008 Trulia, Inc. All rights reserved.
+/*
+ Localizable.strings
+ Trulia
+ 
+ Created by Nicholas Letourneau on 7/3/08.
+ Copyright 2008 Trulia, Inc. All rights reserved.
  */
 
 
 "MyTruliaTitle"                                 = "My Account";
 
 /* General Application */
-"IAGeneralNetworkError"                         = "The network may be down. Please try again";
+"IAGeneralNetworkError"                         = "Looks like a network error. Please try again";
 
 
 /* User Input Validation */
@@ -178,16 +178,40 @@
 "SatelliteView"									= "AERIAL";
 
 /* Error messages */
-"LocationDenied"= "Please enable your location in Settings.";
+"LocationDenied"= "Please enable Location Services in your Device Settings -> Privacy -> Location";
 "LocationUnknown"= "Your location could not be determined.";
 "ManuallyInputLocationError"= "Please enter a city, state, or zip";
 "GenericNetworkError"= "Network error – please try again.";
+
+"LocationAndNotificationPermissionGeoFenceMessageIos8" = "Enable Location Services in Privacy -> Location Services -> Always. Enable Push Notifications in Notifications -> Allow Notifications";
+// Location and notification permissions for nearby alert feature
+"PermissionGeoFenceTitleIos8" = "Trulia cannot send you alerts of new homes nearby.";
+"LocationPermissionGeoFenceMessageIos8" = "Trulia needs your location to alert you of new homes nearby. Enable Location Services in Privacy -> Location Services -> Always";
+"BackgroundFetchPermissionGeoFenceMessageIos8" = "To get alerts of new homes nearby please enable Background App Refresh";
+
+"LocationPermissionGeoFenceTitle" = "Final Step to Enable Nearby Alerts";
+"LocationPermissionGeoFenceMessageIos8" = "Open Settings -> Privacy and set Allow Location Access to Always";
+
+
+"NotificationPermissionGeoFenceTitle" = "Nearby Alerts Need to Show You Notifications";
+"NotificationPermissionGeoFenceMessage" = "Open Settings and enable Notfication for Trulia";
+
+
+"BackgroundFetchPermissionGeoFenceTitle" = "Nearby Alerts";
+"BackgroundFetchPermissionGeoFenceMessageIos8" = "To get alerts of new homes nearby please enable Background App Refresh";
+"BackgroundFetchPermissionGeoFenceMessage" = "To get alerts of new homes nearby please enable Background App Refresh in Device Settings -> General -> Background App Refresh";
+
+
+"LocationServicesPermissionTitle" = "Turn On Location Services";
+"LocationServicesPermissionMessage" = "Please enable Location Services in your phone Settings -> Privacy -> Location";
 
 /* Search-related messages and errors */
 "SearchFieldPlaceHolder"                        = "Enter location: City, State or Zip";
 "ForeClosurePromptTitle"                        = "Do you want to leave the Trulia App?";
 "ForeClosurePromptMessage"                      = "We'll take you to the foreclosure website.";
 "RedirectURLPromptMessage"                      = "We'll take you to the provider website.";
+"NameYourSearch"                                = "Name your Search";
+"ExampleSearchName"                             = "Ex Close to work, great schools";
 
 /* general error */
 "ListingsZoomedOutTooFar"= "Please zoom in to see your results.";
@@ -209,7 +233,7 @@
 "NewPasswordSentMsg" = "We've sent the new password to your email. Please log in";
 
 /* Contact */
-"ContactMessageSuccessful"= "Your message has been sent. Thanks!";
+"ContactMessageSuccessful"= "Done! Your email is on its way.";
 "ContactMessageErrorGeneric"= "Sorry, please try sending your message again.";
 
 /* Favorites Alerts Msgs*/
@@ -219,7 +243,6 @@
 "PropertySavedAfterAccountCreation"= "Thanks for joining Trulia. Your property has been saved";
 "SearchSavedAfterLoggingInMessage"= "Thanks for logging in. Your search has been saved";
 "SearchSavedAfterAccountCreation"= "Thanks for joining Trulia. Your search has been saved";
-
 
 /* Misc confirmation dialogs */
 "SearchResetParametersMessage"= "Would you like to clear your filters?";
@@ -231,11 +254,11 @@
 "DrivingDirectionsGoogleMapsLeaveAppMessage" = "We'll take you from Trulia to the Google Maps App";
 "DrivingDirectionsLeaveAppConfirm" = "Continue";
 "DrivingDirectionsLeaveAppCancel" = "Cancel";
-"SendToAFriendSuccessMessage" = "Your message has been sent. Thanks!";
+"SendToAFriendSuccessMessage" = "Done! Your email is on its way!";
 "ContentLoadingMessage" = "Loading...";
 
 //message notifications
-"IAListingNotificationShareSuccess"             = "Your message has been sent. Thanks!";
+"IAListingNotificationShareSuccess"             = "Done! Your message is on its way.";
 "IAListingNotificationShareError"               = "Sorry, please try again.";
 
 //login out strings
@@ -247,19 +270,9 @@
 "CreatingAccount"								= "Creating new account ..";
 "ClickToLogIn"									= "Tap here to Log in instead";
 
-/* Appirater */
-"Rating Message" = "Enjoying our app? Please take a minute to rate us in the App store.";
-"Rating Title" = "Rate the App";
-"No, Thanks" = "No thanks";
-"Remind me later" = "Give feedback";
-"Rate us" = "Yes, I love it!";
-
-
-
-"NoLayersHere"									= "There is no [heatmap name] available for this location. Please zoom out or move the map.";
-"NoBoundariesHere"								= "There are no [boundary name] available for this location. Please zoom out or move the map.";
-"NoDataHere"									= "There are no [data name] in this location. Please zoom out or move the map.";
-
+"NoLayersHere"									= "There is no [heatmap name] available for this location. Please adjust your zoom levels or move the map.";
+"NoBoundariesHere"								= "There are no [boundary name] available for this location. Please adjust your zoom levels or move the map.";
+"NoDataHere"									= "There are no [data name] in this location. Please adjust your zoom levels or move the map.";
 
 /* new 1.5 zoomed out too far */
 "LayersZoomedOutTooFar"							= "Please zoom in to see the [heatmap name].";
@@ -271,10 +284,10 @@
 
 /* new 1.5 zoomed in too far */
 "LayersZoomedInTooFar"							= "Please zoom out to see the [heatmap name].";
-"BoundariesZoomedInTooFar"						= "Please zoom out to see [boundary name]."; 
+"BoundariesZoomedInTooFar"						= "Please zoom out to see [boundary name].";
 
 
-/* new 1.5 general error */ 
+/* new 1.5 general error */
 "LayersGeneralError"							= "Sorry, something went wrong with the [heatmap name]. Please try again.";
 "BoundariesGeneralError"						= "Sorry, something went wrong with the [boundary name]. Please try again.";
 "DataGeneralError"								= "Sorry, something went wrong with [data name]. Please try again.";
@@ -289,3 +302,53 @@
 
 "YouAreNowLoggedIn" = "Thanks. You are now logged in.";
 "ThanksForJoiningTrulia" = "Thanks for joining Trulia. Your account is now active. Start saving properties or your search criteria to stay updated with alerts.";
+
+
+"LoginButtonSubmitText"= "Submit";
+"LoginCreateAcccountDisclaimerText" = "By tapping submit, you are indicating that you have read and agree to Trulia's Terms of Use and Privacy Policy.";
+"LoginForgotPasswordText"="Forgot your password? Reset password.";
+
+/* Appirater */
+"Rating Message" = "Enjoying our app? Please take a minute to rate us in the App store.";
+"Rating Title" = "Rate the App";
+"No, Thanks" = "No thanks";
+"Remind me later" = "Give feedback";
+"Rate us" = "Yes, I love it!";
+
+"pleaseSetUpFacebookAccountInIosSettings"="Please set up your facebook account in Settings > Facebook";
+
+"MenuShareMessageFacebook" = "Check out the Trulia mobile app to find homes and apartments near you. Download the app now";
+"MenuShareLinkFacebook" = "http://on.trulia.com/app_fb";
+
+"MenuShareMessageTwitter" = "Check out the @Trulia app to see homes & apts near you. Download";
+"MenuShareLinkTwitter" = "http://on.trulia.com/app_tw";
+
+"MenuShareMessageEmail" = "Check out the Trulia mobile app to find homes and apartments near you. Download the app now";
+"MenuShareLinkEmail" = "http://on.trulia.com/app_e";
+
+"MenuShareMessageSMS" = "Check out the Trulia mobile app to find homes and apartments near you. Download";
+"MenuShareLinkSMS" = "http://on.trulia.com/app_sms";
+
+"MenuShareLinkAirDrop" = "https://itunes.apple.com/us/app/real-estate-by-trulia-homes/id288487321?mt=8";
+
+"MenuShareEmailSubject" = "Check out the Trulia Mobile App";
+
+"PdpShareMessageFacebook" = "Check out this property I found using the Trulia Mobile app: ";
+"PdpShareMessageTwitter" = "Check out this property I found using the Trulia Mobile app: ";
+"PdpShareMessageEmail" = "Check out this property I found using the Trulia Mobile app: ";
+"PdpShareMessageSMS" = "Check out this property I found using the Trulia Mobile app: ";
+"PdpShareSubject" = "Share this property";
+
+
+"SignInTitle" = "Sign In";
+"CreateAccountTitle"="Create Account";
+"PromptToLogoutTitle" = "Are you sure you want to Sign out?";
+"ForgotPasswordInstructions" = "Enter your email address and we'll send a new password right away.";
+
+//open house strings
+"OpenHouseTableHeader"             = "Attend an Open House";
+"OpenHouseEventNote"               = "Found via the Trulia App";
+"OpenHouseCalendarItemTitle"       = "Open House From Trulia";
+
+"termsOfUseUrl"="http://m.trulia.com/terms/?chrome=IphoneApp";
+"privacyPolicyUrl"="http://m.trulia.com/privacy/?chrome=IphoneApp";

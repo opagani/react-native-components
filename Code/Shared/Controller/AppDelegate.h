@@ -9,23 +9,23 @@
 #import <UIKit/UIKit.h>
 #import "ICAppDelegate.h"
 #import "AppDelegate_Shared.h"
-#import "ICApplicationConfigurationRequest.h"
 #import "ICListingParameters.h"
 #import "ICNavigationController.h"
-#import "SplashScreenViewController.h"
 #import "ICStartupViewControllerPhone.h"
+#import "ICOnboardingViewControllerPhone.h"
+#import "ICOnboardingViewControllerPad.h"
 
-@class ICMainViewControllerPad,ICSwipeNavigationController, ICLeftMenuViewController;
+
+@class ICMainViewControllerPad, ICLeftMenuViewController;
 
 
-@interface AppDelegate : AppDelegate_Shared <ICApplicationConfigurationRequestDelegate, SplashViewDelegate, ICStartupViewControllerDelegate>{
+@interface AppDelegate : AppDelegate_Shared <ICOnboardingDelegate, ICStartupViewControllerDelegate>{
     // only being used by the iPad
-
-    ICSwipeNavigationController* deckController;
 }
-@property (nonatomic, strong) ICApplicationConfigurationRequest    *applicationConfigRequest;
-
 @property (nonatomic, strong) UIWindow *window;
+
+@property (nonatomic, strong) ICOnboardingViewControllerPhone *onboardingControllerPhone;
+@property (nonatomic, strong) ICOnboardingViewControllerPad *onboardingControllerPad;
 
 // navController is only being used by the iphone
 @property (nonatomic, strong) ICNavigationController *navController;
@@ -39,5 +39,6 @@
 - (void)saveUserLocations;
 - (void)getUserLocations;
 
+void uncaughtExceptionHandler(NSException *exception);
 
 @end

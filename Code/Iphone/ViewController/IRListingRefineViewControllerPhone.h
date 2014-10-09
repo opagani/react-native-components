@@ -10,4 +10,6 @@
 
 @interface IRListingRefineViewControllerPhone : ICListingRefineViewControllerPhone
 
+-(id)initWithSearchController:(ICListingSearchController *)searchController;
+
 @end

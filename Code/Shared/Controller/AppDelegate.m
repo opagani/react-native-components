@@ -1,4 +1,3 @@
-
 //
 //  AppDelegate.m
 //  Trulia
@@ -8,48 +7,67 @@
 //
 
 #import "AppDelegate.h"
+#import "ICMainViewControllerPad.h"
 
 #import "ICPreference.h"
 #import "ICMetricsController.h"
 #import "ICConfiguration.h"
-#import "UINavigationBar+TruliaNavBackground.h"
 #import "ICStartupViewControllerPhone.h"
 #import "ICCoreDataController.h"
-#import "ICMyAccountViewControllerPhone.h"
+//#import "ICMyAccountViewControllerPhone.h"
 #import "ICSyncController.h"
 #import "ICSyncServiceNotification.h"
-#import "ICMainMenuViewControllerPhone.h"
-#import "ICSwipeNavigationController.h"
-#import "ICLeftMenuViewController.h"
+#import "IRLeftMenuViewController.h"
+#import "IRListingSearchViewControllerPhone.h"
+#import "IRMainViewControllerPad.h"
+#import "IRMainMenuViewControllerPhone.h"
+#import "ICSavedSearchNotificationsViewController.h"
+
 
 #if RUN_STRESS_TEST
 #import "ICStressTestController.h"
 #endif
 
-#import "SplashScreenViewController.h"
-#import "ICPasteBoard.h"
+//#import "ICPasteBoard.h"
 #import "IAURLCache.h"
 #import "ICRouterInput.h"
 #import "ICApiRequest.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 #if TARGET_IPHONE_SIMULATOR
-#import "DCIntrospect.h"
 //#import "PonyDebugger.h"
 #endif
 
-#import <NewRelicAgent/NewRelicAgent.h>
+/*#import <NewRelicAgent/NewRelicAgent.h>
+ #import <Crashlytics/Crashlytics.h>
+ #import "ICListingDetailViewControllerPhone.h"
+ #import "IAConstants.h"
+ #import "ICFindAgentViewController.h"
+ #import "ICMoreViewController.h"
+ #import "ICMainMenuViewControllerPhone.h"
+ #import "ICMyAccountViewControllerPhone.h"
+ #import "IRMainViewControllerPad.h"
+ #import "IRListingSearchViewControllerPhone.h"
+ #import <MobileAppTracker/MobileAppTracker.h>
+ #import "IRStartupViewControllerPhone.h"
+ #import "IRMoreViewController.h"*/
+
+
 #import <Crashlytics/Crashlytics.h>
-#import "ICListingDetailViewControllerPhone.h"
+//#import "ICListingDetailViewControllerPhone.h"
 #import "IAConstants.h"
 #import "ICFindAgentViewController.h"
-#import "ICMoreViewController.h"
-#import "ICMainMenuViewControllerPhone.h"
-#import "ICMyAccountViewControllerPhone.h"
-#import "IRMainViewControllerPad.h"
-#import "IRListingSearchViewControllerPhone.h"
-#import <MobileAppTracker/MobileAppTracker.h>
-#import "IRStartupViewControllerPhone.h"
-#import "IRMoreViewController.h"
+#import "IC+UIViewController.h"
+#import "ICListingSearchController.h"
+#import "ICManagedSearch.h"
+#import "UIApplication+ICAdditions.h"
+#import "MCPixelTracker.h"
+#import "ICManagedNotification.h"
+#import "IC+UIColor.h"
+#import "ICImageBundleUtil.h"
+#import "ICAppearance.h"
+#import "ICLog.h"
+#import "ICUtility.h"
 
 #define MENU_FIND_AN_AGENT_STRING @"Find an Agent"
 #define MENU_OPEN_HOUSES_STRING   @"Open Houses"
@@ -57,16 +75,17 @@
 #define MENU_MY_SAVES_STRING      @"My Saves"
 #define MENU_SETTINGS_STRING      @"Settings & More"
 
-static void uncaughtExceptionHandler(NSException *exception) {
-    NSLog(@"CRASH: %@", exception);
-    NSLog(@"Stack Trace: %@", [exception callStackSymbols]);
-}
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize navController = _navController;
 @synthesize isShowingGalleryView;
+
+void uncaughtExceptionHandler(NSException *exception) {
+    GRLogCError(@"CRASH: %@", exception);
+    GRLogCError(@"Stack Trace: %@", [exception callStackSymbols]);
+}
 
 - (void)log:(NSString *)msg {
 	//[consoleTextView setText:[consoleTextView.text stringByAppendingString:[NSString stringWithFormat:@"%@\r\r", msg]]];
@@ -94,41 +113,51 @@ static void uncaughtExceptionHandler(NSException *exception) {
         
         [ICListingSearchController sharedInstance].previouslySearchedLocations = tmp;
 	}
+    
 }
 
 - (void)setRootViewControllerForIpad
 {
-    [_window setRootViewController:self.viewController];
+    [_window setRootViewController:self.leftViewController];
     [_window makeKeyAndVisible];
 }
 
-- (NSArray*)getMainMenuForIdiom:(UIUserInterfaceIdiom)idiom{
-    return [[NSArray alloc] initWithObjects:
-            [NSDictionary dictionaryWithObjectsAndKeys:MENU_MY_SAVES_STRING, @"title", [NSNumber numberWithInt:My_Saves], @"search",[[ICMyAccountViewControllerPhone alloc] initWithNibName:@"ICMyAccountViewControllerPhone" bundle:[NSBundle coreResourcesBundle]], @"target", @"IconMenuMySaves", @"image",@"my-saves", @"track", nil],
-            [NSDictionary dictionaryWithObjectsAndKeys:MENU_RENT_STRING, @"title",[NSNumber numberWithInt:For_Rent], @"search" , @"IconMenuForRent", @"image",@"search-for-rent", @"track", nil],
-            [NSDictionary dictionaryWithObjectsAndKeys:MENU_SETTINGS_STRING, @"title",[[IRMoreViewController alloc] initWithStyle:UITableViewStylePlain],@"target", @"IconMenuSettings", @"image",@"more", @"track", nil],
-            nil];
-}
+/*- (NSArray*)getMainMenuForIdiom:(UIUserInterfaceIdiom)idiom{
+ return [[NSArray alloc] initWithObjects:
+ [NSDictionary dictionaryWithObjectsAndKeys:MENU_MY_SAVES_STRING, @"title", [NSNumber numberWithInt:My_Saves], @"search",[[ICMyAccountViewControllerPhone alloc] initWithNibName:@"ICMyAccountViewControllerPhone" bundle:[NSBundle coreResourcesBundle]], @"target", @"IconMenuMySaves", @"image",@"my-saves", @"track", nil],
+ [NSDictionary dictionaryWithObjectsAndKeys:MENU_RENT_STRING, @"title",[NSNumber numberWithInt:For_Rent], @"search" , @"IconMenuForRent", @"image",@"search-for-rent", @"track", nil],
+ [NSDictionary dictionaryWithObjectsAndKeys:MENU_SETTINGS_STRING, @"title",[[IRMoreViewController alloc] initWithStyle:UITableViewStylePlain],@"target", @"IconMenuSettings", @"image",@"more", @"track", nil],
+ nil];
+ }*/
 
 - (void)initializeRootViewControllerForIpad
 {
-    ICMainMenuViewControllerPhone *menu = [[ICMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle] menuItems:[self getMainMenuForIdiom:UI_USER_INTERFACE_IDIOM()]];
-    self.viewController = [[ICLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController: [IRMainViewControllerPad sharedInstance]];
+    ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
+    currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
     
-    [IRMainViewControllerPad sharedInstance].toggleMenuBlock = ^(BOOL show){
-        [self.viewController toggleMenu:show];
+    [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
+    
+    IRMainViewControllerPad *searchController = [IRMainViewControllerPad sharedInstance];
+    searchController.toggleMenuBlock = ^(BOOL show){
+        [self.leftViewController toggleMenu:show];
     };
     
-    [IRMainViewControllerPad sharedInstance].leftMenuViewController = self.viewController;
+    ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
+    
+    IRMainMenuViewControllerPhone *menu = [[IRMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
+    self.leftViewController = [[IRLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController:navCtr];
+    
+    [ICMainViewControllerPad sharedInstance].leftMenuViewController = self.leftViewController;
 }
 
 - (void)setupAppConfigurationForIpad
 {
-    ICApplicationConfigurationRequest *configRequest = [[ICApplicationConfigurationRequest alloc] init];
-    self.applicationConfigRequest = configRequest;
-    [_applicationConfigRequest setDelegate:self];
-    [_applicationConfigRequest startRequest];
-    [AnalyticsManager startTracker];
+
+    /* ICApplicationConfigurationRequest *configRequest = [[ICApplicationConfigurationRequest alloc] init];
+     self.applicationConfigRequest = configRequest;
+     [_applicationConfigRequest setDelegate:self];
+     [_applicationConfigRequest startRequest];
+     //[AnalyticsManager startTracker];*/
 }
 
 - (void)launchIpadApp
@@ -136,17 +165,17 @@ static void uncaughtExceptionHandler(NSException *exception) {
     [self setupAppConfigurationForIpad];
     [self getUserLocations];
     
-    if([SplashScreenViewController shouldShowMe]) {
-        [self initializeRootViewControllerForIpad]; //Cache rootview, so its ready when splash is dismissed
-        [self showSplashScreenForIpad];
-    }else{
-        [self initializeRootViewControllerForIpad];
+    [self initializeRootViewControllerForIpad];
+    
+    if ([ICUtility freshInstall]) {
+        [self showOnboardingScreensForIPad];
+    } else {
         [self setRootViewControllerForIpad];
     }
 }
 
 - (void)setRootViewControllerForIphone {
-    [_window setRootViewController:deckController];
+    [_window setRootViewController:self.leftViewController];
     [_window makeKeyAndVisible];
 }
 
@@ -156,29 +185,67 @@ static void uncaughtExceptionHandler(NSException *exception) {
     }
 }
 
-- (void)setupListingParameters {
-    ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
-    currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
-    [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
+- (BOOL) shouldShowOnboardingScreens {
+    return ([UIDevice isOS8OrAbove] && [ICUtility freshInstall]);
 }
+
+- (void)showOnboardingScreensForIPad {
+    self.onboardingControllerPad = [[ICOnboardingViewControllerPad alloc] initWithNibName:@"ICOnboardingViewControllerPad"
+                                                                                   bundle:[NSBundle coreResourcesBundle]];
+    [self.onboardingControllerPad setDelegate:self];
+    [_window setRootViewController:self.onboardingControllerPad];
+    [_window makeKeyAndVisible];
+}
+
+- (void)showOnboardingScreensForIPhone {
+    self.onboardingControllerPhone = [[ICOnboardingViewControllerPhone alloc] initWithNibName:@"ICOnboardingViewControllerPhone"
+                                                                                       bundle:[NSBundle coreResourcesBundle]];
+    [self.onboardingControllerPhone setDelegate:self];
+    [_window setRootViewController:self.onboardingControllerPhone];
+    [_window makeKeyAndVisible];
+}
+
+
+/*- (void)setupListingParameters {
+ ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
+ currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
+ [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
+ }*/
 
 - (void)initializeRootViewControllerForIphone{
     
+    /*self.isShowingGalleryView = NO;
+     ICMainMenuViewControllerPhone *menuController = [[ICMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle] ];
+     
+     IRListingSearchViewControllerPhone *searchController = (IRListingSearchViewControllerPhone *)[IRListingSearchViewControllerPhone sharedInstance];
+     
+     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
+     
+     deckController =  [[ICSwipeNavigationController alloc] initWithCenterViewController:navCtr leftViewController:leftController rightViewController:nil];
+     deckController.leftLedge = 60;
+     [deckController setWantsFullScreenLayout:YES];
+     [navCtr setToolbarHidden:YES];*/
+    
+    
     self.isShowingGalleryView = NO;
-    ICMainMenuViewControllerPhone *leftController = [[ICMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle] menuItems:[self getMainMenuForIdiom:UI_USER_INTERFACE_IDIOM()]];
+    
+    IRMainMenuViewControllerPhone *menuController = [[IRMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle] ];
+    ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
+    currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
+    
+    [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
     
     IRListingSearchViewControllerPhone *searchController = (IRListingSearchViewControllerPhone *)[IRListingSearchViewControllerPhone sharedInstance];
-    
     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
     
-    deckController =  [[ICSwipeNavigationController alloc] initWithCenterViewController:navCtr leftViewController:leftController rightViewController:nil];
-    deckController.leftLedge = 60;
-    [deckController setWantsFullScreenLayout:YES];
-    [navCtr setToolbarHidden:YES];
+    
+    self.leftViewController = [[IRLeftMenuViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
+    self.navController = navCtr;
+
 }
 
 - (BOOL)shouldShowSplashScreenForIphone{
-
+    
     if (![[[ICPreference sharedInstance] getAppForKey:SESSION_KEY_INTRO_SHOWN] boolValue]
         || [[ICPreference sharedInstance] getAppForKey:SESSION_KEY_INTRO_SHOWN] == nil) {
         return YES;
@@ -189,115 +256,134 @@ static void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)showSplashScreenForIphone
 {
-    IRStartupViewControllerPhone *startupView = [[IRStartupViewControllerPhone alloc] initWithNibName:@"IRStartupViewController_iPhone" bundle:[NSBundle coreResourcesBundle]];
+    ICStartupViewControllerPhone *startupView = [[ICStartupViewControllerPhone alloc] initWithNibName:@"IRStartupViewController_iPhone" bundle:[NSBundle coreResourcesBundle]];
     startupView.delegate = self;
     [_window setRootViewController:startupView];
     [_window makeKeyAndVisible];
 }
 
-- (void)launchIphoneApp
-{
-    if ([self shouldShowSplashScreenForIphone]){
-        [self showSplashScreenForIphone];
-        [self initializeRootViewControllerForIphone]; //Cache rootview, so its ready when splash is dismissed
-    }else{
-        [self initializeRootViewControllerForIphone];
+- (void)launchIphoneApp{
+    
+    [self initializeRootViewControllerForIphone];
+    
+    // show only for first install and not upgrade
+    if ([UIDevice isOS8OrAbove] && [ICUtility freshInstall]) {
+        [self showOnboardingScreensForIPhone];
+    } else {
         [self setRootViewControllerForIphone];
-        [self showUpgradePopup];
     }
+    [self showUpgradePopup];
+}
+
+#pragma mark - onboarding delegate
+
+-(void)onBoardingScreensDimissed:(UIViewController *)onboardingVC {
+    [UIApplication sharedApplication].statusBarHidden = NO;
+    if ([UIDevice isPhone]){
+        [self setRootViewControllerForIphone];
+    } else {
+        [self setRootViewControllerForIpad];
+    }
+}
+
+- (void)requestNotificationsPermission {
+    [self registerNotification];
 }
 
 #pragma mark-
 #pragma mark Splash Screen Delegate for iPhone
 
 -(void)dismissStartupScreen:(UIViewController*)viewController{
-
+    
     [self setRootViewControllerForIphone];
-}
-
-- (void)showSplashScreenForIpad
-{
-    SplashScreenViewController *splashViewController = [[SplashScreenViewController alloc] init];
-    splashViewController.delegate = self;
-    [_window setRootViewController:splashViewController];
-    [_window makeKeyAndVisible];
 }
 
 #if TARGET_IPHONE_SIMULATOR
 
 - (void)setupDebugUtilities
 {
-//    [[DCIntrospect sharedIntrospector] start];
+    //    [[DCIntrospect sharedIntrospector] start];
     
-//    PDDebugger *debugger = [PDDebugger defaultInstance];
-//    [debugger connectToURL:[NSURL URLWithString:@"ws://localhost:9000/device"]];
-//    [debugger enableNetworkTrafficDebugging];
-//    [debugger forwardAllNetworkTraffic];
-//    [debugger enableViewHierarchyDebugging];
+    //    PDDebugger *debugger = [PDDebugger defaultInstance];
+    //    [debugger connectToURL:[NSURL URLWithString:@"ws://localhost:9000/device"]];
+    //    [debugger enableNetworkTrafficDebugging];
+    //    [debugger forwardAllNetworkTraffic];
+    //    [debugger enableViewHierarchyDebugging];
 }
 
 #endif
 
-- (void)setupCrashReporting
-{
-    [Crashlytics startWithAPIKey:@"69c46441eff2d4c6f8a043fd66d16ff159cd9812"];
-}
-
 - (void)setupTracking
 {
-    [NewRelicAgent startWithApplicationToken:TRULIA_NEW_RELIC_API_KEY];
+    [super setupTracking];
 
-    // init HasOffers library
-    
-    NSString * const MAT_CONVERSION_KEY = [[ICConfiguration sharedInstance] generalItem:@"HasOffersConversionKey"];
-    NSString * const MAT_ADVERTISER_ID = [[ICConfiguration sharedInstance] generalItem:@"HasOffersAdvertiserID"];
-    
-    [[MobileAppTracker sharedManager] startTrackerWithMATAdvertiserId:MAT_ADVERTISER_ID MATConversionKey:MAT_CONVERSION_KEY];
-    
-    bool newInstall = [SplashScreenViewController isNewInstall];
-    
-    if (newInstall) {
-        [[MobileAppTracker sharedManager] trackInstall];
-    } else {
-        if ([SplashScreenViewController shouldShowMe]) {
-            [[MobileAppTracker sharedManager] trackUpdate];
-        }
-    }
+   // [NewRelicAgent startWithApplicationToken:TRULIA_NEW_RELIC_API_KEY_RENTALS];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-    
-    [self setupTracking];
 
-    [self setupListingParameters];
+    /* NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+     
+     [self setupTracking];
+     
+     [self setupListingParameters];
+     
+     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+     self.window.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
+     
+     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+     self.isShowingGalleryView = NO;
+     [self launchIphoneApp];
+     }
+     else{
+     [self launchIpadApp];
+     }
+     
+     #if TARGET_IPHONE_SIMULATOR
+     [self setupDebugUtilities];
+     #endif
+     
+     [self setupCrashReporting];
+     
+     return [super application:application didFinishLaunchingWithOptions:launchOptions];*/
+
+    
+    BOOL returnValue = [super application:application didFinishLaunchingWithOptions:launchOptions];
+    if(!returnValue)
+        return returnValue;
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];    
+    if ([self.window respondsToSelector:@selector(tintColor)])
+        [self.window setTintColor:[UIColor truliaGreen]];
+    // the color background is white so that it natches with the background when status bar hides in the photoviewcontroller
+    self.window.backgroundColor = [UIColor whiteColor];
     
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+    [ICAppearance applyDefaultStyle];
+    
+    if ([UIDevice isPhone]) {
         self.isShowingGalleryView = NO;
         [self launchIphoneApp];
     }
     else{
         [self launchIpadApp];
     }
-
+    
 #if TARGET_IPHONE_SIMULATOR
-    [self setupDebugUtilities];
+    //    [self setupDebugUtilities];
 #endif
 
-    [self setupCrashReporting];
     
-    return [super application:application didFinishLaunchingWithOptions:launchOptions];
+    //NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    
+    return returnValue;
 }
 
 #pragma mark-
 #pragma mark Splash Screen Delegate for iPad
 
 -(void)goingOutOfView:(UIViewController*)viewController{
-
+    
     [self setRootViewControllerForIpad];
 }
 
@@ -308,9 +394,9 @@ static void uncaughtExceptionHandler(NSException *exception) {
      Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
      Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
      */
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
-    
-        [self.navController dismissModalViewControllerAnimated:NO];
+    if ([UIDevice isPhone]){
+        
+        [self.navController dismissViewControllerAnimated:YES completion:nil];
         
         NSInteger unreadCount = [ICManagedNotification numberofUnreadNotifications];
         if(unreadCount > 0) {
@@ -322,16 +408,24 @@ static void uncaughtExceptionHandler(NSException *exception) {
     }
     else{
     	[self saveUserLocations];
-        [ICSyncController sharedInstance].shouldBeAutoSyncing = NO;
     }
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
+    [super applicationDidEnterBackground:application];
+    
     /*
-     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
      If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
      */
+    
+    ICListingSearchController *controller = [ICListingSearchController sharedInstance];
+    if (![[controller currentSearch] isDeleted]) {
+        [[controller currentSearch] markAsViewed];
+    }
+    
+    [[ICCoreDataController sharedInstance] saveWithNotification:YES];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -340,13 +434,12 @@ static void uncaughtExceptionHandler(NSException *exception) {
      Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
      */
     
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
+    if ([UIDevice isPhone]){
         if([super isNewAppVersionAvailable]){
             [self showUpgradeAppPopup];
         }
     }
     else{
-        [_applicationConfigRequest startRequest];
         
         [[ICCurrentLocationController sharedInstance].locationManager stopUpdatingLocation];
         //[[GRCurrentLocationController sharedInstance] resetLocationStatusFlags];
@@ -358,7 +451,7 @@ static void uncaughtExceptionHandler(NSException *exception) {
     }
     
     [super applicationWillEnterForeground:(UIApplication *)application];
-
+    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -367,7 +460,6 @@ static void uncaughtExceptionHandler(NSException *exception) {
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
     [super applicationDidBecomeActive:application];
-    [[ICMetricsController sharedInstance] trackTapSenseEvent:@"" forEventData:@""];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -394,10 +486,10 @@ static void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)showUpgradeAppPopup {
 	UIAlertView *upgradeAppAlert = [[UIAlertView alloc] initWithTitle: @"Get the new app" message: @"An updated version of the Trulia App is now available via iTunes." delegate: self cancelButtonTitle: @"Not Now" otherButtonTitles: @"Update", nil];
-    upgradeAppAlert.tag = TruliaPromoAlertTypeUpdate;
+    upgradeAppAlert.tag = TruliaAlertTypeUpdate;
 	
     [[ICMetricsController sharedInstance] trackPageView:@"promo|update app|view"];
-      
+    
     
 	[upgradeAppAlert show];
 	[[ICPreference sharedInstance] setVisForKey:@"shown_upgradeapp_prompt" withAttribute:[[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"]];
@@ -405,20 +497,20 @@ static void uncaughtExceptionHandler(NSException *exception) {
 
 //same for rate us app and upgrade app alert
 - (void)alertView:(UIAlertView *)appAlert clickedButtonAtIndex:(NSInteger)buttonIndex {
-
+    
     //  **********************************************************************
     //  **********************************************************************
     //  be careful when adding here, make sure alertview underneath
     //  (ICAppDelegate) gets its alertView:clickedButtonAtIndex: called
     //  **********************************************************************
     //  **********************************************************************
-
+    
     int tag = appAlert.tag;
-    if (tag == TruliaPromoAlertTypeUpdate || tag == TruliaPromoAlertTypeRateAppUniversal )
+    if (tag == TruliaAlertTypeUpdate || tag == TruliaPromoAlertTypeRateAppUniversal )
     {
         NSMutableString *trackingString = [NSMutableString stringWithString:@"promo"];
-
-        if (appAlert.tag == TruliaPromoAlertTypeUpdate)
+        
+        if (appAlert.tag == TruliaAlertTypeUpdate)
         {
             [trackingString appendString:@"|update app"];
         }
@@ -430,10 +522,10 @@ static void uncaughtExceptionHandler(NSException *exception) {
         {
             [trackingString appendString:@"|unknown alert"];
         }
-
+        
         // This could be prettier but since -[UIApplication openURL:] will bounce us out of the app, let's make sure all the tracking is taken care of cleanly first.
         BOOL userConfirmed = buttonIndex == appAlert.firstOtherButtonIndex;
-
+        
         if (userConfirmed)
         {
             [trackingString appendString:@"|yes"];
@@ -443,8 +535,8 @@ static void uncaughtExceptionHandler(NSException *exception) {
             [trackingString appendString:@"|cancel"];
         }
         [[ICMetricsController sharedInstance] trackClick:trackingString];
-
-
+        
+        
         if (userConfirmed)
         {
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[ICConfiguration sharedInstance] generalItem:@"AppStoreLink"]]];
@@ -460,108 +552,213 @@ static void uncaughtExceptionHandler(NSException *exception) {
 }
 
 - (void)loadMyAccountWithId:(NSString *)notificationId andType:(NSInteger)notificationType; {
-    [[ICSyncController sharedInstance] forceSyncForSyncServiceClass:[ICSyncServiceNotification class]];
     
-    ICMyAccountViewControllerPhone *myAccountViewController = [[ICMyAccountViewControllerPhone alloc] initWithNibName:@"ICMyAccountViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
-    
-    UINavigationController *navController = (UINavigationController *)deckController.centerController;
-    UIViewController *topViewController = [navController topViewController];
-    
-    if(![topViewController isKindOfClass:[ICMyAccountViewControllerPhone class]]){
-        
-         [navController setViewControllers:[NSArray arrayWithObject:myAccountViewController] animated:NO];
-    }
-    
+    [[ICSyncController sharedInstance] syncService:ICSYncServiceTypeNotification complete:nil];
+    [[ICSyncController sharedInstance] syncService:ICSYncServiceTypeNotification complete:nil];
+
 }
 
 
 #pragma mark-
 #pragma mark Deep Linking
 
--(void)routeInput:(ICRouterInput *)route
+
+/*-(void)routeInput:(ICRouterInput *)route
 {
- 
-    UINavigationController *centerNavController = nil;
-    
-    if(deckController)
-        centerNavController = (UINavigationController*)deckController.centerController;
     
     [[ICPreference sharedInstance] setAppForKey:@"TmaPrefetch" withAttribute:@"NO"];
-
+    
     if (route.action == ROUTINGACTION_PROPERTY)
     {
-
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        
+        if ([UIDevice isPad])
         {
             ICListingParameters *searchParams = [ICListingParameters new];
-
+            
             [searchParams populateSearchWithPropertyListing:route.parsedParam];
-
+            
             [[ICListingSearchController sharedInstance] searchWithParameters:searchParams];
-
-            [[IRMainViewControllerPad sharedInstance] navigateDirectlyToPdp:route.parsedParam];
+            
+            [[ICMainViewControllerPad sharedInstance] navigateDirectlyToPdp:route.parsedParam];
         }
         else
         {
-            //[self.navController popToRootViewControllerAnimated:NO];
-
+            [self.navController popToRootViewControllerAnimated:NO];
+            
             ICListing *currParams = (ICListing *) route.parsedParam;
-
+            
             ICListingParameters *srchParams = [[ICListingParameters alloc] init];
-
+            
             [srchParams populateSearchWithPropertyListing:currParams];
-
+            
             srchParams.indexType = [NSMutableArray arrayWithObject:[ICRouterInput getSearchTypeString:route.searchType]];
-
+            
             ICListingSearchViewControllerDefault *searchController = [ICListingSearchViewControllerDefault sharedInstance];
             [searchController searchWithParameters:srchParams];
-
+            
             ICListingDetailViewControllerPhone *detailViewController = [[ICListingDetailViewControllerPhone alloc] initWithNibName:@"ICListingDetailViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
             [detailViewController setWithListing:(ICListing *) route.parsedParam andRefresh:NO];
             [searchController.navigationController pushViewController:detailViewController animated:NO];
         }
-
+        
     }
     else if (route.action == ROUTINGACTION_SEARCH)
     {
-
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        
+        if ([UIDevice isPad])
         {
             if (route.parsedParam)
                 [[ICListingSearchController sharedInstance] searchWithParameters:route.parsedParam];
         }
         else
         {
-            if (centerNavController)
-                [centerNavController popToRootViewControllerAnimated:YES];
+            [self.navController popToRootViewControllerAnimated:YES];
             
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.8 * NSEC_PER_SEC), dispatch_get_current_queue(), ^
-            {
-                if (route.parsedParam){
-                    ICListingSearchViewControllerDefault *searchController = [ICListingSearchViewControllerDefault sharedInstance];
-                    [searchController searchWithParameters:route.parsedParam];
-                 }
-            });
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.8 * NSEC_PER_SEC), dispatch_get_main_queue (), ^
+                           {
+                               if (route.parsedParam){
+                                   ICListingSearchViewControllerDefault *searchController = [ICListingSearchViewControllerDefault sharedInstance];
+                                   [searchController searchWithParameters:route.parsedParam];
+                               }
+                           });
         }
-
+        
     }else if(route.action == ROUTINGACTION_HOME){
-
+        
         [self.navController popToRootViewControllerAnimated:YES];
     }
+}*/
+
+/*-(void)routeInput:(ICRouterInput *)route
+{
+    
+    [[ICPreference sharedInstance] setAppForKey:@"TmaPrefetch" withAttribute:@"NO"];
+    
+    if (route.action == ROUTINGACTION_PROPERTY)
+    {
+        
+        if ([UIDevice isPad])
+        {
+            ICListingParameters *searchParams = [ICListingParameters new];
+            
+            [searchParams populateSearchWithPropertyListing:route.parsedParam];
+            
+            [[ICListingSearchController sharedInstance] searchWithParameters:searchParams];
+            
+            [[ICMainViewControllerPad sharedInstance] navigateDirectlyToPdp:route.parsedParam];
+        }
+        else
+        {
+            [self.navController popToRootViewControllerAnimated:NO];
+            
+            ICListing *currParams = (ICListing *) route.parsedParam;
+            
+            ICListingParameters *srchParams = [[ICListingParameters alloc] init];
+            
+            [srchParams populateSearchWithPropertyListing:currParams];
+            
+            srchParams.indexType = [NSMutableArray arrayWithObject:[ICRouterInput getSearchTypeString:route.searchType]];
+            
+            ICListingSearchViewControllerDefault *searchController = [ICListingSearchViewControllerDefault sharedInstance];
+            [searchController searchWithParameters:srchParams];
+            
+            ICListingDetailViewControllerPhone *detailViewController = [[ICListingDetailViewControllerPhone alloc] initWithNibName:@"ICListingDetailViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
+            [detailViewController setWithListing:(ICListing *) route.parsedParam andRefresh:NO];
+            [searchController.navigationController pushViewController:detailViewController animated:NO];
+        }
+        
+    }
+    else if (route.action == ROUTINGACTION_SEARCH)
+    {
+        
+        if ([UIDevice isPad])
+        {
+            if (route.parsedParam)
+                [[ICListingSearchController sharedInstance] searchWithParameters:route.parsedParam];
+        }
+        else
+        {
+            [self.navController popToRootViewControllerAnimated:YES];
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.8 * NSEC_PER_SEC), dispatch_get_main_queue (), ^
+                           {
+                               if (route.parsedParam){
+                                   ICListingSearchViewControllerDefault *searchController = [ICListingSearchViewControllerDefault sharedInstance];
+                                   [searchController searchWithParameters:route.parsedParam];
+                               }
+                           });
+        }
+        
+    }else if(route.action == ROUTINGACTION_HOME){
+        
+        [self.navController popToRootViewControllerAnimated:YES];
+    }
+}*/
+
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    
+    if ([super application:application handleOpenURL:url])
+        return YES;
+    
+    return [FBSession.activeSession handleOpenURL:url];
+    
+}
+
+- (id)tracker{
+    
+    return [ICMetricsController tracker];
+}
+
+- (NSString *)appIdentifier{
+    
+    return [[ICConfiguration sharedInstance] metricItem:@"Source"];
 }
 
 
-- (BOOL)application:(UIApplication *)application 
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication 
-         annotation:(id)annotation 
-{
+#pragma mark Handle Push Notifications
 
-    if ([super application:application handleOpenURL:url])
-        return YES;
-
-    return [FBSession.activeSession handleOpenURL:url];
-
+- (void)handlePushNotification:(NSDictionary *)pushNotificationDictionary; {
+    
+    [super handlePushNotification:pushNotificationDictionary];
+    NSString *pushNotificationType = [pushNotificationDictionary objectForKey:@"type"];
+    
+    if([pushNotificationType intValue] != 0) {
+        switch ([pushNotificationType intValue]) {
+            case AGENT_LEAD_PUSH_NOTIFICATION:
+                break;
+            case SAVEDSEARCHNEWLISTING_PUSH_NOTIFICATION:
+            {
+                if ([[ICAccountController sharedInstance] isLoggedIn] && [UIDevice isPhone]){
+                    ICSavedSearchNotificationsViewController * nVc = [ICSavedSearchNotificationsViewController new];
+                    ICNavigationController * nav = [[ICNavigationController alloc] initWithRootViewController:nVc];
+                    UIViewController *rootView = [[[UIApplication sharedApplication] keyWindow] rootViewController];
+                    [rootView presentViewController:nav animated:YES completion:nil];
+                }
+                break;
+            }
+            case SAVEDSEARCHOPENHOUSE_PUSH_NOTIFICATION:
+                break;
+            case SAVEDHOMESTATUS_PUSH_NOTIFICATION:
+                break;
+            case SAVEDHOMEREDUCED_PUSH_NOTIFICATION:
+                break;
+            case SAVEDHOMEOPENHOUSE_PUSH_NOTIFICATION:
+                break;
+            case MESSAGE_PUSH_NOTIFICATION:
+                break;
+            case URL_PUSH_NOTIFICATION:
+                break;
+            default:
+                break;
+        }
+    }
+    
 }
 
 @end
+

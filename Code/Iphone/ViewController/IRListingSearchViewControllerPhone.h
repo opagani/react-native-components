@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Trulia Inc. All rights reserved.
 //
 
-#import "ICListingSearchViewControllerDefault.h"
+#import "ICSRPViewControllerPhone.h"
 #import "IRListingRefineViewControllerPhone.h"
 
-@interface IRListingSearchViewControllerPhone : ICListingSearchViewControllerDefault
+@interface IRListingSearchViewControllerPhone : ICSRPViewControllerPhone
 
 @end

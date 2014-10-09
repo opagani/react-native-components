@@ -9,7 +9,6 @@
 #import <Crashlytics/Crashlytics.h>
 #import "AppDelegate_Shared.h"
 #import "ICPreference.h"
-#import "SplashScreenViewController.h"
 #import "Appirater.h"
 #import "ICAdSearchController.h"
 #import "IAURLCache.h"
@@ -25,7 +24,6 @@
     if ([super application:application didFinishLaunchingWithOptions:launchOptions]) {
         [[UIApplication sharedApplication] setStatusBarHidden:NO];
         
-        
         return YES;
     }
     else {
@@ -36,9 +34,9 @@
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-
+    
     [super applicationWillEnterForeground:application];
-
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -47,9 +45,9 @@
     NSError *error = nil;
     if (managedObjectContext_ != nil) {
         if ([managedObjectContext_ hasChanges] && ![managedObjectContext_ save:&error]) {
-            GRLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            //GRLog(@"Unresolved error %@, %@", error, [error userInfo]);
             abort();
-        } 
+        }
     }
 }
 
@@ -84,7 +82,7 @@
      Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
      */
     CLSLog(@"%s ** memory warning **", __func__);
-
+    
     [[ICAdSearchController sharedInstance] flush];
 }
 
@@ -101,4 +99,3 @@
 
 
 @end
-
