@@ -235,6 +235,7 @@
 /* Contact */
 "ContactMessageSuccessful"= "Done! Your email is on its way.";
 "ContactMessageErrorGeneric"= "Sorry, please try sending your message again.";
+"ReportFraudMessageSuccessful" = "This property is now reported as fraud.";
 
 /* Favorites Alerts Msgs*/
 "SearchSavedToFavoritesMessage"= "Your search criteria has been saved.";

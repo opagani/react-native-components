@@ -35,9 +35,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)animateStarToSavesMenuFromView:(UIView *)fromView completionBlock:(void (^) (void))completionBlock{
-    [self animateStarToMenuFromView:fromView forMenuItem:0 completionBlock:completionBlock];
-}
-
 
 @end
