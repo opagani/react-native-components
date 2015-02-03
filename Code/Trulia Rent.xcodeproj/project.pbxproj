@@ -17,8 +17,6 @@
 		269D198E19B925F0000440BC /* LocalInfoItems~ipad.json in Resources */ = {isa = PBXBuildFile; fileRef = 269D198D19B925F0000440BC /* LocalInfoItems~ipad.json */; };
 		26AC16D817416415005D4FFE /* IRListingRefineViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AC16D717416415005D4FFE /* IRListingRefineViewControllerPhone.m */; };
 		26AE6106173DAF2500E0410D /* IRListingSearchViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AE6105173DAF2500E0410D /* IRListingSearchViewControllerPhone.m */; };
-		26AF8358194F638500F807EB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAABD19491426006BE023 /* FacebookSDK.framework */; };
-		26AF8359194F640D00F807EB /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAAC5194A30BA006BE023 /* GoogleMaps.framework */; };
 		2E1AD2F2165436B500C81545 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1AD2F1165436B500C81545 /* libz.dylib */; };
 		2E309C2E167024BF00A31BD0 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E309C23167024BF00A31BD0 /* LICENSE.txt */; };
 		2E309C2F167024BF00A31BD0 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E309C24167024BF00A31BD0 /* OpenSans-Bold.ttf */; };
@@ -160,6 +158,8 @@
 		E0A98EBF18ECB597006E5581 /* QueSaveSearch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A98EBC18ECB597006E5581 /* QueSaveSearch@2x.png */; };
 		E0A98EC218ECB64E006E5581 /* iPhoneSplash1-568h@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0A98EC018ECB64E006E5581 /* iPhoneSplash1-568h@2x.jpg */; };
 		E0A98EC318ECB64E006E5581 /* iPhoneSplash1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0A98EC118ECB64E006E5581 /* iPhoneSplash1@2x.jpg */; };
+		E0B6D9681A80999900A10F7B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAABD19491426006BE023 /* FacebookSDK.framework */; };
+		E0B6D96A1A809A6C00A10F7B /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B6D9691A809A6C00A10F7B /* GoogleMaps.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -343,6 +343,8 @@
 		E0A98EBC18ECB597006E5581 /* QueSaveSearch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QueSaveSearch@2x.png"; sourceTree = "<group>"; };
 		E0A98EC018ECB64E006E5581 /* iPhoneSplash1-568h@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iPhoneSplash1-568h@2x.jpg"; sourceTree = "<group>"; };
 		E0A98EC118ECB64E006E5581 /* iPhoneSplash1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iPhoneSplash1@2x.jpg"; sourceTree = "<group>"; };
+		E0B6D9611A80950100A10F7B /* EPrizeMobileSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EPrizeMobileSDK.framework; path = "../../mob-ioscore-lib/lib/ePrize Mobile SDK/EPrizeMobileSDK.framework"; sourceTree = "<group>"; };
+		E0B6D9691A809A6C00A10F7B /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "../../mob-ioscore-lib/lib/GoogleMapsSDK/GoogleMaps-iOS-1.8.1/GoogleMaps.framework"; sourceTree = "<group>"; };
 		E0EE35DF18E4B403001E7BFA /* ForRentIcon120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ForRentIcon120x120.png; path = ../ForRentIcon120x120.png; sourceTree = "<group>"; };
 		E0EE35E018E4B437001E7BFA /* ForRentIcon152x152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ForRentIcon152x152.png; path = ../ForRentIcon152x152.png; sourceTree = "<group>"; };
 		E0EE35E118E4B45A001E7BFA /* ForRentIcon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ForRentIcon76x76.png; path = ../ForRentIcon76x76.png; sourceTree = "<group>"; };
@@ -396,16 +398,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07EAACA194A30E9006BE023 /* Parse.framework in Frameworks */,
+				E0B6D96A1A809A6C00A10F7B /* GoogleMaps.framework in Frameworks */,
+				E0B6D9681A80999900A10F7B /* FacebookSDK.framework in Frameworks */,
 				2E309C41167028D700A31BD0 /* CoreText.framework in Frameworks */,
-				26AF8359194F640D00F807EB /* GoogleMaps.framework in Frameworks */,
-				26AF8358194F638500F807EB /* FacebookSDK.framework in Frameworks */,
 				9D94DEAC15D992F20068FC85 /* OpenGLES.framework in Frameworks */,
 				51802F5314CF799500199144 /* QuartzCore.framework in Frameworks */,
 				51802F5714CF79AA00199144 /* SystemConfiguration.framework in Frameworks */,
 				E07EAACE194A34C3006BE023 /* libc++.dylib in Frameworks */,
 				51802F4714CF794500199144 /* CoreLocation.framework in Frameworks */,
 				E07EAACC194A31B0006BE023 /* Crashlytics.framework in Frameworks */,
-				E07EAACA194A30E9006BE023 /* Parse.framework in Frameworks */,
 				E07EAAC8194A30CF006BE023 /* GLKit.framework in Frameworks */,
 				E07EAAC419491E5D006BE023 /* NewRelicAgent.framework in Frameworks */,
 				E05C232618C682E4009A3207 /* libIosCore.a in Frameworks */,
@@ -641,6 +643,8 @@
 		51DA6A1514CF2F0D007F2584 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E0B6D9691A809A6C00A10F7B /* GoogleMaps.framework */,
+				E0B6D9611A80950100A10F7B /* EPrizeMobileSDK.framework */,
 				E07EAACD194A34C2006BE023 /* libc++.dylib */,
 				E07EAACB194A31B0006BE023 /* Crashlytics.framework */,
 				E07EAAC9194A30E9006BE023 /* Parse.framework */,
@@ -1315,7 +1319,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Trulia Inc";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -1340,7 +1344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: John Zorko (Q54J3VQ5EM)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Trulia Inc";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1371,7 +1375,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Trulia Inc";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1419,7 +1423,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Trulia Inc";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1458,7 +1462,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Trulia Inc";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
@@ -1470,6 +1474,12 @@
 					"\"$(SRCROOT)/../lib/Crashlytics\"",
 					"\"$(SRCROOT)/../lib\"/**",
 					"\"$(SRCROOT)/../../mob-ioscore-lib/lib\"/**",
+					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/ePrize",
+					Mobile,
+					SDK,
+					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/FacebookSDK",
+					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/GoogleMapsSDK/GoogleMaps-iOS-1.8.1",
+					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
@@ -1510,7 +1520,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Trulia Inc";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
@@ -1522,6 +1532,12 @@
 					"\"$(SRCROOT)/../lib/Crashlytics\"",
 					"\"$(SRCROOT)/../lib\"/**",
 					"\"$(SRCROOT)/../../mob-ioscore-lib/lib\"/**",
+					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/ePrize",
+					Mobile,
+					SDK,
+					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/FacebookSDK",
+					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/GoogleMapsSDK/GoogleMaps-iOS-1.8.1",
+					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
