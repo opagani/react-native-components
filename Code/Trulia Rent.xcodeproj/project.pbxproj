@@ -970,6 +970,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Trulia Inc";
+				TargetAttributes = {
+					4C0CF11014D6643E00A1D325 = {
+						DevelopmentTeam = 9FBSWYKDXR;
+					};
+				};
 			};
 			buildConfigurationList = 51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "Trulia Rent" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1237,7 +1242,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Fawad Haider (TA495TK554)";
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../lib/OCMock\"",
@@ -1283,7 +1288,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Fawad Haider (TA495TK554)";
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../lib/OCMock\"",
@@ -1319,7 +1324,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Trulia Inc";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -1344,7 +1349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Trulia Inc";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1375,7 +1380,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Trulia Inc";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
@@ -1424,7 +1429,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Trulia Inc";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = YES;
@@ -1464,7 +1469,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Trulia Inc";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				COMPRESS_PNG_FILES = NO;
@@ -1523,7 +1528,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Trulia Inc";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				COMPRESS_PNG_FILES = NO;
