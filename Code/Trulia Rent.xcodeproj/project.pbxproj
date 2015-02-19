@@ -105,7 +105,6 @@
 		9D94D27A161A0B5C0089CEEC /* ICStartupViewControllerPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D25E161A0B5C0089CEEC /* ICStartupViewControllerPhone.xib */; };
 		9D94DEAC15D992F20068FC85 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D94DEAB15D992F20068FC85 /* OpenGLES.framework */; };
 		9D94F60515DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F42A15DEECF80068FC85 /* SchoolMapCalloutViewController_iPad.xib */; };
-		9D94F60615DEECF90068FC85 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F42C15DEECF80068FC85 /* SplashScreenViewController.xib */; };
 		9D94F75115DEECFA0068FC85 /* CalloutMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D94F5AE15DEECF90068FC85 /* CalloutMapAnnotation.m */; };
 		9D94F76A15DEECFA0068FC85 /* SchoolMapCalloutViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D94F5E115DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.m */; };
 		9D94F76B15DEECFA0068FC85 /* SchoolMapCalloutViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F5E215DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.xib */; };
@@ -151,8 +150,6 @@
 		E0A93A0318F27D4400222F2D /* ForRentIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = E0EE35E118E4B45A001E7BFA /* ForRentIcon76x76.png */; };
 		E0A93A0418F27D4400222F2D /* ForRentIcon152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = E0EE35E018E4B437001E7BFA /* ForRentIcon152x152.png */; };
 		E0A93A0518F27D4400222F2D /* ForRentIcon120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = E0EE35DF18E4B403001E7BFA /* ForRentIcon120x120.png */; };
-		E0A93A0818F280E600222F2D /* Splash-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A93A0618F280E500222F2D /* Splash-Landscape@2x.png */; };
-		E0A93A0918F280E600222F2D /* Splash-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A93A0718F280E500222F2D /* Splash-Portrait@2x.png */; };
 		E0A98EBD18ECB597006E5581 /* QueSaveSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A98EBA18ECB597006E5581 /* QueSaveSearch.png */; };
 		E0A98EBE18ECB597006E5581 /* QueSaveSearch-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A98EBB18ECB597006E5581 /* QueSaveSearch-568h@2x.png */; };
 		E0A98EBF18ECB597006E5581 /* QueSaveSearch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A98EBC18ECB597006E5581 /* QueSaveSearch@2x.png */; };
@@ -287,7 +284,6 @@
 		9D94D25F161A0B5C0089CEEC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ICStartupViewControllerPhone.xib; sourceTree = "<group>"; };
 		9D94DEAB15D992F20068FC85 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		9D94F42B15DEECF80068FC85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SchoolMapCalloutViewController_iPad.xib; sourceTree = "<group>"; };
-		9D94F42D15DEECF80068FC85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SplashScreenViewController.xib; sourceTree = "<group>"; };
 		9D94F56915DEECF80068FC85 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 		9D94F5AD15DEECF90068FC85 /* CalloutMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalloutMapAnnotation.h; sourceTree = "<group>"; };
 		9D94F5AE15DEECF90068FC85 /* CalloutMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalloutMapAnnotation.m; sourceTree = "<group>"; };
@@ -336,8 +332,6 @@
 		E0A939F218F27A1E00222F2D /* trulia-rentals-1024@768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trulia-rentals-1024@768.png"; sourceTree = "<group>"; };
 		E0A939F318F27A1E00222F2D /* trulia-rentals-768x1024@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trulia-rentals-768x1024@2x.png"; sourceTree = "<group>"; };
 		E0A939F418F27A1E00222F2D /* trulia-rentals-1024@768@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trulia-rentals-1024@768@2x.png"; sourceTree = "<group>"; };
-		E0A93A0618F280E500222F2D /* Splash-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Landscape@2x.png"; sourceTree = "<group>"; };
-		E0A93A0718F280E500222F2D /* Splash-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash-Portrait@2x.png"; sourceTree = "<group>"; };
 		E0A98EBA18ECB597006E5581 /* QueSaveSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QueSaveSearch.png; sourceTree = "<group>"; };
 		E0A98EBB18ECB597006E5581 /* QueSaveSearch-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QueSaveSearch-568h@2x.png"; sourceTree = "<group>"; };
 		E0A98EBC18ECB597006E5581 /* QueSaveSearch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QueSaveSearch@2x.png"; sourceTree = "<group>"; };
@@ -758,8 +752,6 @@
 				6D8C5AB019C2775F00EF2937 /* OnboardingEndIpadHero@2x.png */,
 				6D8C5AB119C2775F00EF2937 /* OnboardingLocationIpadHero@2x.png */,
 				6D8C5AB219C2775F00EF2937 /* OnboardingNotificationIpadHero@2x.png */,
-				E0A93A0618F280E500222F2D /* Splash-Landscape@2x.png */,
-				E0A93A0718F280E500222F2D /* Splash-Portrait@2x.png */,
 				E0A939EE18F27A1E00222F2D /* trulia-rentals-320x480@2x.png */,
 				E0A939EF18F27A1E00222F2D /* trulia-rentals-640x960@2x.png */,
 				E0A939F018F27A1E00222F2D /* trulia-rentals-640x1136.png */,
@@ -899,7 +891,6 @@
 			isa = PBXGroup;
 			children = (
 				9D94F42A15DEECF80068FC85 /* SchoolMapCalloutViewController_iPad.xib */,
-				9D94F42C15DEECF80068FC85 /* SplashScreenViewController.xib */,
 			);
 			name = en.lproj;
 			sourceTree = "<group>";
@@ -974,6 +965,9 @@
 					4C0CF11014D6643E00A1D325 = {
 						DevelopmentTeam = 9FBSWYKDXR;
 					};
+					51DA6A1114CF2F0D007F2584 = {
+						DevelopmentTeam = 9FBSWYKDXR;
+					};
 				};
 			};
 			buildConfigurationList = 51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "Trulia Rent" */;
@@ -1024,7 +1018,6 @@
 				E0A939FF18F27D4400222F2D /* ForRentIcon29x29.png in Resources */,
 				E0A93A0018F27D4400222F2D /* ForRentIcon58x58.png in Resources */,
 				E0A93A0118F27D4400222F2D /* ForRentIcon40x40.png in Resources */,
-				E0A93A0918F280E600222F2D /* Splash-Portrait@2x.png in Resources */,
 				E0A93A0218F27D4400222F2D /* ForRentIcon80x80.png in Resources */,
 				E0A93A0318F27D4400222F2D /* ForRentIcon76x76.png in Resources */,
 				E0A93A0418F27D4400222F2D /* ForRentIcon152x152.png in Resources */,
@@ -1044,13 +1037,11 @@
 				9D94F60515DEECF90068FC85 /* SchoolMapCalloutViewController_iPad.xib in Resources */,
 				6D8C5ABB19C2777000EF2937 /* OnboardingBeginIphoneHero@2x.png in Resources */,
 				269D198E19B925F0000440BC /* LocalInfoItems~ipad.json in Resources */,
-				9D94F60615DEECF90068FC85 /* SplashScreenViewController.xib in Resources */,
 				9D94F76B15DEECFA0068FC85 /* SchoolMapCalloutViewController_iPad.xib in Resources */,
 				E06C997F18C7FBE300C1AAFB /* BgLoginPhoto@2x.jpg in Resources */,
 				9D94D26F161A0B5C0089CEEC /* copyright.html in Resources */,
 				9D94D279161A0B5C0089CEEC /* InfoPlist.strings in Resources */,
 				E0A98EC318ECB64E006E5581 /* iPhoneSplash1@2x.jpg in Resources */,
-				E0A93A0818F280E600222F2D /* Splash-Landscape@2x.png in Resources */,
 				9D94D27A161A0B5C0089CEEC /* ICStartupViewControllerPhone.xib in Resources */,
 				6D8C5AB319C2775F00EF2937 /* OnboardingBeginIpadHero@2x.png in Resources */,
 				E0A939F718F27A1E00222F2D /* trulia-rentals-640x1136.png in Resources */,
@@ -1219,14 +1210,6 @@
 				9D94F42B15DEECF80068FC85 /* en */,
 			);
 			name = SchoolMapCalloutViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
-		9D94F42C15DEECF80068FC85 /* SplashScreenViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9D94F42D15DEECF80068FC85 /* en */,
-			);
-			name = SplashScreenViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
