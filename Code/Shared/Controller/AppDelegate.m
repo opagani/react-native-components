@@ -22,6 +22,7 @@
 #import "IRMainViewControllerPad.h"
 #import "IRMainMenuViewControllerPhone.h"
 #import "ICSavedSearchNotificationsViewController.h"
+#import "ICAccountController.h"
 
 
 #if RUN_STRESS_TEST
@@ -146,8 +147,9 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     IRMainMenuViewControllerPhone *menu = [[IRMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
     self.leftViewController = [[IRLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController:navCtr];
+    self.navController = navCtr;
     
-    [ICMainViewControllerPad sharedInstance].leftMenuViewController = self.leftViewController;
+   // [ICMainViewControllerPad sharedInstance].leftMenuViewController = self.leftViewController;
 }
 
 - (void)setupAppConfigurationForIpad

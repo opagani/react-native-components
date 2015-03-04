@@ -135,7 +135,6 @@
 		E09036A818E3A660001200F2 /* icon-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E09036A618E3A660001200F2 /* icon-logo@2x.png */; };
 		E09140E5195DF983002890C6 /* ICConfiguration.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E09140E4195DF983002890C6 /* ICConfiguration.bundle */; };
 		E09140E8195DFE3C002890C6 /* IosCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E09140E7195DFE3C002890C6 /* IosCoreResources.bundle */; };
-		E09D2BAA1884A52A000BE18D /* IRLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E09D2BA91884A52A000BE18D /* IRLeftMenuViewController.m */; };
 		E0A939F518F27A1E00222F2D /* trulia-rentals-320x480@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A939EE18F27A1E00222F2D /* trulia-rentals-320x480@2x.png */; };
 		E0A939F618F27A1E00222F2D /* trulia-rentals-640x960@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A939EF18F27A1E00222F2D /* trulia-rentals-640x960@2x.png */; };
 		E0A939F718F27A1E00222F2D /* trulia-rentals-640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A939F018F27A1E00222F2D /* trulia-rentals-640x1136.png */; };
@@ -157,6 +156,8 @@
 		E0A98EC318ECB64E006E5581 /* iPhoneSplash1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0A98EC118ECB64E006E5581 /* iPhoneSplash1@2x.jpg */; };
 		E0B6D9681A80999900A10F7B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAABD19491426006BE023 /* FacebookSDK.framework */; };
 		E0B6D96A1A809A6C00A10F7B /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B6D9691A809A6C00A10F7B /* GoogleMaps.framework */; };
+		E0E700A11AA5090800602831 /* IRLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E09D2BA91884A52A000BE18D /* IRLeftMenuViewController.m */; };
+		E0E700AF1AA50C0300602831 /* EPrizeMobileSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B6D9611A80950100A10F7B /* EPrizeMobileSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -392,6 +393,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E700AF1AA50C0300602831 /* EPrizeMobileSDK.framework in Frameworks */,
 				E07EAACA194A30E9006BE023 /* Parse.framework in Frameworks */,
 				E0B6D96A1A809A6C00A10F7B /* GoogleMaps.framework in Frameworks */,
 				E0B6D9681A80999900A10F7B /* FacebookSDK.framework in Frameworks */,
@@ -1128,6 +1130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E700A11AA5090800602831 /* IRLeftMenuViewController.m in Sources */,
 				4C0CF0BE14D6634B00A1D325 /* main.m in Sources */,
 				4C0CF0C414D6634B00A1D325 /* AppDelegate.m in Sources */,
 				9D94F75115DEECFA0068FC85 /* CalloutMapAnnotation.m in Sources */,
@@ -1144,7 +1147,6 @@
 				2E49744B1741A11200D8F5E7 /* IRListingSearchToolBarPad.m in Sources */,
 				B70EF2571743022D0018A01A /* IRLayersMenuViewControllerPhone.m in Sources */,
 				2EE397F817502B2C0052B6C7 /* IRStartupViewControllerPhone.m in Sources */,
-				E09D2BAA1884A52A000BE18D /* IRLeftMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1471,6 +1473,9 @@
 					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/FacebookSDK",
 					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/GoogleMapsSDK/GoogleMaps-iOS-1.8.1",
 					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib",
+					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/ePrize",
+					Mobile,
+					SDK,
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
@@ -1530,6 +1535,9 @@
 					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/FacebookSDK",
 					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/GoogleMapsSDK/GoogleMaps-iOS-1.8.1",
 					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib",
+					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/ePrize",
+					Mobile,
+					SDK,
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
