@@ -1467,15 +1467,11 @@
 					"\"$(SRCROOT)/../lib/Crashlytics\"",
 					"\"$(SRCROOT)/../lib\"/**",
 					"\"$(SRCROOT)/../../mob-ioscore-lib/lib\"/**",
-					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/ePrize",
+					"$(SRCROOT)/../lib/ePrize",
 					Mobile,
 					SDK,
-					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/FacebookSDK",
-					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/GoogleMapsSDK/GoogleMaps-iOS-1.8.1",
-					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib",
-					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/ePrize",
-					Mobile,
-					SDK,
+					"$(SRCROOT)/../lib/FacebookSDK",
+					"$(SRCROOT)/../lib/GoogleMapsSDK/GoogleMaps-iOS-1.8.1",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
@@ -1529,15 +1525,11 @@
 					"\"$(SRCROOT)/../lib/Crashlytics\"",
 					"\"$(SRCROOT)/../lib\"/**",
 					"\"$(SRCROOT)/../../mob-ioscore-lib/lib\"/**",
-					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/ePrize",
+					"$(SRCROOT)/../lib/ePrize",
 					Mobile,
 					SDK,
-					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/FacebookSDK",
-					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/GoogleMapsSDK/GoogleMaps-iOS-1.8.1",
-					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib",
-					"/Users/nshevade/GirProjects/rocketship/mob-ioscore-lib/lib/ePrize",
-					Mobile,
-					SDK,
+					"$(SRCROOT)/../lib/FacebookSDK",
+					"$(SRCROOT)/../lib/GoogleMapsSDK/GoogleMaps-iOS-1.8.1",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
