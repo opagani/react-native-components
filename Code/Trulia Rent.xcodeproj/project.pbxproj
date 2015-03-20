@@ -38,8 +38,6 @@
 		3B1836381652B4AB009923F7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6A2E14CF2F0D007F2584 /* SenTestingKit.framework */; };
 		3B1836391652B4AB009923F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6A1614CF2F0D007F2584 /* UIKit.framework */; };
 		3B18363A1652B4AB009923F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6A1814CF2F0D007F2584 /* Foundation.framework */; };
-		3B18364F1652B7E3009923F7 /* DeepLinkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B18364E1652B7E3009923F7 /* DeepLinkingTests.m */; };
-		3B4854901652BA4400C5A46D /* ICStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B48548F1652BA4400C5A46D /* ICStateTests.m */; };
 		3B5EF54B170B8DFC003F00ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B5EF549170B8DFC003F00ED /* Localizable.strings */; };
 		3BAC7D5E16F7A150005E4508 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAC7D5D16F7A150005E4508 /* CoreTelephony.framework */; };
 		3BB379FA16C42AA1006A253B /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB379F916C42AA1006A253B /* libicucore.dylib */; };
@@ -78,7 +76,6 @@
 		6D8C5ABE19C2777000EF2937 /* OnboardingNotificationIphoneHero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C5ABA19C2777000EF2937 /* OnboardingNotificationIphoneHero@2x.png */; };
 		9D23EC5E17205D300048E737 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D23EC5D17205D300048E737 /* ImageIO.framework */; };
 		9D37273716657DA00018B275 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D37273616657DA00018B275 /* libOCMock.a */; };
-		9D372747166680FD0018B275 /* ViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D372746166680FD0018B275 /* ViewControllerTests.m */; };
 		9D372CD51667ED530018B275 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597C14D2219800DB87CA /* AddressBook.framework */; };
 		9D372CD61667ED580018B275 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597A14D2218F00DB87CA /* AddressBookUI.framework */; };
 		9D372CD71667EE390018B275 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C61635E14800B02F3F /* Social.framework */; };
@@ -217,10 +214,6 @@
 		3B1836371652B4AB009923F7 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B18363D1652B4AB009923F7 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		3B1836441652B4AC009923F7 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
-		3B18364D1652B7E3009923F7 /* DeepLinkingTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepLinkingTests.h; sourceTree = "<group>"; };
-		3B18364E1652B7E3009923F7 /* DeepLinkingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeepLinkingTests.m; sourceTree = "<group>"; };
-		3B48548E1652BA4400C5A46D /* ICStateTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICStateTests.h; sourceTree = "<group>"; };
-		3B48548F1652BA4400C5A46D /* ICStateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICStateTests.m; sourceTree = "<group>"; };
 		3B5EF54A170B8DFC003F00ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Shared/en.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		3BAC7D5716F7A0E0005E4508 /* NewRelicAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NewRelicAgent.framework; path = ../lib/NewRelic/NewRelic_iOS_Agent_1.300/NewRelicAgent.framework; sourceTree = "<group>"; };
 		3BAC7D5D16F7A150005E4508 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -276,8 +269,6 @@
 		9D37273416657DA00018B275 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		9D37273516657DA00018B275 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 		9D37273616657DA00018B275 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
-		9D372745166680FD0018B275 /* ViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerTests.h; sourceTree = "<group>"; };
-		9D372746166680FD0018B275 /* ViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTests.m; sourceTree = "<group>"; };
 		9D94D242161A0B520089CEEC /* AppDelegate_Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate_Shared.h; sourceTree = "<group>"; };
 		9D94D243161A0B520089CEEC /* AppDelegate_Shared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate_Shared.m; sourceTree = "<group>"; };
 		9D94D249161A0B5C0089CEEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = copyright.html; sourceTree = "<group>"; };
@@ -490,12 +481,6 @@
 		3B18363B1652B4AB009923F7 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D372745166680FD0018B275 /* ViewControllerTests.h */,
-				9D372746166680FD0018B275 /* ViewControllerTests.m */,
-				3B48548E1652BA4400C5A46D /* ICStateTests.h */,
-				3B48548F1652BA4400C5A46D /* ICStateTests.m */,
-				3B18364D1652B7E3009923F7 /* DeepLinkingTests.h */,
-				3B18364E1652B7E3009923F7 /* DeepLinkingTests.m */,
 				3B18363C1652B4AB009923F7 /* Supporting Files */,
 			);
 			path = UnitTests;
@@ -1113,9 +1098,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B18364F1652B7E3009923F7 /* DeepLinkingTests.m in Sources */,
-				3B4854901652BA4400C5A46D /* ICStateTests.m in Sources */,
-				9D372747166680FD0018B275 /* ViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
