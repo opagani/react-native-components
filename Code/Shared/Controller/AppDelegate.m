@@ -10,7 +10,6 @@
 #import "ICMainViewControllerPad.h"
 
 #import "ICPreference.h"
-#import "ICMetricsController.h"
 #import "ICConfiguration.h"
 #import "ICStartupViewControllerPhone.h"
 #import "ICCoreDataController.h"
@@ -490,7 +489,8 @@ void uncaughtExceptionHandler(NSException *exception) {
 	UIAlertView *upgradeAppAlert = [[UIAlertView alloc] initWithTitle: @"Get the new app" message: @"An updated version of the Trulia App is now available via iTunes." delegate: self cancelButtonTitle: @"Not Now" otherButtonTitles: @"Update", nil];
     upgradeAppAlert.tag = TruliaAlertTypeUpdate;
 	
-    [[ICMetricsController sharedInstance] trackPageView:@"promo|update app|view"];
+    // FIXME: Update this to ICAnalyticsController
+    //[[ICMetricsController sharedInstance] trackPageView:@"promo|update app|view"];
     
     
 	[upgradeAppAlert show];
@@ -536,7 +536,9 @@ void uncaughtExceptionHandler(NSException *exception) {
         {
             [trackingString appendString:@"|cancel"];
         }
-        [[ICMetricsController sharedInstance] trackClick:trackingString];
+        
+        // FIXME: Update this to ICAnalyticsController
+        //[[ICMetricsController sharedInstance] trackClick:trackingString];
         
         
         if (userConfirmed)
@@ -712,8 +714,8 @@ void uncaughtExceptionHandler(NSException *exception) {
 }
 
 - (id)tracker{
-    
-    return [ICMetricsController tracker];
+    // FIXME: Update this to ICAnalyticsController
+    return nil;//[ICMetricsController tracker];
 }
 
 - (NSString *)appIdentifier{

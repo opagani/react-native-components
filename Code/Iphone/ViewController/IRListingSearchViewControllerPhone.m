@@ -30,7 +30,8 @@
 }
 
 - (void)actionShowRefine:(id)sender {
-    [[ICMetricsController sharedInstance] trackToolbarClick:[ICMetricsController VAR_ACTION_REFINE]];
+    // FIXME: Update this to ICAnalyticsController
+    //[[ICMetricsController sharedInstance] trackToolbarClick:[ICMetricsController VAR_ACTION_REFINE]];
     
     IRListingRefineViewControllerPhone *viewController = [[IRListingRefineViewControllerPhone alloc] initWithSearchController:self.searchController];
     viewController.delegate = self;
