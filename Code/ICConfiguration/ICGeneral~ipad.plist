@@ -257,9 +257,9 @@
 	<key>comScore</key>
 	<dict>
 		<key>CustomerC2</key>
-		<string>6036483</string>
+		<string>6036206</string>
 		<key>PublisherSecret</key>
-		<string>7d61af28edda3d4a46d945b37075d33b</string>
+		<string>ada334158b059052e7cfc0606003ff41</string>
 	</dict>
 	<key>HasOffersConversionKey</key>
 	<string>82ede779dbe629124139125f19d180f0</string>
@@ -327,8 +327,8 @@
 		<integer>2</integer>
 	</array>
 	<key>AppiraterNumberOfSignificantEvents</key>
-        <integer>5</integer>
-        <key>AppiraterUseCountThreshold</key>
-        <integer>5</integer>
+	<integer>5</integer>
+	<key>AppiraterUseCountThreshold</key>
+	<integer>5</integer>
 </dict>
 </plist>
