@@ -9,10 +9,6 @@
 
 "MyTruliaTitle"                                 = "My Account";
 
-/* General Application */
-"IAGeneralNetworkError"                         = "Looks like a network error. Please try again";
-
-
 /* User Input Validation */
 "IAValidationEmailError"                        = "Please enter a valid email address";
 "IAValidationEmailForgot"                       = "You forgot to enter your email address";
@@ -181,7 +177,7 @@
 "LocationDenied"= "Please enable Location Services in your Device Settings -> Privacy -> Location";
 "LocationUnknown"= "Your location could not be determined.";
 "ManuallyInputLocationError"= "Please enter a city, state, or zip";
-"GenericNetworkError"= "Network error – please try again.";
+"GenericNetworkError"= "Sorry, there was a network error. Please try again later.";
 
 "LocationAndNotificationPermissionGeoFenceMessageIos8" = "Enable Location Services in Privacy -> Location Services -> Always. Enable Push Notifications in Notifications -> Allow Notifications";
 // Location and notification permissions for nearby alert feature
@@ -226,7 +222,7 @@
 "PasswordMismatchError"= "We don't see that email/password combo. Please try again.";
 "AccountFrozenError" = "Your account is frozen, please contact customerservice@trulia.com for more info";
 "AccountInActiveError" = "Your account is inactive, please contact customerservice@trulia.com for more info";
-"AccountNetworkError" = "Sorry there was network error, please try again later";
+"AccountNetworkError" = "Sorry there was a network error, please try again later";
 "AccountExistsError"= "We have that email address on file. Please log in.";
 "PasswordLengthError"= "Your password must be 5-15 characters.";
 "WeakPasswordError" = "Your password is too weak";
