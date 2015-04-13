@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05315EF51ADC70E500406317 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05315EF41ADC70E500406317 /* MediaPlayer.framework */; };
 		05E984891AC0D0DD00F5DB03 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E984881AC0D0DD00F5DB03 /* GoogleMobileAds.framework */; };
 		2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */; };
 		266139DB164AF82E00D19093 /* IAURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 266139DA164AF82E00D19093 /* IAURLCache.m */; };
@@ -176,6 +177,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05315EF41ADC70E500406317 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		05E984881AC0D0DD00F5DB03 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../mob-ioscore-lib/lib/GoogleMobileAdsSdkiOS-7.0.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "LocalInfoItems~iphone.json"; path = "Resources/jsons/LocalInfoItems~iphone.json"; sourceTree = "<group>"; };
 		266139D9164AF82E00D19093 /* IAURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAURLCache.h; path = ../../Ipad/Shared/Controller/IAURLCache.h; sourceTree = "<group>"; };
@@ -386,6 +388,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05315EF51ADC70E500406317 /* MediaPlayer.framework in Frameworks */,
 				05E984891AC0D0DD00F5DB03 /* GoogleMobileAds.framework in Frameworks */,
 				E0E700AF1AA50C0300602831 /* EPrizeMobileSDK.framework in Frameworks */,
 				E07EAACA194A30E9006BE023 /* Parse.framework in Frameworks */,
@@ -627,6 +630,7 @@
 		51DA6A1514CF2F0D007F2584 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				05315EF41ADC70E500406317 /* MediaPlayer.framework */,
 				05E984881AC0D0DD00F5DB03 /* GoogleMobileAds.framework */,
 				E0B6D9691A809A6C00A10F7B /* GoogleMaps.framework */,
 				E0B6D9611A80950100A10F7B /* EPrizeMobileSDK.framework */,
