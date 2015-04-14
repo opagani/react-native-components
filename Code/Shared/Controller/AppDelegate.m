@@ -61,7 +61,6 @@
 #import "ICListingSearchController.h"
 #import "ICManagedSearch.h"
 #import "UIApplication+ICAdditions.h"
-#import "MCPixelTracker.h"
 #import "ICManagedNotification.h"
 #import "IC+UIColor.h"
 #import "ICImageBundleUtil.h"
@@ -118,7 +117,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)setRootViewControllerForIpad
 {
-    [_window setRootViewController:self.leftViewController];
+    [_window setRootViewController:self.menuAndSrpContainerController];
     [_window makeKeyAndVisible];
 }
 
@@ -139,16 +138,16 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     IRMainViewControllerPad *searchController = [IRMainViewControllerPad sharedInstance];
     searchController.toggleMenuBlock = ^(BOOL show){
-        [self.leftViewController toggleMenu:show];
+        [self.menuAndSrpContainerController toggleMenu:show];
     };
     
     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
     
     IRMainMenuViewControllerPhone *menu = [[IRMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
-    self.leftViewController = [[IRLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController:navCtr];
+    self.menuAndSrpContainerController = [[IRLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController:navCtr];
     self.navController = navCtr;
     
-   // [ICMainViewControllerPad sharedInstance].leftMenuViewController = self.leftViewController;
+   // [ICMainViewControllerPad sharedInstance].leftMenuViewController = self.ICMenuSRPContainerViewController;
 }
 
 - (void)setupAppConfigurationForIpad
@@ -176,7 +175,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 }
 
 - (void)setRootViewControllerForIphone {
-    [_window setRootViewController:self.leftViewController];
+    [_window setRootViewController:self.menuAndSrpContainerController];
     [_window makeKeyAndVisible];
 }
 
@@ -240,7 +239,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
     
     
-    self.leftViewController = [[IRLeftMenuViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
+    self.menuAndSrpContainerController = [[IRLeftMenuViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
     self.navController = navCtr;
 
 }

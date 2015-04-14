@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05315EF51ADC70E500406317 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05315EF41ADC70E500406317 /* MediaPlayer.framework */; };
 		05E984891AC0D0DD00F5DB03 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E984881AC0D0DD00F5DB03 /* GoogleMobileAds.framework */; };
 		2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */; };
 		266139DB164AF82E00D19093 /* IAURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 266139DA164AF82E00D19093 /* IAURLCache.m */; };
@@ -112,7 +113,6 @@
 		B70EF2571743022D0018A01A /* IRLayersMenuViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */; };
 		B7EA94C51635E0CD00B02F3F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C41635E0CC00B02F3F /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B7EA94C71635E14800B02F3F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C61635E14800B02F3F /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		E03A78A01884749600317FB6 /* MortgageResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E03A789F1884749600317FB6 /* MortgageResources.bundle */; };
 		E047631C18C7B5DE0021210E /* MainMenuItems~ipad.json in Resources */ = {isa = PBXBuildFile; fileRef = E047631A18C7B5DE0021210E /* MainMenuItems~ipad.json */; };
 		E047631D18C7B5DE0021210E /* MainMenuItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = E047631B18C7B5DE0021210E /* MainMenuItems~iphone.json */; };
 		E04CF5E118876C9A0079C064 /* IRListingDetailViewControllerPad.m in Sources */ = {isa = PBXBuildFile; fileRef = E04CF5E018876C9A0079C064 /* IRListingDetailViewControllerPad.m */; };
@@ -176,6 +176,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05315EF41ADC70E500406317 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		05E984881AC0D0DD00F5DB03 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../mob-ioscore-lib/lib/GoogleMobileAdsSdkiOS-7.0.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "LocalInfoItems~iphone.json"; path = "Resources/jsons/LocalInfoItems~iphone.json"; sourceTree = "<group>"; };
 		266139D9164AF82E00D19093 /* IAURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAURLCache.h; path = ../../Ipad/Shared/Controller/IAURLCache.h; sourceTree = "<group>"; };
@@ -291,7 +292,6 @@
 		B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLayersMenuViewControllerPhone.m; sourceTree = "<group>"; };
 		B7EA94C41635E0CC00B02F3F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		B7EA94C61635E14800B02F3F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		E03A789F1884749600317FB6 /* MortgageResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MortgageResources.bundle; sourceTree = "<group>"; };
 		E047631A18C7B5DE0021210E /* MainMenuItems~ipad.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "MainMenuItems~ipad.json"; sourceTree = "<group>"; };
 		E047631B18C7B5DE0021210E /* MainMenuItems~iphone.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "MainMenuItems~iphone.json"; sourceTree = "<group>"; };
 		E04CF5DF18876C9A0079C064 /* IRListingDetailViewControllerPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRListingDetailViewControllerPad.h; sourceTree = "<group>"; };
@@ -386,6 +386,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05315EF51ADC70E500406317 /* MediaPlayer.framework in Frameworks */,
 				05E984891AC0D0DD00F5DB03 /* GoogleMobileAds.framework in Frameworks */,
 				E0E700AF1AA50C0300602831 /* EPrizeMobileSDK.framework in Frameworks */,
 				E07EAACA194A30E9006BE023 /* Parse.framework in Frameworks */,
@@ -627,6 +628,7 @@
 		51DA6A1514CF2F0D007F2584 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				05315EF41ADC70E500406317 /* MediaPlayer.framework */,
 				05E984881AC0D0DD00F5DB03 /* GoogleMobileAds.framework */,
 				E0B6D9691A809A6C00A10F7B /* GoogleMaps.framework */,
 				E0B6D9611A80950100A10F7B /* EPrizeMobileSDK.framework */,
@@ -1020,7 +1022,6 @@
 				E0A939F518F27A1E00222F2D /* trulia-rentals-320x480@2x.png in Resources */,
 				E0A939FB18F27A1E00222F2D /* trulia-rentals-1024@768@2x.png in Resources */,
 				E047631D18C7B5DE0021210E /* MainMenuItems~iphone.json in Resources */,
-				E03A78A01884749600317FB6 /* MortgageResources.bundle in Resources */,
 				2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */,
 				269D198B19B91579000440BC /* GoogleMaps.bundle in Resources */,
 				26779DE619B93E88001EE88D /* MainMenuItems~iphone.json in Resources */,
@@ -1449,22 +1450,16 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"\"$(SRCROOT)/../lib/NewRelic/NewRelic_iOS_Agent_1.300\"",
-					"\"$(SRCROOT)/../lib/Crashlytics\"",
 					"\"$(SRCROOT)/../lib\"/**",
 					"\"$(SRCROOT)/../mob-ioscore-lib/lib\"/**",
 					"\"$(SRCROOT)/../../mob-ioscore-lib/lib\"/**",
-					"$(SRCROOT)/../lib/ePrize",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Trulia Rent-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../mob-ioscore-lib/**",
-					"$(SRCROOT)/../../mob-iosmortgage-lib/**",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../mob-ioscore-lib/**";
 				INFOPLIST_FILE = "Trulia Rent-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -1504,22 +1499,16 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"\"$(SRCROOT)/../lib/NewRelic/NewRelic_iOS_Agent_1.300\"",
-					"\"$(SRCROOT)/../lib/Crashlytics\"",
 					"\"$(SRCROOT)/../lib\"/**",
 					"\"$(SRCROOT)/../mob-ioscore-lib/lib\"/**",
 					"\"$(SRCROOT)/../../mob-ioscore-lib/lib\"/**",
-					"$(SRCROOT)/../lib/ePrize",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Trulia Rent-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../mob-ioscore-lib/**",
-					"$(SRCROOT)/../../mob-iosmortgage-lib/**",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../mob-ioscore-lib/**";
 				INFOPLIST_FILE = "Trulia Rent-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
