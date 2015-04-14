@@ -32,10 +32,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B1836361652B4AB009923F7"
-               BuildableName = "UnitTests.octest"
+               BlueprintIdentifier = "2E74E1E018C69A96002E9D45"
+               BuildableName = "UnitTests.xctest"
                BlueprintName = "UnitTests"
-               ReferencedContainer = "container:Trulia Rent.xcodeproj">
+               ReferencedContainer = "container:../../mob-ioscore-lib/code/IosCore.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

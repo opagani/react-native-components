@@ -1450,12 +1450,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"\"$(SRCROOT)/../lib/NewRelic/NewRelic_iOS_Agent_1.300\"",
-					"\"$(SRCROOT)/../lib/Crashlytics\"",
 					"\"$(SRCROOT)/../lib\"/**",
 					"\"$(SRCROOT)/../mob-ioscore-lib/lib\"/**",
 					"\"$(SRCROOT)/../../mob-ioscore-lib/lib\"/**",
-					"$(SRCROOT)/../lib/ePrize",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
@@ -1502,12 +1499,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"\"$(SRCROOT)/../lib/NewRelic/NewRelic_iOS_Agent_1.300\"",
-					"\"$(SRCROOT)/../lib/Crashlytics\"",
 					"\"$(SRCROOT)/../lib\"/**",
 					"\"$(SRCROOT)/../mob-ioscore-lib/lib\"/**",
 					"\"$(SRCROOT)/../../mob-ioscore-lib/lib\"/**",
-					"$(SRCROOT)/../lib/ePrize",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
