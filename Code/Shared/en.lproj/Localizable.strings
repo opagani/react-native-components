@@ -214,7 +214,7 @@
 "SearchManuallyInputLocationError"= "Location unknown. Try city & state for best results.";
 "NoListingsHere"= "No homes match your search. Adjust zoom levels or change your filters.";
 "LocationPermissionMessage" = "This helps us instantly show you homes near you, wherever you are.";
-
+"MinListingTypesSelectionMessage" = "At least one listing type must be selected";
 
 /* Account-related errors */
 "InvalidEmailAddressError"= "Please enter a valid email address.";
@@ -236,10 +236,13 @@
 /* Favorites Alerts Msgs*/
 "SearchSavedToFavoritesMessage"= "Your search criteria has been saved.";
 "PropertySavedToFavoritesMessage"= "Your property has been saved.";
-"PropertySavedAfterLoggingInMessage"= "Thanks for logging in. Your property has been saved";
-"PropertySavedAfterAccountCreation"= "Thanks for joining Trulia. Your property has been saved";
-"SearchSavedAfterLoggingInMessage"= "Thanks for logging in. Your search has been saved";
-"SearchSavedAfterAccountCreation"= "Thanks for joining Trulia. Your search has been saved";
+"PropertySavedAfterLoggingInMessage"= "Thanks. Your property has been saved";
+"PropertySavedAfterAccountCreation"= "Welcome. Your property has been saved";
+"SearchSavedAfterLoggingInMessage"= "Thanks. Your search has been saved";
+"SearchSavedAfterAccountCreation"= "Welcome. Your search has been saved";
+
+/* Saved Homes Screen Title */
+"MySavedHomes" = "My Homes";
 
 /* Misc confirmation dialogs */
 "SearchResetParametersMessage"= "Would you like to clear your filters?";
@@ -267,9 +270,9 @@
 "CreatingAccount"								= "Creating new account ..";
 "ClickToLogIn"									= "Tap here to Log in instead";
 
-"NoLayersHere"									= "There is no [heatmap name] available for this location. Please adjust your zoom levels or move the map.";
-"NoBoundariesHere"								= "There are no [boundary name] available for this location. Please adjust your zoom levels or move the map.";
-"NoDataHere"									= "There are no [data name] in this location. Please adjust your zoom levels or move the map.";
+"NoLayersHere"									= "Please adjust your zoom to see [heatmap name].";
+"NoBoundariesHere"								= "Please adjust your zoom to see [boundary name].";
+"NoDataHere"									= "Please adjust your zoom to see [data name].";
 
 /* new 1.5 zoomed out too far */
 "LayersZoomedOutTooFar"							= "Please zoom in to see the [heatmap name].";
@@ -285,20 +288,20 @@
 
 
 /* new 1.5 general error */
-"LayersGeneralError"							= "Sorry, something went wrong with the [heatmap name]. Please try again.";
-"BoundariesGeneralError"						= "Sorry, something went wrong with the [boundary name]. Please try again.";
-"DataGeneralError"								= "Sorry, something went wrong with [data name]. Please try again.";
-"ListingsGeneralError"							= "Sorry, something went wrong with the listings. Please try again.";
+"LayersGeneralError"							= "Sorry, an error occurred. Please try again.";
+"BoundariesGeneralError"						= "Sorry, an error occurred. Please try again.";
+"DataGeneralError"								= "Sorry, an error occurred. Please try again.";
+"ListingsGeneralError"							= "Sorry, an error occurred. Please try again.";
 
 /* new 2.3 no search results */
-"NoSearchResultsHereTitle" = "No homes match your search. Adjust your zoom levels or change your filters.";
+"NoSearchResultsHereTitle" = "No homes located. Please adjust your zoom.";
 "NoSearchResultsHereSubtitle" = "As a reminder, you searched for:";
 "NoEstimates" =  "Sorry, we don't have an estimate for %@.";
 "NoEstimatesForLocation" = "Sorry, we don’t have estimates for this location.";
 "NoEstimatesZoomIn" = "Please zoom in to see estimates for this location.";
 
 "YouAreNowLoggedIn" = "Thanks. You are now logged in.";
-"ThanksForJoiningTrulia" = "Thanks for joining Trulia. Your account is now active. Start saving properties or your search criteria to stay updated with alerts.";
+"ThanksForJoiningTrulia" = "Welcome! Save your search to get alerts.";
 
 
 "LoginButtonSubmitText"= "Submit";
@@ -347,5 +350,32 @@
 "OpenHouseEventNote"               = "Found via the Trulia App";
 "OpenHouseCalendarItemTitle"       = "Open House From Trulia";
 
+"ReportFraudMessageSuccessful"     = "This property is now reported as fraud.";
+
+// Location permission for nearby alert feature
+"LocationPermissionGeoFenceTitle" = "Final Step to Enable Nearby Alerts";
+"LocationPermissionGeoFenceMessageIos8" = "Open Settings -> Privacy and set Allow Location Access to Always";
+"LocationAndNotificationPermissionAndBackgroundRefreshGeoFenceMessageIos8" = "Trulia cannot send you alerts of new homes nearby. Enable Location Services in Privacy -> Location Services -> Always\nEnable Push Notifications in Notifications -> Allow Notifications\nEnable Background Refresh in Settings";
+"LocationAndNotificationPermissionGeoFenceMessageIos8" = "Trulia cannot send you alerts of new homes nearby. Enable Push Notifications in Notifications -> Allow Notifications\nEnable Background Refresh in Settings";
+
+"NotificationPermissionGeoFenceTitle" = "Nearby Alerts Need to Show You Notifications";
+"NotificationPermissionGeoFenceMessage" = "Open Settings and enable Notfication for Trulia";
+"NotificationPermissionAndBackgroundRefreshGeoFenceMessageIos8" = "Trulia cannot send you alerts of new homes nearby.\nEnable Push Notifications in Notifications -> Allow Notifications\nEnable Background Refresh in Settings";
+
+"BackgroundFetchPermissionGeoFenceTitle" = "Nearby Alerts";
+"BackgroundFetchPermissionGeoFenceMessageIos8" = "To get alerts of new homes nearby please enable Background App Refresh";
+"BackgroundFetchPermissionGeoFenceMessage" = "To get alerts of new homes nearby please enable Background App Refresh in Device Settings -> General -> Background App Refresh";
+
+"LocationServicesPermissionTitle" = "Turn On Location Services";
+"LocationServicesPermissionMessage" = "Please enable Location Services in your phone Settings -> Privacy -> Location";
+"PermissionGeoFenceTitleIos8" = "Nearby Home Alerts";
+
 "termsOfUseUrl"="http://m.trulia.com/terms/?chrome=IphoneApp";
 "privacyPolicyUrl"="http://m.trulia.com/privacy/?chrome=IphoneApp";
+
+"CreateBoardTitle" = "Create Board";
+"EditBoardTitle" = "Edit Board";
+"InvitePeopleToBoard" = "Invite People to Board";
+"BoardDefaultInviteMessage" = "Hey! This is going to make our home search sooooo much easier. Join me.";
+"EditBoardCollaboratorsSectionTitle" = "ADDED TO BOARD";
+"AddCollaboratorCellText" = "Invite People to Board";
