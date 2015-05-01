@@ -294,7 +294,7 @@
 		<string>Log</string>
 	</array>
 	<key>NearbyText</key>
-	<string>Nearby</string>
+	<string>Current Location</string>
 	<key>MapAreaText</key>
 	<string>Viewable Map Area</string>
 	<key>RentOnlySearches</key>
