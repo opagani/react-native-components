@@ -113,8 +113,6 @@
 		B70EF2571743022D0018A01A /* IRLayersMenuViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */; };
 		B7EA94C51635E0CD00B02F3F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C41635E0CC00B02F3F /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B7EA94C71635E14800B02F3F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C61635E14800B02F3F /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		E047631C18C7B5DE0021210E /* MainMenuItems~ipad.json in Resources */ = {isa = PBXBuildFile; fileRef = E047631A18C7B5DE0021210E /* MainMenuItems~ipad.json */; };
-		E047631D18C7B5DE0021210E /* MainMenuItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = E047631B18C7B5DE0021210E /* MainMenuItems~iphone.json */; };
 		E04CF5E118876C9A0079C064 /* IRListingDetailViewControllerPad.m in Sources */ = {isa = PBXBuildFile; fileRef = E04CF5E018876C9A0079C064 /* IRListingDetailViewControllerPad.m */; };
 		E052A20A187E145E00B0A358 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E052A209187E145E00B0A358 /* Accelerate.framework */; };
 		E052A20C187E147000B0A358 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E052A20B187E147000B0A358 /* Twitter.framework */; };
@@ -292,8 +290,6 @@
 		B70EF2561743022D0018A01A /* IRLayersMenuViewControllerPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLayersMenuViewControllerPhone.m; sourceTree = "<group>"; };
 		B7EA94C41635E0CC00B02F3F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		B7EA94C61635E14800B02F3F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		E047631A18C7B5DE0021210E /* MainMenuItems~ipad.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "MainMenuItems~ipad.json"; sourceTree = "<group>"; };
-		E047631B18C7B5DE0021210E /* MainMenuItems~iphone.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "MainMenuItems~iphone.json"; sourceTree = "<group>"; };
 		E04CF5DF18876C9A0079C064 /* IRListingDetailViewControllerPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRListingDetailViewControllerPad.h; sourceTree = "<group>"; };
 		E04CF5E018876C9A0079C064 /* IRListingDetailViewControllerPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRListingDetailViewControllerPad.m; sourceTree = "<group>"; };
 		E052A209187E145E00B0A358 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -564,8 +560,6 @@
 		4C0CEEEB14D6634A00A1D325 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				E047631A18C7B5DE0021210E /* MainMenuItems~ipad.json */,
-				E047631B18C7B5DE0021210E /* MainMenuItems~iphone.json */,
 				2E309C21167024BF00A31BD0 /* Fonts */,
 				4C0CEEEC14D6634A00A1D325 /* Category */,
 				4C0CEEF714D6634A00A1D325 /* Controller */,
@@ -1015,13 +1009,11 @@
 				E0A93A0318F27D4400222F2D /* ForRentIcon76x76.png in Resources */,
 				E0A93A0418F27D4400222F2D /* ForRentIcon152x152.png in Resources */,
 				E0A93A0518F27D4400222F2D /* ForRentIcon120x120.png in Resources */,
-				E047631C18C7B5DE0021210E /* MainMenuItems~ipad.json in Resources */,
 				E09036A818E3A660001200F2 /* icon-logo@2x.png in Resources */,
 				26779DE519B93E88001EE88D /* MainMenuItems~ipad.json in Resources */,
 				E0A939FA18F27A1E00222F2D /* trulia-rentals-768x1024@2x.png in Resources */,
 				E0A939F518F27A1E00222F2D /* trulia-rentals-320x480@2x.png in Resources */,
 				E0A939FB18F27A1E00222F2D /* trulia-rentals-1024@768@2x.png in Resources */,
-				E047631D18C7B5DE0021210E /* MainMenuItems~iphone.json in Resources */,
 				2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */,
 				269D198B19B91579000440BC /* GoogleMaps.bundle in Resources */,
 				26779DE619B93E88001EE88D /* MainMenuItems~iphone.json in Resources */,
