@@ -34,7 +34,7 @@
 		<string>ada334158b059052e7cfc0606003ff41</string>
 	</dict>
 	<key>SupportsGeofencing</key>
-	<true/>
+	<false/>
 	<key>validBathValues</key>
 	<array>
 		<string>Any</string>
