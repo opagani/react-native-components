@@ -88,6 +88,13 @@
 		<string>5+ acre</string>
 		<string>10+ acre</string>
 	</array>
+	<key>validPetValues</key>
+	<array>
+		<string>None</string>
+		<string>Cat</string>
+		<string>Small Dog</string>
+		<string>Large Dog</string>
+	</array>
 	<key>validSoldWithinMonthsValues</key>
 	<array>
 		<string>0</string>
