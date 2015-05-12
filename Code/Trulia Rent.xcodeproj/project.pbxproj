@@ -1457,7 +1457,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ForRent-buvcmktxcsthhoafzgprqyqdkkly/Build/Products/Debug-iphoneos",
+					"$(SRCROOT)/../../mob-ioscore-lib/**",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
@@ -1506,7 +1506,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ForRent-buvcmktxcsthhoafzgprqyqdkkly/Build/Products/Debug-iphoneos",
+					"$(SRCROOT)/../../mob-ioscore-lib/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = TruliaRent;
