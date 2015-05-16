@@ -2,7 +2,7 @@
 
     "items":[
         { "items":[
-            {"title":"Login" , "configureCellMethod":"configureLoginCell:atIndexPath:", "cellIdentifier":"loginCell" ,"customActionMethod":"actionLoginClicked:"}
+            {"title":"Login" , "configureCellMethod":"configureLoginCell:atIndexPath:", "cellIdentifier":"loginCell" ,"customActionMethod":"actionLoginClicked:", "showNotificationsButton":1}
         ]}
         ,{"title":"SEARCH","items":[
             {"title":"My Saves","icon":"icon-mySavesHeart.png" ,"trackEventName":"my-saves", "customActionMethod":"actionSavedHomesClicked:" ,"badge":{"show":1,"name":"mySaves"}}
