@@ -5,8 +5,9 @@
             {"title":"Login" , "configureCellMethod":"configureLoginCell:atIndexPath:", "cellIdentifier":"loginCell" ,"customActionMethod":"actionLoginClicked:", "showNotificationsButton":1}
         ]}
         ,{"title":"SEARCH","items":[
-            {"title":"My Saves","icon":"icon-mySavesHeart.png" ,"trackEventName":"my-saves", "customActionMethod":"actionSavedHomesClicked:" ,"badge":{"show":1,"name":"mySaves"}}
-            ,{"title":"For Rent","icon":"icon-forrent-search.png","idt":"for rent" , "trackEventName":"search-for-rent"}
+            {"title":"For Rent","icon":"icon-forrent-search.png","idt":"for rent" , "trackEventName":"search-for-rent"}
+            ,{"title":"My Boards","icon":"icon-mySavesHeart.png" ,"trackEventName":"my-saves", "customActionMethod":"actionSavedHomesClicked:" ,"badge":{"show":1,"name":"mySaves"}}
+            ,{"title":"Saved Searches","icon":"IconSearch.png" ,"trackEventName":"saved_searches", "customActionMethod":"actionSavedSearchesClicked:"}
         ]}
         ,{"title":"TRULIA APPS","items":[
             {"title":"Trulia For Sale App","icon":"icon-forsale.png", "showLeavingIcon":1 , "urlSchemeLink":"TruliaForSale://", "url":"https://itunes.apple.com/us/app/real-estate-homes-for-sale/id288487321?mt=8"},

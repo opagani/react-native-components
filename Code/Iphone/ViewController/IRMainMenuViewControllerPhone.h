@@ -10,7 +10,7 @@
 
 
 typedef NS_ENUM (NSInteger, IRMainMenuViewControllerPhoneSaveTypeRental ){
-    IRMainMenuViewControllerPhoneSaveTypeMySavesRental = 0,
+    IRMainMenuViewControllerPhoneSaveTypeMySavesRental = 1,
     IRMainMenuViewControllerPhoneSaveTypeMySavesIpadRental =1
 };
 
