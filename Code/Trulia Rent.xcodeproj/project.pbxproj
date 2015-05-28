@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		05315EF51ADC70E500406317 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05315EF41ADC70E500406317 /* MediaPlayer.framework */; };
 		05A431891B1693740024CEA4 /* IRBoardManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */; };
+		05A431901B16A14F0024CEA4 /* IRMySavedHomesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A4318F1B16A14F0024CEA4 /* IRMySavedHomesViewController.m */; };
 		05E984891AC0D0DD00F5DB03 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E984881AC0D0DD00F5DB03 /* GoogleMobileAds.framework */; };
 		2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */; };
 		266139DB164AF82E00D19093 /* IAURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 266139DA164AF82E00D19093 /* IAURLCache.m */; };
@@ -178,6 +179,8 @@
 		05315EF41ADC70E500406317 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		05A431871B1693740024CEA4 /* IRBoardManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRBoardManagerViewController.h; path = ViewController/IRBoardManagerViewController.h; sourceTree = "<group>"; };
 		05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRBoardManagerViewController.m; path = ViewController/IRBoardManagerViewController.m; sourceTree = "<group>"; };
+		05A4318E1B16A14F0024CEA4 /* IRMySavedHomesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRMySavedHomesViewController.h; path = ViewController/IRMySavedHomesViewController.h; sourceTree = "<group>"; };
+		05A4318F1B16A14F0024CEA4 /* IRMySavedHomesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRMySavedHomesViewController.m; path = ViewController/IRMySavedHomesViewController.m; sourceTree = "<group>"; };
 		05E984881AC0D0DD00F5DB03 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../mob-ioscore-lib/lib/GoogleMobileAdsSdkiOS-7.0.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "LocalInfoItems~iphone.json"; path = "Resources/jsons/LocalInfoItems~iphone.json"; sourceTree = "<group>"; };
 		266139D9164AF82E00D19093 /* IAURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAURLCache.h; path = ../../Ipad/Shared/Controller/IAURLCache.h; sourceTree = "<group>"; };
@@ -513,6 +516,8 @@
 				269D198819B914AE000440BC /* IRListingRefineViewControllerPad.m */,
 				05A431871B1693740024CEA4 /* IRBoardManagerViewController.h */,
 				05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */,
+				05A4318E1B16A14F0024CEA4 /* IRMySavedHomesViewController.h */,
+				05A4318F1B16A14F0024CEA4 /* IRMySavedHomesViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -1119,6 +1124,7 @@
 				4C0CF0C414D6634B00A1D325 /* AppDelegate.m in Sources */,
 				9D94F75115DEECFA0068FC85 /* CalloutMapAnnotation.m in Sources */,
 				9D94F76A15DEECFA0068FC85 /* SchoolMapCalloutViewController_iPad.m in Sources */,
+				05A431901B16A14F0024CEA4 /* IRMySavedHomesViewController.m in Sources */,
 				9D94D244161A0B520089CEEC /* AppDelegate_Shared.m in Sources */,
 				266139DB164AF82E00D19093 /* IAURLCache.m in Sources */,
 				2EE5C358173C5ABC006D42BC /* IRMainViewControllerPad.m in Sources */,
