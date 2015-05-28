@@ -13,10 +13,15 @@
 #import "UIView+ICAutoLayoutHelpers.h"
 #import "IC+UIColor.h"
 #import "UIScrollView+ICAdditions.h"
+#import "ICPreference.h"
+
+
+NSString * const kRentalsOnlyMessageDidShow = @"RentalsOnlyMessageDidShow";
 
 @interface IRBoardManagerViewController ()
 
 @property (nonatomic, strong) ICDismissibleMessageView *messageView;
+@property (nonatomic, strong) NSTimer *messageDismissTimer;
 
 @end
 
@@ -27,10 +32,24 @@
     [self configureMessageView];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self startTimerIfNeeded];
+}
+
+- (void)dealloc {
+    [self.messageDismissTimer invalidate];
+    self.messageDismissTimer = nil;
+}
+
 #define kMessageViewHeight          40
 #define kMessageViewPadding         15
 
 - (void)configureMessageView {
+    if (![self shouldShowMessage]) {
+        return;
+    }
+    
     self.messageView = [ICDismissibleMessageView new];
     
     self.boardsViewController.collectionView.topInset += [self messageViewHeightAndPadding];
@@ -44,7 +63,19 @@
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[segment]-pad-[message(height)]" options:0 metrics:@{@"pad" : @kMessageViewPadding , @"height" : @kMessageViewHeight} views:@{@"message" : self.messageView, @"segment" : self.segmentedControl}]];
 }
 
+- (void)startTimerIfNeeded {
+    if ([self shouldShowMessage]) {
+        self.messageDismissTimer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(actionCloseMessage:) userInfo:nil repeats:NO];
+    }
+}
+
 - (void)actionCloseMessage:(id)sender {
+    if(!self.messageView.superview) {
+        return;
+    }
+    
+    [[ICPreference sharedInstance] setAppForKey:kRentalsOnlyMessageDidShow withAttribute:@YES];
+    
     [UIView animateWithDuration:.3 animations:^{
         self.messageView.transform = CGAffineTransformMakeTranslation(0, -[self messageViewHeightAndPadding]);
         self.boardsViewController.collectionView.topInset -= [self messageViewHeightAndPadding];
@@ -67,6 +98,10 @@
             break;
     }
     return [super segmentTitleForIndex:index];
+}
+
+- (BOOL)shouldShowMessage {
+    return ![[[ICPreference sharedInstance] getAppForKey:kRentalsOnlyMessageDidShow] boolValue];
 }
 
 @end
