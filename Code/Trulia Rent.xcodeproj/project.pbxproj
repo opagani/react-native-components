@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		05315EF51ADC70E500406317 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05315EF41ADC70E500406317 /* MediaPlayer.framework */; };
+		05A350741B17E1DA006D40E7 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */; };
+		05A350751B17E1DA006D40E7 /* ADBMobileConfigRelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */; };
 		05A431891B1693740024CEA4 /* IRBoardManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */; };
 		05A431901B16A14F0024CEA4 /* IRMySavedHomesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A4318F1B16A14F0024CEA4 /* IRMySavedHomesViewController.m */; };
 		05E984891AC0D0DD00F5DB03 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E984881AC0D0DD00F5DB03 /* GoogleMobileAds.framework */; };
@@ -177,6 +179,8 @@
 
 /* Begin PBXFileReference section */
 		05315EF41ADC70E500406317 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
+		05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfigRelease.json; sourceTree = "<group>"; };
 		05A431871B1693740024CEA4 /* IRBoardManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRBoardManagerViewController.h; path = ViewController/IRBoardManagerViewController.h; sourceTree = "<group>"; };
 		05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRBoardManagerViewController.m; path = ViewController/IRBoardManagerViewController.m; sourceTree = "<group>"; };
 		05A4318E1B16A14F0024CEA4 /* IRMySavedHomesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRMySavedHomesViewController.h; path = ViewController/IRMySavedHomesViewController.h; sourceTree = "<group>"; };
@@ -438,14 +442,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05A350711B17E1B4006D40E7 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */,
+				05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */,
+				269D198D19B925F0000440BC /* LocalInfoItems~ipad.json */,
+				2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */,
+				26779DE319B93E88001EE88D /* MainMenuItems~ipad.json */,
+				26779DE419B93E88001EE88D /* MainMenuItems~iphone.json */,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
 		261196591950F3E200C4F392 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				26779DE319B93E88001EE88D /* MainMenuItems~ipad.json */,
-				26779DE419B93E88001EE88D /* MainMenuItems~iphone.json */,
-				269D198D19B925F0000440BC /* LocalInfoItems~ipad.json */,
+				05A350711B17E1B4006D40E7 /* json */,
 				269D198A19B91579000440BC /* GoogleMaps.bundle */,
-				2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1047,6 +1061,7 @@
 				2E309C31167024BF00A31BD0 /* OpenSans-ExtraBold.ttf in Resources */,
 				2E309C32167024BF00A31BD0 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				2E309C33167024BF00A31BD0 /* OpenSans-Italic.ttf in Resources */,
+				05A350741B17E1DA006D40E7 /* ADBMobileConfig.json in Resources */,
 				2E309C34167024BF00A31BD0 /* OpenSans-Light.ttf in Resources */,
 				2E309C35167024BF00A31BD0 /* OpenSans-LightItalic.ttf in Resources */,
 				2E309C36167024BF00A31BD0 /* OpenSans-Regular.ttf in Resources */,
@@ -1066,6 +1081,7 @@
 				E09036A718E3A660001200F2 /* icon-logo.png in Resources */,
 				6D8C5AB419C2775F00EF2937 /* OnboardingEndIpadHero@2x.png in Resources */,
 				6D8C5ABE19C2777000EF2937 /* OnboardingNotificationIphoneHero@2x.png in Resources */,
+				05A350751B17E1DA006D40E7 /* ADBMobileConfigRelease.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
