@@ -84,7 +84,7 @@ NSString * const kRentalsOnlyMessageDidShow = @"RentalsOnlyMessageDidShow";
 }
 
 - (BOOL)shouldShowMessage {
-    return YES;//![[[ICPreference sharedInstance] getAppForKey:kRentalsOnlyMessageDidShow] boolValue];
+    return ![[[ICPreference sharedInstance] getAppForKey:kRentalsOnlyMessageDidShow] boolValue];
 }
 
 @end
