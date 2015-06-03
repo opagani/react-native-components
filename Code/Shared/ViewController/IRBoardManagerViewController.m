@@ -21,7 +21,6 @@ NSString * const kRentalsOnlyMessageDidShow = @"RentalsOnlyMessageDidShow";
 @interface IRBoardManagerViewController ()
 
 @property (nonatomic, strong) ICDismissibleMessageView *messageView;
-@property (nonatomic, strong) NSTimer *messageDismissTimer;
 
 @end
 
@@ -30,16 +29,6 @@ NSString * const kRentalsOnlyMessageDidShow = @"RentalsOnlyMessageDidShow";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configureMessageView];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    [self startTimerIfNeeded];
-}
-
-- (void)dealloc {
-    [self.messageDismissTimer invalidate];
-    self.messageDismissTimer = nil;
 }
 
 #define kMessageViewHeight          40
@@ -61,12 +50,6 @@ NSString * const kRentalsOnlyMessageDidShow = @"RentalsOnlyMessageDidShow";
     [self.messageView ic_pinViewToLeftAndRightEdgesOfSuperViewWithPadding:15];
     
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[segment]-pad-[message(height)]" options:0 metrics:@{@"pad" : @kMessageViewPadding , @"height" : @kMessageViewHeight} views:@{@"message" : self.messageView, @"segment" : self.segmentedControl}]];
-}
-
-- (void)startTimerIfNeeded {
-    if ([self shouldShowMessage]) {
-        self.messageDismissTimer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(actionCloseMessage:) userInfo:nil repeats:NO];
-    }
 }
 
 - (void)actionCloseMessage:(id)sender {
@@ -101,7 +84,7 @@ NSString * const kRentalsOnlyMessageDidShow = @"RentalsOnlyMessageDidShow";
 }
 
 - (BOOL)shouldShowMessage {
-    return ![[[ICPreference sharedInstance] getAppForKey:kRentalsOnlyMessageDidShow] boolValue];
+    return YES;//![[[ICPreference sharedInstance] getAppForKey:kRentalsOnlyMessageDidShow] boolValue];
 }
 
 @end
