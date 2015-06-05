@@ -7,15 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "ICMainViewControllerPad.h"
 
 #import "ICPreference.h"
 #import "ICConfiguration.h"
-#import "ICStartupViewControllerPhone.h"
 #import "ICCoreDataController.h"
-//#import "ICMyAccountViewControllerPhone.h"
 #import "ICSyncController.h"
-#import "ICSyncServiceNotification.h"
 #import "IRLeftMenuViewController.h"
 #import "IRListingSearchViewControllerPhone.h"
 #import "IRMainViewControllerPad.h"
@@ -23,47 +19,18 @@
 #import "ICSavedSearchNotificationsViewController.h"
 #import "ICAccountController.h"
 
-
 #if RUN_STRESS_TEST
 #import "ICStressTestController.h"
 #endif
 
-//#import "ICPasteBoard.h"
-#import "IAURLCache.h"
-#import "ICRouterInput.h"
-#import "ICApiRequest.h"
 #import <FacebookSDK/FacebookSDK.h>
 
 #if TARGET_IPHONE_SIMULATOR
 //#import "PonyDebugger.h"
 #endif
 
-/*#import <NewRelicAgent/NewRelicAgent.h>
- #import <Crashlytics/Crashlytics.h>
- #import "ICListingDetailViewControllerPhone.h"
- #import "IAConstants.h"
- #import "ICFindAgentViewController.h"
- #import "ICMoreViewController.h"
- #import "ICMainMenuViewControllerPhone.h"
- #import "ICMyAccountViewControllerPhone.h"
- #import "IRMainViewControllerPad.h"
- #import "IRListingSearchViewControllerPhone.h"
- #import <MobileAppTracker/MobileAppTracker.h>
- #import "IRStartupViewControllerPhone.h"
- #import "IRMoreViewController.h"*/
-
-
-#import <Crashlytics/Crashlytics.h>
-//#import "ICListingDetailViewControllerPhone.h"
 #import "IAConstants.h"
-#import "ICFindAgentViewController.h"
-#import "IC+UIViewController.h"
-#import "ICListingSearchController.h"
-#import "ICManagedSearch.h"
-#import "UIApplication+ICAdditions.h"
 #import "ICManagedNotification.h"
-#import "IC+UIColor.h"
-#import "ICImageBundleUtil.h"
 #import "ICAppearance.h"
 #import "ICLog.h"
 #import "ICUtility.h"
@@ -85,11 +52,6 @@ void uncaughtExceptionHandler(NSException *exception) {
     GRLogCError(@"CRASH: %@", exception);
     GRLogCError(@"Stack Trace: %@", [exception callStackSymbols]);
 }
-
-- (void)log:(NSString *)msg {
-	//[consoleTextView setText:[consoleTextView.text stringByAppendingString:[NSString stringWithFormat:@"%@\r\r", msg]]];
-}
-
 
 - (void)saveUserLocations; {
 	NSString *docFolder = [NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
@@ -290,8 +252,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     [self registerNotification];
 }
 
-#pragma mark-
-#pragma mark Splash Screen Delegate for iPhone
+#pragma mark - Splash Screen Delegate for iPhone
 
 -(void)dismissStartupScreen:(UIViewController*)viewController{
     
@@ -379,8 +340,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     return returnValue;
 }
 
-#pragma mark-
-#pragma mark Splash Screen Delegate for iPad
+#pragma mark - Splash Screen Delegate for iPad
 
 -(void)goingOutOfView:(UIViewController*)viewController{
     
@@ -557,13 +517,11 @@ void uncaughtExceptionHandler(NSException *exception) {
 - (void)loadMyAccountWithId:(NSString *)notificationId andType:(NSInteger)notificationType; {
     
     [[ICSyncController sharedInstance] syncService:ICSYncServiceTypeNotification complete:nil];
-    [[ICSyncController sharedInstance] syncService:ICSYncServiceTypeNotification complete:nil];
 
 }
 
 
-#pragma mark-
-#pragma mark Deep Linking
+#pragma mark - Deep Linking
 
 
 /*-(void)routeInput:(ICRouterInput *)route
@@ -710,11 +668,6 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     return [FBSession.activeSession handleOpenURL:url];
     
-}
-
-- (id)tracker{
-    // FIXME: Update this to ICAnalyticsController
-    return nil;//[ICMetricsController tracker];
 }
 
 - (NSString *)appIdentifier{

@@ -35,7 +35,6 @@
 
 
 // ipad additions
-- (void)log:(NSString *)msg;
 - (void)saveUserLocations;
 - (void)getUserLocations;
 
