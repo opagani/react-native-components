@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050215521B276A08004455F3 /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0502154E1B276A08004455F3 /* Default-Portrait@2x.png */; };
+		050215531B276A08004455F3 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0502154F1B276A08004455F3 /* Default-Landscape@2x.png */; };
+		050215541B276A08004455F3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 050215501B276A08004455F3 /* Default-568h@2x.png */; };
+		050215551B276A08004455F3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 050215511B276A08004455F3 /* Default@2x.png */; };
 		05315EF51ADC70E500406317 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05315EF41ADC70E500406317 /* MediaPlayer.framework */; };
 		05A350741B17E1DA006D40E7 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */; };
 		05A350751B17E1DA006D40E7 /* ADBMobileConfigRelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */; };
@@ -135,13 +139,6 @@
 		E09036A818E3A660001200F2 /* icon-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E09036A618E3A660001200F2 /* icon-logo@2x.png */; };
 		E09140E5195DF983002890C6 /* ICConfiguration.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E09140E4195DF983002890C6 /* ICConfiguration.bundle */; };
 		E09140E8195DFE3C002890C6 /* IosCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E09140E7195DFE3C002890C6 /* IosCoreResources.bundle */; };
-		E0A939F518F27A1E00222F2D /* trulia-rentals-320x480@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A939EE18F27A1E00222F2D /* trulia-rentals-320x480@2x.png */; };
-		E0A939F618F27A1E00222F2D /* trulia-rentals-640x960@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A939EF18F27A1E00222F2D /* trulia-rentals-640x960@2x.png */; };
-		E0A939F718F27A1E00222F2D /* trulia-rentals-640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A939F018F27A1E00222F2D /* trulia-rentals-640x1136.png */; };
-		E0A939F818F27A1E00222F2D /* trulia-rentals-768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A939F118F27A1E00222F2D /* trulia-rentals-768x1024.png */; };
-		E0A939F918F27A1E00222F2D /* trulia-rentals-1024@768.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A939F218F27A1E00222F2D /* trulia-rentals-1024@768.png */; };
-		E0A939FA18F27A1E00222F2D /* trulia-rentals-768x1024@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A939F318F27A1E00222F2D /* trulia-rentals-768x1024@2x.png */; };
-		E0A939FB18F27A1E00222F2D /* trulia-rentals-1024@768@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A939F418F27A1E00222F2D /* trulia-rentals-1024@768@2x.png */; };
 		E0A939FF18F27D4400222F2D /* ForRentIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = E0EE35E718E4B549001E7BFA /* ForRentIcon29x29.png */; };
 		E0A93A0018F27D4400222F2D /* ForRentIcon58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = E0EE35E618E4B538001E7BFA /* ForRentIcon58x58.png */; };
 		E0A93A0118F27D4400222F2D /* ForRentIcon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = E0EE35E518E4B4EA001E7BFA /* ForRentIcon40x40.png */; };
@@ -178,6 +175,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0502154E1B276A08004455F3 /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x.png"; path = "../Default-Portrait@2x.png"; sourceTree = "<group>"; };
+		0502154F1B276A08004455F3 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x.png"; path = "../Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		050215501B276A08004455F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		050215511B276A08004455F3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		05315EF41ADC70E500406317 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
 		05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfigRelease.json; sourceTree = "<group>"; };
@@ -325,13 +326,6 @@
 		E09140E7195DFE3C002890C6 /* IosCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IosCoreResources.bundle; path = "../../mob-ioscore-lib/code/Build/IosCoreResources.bundle"; sourceTree = "<group>"; };
 		E09D2BA81884A52A000BE18D /* IRLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRLeftMenuViewController.h; sourceTree = "<group>"; };
 		E09D2BA91884A52A000BE18D /* IRLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLeftMenuViewController.m; sourceTree = "<group>"; };
-		E0A939EE18F27A1E00222F2D /* trulia-rentals-320x480@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trulia-rentals-320x480@2x.png"; sourceTree = "<group>"; };
-		E0A939EF18F27A1E00222F2D /* trulia-rentals-640x960@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trulia-rentals-640x960@2x.png"; sourceTree = "<group>"; };
-		E0A939F018F27A1E00222F2D /* trulia-rentals-640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trulia-rentals-640x1136.png"; sourceTree = "<group>"; };
-		E0A939F118F27A1E00222F2D /* trulia-rentals-768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trulia-rentals-768x1024.png"; sourceTree = "<group>"; };
-		E0A939F218F27A1E00222F2D /* trulia-rentals-1024@768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trulia-rentals-1024@768.png"; sourceTree = "<group>"; };
-		E0A939F318F27A1E00222F2D /* trulia-rentals-768x1024@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trulia-rentals-768x1024@2x.png"; sourceTree = "<group>"; };
-		E0A939F418F27A1E00222F2D /* trulia-rentals-1024@768@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trulia-rentals-1024@768@2x.png"; sourceTree = "<group>"; };
 		E0A98EBA18ECB597006E5581 /* QueSaveSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QueSaveSearch.png; sourceTree = "<group>"; };
 		E0A98EBB18ECB597006E5581 /* QueSaveSearch-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QueSaveSearch-568h@2x.png"; sourceTree = "<group>"; };
 		E0A98EBC18ECB597006E5581 /* QueSaveSearch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QueSaveSearch@2x.png"; sourceTree = "<group>"; };
@@ -759,17 +753,12 @@
 		9D94D283161A0D7A0089CEEC /* iPadImages */ = {
 			isa = PBXGroup;
 			children = (
+				0502154E1B276A08004455F3 /* Default-Portrait@2x.png */,
+				0502154F1B276A08004455F3 /* Default-Landscape@2x.png */,
 				6D8C5AAF19C2775F00EF2937 /* OnboardingBeginIpadHero@2x.png */,
 				6D8C5AB019C2775F00EF2937 /* OnboardingEndIpadHero@2x.png */,
 				6D8C5AB119C2775F00EF2937 /* OnboardingLocationIpadHero@2x.png */,
 				6D8C5AB219C2775F00EF2937 /* OnboardingNotificationIpadHero@2x.png */,
-				E0A939EE18F27A1E00222F2D /* trulia-rentals-320x480@2x.png */,
-				E0A939EF18F27A1E00222F2D /* trulia-rentals-640x960@2x.png */,
-				E0A939F018F27A1E00222F2D /* trulia-rentals-640x1136.png */,
-				E0A939F118F27A1E00222F2D /* trulia-rentals-768x1024.png */,
-				E0A939F218F27A1E00222F2D /* trulia-rentals-1024@768.png */,
-				E0A939F318F27A1E00222F2D /* trulia-rentals-768x1024@2x.png */,
-				E0A939F418F27A1E00222F2D /* trulia-rentals-1024@768@2x.png */,
 				E0EE35E718E4B549001E7BFA /* ForRentIcon29x29.png */,
 				E0EE35E618E4B538001E7BFA /* ForRentIcon58x58.png */,
 				E0EE35E518E4B4EA001E7BFA /* ForRentIcon40x40.png */,
@@ -783,6 +772,8 @@
 		9D94D3A5161A0D7A0089CEEC /* iPhoneImages */ = {
 			isa = PBXGroup;
 			children = (
+				050215501B276A08004455F3 /* Default-568h@2x.png */,
+				050215511B276A08004455F3 /* Default@2x.png */,
 				6D8C5AB719C2777000EF2937 /* OnboardingBeginIphoneHero@2x.png */,
 				6D8C5AB819C2777000EF2937 /* OnboardingEndIphoneHero@2x.png */,
 				6D8C5AB919C2777000EF2937 /* OnboardingLocationIphoneHero@2x.png */,
@@ -1024,6 +1015,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050215521B276A08004455F3 /* Default-Portrait@2x.png in Resources */,
 				E09140E8195DFE3C002890C6 /* IosCoreResources.bundle in Resources */,
 				E09140E5195DF983002890C6 /* ICConfiguration.bundle in Resources */,
 				E0A939FF18F27D4400222F2D /* ForRentIcon29x29.png in Resources */,
@@ -1035,9 +1027,6 @@
 				E0A93A0518F27D4400222F2D /* ForRentIcon120x120.png in Resources */,
 				E09036A818E3A660001200F2 /* icon-logo@2x.png in Resources */,
 				26779DE519B93E88001EE88D /* MainMenuItems~ipad.json in Resources */,
-				E0A939FA18F27A1E00222F2D /* trulia-rentals-768x1024@2x.png in Resources */,
-				E0A939F518F27A1E00222F2D /* trulia-rentals-320x480@2x.png in Resources */,
-				E0A939FB18F27A1E00222F2D /* trulia-rentals-1024@768@2x.png in Resources */,
 				2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */,
 				269D198B19B91579000440BC /* GoogleMaps.bundle in Resources */,
 				26779DE619B93E88001EE88D /* MainMenuItems~iphone.json in Resources */,
@@ -1052,12 +1041,10 @@
 				E0A98EC318ECB64E006E5581 /* iPhoneSplash1@2x.jpg in Resources */,
 				9D94D27A161A0B5C0089CEEC /* ICStartupViewControllerPhone.xib in Resources */,
 				6D8C5AB319C2775F00EF2937 /* OnboardingBeginIpadHero@2x.png in Resources */,
-				E0A939F718F27A1E00222F2D /* trulia-rentals-640x1136.png in Resources */,
 				2E309C2E167024BF00A31BD0 /* LICENSE.txt in Resources */,
 				2E309C2F167024BF00A31BD0 /* OpenSans-Bold.ttf in Resources */,
-				E0A939F818F27A1E00222F2D /* trulia-rentals-768x1024.png in Resources */,
 				2E309C30167024BF00A31BD0 /* OpenSans-BoldItalic.ttf in Resources */,
-				E0A939F918F27A1E00222F2D /* trulia-rentals-1024@768.png in Resources */,
+				050215541B276A08004455F3 /* Default-568h@2x.png in Resources */,
 				2E309C31167024BF00A31BD0 /* OpenSans-ExtraBold.ttf in Resources */,
 				2E309C32167024BF00A31BD0 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				2E309C33167024BF00A31BD0 /* OpenSans-Italic.ttf in Resources */,
@@ -1066,6 +1053,7 @@
 				2E309C35167024BF00A31BD0 /* OpenSans-LightItalic.ttf in Resources */,
 				2E309C36167024BF00A31BD0 /* OpenSans-Regular.ttf in Resources */,
 				6D8C5ABC19C2777000EF2937 /* OnboardingEndIphoneHero@2x.png in Resources */,
+				050215551B276A08004455F3 /* Default@2x.png in Resources */,
 				2E309C37167024BF00A31BD0 /* OpenSans-Semibold.ttf in Resources */,
 				2E309C38167024BF00A31BD0 /* OpenSans-SemiboldItalic.ttf in Resources */,
 				6D8C5ABD19C2777000EF2937 /* OnboardingLocationIphoneHero@2x.png in Resources */,
@@ -1076,11 +1064,11 @@
 				E0A98EBD18ECB597006E5581 /* QueSaveSearch.png in Resources */,
 				E09036A318E3A383001200F2 /* logo-trulia.png in Resources */,
 				E0A98EC218ECB64E006E5581 /* iPhoneSplash1-568h@2x.jpg in Resources */,
-				E0A939F618F27A1E00222F2D /* trulia-rentals-640x960@2x.png in Resources */,
 				E09036A418E3A383001200F2 /* logo-trulia@2x.png in Resources */,
 				E09036A718E3A660001200F2 /* icon-logo.png in Resources */,
 				6D8C5AB419C2775F00EF2937 /* OnboardingEndIpadHero@2x.png in Resources */,
 				6D8C5ABE19C2777000EF2937 /* OnboardingNotificationIphoneHero@2x.png in Resources */,
+				050215531B276A08004455F3 /* Default-Landscape@2x.png in Resources */,
 				05A350751B17E1DA006D40E7 /* ADBMobileConfigRelease.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
