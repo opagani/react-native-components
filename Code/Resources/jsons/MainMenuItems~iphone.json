@@ -6,7 +6,7 @@
         ]}
         ,{"title":"SEARCH","items":[
             {"title":"For Rent","icon":"icon-forrent-search.png","idt":"for rent" , "trackEventName":"search-for-rent"}
-            ,{"title":"My Boards","icon":"icon-mySavesHeart.png" ,"trackEventName":"my-saves", "customActionMethod":"actionSavedHomesClicked:" ,"badge":{"show":1,"name":"mySaves"}}
+            ,{"title":"My Boards","icon":"icon-mySavesHeart.png" ,"trackEventName":"my-saves", "customActionMethod":"actionSavedHomesClicked:" ,"badge":{"show":0}}
             ,{"title":"Saved Searches","icon":"IconSearch.png" ,"trackEventName":"saved_searches", "customActionMethod":"actionSavedSearchesClicked:"}
         ]}
         ,{"title":"TRULIA APPS","items":[
