@@ -12,7 +12,6 @@
         ,{"title":"TRULIA APPS","items":[
             {"title":"Trulia For Sale App","icon":"icon-forsale.png", "showLeavingIcon":1 , "urlSchemeLink":"TruliaForSale://", "url":"https://itunes.apple.com/us/app/real-estate-homes-for-sale/id288487321?mt=8"},
             {"title":"Trulia For Agents App","icon":"icon-agentApp.png", "showLeavingIcon":1 , "urlSchemeLink":"TruliaAgentApp://", "url" : "https://itunes.apple.com/us/app/trulia-for-agents/id489692273?mt=8&uo=4"},
-            {"title":"Trulia Mortgage Calculator","icon":"icon-mortgage.png",  "customActionMethod":"actionMortgageLinkClicked:"},
             {"title":"Trulia Luxe Blog","icon":"icon-problog.png",  "customActionMethod":"actionLuxeBlogClicked:"}
         ]}
         ,{"title":"MORE","items":[
