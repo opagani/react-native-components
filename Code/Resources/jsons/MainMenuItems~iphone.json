@@ -7,7 +7,7 @@
         ,{"title":"SEARCH","items":[
             {"title":"For Rent","icon":"icon-forrent-search.png","idt":"for rent" , "trackEventName":"search-for-rent"}
             ,{"title":"My Boards","icon":"icon-mySavesHeart.png" ,"trackEventName":"my-saves", "customActionMethod":"actionSavedHomesClicked:" ,"badge":{"show":0}}
-            ,{"title":"Saved Searches","icon":"IconSearch.png" ,"trackEventName":"saved_searches", "customActionMethod":"actionSavedSearchesClicked:"}
+            ,{"title":"My Searches","icon":"IconSearch.png" ,"trackEventName":"saved_searches", "customActionMethod":"actionSavedSearchesClicked:"}
         ]}
         ,{"title":"TRULIA APPS","items":[
             {"title":"Trulia For Sale App","icon":"icon-forsale.png", "showLeavingIcon":1 , "urlSchemeLink":"TruliaForSale://", "url":"https://itunes.apple.com/us/app/real-estate-homes-for-sale/id288487321?mt=8"},
