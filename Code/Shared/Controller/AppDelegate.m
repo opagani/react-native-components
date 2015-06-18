@@ -167,6 +167,18 @@ void uncaughtExceptionHandler(NSException *exception) {
     [_window makeKeyAndVisible];
 }
 
+#pragma mark OverRidden Methods
+
+-(void)setupCollaboration{
+    //updates the current sessions collab enabled flag to the collab flag in ICState
+    //these values may be different at various times during the apps life cycle
+    //eg. app/v1/query returns collab enabled flag after didFinishLaunching finishes
+    ICState * state                 = [ICState sharedInstance];
+    [ICPreference updateCollabEnabledPreferenceFromState:state];
+    
+    
+}
+
 
 /*- (void)setupListingParameters {
  ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
