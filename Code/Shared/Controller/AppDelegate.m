@@ -478,7 +478,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     //  **********************************************************************
     //  **********************************************************************
     
-    int tag = appAlert.tag;
+    NSInteger tag = appAlert.tag;
     if (tag == TruliaAlertTypeUpdate || tag == TruliaPromoAlertTypeRateAppUniversal )
     {
         NSMutableString *trackingString = [NSMutableString stringWithString:@"promo"];
