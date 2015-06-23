@@ -2,13 +2,13 @@
 //  MobileAppTracker.h
 //  MobileAppTracker
 //
-//  Created by HasOffers on 05/03/13.
+//  Created by HasOffers on 10/30/13.
 //  Copyright (c) 2013 HasOffers. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-#define MATVERSION @"2.4"
+#define MATVERSION @"2.6.1"
 
 @protocol MobileAppTrackerDelegate;
 
@@ -18,19 +18,29 @@
  */
 @interface MobileAppTracker : NSObject
 
-#pragma mark -
 
-typedef enum MATGender
-{
-    MALE = 0,
-    FEMALE = 1
-} MATGender;
+#pragma mark - MATGender
+
+/** @name Gender type constants */
+/*!
+ Gender type. An integer -- 0 or 1.
+ */
+typedef NSInteger MATGender;
+/*!
+ Gender type MALE. Equals 0.
+ */
+extern const NSInteger MAT_GENDER_MALE;
+/*!
+ Gender type FEMALE. Equals 1.
+ */
+extern const NSInteger MAT_GENDER_FEMALE;
+
 
 #pragma mark - MobileAppTracker Shared Instance
 
 /** @name MobileAppTracker Shared Instance */
 /*!
- A singleton of the MobileAppTracker Class
+ A singleton of the MobileAppTracker class
  */
 + (MobileAppTracker *)sharedManager;
 
@@ -42,7 +52,7 @@ typedef enum MATGender
  Starts Mobile App Tracker with MAT Advertiser Id and MAT Conversion Key. Both values are required.
  @param aid the MAT Advertiser Id provided in Mobile App Tracking.
  @param key the MAT Conversion Key provided in Mobile App Tracking.
- @return TRUE if error occurs, FALSE otherwise.
+ @return YES if error occurs, NO otherwise.
  */
 - (BOOL)startTrackerWithMATAdvertiserId:(NSString *)aid MATConversionKey:(NSString *)key;
 
@@ -77,7 +87,7 @@ typedef enum MATGender
 - (void)setDebugMode:(BOOL)yesorno;
 
 /*!
- Set to YES to allow duplicate requests to be registered with the tracking engine.
+ Set to YES to allow duplicate requests to be registered with the MAT server.
  
  @warning This is only for testing. You must turn this off for release builds.
  
@@ -91,127 +101,147 @@ typedef enum MATGender
 /** @name Setter Methods */
 
 /*!
- Set the Apple Advertising Identifier available in iOS 6
- @param advertising_identifier - Apple Advertising Identifier
+ Set the Apple Advertising Identifier available in iOS 6.
+ @param appleAdvertisingIdentifier - Apple Advertising Identifier
  */
-- (void)setAppleAdvertisingIdentifier:(NSUUID *)advertising_identifier;
+- (void)setAppleAdvertisingIdentifier:(NSUUID *)appleAdvertisingIdentifier;
 
 /*!
- Set the Apple Vendor Identifier available in iOS 6
- @param vendor_identifier - Apple Vendor Identifier
+ Set the Apple Vendor Identifier available in iOS 6.
+ @param appleVendorIdentifier - Apple Vendor Identifier
  */
-- (void)setAppleVendorIdentifier:(NSUUID * )vendor_identifier;
+- (void)setAppleVendorIdentifier:(NSUUID * )appleVendorIdentifier;
 
 /*!
- Sets the currency code for the engine.
+ Sets the currency code.
  Default: USD
- @param currency_code The string name for the currency code.
+ @param currencyCode The string name for the currency code.
  */
-- (void)setCurrencyCode:(NSString *)currency_code;
+- (void)setCurrencyCode:(NSString *)currencyCode;
 
 /*!
- Sets the jailbroken device flag for the engine.
+ Sets the jailbroken device flag.
  @param yesorno The jailbroken device flag.
  */
 - (void)setJailbroken:(BOOL)yesorno;
 
 /*!
- Sets the MAT advertiser id for the engine.
- @param advertiser_id The string id for the MAT advertiser id.
+ Sets the MAT advertiser id.
+ @param advertiserId The string id for the MAT advertiser id.
  */
-- (void)setMATAdvertiserId:(NSString *)advertiser_id;
+- (void)setMATAdvertiserId:(NSString *)advertiserId;
 
 /*!
- Sets the MAT conversion key for the engine.
- @param conversion_key The string value for the MAT conversion key.
+ Sets the MAT conversion key.
+ @param conversionKey The string value for the MAT conversion key.
  */
-- (void)setMATConversionKey:(NSString *)conversion_key;
+- (void)setMATConversionKey:(NSString *)conversionKey;
 
 /*!
- Set the OpenUDID for the engine.
- @param open_udid a string value for the open udid value.
+ Sets the package name (bundle_id).
+ Defaults to the Bundle Id of the app that is running the sdk.
+ @param packageName The string name for the package.
  */
-- (void)setOpenUDID:(NSString *)open_udid;
-
-/*!
- Sets the package name (bundle_id) for the engine.
- Defaults to the bundle_id of the app that is running the sdk.
- @param package_name The string name for the package.
- */
-- (void)setPackageName:(NSString *)package_name;
+- (void)setPackageName:(NSString *)packageName;
 
 /*!
  Specifies if the sdk should auto detect if the iOS device is jailbroken.
  YES/NO
- @param yesorno yes will detect if the device is jailbroken, defaults to yes.
+ @param yesorno YES will detect if the device is jailbroken, defaults to YES.
  */
 - (void)setShouldAutoDetectJailbroken:(BOOL)yesorno;
 
 /*!
  Specifies if the sdk should pull the Apple Advertising Identifier from the device.
  YES/NO
- @param yesorno yes will set the Apple Advertising Identifier key, defaults to no.
+ @param yesorno YES will set the Apple Advertising Identifier, defaults to NO.
  */
 - (void)setShouldAutoGenerateAppleAdvertisingIdentifier:(BOOL)yesorno;
 
 /*!
  Specifies if the sdk should pull the Apple Vendor Identifier from the device.
  YES/NO
- @param yesorno yes will set the Apple Vendor Identifier key, defaults to no.
+ @param yesorno YES will set the Apple Vendor Identifier, defaults to NO.
  */
 - (void)setShouldAutoGenerateAppleVendorIdentifier:(BOOL)yesorno;
 
 /*!
- Specifies if the sdk should auto generate a mac address identifier.
- YES/NO
- @param yesorno yes will create a mac address, defaults to yes.
+ Sets the MAC address.
+ @param macAddress mac address, defaults to nil.
  */
-- (void)setShouldAutoGenerateMacAddress:(BOOL)yesorno;
+- (void)setMACAddress:(NSString *)macAddress;
 
 /*!
- Specifies if the sdk should auto generate an ODIN-1 key.
- YES/NO
- @param yesorno yes will create an ODIN-1 key, defaults to yes.
+ Sets the ODIN-1.
+ @param odin1 ODIN-1, defaults to nil.
  */
-- (void)setShouldAutoGenerateODIN1Key:(BOOL)yesorno;
+- (void)setODIN1:(NSString *)odin1;
 
 /*!
- Specifies if the sdk should auto generate an OpenUDID key.
- YES/NO
- @param yesorno yes will create an OpenUDID key, defaults to yes.
+ Sets the OpenUDID.
+ @param openUDID OpenUDID, defaults to nil.
  */
-- (void)setShouldAutoGenerateOpenUDIDKey:(BOOL)yesorno;
+- (void)setOpenUDID:(NSString *)openUDID;
 
 /*!
- Sets the site id for the engine.
- @param site_id The string id for the site id.
+ Sets the site id.
+ @param siteId The string id for the site id.
  */
-- (void)setSiteId:(NSString *)site_id;
+- (void)setSiteId:(NSString *)siteId;
 
 /*!
  Set the Trusted Preference Identifier (TPID).
- @param truste_tpid - Trusted Preference Identifier (TPID)
+ @param trusteTPID - Trusted Preference Identifier (TPID)
  */
-- (void)setTrusteTPID:(NSString *)truste_tpid;
+- (void)setTrusteTPID:(NSString *)trusteTPID;
 
 /*!
- Use HTTPS for the urls to the tracking engine.
- YES/NO
- @param yesorno yes means use https, default is yes.
+ Sets the user id.
+ @param userId The string name for the user id.
  */
-- (void)setUseHTTPS:(BOOL)yesorno;
+- (void)setUserId:(NSString *)userId;
 
 /*!
- Sets the user id for the engine.
- @param user_id The string name for the user id.
+ Sets the UIID. UIID is replacement of the deprecated UDID in iOS for Asia and Japan.
+ Ref: https://github.com/akisute/UIApplication-UIID
+ @param uiid UIID, defaults to nil.
  */
-- (void)setUserId:(NSString *)user_id;
+- (void)setUIID:(NSString *)uiid;
 
+/*!
+ Sets the user's age.
+ @param userAge user's age
+ */
 - (void)setAge:(NSInteger)userAge;
+
+/*!
+ Sets the user's gender.
+ @param userGender user's gender, possible values MAT_GENDER_MALE (0), MAT_GENDER_FEMALE (1).
+ */
 - (void)setGender:(MATGender)userGender;
 
+/*!
+ Sets the user's location.
+ @param latitude user's latitude
+ @param longitude user's longitude
+ */
 - (void)setLatitude:(double)latitude longitude:(double)longitude;
+
+/*!
+ Sets the user's location including altitude.
+ @param latitude user's latitude
+ @param longitude user's longitude
+ @param altitude user's altitude
+ */
 - (void)setLatitude:(double)latitude longitude:(double)longitude altitude:(double)altitude;
+
+/*!
+ Set app-level ad-tracking.
+ YES/NO
+ @param enable YES means opt-in, NO means opt-out.
+ */
+- (void)setAppAdTracking:(BOOL)enable;
+
 
 #pragma mark - Track Install/Update Methods
 
@@ -298,7 +328,7 @@ typedef enum MATGender
 /*!
  Record a Track Action for an Event Id or Name and reference id, revenue and currency.
  @param eventIdOrName The event name or event id.
- @param isId Yes if eventIdOrName is the event id for a pre-defined event on the MAT website, no otherwise
+ @param isId Yes if eventIdOrName is the event id for a pre-defined event on the MAT website, NO otherwise
  @param refId The referencId for an event, corresponds to advertiser_ref_id on the website.
  @param revenueAmount The revenue amount for the event.
  @param currencyCode The currency code override for the event. Blank defaults to sdk setting.
@@ -384,6 +414,26 @@ typedef enum MATGender
                        currencyCode:(NSString *)currencyCode
                    transactionState:(NSInteger)transactionState;
 
+/*!
+ Record a Track Action for an Event Name or Id.
+ @param eventIdOrName The event name or event id.
+ @param isId Yes if the event is an Id otherwise No if the event is a name only.
+ @param eventItems An array of MATEventItem objects
+ @param refId The referencId for an event, corresponds to advertiser_ref_id on the website.
+ @param revenueAmount The revenue amount for the event.
+ @param currencyCode The currency code override for the event. Blank defaults to sdk setting.
+ @param transactionState The in-app purchase transaction SKPaymentTransactionState as received from the iTunes store.
+ @param receipt The in-app purchase transaction receipt as received from the iTunes store.
+ */
+- (void)trackActionForEventIdOrName:(NSString *)eventIdOrName
+                          eventIsId:(BOOL)isId
+                         eventItems:(NSArray *)eventItems
+                        referenceId:(NSString *)refId
+                      revenueAmount:(float)revenueAmount
+                       currencyCode:(NSString *)currencyCode
+                   transactionState:(NSInteger)transactionState
+                            receipt:(NSData *)receipt;
+
 
 #pragma mark - Cookie Tracking
 
@@ -406,7 +456,7 @@ typedef enum MATGender
  used in conjunction with the setTracking:advertiserId:offerId:publisherId:redirect: method.
  @param redirect_url The string name for the url.
  */
-- (void)setRedirectUrl:(NSString *)redirect_url;
+- (void)setRedirectUrl:(NSString *)redirectURL;
 
 /*!
  Start a Tracking Session on the MAT server.
@@ -439,74 +489,6 @@ typedef enum MATGender
 
 @end
 
-#pragma mark - Deprecated Methods
-
-@interface MobileAppTracker (Deprecated)
-
-// Note: A method identified as deprecated has been superseded and may become unsupported in the future.
-
-/*!
- <span style="color:red">Deprecated Method:</span> Instead use startTrackerWithMATAdvertiserId:MATConversionKey
- @warning <span style="color:red">Deprecated Method</span>
- */
-- (BOOL)startTrackerWithAdvertiserId:(NSString *)aid advertiserKey:(NSString *)key withError:(NSError **)error __deprecated;
-
-/*!
- <span style="color:red">Deprecated Method:</span> Instead use startTrackerWithMATAdvertiserId:MATConversionKey
- @warning <span style="color:red">Deprecated Method</span>
- */
-- (BOOL)startTrackerWithMATAdvertiserId:(NSString *)aid MATConversionKey:(NSString *)key withError:(NSError **)error __deprecated;
-
-/*!
- <span style="color:red">Deprecated Method:</span> Instead use setMATAdvertiserId:
- @warning <span style="color:red">Deprecated Method</span>
- */
-- (void)setAdvertiserId:(NSString *)advertiser_id __deprecated;
-
-/*!
- <span style="color:red">Deprecated Method:</span> Instead use setMATConversionKey:
- @warning <span style="color:red">Deprecated Method</span>
- */
-- (void)setAdvertiserKey:(NSString *)advertiser_key __deprecated;
-
-/*!
- <span style="color:red">Deprecated Method:</span> Instead use setAppleAdvertisingIdentifier:
- @warning <span style="color:red">Deprecated Method</span>
- */
-- (void)setAdvertiserIdentifier:(NSUUID *)advertiser_identifier __deprecated;
-
-/*!
- <span style="color:red">Deprecated Method:</span> Instead use setAppleVendorIdentifier:
- @warning <span style="color:red">Deprecated Method</span>
- */
-- (void)setVendorIdentifier:(NSUUID * )vendor_identifier __deprecated;
-
-/*!
- <span style="color:red">Deprecated Method:</span> Instead use setShouldAutoGenerateAppleAdvertisingIdentifier:
- @warning <span style="color:red">Deprecated Method</span>
- */
-- (void)setShouldAutoGenerateAdvertiserIdentifier:(BOOL)yesorno __deprecated;
-
-/*!
- <span style="color:red">Deprecated Method:</span> Instead use setShouldAutoGenerateAppleVendorIdentifier:
- @warning <span style="color:red">Deprecated Method</span>
- */
-- (void)setShouldAutoGenerateVendorIdentifier:(BOOL)yesorno __deprecated;
-
-/*!
- <span style="color:red">Deprecated Method:</span> Instead use setDebugMode:
- @warning <span style="color:red">Deprecated Method</span>
- */
-- (void)setShouldDebugResponseFromServer:(BOOL)yesorno __deprecated;
-
-/*!
- <span style="color:red">Deprecated Method:</span> Instead use setAllowDuplicateRequests:
- @warning <span style="color:red">Deprecated Method</span>
- */
-- (void)setShouldAllowDuplicateRequests:(BOOL)yesorno __deprecated;
-
-@end
-
 
 #pragma mark - MobileAppTrackerDelegate
 
@@ -534,6 +516,7 @@ typedef enum MATGender
 - (void)mobileAppTracker:(MobileAppTracker *)tracker didFailWithError:(NSError *)error;
 
 @end
+
 
 #pragma mark - MATEventItem
 
@@ -585,11 +568,20 @@ typedef enum MATGender
 /** @name Methods to create MATEventItem objects.*/
 
 /*!
+ Method to create an event item. Revenue will be calculated using (quantity * unitPrice).
+ 
+ @param name name of the event item
+ @param unitPrice unit price of the event item
+ @param quantity quantity of the event item
+ */
++ (MATEventItem *)eventItemWithName:(NSString *)name unitPrice:(float)unitPrice quantity:(int)quantity;
+
+/*!
  Method to create an event item.
  @param name name of the event item
  @param unitPrice unit price of the event item
  @param quantity quantity of the event item
- @param revenue revenue of the event item
+ @param revenue revenue of the event item, to be used instead of (quantity * unitPrice)
  */
 + (MATEventItem *)eventItemWithName:(NSString *)name unitPrice:(float)unitPrice quantity:(int)quantity revenue:(float)revenue;
 
@@ -614,7 +606,7 @@ typedef enum MATGender
  @param name name of the event item
  @param unitPrice unit price of the event item
  @param quantity quantity of the event item
- @param revenue revenue of the event item
+ @param revenue revenue of the event item, to be used instead of (quantity * unitPrice)
  @param attribute1 an extra parameter that corresponds to attribute_sub1 property of the event item
  @param attribute2 an extra parameter that corresponds to attribute_sub2 property of the event item
  @param attribute3 an extra parameter that corresponds to attribute_sub3 property of the event item
