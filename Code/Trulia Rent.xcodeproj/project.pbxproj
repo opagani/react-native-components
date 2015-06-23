@@ -12,6 +12,7 @@
 		050215541B276A08004455F3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 050215501B276A08004455F3 /* Default-568h@2x.png */; };
 		050215551B276A08004455F3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 050215511B276A08004455F3 /* Default@2x.png */; };
 		05315EF51ADC70E500406317 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05315EF41ADC70E500406317 /* MediaPlayer.framework */; };
+		056C8D5E1B3A10190090D18E /* MobileAppTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056C8D5D1B3A10190090D18E /* MobileAppTracker.framework */; };
 		05A350741B17E1DA006D40E7 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */; };
 		05A350751B17E1DA006D40E7 /* ADBMobileConfigRelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */; };
 		05A431891B1693740024CEA4 /* IRBoardManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */; };
@@ -21,7 +22,6 @@
 		266139DB164AF82E00D19093 /* IAURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 266139DA164AF82E00D19093 /* IAURLCache.m */; };
 		26779DE519B93E88001EE88D /* MainMenuItems~ipad.json in Resources */ = {isa = PBXBuildFile; fileRef = 26779DE319B93E88001EE88D /* MainMenuItems~ipad.json */; };
 		26779DE619B93E88001EE88D /* MainMenuItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 26779DE419B93E88001EE88D /* MainMenuItems~iphone.json */; };
-		26867400174FFC130078C3AA /* MobileAppTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268673FF174FFC130078C3AA /* MobileAppTracker.framework */; };
 		269D198919B914AE000440BC /* IRListingRefineViewControllerPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D198819B914AE000440BC /* IRListingRefineViewControllerPad.m */; };
 		269D198B19B91579000440BC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 269D198A19B91579000440BC /* GoogleMaps.bundle */; };
 		269D198E19B925F0000440BC /* LocalInfoItems~ipad.json in Resources */ = {isa = PBXBuildFile; fileRef = 269D198D19B925F0000440BC /* LocalInfoItems~ipad.json */; };
@@ -180,6 +180,7 @@
 		050215501B276A08004455F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		050215511B276A08004455F3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		05315EF41ADC70E500406317 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		056C8D5D1B3A10190090D18E /* MobileAppTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileAppTracker.framework; path = "../../mob-ioscore-lib/lib/MobileAppTracker.framework"; sourceTree = "<group>"; };
 		05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
 		05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfigRelease.json; sourceTree = "<group>"; };
 		05A431871B1693740024CEA4 /* IRBoardManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRBoardManagerViewController.h; path = ViewController/IRBoardManagerViewController.h; sourceTree = "<group>"; };
@@ -386,6 +387,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				056C8D5E1B3A10190090D18E /* MobileAppTracker.framework in Frameworks */,
 				05315EF51ADC70E500406317 /* MediaPlayer.framework in Frameworks */,
 				05E984891AC0D0DD00F5DB03 /* GoogleMobileAds.framework in Frameworks */,
 				E0E700AF1AA50C0300602831 /* EPrizeMobileSDK.framework in Frameworks */,
@@ -429,7 +431,6 @@
 				51DA6A1B14CF2F0D007F2584 /* CoreGraphics.framework in Frameworks */,
 				51802F4514CF793A00199144 /* AVFoundation.framework in Frameworks */,
 				51DA6A1714CF2F0D007F2584 /* UIKit.framework in Frameworks */,
-				26867400174FFC130078C3AA /* MobileAppTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,6 +641,7 @@
 		51DA6A1514CF2F0D007F2584 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				056C8D5D1B3A10190090D18E /* MobileAppTracker.framework */,
 				05315EF41ADC70E500406317 /* MediaPlayer.framework */,
 				05E984881AC0D0DD00F5DB03 /* GoogleMobileAds.framework */,
 				E0B6D9691A809A6C00A10F7B /* GoogleMaps.framework */,
