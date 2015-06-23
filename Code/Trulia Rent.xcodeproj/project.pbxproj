@@ -193,7 +193,6 @@
 		266139DA164AF82E00D19093 /* IAURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IAURLCache.m; path = ../../Ipad/Shared/Controller/IAURLCache.m; sourceTree = "<group>"; };
 		26779DE319B93E88001EE88D /* MainMenuItems~ipad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "MainMenuItems~ipad.json"; path = "Resources/jsons/MainMenuItems~ipad.json"; sourceTree = "<group>"; };
 		26779DE419B93E88001EE88D /* MainMenuItems~iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "MainMenuItems~iphone.json"; path = "Resources/jsons/MainMenuItems~iphone.json"; sourceTree = "<group>"; };
-		268673FF174FFC130078C3AA /* MobileAppTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileAppTracker.framework; sourceTree = "<group>"; };
 		269D198719B914AE000440BC /* IRListingRefineViewControllerPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRListingRefineViewControllerPad.h; path = ViewController/IRListingRefineViewControllerPad.h; sourceTree = "<group>"; };
 		269D198819B914AE000440BC /* IRListingRefineViewControllerPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRListingRefineViewControllerPad.m; path = ViewController/IRListingRefineViewControllerPad.m; sourceTree = "<group>"; };
 		269D198A19B91579000440BC /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
@@ -313,12 +312,10 @@
 		E06C997E18C7FBE300C1AAFB /* BgLoginPhoto@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BgLoginPhoto@2x.jpg"; sourceTree = "<group>"; };
 		E07EAABD19491426006BE023 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = "../../mob-ioscore-lib/lib/FacebookSDK/FacebookSDK.framework"; sourceTree = "<group>"; };
 		E07EAAC319491E5D006BE023 /* NewRelicAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NewRelicAgent.framework; path = "../../mob-ioscore-lib/lib/NewRelicAgent.framework"; sourceTree = "<group>"; };
-		E07EAAC5194A30BA006BE023 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "../../mob-ioscore-lib/lib/GoogleMapsSDK/GoogleMaps-iOS-1.7.2/GoogleMaps.framework"; sourceTree = "<group>"; };
 		E07EAAC7194A30CF006BE023 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		E07EAAC9194A30E9006BE023 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../mob-ioscore-lib/lib/Parse.framework"; sourceTree = "<group>"; };
 		E07EAACB194A31B0006BE023 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = "../../mob-ioscore-lib/lib/Crashlytics/Crashlytics.framework"; sourceTree = "<group>"; };
 		E07EAACD194A34C2006BE023 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		E081D88918C65440000C7B88 /* libMortgageLibExternal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMortgageLibExternal.a; path = "../../mob-iosmortgage-lib/build/Debug-iphoneos/libMortgageLibExternal.a"; sourceTree = "<group>"; };
 		E09036A118E3A383001200F2 /* logo-trulia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-trulia.png"; sourceTree = "<group>"; };
 		E09036A218E3A383001200F2 /* logo-trulia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-trulia@2x.png"; sourceTree = "<group>"; };
 		E09036A518E3A660001200F2 /* icon-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-logo.png"; sourceTree = "<group>"; };
@@ -650,17 +647,14 @@
 				E07EAACB194A31B0006BE023 /* Crashlytics.framework */,
 				E07EAAC9194A30E9006BE023 /* Parse.framework */,
 				E07EAAC7194A30CF006BE023 /* GLKit.framework */,
-				E07EAAC5194A30BA006BE023 /* GoogleMaps.framework */,
 				E07EAAC319491E5D006BE023 /* NewRelicAgent.framework */,
 				E07EAABD19491426006BE023 /* FacebookSDK.framework */,
 				E05C232518C682E4009A3207 /* libIosCore.a */,
-				E081D88918C65440000C7B88 /* libMortgageLibExternal.a */,
 				E06A6F30187F3949007891FD /* libIosCore.a */,
 				E052A20F187E148800B0A358 /* EventKitUI.framework */,
 				E052A20D187E148100B0A358 /* EventKit.framework */,
 				E052A20B187E147000B0A358 /* Twitter.framework */,
 				E052A209187E145E00B0A358 /* Accelerate.framework */,
-				268673FF174FFC130078C3AA /* MobileAppTracker.framework */,
 				3BB379F916C42AA1006A253B /* libicucore.dylib */,
 				2E1AD2F1165436B500C81545 /* libz.dylib */,
 				2E493CA01630C940004C361A /* libxml2.dylib */,
