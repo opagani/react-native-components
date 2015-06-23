@@ -90,10 +90,42 @@
 	</array>
 	<key>validPetValues</key>
 	<array>
-		<string>None</string>
-		<string>Cat</string>
-		<string>Small Dog</string>
-		<string>Large Dog</string>
+		<dict>
+			<key>title</key>
+			<string>None</string>
+			<key>value</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Cats</string>
+			<key>value</key>
+			<string>cats</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Small Dogs</string>
+			<key>value</key>
+			<string>sm_dogs</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Large Dogs</string>
+			<key>value</key>
+			<string>lg_dogs</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Any Pets</string>
+			<key>value</key>
+			<string>any</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Other</string>
+			<key>value</key>
+			<string>other</string>
+		</dict>
 	</array>
 	<key>validSoldWithinMonthsValues</key>
 	<array>
