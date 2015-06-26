@@ -7,6 +7,8 @@
 //
 
 #import "IRMainMenuViewControllerPhone.h"
+#import "IRBoardManagerViewController.h"
+#import "IRMySavedHomesViewController.h"
 
 @interface IRMainMenuViewControllerPhone ()
 
@@ -20,6 +22,19 @@
     return [NSIndexPath indexPathForRow:([UIDevice isPhone] ? IRMainMenuViewControllerPhoneSaveTypeMySavesRental :
                                                               IRMainMenuViewControllerPhoneSaveTypeMySavesIpadRental)
                                                               inSection:1];
+}
+
+
+-(void)actionBoardsClicked:(id)sender{
+    
+    IRBoardManagerViewController * boardManager = [IRBoardManagerViewController new];
+    [self closeMenuAndShowViewController:boardManager];
+    
+}
+
+- (void)presentMySavedHomesViewController{
+    IRMySavedHomesViewController * controller = [IRMySavedHomesViewController new];
+    [self closeMenuAndShowViewController:controller];
 }
 
 @end

@@ -44,8 +44,8 @@
 }
 
 - (IBAction)actionShowRefine:(id)sender; {
-    
-    [[ICMetricsController sharedInstance] trackToolbarClick:[ICMetricsController VAR_ACTION_REFINE]];
+    // FIXME: Update this to ICAnalyticsController
+    //[[ICMetricsController sharedInstance] trackToolbarClick:[ICMetricsController VAR_ACTION_REFINE]];
     IRListingRefineViewControllerPad *viewController = [[IRListingRefineViewControllerPad alloc] initWithSearchController:self.searchController];
     [viewController setDelegate:self];
     self.isFilterViewVisible = YES;

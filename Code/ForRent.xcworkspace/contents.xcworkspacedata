@@ -7,7 +7,4 @@
    <FileRef
       location = "group:../../mob-ioscore-lib/code/IosCore.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:../../mob-iosmortgage-lib/MortgageLib.xcodeproj">
-   </FileRef>
 </Workspace>

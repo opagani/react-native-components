@@ -7,16 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "ICMainViewControllerPad.h"
 
 #import "ICPreference.h"
-#import "ICMetricsController.h"
 #import "ICConfiguration.h"
-#import "ICStartupViewControllerPhone.h"
 #import "ICCoreDataController.h"
-//#import "ICMyAccountViewControllerPhone.h"
 #import "ICSyncController.h"
-#import "ICSyncServiceNotification.h"
 #import "IRLeftMenuViewController.h"
 #import "IRListingSearchViewControllerPhone.h"
 #import "IRMainViewControllerPad.h"
@@ -24,48 +19,18 @@
 #import "ICSavedSearchNotificationsViewController.h"
 #import "ICAccountController.h"
 
-
 #if RUN_STRESS_TEST
 #import "ICStressTestController.h"
 #endif
 
-//#import "ICPasteBoard.h"
-#import "IAURLCache.h"
-#import "ICRouterInput.h"
-#import "ICApiRequest.h"
 #import <FacebookSDK/FacebookSDK.h>
 
 #if TARGET_IPHONE_SIMULATOR
 //#import "PonyDebugger.h"
 #endif
 
-/*#import <NewRelicAgent/NewRelicAgent.h>
- #import <Crashlytics/Crashlytics.h>
- #import "ICListingDetailViewControllerPhone.h"
- #import "IAConstants.h"
- #import "ICFindAgentViewController.h"
- #import "ICMoreViewController.h"
- #import "ICMainMenuViewControllerPhone.h"
- #import "ICMyAccountViewControllerPhone.h"
- #import "IRMainViewControllerPad.h"
- #import "IRListingSearchViewControllerPhone.h"
- #import <MobileAppTracker/MobileAppTracker.h>
- #import "IRStartupViewControllerPhone.h"
- #import "IRMoreViewController.h"*/
-
-
-#import <Crashlytics/Crashlytics.h>
-//#import "ICListingDetailViewControllerPhone.h"
 #import "IAConstants.h"
-#import "ICFindAgentViewController.h"
-#import "IC+UIViewController.h"
-#import "ICListingSearchController.h"
-#import "ICManagedSearch.h"
-#import "UIApplication+ICAdditions.h"
-#import "MCPixelTracker.h"
 #import "ICManagedNotification.h"
-#import "IC+UIColor.h"
-#import "ICImageBundleUtil.h"
 #import "ICAppearance.h"
 #import "ICLog.h"
 #import "ICUtility.h"
@@ -87,11 +52,6 @@ void uncaughtExceptionHandler(NSException *exception) {
     GRLogCError(@"CRASH: %@", exception);
     GRLogCError(@"Stack Trace: %@", [exception callStackSymbols]);
 }
-
-- (void)log:(NSString *)msg {
-	//[consoleTextView setText:[consoleTextView.text stringByAppendingString:[NSString stringWithFormat:@"%@\r\r", msg]]];
-}
-
 
 - (void)saveUserLocations; {
 	NSString *docFolder = [NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
@@ -119,7 +79,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)setRootViewControllerForIpad
 {
-    [_window setRootViewController:self.leftViewController];
+    [_window setRootViewController:self.menuAndSrpContainerController];
     [_window makeKeyAndVisible];
 }
 
@@ -140,16 +100,16 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     IRMainViewControllerPad *searchController = [IRMainViewControllerPad sharedInstance];
     searchController.toggleMenuBlock = ^(BOOL show){
-        [self.leftViewController toggleMenu:show];
+        [self.menuAndSrpContainerController toggleMenu:show];
     };
     
     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
     
     IRMainMenuViewControllerPhone *menu = [[IRMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
-    self.leftViewController = [[IRLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController:navCtr];
+    self.menuAndSrpContainerController = [[IRLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController:navCtr];
     self.navController = navCtr;
     
-   // [ICMainViewControllerPad sharedInstance].leftMenuViewController = self.leftViewController;
+   // [ICMainViewControllerPad sharedInstance].leftMenuViewController = self.ICMenuSRPContainerViewController;
 }
 
 - (void)setupAppConfigurationForIpad
@@ -177,7 +137,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 }
 
 - (void)setRootViewControllerForIphone {
-    [_window setRootViewController:self.leftViewController];
+    [_window setRootViewController:self.menuAndSrpContainerController];
     [_window makeKeyAndVisible];
 }
 
@@ -205,6 +165,18 @@ void uncaughtExceptionHandler(NSException *exception) {
     [self.onboardingControllerPhone setDelegate:self];
     [_window setRootViewController:self.onboardingControllerPhone];
     [_window makeKeyAndVisible];
+}
+
+#pragma mark OverRidden Methods
+
+-(void)setupCollaboration{
+    //updates the current sessions collab enabled flag to the collab flag in ICState
+    //these values may be different at various times during the apps life cycle
+    //eg. app/v1/query returns collab enabled flag after didFinishLaunching finishes
+    ICState * state                 = [ICState sharedInstance];
+    [ICPreference updateCollabEnabledPreferenceFromState:state];
+    
+    
 }
 
 
@@ -241,7 +213,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
     
     
-    self.leftViewController = [[IRLeftMenuViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
+    self.menuAndSrpContainerController = [[IRLeftMenuViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
     self.navController = navCtr;
 
 }
@@ -292,8 +264,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     [self registerNotification];
 }
 
-#pragma mark-
-#pragma mark Splash Screen Delegate for iPhone
+#pragma mark - Splash Screen Delegate for iPhone
 
 -(void)dismissStartupScreen:(UIViewController*)viewController{
     
@@ -381,8 +352,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     return returnValue;
 }
 
-#pragma mark-
-#pragma mark Splash Screen Delegate for iPad
+#pragma mark - Splash Screen Delegate for iPad
 
 -(void)goingOutOfView:(UIViewController*)viewController{
     
@@ -490,7 +460,8 @@ void uncaughtExceptionHandler(NSException *exception) {
 	UIAlertView *upgradeAppAlert = [[UIAlertView alloc] initWithTitle: @"Get the new app" message: @"An updated version of the Trulia App is now available via iTunes." delegate: self cancelButtonTitle: @"Not Now" otherButtonTitles: @"Update", nil];
     upgradeAppAlert.tag = TruliaAlertTypeUpdate;
 	
-    [[ICMetricsController sharedInstance] trackPageView:@"promo|update app|view"];
+    // FIXME: Update this to ICAnalyticsController
+    //[[ICMetricsController sharedInstance] trackPageView:@"promo|update app|view"];
     
     
 	[upgradeAppAlert show];
@@ -507,7 +478,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     //  **********************************************************************
     //  **********************************************************************
     
-    int tag = appAlert.tag;
+    NSInteger tag = appAlert.tag;
     if (tag == TruliaAlertTypeUpdate || tag == TruliaPromoAlertTypeRateAppUniversal )
     {
         NSMutableString *trackingString = [NSMutableString stringWithString:@"promo"];
@@ -536,7 +507,9 @@ void uncaughtExceptionHandler(NSException *exception) {
         {
             [trackingString appendString:@"|cancel"];
         }
-        [[ICMetricsController sharedInstance] trackClick:trackingString];
+        
+        // FIXME: Update this to ICAnalyticsController
+        //[[ICMetricsController sharedInstance] trackClick:trackingString];
         
         
         if (userConfirmed)
@@ -556,13 +529,11 @@ void uncaughtExceptionHandler(NSException *exception) {
 - (void)loadMyAccountWithId:(NSString *)notificationId andType:(NSInteger)notificationType; {
     
     [[ICSyncController sharedInstance] syncService:ICSYncServiceTypeNotification complete:nil];
-    [[ICSyncController sharedInstance] syncService:ICSYncServiceTypeNotification complete:nil];
 
 }
 
 
-#pragma mark-
-#pragma mark Deep Linking
+#pragma mark - Deep Linking
 
 
 /*-(void)routeInput:(ICRouterInput *)route
@@ -709,11 +680,6 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     return [FBSession.activeSession handleOpenURL:url];
     
-}
-
-- (id)tracker{
-    
-    return [ICMetricsController tracker];
 }
 
 - (NSString *)appIdentifier{

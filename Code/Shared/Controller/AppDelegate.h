@@ -16,7 +16,7 @@
 #import "ICOnboardingViewControllerPad.h"
 
 
-@class ICMainViewControllerPad, ICLeftMenuViewController;
+@class ICMainViewControllerPad, ICMenuSRPContainerViewController;
 
 
 @interface AppDelegate : AppDelegate_Shared <ICOnboardingDelegate, ICStartupViewControllerDelegate>{
@@ -35,7 +35,6 @@
 
 
 // ipad additions
-- (void)log:(NSString *)msg;
 - (void)saveUserLocations;
 - (void)getUserLocations;
 

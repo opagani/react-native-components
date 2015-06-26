@@ -8,7 +8,7 @@
 
 #import "IRListingSearchViewControllerPhone.h"
 #import "IRLayersMenuViewControllerPhone.h"
-#import "ICLeftMenuViewController.h"
+#import "ICMenuSRPContainerViewController.h"
 #import "ICMainMenuViewControllerPhone.h"
 #import "IRListingDetailViewControllerPad.h"
 #import "UIApplication+ICAdditions.h"
@@ -30,7 +30,8 @@
 }
 
 - (void)actionShowRefine:(id)sender {
-    [[ICMetricsController sharedInstance] trackToolbarClick:[ICMetricsController VAR_ACTION_REFINE]];
+    // FIXME: Update this to ICAnalyticsController
+    //[[ICMetricsController sharedInstance] trackToolbarClick:[ICMetricsController VAR_ACTION_REFINE]];
     
     IRListingRefineViewControllerPhone *viewController = [[IRListingRefineViewControllerPhone alloc] initWithSearchController:self.searchController];
     viewController.delegate = self;
@@ -106,17 +107,17 @@
         
         UIViewController *vc = [UIApplication sharedApplication].keyWindow.rootViewController;
         
-        if ([vc isKindOfClass:[ICLeftMenuViewController class]])
+        if ([vc isKindOfClass:[ICMenuSRPContainerViewController class]])
         {
-            ICMainMenuViewControllerPhone *menu = (ICMainMenuViewControllerPhone *) ((ICLeftMenuViewController *) vc).left;
+            ICMainMenuViewControllerPhone *menu = (ICMainMenuViewControllerPhone *) ((ICMenuSRPContainerViewController *) vc).left;
             
             [self hideCurrentMessage:YES];
             
             [menu animateStarToMenuFromView:view forMenuItem:0 completionBlock:^
              {
-                 [((ICLeftMenuViewController *) vc) toggleMenu:NO];
+                 [((ICMenuSRPContainerViewController *) vc) toggleMenu:NO];
              }];
-            [((ICLeftMenuViewController *) vc) toggleMenu:YES];
+            [((ICMenuSRPContainerViewController *) vc) toggleMenu:YES];
         }
         else
             GRLog(@"ERROR ** root view controller has changed, animation will no longer work");

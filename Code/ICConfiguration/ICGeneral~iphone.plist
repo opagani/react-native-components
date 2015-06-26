@@ -29,12 +29,12 @@
 	<key>comScore</key>
 	<dict>
 		<key>CustomerC2</key>
-		<string>6036483</string>
+		<string>6036206</string>
 		<key>PublisherSecret</key>
-		<string>7d61af28edda3d4a46d945b37075d33b</string>
+		<string>ada334158b059052e7cfc0606003ff41</string>
 	</dict>
 	<key>SupportsGeofencing</key>
-	<true/>
+	<false/>
 	<key>validBathValues</key>
 	<array>
 		<string>Any</string>
@@ -87,6 +87,13 @@
 		<string>2+ acre</string>
 		<string>5+ acre</string>
 		<string>10+ acre</string>
+	</array>
+	<key>validPetValues</key>
+	<array>
+		<string>None</string>
+		<string>Cat</string>
+		<string>Small Dog</string>
+		<string>Large Dog</string>
 	</array>
 	<key>validSoldWithinMonthsValues</key>
 	<array>
@@ -331,7 +338,7 @@
 		<string>Log</string>
 	</array>
 	<key>NearbyText</key>
-	<string>Nearby</string>
+	<string>Current Location</string>
 	<key>MapAreaText</key>
 	<string>Viewable Map Area</string>
 	<key>AppStoreLink</key>
@@ -376,8 +383,8 @@
 	<key>AppstoreAppID</key>
 	<string>508163604</string>
 	<key>AppiraterNumberOfSignificantEvents</key>
-        <integer>5</integer>
-        <key>AppiraterUseCountThreshold</key>
-        <integer>5</integer>
+	<integer>5</integer>
+	<key>AppiraterUseCountThreshold</key>
+	<integer>5</integer>
 </dict>
 </plist>

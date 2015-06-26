@@ -34,7 +34,7 @@
         }
 	
         NSData *data = [NSData dataWithContentsOfFile:cachedURL];
-        NSLog(@"* * cached data size: %i", [data length]);
+        NSLog(@"* * cached data size: %lu", (unsigned long)[data length]);
         
         NSURLResponse *response = [[NSURLResponse alloc] initWithURL:[request URL] MIMEType:[self mimeTypeForPath:pathString] expectedContentLength:[data length] textEncodingName:nil];
         cachedResponse = [[NSCachedURLResponse alloc] initWithResponse:response data:data];
