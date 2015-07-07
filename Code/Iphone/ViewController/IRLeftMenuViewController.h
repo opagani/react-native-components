@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ICMenuSRPContainerViewController.h"
+#import "ICMenuContainerViewController.h"
 
-@interface IRLeftMenuViewController : ICMenuSRPContainerViewController
+@interface IRLeftMenuViewController : ICMenuContainerViewController
 
 - (id)initWithLeftViewController:(UIViewController *) left_ rightViewController:(UIViewController *) right_;
 

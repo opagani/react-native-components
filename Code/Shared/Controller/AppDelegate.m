@@ -23,8 +23,6 @@
 #import "ICStressTestController.h"
 #endif
 
-#import <FacebookSDK/FacebookSDK.h>
-
 #if TARGET_IPHONE_SIMULATOR
 //#import "PonyDebugger.h"
 #endif
@@ -109,7 +107,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     self.menuAndSrpContainerController = [[IRLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController:navCtr];
     self.navController = navCtr;
     
-   // [ICMainViewControllerPad sharedInstance].leftMenuViewController = self.ICMenuSRPContainerViewController;
+   // [ICMainViewControllerPad sharedInstance].leftMenuViewController = self.ICMenuContainerViewController;
 }
 
 - (void)setupAppConfigurationForIpad
@@ -667,20 +665,6 @@ void uncaughtExceptionHandler(NSException *exception) {
         [self.navController popToRootViewControllerAnimated:YES];
     }
 }*/
-
-
-- (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation
-{
-    
-    if ([super application:application handleOpenURL:url])
-        return YES;
-    
-    return [FBSession.activeSession handleOpenURL:url];
-    
-}
 
 - (NSString *)appIdentifier{
     

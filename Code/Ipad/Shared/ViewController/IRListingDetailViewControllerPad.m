@@ -13,7 +13,7 @@
 #import "UIButton+UIButton_SaveUnSaveListing.h"
 #import "UIApplication+ICAdditions.h"
 #import "ICMainMenuViewControllerPhone.h"
-#import "ICMenuSRPContainerViewController.h"
+#import "ICMenuContainerViewController.h"
 #import "ICMessageView.h"
 
 
@@ -57,15 +57,15 @@
      {
          UIViewController *vc = [UIApplication sharedApplication].keyWindow.rootViewController;
          
-         if ([vc isKindOfClass:[ICMenuSRPContainerViewController class]])
+         if ([vc isKindOfClass:[ICMenuContainerViewController class]])
          {
-             ICMainMenuViewControllerPhone *menu = (ICMainMenuViewControllerPhone *) ((ICMenuSRPContainerViewController *) vc).left;
+             ICMainMenuViewControllerPhone *menu = (ICMainMenuViewControllerPhone *) ((ICMenuContainerViewController *) vc).left;
              
              [menu animateStarToMenuFromView:view forMenuItem:0 completionBlock:^
               {
-                  [((ICMenuSRPContainerViewController *) vc) toggleMenu:NO];
+                  [((ICMenuContainerViewController *) vc) toggleMenu:NO];
               }];
-             [((ICMenuSRPContainerViewController *) vc) toggleMenu:YES];
+             [((ICMenuContainerViewController *) vc) toggleMenu:YES];
          }
          else
              GRLog(@"ERROR ** root view controller has changed, animation will no longer work");

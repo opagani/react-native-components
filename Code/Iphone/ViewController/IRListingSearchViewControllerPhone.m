@@ -8,8 +8,7 @@
 
 #import "IRListingSearchViewControllerPhone.h"
 #import "IRLayersMenuViewControllerPhone.h"
-#import "ICMenuSRPContainerViewController.h"
-#import "ICMainMenuViewControllerPhone.h"
+#import "ICMenuContainerViewController.h"
 #import "IRListingDetailViewControllerPad.h"
 #import "UIApplication+ICAdditions.h"
 #import "IRMainViewControllerPad.h"
@@ -50,12 +49,10 @@
 
 - (void)showLayersAndNearbyButton {
     self.btnLayers.hidden = NO;
-    self.btnNearby.hidden = NO;
 }
 
 - (void)hideLayersAndNearbyButton {
     self.btnLayers.hidden = YES;
-    self.btnNearby.hidden = YES;
 }
 
 
@@ -107,17 +104,17 @@
         
         UIViewController *vc = [UIApplication sharedApplication].keyWindow.rootViewController;
         
-        if ([vc isKindOfClass:[ICMenuSRPContainerViewController class]])
+        if ([vc isKindOfClass:[ICMenuContainerViewController class]])
         {
-            ICMainMenuViewControllerPhone *menu = (ICMainMenuViewControllerPhone *) ((ICMenuSRPContainerViewController *) vc).left;
+            ICMainMenuViewControllerPhone *menu = (ICMainMenuViewControllerPhone *) ((ICMenuContainerViewController *) vc).left;
             
             [self hideCurrentMessage:YES];
             
             [menu animateStarToMenuFromView:view forMenuItem:0 completionBlock:^
              {
-                 [((ICMenuSRPContainerViewController *) vc) toggleMenu:NO];
+                 [((ICMenuContainerViewController *) vc) toggleMenu:NO];
              }];
-            [((ICMenuSRPContainerViewController *) vc) toggleMenu:YES];
+            [((ICMenuContainerViewController *) vc) toggleMenu:YES];
         }
         else
             GRLog(@"ERROR ** root view controller has changed, animation will no longer work");
