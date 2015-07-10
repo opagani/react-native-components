@@ -18,6 +18,8 @@
 #import "IRMainMenuViewControllerPhone.h"
 #import "ICSavedSearchNotificationsViewController.h"
 #import "ICAccountController.h"
+#import "ICDiscoveryViewController.h"
+#import "IRMainMenu.h"
 
 #if RUN_STRESS_TEST
 #import "ICStressTestController.h"
@@ -44,7 +46,6 @@
 
 @synthesize window = _window;
 @synthesize navController = _navController;
-@synthesize isShowingGalleryView;
 
 void uncaughtExceptionHandler(NSException *exception) {
     GRLogCError(@"CRASH: %@", exception);
@@ -81,20 +82,9 @@ void uncaughtExceptionHandler(NSException *exception) {
     [_window makeKeyAndVisible];
 }
 
-/*- (NSArray*)getMainMenuForIdiom:(UIUserInterfaceIdiom)idiom{
- return [[NSArray alloc] initWithObjects:
- [NSDictionary dictionaryWithObjectsAndKeys:MENU_MY_SAVES_STRING, @"title", [NSNumber numberWithInt:My_Saves], @"search",[[ICMyAccountViewControllerPhone alloc] initWithNibName:@"ICMyAccountViewControllerPhone" bundle:[NSBundle coreResourcesBundle]], @"target", @"IconMenuMySaves", @"image",@"my-saves", @"track", nil],
- [NSDictionary dictionaryWithObjectsAndKeys:MENU_RENT_STRING, @"title",[NSNumber numberWithInt:For_Rent], @"search" , @"IconMenuForRent", @"image",@"search-for-rent", @"track", nil],
- [NSDictionary dictionaryWithObjectsAndKeys:MENU_SETTINGS_STRING, @"title",[[IRMoreViewController alloc] initWithStyle:UITableViewStylePlain],@"target", @"IconMenuSettings", @"image",@"more", @"track", nil],
- nil];
- }*/
-
 - (void)initializeRootViewControllerForIpad
 {
-    ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
-    currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
-    
-    [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
+    ICMainMenuViewController *menuController = [[ICMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
     
     IRMainViewControllerPad *searchController = [IRMainViewControllerPad sharedInstance];
     searchController.toggleMenuBlock = ^(BOOL show){
@@ -102,12 +92,8 @@ void uncaughtExceptionHandler(NSException *exception) {
     };
     
     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
-    
-    IRMainMenuViewControllerPhone *menu = [[IRMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle]];
-    self.menuAndSrpContainerController = [[IRLeftMenuViewController alloc] initWithLeftViewController: menu rightViewController:navCtr];
+    self.menuAndSrpContainerController = [[ICMenuContainerViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
     self.navController = navCtr;
-    
-   // [ICMainViewControllerPad sharedInstance].leftMenuViewController = self.ICMenuContainerViewController;
 }
 
 - (void)setupAppConfigurationForIpad
@@ -178,42 +164,20 @@ void uncaughtExceptionHandler(NSException *exception) {
 }
 
 
-/*- (void)setupListingParameters {
- ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
- currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
- [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
- }*/
+- (void)setupListingParameters {
+    ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
+    currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
+    [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
+}
 
 - (void)initializeRootViewControllerForIphone{
     
-    /*self.isShowingGalleryView = NO;
-     ICMainMenuViewControllerPhone *menuController = [[ICMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle] ];
-     
-     IRListingSearchViewControllerPhone *searchController = (IRListingSearchViewControllerPhone *)[IRListingSearchViewControllerPhone sharedInstance];
-     
-     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
-     
-     deckController =  [[ICSwipeNavigationController alloc] initWithCenterViewController:navCtr leftViewController:leftController rightViewController:nil];
-     deckController.leftLedge = 60;
-     [deckController setWantsFullScreenLayout:YES];
-     [navCtr setToolbarHidden:YES];*/
+    ICMainMenuViewController *menuController = [[ICMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
     
-    
-    self.isShowingGalleryView = NO;
-    
-    IRMainMenuViewControllerPhone *menuController = [[IRMainMenuViewControllerPhone alloc] initWithNibName:@"ICMainMenuViewControllerPhone" bundle:[NSBundle coreResourcesBundle] ];
-    ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
-    currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
-    
-    [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
-    
-    IRListingSearchViewControllerPhone *searchController = (IRListingSearchViewControllerPhone *)[IRListingSearchViewControllerPhone sharedInstance];
-    ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
-    
-    
-    self.menuAndSrpContainerController = [[IRLeftMenuViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
+    ICDiscoveryViewController * discoveryViewController = [ICDiscoveryViewController new];
+    ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:discoveryViewController];
+    self.menuAndSrpContainerController = [[ICMenuContainerViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
     self.navController = navCtr;
-
 }
 
 - (BOOL)shouldShowSplashScreenForIphone{
@@ -304,7 +268,6 @@ void uncaughtExceptionHandler(NSException *exception) {
      self.window.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
      
      if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-     self.isShowingGalleryView = NO;
      [self launchIphoneApp];
      }
      else{
@@ -332,8 +295,9 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     [ICAppearance applyDefaultStyle];
     
+    [self setupListingParameters];
+    
     if ([UIDevice isPhone]) {
-        self.isShowingGalleryView = NO;
         [self launchIphoneApp];
     }
     else{
@@ -343,7 +307,6 @@ void uncaughtExceptionHandler(NSException *exception) {
 #if TARGET_IPHONE_SIMULATOR
     //    [self setupDebugUtilities];
 #endif
-
     
     //NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     

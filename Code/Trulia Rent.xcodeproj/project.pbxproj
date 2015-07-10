@@ -14,6 +14,11 @@
 		05315EF51ADC70E500406317 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05315EF41ADC70E500406317 /* MediaPlayer.framework */; };
 		0558ED8B1B4C681F00ABE204 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0558ED8A1B4C681F00ABE204 /* FBSDKCoreKit.framework */; };
 		0558ED8D1B4C683200ABE204 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0558ED8C1B4C683200ABE204 /* FBSDKLoginKit.framework */; };
+		055BA5601B4F3B95004ED96E /* IRMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 055BA55F1B4F3B95004ED96E /* IRMainMenu.m */; };
+		055BA5631B4F3DF2004ED96E /* IRMainMenuSearchSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 055BA5621B4F3DF2004ED96E /* IRMainMenuSearchSection.m */; };
+		055BA5661B4F4062004ED96E /* IRMainMenuAppsSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 055BA5651B4F4062004ED96E /* IRMainMenuAppsSection.m */; };
+		055BA5691B4F4077004ED96E /* IRMainMenuMoreSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 055BA5681B4F4077004ED96E /* IRMainMenuMoreSection.m */; };
+		056B50281B4F250300627AD9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056B50271B4F250300627AD9 /* Bolts.framework */; };
 		056C8D5E1B3A10190090D18E /* MobileAppTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056C8D5D1B3A10190090D18E /* MobileAppTracker.framework */; };
 		059511DF1B3C8EF70034F6B3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059511DE1B3C8EF70034F6B3 /* Crashlytics.framework */; };
 		05A350741B17E1DA006D40E7 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */; };
@@ -183,6 +188,15 @@
 		05315EF41ADC70E500406317 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		0558ED8A1B4C681F00ABE204 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../mob-ioscore-lib/lib/FacebookSDK/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		0558ED8C1B4C683200ABE204 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../mob-ioscore-lib/lib/FacebookSDK/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		055BA55E1B4F3B95004ED96E /* IRMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMainMenu.h; sourceTree = "<group>"; };
+		055BA55F1B4F3B95004ED96E /* IRMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMainMenu.m; sourceTree = "<group>"; };
+		055BA5611B4F3DF2004ED96E /* IRMainMenuSearchSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMainMenuSearchSection.h; sourceTree = "<group>"; };
+		055BA5621B4F3DF2004ED96E /* IRMainMenuSearchSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMainMenuSearchSection.m; sourceTree = "<group>"; };
+		055BA5641B4F4062004ED96E /* IRMainMenuAppsSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMainMenuAppsSection.h; sourceTree = "<group>"; };
+		055BA5651B4F4062004ED96E /* IRMainMenuAppsSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMainMenuAppsSection.m; sourceTree = "<group>"; };
+		055BA5671B4F4077004ED96E /* IRMainMenuMoreSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMainMenuMoreSection.h; sourceTree = "<group>"; };
+		055BA5681B4F4077004ED96E /* IRMainMenuMoreSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMainMenuMoreSection.m; sourceTree = "<group>"; };
+		056B50271B4F250300627AD9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../mob-ioscore-lib/lib/FacebookSDK/Bolts.framework"; sourceTree = "<group>"; };
 		056C8D5D1B3A10190090D18E /* MobileAppTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileAppTracker.framework; path = "../../mob-ioscore-lib/lib/MobileAppTracker.framework"; sourceTree = "<group>"; };
 		059511DE1B3C8EF70034F6B3 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = "../../mob-ioscore-lib/lib/Crashlytics/Crashlytics.framework"; sourceTree = "<group>"; };
 		05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
@@ -398,6 +412,7 @@
 				51802F4714CF794500199144 /* CoreLocation.framework in Frameworks */,
 				E07EAAC8194A30CF006BE023 /* GLKit.framework in Frameworks */,
 				E07EAAC419491E5D006BE023 /* NewRelicAgent.framework in Frameworks */,
+				056B50281B4F250300627AD9 /* Bolts.framework in Frameworks */,
 				E05C232618C682E4009A3207 /* libIosCore.a in Frameworks */,
 				E052A210187E148800B0A358 /* EventKitUI.framework in Frameworks */,
 				E052A20E187E148100B0A358 /* EventKit.framework in Frameworks */,
@@ -434,6 +449,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		055BA55D1B4F3B3E004ED96E /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				055BA55E1B4F3B95004ED96E /* IRMainMenu.h */,
+				055BA55F1B4F3B95004ED96E /* IRMainMenu.m */,
+				055BA5611B4F3DF2004ED96E /* IRMainMenuSearchSection.h */,
+				055BA5621B4F3DF2004ED96E /* IRMainMenuSearchSection.m */,
+				055BA5641B4F4062004ED96E /* IRMainMenuAppsSection.h */,
+				055BA5651B4F4062004ED96E /* IRMainMenuAppsSection.m */,
+				055BA5671B4F4077004ED96E /* IRMainMenuMoreSection.h */,
+				055BA5681B4F4077004ED96E /* IRMainMenuMoreSection.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
 		05A350711B17E1B4006D40E7 /* json */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,6 +606,7 @@
 		4C0CEEEB14D6634A00A1D325 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				055BA55D1B4F3B3E004ED96E /* Menu */,
 				2E309C21167024BF00A31BD0 /* Fonts */,
 				4C0CEEEC14D6634A00A1D325 /* Category */,
 				4C0CEEF714D6634A00A1D325 /* Controller */,
@@ -651,6 +682,7 @@
 				9DEF832A1607AE430087FA1A /* AdSupport.framework */,
 				5142AD081565A88200BBB7F8 /* AudioToolbox.framework */,
 				51802F4414CF793900199144 /* AVFoundation.framework */,
+				056B50271B4F250300627AD9 /* Bolts.framework */,
 				51802F4A14CF795800199144 /* CFNetwork.framework */,
 				51802F4814CF794F00199144 /* CoreData.framework */,
 				51DA6C1814CF51D1007F2584 /* CoreFoundation.framework */,
@@ -1123,9 +1155,12 @@
 				9D94F75115DEECFA0068FC85 /* CalloutMapAnnotation.m in Sources */,
 				9D94F76A15DEECFA0068FC85 /* SchoolMapCalloutViewController_iPad.m in Sources */,
 				05A431901B16A14F0024CEA4 /* IRMySavedHomesViewController.m in Sources */,
+				055BA5691B4F4077004ED96E /* IRMainMenuMoreSection.m in Sources */,
 				9D94D244161A0B520089CEEC /* AppDelegate_Shared.m in Sources */,
 				266139DB164AF82E00D19093 /* IAURLCache.m in Sources */,
 				2EE5C358173C5ABC006D42BC /* IRMainViewControllerPad.m in Sources */,
+				055BA5631B4F3DF2004ED96E /* IRMainMenuSearchSection.m in Sources */,
+				055BA5661B4F4062004ED96E /* IRMainMenuAppsSection.m in Sources */,
 				05A431891B1693740024CEA4 /* IRBoardManagerViewController.m in Sources */,
 				62218F8319C75DC600247A5C /* IRMainMenuViewControllerPhone.m in Sources */,
 				2EE5C35F173C5B10006D42BC /* IRFilterViewControllerPad.m in Sources */,
@@ -1133,6 +1168,7 @@
 				26AE6106173DAF2500E0410D /* IRListingSearchViewControllerPhone.m in Sources */,
 				26AC16D817416415005D4FFE /* IRListingRefineViewControllerPhone.m in Sources */,
 				269D198919B914AE000440BC /* IRListingRefineViewControllerPad.m in Sources */,
+				055BA5601B4F3B95004ED96E /* IRMainMenu.m in Sources */,
 				2E49744B1741A11200D8F5E7 /* IRListingSearchToolBarPad.m in Sources */,
 				B70EF2571743022D0018A01A /* IRLayersMenuViewControllerPhone.m in Sources */,
 				2EE397F817502B2C0052B6C7 /* IRStartupViewControllerPhone.m in Sources */,
@@ -1452,7 +1488,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)",
 					"$(SRCROOT)/../../mob-ioscore-lib/**",
-					"${SRCROOT)/../lib",
+					"${SRCROOT)/../lib/**",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
@@ -1500,7 +1536,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)",
 					"$(SRCROOT)/../../mob-ioscore-lib/**",
-					"${SRCROOT)/../lib",
+					"${SRCROOT)/../lib/**",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;

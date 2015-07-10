@@ -106,7 +106,7 @@
         
         if ([vc isKindOfClass:[ICMenuContainerViewController class]])
         {
-            ICMainMenuViewControllerPhone *menu = (ICMainMenuViewControllerPhone *) ((ICMenuContainerViewController *) vc).left;
+            ICMainMenuViewController *menu = (ICMainMenuViewController *) ((ICMenuContainerViewController *) vc).left;
             
             [self hideCurrentMessage:YES];
             

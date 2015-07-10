@@ -12,7 +12,7 @@
 #import "ICListing.h"
 #import "UIButton+UIButton_SaveUnSaveListing.h"
 #import "UIApplication+ICAdditions.h"
-#import "ICMainMenuViewControllerPhone.h"
+#import "ICMainMenuViewController.h"
 #import "ICMenuContainerViewController.h"
 #import "ICMessageView.h"
 
@@ -59,7 +59,7 @@
          
          if ([vc isKindOfClass:[ICMenuContainerViewController class]])
          {
-             ICMainMenuViewControllerPhone *menu = (ICMainMenuViewControllerPhone *) ((ICMenuContainerViewController *) vc).left;
+             ICMainMenuViewController *menu = (ICMainMenuViewController *) ((ICMenuContainerViewController *) vc).left;
              
              [menu animateStarToMenuFromView:view forMenuItem:0 completionBlock:^
               {
