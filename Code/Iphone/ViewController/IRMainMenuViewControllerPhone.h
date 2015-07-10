@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Trulia Inc. All rights reserved.
 //
 
-#import "ICMainMenuViewControllerPhone.h"
+#import "ICMainMenuViewController.h"
 
 
 typedef NS_ENUM (NSInteger, IRMainMenuViewControllerPhoneSaveTypeRental ){
@@ -14,6 +14,6 @@ typedef NS_ENUM (NSInteger, IRMainMenuViewControllerPhoneSaveTypeRental ){
     IRMainMenuViewControllerPhoneSaveTypeMySavesIpadRental =1
 };
 
-@interface IRMainMenuViewControllerPhone : ICMainMenuViewControllerPhone
+@interface IRMainMenuViewControllerPhone : ICMainMenuViewController
 
 @end

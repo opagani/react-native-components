@@ -16,7 +16,7 @@
 #import "ICOnboardingViewControllerPad.h"
 
 
-@class ICMainViewControllerPad, ICMenuSRPContainerViewController;
+@class ICMainViewControllerPad, ICMenuContainerViewController;
 
 
 @interface AppDelegate : AppDelegate_Shared <ICOnboardingDelegate, ICStartupViewControllerDelegate>{
