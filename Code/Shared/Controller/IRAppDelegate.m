@@ -8,24 +8,27 @@
 
 #import "IRAppDelegate.h"
 
+//utility
 #import "ICPreference.h"
 #import "ICConfiguration.h"
 #import "ICCoreDataController.h"
 #import "ICSyncController.h"
-#import "IRMainViewControllerPad.h"
-#import "IRMainMenuViewControllerPhone.h"
-#import "ICSavedSearchNotificationsViewController.h"
 #import "ICAccountController.h"
-#import "ICDiscoveryViewController.h"
 #import "IRMainMenu.h"
 #import "IAURLCache.h"
-#import <Crashlytics/Crashlytics.h>
-
 #import "IAConstants.h"
 #import "ICManagedNotification.h"
 #import "ICAppearance.h"
 #import "ICLog.h"
 #import "ICUtility.h"
+
+//view controllers
+#import "IRMainViewControllerPad.h"
+#import "IRMainMenuViewControllerPhone.h"
+#import "ICDiscoveryViewController.h"
+
+//frameworks
+#import <Crashlytics/Crashlytics.h>
 
 @implementation IRAppDelegate
 
@@ -35,15 +38,6 @@
 void uncaughtExceptionHandler(NSException *exception) {
     GRLogCError(@"CRASH: %@", exception);
     GRLogCError(@"Stack Trace: %@", [exception callStackSymbols]);
-}
-
-#pragma mark - Application's Documents directory
-
-/**
- Returns the path to the application's Documents directory.
- */
-- (NSString *)applicationDocumentsDirectory {
-    return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 }
 
 #pragma mark - Memory management
@@ -612,10 +606,11 @@ void uncaughtExceptionHandler(NSException *exception) {
             case SAVEDSEARCHNEWLISTING_PUSH_NOTIFICATION:
             {
                 if ([[ICAccountController sharedInstance] isLoggedIn] && [UIDevice isPhone]){
-                    ICSavedSearchNotificationsViewController * nVc = [ICSavedSearchNotificationsViewController new];
-                    ICNavigationController * nav = [[ICNavigationController alloc] initWithRootViewController:nVc];
-                    UIViewController *rootView = [[[UIApplication sharedApplication] keyWindow] rootViewController];
-                    [rootView presentViewController:nav animated:YES completion:nil];
+                    
+                    if ([self.menuAndSrpContainerController.left isKindOfClass:[ICMainMenuViewController class]]){
+                        ICMainMenuViewController* menuController = (ICMainMenuViewController*)self.menuAndSrpContainerController.left;
+                        [menuController actionNotificationsClicked:nil];
+                    }
                 }
                 break;
             }
