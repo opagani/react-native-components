@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  IRAppDelegate.h
 //  Trulia
 //
 //  Created by Daniel Lowrie on 1/24/12.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "ICAppDelegate.h"
-#import "AppDelegate_Shared.h"
 #import "ICListingParameters.h"
 #import "ICNavigationController.h"
 #import "ICStartupViewControllerPhone.h"
@@ -19,9 +18,7 @@
 @class ICMainViewControllerPad, ICMenuContainerViewController;
 
 
-@interface AppDelegate : AppDelegate_Shared <ICOnboardingDelegate, ICStartupViewControllerDelegate>{
-    // only being used by the iPad
-}
+@interface IRAppDelegate : ICAppDelegate <ICOnboardingDelegate, ICStartupViewControllerDelegate>
 @property (nonatomic, strong) UIWindow *window;
 
 @property (nonatomic, strong) ICOnboardingViewControllerPhone *onboardingControllerPhone;
