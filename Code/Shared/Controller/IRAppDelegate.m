@@ -292,13 +292,8 @@ void uncaughtExceptionHandler(NSException *exception) {
         
         [self.navController dismissViewControllerAnimated:YES completion:nil];
         
-        NSInteger unreadCount = [ICManagedNotification numberofUnreadNotifications];
-        if(unreadCount > 0) {
-            [UIApplication sharedApplication].applicationIconBadgeNumber = unreadCount;
-        }
-        else {
-            [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
-        }
+        NSInteger unreadCount = MAX([ICManagedNotification numberofUnreadNotifications], 0);
+        [UIApplication sharedApplication].applicationIconBadgeNumber = unreadCount;
     }
     else{
     	[self saveUserLocations];

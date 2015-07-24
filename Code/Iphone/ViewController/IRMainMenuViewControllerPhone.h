@@ -8,12 +8,6 @@
 
 #import "ICMainMenuViewController.h"
 
-
-typedef NS_ENUM (NSInteger, IRMainMenuViewControllerPhoneSaveTypeRental ){
-    IRMainMenuViewControllerPhoneSaveTypeMySavesRental = 1,
-    IRMainMenuViewControllerPhoneSaveTypeMySavesIpadRental =1
-};
-
 @interface IRMainMenuViewControllerPhone : ICMainMenuViewController
 
 @end
