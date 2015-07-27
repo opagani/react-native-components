@@ -92,6 +92,10 @@
 		<string>user_birthday</string>
 		<string>user_location</string>
 	</array>
+	<key>ICConfigurationBundleName</key>
+	<string>ICConfiguration.bundle</string>
+	<key>IosCoreResourcesBundleName</key>
+	<string>IosCoreResources.bundle</string>
 	<key>LSApplicationCategoryType</key>
 	<array>
 		<string></string>
