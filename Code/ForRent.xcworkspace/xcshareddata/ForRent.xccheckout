@@ -14,26 +14,24 @@
 		<string>https://github.com/samvermette/SVWebViewController.git</string>
 		<key>351E80158C31C9385E10ADF01B47F27851D47BC2</key>
 		<string>https://github.com/grichards-trulia/FontAwesomeKit.git</string>
+		<key>35B5C9A93714EC9BEB56BAE809C5551E5C66E52D</key>
+		<string>github.com:CocoaLumberjack/CocoaLumberjack.git</string>
+		<key>38C2A0D4F62B675E8C16C8BC1437C7753846C8AC</key>
+		<string>git://github.com/AliSoftware/OHHTTPStubs.git</string>
 		<key>41CD56D7F891D8667990FD7881D8E0563597578B</key>
 		<string>ssh://stash.sv2.trulia.com:7999/mob/mob-ios-rental-universal.git</string>
-		<key>5B0EBC62-1520-443B-ABA3-62B40AD6AC79</key>
-		<string>ssh://github.com/facebook/facebook-ios-sdk.git</string>
 		<key>6A6C9F838D7B8B6C55D7948C4DA8C8B59FD816D7</key>
 		<string>https://github.com/hoteltonight/HTAutocompleteTextField.git</string>
 		<key>85E7279C6C9E7BC6C79D0DDF7E66DD354E54CE77</key>
 		<string>ssh://stash.sv2.trulia.com:7999/mob/mob-iosmortgage-lib.git</string>
-		<key>9D750C83-D327-42E1-A78F-8286D360E999</key>
-		<string>git://github.com/AliSoftware/OHHTTPStubs.git</string>
 		<key>9E1ECC80773D1F4F22D03CB4DEA298B3CB57FAF5</key>
 		<string>ssh://github.com/samvermette/SVProgressHUD.git</string>
-		<key>9E3C9A65-BB36-4533-839B-63846E0581E8</key>
-		<string>http://github.com/AFNetworking/AFNetworking.git</string>
+		<key>A20D666FF4B08EFE53F147818C2D4D17E2242912</key>
+		<string>ssh://github.com/facebook/facebook-ios-sdk.git</string>
 		<key>A43B3F8F1FFE63510EF5D0CFDB1DB558C0C67BF9</key>
 		<string>git://github.com/mattt/TTTAttributedLabel.git</string>
 		<key>A9EFB38B20D1BF1A211C859853043503F2D4A064</key>
 		<string>ssh://stash.sv2.trulia.com:7999/mob/mob-ioscore-lib.git</string>
-		<key>AB50854F-0C68-4412-AF81-EB4AF6C877F9</key>
-		<string>git://github.com/erikdoe/ocmock</string>
 		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</key>
 		<string>https://github.com/AFNetworking/AFNetworking.git</string>
 		<key>DFDB2643F9F1BAD8F29725E2E46B257ABC554A67</key>
@@ -42,8 +40,12 @@
 		<string>https://github.com/rs/SDWebImage.git</string>
 		<key>E3F1CFC7B66794122E6D31906D72E79A4B1AAB6D</key>
 		<string>ssh://github.com/github/Mantle.git</string>
+		<key>E4BCE3AE6B24E41B9BCE312FF3B0B6CD0B8B8025</key>
+		<string>git://github.com/erikdoe/ocmock</string>
 		<key>EF51387A5AF28E4351AFB0302884600583A438B5</key>
 		<string>https://github.com/johnezang/JSONKit.git</string>
+		<key>F2A2A24DE4243FA0038EEAF851D2546A34A53F98</key>
+		<string>github.com:lukaswelte/DCIntrospect-ARC.git</string>
 		<key>FA958DB2025B3756F66BF392BBEAFCAEA9861923</key>
 		<string>https://github.com/mikeash/MAKVONotificationCenter.git</string>
 	</dict>
@@ -55,26 +57,24 @@
 		<string>../../../mob-ioscore-lib/lib/SVWebViewController</string>
 		<key>351E80158C31C9385E10ADF01B47F27851D47BC2</key>
 		<string>../../../mob-ioscore-lib/lib/FontAwesomeKit</string>
+		<key>35B5C9A93714EC9BEB56BAE809C5551E5C66E52D</key>
+		<string>../../../mob-ioscore-lib/lib/CocoaLumberjack</string>
+		<key>38C2A0D4F62B675E8C16C8BC1437C7753846C8AC</key>
+		<string>../../../mob-ioscore-lib/lib/facebook/vendor/OHHTTPStubs</string>
 		<key>41CD56D7F891D8667990FD7881D8E0563597578B</key>
 		<string>../..</string>
-		<key>5B0EBC62-1520-443B-ABA3-62B40AD6AC79</key>
-		<string>../../../mob-ioscore-lib/lib/facebook</string>
 		<key>6A6C9F838D7B8B6C55D7948C4DA8C8B59FD816D7</key>
 		<string>../../../mob-ioscore-lib/lib/HTAutocompleteTextField</string>
 		<key>85E7279C6C9E7BC6C79D0DDF7E66DD354E54CE77</key>
 		<string>../../../mob-iosmortgage-lib</string>
-		<key>9D750C83-D327-42E1-A78F-8286D360E999</key>
-		<string>../../../mob-ioscore-lib/lib/facebook/vendor/OHHTTPStubs</string>
 		<key>9E1ECC80773D1F4F22D03CB4DEA298B3CB57FAF5</key>
 		<string>../../../mob-ioscore-lib/lib/SVProgressHUD</string>
-		<key>9E3C9A65-BB36-4533-839B-63846E0581E8</key>
-		<string>../../../mob-ioscore-lib/lib/facebook/vendor/OHHTTPStubs/OHHTTPStubs/UnitTests/AFNetworking</string>
+		<key>A20D666FF4B08EFE53F147818C2D4D17E2242912</key>
+		<string>../../../mob-ioscore-lib/lib/facebook</string>
 		<key>A43B3F8F1FFE63510EF5D0CFDB1DB558C0C67BF9</key>
 		<string>../../../mob-ioscore-lib/lib/TTTAttributedLabel</string>
 		<key>A9EFB38B20D1BF1A211C859853043503F2D4A064</key>
 		<string>../../../mob-ioscore-lib</string>
-		<key>AB50854F-0C68-4412-AF81-EB4AF6C877F9</key>
-		<string>../../../mob-ioscore-lib/lib/facebook/vendor/OCMock</string>
 		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</key>
 		<string>../../../mob-ioscore-lib/lib/AFNetworking</string>
 		<key>DFDB2643F9F1BAD8F29725E2E46B257ABC554A67</key>
@@ -83,8 +83,12 @@
 		<string>../../../mob-ioscore-lib/lib/SDWebImage</string>
 		<key>E3F1CFC7B66794122E6D31906D72E79A4B1AAB6D</key>
 		<string>../../../mob-ioscore-lib/lib/Mantle</string>
+		<key>E4BCE3AE6B24E41B9BCE312FF3B0B6CD0B8B8025</key>
+		<string>../../../mob-ioscore-lib/lib/facebook/vendor/OCMock</string>
 		<key>EF51387A5AF28E4351AFB0302884600583A438B5</key>
 		<string>../../../mob-ioscore-lib/lib/JSONKit</string>
+		<key>F2A2A24DE4243FA0038EEAF851D2546A34A53F98</key>
+		<string>../../../mob-ioscore-lib/lib/DCIntrospect-ARC</string>
 		<key>FA958DB2025B3756F66BF392BBEAFCAEA9861923</key>
 		<string>../../../mob-ioscore-lib/lib/MAKVONotificationCenter</string>
 	</dict>
@@ -108,7 +112,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9E3C9A65-BB36-4533-839B-63846E0581E8</string>
+			<string>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</string>
 			<key>IDESourceControlWCCName</key>
 			<string>AFNetworking</string>
 		</dict>
@@ -116,7 +120,23 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5B0EBC62-1520-443B-ABA3-62B40AD6AC79</string>
+			<string>35B5C9A93714EC9BEB56BAE809C5551E5C66E52D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CocoaLumberjack</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F2A2A24DE4243FA0038EEAF851D2546A34A53F98</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DCIntrospect-ARC</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A20D666FF4B08EFE53F147818C2D4D17E2242912</string>
 			<key>IDESourceControlWCCName</key>
 			<string>facebook</string>
 		</dict>
@@ -196,7 +216,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AB50854F-0C68-4412-AF81-EB4AF6C877F9</string>
+			<string>E4BCE3AE6B24E41B9BCE312FF3B0B6CD0B8B8025</string>
 			<key>IDESourceControlWCCName</key>
 			<string>OCMock</string>
 		</dict>
@@ -204,7 +224,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9D750C83-D327-42E1-A78F-8286D360E999</string>
+			<string>38C2A0D4F62B675E8C16C8BC1437C7753846C8AC</string>
 			<key>IDESourceControlWCCName</key>
 			<string>OHHTTPStubs</string>
 		</dict>
