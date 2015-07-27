@@ -312,25 +312,6 @@
 	</array>
 	<key>ShowIntroForUpdate</key>
 	<true/>
-	<key>FeatureCueInfo</key>
-	<array>
-		<dict>
-			<key>ImageName</key>
-			<string>QueSaveSearch.png</string>
-		</dict>
-	</array>
-	<key>FreshInstallInfo</key>
-	<array>
-		<dict>
-			<key>ImageName</key>
-			<string>iPhoneSplash1.jpg</string>
-			<key>CommandsForRegions</key>
-			<dict>
-				<key>filter</key>
-				<string>{{280, 25}, {30, 30}}</string>
-			</dict>
-		</dict>
-	</array>
 	<key>AccountType</key>
 	<string>Renter</string>
 	<key>RentOnlyListings</key>
