@@ -10,13 +10,12 @@
 #import "ICAppDelegate.h"
 #import "ICListingParameters.h"
 #import "ICNavigationController.h"
-#import "ICStartupViewControllerPhone.h"
 #import "ICOnboardingViewControllerPhone.h"
 #import "ICOnboardingViewControllerPad.h"
+#import "ICStartupViewControllerPhone.h"
 
 
 @class ICMainViewControllerPad, ICMenuContainerViewController;
-
 
 @interface IRAppDelegate : ICAppDelegate <ICOnboardingDelegate, ICStartupViewControllerDelegate>
 @property (nonatomic, strong) UIWindow *window;
