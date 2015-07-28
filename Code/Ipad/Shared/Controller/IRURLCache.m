@@ -6,10 +6,10 @@
 //  Copyright (c) 2012 Trulia Inc. All rights reserved.
 //
 
-#import "IAURLCache.h"
+#import "IRURLCache.h"
 #import "ICAdSearchController.h"
 
-@implementation IAURLCache
+@implementation IRURLCache
 
 - (NSString *)mimeTypeForPath:(NSString *)originalPath {
 	//

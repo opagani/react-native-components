@@ -8,6 +8,6 @@
 
 #import "ICMainMenuViewController.h"
 
-@interface IRMainMenuViewControllerPhone : ICMainMenuViewController
+@interface IRMainMenuViewController : ICMainMenuViewController
 
 @end

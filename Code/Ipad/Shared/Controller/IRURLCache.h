@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface IAURLCache : NSURLCache
+@interface IRURLCache : NSURLCache
 {
     NSMutableDictionary *cachedResponses;
 }
