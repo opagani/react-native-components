@@ -45,7 +45,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.4</string>
+	<string>3.5</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes~ipad</key>
@@ -80,7 +80,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>100</string>
+	<string>115</string>
 	<key>FacebookAppID</key>
 	<string>468741039850614</string>
 	<key>FacebookAppIDTest</key>
