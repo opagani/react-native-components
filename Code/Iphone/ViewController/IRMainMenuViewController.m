@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 Trulia Inc. All rights reserved.
 //
 
-#import "IRMainMenuViewControllerPhone.h"
+#import "IRMainMenuViewController.h"
 #import "IRBoardManagerViewController.h"
 #import "IRMySavedHomesViewController.h"
 
-@implementation IRMainMenuViewControllerPhone
+@implementation IRMainMenuViewController
 
 -(void)actionBoardsClicked:(id)sender{
     IRBoardManagerViewController * boardManager = [IRBoardManagerViewController new];

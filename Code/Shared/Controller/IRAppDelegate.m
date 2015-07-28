@@ -15,7 +15,7 @@
 #import "ICSyncController.h"
 #import "ICAccountController.h"
 #import "IRMainMenu.h"
-#import "IAURLCache.h"
+#import "IRURLCache.h"
 #import "IAConstants.h"
 #import "ICManagedNotification.h"
 #import "ICAppearance.h"
@@ -24,7 +24,7 @@
 
 //view controllers
 #import "IRMainViewControllerPad.h"
-#import "IRMainMenuViewControllerPhone.h"
+#import "IRMainMenuViewController.h"
 #import "ICDiscoveryViewController.h"
 
 //frameworks
@@ -55,8 +55,8 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     [[ICAdSearchController sharedInstance] flush];
     
-    if ([[NSURLCache sharedURLCache] isKindOfClass:[IAURLCache class]]) {
-        [(IAURLCache *)[NSURLCache sharedURLCache] flush];
+    if ([[NSURLCache sharedURLCache] isKindOfClass:[IRURLCache class]]) {
+        [(IRURLCache *)[NSURLCache sharedURLCache] flush];
     }
 }
 
@@ -181,24 +181,6 @@ void uncaughtExceptionHandler(NSException *exception) {
     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:discoveryViewController];
     self.menuAndSrpContainerController = [[ICMenuContainerViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
     self.navController = navCtr;
-}
-
-- (BOOL)shouldShowSplashScreenForIphone{
-    
-    if (![[[ICPreference sharedInstance] getAppForKey:SESSION_KEY_INTRO_SHOWN] boolValue]
-        || [[ICPreference sharedInstance] getAppForKey:SESSION_KEY_INTRO_SHOWN] == nil) {
-        return YES;
-    }
-    
-    return NO;
-}
-
-- (void)showSplashScreenForIphone
-{
-    ICStartupViewControllerPhone *startupView = [[ICStartupViewControllerPhone alloc] initWithNibName:@"IRStartupViewController_iPhone" bundle:[NSBundle coreResourcesBundle]];
-    startupView.delegate = self;
-    [_window setRootViewController:startupView];
-    [_window makeKeyAndVisible];
 }
 
 - (void)launchIphoneApp{
@@ -602,8 +584,8 @@ void uncaughtExceptionHandler(NSException *exception) {
             {
                 if ([[ICAccountController sharedInstance] isLoggedIn] && [UIDevice isPhone]){
                     
-                    if ([self.menuAndSrpContainerController.left isKindOfClass:[ICMainMenuViewController class]]){
-                        ICMainMenuViewController* menuController = (ICMainMenuViewController*)self.menuAndSrpContainerController.left;
+                    if ([self.menuAndSrpContainerController.left isKindOfClass:[IRMainMenuViewController class]]){
+                        IRMainMenuViewController* menuController = (IRMainMenuViewController*)self.menuAndSrpContainerController.left;
                         [menuController actionNotificationsClicked:nil];
                     }
                 }
