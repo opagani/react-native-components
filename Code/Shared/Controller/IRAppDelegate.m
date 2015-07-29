@@ -138,7 +138,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 }
 
 - (BOOL) shouldShowOnboardingScreens {
-    return ([UIDevice isOS8OrAbove] && [ICUtility freshInstall]);
+    return [ICUtility freshInstall];
 }
 
 - (void)showOnboardingScreensForIPad {
@@ -188,7 +188,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     [self initializeRootViewControllerForIphone];
     
     // show only for first install and not upgrade
-    if ([UIDevice isOS8OrAbove] && [ICUtility freshInstall]) {
+    if ([ICUtility freshInstall]) {
         [self showOnboardingScreensForIPhone];
     } else {
         [self setRootViewControllerForIphone];
