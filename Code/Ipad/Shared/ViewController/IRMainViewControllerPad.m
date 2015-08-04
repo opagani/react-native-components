@@ -7,7 +7,6 @@
 //
 
 #import "IRMainViewControllerPad.h"
-#import "UIApplication+ICAdditions.h"
 #import "IRListingRefineViewControllerPad.h"
 #import "ICAnalyticsController.h"
 
@@ -22,7 +21,7 @@
     return @"";
 }
 
-- (IBAction)actionShowRefine:(id)sender; {
+- (IBAction)actionShowRefine:(id)sender {
     [[ICAnalyticsController sharedInstance] trackToolbarClick:[ICAnalyticsController VAR_ACTION_REFINE]];
     IRListingRefineViewControllerPad *viewController = [[IRListingRefineViewControllerPad alloc] initWithSearchController:self.searchController];
     [viewController setDelegate:self];

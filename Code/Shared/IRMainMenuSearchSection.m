@@ -8,6 +8,7 @@
 
 #import "IRMainMenuSearchSection.h"
 #import "ICMenuHeaders.h"
+#import "IRMyBoardsMenuItem.h"
 
 @implementation IRMainMenuSearchSection
 -(instancetype)init{
@@ -26,7 +27,7 @@
     if(idiom == UIUserInterfaceIdiomPhone){
         items = @[[ICDiscoveryMenuItem menuItem],
                   [ICHomesForRentMenuItem menuItem],
-                  [ICMyBoardsMenuItem menuItem],
+                  [IRMyBoardsMenuItem menuItem],
                   [ICSavedSearchesMenuItem menuItem]
                   ];
     }
