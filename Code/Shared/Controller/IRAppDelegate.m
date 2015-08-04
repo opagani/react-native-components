@@ -21,6 +21,7 @@
 #import "ICAppearance.h"
 #import "ICLog.h"
 #import "ICUtility.h"
+#import "ICAnalyticsController.h"
 
 //view controllers
 #import "IRMainViewControllerPad.h"
@@ -91,7 +92,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)initializeRootViewControllerForIpad
 {
-    ICMainMenuViewController *menuController = [[ICMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
+    IRMainMenuViewController *menuController = [[IRMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
     
     IRMainViewControllerPad *searchController = [IRMainViewControllerPad sharedInstance];
     searchController.toggleMenuBlock = ^(BOOL show){
@@ -175,7 +176,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)initializeRootViewControllerForIphone{
     
-    ICMainMenuViewController *menuController = [[ICMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
+    IRMainMenuViewController *menuController = [[IRMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
     
     ICDiscoveryViewController * discoveryViewController = [ICDiscoveryViewController new];
     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:discoveryViewController];
@@ -355,10 +356,8 @@ void uncaughtExceptionHandler(NSException *exception) {
 - (void)showUpgradeAppPopup {
 	UIAlertView *upgradeAppAlert = [[UIAlertView alloc] initWithTitle: @"Get the new app" message: @"An updated version of the Trulia App is now available via iTunes." delegate: self cancelButtonTitle: @"Not Now" otherButtonTitles: @"Update", nil];
     upgradeAppAlert.tag = TruliaAlertTypeUpdate;
-	
-    // FIXME: Update this to ICAnalyticsController
-    //[[ICMetricsController sharedInstance] trackPageView:@"promo|update app|view"];
     
+    [[ICAnalyticsController sharedInstance] trackState:@"promo|update app|view" withContextData:[NSMutableDictionary dictionary]];
     
 	[upgradeAppAlert show];
 	[[ICPreference sharedInstance] setVisForKey:@"shown_upgradeapp_prompt" withAttribute:[[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"]];
@@ -404,8 +403,7 @@ void uncaughtExceptionHandler(NSException *exception) {
             [trackingString appendString:@"|cancel"];
         }
         
-        // FIXME: Update this to ICAnalyticsController
-        //[[ICMetricsController sharedInstance] trackClick:trackingString];
+        [[ICAnalyticsController sharedInstance] trackActionClick:trackingString withPage:[[ICAnalyticsController sharedInstance] lastPageTrack]];
         
         
         if (userConfirmed)

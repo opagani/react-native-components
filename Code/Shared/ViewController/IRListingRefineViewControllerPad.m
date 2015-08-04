@@ -7,18 +7,6 @@
 //
 
 #import "IRListingRefineViewControllerPad.h"
-#import "ICListingRefinePriceRangeDataSource.h"
-#import "ICListingRefineSquareFootageDatsSource.h"
-#import "ICListingRefineLotSizeDataSource.h"
-#import "ICListingRefineBathsDataSource.h"
-#import "ICListingRefineBedsDataSource.h"
-#import "ICListingRefineYearBuiltDataSource.h"
-#import "ICListingRefineDaysOnTruliaDataSource.h"
-#import "ICListingRefineSoldWithinDataSource.h"
-
-@interface IRListingRefineViewControllerPad ()
-
-@end
 
 @implementation IRListingRefineViewControllerPad
 
@@ -34,21 +22,5 @@
 - (ICListingRefineMode)currentMode {
     return ICListingRefineModeForRent;
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

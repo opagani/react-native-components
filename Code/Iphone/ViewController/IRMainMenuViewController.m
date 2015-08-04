@@ -7,19 +7,27 @@
 //
 
 #import "IRMainMenuViewController.h"
-#import "IRBoardManagerViewController.h"
-#import "IRMySavedHomesViewController.h"
+#import "IRSRPViewControllerPhone.h"
+#import "IRMainViewControllerPad.h"
+#import "IC+UIViewController.h"
 
 @implementation IRMainMenuViewController
 
--(void)actionBoardsClicked:(id)sender{
-    IRBoardManagerViewController * boardManager = [IRBoardManagerViewController new];
-    [self closeMenuAndShowViewController:boardManager];
-}
-
-- (void)presentMySavedHomesViewController{
-    IRMySavedHomesViewController * controller = [IRMySavedHomesViewController new];
-    [self closeMenuAndShowViewController:controller];
+- (void)setSearchViewControllerForIndexType:(NSString *)idt
+{
+    ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] getParametersForIndexType:idt];
+    
+    if ( [UIDevice isPhone] )
+    {
+        IRSRPViewControllerPhone *searchViewController = [IRSRPViewControllerPhone sharedInstance];
+        [searchViewController searchWithParameters:currentParameters];
+        [self closeMenuAndShowViewController:searchViewController];
+    }
+    else
+    {
+        [self toggleMenu:NO];
+        [[IRMainViewControllerPad sharedInstance] searchWithParameters:currentParameters];
+    }
 }
 
 @end
