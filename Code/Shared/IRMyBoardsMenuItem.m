@@ -10,7 +10,7 @@
 
 @implementation IRMyBoardsMenuItem
 
-- (NSString *)className {
+- (NSString *)targetClassName {
     return @"IRBoardManagerViewController";
 }
 
