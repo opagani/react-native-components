@@ -25,7 +25,7 @@
 
 //view controllers
 #import "ICDiscoveryViewController.h"
-#import "ICMainMenuViewController.h"
+#import "IRMainMenuViewController.h"
 #import "ICMainViewControllerPad.h"
 
 //frameworks
@@ -92,7 +92,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)initializeRootViewControllerForIpad
 {
-    ICMainMenuViewController *menuController = [[ICMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
+    IRMainMenuViewController *menuController = [[IRMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
     
     ICMainViewControllerPad *searchController = [ICMainViewControllerPad sharedInstance];
     searchController.toggleMenuBlock = ^(BOOL show){
@@ -176,7 +176,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)initializeRootViewControllerForIphone{
     
-    ICMainMenuViewController *menuController = [[ICMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
+    IRMainMenuViewController *menuController = [[IRMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
     
     ICDiscoveryViewController * discoveryViewController = [ICDiscoveryViewController new];
     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:discoveryViewController];
@@ -584,8 +584,8 @@ void uncaughtExceptionHandler(NSException *exception) {
             {
                 if ([[ICAccountController sharedInstance] isLoggedIn] && [UIDevice isPhone]){
                     
-                    if ([self.menuAndSrpContainerController.left isKindOfClass:[ICMainMenuViewController class]]){
-                        ICMainMenuViewController* menuController = (ICMainMenuViewController*)self.menuAndSrpContainerController.left;
+                    if ([self.menuAndSrpContainerController.left isKindOfClass:[IRMainMenuViewController class]]){
+                        IRMainMenuViewController* menuController = (IRMainMenuViewController*)self.menuAndSrpContainerController.left;
                         [menuController actionNotificationsClicked:nil];
                     }
                 }
