@@ -8,11 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05315EF51ADC70E500406317 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05315EF41ADC70E500406317 /* MediaPlayer.framework */; };
-		0558DBA61B66FFC600257DA0 /* IRMainViewControllerPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 0558DBA51B66FFC600257DA0 /* IRMainViewControllerPad.m */; };
 		0558DBBD1B6C31A100257DA0 /* IRMyBoardsMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0558DBBC1B6C31A100257DA0 /* IRMyBoardsMenuItem.m */; };
-		0558DBC01B6C359700257DA0 /* IRListingRefineViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 0558DBBF1B6C359700257DA0 /* IRListingRefineViewControllerPhone.m */; };
-		0558DBC31B6C35DC00257DA0 /* IRListingRefineViewControllerPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 0558DBC21B6C35DC00257DA0 /* IRListingRefineViewControllerPad.m */; };
-		0558DBCC1B6C3D7D00257DA0 /* IRSRPViewControllerPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 0558DBCB1B6C3D7D00257DA0 /* IRSRPViewControllerPhone.m */; };
 		0558ED8B1B4C681F00ABE204 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0558ED8A1B4C681F00ABE204 /* FBSDKCoreKit.framework */; };
 		0558ED8D1B4C683200ABE204 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0558ED8C1B4C683200ABE204 /* FBSDKLoginKit.framework */; };
 		055BA5601B4F3B95004ED96E /* IRMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 055BA55F1B4F3B95004ED96E /* IRMainMenu.m */; };
@@ -76,7 +72,6 @@
 		51DA6A1B14CF2F0D007F2584 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6A1A14CF2F0D007F2584 /* CoreGraphics.framework */; };
 		51E1597B14D2218F00DB87CA /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597A14D2218F00DB87CA /* AddressBookUI.framework */; };
 		51E1597D14D2219800DB87CA /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597C14D2219800DB87CA /* AddressBook.framework */; };
-		62218F8319C75DC600247A5C /* IRMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62218F8219C75DC600247A5C /* IRMainMenuViewController.m */; };
 		9D23EC5E17205D300048E737 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D23EC5D17205D300048E737 /* ImageIO.framework */; };
 		9D37273716657DA00018B275 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D37273616657DA00018B275 /* libOCMock.a */; };
 		9D372CD51667ED530018B275 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597C14D2219800DB87CA /* AddressBook.framework */; };
@@ -140,16 +135,8 @@
 
 /* Begin PBXFileReference section */
 		05315EF41ADC70E500406317 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		0558DBA41B66FFC600257DA0 /* IRMainViewControllerPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRMainViewControllerPad.h; path = Ipad/Shared/ViewController/IRMainViewControllerPad.h; sourceTree = SOURCE_ROOT; };
-		0558DBA51B66FFC600257DA0 /* IRMainViewControllerPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRMainViewControllerPad.m; path = Ipad/Shared/ViewController/IRMainViewControllerPad.m; sourceTree = SOURCE_ROOT; };
 		0558DBBB1B6C31A100257DA0 /* IRMyBoardsMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMyBoardsMenuItem.h; sourceTree = "<group>"; };
 		0558DBBC1B6C31A100257DA0 /* IRMyBoardsMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMyBoardsMenuItem.m; sourceTree = "<group>"; };
-		0558DBBE1B6C359700257DA0 /* IRListingRefineViewControllerPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRListingRefineViewControllerPhone.h; sourceTree = "<group>"; };
-		0558DBBF1B6C359700257DA0 /* IRListingRefineViewControllerPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRListingRefineViewControllerPhone.m; sourceTree = "<group>"; };
-		0558DBC11B6C35DC00257DA0 /* IRListingRefineViewControllerPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRListingRefineViewControllerPad.h; path = Shared/ViewController/IRListingRefineViewControllerPad.h; sourceTree = SOURCE_ROOT; };
-		0558DBC21B6C35DC00257DA0 /* IRListingRefineViewControllerPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRListingRefineViewControllerPad.m; path = Shared/ViewController/IRListingRefineViewControllerPad.m; sourceTree = SOURCE_ROOT; };
-		0558DBCA1B6C3D7D00257DA0 /* IRSRPViewControllerPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRSRPViewControllerPhone.h; sourceTree = "<group>"; };
-		0558DBCB1B6C3D7D00257DA0 /* IRSRPViewControllerPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRSRPViewControllerPhone.m; sourceTree = "<group>"; };
 		0558ED8A1B4C681F00ABE204 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../mob-ioscore-lib/lib/FacebookSDK/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		0558ED8C1B4C683200ABE204 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../mob-ioscore-lib/lib/FacebookSDK/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		055BA55E1B4F3B95004ED96E /* IRMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMainMenu.h; sourceTree = "<group>"; };
@@ -227,8 +214,6 @@
 		51DA6C2514CF5896007F2584 /* ICMetric~iphone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~iphone.plist"; sourceTree = "<group>"; };
 		51E1597A14D2218F00DB87CA /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		51E1597C14D2219800DB87CA /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
-		62218F8119C75DC600247A5C /* IRMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRMainMenuViewController.h; path = ../Iphone/ViewController/IRMainMenuViewController.h; sourceTree = "<group>"; };
-		62218F8219C75DC600247A5C /* IRMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRMainMenuViewController.m; path = ../Iphone/ViewController/IRMainMenuViewController.m; sourceTree = "<group>"; };
 		9D23EC5D17205D300048E737 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		9D37273016657DA00018B275 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
 		9D37273116657DA00018B275 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
@@ -458,8 +443,6 @@
 			children = (
 				05A431871B1693740024CEA4 /* IRBoardManagerViewController.h */,
 				05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */,
-				62218F8119C75DC600247A5C /* IRMainMenuViewController.h */,
-				62218F8219C75DC600247A5C /* IRMainMenuViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -476,10 +459,6 @@
 		4C0CEEDF14D6634A00A1D325 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0558DBBE1B6C359700257DA0 /* IRListingRefineViewControllerPhone.h */,
-				0558DBBF1B6C359700257DA0 /* IRListingRefineViewControllerPhone.m */,
-				0558DBCA1B6C3D7D00257DA0 /* IRSRPViewControllerPhone.h */,
-				0558DBCB1B6C3D7D00257DA0 /* IRSRPViewControllerPhone.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -657,10 +636,6 @@
 		9D94F5BD15DEECF90068FC85 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0558DBC11B6C35DC00257DA0 /* IRListingRefineViewControllerPad.h */,
-				0558DBC21B6C35DC00257DA0 /* IRListingRefineViewControllerPad.m */,
-				0558DBA41B66FFC600257DA0 /* IRMainViewControllerPad.h */,
-				0558DBA51B66FFC600257DA0 /* IRMainViewControllerPad.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -858,18 +833,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0558DBC01B6C359700257DA0 /* IRListingRefineViewControllerPhone.m in Sources */,
-				0558DBC31B6C35DC00257DA0 /* IRListingRefineViewControllerPad.m in Sources */,
 				4C0CF0BE14D6634B00A1D325 /* main.m in Sources */,
 				4C0CF0C414D6634B00A1D325 /* IRAppDelegate.m in Sources */,
 				055BA5691B4F4077004ED96E /* IRMainMenuMoreSection.m in Sources */,
-				0558DBA61B66FFC600257DA0 /* IRMainViewControllerPad.m in Sources */,
 				266139DB164AF82E00D19093 /* IRURLCache.m in Sources */,
 				055BA5631B4F3DF2004ED96E /* IRMainMenuSearchSection.m in Sources */,
 				055BA5661B4F4062004ED96E /* IRMainMenuAppsSection.m in Sources */,
 				05A431891B1693740024CEA4 /* IRBoardManagerViewController.m in Sources */,
-				0558DBCC1B6C3D7D00257DA0 /* IRSRPViewControllerPhone.m in Sources */,
-				62218F8319C75DC600247A5C /* IRMainMenuViewController.m in Sources */,
 				055BA5601B4F3B95004ED96E /* IRMainMenu.m in Sources */,
 				0558DBBD1B6C31A100257DA0 /* IRMyBoardsMenuItem.m in Sources */,
 			);
