@@ -24,9 +24,9 @@
 #import "ICAnalyticsController.h"
 
 //view controllers
-#import "IRMainViewControllerPad.h"
-#import "IRMainMenuViewController.h"
 #import "ICDiscoveryViewController.h"
+#import "ICMainMenuViewController.h"
+#import "ICMainViewControllerPad.h"
 
 //frameworks
 #import <Crashlytics/Crashlytics.h>
@@ -92,9 +92,9 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)initializeRootViewControllerForIpad
 {
-    IRMainMenuViewController *menuController = [[IRMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
+    ICMainMenuViewController *menuController = [[ICMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
     
-    IRMainViewControllerPad *searchController = [IRMainViewControllerPad sharedInstance];
+    ICMainViewControllerPad *searchController = [ICMainViewControllerPad sharedInstance];
     searchController.toggleMenuBlock = ^(BOOL show){
         [self.menuAndSrpContainerController toggleMenu:show];
     };
@@ -176,7 +176,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)initializeRootViewControllerForIphone{
     
-    IRMainMenuViewController *menuController = [[IRMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
+    ICMainMenuViewController *menuController = [[ICMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
     
     ICDiscoveryViewController * discoveryViewController = [ICDiscoveryViewController new];
     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:discoveryViewController];
@@ -251,6 +251,8 @@ void uncaughtExceptionHandler(NSException *exception) {
     else{
         [self launchIpadApp];
     }
+    
+    [ICListingRefineViewController setSegmentControlModes:@[@(ICListingRefineModeForRent)]];
     
     //NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     
@@ -582,8 +584,8 @@ void uncaughtExceptionHandler(NSException *exception) {
             {
                 if ([[ICAccountController sharedInstance] isLoggedIn] && [UIDevice isPhone]){
                     
-                    if ([self.menuAndSrpContainerController.left isKindOfClass:[IRMainMenuViewController class]]){
-                        IRMainMenuViewController* menuController = (IRMainMenuViewController*)self.menuAndSrpContainerController.left;
+                    if ([self.menuAndSrpContainerController.left isKindOfClass:[ICMainMenuViewController class]]){
+                        ICMainMenuViewController* menuController = (ICMainMenuViewController*)self.menuAndSrpContainerController.left;
                         [menuController actionNotificationsClicked:nil];
                     }
                 }
