@@ -168,10 +168,12 @@ void uncaughtExceptionHandler(NSException *exception) {
     [ICPreference updateCollabEnabledPreferenceFromState:state];
 }
 
-- (void)setupListingParameters {
+- (void)setupRentalConfigurations {
     ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
     currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
     [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
+    
+    [ICManagedSearch setDefaultIndexType:IC_INDEXTYPE_FORRENT];
 }
 
 - (void)initializeRootViewControllerForIphone{
@@ -243,7 +245,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     [ICAppearance applyDefaultStyle];
     
-    [self setupListingParameters];
+    [self setupRentalConfigurations];
     
     if ([UIDevice isPhone]) {
         [self launchIphoneApp];
