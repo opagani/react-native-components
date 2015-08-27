@@ -354,8 +354,6 @@
 	<string>Current Location</string>
 	<key>MapAreaText</key>
 	<string>Viewable Map Area</string>
-	<key>AppStoreLink</key>
-	<string>http://itunes.apple.com/us/app/trulia-real-estate-search/id288487321</string>
 	<key>TapSenseAppId</key>
 	<string>288487321</string>
 	<key>IndexTypes</key>

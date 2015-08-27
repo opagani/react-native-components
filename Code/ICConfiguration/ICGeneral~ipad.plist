@@ -335,8 +335,6 @@
 	<string>Viewable Map Area</string>
 	<key>RentOnlySearches</key>
 	<integer>1</integer>
-	<key>AppStoreLink</key>
-	<string>http://itunes.apple.com/us/app/trulia-for-agents/id489692273?ls=1&amp;mt=8</string>
 	<key>RentOnlyListings</key>
 	<integer>1</integer>
 	<key>MBSAdParameters</key>
