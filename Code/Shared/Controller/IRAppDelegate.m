@@ -412,7 +412,7 @@ void uncaughtExceptionHandler(NSException *exception) {
         
         if (userConfirmed)
         {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[ICConfiguration sharedInstance] generalItem:@"AppStoreLink"]]];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[ICConfiguration appStoreLink]]];
         }
     }
     else
