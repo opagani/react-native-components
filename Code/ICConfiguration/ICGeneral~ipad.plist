@@ -251,6 +251,12 @@
 		</dict>
 		<dict>
 			<key>title</key>
+			<string>Any Pets</string>
+			<key>value</key>
+			<string>any</string>
+		</dict>
+		<dict>
+			<key>title</key>
 			<string>Cats</string>
 			<key>value</key>
 			<string>cats</string>
@@ -266,12 +272,6 @@
 			<string>Large Dogs</string>
 			<key>value</key>
 			<string>lg_dogs</string>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>Any Pets</string>
-			<key>value</key>
-			<string>any</string>
 		</dict>
 		<dict>
 			<key>title</key>
