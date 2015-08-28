@@ -220,6 +220,7 @@
 "InvalidEmailAddressError"= "Please enter a valid email address.";
 "EmailAddressNotFoundError"= "We don't have that email on file. Please try again or create a new account.";
 "PasswordMismatchError"= "We don't see that email/password combo. Please try again.";
+"AccountAlreadyExistsWithInCorrectPassword"= "The email is already registered. Please try a different email address.";
 "AccountFrozenError" = "Your account is frozen, please contact customerservice@trulia.com for more info";
 "AccountInActiveError" = "Your account is inactive, please contact customerservice@trulia.com for more info";
 "AccountNetworkError" = "Sorry there was a network error, please try again later";
