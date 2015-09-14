@@ -203,7 +203,7 @@
 		<string>9800</string>
 		<string>10000</string>
 	</array>
-	<key>validPropertyTypeValues</key>
+	<key>validForSalePropertyTypeValues</key>
 	<array>
 		<string>All Types</string>
 		<string>Single-Family Home</string>
@@ -220,6 +220,14 @@
 		<string>Multi-Family</string>
 		<string>Income/Investment</string>
 		<string>Houseboat</string>
+	</array>
+	<key>validForRentPropertyTypeValues</key>
+	<array>
+		<string>All</string>
+		<string>Single-Family Home</string>
+		<string>Apartment/Condo/Townhouse</string>
+		<string>Apartment Community</string>
+		<string>Room For Rent</string>
 	</array>
 	<key>validForSoldPriceValues</key>
 	<array>
