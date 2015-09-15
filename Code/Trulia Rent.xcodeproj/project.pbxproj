@@ -96,7 +96,6 @@
 		9D372CE71667EE690018B275 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51802F5614CF79AA00199144 /* SystemConfiguration.framework */; };
 		9D372CE81667EE810018B275 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E493CA01630C940004C361A /* libxml2.dylib */; };
 		9D94D26F161A0B5C0089CEEC /* copyright.html in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D248161A0B5C0089CEEC /* copyright.html */; };
-		9D94D279161A0B5C0089CEEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D25C161A0B5C0089CEEC /* InfoPlist.strings */; };
 		9D94DEAC15D992F20068FC85 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D94DEAB15D992F20068FC85 /* OpenGLES.framework */; };
 		9D94F88A15E2FA590068FC85 /* ICGeneral~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F88815E2FA590068FC85 /* ICGeneral~ipad.plist */; };
 		9D94F88B15E2FA590068FC85 /* ICMetric~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F88915E2FA590068FC85 /* ICMetric~ipad.plist */; };
@@ -226,7 +225,6 @@
 		9D37273516657DA00018B275 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 		9D37273616657DA00018B275 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		9D94D249161A0B5C0089CEEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = copyright.html; sourceTree = "<group>"; };
-		9D94D25D161A0B5C0089CEEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		9D94DEAB15D992F20068FC85 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		9D94F88815E2FA590068FC85 /* ICGeneral~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICGeneral~ipad.plist"; sourceTree = "<group>"; };
 		9D94F88915E2FA590068FC85 /* ICMetric~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~ipad.plist"; sourceTree = "<group>"; };
@@ -374,6 +372,9 @@
 		261196591950F3E200C4F392 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2E309C21167024BF00A31BD0 /* Fonts */,
+				3B5EF549170B8DFC003F00ED /* Localizable.strings */,
+				9D94D248161A0B5C0089CEEC /* copyright.html */,
 				05A350711B17E1B4006D40E7 /* json */,
 				269D198A19B91579000440BC /* GoogleMaps.bundle */,
 				05E7344D1B66C84500E92FA9 /* Images.xcassets */,
@@ -394,7 +395,8 @@
 			children = (
 				2E309C22167024BF00A31BD0 /* Open_Sans */,
 			);
-			path = Fonts;
+			name = Fonts;
+			path = Shared/Fonts;
 			sourceTree = "<group>";
 		};
 		2E309C22167024BF00A31BD0 /* Open_Sans */ = {
@@ -432,15 +434,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3B5EF544170B8AAA003F00ED /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				3B5EF549170B8DFC003F00ED /* Localizable.strings */,
-			);
-			name = en.lproj;
-			path = Shared;
-			sourceTree = "<group>";
-		};
 		3B8AF40916F2925500357462 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,27 +445,10 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
-		4C0CEED814D6634A00A1D325 /* Iphone */ = {
-			isa = PBXGroup;
-			children = (
-				9D94D245161A0B5C0089CEEC /* en.lproj */,
-				4C0CEEDF14D6634A00A1D325 /* ViewController */,
-			);
-			path = Iphone;
-			sourceTree = "<group>";
-		};
-		4C0CEEDF14D6634A00A1D325 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
 		4C0CEEEB14D6634A00A1D325 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				055BA55D1B4F3B3E004ED96E /* Menu */,
-				2E309C21167024BF00A31BD0 /* Fonts */,
 				4C0CEEF714D6634A00A1D325 /* Controller */,
 				3B8AF40916F2925500357462 /* ViewController */,
 			);
@@ -496,8 +472,6 @@
 				E09140E7195DFE3C002890C6 /* IosCoreResources.bundle */,
 				E09140E4195DF983002890C6 /* ICConfiguration.bundle */,
 				261196591950F3E200C4F392 /* Resources */,
-				9D94F3F815DEECF80068FC85 /* Ipad */,
-				4C0CEED814D6634A00A1D325 /* Iphone */,
 				4C0CEEEB14D6634A00A1D325 /* Shared */,
 				26E2056315FFE2CA00B29DE6 /* lib */,
 				3B18363B1652B4AB009923F7 /* UnitTests */,
@@ -618,31 +592,6 @@
 				9D37273516657DA00018B275 /* OCMockRecorder.h */,
 			);
 			path = OCMock;
-			sourceTree = "<group>";
-		};
-		9D94D245161A0B5C0089CEEC /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				9D94D248161A0B5C0089CEEC /* copyright.html */,
-				9D94D25C161A0B5C0089CEEC /* InfoPlist.strings */,
-			);
-			path = en.lproj;
-			sourceTree = "<group>";
-		};
-		9D94F3F815DEECF80068FC85 /* Ipad */ = {
-			isa = PBXGroup;
-			children = (
-				3B5EF544170B8AAA003F00ED /* en.lproj */,
-				9D94F5BD15DEECF90068FC85 /* ViewController */,
-			);
-			path = Ipad;
-			sourceTree = "<group>";
-		};
-		9D94F5BD15DEECF90068FC85 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -770,7 +719,6 @@
 				269D198B19B91579000440BC /* GoogleMaps.bundle in Resources */,
 				269D198E19B925F0000440BC /* LocalInfoItems~ipad.json in Resources */,
 				9D94D26F161A0B5C0089CEEC /* copyright.html in Resources */,
-				9D94D279161A0B5C0089CEEC /* InfoPlist.strings in Resources */,
 				2E309C2E167024BF00A31BD0 /* LICENSE.txt in Resources */,
 				2E309C2F167024BF00A31BD0 /* OpenSans-Bold.ttf in Resources */,
 				2E309C30167024BF00A31BD0 /* OpenSans-BoldItalic.ttf in Resources */,
@@ -873,6 +821,7 @@
 				3B5EF54A170B8DFC003F00ED /* en */,
 			);
 			name = Localizable.strings;
+			path = Ipad/Shared;
 			sourceTree = "<group>";
 		};
 		51DA6C1D14CF51D1007F2584 /* InfoPlist.strings */ = {
@@ -889,14 +838,7 @@
 				9D94D249161A0B5C0089CEEC /* en */,
 			);
 			name = copyright.html;
-			sourceTree = "<group>";
-		};
-		9D94D25C161A0B5C0089CEEC /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9D94D25D161A0B5C0089CEEC /* en */,
-			);
-			name = InfoPlist.strings;
+			path = Iphone/en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
