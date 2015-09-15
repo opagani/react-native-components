@@ -34,6 +34,8 @@
 		<string>ssh://stash.sv2.trulia.com:7999/mob/mob-ioscore-lib.git</string>
 		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</key>
 		<string>https://github.com/AFNetworking/AFNetworking.git</string>
+		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8+++964B7E6</key>
+		<string>https://github.com/AFNetworking/AFNetworking.git</string>
 		<key>DFDB2643F9F1BAD8F29725E2E46B257ABC554A67</key>
 		<string>ssh://github.com/bluwave/GoogleMapsKit.git</string>
 		<key>E28E36D423EC87798E52E2BF482E9F7A1E6479D6</key>
@@ -77,6 +79,8 @@
 		<string>../../../mob-ioscore-lib</string>
 		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</key>
 		<string>../../../mob-ioscore-lib/lib/AFNetworking</string>
+		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8+++964B7E6</key>
+		<string>../../../mob-ioscore-lib/lib/AFNetworking</string>
 		<key>DFDB2643F9F1BAD8F29725E2E46B257ABC554A67</key>
 		<string>../../../mob-ioscore-lib/lib/GoogleMapsKit</string>
 		<key>E28E36D423EC87798E52E2BF482E9F7A1E6479D6</key>
@@ -112,7 +116,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</string>
+			<string>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8+++964B7E6</string>
 			<key>IDESourceControlWCCName</key>
 			<string>AFNetworking</string>
 		</dict>

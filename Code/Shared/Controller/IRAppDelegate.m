@@ -21,11 +21,12 @@
 #import "ICAppearance.h"
 #import "ICLog.h"
 #import "ICUtility.h"
+#import "ICAnalyticsController.h"
 
 //view controllers
-#import "IRMainViewControllerPad.h"
-#import "IRMainMenuViewController.h"
 #import "ICDiscoveryViewController.h"
+#import "IRMainMenuViewController.h"
+#import "ICMainViewControllerPad.h"
 
 //frameworks
 #import <Crashlytics/Crashlytics.h>
@@ -91,9 +92,9 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)initializeRootViewControllerForIpad
 {
-    ICMainMenuViewController *menuController = [[ICMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
+    IRMainMenuViewController *menuController = [[IRMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
     
-    IRMainViewControllerPad *searchController = [IRMainViewControllerPad sharedInstance];
+    ICMainViewControllerPad *searchController = [ICMainViewControllerPad sharedInstance];
     searchController.toggleMenuBlock = ^(BOOL show){
         [self.menuAndSrpContainerController toggleMenu:show];
     };
@@ -167,15 +168,17 @@ void uncaughtExceptionHandler(NSException *exception) {
     [ICPreference updateCollabEnabledPreferenceFromState:state];
 }
 
-- (void)setupListingParameters {
+- (void)setupRentalConfigurations {
     ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
     currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
     [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
+    
+    [ICManagedSearch setDefaultIndexType:IC_INDEXTYPE_FORRENT];
 }
 
 - (void)initializeRootViewControllerForIphone{
     
-    ICMainMenuViewController *menuController = [[ICMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
+    IRMainMenuViewController *menuController = [[IRMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
     
     ICDiscoveryViewController * discoveryViewController = [ICDiscoveryViewController new];
     ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:discoveryViewController];
@@ -242,7 +245,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     [ICAppearance applyDefaultStyle];
     
-    [self setupListingParameters];
+    [self setupRentalConfigurations];
     
     if ([UIDevice isPhone]) {
         [self launchIphoneApp];
@@ -250,6 +253,8 @@ void uncaughtExceptionHandler(NSException *exception) {
     else{
         [self launchIpadApp];
     }
+    
+    [ICListingRefineViewController setSegmentControlModes:@[@(ICListingRefineModeForRent)]];
     
     //NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     
@@ -355,10 +360,8 @@ void uncaughtExceptionHandler(NSException *exception) {
 - (void)showUpgradeAppPopup {
 	UIAlertView *upgradeAppAlert = [[UIAlertView alloc] initWithTitle: @"Get the new app" message: @"An updated version of the Trulia App is now available via iTunes." delegate: self cancelButtonTitle: @"Not Now" otherButtonTitles: @"Update", nil];
     upgradeAppAlert.tag = TruliaAlertTypeUpdate;
-	
-    // FIXME: Update this to ICAnalyticsController
-    //[[ICMetricsController sharedInstance] trackPageView:@"promo|update app|view"];
     
+    [[ICAnalyticsController sharedInstance] trackState:@"promo|update app|view" withContextData:[NSMutableDictionary dictionary]];
     
 	[upgradeAppAlert show];
 	[[ICPreference sharedInstance] setVisForKey:@"shown_upgradeapp_prompt" withAttribute:[[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"]];
@@ -404,13 +407,12 @@ void uncaughtExceptionHandler(NSException *exception) {
             [trackingString appendString:@"|cancel"];
         }
         
-        // FIXME: Update this to ICAnalyticsController
-        //[[ICMetricsController sharedInstance] trackClick:trackingString];
+        [[ICAnalyticsController sharedInstance] trackActionClick:trackingString withPage:[[ICAnalyticsController sharedInstance] lastPageTrack]];
         
         
         if (userConfirmed)
         {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[ICConfiguration sharedInstance] generalItem:@"AppStoreLink"]]];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[ICConfiguration appStoreLink]]];
         }
     }
     else

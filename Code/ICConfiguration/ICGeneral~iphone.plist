@@ -98,6 +98,12 @@
 		</dict>
 		<dict>
 			<key>title</key>
+			<string>Any Pets</string>
+			<key>value</key>
+			<string>any</string>
+		</dict>
+		<dict>
+			<key>title</key>
 			<string>Cats</string>
 			<key>value</key>
 			<string>cats</string>
@@ -113,12 +119,6 @@
 			<string>Large Dogs</string>
 			<key>value</key>
 			<string>lg_dogs</string>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>Any Pets</string>
-			<key>value</key>
-			<string>any</string>
 		</dict>
 		<dict>
 			<key>title</key>
@@ -203,7 +203,7 @@
 		<string>9800</string>
 		<string>10000</string>
 	</array>
-	<key>validPropertyTypeValues</key>
+	<key>validForSalePropertyTypeValues</key>
 	<array>
 		<string>All Types</string>
 		<string>Single-Family Home</string>
@@ -220,6 +220,14 @@
 		<string>Multi-Family</string>
 		<string>Income/Investment</string>
 		<string>Houseboat</string>
+	</array>
+	<key>validForRentPropertyTypeValues</key>
+	<array>
+		<string>All</string>
+		<string>Single-Family Home</string>
+		<string>Apartment/Condo/Townhouse</string>
+		<string>Apartment Community</string>
+		<string>Room For Rent</string>
 	</array>
 	<key>validForSoldPriceValues</key>
 	<array>
@@ -354,8 +362,6 @@
 	<string>Current Location</string>
 	<key>MapAreaText</key>
 	<string>Viewable Map Area</string>
-	<key>AppStoreLink</key>
-	<string>http://itunes.apple.com/us/app/trulia-real-estate-search/id288487321</string>
 	<key>TapSenseAppId</key>
 	<string>288487321</string>
 	<key>IndexTypes</key>

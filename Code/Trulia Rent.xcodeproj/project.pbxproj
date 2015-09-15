@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05315EF51ADC70E500406317 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05315EF41ADC70E500406317 /* MediaPlayer.framework */; };
-		0558DBA61B66FFC600257DA0 /* IRMainViewControllerPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 0558DBA51B66FFC600257DA0 /* IRMainViewControllerPad.m */; };
+		0558DBBD1B6C31A100257DA0 /* IRMyBoardsMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0558DBBC1B6C31A100257DA0 /* IRMyBoardsMenuItem.m */; };
 		0558ED8B1B4C681F00ABE204 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0558ED8A1B4C681F00ABE204 /* FBSDKCoreKit.framework */; };
 		0558ED8D1B4C683200ABE204 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0558ED8C1B4C683200ABE204 /* FBSDKLoginKit.framework */; };
 		055BA5601B4F3B95004ED96E /* IRMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 055BA55F1B4F3B95004ED96E /* IRMainMenu.m */; };
@@ -21,15 +21,12 @@
 		05A350741B17E1DA006D40E7 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */; };
 		05A350751B17E1DA006D40E7 /* ADBMobileConfigRelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */; };
 		05A431891B1693740024CEA4 /* IRBoardManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */; };
-		05A431901B16A14F0024CEA4 /* IRMySavedHomesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A4318F1B16A14F0024CEA4 /* IRMySavedHomesViewController.m */; };
+		05D951F11B72A9C2006DFC66 /* IRMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D951F01B72A9C2006DFC66 /* IRMainMenuViewController.m */; };
 		05E7344E1B66C84500E92FA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05E7344D1B66C84500E92FA9 /* Images.xcassets */; };
 		05E984891AC0D0DD00F5DB03 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E984881AC0D0DD00F5DB03 /* GoogleMobileAds.framework */; };
 		05EB38621B4C8B24002DAEFF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EB38611B4C8B24002DAEFF /* Parse.framework */; };
 		2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */; };
 		266139DB164AF82E00D19093 /* IRURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 266139DA164AF82E00D19093 /* IRURLCache.m */; };
-		26779DE519B93E88001EE88D /* MainMenuItems~ipad.json in Resources */ = {isa = PBXBuildFile; fileRef = 26779DE319B93E88001EE88D /* MainMenuItems~ipad.json */; };
-		26779DE619B93E88001EE88D /* MainMenuItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 26779DE419B93E88001EE88D /* MainMenuItems~iphone.json */; };
-		269D198919B914AE000440BC /* IRListingRefineViewControllerPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D198819B914AE000440BC /* IRListingRefineViewControllerPad.m */; };
 		269D198B19B91579000440BC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 269D198A19B91579000440BC /* GoogleMaps.bundle */; };
 		269D198E19B925F0000440BC /* LocalInfoItems~ipad.json in Resources */ = {isa = PBXBuildFile; fileRef = 269D198D19B925F0000440BC /* LocalInfoItems~ipad.json */; };
 		2E1AD2F2165436B500C81545 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1AD2F1165436B500C81545 /* libz.dylib */; };
@@ -76,7 +73,6 @@
 		51DA6A1B14CF2F0D007F2584 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6A1A14CF2F0D007F2584 /* CoreGraphics.framework */; };
 		51E1597B14D2218F00DB87CA /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597A14D2218F00DB87CA /* AddressBookUI.framework */; };
 		51E1597D14D2219800DB87CA /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597C14D2219800DB87CA /* AddressBook.framework */; };
-		62218F8319C75DC600247A5C /* IRMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62218F8219C75DC600247A5C /* IRMainMenuViewController.m */; };
 		9D23EC5E17205D300048E737 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D23EC5D17205D300048E737 /* ImageIO.framework */; };
 		9D37273716657DA00018B275 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D37273616657DA00018B275 /* libOCMock.a */; };
 		9D372CD51667ED530018B275 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597C14D2219800DB87CA /* AddressBook.framework */; };
@@ -140,8 +136,8 @@
 
 /* Begin PBXFileReference section */
 		05315EF41ADC70E500406317 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		0558DBA41B66FFC600257DA0 /* IRMainViewControllerPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRMainViewControllerPad.h; path = Ipad/Shared/ViewController/IRMainViewControllerPad.h; sourceTree = SOURCE_ROOT; };
-		0558DBA51B66FFC600257DA0 /* IRMainViewControllerPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRMainViewControllerPad.m; path = Ipad/Shared/ViewController/IRMainViewControllerPad.m; sourceTree = SOURCE_ROOT; };
+		0558DBBB1B6C31A100257DA0 /* IRMyBoardsMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMyBoardsMenuItem.h; sourceTree = "<group>"; };
+		0558DBBC1B6C31A100257DA0 /* IRMyBoardsMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMyBoardsMenuItem.m; sourceTree = "<group>"; };
 		0558ED8A1B4C681F00ABE204 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../mob-ioscore-lib/lib/FacebookSDK/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		0558ED8C1B4C683200ABE204 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../mob-ioscore-lib/lib/FacebookSDK/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		055BA55E1B4F3B95004ED96E /* IRMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMainMenu.h; sourceTree = "<group>"; };
@@ -159,18 +155,14 @@
 		05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfigRelease.json; sourceTree = "<group>"; };
 		05A431871B1693740024CEA4 /* IRBoardManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRBoardManagerViewController.h; path = ViewController/IRBoardManagerViewController.h; sourceTree = "<group>"; };
 		05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRBoardManagerViewController.m; path = ViewController/IRBoardManagerViewController.m; sourceTree = "<group>"; };
-		05A4318E1B16A14F0024CEA4 /* IRMySavedHomesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRMySavedHomesViewController.h; path = ViewController/IRMySavedHomesViewController.h; sourceTree = "<group>"; };
-		05A4318F1B16A14F0024CEA4 /* IRMySavedHomesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRMySavedHomesViewController.m; path = ViewController/IRMySavedHomesViewController.m; sourceTree = "<group>"; };
+		05D951EF1B72A9C2006DFC66 /* IRMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRMainMenuViewController.h; path = ViewController/IRMainMenuViewController.h; sourceTree = "<group>"; };
+		05D951F01B72A9C2006DFC66 /* IRMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRMainMenuViewController.m; path = ViewController/IRMainMenuViewController.m; sourceTree = "<group>"; };
 		05E7344D1B66C84500E92FA9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		05E984881AC0D0DD00F5DB03 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../mob-ioscore-lib/lib/GoogleMobileAdsSdkiOS-7.0.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		05EB38611B4C8B24002DAEFF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../mob-ioscore-lib/lib/Parse.framework"; sourceTree = "<group>"; };
 		2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "LocalInfoItems~iphone.json"; path = "Resources/jsons/LocalInfoItems~iphone.json"; sourceTree = "<group>"; };
 		266139D9164AF82E00D19093 /* IRURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRURLCache.h; path = ../../Ipad/Shared/Controller/IRURLCache.h; sourceTree = "<group>"; };
 		266139DA164AF82E00D19093 /* IRURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRURLCache.m; path = ../../Ipad/Shared/Controller/IRURLCache.m; sourceTree = "<group>"; };
-		26779DE319B93E88001EE88D /* MainMenuItems~ipad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "MainMenuItems~ipad.json"; path = "Resources/jsons/MainMenuItems~ipad.json"; sourceTree = "<group>"; };
-		26779DE419B93E88001EE88D /* MainMenuItems~iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "MainMenuItems~iphone.json"; path = "Resources/jsons/MainMenuItems~iphone.json"; sourceTree = "<group>"; };
-		269D198719B914AE000440BC /* IRListingRefineViewControllerPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRListingRefineViewControllerPad.h; path = ViewController/IRListingRefineViewControllerPad.h; sourceTree = "<group>"; };
-		269D198819B914AE000440BC /* IRListingRefineViewControllerPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRListingRefineViewControllerPad.m; path = ViewController/IRListingRefineViewControllerPad.m; sourceTree = "<group>"; };
 		269D198A19B91579000440BC /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
 		269D198D19B925F0000440BC /* LocalInfoItems~ipad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "LocalInfoItems~ipad.json"; path = "Resources/jsons/LocalInfoItems~ipad.json"; sourceTree = "<group>"; };
 		2E1AD2F1165436B500C81545 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -225,8 +217,6 @@
 		51DA6C2514CF5896007F2584 /* ICMetric~iphone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~iphone.plist"; sourceTree = "<group>"; };
 		51E1597A14D2218F00DB87CA /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		51E1597C14D2219800DB87CA /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
-		62218F8119C75DC600247A5C /* IRMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRMainMenuViewController.h; path = ../Iphone/ViewController/IRMainMenuViewController.h; sourceTree = "<group>"; };
-		62218F8219C75DC600247A5C /* IRMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRMainMenuViewController.m; path = ../Iphone/ViewController/IRMainMenuViewController.m; sourceTree = "<group>"; };
 		9D23EC5D17205D300048E737 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		9D37273016657DA00018B275 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
 		9D37273116657DA00018B275 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
@@ -358,12 +348,14 @@
 			children = (
 				055BA55E1B4F3B95004ED96E /* IRMainMenu.h */,
 				055BA55F1B4F3B95004ED96E /* IRMainMenu.m */,
-				055BA5611B4F3DF2004ED96E /* IRMainMenuSearchSection.h */,
-				055BA5621B4F3DF2004ED96E /* IRMainMenuSearchSection.m */,
 				055BA5641B4F4062004ED96E /* IRMainMenuAppsSection.h */,
 				055BA5651B4F4062004ED96E /* IRMainMenuAppsSection.m */,
 				055BA5671B4F4077004ED96E /* IRMainMenuMoreSection.h */,
 				055BA5681B4F4077004ED96E /* IRMainMenuMoreSection.m */,
+				055BA5611B4F3DF2004ED96E /* IRMainMenuSearchSection.h */,
+				055BA5621B4F3DF2004ED96E /* IRMainMenuSearchSection.m */,
+				0558DBBB1B6C31A100257DA0 /* IRMyBoardsMenuItem.h */,
+				0558DBBC1B6C31A100257DA0 /* IRMyBoardsMenuItem.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -375,8 +367,6 @@
 				05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */,
 				269D198D19B925F0000440BC /* LocalInfoItems~ipad.json */,
 				2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */,
-				26779DE319B93E88001EE88D /* MainMenuItems~ipad.json */,
-				26779DE419B93E88001EE88D /* MainMenuItems~iphone.json */,
 			);
 			name = json;
 			sourceTree = "<group>";
@@ -454,14 +444,10 @@
 		3B8AF40916F2925500357462 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				05D951EF1B72A9C2006DFC66 /* IRMainMenuViewController.h */,
+				05D951F01B72A9C2006DFC66 /* IRMainMenuViewController.m */,
 				05A431871B1693740024CEA4 /* IRBoardManagerViewController.h */,
 				05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */,
-				269D198719B914AE000440BC /* IRListingRefineViewControllerPad.h */,
-				269D198819B914AE000440BC /* IRListingRefineViewControllerPad.m */,
-				62218F8119C75DC600247A5C /* IRMainMenuViewController.h */,
-				62218F8219C75DC600247A5C /* IRMainMenuViewController.m */,
-				05A4318E1B16A14F0024CEA4 /* IRMySavedHomesViewController.h */,
-				05A4318F1B16A14F0024CEA4 /* IRMySavedHomesViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -655,8 +641,6 @@
 		9D94F5BD15DEECF90068FC85 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0558DBA41B66FFC600257DA0 /* IRMainViewControllerPad.h */,
-				0558DBA51B66FFC600257DA0 /* IRMainViewControllerPad.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -782,10 +766,8 @@
 				E09140E8195DFE3C002890C6 /* IosCoreResources.bundle in Resources */,
 				E09140E5195DF983002890C6 /* ICConfiguration.bundle in Resources */,
 				05E7344E1B66C84500E92FA9 /* Images.xcassets in Resources */,
-				26779DE519B93E88001EE88D /* MainMenuItems~ipad.json in Resources */,
 				2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */,
 				269D198B19B91579000440BC /* GoogleMaps.bundle in Resources */,
-				26779DE619B93E88001EE88D /* MainMenuItems~iphone.json in Resources */,
 				269D198E19B925F0000440BC /* LocalInfoItems~ipad.json in Resources */,
 				9D94D26F161A0B5C0089CEEC /* copyright.html in Resources */,
 				9D94D279161A0B5C0089CEEC /* InfoPlist.strings in Resources */,
@@ -858,16 +840,14 @@
 			files = (
 				4C0CF0BE14D6634B00A1D325 /* main.m in Sources */,
 				4C0CF0C414D6634B00A1D325 /* IRAppDelegate.m in Sources */,
-				05A431901B16A14F0024CEA4 /* IRMySavedHomesViewController.m in Sources */,
 				055BA5691B4F4077004ED96E /* IRMainMenuMoreSection.m in Sources */,
-				0558DBA61B66FFC600257DA0 /* IRMainViewControllerPad.m in Sources */,
 				266139DB164AF82E00D19093 /* IRURLCache.m in Sources */,
 				055BA5631B4F3DF2004ED96E /* IRMainMenuSearchSection.m in Sources */,
+				05D951F11B72A9C2006DFC66 /* IRMainMenuViewController.m in Sources */,
 				055BA5661B4F4062004ED96E /* IRMainMenuAppsSection.m in Sources */,
 				05A431891B1693740024CEA4 /* IRBoardManagerViewController.m in Sources */,
-				62218F8319C75DC600247A5C /* IRMainMenuViewController.m in Sources */,
-				269D198919B914AE000440BC /* IRListingRefineViewControllerPad.m in Sources */,
 				055BA5601B4F3B95004ED96E /* IRMainMenu.m in Sources */,
+				0558DBBD1B6C31A100257DA0 /* IRMyBoardsMenuItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1157,6 +1137,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1205,6 +1187,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1244,6 +1228,350 @@
 			};
 			name = Release;
 		};
+		7B680D4D1B8D6F5C004A95FD /* BStage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				COMPRESS_PNG_FILES = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(IOSCORE_LIB)/lib\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../mob-ioscore-lib/**",
+					"\"$(SRCROOT)/../lib/OCMock\"/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = ForRent;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = armv7;
+			};
+			name = BStage;
+		};
+		7B680D4E1B8D6F5C004A95FD /* BStage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				COMPRESS_PNG_FILES = NO;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(SRCROOT)/../../mob-ioscore-lib/**",
+					"${SRCROOT)/../lib/**",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trulia Rent-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "BSTAGE=1";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../mob-ioscore-lib/**";
+				INFOPLIST_FILE = "Trulia Rent-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(SRCROOT)/../../mob-ioscore-lib/**",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fprofile-arcs",
+					"-ftest-coverage",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TruliaRent;
+				PROVISIONING_PROFILE = "";
+				SEPARATE_STRIP = YES;
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7s armv7 arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = BStage;
+		};
+		7B680D4F1B8D6F5C004A95FD /* BStage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ICConfiguration/ICConfiguration-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "ICConfiguration/ICConfiguration-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				VALID_ARCHS = "armv7 i386";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = BStage;
+		};
+		7B680D501B8D6F5C004A95FD /* BStage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Trulia.app/Trulia";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../lib/OCMock\"",
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)/../../IosCore/lib\"",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../lib/OCMock\"/**";
+				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../lib/OCMock\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fprofile-arcs",
+					"-ftest-coverage",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts\"/** \"$(BUILT_PRODUCTS_DIR)/../../three20\" \"$(BUILT_PRODUCTS_DIR)/../three20\"/** \"$(PROJECT_TEMP_DIR)/../UninstalledProducts/include\"";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = BStage;
+		};
+		7B680D511B8D6F68004A95FD /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				COMPRESS_PNG_FILES = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(IOSCORE_LIB)/lib\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../mob-ioscore-lib/**",
+					"\"$(SRCROOT)/../lib/OCMock\"/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = ForRent;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = armv7;
+			};
+			name = Stage;
+		};
+		7B680D521B8D6F68004A95FD /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				COMPRESS_PNG_FILES = NO;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(SRCROOT)/../../mob-ioscore-lib/**",
+					"${SRCROOT)/../lib/**",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trulia Rent-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "STAGE=1";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../mob-ioscore-lib/**";
+				INFOPLIST_FILE = "Trulia Rent-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(SRCROOT)/../../mob-ioscore-lib/**",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fprofile-arcs",
+					"-ftest-coverage",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TruliaRent;
+				PROVISIONING_PROFILE = "";
+				SEPARATE_STRIP = YES;
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7s armv7 arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Stage;
+		};
+		7B680D531B8D6F68004A95FD /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ICConfiguration/ICConfiguration-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "ICConfiguration/ICConfiguration-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				VALID_ARCHS = "armv7 i386";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Stage;
+		};
+		7B680D541B8D6F68004A95FD /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Trulia.app/Trulia";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../lib/OCMock\"",
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)/../../IosCore/lib\"",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../lib/OCMock\"/**";
+				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../lib/OCMock\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fprofile-arcs",
+					"-ftest-coverage",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts\"/** \"$(BUILT_PRODUCTS_DIR)/../../three20\" \"$(BUILT_PRODUCTS_DIR)/../three20\"/** \"$(PROJECT_TEMP_DIR)/../UninstalledProducts/include\"";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Stage;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1251,6 +1579,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B1836461652B4AC009923F7 /* Debug */,
+				7B680D541B8D6F68004A95FD /* Stage */,
+				7B680D501B8D6F5C004A95FD /* BStage */,
 				3B1836471652B4AC009923F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1260,6 +1590,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C0CF11B14D6643E00A1D325 /* Debug */,
+				7B680D531B8D6F68004A95FD /* Stage */,
+				7B680D4F1B8D6F5C004A95FD /* BStage */,
 				4C0CF11C14D6643E00A1D325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1269,6 +1601,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51DA6A3D14CF2F0D007F2584 /* Debug */,
+				7B680D511B8D6F68004A95FD /* Stage */,
+				7B680D4D1B8D6F5C004A95FD /* BStage */,
 				51DA6A3E14CF2F0D007F2584 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1278,6 +1612,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51DA6A4014CF2F0D007F2584 /* Debug */,
+				7B680D521B8D6F68004A95FD /* Stage */,
+				7B680D4E1B8D6F5C004A95FD /* BStage */,
 				51DA6A4114CF2F0D007F2584 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
