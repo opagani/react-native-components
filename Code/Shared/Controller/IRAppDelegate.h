@@ -10,8 +10,7 @@
 #import "ICAppDelegate.h"
 #import "ICListingParameters.h"
 #import "ICNavigationController.h"
-#import "ICOnboardingViewControllerPhone.h"
-#import "ICOnboardingViewControllerPad.h"
+#import "ICOnboardingBaseViewController.h"
 #import "ICStartupViewControllerPhone.h"
 
 
@@ -20,8 +19,7 @@
 @interface IRAppDelegate : ICAppDelegate <ICOnboardingDelegate, ICStartupViewControllerDelegate>
 @property (nonatomic, strong) UIWindow *window;
 
-@property (nonatomic, strong) ICOnboardingViewControllerPhone *onboardingControllerPhone;
-@property (nonatomic, strong) ICOnboardingViewControllerPad *onboardingControllerPad;
+@property (nonatomic, strong) ICOnboardingBaseViewController *onboardingController;
 
 // navController is only being used by the iphone
 @property (nonatomic, strong) ICNavigationController *navController;
