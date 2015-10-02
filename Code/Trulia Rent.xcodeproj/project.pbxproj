@@ -15,7 +15,6 @@
 		055BA5631B4F3DF2004ED96E /* IRMainMenuSearchSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 055BA5621B4F3DF2004ED96E /* IRMainMenuSearchSection.m */; };
 		055BA5661B4F4062004ED96E /* IRMainMenuAppsSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 055BA5651B4F4062004ED96E /* IRMainMenuAppsSection.m */; };
 		055BA5691B4F4077004ED96E /* IRMainMenuMoreSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 055BA5681B4F4077004ED96E /* IRMainMenuMoreSection.m */; };
-		0563367B1BBCB6490065F5D8 /* MobileAppTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0563367A1BBCB6490065F5D8 /* MobileAppTracker.framework */; settings = {ASSET_TAGS = (); }; };
 		0563367F1BBCB6DE0065F5D8 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0563367E1BBCB6DE0065F5D8 /* GoogleMobileAds.framework */; settings = {ASSET_TAGS = (); }; };
 		056336811BBCB77D0065F5D8 /* TUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056336801BBCB77D0065F5D8 /* TUIKit.framework */; settings = {ASSET_TAGS = (); }; };
 		056336831BBCB8120065F5D8 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056336821BBCB8120065F5D8 /* Fabric.framework */; settings = {ASSET_TAGS = (); }; };
@@ -24,6 +23,8 @@
 		05A350741B17E1DA006D40E7 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */; };
 		05A350751B17E1DA006D40E7 /* ADBMobileConfigRelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */; };
 		05A431891B1693740024CEA4 /* IRBoardManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */; };
+		05CA58D91BBF15D0000E28A8 /* MobileAppTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0563367A1BBCB6490065F5D8 /* MobileAppTracker.framework */; };
+		05CA58DB1BBF16A5000E28A8 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CA58DA1BBF16A5000E28A8 /* iAd.framework */; };
 		05D951F11B72A9C2006DFC66 /* IRMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D951F01B72A9C2006DFC66 /* IRMainMenuViewController.m */; };
 		05E7344E1B66C84500E92FA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05E7344D1B66C84500E92FA9 /* Images.xcassets */; };
 		2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */; };
@@ -154,6 +155,7 @@
 		05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfigRelease.json; sourceTree = "<group>"; };
 		05A431871B1693740024CEA4 /* IRBoardManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRBoardManagerViewController.h; path = ViewController/IRBoardManagerViewController.h; sourceTree = "<group>"; };
 		05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRBoardManagerViewController.m; path = ViewController/IRBoardManagerViewController.m; sourceTree = "<group>"; };
+		05CA58DA1BBF16A5000E28A8 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		05D951EF1B72A9C2006DFC66 /* IRMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRMainMenuViewController.h; path = ViewController/IRMainMenuViewController.h; sourceTree = "<group>"; };
 		05D951F01B72A9C2006DFC66 /* IRMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRMainMenuViewController.m; path = ViewController/IRMainMenuViewController.m; sourceTree = "<group>"; };
 		05E7344D1B66C84500E92FA9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -282,50 +284,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05315EF51ADC70E500406317 /* MediaPlayer.framework in Frameworks */,
-				0558ED8D1B4C683200ABE204 /* FBSDKLoginKit.framework in Frameworks */,
-				059511DF1B3C8EF70034F6B3 /* Crashlytics.framework in Frameworks */,
-				2E309C41167028D700A31BD0 /* CoreText.framework in Frameworks */,
-				9D94DEAC15D992F20068FC85 /* OpenGLES.framework in Frameworks */,
-				51802F5314CF799500199144 /* QuartzCore.framework in Frameworks */,
-				51802F5714CF79AA00199144 /* SystemConfiguration.framework in Frameworks */,
-				0563367B1BBCB6490065F5D8 /* MobileAppTracker.framework in Frameworks */,
 				E07EAACE194A34C3006BE023 /* libc++.dylib in Frameworks */,
-				51802F4714CF794500199144 /* CoreLocation.framework in Frameworks */,
-				E07EAAC8194A30CF006BE023 /* GLKit.framework in Frameworks */,
-				056B50281B4F250300627AD9 /* Bolts.framework in Frameworks */,
-				0563367F1BBCB6DE0065F5D8 /* GoogleMobileAds.framework in Frameworks */,
-				E05C232618C682E4009A3207 /* libIosCore.a in Frameworks */,
-				E052A210187E148800B0A358 /* EventKitUI.framework in Frameworks */,
-				E052A20E187E148100B0A358 /* EventKit.framework in Frameworks */,
-				E052A20C187E147000B0A358 /* Twitter.framework in Frameworks */,
-				E052A20A187E145E00B0A358 /* Accelerate.framework in Frameworks */,
-				9D23EC5E17205D300048E737 /* ImageIO.framework in Frameworks */,
 				3BB379FA16C42AA1006A253B /* libicucore.dylib in Frameworks */,
-				2E1AD2F2165436B500C81545 /* libz.dylib in Frameworks */,
-				2E493CA11630C941004C361A /* libxml2.dylib in Frameworks */,
+				E05C232618C682E4009A3207 /* libIosCore.a in Frameworks */,
 				51802F4D14CF797A00199144 /* libsqlite3.0.dylib in Frameworks */,
-				0558ED8B1B4C681F00ABE204 /* FBSDKCoreKit.framework in Frameworks */,
-				3BF8D8BE170E4611003EE773 /* StoreKit.framework in Frameworks */,
-				3BAC7D5E16F7A150005E4508 /* CoreTelephony.framework in Frameworks */,
-				51802F4914CF794F00199144 /* CoreData.framework in Frameworks */,
-				51DA6A1914CF2F0D007F2584 /* Foundation.framework in Frameworks */,
-				056336811BBCB77D0065F5D8 /* TUIKit.framework in Frameworks */,
-				51802F5514CF799E00199144 /* Security.framework in Frameworks */,
-				51802F4B14CF795800199144 /* CFNetwork.framework in Frameworks */,
-				3BDE130716A4D934008E6754 /* MobileCoreServices.framework in Frameworks */,
-				B7EA94C71635E14800B02F3F /* Social.framework in Frameworks */,
+				2E493CA11630C941004C361A /* libxml2.dylib in Frameworks */,
+				2E1AD2F2165436B500C81545 /* libz.dylib in Frameworks */,
+				E052A20A187E145E00B0A358 /* Accelerate.framework in Frameworks */,
 				B7EA94C51635E0CD00B02F3F /* Accounts.framework in Frameworks */,
-				9DEF832B1607AE430087FA1A /* AdSupport.framework in Frameworks */,
-				5142AD091565A88200BBB7F8 /* AudioToolbox.framework in Frameworks */,
 				51E1597D14D2219800DB87CA /* AddressBook.framework in Frameworks */,
 				51E1597B14D2218F00DB87CA /* AddressBookUI.framework in Frameworks */,
-				51802F5114CF798C00199144 /* MessageUI.framework in Frameworks */,
-				51802F4F14CF798300199144 /* MapKit.framework in Frameworks */,
-				51DA6A1B14CF2F0D007F2584 /* CoreGraphics.framework in Frameworks */,
+				9DEF832B1607AE430087FA1A /* AdSupport.framework in Frameworks */,
+				5142AD091565A88200BBB7F8 /* AudioToolbox.framework in Frameworks */,
 				51802F4514CF793A00199144 /* AVFoundation.framework in Frameworks */,
-				51DA6A1714CF2F0D007F2584 /* UIKit.framework in Frameworks */,
+				056B50281B4F250300627AD9 /* Bolts.framework in Frameworks */,
+				51802F4B14CF795800199144 /* CFNetwork.framework in Frameworks */,
+				51802F4914CF794F00199144 /* CoreData.framework in Frameworks */,
+				51DA6A1B14CF2F0D007F2584 /* CoreGraphics.framework in Frameworks */,
+				51802F4714CF794500199144 /* CoreLocation.framework in Frameworks */,
+				3BAC7D5E16F7A150005E4508 /* CoreTelephony.framework in Frameworks */,
+				2E309C41167028D700A31BD0 /* CoreText.framework in Frameworks */,
+				059511DF1B3C8EF70034F6B3 /* Crashlytics.framework in Frameworks */,
+				E052A20E187E148100B0A358 /* EventKit.framework in Frameworks */,
+				E052A210187E148800B0A358 /* EventKitUI.framework in Frameworks */,
 				056336831BBCB8120065F5D8 /* Fabric.framework in Frameworks */,
+				0558ED8B1B4C681F00ABE204 /* FBSDKCoreKit.framework in Frameworks */,
+				0558ED8D1B4C683200ABE204 /* FBSDKLoginKit.framework in Frameworks */,
+				51DA6A1914CF2F0D007F2584 /* Foundation.framework in Frameworks */,
+				E07EAAC8194A30CF006BE023 /* GLKit.framework in Frameworks */,
+				0563367F1BBCB6DE0065F5D8 /* GoogleMobileAds.framework in Frameworks */,
+				05CA58DB1BBF16A5000E28A8 /* iAd.framework in Frameworks */,
+				9D23EC5E17205D300048E737 /* ImageIO.framework in Frameworks */,
+				51802F4F14CF798300199144 /* MapKit.framework in Frameworks */,
+				05315EF51ADC70E500406317 /* MediaPlayer.framework in Frameworks */,
+				51802F5114CF798C00199144 /* MessageUI.framework in Frameworks */,
+				05CA58D91BBF15D0000E28A8 /* MobileAppTracker.framework in Frameworks */,
+				3BDE130716A4D934008E6754 /* MobileCoreServices.framework in Frameworks */,
+				9D94DEAC15D992F20068FC85 /* OpenGLES.framework in Frameworks */,
+				51802F5314CF799500199144 /* QuartzCore.framework in Frameworks */,
+				51802F5514CF799E00199144 /* Security.framework in Frameworks */,
+				B7EA94C71635E14800B02F3F /* Social.framework in Frameworks */,
+				3BF8D8BE170E4611003EE773 /* StoreKit.framework in Frameworks */,
+				51802F5714CF79AA00199144 /* SystemConfiguration.framework in Frameworks */,
+				056336811BBCB77D0065F5D8 /* TUIKit.framework in Frameworks */,
+				E052A20C187E147000B0A358 /* Twitter.framework in Frameworks */,
+				51DA6A1714CF2F0D007F2584 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +491,12 @@
 		51DA6A1514CF2F0D007F2584 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E05C232518C682E4009A3207 /* libIosCore.a */,
+				E07EAACD194A34C2006BE023 /* libc++.dylib */,
+				3BB379F916C42AA1006A253B /* libicucore.dylib */,
+				51802F4C14CF797A00199144 /* libsqlite3.0.dylib */,
+				2E493CA01630C940004C361A /* libxml2.dylib */,
+				2E1AD2F1165436B500C81545 /* libz.dylib */,
 				E052A209187E145E00B0A358 /* Accelerate.framework */,
 				B7EA94C41635E0CC00B02F3F /* Accounts.framework */,
 				51E1597C14D2219800DB87CA /* AddressBook.framework */,
@@ -512,13 +521,8 @@
 				51DA6A1814CF2F0D007F2584 /* Foundation.framework */,
 				E07EAAC7194A30CF006BE023 /* GLKit.framework */,
 				0563367E1BBCB6DE0065F5D8 /* GoogleMobileAds.framework */,
+				05CA58DA1BBF16A5000E28A8 /* iAd.framework */,
 				9D23EC5D17205D300048E737 /* ImageIO.framework */,
-				E07EAACD194A34C2006BE023 /* libc++.dylib */,
-				3BB379F916C42AA1006A253B /* libicucore.dylib */,
-				E05C232518C682E4009A3207 /* libIosCore.a */,
-				51802F4C14CF797A00199144 /* libsqlite3.0.dylib */,
-				2E493CA01630C940004C361A /* libxml2.dylib */,
-				2E1AD2F1165436B500C81545 /* libz.dylib */,
 				51802F4E14CF798300199144 /* MapKit.framework */,
 				05315EF41ADC70E500406317 /* MediaPlayer.framework */,
 				51802F5014CF798C00199144 /* MessageUI.framework */,
