@@ -27,6 +27,7 @@
 		05CA58DB1BBF16A5000E28A8 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CA58DA1BBF16A5000E28A8 /* iAd.framework */; };
 		05D951F11B72A9C2006DFC66 /* IRMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D951F01B72A9C2006DFC66 /* IRMainMenuViewController.m */; };
 		05E7344E1B66C84500E92FA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05E7344D1B66C84500E92FA9 /* Images.xcassets */; };
+		05F168EF1BBF48D400E8A612 /* TUIKit.framework in Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 056336801BBCB77D0065F5D8 /* TUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */; };
 		266139DB164AF82E00D19093 /* IRURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 266139DA164AF82E00D19093 /* IRURLCache.m */; };
 		269D198B19B91579000440BC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 269D198A19B91579000440BC /* GoogleMaps.bundle */; };
@@ -130,6 +131,20 @@
 			remoteInfo = ICConfiguration;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05F168EC1BBF48B600E8A612 /* Embedded Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05F168EF1BBF48D400E8A612 /* TUIKit.framework in Embedded Frameworks */,
+			);
+			name = "Embedded Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		05315EF41ADC70E500406317 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -633,6 +648,7 @@
 				51DA6A0F14CF2F0D007F2584 /* Frameworks */,
 				51DA6A1014CF2F0D007F2584 /* Resources */,
 				3BEF4F571701674600BA8529 /* ShellScript */,
+				05F168EC1BBF48B600E8A612 /* Embedded Frameworks */,
 			);
 			buildRules = (
 			);
@@ -755,7 +771,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "../../mob-ioscore-lib/lib/Crashlytics/Crashlytics.framework/run 69c46441eff2d4c6f8a043fd66d16ff159cd9812\n./Crashlytics.framework/run 69c46441eff2d4c6f8a043fd66d16ff159cd9812";
+			shellScript = "if [ \"${CONFIGURATION}\" != \"Debug\" ]; then\n../../mob-ioscore-lib/lib/Crashlytics/Fabric.framework/run 69c46441eff2d4c6f8a043fd66d16ff159cd9812 1192e1497ab0deac603c36fb2464fd4c0a8452fee2494999c0c302fea55ff94c\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
