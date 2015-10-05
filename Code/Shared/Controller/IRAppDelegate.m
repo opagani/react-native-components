@@ -26,7 +26,6 @@
 //view controllers
 #import "ICDiscoveryViewController.h"
 #import "IRMainMenuViewController.h"
-#import "ICMainViewControllerPad.h"
 
 //frameworks
 #import <Crashlytics/Crashlytics.h>
@@ -69,6 +68,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 		[userLocations writeToFile: path atomically:YES];
 	}
 }
+
 - (void)getUserLocations {
 	NSString *docFolder = [NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 	NSString *path = [docFolder stringByAppendingPathComponent:
@@ -94,12 +94,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 {
     IRMainMenuViewController *menuController = [[IRMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
     
-    ICMainViewControllerPad *searchController = [ICMainViewControllerPad sharedInstance];
-    searchController.toggleMenuBlock = ^(BOOL show){
-        [self.menuAndSrpContainerController toggleMenu:show];
-    };
-    
-    ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:searchController];
+    ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:menuController];
     self.menuAndSrpContainerController = [[ICMenuContainerViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
     self.navController = navCtr;
 }
@@ -120,9 +115,10 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     [self initializeRootViewControllerForIpad];
     
-    if ([ICUtility freshInstall]) {
-        [self showOnboardingScreensForIPad];
-    } else {
+    if ([self shouldShowOnboardingScreens]) {
+        [self showOnboardingScreens];
+    }
+    else {
         [self setRootViewControllerForIpad];
     }
 }
@@ -142,19 +138,14 @@ void uncaughtExceptionHandler(NSException *exception) {
     return [ICUtility freshInstall];
 }
 
-- (void)showOnboardingScreensForIPad {
-    self.onboardingControllerPad = [[ICOnboardingViewControllerPad alloc] initWithNibName:@"ICOnboardingViewControllerPad"
-                                                                                   bundle:[NSBundle coreResourcesBundle]];
-    [self.onboardingControllerPad setDelegate:self];
-    [_window setRootViewController:self.onboardingControllerPad];
-    [_window makeKeyAndVisible];
-}
-
-- (void)showOnboardingScreensForIPhone {
-    self.onboardingControllerPhone = [[ICOnboardingViewControllerPhone alloc] initWithNibName:@"ICOnboardingViewControllerPhone"
-                                                                                       bundle:[NSBundle coreResourcesBundle]];
-    [self.onboardingControllerPhone setDelegate:self];
-    [_window setRootViewController:self.onboardingControllerPhone];
+- (void)showOnboardingScreens
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ICOnboardingBaseViewController" bundle:[NSBundle coreResourcesBundle]];
+    
+    self.onboardingController = [storyboard instantiateInitialViewController];
+    self.onboardingController.delegate = self;
+    
+    [_window setRootViewController:self.onboardingController];
     [_window makeKeyAndVisible];
 }
 
@@ -191,9 +182,10 @@ void uncaughtExceptionHandler(NSException *exception) {
     [self initializeRootViewControllerForIphone];
     
     // show only for first install and not upgrade
-    if ([ICUtility freshInstall]) {
-        [self showOnboardingScreensForIPhone];
-    } else {
+    if ([self shouldShowOnboardingScreens]) {
+        [self showOnboardingScreens];
+    }
+    else {
         [self setRootViewControllerForIphone];
     }
     [self showUpgradePopup];

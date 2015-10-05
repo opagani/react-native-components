@@ -32,28 +32,65 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fb468741039850614</string>
-				<string>trulia</string>
+				<string>gsd-TruliaPDPForRent</string>
+				<string>gsd-TruliaPDPForSale</string>
+				<string>gsd-TruliaPDPForSale</string>
+				<string>gsd-TruliaPDPForRent</string>
+				<string>gsd-trulia</string>
+				<string>gsd-TruliaMap</string>
+				<string>TruliaSRPForSale</string>
 				<string>TruliaSRPForRent</string>
+				<string>TruliaPDPForSale</string>
 				<string>TruliaPDPForRent</string>
+				<string>trulia</string>
+				<string>TruliaMap</string>
+				<string>TruliaBringToForegroundOnly</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleURLTypes~iphone</key>
 	<array>
 		<dict>
-			<key>CFBundleURLName</key>
-			<string>com.trulia.TruliaRentalUniversal</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>TruliaCollabNewProperty</string>
-				<string>TruliaCollabAllBoards</string>
-				<string>TruliaCollabInvitation</string>
 				<string>fb468741039850614</string>
-				<string>trulia</string>
+				<string>gsd-TruliaIphone</string>
+				<string>gsd-trulia</string>
+				<string>gsd-TruliaPDPForRent</string>
+				<string>gsd-TruliaPDPForSale</string>
+				<string>gsd-TruliaSRPForRent</string>
+				<string>gsd-TruliaSRPForSale</string>
+				<string>TruliaSRPForSale</string>
 				<string>TruliaSRPForRent</string>
+				<string>TruliaPDPForSale</string>
 				<string>TruliaPDPForRent</string>
+				<string>trulia</string>
+				<string>TruliaIphone</string>
+				<string>TruliaCollabNewProperty</string>
+				<string>TruliaCollabInvitation</string>
+				<string>TruliaCollabAllBoards</string>
+				<string>TruliaBringToForegroundOnly</string>
 			</array>
+			<key>CFBundleURLName</key>
+			<string>com.trulia.TruliaRentalUniversal</string>
 		</dict>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+		<string>itms</string>
+		<string>itms-apps</string>
+		<string>tel</string>
+		<string>sms</string>
+		<string>googlechrome</string>
+		<string>comgooglemaps-x-callback</string>
+		<string>comgooglemaps</string>
+		<string>TruliaAgentApp</string>
+		<string>TruliaForSale</string>
+		<string>truliarental</string>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>115</string>
