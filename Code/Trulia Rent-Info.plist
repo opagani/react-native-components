@@ -21,7 +21,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.5</string>
+	<string>4.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes~ipad</key>
@@ -51,6 +51,8 @@
 	<key>CFBundleURLTypes~iphone</key>
 	<array>
 		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.trulia.TruliaRentalUniversal</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fb468741039850614</string>
@@ -71,34 +73,10 @@
 				<string>TruliaCollabAllBoards</string>
 				<string>TruliaBringToForegroundOnly</string>
 			</array>
-			<key>CFBundleURLName</key>
-			<string>com.trulia.TruliaRentalUniversal</string>
 		</dict>
 	</array>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>fbapi</string>
-		<string>fb-messenger-api</string>
-		<string>fbauth2</string>
-		<string>fbshareextension</string>
-		<string>itms</string>
-		<string>itms-apps</string>
-		<string>tel</string>
-		<string>sms</string>
-		<string>googlechrome</string>
-		<string>comgooglemaps-x-callback</string>
-		<string>comgooglemaps</string>
-		<string>TruliaAgentApp</string>
-		<string>TruliaForSale</string>
-		<string>truliarental</string>
-	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 	<key>CFBundleVersion</key>
-	<string>115</string>
+	<string>131</string>
 	<key>FacebookAppID</key>
 	<string>468741039850614</string>
 	<key>FacebookAppIDTest</key>
@@ -118,8 +96,30 @@
 	<array>
 		<string></string>
 	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+		<string>itms</string>
+		<string>itms-apps</string>
+		<string>tel</string>
+		<string>sms</string>
+		<string>googlechrome</string>
+		<string>comgooglemaps-x-callback</string>
+		<string>comgooglemaps</string>
+		<string>TruliaAgentApp</string>
+		<string>TruliaForSale</string>
+		<string>truliarental</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Trulia needs your location to allow you to search and get updates on homes nearby.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
