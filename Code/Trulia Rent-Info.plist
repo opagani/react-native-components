@@ -92,6 +92,11 @@
 		<string>TruliaForSale</string>
 		<string>truliarental</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CFBundleVersion</key>
 	<string>115</string>
 	<key>FacebookAppID</key>
