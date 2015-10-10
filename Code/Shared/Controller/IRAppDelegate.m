@@ -60,77 +60,70 @@ void uncaughtExceptionHandler(NSException *exception) {
     }
 }
 
-- (void)saveUserLocations {
-	NSString *docFolder = [NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-	NSString *path = [docFolder stringByAppendingPathComponent:@"locations.plist"];
-	NSArray *userLocations = [[ICListingSearchController sharedInstance] getUserLocationsForSave];
-	if(userLocations != nil && [userLocations count] > 0) {
-		[userLocations writeToFile: path atomically:YES];
-	}
+#pragma mark - Overridden Methods
+
+-(void)setupCollaboration{
+    //updates the current sessions collab enabled flag to the collab flag in ICState
+    //these values may be different at various times during the apps life cycle
+    //eg. app/v1/query returns collab enabled flag after didFinishLaunching finishes
+    ICState * state                 = [ICState sharedInstance];
+    [ICPreference updateCollabEnabledPreferenceFromState:state];
 }
 
-- (void)getUserLocations {
-	NSString *docFolder = [NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-	NSString *path = [docFolder stringByAppendingPathComponent:
-					  @"locations.plist"];
-	NSArray *locations = [NSArray arrayWithContentsOfFile:path];
-	if(locations != nil) {
-        NSMutableArray *tmp = [[NSMutableArray alloc] init];
-        
-        if([locations count] > 0)
-            [tmp addObjectsFromArray:locations];
-        
-        [ICListingSearchController sharedInstance].previouslySearchedLocations = tmp;
-	}
+#pragma mark - Configuration Methods
+
+- (void)configureWindow {
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    if ([self.window respondsToSelector:@selector(tintColor)]) {
+        [self.window setTintColor:[UIColor truliaGreen]];
+    }
+    // the color background is white so that it natches with the background when status bar hides in the photoviewcontroller
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    [ICAppearance applyDefaultStyle];
 }
 
-- (void)setRootViewControllerForIpad
+- (void)setupRentalConfigurations {
+    ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
+    currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
+    [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
+    
+    [ICManagedSearch setDefaultIndexType:IC_INDEXTYPE_FORRENT];
+}
+
+- (void)initializeRootViewController
+{
+    IRMainMenuViewController *menuController = [[IRMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
+    
+    UIViewController *rootViewController = [self navigationRootViewController];
+    ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:rootViewController];
+    self.menuAndSrpContainerController = [[ICMenuContainerViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
+    self.navController = navCtr;
+}
+
+- (UIViewController *)navigationRootViewController {
+    if ([UIDevice isPad]) {
+        return [ICSRPViewControllerDefault sharedInstance];
+    }
+    return [ICDiscoveryViewController new];
+}
+
+- (void)setRootViewController
 {
     [_window setRootViewController:self.menuAndSrpContainerController];
     [_window makeKeyAndVisible];
 }
 
-- (void)initializeRootViewControllerForIpad
-{
-    IRMainMenuViewController *menuController = [[IRMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
-    
-    ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:menuController];
-    self.menuAndSrpContainerController = [[ICMenuContainerViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
-    self.navController = navCtr;
-}
-
-- (void)setupAppConfigurationForIpad
-{
-    /* ICApplicationConfigurationRequest *configRequest = [[ICApplicationConfigurationRequest alloc] init];
-     self.applicationConfigRequest = configRequest;
-     [_applicationConfigRequest setDelegate:self];
-     [_applicationConfigRequest startRequest];
-     //[AnalyticsManager startTracker];*/
-}
-
-- (void)launchIpadApp
-{
-    [self setupAppConfigurationForIpad];
-    [self getUserLocations];
-    
-    [self initializeRootViewControllerForIpad];
+- (void)launchApp {
+    [self initializeRootViewController];
     
     if ([self shouldShowOnboardingScreens]) {
         [self showOnboardingScreens];
     }
     else {
-        [self setRootViewControllerForIpad];
-    }
-}
-
-- (void)setRootViewControllerForIphone {
-    [_window setRootViewController:self.menuAndSrpContainerController];
-    [_window makeKeyAndVisible];
-}
-
-- (void)showUpgradePopup {
-    if([super isNewAppVersionAvailable]){
-        [self showUpgradeAppPopup];
+        [self setRootViewController];
     }
 }
 
@@ -149,57 +142,12 @@ void uncaughtExceptionHandler(NSException *exception) {
     [_window makeKeyAndVisible];
 }
 
-#pragma mark OverRidden Methods
-
--(void)setupCollaboration{
-    //updates the current sessions collab enabled flag to the collab flag in ICState
-    //these values may be different at various times during the apps life cycle
-    //eg. app/v1/query returns collab enabled flag after didFinishLaunching finishes
-    ICState * state                 = [ICState sharedInstance];
-    [ICPreference updateCollabEnabledPreferenceFromState:state];
-}
-
-- (void)setupRentalConfigurations {
-    ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
-    currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
-    [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
-    
-    [ICManagedSearch setDefaultIndexType:IC_INDEXTYPE_FORRENT];
-}
-
-- (void)initializeRootViewControllerForIphone{
-    
-    IRMainMenuViewController *menuController = [[IRMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
-    
-    ICDiscoveryViewController * discoveryViewController = [ICDiscoveryViewController new];
-    ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:discoveryViewController];
-    self.menuAndSrpContainerController = [[ICMenuContainerViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
-    self.navController = navCtr;
-}
-
-- (void)launchIphoneApp{
-    
-    [self initializeRootViewControllerForIphone];
-    
-    // show only for first install and not upgrade
-    if ([self shouldShowOnboardingScreens]) {
-        [self showOnboardingScreens];
-    }
-    else {
-        [self setRootViewControllerForIphone];
-    }
-    [self showUpgradePopup];
-}
 
 #pragma mark - onboarding delegate
 
 -(void)onBoardingScreensDimissed:(UIViewController *)onboardingVC {
     [UIApplication sharedApplication].statusBarHidden = NO;
-    if ([UIDevice isPhone]){
-        [self setRootViewControllerForIphone];
-    } else {
-        [self setRootViewControllerForIpad];
-    }
+    [self setRootViewController];
 }
 
 - (void)requestNotificationsPermission {
@@ -209,15 +157,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 #pragma mark - Splash Screen Delegate for iPhone
 
 -(void)dismissStartupScreen:(UIViewController*)viewController{
-    
-    [self setRootViewControllerForIphone];
-}
-
-- (void)setupTracking
-{
-    [super setupTracking];
-
-   // [NewRelicAgent startWithApplicationToken:TRULIA_NEW_RELIC_API_KEY_RENTALS];
+    [self setRootViewController];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -226,38 +166,13 @@ void uncaughtExceptionHandler(NSException *exception) {
         return NO;
     };
     
-    [[UIApplication sharedApplication] setStatusBarHidden:NO];
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    if ([self.window respondsToSelector:@selector(tintColor)]) {
-        [self.window setTintColor:[UIColor truliaGreen]];
-    }
-    // the color background is white so that it natches with the background when status bar hides in the photoviewcontroller
-    self.window.backgroundColor = [UIColor whiteColor];
-    
-    [ICAppearance applyDefaultStyle];
-    
+    [self configureWindow];
     [self setupRentalConfigurations];
-    
-    if ([UIDevice isPhone]) {
-        [self launchIphoneApp];
-    }
-    else{
-        [self launchIpadApp];
-    }
+    [self launchApp];
     
     [ICListingRefineViewController setSegmentControlModes:@[@(ICListingRefineModeForRent)]];
     
-    //NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-    
     return YES;
-}
-
-#pragma mark - Splash Screen Delegate for iPad
-
--(void)goingOutOfView:(UIViewController*)viewController{
-    
-    [self setRootViewControllerForIpad];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -273,9 +188,6 @@ void uncaughtExceptionHandler(NSException *exception) {
         
         NSInteger unreadCount = MAX([ICManagedNotification numberofUnreadNotifications], 0);
         [UIApplication sharedApplication].applicationIconBadgeNumber = unreadCount;
-    }
-    else{
-    	[self saveUserLocations];
     }
 }
 
@@ -302,12 +214,7 @@ void uncaughtExceptionHandler(NSException *exception) {
      Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
      */
     
-    if ([UIDevice isPhone]){
-        if([super isNewAppVersionAvailable]){
-            [self showUpgradeAppPopup];
-        }
-    }
-    else{
+    if (![UIDevice isPhone]){
         
         [[ICCurrentLocationController sharedInstance].locationManager stopUpdatingLocation];
         //[[GRCurrentLocationController sharedInstance] resetLocationStatusFlags];
@@ -315,7 +222,6 @@ void uncaughtExceptionHandler(NSException *exception) {
         
         //	[self.viewController processRateUsAppPopup];
         [[ICPreference sharedInstance] synchronize];
-        [self getUserLocations];
     }
     
     [super applicationWillEnterForeground:(UIApplication *)application];
@@ -340,25 +246,6 @@ void uncaughtExceptionHandler(NSException *exception) {
     [[ICPreference sharedInstance] synchronize];
 }
 
-- (void)processUpgradeAppPopup:(NSString *)bundleAPI {
-	NSString *bundleShortVersion = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"];
-	
-	if([bundleAPI compare:bundleShortVersion] != NSOrderedSame && [bundleAPI compare:@"off"] != NSOrderedSame && [[ICPreference sharedInstance] getVisForKey:@"shown_upgradeapp_prompt"] == nil) {
-		[self showUpgradeAppPopup];
-	}
-	
-}
-
-- (void)showUpgradeAppPopup {
-	UIAlertView *upgradeAppAlert = [[UIAlertView alloc] initWithTitle: @"Get the new app" message: @"An updated version of the Trulia App is now available via iTunes." delegate: self cancelButtonTitle: @"Not Now" otherButtonTitles: @"Update", nil];
-    upgradeAppAlert.tag = TruliaAlertTypeUpdate;
-    
-    [[ICAnalyticsController sharedInstance] trackState:@"promo|update app|view" withContextData:[NSMutableDictionary dictionary]];
-    
-	[upgradeAppAlert show];
-	[[ICPreference sharedInstance] setVisForKey:@"shown_upgradeapp_prompt" withAttribute:[[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"]];
-}
-
 //same for rate us app and upgrade app alert
 - (void)alertView:(UIAlertView *)appAlert clickedButtonAtIndex:(NSInteger)buttonIndex {
     
@@ -374,11 +261,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     {
         NSMutableString *trackingString = [NSMutableString stringWithString:@"promo"];
         
-        if (appAlert.tag == TruliaAlertTypeUpdate)
-        {
-            [trackingString appendString:@"|update app"];
-        }
-        else if (appAlert.tag == TruliaPromoAlertTypeRateAppUniversal)
+        if (appAlert.tag == TruliaPromoAlertTypeRateAppUniversal)
         {
             [trackingString appendString:@"|rate app"];
         }
