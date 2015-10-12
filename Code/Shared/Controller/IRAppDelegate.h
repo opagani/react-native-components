@@ -20,17 +20,7 @@
 @property (nonatomic, strong) UIWindow *window;
 
 @property (nonatomic, strong) ICOnboardingBaseViewController *onboardingController;
-
-// navController is only being used by the iphone
 @property (nonatomic, strong) ICNavigationController *navController;
-
-- (void)showUpgradeAppPopup;
-- (void)processUpgradeAppPopup:(NSString *)bundleAPI;
-
-
-// ipad additions
-- (void)saveUserLocations;
-- (void)getUserLocations;
 
 void uncaughtExceptionHandler(NSException *exception);
 
