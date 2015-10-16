@@ -184,8 +184,6 @@ void uncaughtExceptionHandler(NSException *exception) {
      */
     if ([UIDevice isPhone]){
         
-        [self.navController dismissViewControllerAnimated:YES completion:nil];
-        
         NSInteger unreadCount = MAX([ICManagedNotification numberofUnreadNotifications], 0);
         [UIApplication sharedApplication].applicationIconBadgeNumber = unreadCount;
     }
