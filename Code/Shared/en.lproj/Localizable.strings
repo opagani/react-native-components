@@ -216,18 +216,18 @@
 "pleaseSetUpFacebookAccountInIosSettings"="Please set up your facebook account in Settings > Facebook";
 
 "MenuShareMessageFacebook" = "Check out the Trulia mobile app to find homes and apartments near you. Download the app now";
-"MenuShareLinkFacebook" = "http://on.trulia.com/app_fb";
+"MenuShareLinkFacebook" = "http://on.trulia.com/facebook_ifr";
 
 "MenuShareMessageTwitter" = "Check out the @Trulia app to see homes & apts near you. Download";
-"MenuShareLinkTwitter" = "http://on.trulia.com/app_tw";
+"MenuShareLinkTwitter" = "http://on.trulia.com/twitter_ifr";
 
 "MenuShareMessageEmail" = "Check out the Trulia mobile app to find homes and apartments near you. Download the app now";
-"MenuShareLinkEmail" = "http://on.trulia.com/app_e";
+"MenuShareLinkEmail" = "http://on.trulia.com/email_ifr";
 
 "MenuShareMessageSMS" = "Check out the Trulia mobile app to find homes and apartments near you. Download";
-"MenuShareLinkSMS" = "http://on.trulia.com/app_sms";
+"MenuShareLinkSMS" = "http://on.trulia.com/sms_isms";
 
-"MenuShareLinkAirDrop" = "https://itunes.apple.com/us/app/real-estate-by-trulia-homes/id288487321?mt=8";
+"MenuShareLinkAirDrop" = "https://itunes.apple.com/us/app/trulia-rentals-find-homes/id508163604?mt=8";
 
 "MenuShareEmailSubject" = "Check out the Trulia Mobile App";
 
