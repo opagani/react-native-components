@@ -18,8 +18,6 @@
 		056336811BBCB77D0065F5D8 /* TUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056336801BBCB77D0065F5D8 /* TUIKit.framework */; settings = {ASSET_TAGS = (); }; };
 		056336831BBCB8120065F5D8 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056336821BBCB8120065F5D8 /* Fabric.framework */; settings = {ASSET_TAGS = (); }; };
 		056B50281B4F250300627AD9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056B50271B4F250300627AD9 /* Bolts.framework */; };
-		05A350741B17E1DA006D40E7 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */; };
-		05A350751B17E1DA006D40E7 /* ADBMobileConfigRelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */; };
 		05A431891B1693740024CEA4 /* IRBoardManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */; };
 		05CA58D91BBF15D0000E28A8 /* MobileAppTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0563367A1BBCB6490065F5D8 /* MobileAppTracker.framework */; };
 		05CA58DB1BBF16A5000E28A8 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CA58DA1BBF16A5000E28A8 /* iAd.framework */; };
@@ -75,6 +73,8 @@
 		7B3DD94A1BE15FEE009823CA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B3DD9491BE15FEE009823CA /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		7B3DD94E1BE185D2009823CA /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3DD94D1BE185D2009823CA /* Crashlytics.framework */; settings = {ASSET_TAGS = (); }; };
 		7B3DD9501BE188A9009823CA /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3DD94F1BE188A9009823CA /* GoogleMobileAds.framework */; settings = {ASSET_TAGS = (); }; };
+		7B3DD9531BE189EC009823CA /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B3DD9511BE189EC009823CA /* ADBMobileConfig.json */; settings = {ASSET_TAGS = (); }; };
+		7B3DD9541BE189EC009823CA /* ADBMobileConfigRelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B3DD9521BE189EC009823CA /* ADBMobileConfigRelease.json */; settings = {ASSET_TAGS = (); }; };
 		9D23EC5E17205D300048E737 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D23EC5D17205D300048E737 /* ImageIO.framework */; };
 		9D37273716657DA00018B275 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D37273616657DA00018B275 /* libOCMock.a */; };
 		9D372CD51667ED530018B275 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597C14D2219800DB87CA /* AddressBook.framework */; };
@@ -164,8 +164,6 @@
 		056336801BBCB77D0065F5D8 /* TUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TUIKit.framework; path = "../../mob-ioscore-lib/lib/TUIKit.framework"; sourceTree = "<group>"; };
 		056336821BBCB8120065F5D8 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = "../../mob-ioscore-lib/lib/Crashlytics/Fabric.framework"; sourceTree = "<group>"; };
 		056B50271B4F250300627AD9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../mob-ioscore-lib/lib/FacebookSDK/Bolts.framework"; sourceTree = "<group>"; };
-		05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
-		05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfigRelease.json; sourceTree = "<group>"; };
 		05A431871B1693740024CEA4 /* IRBoardManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRBoardManagerViewController.h; path = ViewController/IRBoardManagerViewController.h; sourceTree = "<group>"; };
 		05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRBoardManagerViewController.m; path = ViewController/IRBoardManagerViewController.m; sourceTree = "<group>"; };
 		05CA58DA1BBF16A5000E28A8 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
@@ -230,6 +228,8 @@
 		7B3DD9491BE15FEE009823CA /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Resources/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		7B3DD94D1BE185D2009823CA /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = "../../mob-ioscore-lib/lib/Crashlytics/Crashlytics.framework"; sourceTree = "<group>"; };
 		7B3DD94F1BE188A9009823CA /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../mob-ioscore-lib/lib/GoogleMobileAdsSdkiOS-7.5.1/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		7B3DD9511BE189EC009823CA /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ADBMobileConfig.json; path = Resources/jsons/ADBMobileConfig.json; sourceTree = "<group>"; };
+		7B3DD9521BE189EC009823CA /* ADBMobileConfigRelease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ADBMobileConfigRelease.json; path = Resources/jsons/ADBMobileConfigRelease.json; sourceTree = "<group>"; };
 		9D23EC5D17205D300048E737 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		9D37273016657DA00018B275 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
 		9D37273116657DA00018B275 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
@@ -370,8 +370,8 @@
 		05A350711B17E1B4006D40E7 /* json */ = {
 			isa = PBXGroup;
 			children = (
-				05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */,
-				05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */,
+				7B3DD9511BE189EC009823CA /* ADBMobileConfig.json */,
+				7B3DD9521BE189EC009823CA /* ADBMobileConfigRelease.json */,
 				269D198D19B925F0000440BC /* LocalInfoItems~ipad.json */,
 				2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */,
 			);
@@ -729,18 +729,18 @@
 				9D94D26F161A0B5C0089CEEC /* copyright.html in Resources */,
 				2E309C2E167024BF00A31BD0 /* LICENSE.txt in Resources */,
 				2E309C2F167024BF00A31BD0 /* OpenSans-Bold.ttf in Resources */,
+				7B3DD9531BE189EC009823CA /* ADBMobileConfig.json in Resources */,
 				2E309C30167024BF00A31BD0 /* OpenSans-BoldItalic.ttf in Resources */,
+				7B3DD9541BE189EC009823CA /* ADBMobileConfigRelease.json in Resources */,
 				2E309C31167024BF00A31BD0 /* OpenSans-ExtraBold.ttf in Resources */,
 				2E309C32167024BF00A31BD0 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				2E309C33167024BF00A31BD0 /* OpenSans-Italic.ttf in Resources */,
-				05A350741B17E1DA006D40E7 /* ADBMobileConfig.json in Resources */,
 				2E309C34167024BF00A31BD0 /* OpenSans-Light.ttf in Resources */,
 				2E309C35167024BF00A31BD0 /* OpenSans-LightItalic.ttf in Resources */,
 				2E309C36167024BF00A31BD0 /* OpenSans-Regular.ttf in Resources */,
 				2E309C37167024BF00A31BD0 /* OpenSans-Semibold.ttf in Resources */,
 				2E309C38167024BF00A31BD0 /* OpenSans-SemiboldItalic.ttf in Resources */,
 				3B5EF54B170B8DFC003F00ED /* Localizable.strings in Resources */,
-				05A350751B17E1DA006D40E7 /* ADBMobileConfigRelease.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
