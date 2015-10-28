@@ -19,7 +19,6 @@
 		056336811BBCB77D0065F5D8 /* TUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056336801BBCB77D0065F5D8 /* TUIKit.framework */; settings = {ASSET_TAGS = (); }; };
 		056336831BBCB8120065F5D8 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056336821BBCB8120065F5D8 /* Fabric.framework */; settings = {ASSET_TAGS = (); }; };
 		056B50281B4F250300627AD9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056B50271B4F250300627AD9 /* Bolts.framework */; };
-		059511DF1B3C8EF70034F6B3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059511DE1B3C8EF70034F6B3 /* Crashlytics.framework */; };
 		05A350741B17E1DA006D40E7 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */; };
 		05A350751B17E1DA006D40E7 /* ADBMobileConfigRelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */; };
 		05A431891B1693740024CEA4 /* IRBoardManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */; };
@@ -30,7 +29,6 @@
 		05F168EF1BBF48D400E8A612 /* TUIKit.framework in Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 056336801BBCB77D0065F5D8 /* TUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */; };
 		266139DB164AF82E00D19093 /* IRURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 266139DA164AF82E00D19093 /* IRURLCache.m */; };
-		269D198B19B91579000440BC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 269D198A19B91579000440BC /* GoogleMaps.bundle */; };
 		269D198E19B925F0000440BC /* LocalInfoItems~ipad.json in Resources */ = {isa = PBXBuildFile; fileRef = 269D198D19B925F0000440BC /* LocalInfoItems~ipad.json */; };
 		2E1AD2F2165436B500C81545 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1AD2F1165436B500C81545 /* libz.dylib */; };
 		2E309C2E167024BF00A31BD0 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E309C23167024BF00A31BD0 /* LICENSE.txt */; };
@@ -75,6 +73,8 @@
 		51DA6A1B14CF2F0D007F2584 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6A1A14CF2F0D007F2584 /* CoreGraphics.framework */; };
 		51E1597B14D2218F00DB87CA /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597A14D2218F00DB87CA /* AddressBookUI.framework */; };
 		51E1597D14D2219800DB87CA /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597C14D2219800DB87CA /* AddressBook.framework */; };
+		7B3DD94A1BE15FEE009823CA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B3DD9491BE15FEE009823CA /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		7B3DD94E1BE185D2009823CA /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3DD94D1BE185D2009823CA /* Crashlytics.framework */; settings = {ASSET_TAGS = (); }; };
 		9D23EC5E17205D300048E737 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D23EC5D17205D300048E737 /* ImageIO.framework */; };
 		9D37273716657DA00018B275 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D37273616657DA00018B275 /* libOCMock.a */; };
 		9D372CD51667ED530018B275 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E1597C14D2219800DB87CA /* AddressBook.framework */; };
@@ -165,7 +165,6 @@
 		056336801BBCB77D0065F5D8 /* TUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TUIKit.framework; path = "../../mob-ioscore-lib/lib/TUIKit.framework"; sourceTree = "<group>"; };
 		056336821BBCB8120065F5D8 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = "../../mob-ioscore-lib/lib/Crashlytics/Fabric.framework"; sourceTree = "<group>"; };
 		056B50271B4F250300627AD9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../mob-ioscore-lib/lib/FacebookSDK/Bolts.framework"; sourceTree = "<group>"; };
-		059511DE1B3C8EF70034F6B3 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = "../../mob-ioscore-lib/lib/Crashlytics/Crashlytics.framework"; sourceTree = "<group>"; };
 		05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
 		05A350731B17E1DA006D40E7 /* ADBMobileConfigRelease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfigRelease.json; sourceTree = "<group>"; };
 		05A431871B1693740024CEA4 /* IRBoardManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRBoardManagerViewController.h; path = ViewController/IRBoardManagerViewController.h; sourceTree = "<group>"; };
@@ -177,7 +176,6 @@
 		2611965A1950F3F300C4F392 /* LocalInfoItems~iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "LocalInfoItems~iphone.json"; path = "Resources/jsons/LocalInfoItems~iphone.json"; sourceTree = "<group>"; };
 		266139D9164AF82E00D19093 /* IRURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRURLCache.h; path = ../../Ipad/Shared/Controller/IRURLCache.h; sourceTree = "<group>"; };
 		266139DA164AF82E00D19093 /* IRURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRURLCache.m; path = ../../Ipad/Shared/Controller/IRURLCache.m; sourceTree = "<group>"; };
-		269D198A19B91579000440BC /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
 		269D198D19B925F0000440BC /* LocalInfoItems~ipad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "LocalInfoItems~ipad.json"; path = "Resources/jsons/LocalInfoItems~ipad.json"; sourceTree = "<group>"; };
 		2E1AD2F1165436B500C81545 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		2E309C23167024BF00A31BD0 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -230,6 +228,8 @@
 		51DA6C2514CF5896007F2584 /* ICMetric~iphone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~iphone.plist"; sourceTree = "<group>"; };
 		51E1597A14D2218F00DB87CA /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		51E1597C14D2219800DB87CA /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		7B3DD9491BE15FEE009823CA /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Resources/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		7B3DD94D1BE185D2009823CA /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = "../../mob-ioscore-lib/lib/Crashlytics/Crashlytics.framework"; sourceTree = "<group>"; };
 		9D23EC5D17205D300048E737 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		9D37273016657DA00018B275 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
 		9D37273116657DA00018B275 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
@@ -300,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E07EAACE194A34C3006BE023 /* libc++.dylib in Frameworks */,
+				7B3DD94E1BE185D2009823CA /* Crashlytics.framework in Frameworks */,
 				3BB379FA16C42AA1006A253B /* libicucore.dylib in Frameworks */,
 				E05C232618C682E4009A3207 /* libIosCore.a in Frameworks */,
 				51802F4D14CF797A00199144 /* libsqlite3.0.dylib in Frameworks */,
@@ -319,7 +320,6 @@
 				51802F4714CF794500199144 /* CoreLocation.framework in Frameworks */,
 				3BAC7D5E16F7A150005E4508 /* CoreTelephony.framework in Frameworks */,
 				2E309C41167028D700A31BD0 /* CoreText.framework in Frameworks */,
-				059511DF1B3C8EF70034F6B3 /* Crashlytics.framework in Frameworks */,
 				E052A20E187E148100B0A358 /* EventKit.framework in Frameworks */,
 				E052A210187E148800B0A358 /* EventKitUI.framework in Frameworks */,
 				056336831BBCB8120065F5D8 /* Fabric.framework in Frameworks */,
@@ -381,11 +381,11 @@
 		261196591950F3E200C4F392 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7B3DD9491BE15FEE009823CA /* Launch Screen.storyboard */,
 				2E309C21167024BF00A31BD0 /* Fonts */,
 				3B5EF549170B8DFC003F00ED /* Localizable.strings */,
 				9D94D248161A0B5C0089CEEC /* copyright.html */,
 				05A350711B17E1B4006D40E7 /* json */,
-				269D198A19B91579000440BC /* GoogleMaps.bundle */,
 				05E7344D1B66C84500E92FA9 /* Images.xcassets */,
 			);
 			name = Resources;
@@ -527,9 +527,9 @@
 				51802F4614CF794500199144 /* CoreLocation.framework */,
 				3BAC7D5D16F7A150005E4508 /* CoreTelephony.framework */,
 				2E309C40167028D700A31BD0 /* CoreText.framework */,
-				059511DE1B3C8EF70034F6B3 /* Crashlytics.framework */,
 				E052A20D187E148100B0A358 /* EventKit.framework */,
 				E052A20F187E148800B0A358 /* EventKitUI.framework */,
+				7B3DD94D1BE185D2009823CA /* Crashlytics.framework */,
 				056336821BBCB8120065F5D8 /* Fabric.framework */,
 				0558ED8A1B4C681F00ABE204 /* FBSDKCoreKit.framework */,
 				0558ED8C1B4C683200ABE204 /* FBSDKLoginKit.framework */,
@@ -724,8 +724,8 @@
 				E09140E5195DF983002890C6 /* ICConfiguration.bundle in Resources */,
 				05E7344E1B66C84500E92FA9 /* Images.xcassets in Resources */,
 				2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */,
-				269D198B19B91579000440BC /* GoogleMaps.bundle in Resources */,
 				269D198E19B925F0000440BC /* LocalInfoItems~ipad.json in Resources */,
+				7B3DD94A1BE15FEE009823CA /* Launch Screen.storyboard in Resources */,
 				9D94D26F161A0B5C0089CEEC /* copyright.html in Resources */,
 				2E309C2E167024BF00A31BD0 /* LICENSE.txt in Resources */,
 				2E309C2F167024BF00A31BD0 /* OpenSans-Bold.ttf in Resources */,
@@ -865,7 +865,6 @@
 				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../lib/OCMock\"",
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(SRCROOT)/../../IosCore/lib\"",
 				);
@@ -874,13 +873,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../lib/OCMock\"/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../lib/OCMock\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-fprofile-arcs",
@@ -911,7 +907,6 @@
 				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../lib/OCMock\"",
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(SRCROOT)/../../IosCore/lib\"",
 				);
@@ -920,13 +915,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../lib/OCMock\"/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../lib/OCMock\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1022,10 +1014,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"../../mob-ioscore-lib/**",
-					"\"$(SRCROOT)/../lib/OCMock\"/**",
-				);
+				HEADER_SEARCH_PATHS = "../../mob-ioscore-lib/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1065,10 +1054,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"../../mob-ioscore-lib/**",
-					"\"$(SRCROOT)/../lib/OCMock\"/**",
-				);
+				HEADER_SEARCH_PATHS = "../../mob-ioscore-lib/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
@@ -1094,7 +1080,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
@@ -1144,7 +1129,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
@@ -1212,10 +1196,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"../../mob-ioscore-lib/**",
-					"\"$(SRCROOT)/../lib/OCMock\"/**",
-				);
+				HEADER_SEARCH_PATHS = "../../mob-ioscore-lib/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1239,7 +1220,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
@@ -1320,7 +1300,6 @@
 				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../lib/OCMock\"",
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(SRCROOT)/../../IosCore/lib\"",
 				);
@@ -1329,13 +1308,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../lib/OCMock\"/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../lib/OCMock\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-fprofile-arcs",
@@ -1385,10 +1361,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"../../mob-ioscore-lib/**",
-					"\"$(SRCROOT)/../lib/OCMock\"/**",
-				);
+				HEADER_SEARCH_PATHS = "../../mob-ioscore-lib/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1412,7 +1385,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
@@ -1493,7 +1465,6 @@
 				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../lib/OCMock\"",
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(SRCROOT)/../../IosCore/lib\"",
 				);
@@ -1502,13 +1473,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../lib/OCMock\"/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../lib/OCMock\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-fprofile-arcs",
