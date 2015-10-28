@@ -478,8 +478,6 @@
 		51DA6A0714CF2F0D007F2584 = {
 			isa = PBXGroup;
 			children = (
-				E09140E7195DFE3C002890C6 /* IosCoreResources.bundle */,
-				E09140E4195DF983002890C6 /* ICConfiguration.bundle */,
 				261196591950F3E200C4F392 /* Resources */,
 				4C0CEEEB14D6634A00A1D325 /* Shared */,
 				26E2056315FFE2CA00B29DE6 /* lib */,
@@ -512,6 +510,8 @@
 				51802F4C14CF797A00199144 /* libsqlite3.0.dylib */,
 				2E493CA01630C940004C361A /* libxml2.dylib */,
 				2E1AD2F1165436B500C81545 /* libz.dylib */,
+				E09140E7195DFE3C002890C6 /* IosCoreResources.bundle */,
+				E09140E4195DF983002890C6 /* ICConfiguration.bundle */,
 				E052A209187E145E00B0A358 /* Accelerate.framework */,
 				B7EA94C41635E0CC00B02F3F /* Accounts.framework */,
 				51E1597C14D2219800DB87CA /* AddressBook.framework */,
