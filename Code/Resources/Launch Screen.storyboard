@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -21,19 +22,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchscreen_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Lfh-jE-2aF">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchscreen_logo" translatesAutoresizingMaskIntoConstraints="NO" id="eOU-nk-GW5">
-                                <rect key="frame" x="213" y="277" width="174" height="47"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-trulia" translatesAutoresizingMaskIntoConstraints="NO" id="eOU-nk-GW5">
+                                <rect key="frame" x="0.0" y="264" width="580" height="60"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="eOU-nk-GW5" firstAttribute="leading" secondItem="Lfh-jE-2aF" secondAttribute="leading" id="BJl-Fj-cbe"/>
                             <constraint firstItem="eOU-nk-GW5" firstAttribute="width" relation="lessThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.5" id="F69-eO-sqS"/>
                             <constraint firstAttribute="trailing" secondItem="Lfh-jE-2aF" secondAttribute="trailing" id="JPj-7t-VfB"/>
-                            <constraint firstItem="eOU-nk-GW5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="S5W-jX-c6c"/>
-                            <constraint firstItem="eOU-nk-GW5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="nc3-al-YvH"/>
-                            <constraint firstItem="eOU-nk-GW5" firstAttribute="width" relation="lessThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.6" id="oiC-Gg-LfY"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="eOU-nk-GW5" secondAttribute="bottom" constant="276" id="QCK-a1-LpO"/>
+                            <constraint firstItem="eOU-nk-GW5" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="qPZ-Ez-6I0"/>
                             <constraint firstItem="Lfh-jE-2aF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="uUl-R0-cpL"/>
                             <constraint firstItem="Lfh-jE-2aF" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="uhB-Am-JNI"/>
+                            <constraint firstItem="eOU-nk-GW5" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="244" id="y5j-f3-8j5"/>
                             <constraint firstAttribute="bottom" secondItem="Lfh-jE-2aF" secondAttribute="bottom" id="yfy-C0-VKR"/>
                         </constraints>
                         <variation key="default">
@@ -44,7 +46,6 @@
                         <variation key="widthClass=regular">
                             <mask key="constraints">
                                 <include reference="F69-eO-sqS"/>
-                                <exclude reference="oiC-Gg-LfY"/>
                             </mask>
                         </variation>
                     </view>
@@ -56,6 +57,6 @@
     </scenes>
     <resources>
         <image name="launchscreen_bg" width="1024" height="768"/>
-        <image name="launchscreen_logo" width="174" height="47"/>
+        <image name="logo-trulia" width="250" height="55"/>
     </resources>
 </document>
