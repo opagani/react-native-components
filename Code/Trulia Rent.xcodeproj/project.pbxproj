@@ -15,9 +15,9 @@
 		055BA5631B4F3DF2004ED96E /* IRMainMenuSearchSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 055BA5621B4F3DF2004ED96E /* IRMainMenuSearchSection.m */; };
 		055BA5661B4F4062004ED96E /* IRMainMenuAppsSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 055BA5651B4F4062004ED96E /* IRMainMenuAppsSection.m */; };
 		055BA5691B4F4077004ED96E /* IRMainMenuMoreSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 055BA5681B4F4077004ED96E /* IRMainMenuMoreSection.m */; };
-		0563367F1BBCB6DE0065F5D8 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0563367E1BBCB6DE0065F5D8 /* GoogleMobileAds.framework */; settings = {ASSET_TAGS = (); }; };
-		056336811BBCB77D0065F5D8 /* TUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056336801BBCB77D0065F5D8 /* TUIKit.framework */; settings = {ASSET_TAGS = (); }; };
-		056336831BBCB8120065F5D8 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056336821BBCB8120065F5D8 /* Fabric.framework */; settings = {ASSET_TAGS = (); }; };
+		0563367F1BBCB6DE0065F5D8 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0563367E1BBCB6DE0065F5D8 /* GoogleMobileAds.framework */; };
+		056336811BBCB77D0065F5D8 /* TUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056336801BBCB77D0065F5D8 /* TUIKit.framework */; };
+		056336831BBCB8120065F5D8 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056336821BBCB8120065F5D8 /* Fabric.framework */; };
 		056B50281B4F250300627AD9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056B50271B4F250300627AD9 /* Bolts.framework */; };
 		059511DF1B3C8EF70034F6B3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059511DE1B3C8EF70034F6B3 /* Crashlytics.framework */; };
 		05A350741B17E1DA006D40E7 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A350721B17E1DA006D40E7 /* ADBMobileConfig.json */; };
@@ -1095,7 +1095,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
@@ -1145,7 +1145,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
@@ -1240,7 +1240,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
@@ -1413,7 +1413,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
