@@ -6,9 +6,6 @@
  Copyright 2008 Trulia, Inc. All rights reserved.
  */
 
-
-"MyTruliaTitle"                                 = "My Account";
-
 /* User Input Validation */
 "IAValidationEmailError"                        = "Please enter a valid email address";
 "IAValidationEmailForgot"                       = "You forgot to enter your email address";
@@ -23,57 +20,6 @@
 "IACtaPrimaryRegister"                          = "Get Account";
 "IACtaLoggingOut"                               = "Logging out...";
 "IACtaLocationDeniedCheckin"                    = "Please enable your location service to Check-In";
-
-"HF_UNSUPPORTED_PARAMETERS"						= "Not incl: ";
-
-"HF_RADIUS_0" 									= ".5 mile radius";
-"HF_RADIUS_1" 									= "1 mile radius";
-"HF_RADIUS_2" 									= "2 mile radius";
-"HF_RADIUS_3" 									= "5 mile radius";
-"HF_RADIUS_4" 									= "10 mile radius";
-"HF_RADIUS_5" 									= "30 mile radius";
-
-"HF_SORT_METHOD_0" 								= "Best match";
-"HF_SORT_METHOD_1" 								= "Newest";
-"HF_SORT_METHOD_2" 								= "Price (high to low)";
-"HF_SORT_METHOD_3" 								= "Price (low to high)";
-"HF_SORT_METHOD_4" 								= "Bedrooms";
-"HF_SORT_METHOD_5" 								= "Baths";
-"HF_SORT_METHOD_6" 								= "Property type";
-
-"HF_FILTER_TYPE_0" 								= "Any Price";
-"HF_FILTER_TYPE_1" 								= "All Listings";
-//"HF_FILTER_TYPE_2" 							= "Listing Type";
-"HF_FILTER_TYPE_2" 								= "All Property Types";
-"HF_FILTER_TYPE_3" 								= "Any Number of Bedrooms";
-"HF_FILTER_TYPE_4" 								= "Any Number of Bathrooms";
-"HF_FILTER_TYPE_5" 								= "Any Square Footage";
-
-"HF_FILTER_TYPE_OPENH_SUBTYPE_0" 				= "All Listings";
-"HF_FILTER_TYPE_OPENH_SUBTYPE_1" 				= "Open Houses Today";
-"HF_FILTER_TYPE_OPENH_SUBTYPE_2" 				= "Open Houses This Weekend";
-"HF_FILTER_TYPE_OPENH_SUBTYPE_3" 				= "Only Open Houses";
-
-"HF_FILTER_TYPE_LTYPE_SUBTYPE_0" 				= "Resale";
-"HF_FILTER_TYPE_LTYPE_SUBTYPE_1" 				= "New Homes";
-"HF_FILTER_TYPE_LTYPE_SUBTYPE_2" 				= "Foreclosure";
-
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_0"  				= "All Types";
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_1"  				= "Single-Family Homes";
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_2"  				= "Condos";
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_3"  				= "Townhouses";
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_4"  				= "Co-Ops";
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_5"  				= "Apartments";
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_6"  				= "Lofts";
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_7"  				= "TICS";
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_8"  				= "Apts/Condos/Twnhs";
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_9"  				= "Mobile/Manufactured";
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_10" 				= "Farm/Ranch";
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_11" 				= "Lot/Land";
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_12" 				= "Multi-Family Homes";
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_13" 				= "Income/Investments";
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_14" 				= "Houseboats";
-"SEARCH_PROPERTY_TYPE_DISPLAY_NAME_TYPE_15" 				= "Unspecified";
 
 "HF_FILTER_TYPE_BDROOM_SUBTYPE_0" 				= "Any";
 "HF_FILTER_TYPE_BDROOM_SUBTYPE_1" 				= "1+";
@@ -104,57 +50,8 @@
 "HF_FILTER_TYPE_SQRFT_SUBTYPE_12" 				= "5,000+";
 "HF_FILTER_TYPE_SQRFT_SUBTYPE_13"				= "10,000+";
 
-"HF_RANGE_TEXT_PRICE_0"        					= "Min";
-"HF_RANGE_TEXT_PRICE_10000"    					= "$10,000";
-"HF_RANGE_TEXT_PRICE_20000"    					= "$20,000";
-"HF_RANGE_TEXT_PRICE_30000"    					= "$30,000";
-"HF_RANGE_TEXT_PRICE_50000"    					= "$50,000";
-"HF_RANGE_TEXT_PRICE_100000"   					= "$100,000";
-"HF_RANGE_TEXT_PRICE_130000"   					= "$130,000";
-"HF_RANGE_TEXT_PRICE_150000"   					= "$150,000";
-"HF_RANGE_TEXT_PRICE_200000"   					= "$200,000";
-"HF_RANGE_TEXT_PRICE_250000"   					= "$250,000";
-"HF_RANGE_TEXT_PRICE_300000"   					= "$300,000";
-"HF_RANGE_TEXT_PRICE_350000"   					= "$350,000";
-"HF_RANGE_TEXT_PRICE_400000"   					= "$400,000";
-"HF_RANGE_TEXT_PRICE_450000"   					= "$450,000";
-"HF_RANGE_TEXT_PRICE_500000"   					= "$500,000";
-"HF_RANGE_TEXT_PRICE_550000"   					= "$550,000";
-"HF_RANGE_TEXT_PRICE_600000"   					= "$600,000";
-"HF_RANGE_TEXT_PRICE_650000"   					= "$650,000";
-"HF_RANGE_TEXT_PRICE_700000"   					= "$700,000";
-"HF_RANGE_TEXT_PRICE_750000"   					= "$750,000";
-"HF_RANGE_TEXT_PRICE_800000"   					= "$800,000";
-"HF_RANGE_TEXT_PRICE_850000"   					= "$850,000";
-"HF_RANGE_TEXT_PRICE_900000"   					= "$900,000";
-"HF_RANGE_TEXT_PRICE_950000"   					= "$950,000";
-"HF_RANGE_TEXT_PRICE_1000000"  					= "$1M";
-"HF_RANGE_TEXT_PRICE_1100000"  					= "$1.1M";
-"HF_RANGE_TEXT_PRICE_1200000"  					= "$1.2M";
-"HF_RANGE_TEXT_PRICE_1250000"  					= "$1.25M";
-"HF_RANGE_TEXT_PRICE_1400000"  					= "$1.4M";
-"HF_RANGE_TEXT_PRICE_1500000"  					= "$1.5M";
-"HF_RANGE_TEXT_PRICE_1600000"  					= "$1.6M";
-"HF_RANGE_TEXT_PRICE_1700000"  					= "$1.7M";
-"HF_RANGE_TEXT_PRICE_1750000"  					= "$1.75M";
-"HF_RANGE_TEXT_PRICE_1800000"  					= "$1.8M";
-"HF_RANGE_TEXT_PRICE_1900000"  					= "$1.9M";
-"HF_RANGE_TEXT_PRICE_2000000"  					= "$2M";
-"HF_RANGE_TEXT_PRICE_2250000"  					= "$2.25M";
-"HF_RANGE_TEXT_PRICE_2500000"  					= "$2.5M";
-"HF_RANGE_TEXT_PRICE_2750000"  					= "$2.75M";
-"HF_RANGE_TEXT_PRICE_3000000"  					= "$3M";
-"HF_RANGE_TEXT_PRICE_3500000"  					= "$3.5M";
-"HF_RANGE_TEXT_PRICE_4000000"  					= "$4M";
-"HF_RANGE_TEXT_PRICE_5000000"  					= "$5M";
-"HF_RANGE_TEXT_PRICE_10000000" 					= "$10M";
-"HF_RANGE_TEXT_PRICE_20000000" 					= "$20M";
-"HF_RANGE_TEXT_PRICE_MAX" 						= "Max";
-
-
 "Price Reduced"									= "Price Reduced";
 "Pets Allowed"									= "Pets Allowed";
-
 
 /* PD Localized Text */
 "PDDisplayCellTextAgentName" 					= "Agent";
@@ -220,6 +117,7 @@
 "InvalidEmailAddressError"= "Please enter a valid email address.";
 "EmailAddressNotFoundError"= "We don't have that email on file. Please try again or create a new account.";
 "PasswordMismatchError"= "We don't see that email/password combo. Please try again.";
+"AccountAlreadyExistsWithInCorrectPassword"= "The email is already registered. Please try a different email address.";
 "AccountFrozenError" = "Your account is frozen, please contact customerservice@trulia.com for more info";
 "AccountInActiveError" = "Your account is inactive, please contact customerservice@trulia.com for more info";
 "AccountNetworkError" = "Sorry there was a network error, please try again later";
@@ -318,18 +216,18 @@
 "pleaseSetUpFacebookAccountInIosSettings"="Please set up your facebook account in Settings > Facebook";
 
 "MenuShareMessageFacebook" = "Check out the Trulia mobile app to find homes and apartments near you. Download the app now";
-"MenuShareLinkFacebook" = "http://on.trulia.com/app_fb";
+"MenuShareLinkFacebook" = "http://on.trulia.com/facebook_ifr";
 
 "MenuShareMessageTwitter" = "Check out the @Trulia app to see homes & apts near you. Download";
-"MenuShareLinkTwitter" = "http://on.trulia.com/app_tw";
+"MenuShareLinkTwitter" = "http://on.trulia.com/twitter_ifr";
 
 "MenuShareMessageEmail" = "Check out the Trulia mobile app to find homes and apartments near you. Download the app now";
-"MenuShareLinkEmail" = "http://on.trulia.com/app_e";
+"MenuShareLinkEmail" = "http://on.trulia.com/email_ifr";
 
 "MenuShareMessageSMS" = "Check out the Trulia mobile app to find homes and apartments near you. Download";
-"MenuShareLinkSMS" = "http://on.trulia.com/app_sms";
+"MenuShareLinkSMS" = "http://on.trulia.com/sms_isms";
 
-"MenuShareLinkAirDrop" = "https://itunes.apple.com/us/app/real-estate-by-trulia-homes/id288487321?mt=8";
+"MenuShareLinkAirDrop" = "https://itunes.apple.com/us/app/trulia-rentals-find-homes/id508163604?mt=8";
 
 "MenuShareEmailSubject" = "Check out the Trulia Mobile App";
 

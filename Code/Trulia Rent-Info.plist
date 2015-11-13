@@ -9,33 +9,9 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIcons</key>
-	<dict>
-		<key>CFBundlePrimaryIcon</key>
-		<dict>
-			<key>CFBundleIconFiles</key>
-			<array>
-				<string>ForRentIcon58x58</string>
-				<string>ForRentIcon80x80</string>
-				<string>ForRentIcon120x120</string>
-			</array>
-		</dict>
-	</dict>
+	<dict/>
 	<key>CFBundleIcons~ipad</key>
-	<dict>
-		<key>CFBundlePrimaryIcon</key>
-		<dict>
-			<key>CFBundleIconFiles</key>
-			<array>
-				<string>ForRentIcon58x58</string>
-				<string>ForRentIcon29x29</string>
-				<string>ForRentIcon80x80</string>
-				<string>ForRentIcon40x40</string>
-				<string>ForRentIcon152x152</string>
-				<string>ForRentIcon76x76</string>
-				<string>ForRentIcon120x120</string>
-			</array>
-		</dict>
-	</dict>
+	<dict/>
 	<key>CFBundleIdentifier</key>
 	<string>com.truliainc.IosRental</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -45,7 +21,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.4</string>
+	<string>4.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes~ipad</key>
@@ -56,9 +32,19 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fb468741039850614</string>
-				<string>trulia</string>
+				<string>gsd-TruliaPDPForRent</string>
+				<string>gsd-TruliaPDPForSale</string>
+				<string>gsd-TruliaPDPForSale</string>
+				<string>gsd-TruliaPDPForRent</string>
+				<string>gsd-trulia</string>
+				<string>gsd-TruliaMap</string>
+				<string>TruliaSRPForSale</string>
 				<string>TruliaSRPForRent</string>
+				<string>TruliaPDPForSale</string>
 				<string>TruliaPDPForRent</string>
+				<string>trulia</string>
+				<string>TruliaMap</string>
+				<string>TruliaBringToForegroundOnly</string>
 			</array>
 		</dict>
 	</array>
@@ -69,18 +55,42 @@
 			<string>com.trulia.TruliaRentalUniversal</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>TruliaCollabNewProperty</string>
-				<string>TruliaCollabAllBoards</string>
-				<string>TruliaCollabInvitation</string>
 				<string>fb468741039850614</string>
-				<string>trulia</string>
+				<string>gsd-TruliaIphone</string>
+				<string>gsd-trulia</string>
+				<string>gsd-TruliaPDPForRent</string>
+				<string>gsd-TruliaPDPForSale</string>
+				<string>gsd-TruliaSRPForRent</string>
+				<string>gsd-TruliaSRPForSale</string>
+				<string>TruliaSRPForSale</string>
 				<string>TruliaSRPForRent</string>
+				<string>TruliaPDPForSale</string>
 				<string>TruliaPDPForRent</string>
+				<string>trulia</string>
+				<string>TruliaIphone</string>
+				<string>TruliaCollabNewProperty</string>
+				<string>TruliaCollabInvitation</string>
+				<string>TruliaCollabAllBoards</string>
+				<string>TruliaBringToForegroundOnly</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>100</string>
+	<string>131</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>69c46441eff2d4c6f8a043fd66d16ff159cd9812</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
 	<key>FacebookAppID</key>
 	<string>468741039850614</string>
 	<key>FacebookAppIDTest</key>
@@ -92,12 +102,38 @@
 		<string>user_birthday</string>
 		<string>user_location</string>
 	</array>
+	<key>ICConfigurationBundleName</key>
+	<string>ICConfiguration.bundle</string>
+	<key>IosCoreResourcesBundleName</key>
+	<string>IosCoreResources.bundle</string>
 	<key>LSApplicationCategoryType</key>
 	<array>
 		<string></string>
 	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+		<string>itms</string>
+		<string>itms-apps</string>
+		<string>tel</string>
+		<string>sms</string>
+		<string>googlechrome</string>
+		<string>comgooglemaps-x-callback</string>
+		<string>comgooglemaps</string>
+		<string>TruliaAgentApp</string>
+		<string>TruliaForSale</string>
+		<string>truliarental</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Trulia needs your location to allow you to search and get updates on homes nearby.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
@@ -113,53 +149,9 @@
 		<string>OpenSans-LightItalic.ttf</string>
 		<string>OpenSans-Regular.ttf</string>
 	</array>
-	<key>UILaunchImages</key>
-	<array>
-		<dict>
-			<key>UILaunchImageMinimumOSVersion</key>
-			<string>7.0</string>
-			<key>UILaunchImageName</key>
-			<string>Default-568h</string>
-			<key>UILaunchImageOrientation</key>
-			<string>Portrait</string>
-			<key>UILaunchImageSize</key>
-			<string>{320, 568}</string>
-		</dict>
-		<dict>
-			<key>UILaunchImageMinimumOSVersion</key>
-			<string>7.0</string>
-			<key>UILaunchImageName</key>
-			<string>Default</string>
-			<key>UILaunchImageOrientation</key>
-			<string>Portrait</string>
-			<key>UILaunchImageSize</key>
-			<string>{320, 480}</string>
-		</dict>
-	</array>
-	<key>UILaunchImages~ipad</key>
-	<array>
-		<dict>
-			<key>UILaunchImageMinimumOSVersion</key>
-			<string>7.0</string>
-			<key>UILaunchImageName</key>
-			<string>Default-Landscape</string>
-			<key>UILaunchImageOrientation</key>
-			<string>Landscape</string>
-			<key>UILaunchImageSize</key>
-			<string>{768, 1024}</string>
-		</dict>
-		<dict>
-			<key>UILaunchImageMinimumOSVersion</key>
-			<string>7.0</string>
-			<key>UILaunchImageName</key>
-			<string>Default-Portrait</string>
-			<key>UILaunchImageOrientation</key>
-			<string>Portrait</string>
-			<key>UILaunchImageSize</key>
-			<string>{768, 1024}</string>
-		</dict>
-	</array>
 	<key>UIPrerenderedIcon</key>
+	<true/>
+	<key>UIRequiresFullScreen</key>
 	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
