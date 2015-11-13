@@ -1,0 +1,21 @@
+// !!! BINARY PROPERTY LIST WARNING !!!
+//
+// The pretty-printed property list below has been created
+// from a binary version on disk and should not be saved as
+// the ASCII format is a subset of the binary representation!
+//
+{	CFBundleDevelopmentRegion = "English";
+	CFBundleIdentifier = "com.google.GoogleMaps";
+	CFBundleInfoDictionaryVersion = "6.0";
+	CFBundleName = "GoogleMaps";
+	CFBundlePackageType = "BNDL";
+	CFBundleShortVersionString = "1.8.1";
+	CFBundleSignature = "????";
+	CFBundleVersion = "1.8.1.9233";
+	DTPlatformName = "iphonesimulator";
+	DTSDKName = "iphonesimulator7.0";
+	GMSCoreVersion = "3.2.0";
+	LSRequiresIPhoneOS = :true;
+	NSHumanReadableCopyright = "© 2014 Google Inc.";
+	UIDeviceFamily = ( 1, 2 );
+}
