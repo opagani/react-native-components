@@ -17,6 +17,7 @@
 		055BA5691B4F4077004ED96E /* IRMainMenuMoreSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 055BA5681B4F4077004ED96E /* IRMainMenuMoreSection.m */; };
 		056336811BBCB77D0065F5D8 /* TUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056336801BBCB77D0065F5D8 /* TUIKit.framework */; settings = {ASSET_TAGS = (); }; };
 		056336831BBCB8120065F5D8 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056336821BBCB8120065F5D8 /* Fabric.framework */; settings = {ASSET_TAGS = (); }; };
+		0563367F1BBCB6DE0065F5D8 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0563367E1BBCB6DE0065F5D8 /* GoogleMobileAds.framework */; };
 		056B50281B4F250300627AD9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056B50271B4F250300627AD9 /* Bolts.framework */; };
 		05A431891B1693740024CEA4 /* IRBoardManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A431881B1693740024CEA4 /* IRBoardManagerViewController.m */; };
 		05CA58D91BBF15D0000E28A8 /* MobileAppTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0563367A1BBCB6490065F5D8 /* MobileAppTracker.framework */; };
@@ -1084,7 +1085,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
@@ -1133,7 +1135,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
@@ -1224,7 +1227,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
@@ -1389,7 +1393,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
