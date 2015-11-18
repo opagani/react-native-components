@@ -71,6 +71,33 @@
 			</array>
 		</dict>
 	</array>
+	<key>CFBundleURLTypes~ipod</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.trulia.TruliaRentalUniversal</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb468741039850614</string>
+				<string>gsd-TruliaIphone</string>
+				<string>gsd-trulia</string>
+				<string>gsd-TruliaPDPForRent</string>
+				<string>gsd-TruliaPDPForSale</string>
+				<string>gsd-TruliaSRPForRent</string>
+				<string>gsd-TruliaSRPForSale</string>
+				<string>TruliaSRPForSale</string>
+				<string>TruliaSRPForRent</string>
+				<string>TruliaPDPForSale</string>
+				<string>TruliaPDPForRent</string>
+				<string>trulia</string>
+				<string>TruliaIphone</string>
+				<string>TruliaCollabNewProperty</string>
+				<string>TruliaCollabInvitation</string>
+				<string>TruliaCollabAllBoards</string>
+				<string>TruliaBringToForegroundOnly</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>150</string>
 	<key>Fabric</key>
@@ -148,7 +175,7 @@
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIRequiresFullScreen</key>
-	<true/>
+	<false/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

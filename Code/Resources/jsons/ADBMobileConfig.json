@@ -15,7 +15,7 @@
         "appid": "d80cc423a1b20d48901d81b02a1156f15e576296b913f42e5ee5d935594e1cf7"
     },
     "analytics": {
-        "rsids": "truliadash",
+        "rsids": "truliamobileqa",
         "server": "trulia.d2.sc.omtrdc.net",
         "ssl": false,
         "offlineEnabled": false,
