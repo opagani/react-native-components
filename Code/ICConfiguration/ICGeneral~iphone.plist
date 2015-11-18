@@ -407,5 +407,20 @@
 	<integer>5</integer>
 	<key>AppiraterUseCountThreshold</key>
 	<integer>5</integer>
+	<key>adUnitIds</key>
+	<dict>
+		<key>Rent_Single_Listing</key>
+		<string>/7449/Trulia_iPhone_Rentals_App/Property_Details/Rent_Single_Listing/b_main_p1</string>
+		<key>Rent_Single_Listing_cred</key>
+		<string>/7449/Trulia_iPhone_Rentals_App/Property_Details/Rent_Single_Listing/crd_main_p1</string>
+		<key>Rent_Community</key>
+		<string>/7449/Trulia_iPhone_Rentals_App/Property_Details/Rent_Community/b_main_p1</string>
+		<key>Rent_Community_cred</key>
+		<string>/7449/Trulia_iPhone_Rentals_App/Property_Details/Rent_Community/crd_main_p1</string>
+		<key>Rent_Assessor</key>
+		<string>/7449/Trulia_iPhone_Rentals_App/Property_Details/Rent_Assessor/b_main_p1</string>
+		<key>Rent_Assessor_cred</key>
+		<string>/7449/Trulia_iPhone_Rentals_App/Property_Details/Rent_Assessor/crd_main_p1</string>
+	</dict>
 </dict>
 </plist>
