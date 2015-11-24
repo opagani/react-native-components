@@ -191,5 +191,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>FacebookDisplayName</key>
+	<string>Trulia - For Rent</string>
 </dict>
 </plist>
