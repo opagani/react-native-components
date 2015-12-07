@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>SupportsForceReg</key>
+	<true/>
 	<key>GoogleAPIKey</key>
 	<dict>
 		<key>com.trulia.IosRental</key>
@@ -372,5 +374,12 @@
 	<integer>5</integer>
 	<key>AppiraterUseCountThreshold</key>
 	<integer>5</integer>
+	<key>adUnitIdPrefix</key>
+	<string>/7449/Trulia_iPad_Rentals_App</string>
+	<key>adUnitIds</key>
+	<dict>
+		<key>srch_Rent_General</key>
+		<string>/7449/Trulia_iPad_Rentals_App/Search_Results/Rent_General/b_main_p1</string>
+	</dict>
 </dict>
 </plist>

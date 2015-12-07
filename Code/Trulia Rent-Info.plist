@@ -8,10 +8,6 @@
 	<string>Trulia Rent</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleIcons</key>
-	<dict/>
-	<key>CFBundleIcons~ipad</key>
-	<dict/>
 	<key>CFBundleIdentifier</key>
 	<string>com.truliainc.IosRental</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -21,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>4.0</string>
+	<string>4.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes~ipad</key>
@@ -75,8 +71,35 @@
 			</array>
 		</dict>
 	</array>
+	<key>CFBundleURLTypes~ipod</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.trulia.TruliaRentalUniversal</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb468741039850614</string>
+				<string>gsd-TruliaIphone</string>
+				<string>gsd-trulia</string>
+				<string>gsd-TruliaPDPForRent</string>
+				<string>gsd-TruliaPDPForSale</string>
+				<string>gsd-TruliaSRPForRent</string>
+				<string>gsd-TruliaSRPForSale</string>
+				<string>TruliaSRPForSale</string>
+				<string>TruliaSRPForRent</string>
+				<string>TruliaPDPForSale</string>
+				<string>TruliaPDPForRent</string>
+				<string>trulia</string>
+				<string>TruliaIphone</string>
+				<string>TruliaCollabNewProperty</string>
+				<string>TruliaCollabInvitation</string>
+				<string>TruliaCollabAllBoards</string>
+				<string>TruliaBringToForegroundOnly</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
-	<string>131</string>
+	<string>150</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
@@ -107,9 +130,7 @@
 	<key>IosCoreResourcesBundleName</key>
 	<string>IosCoreResources.bundle</string>
 	<key>LSApplicationCategoryType</key>
-	<array>
-		<string></string>
-	</array>
+	<string></string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
@@ -149,10 +170,12 @@
 		<string>OpenSans-LightItalic.ttf</string>
 		<string>OpenSans-Regular.ttf</string>
 	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>Launch Screen</string>
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIRequiresFullScreen</key>
-	<true/>
+	<false/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -168,5 +191,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>FacebookDisplayName</key>
+	<string>Trulia - For Rent</string>
 </dict>
 </plist>
