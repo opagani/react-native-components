@@ -5,6 +5,6 @@
       location = "group:Trulia Rent.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../mob-ioscore-lib/code/IosCore.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
