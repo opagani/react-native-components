@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.truliainc.IosRental</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -51,7 +51,7 @@
 			<string>com.trulia.TruliaRentalUniversal</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb468741039850614</string>
+				<string>fb$(FACEBOOK_APP_ID)</string>
 				<string>gsd-TruliaIphone</string>
 				<string>gsd-trulia</string>
 				<string>gsd-TruliaPDPForRent</string>
@@ -78,7 +78,7 @@
 			<string>com.trulia.TruliaRentalUniversal</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb468741039850614</string>
+				<string>fb$(FACEBOOK_APP_ID)</string>
 				<string>gsd-TruliaIphone</string>
 				<string>gsd-trulia</string>
 				<string>gsd-TruliaPDPForRent</string>
@@ -115,9 +115,7 @@
 		</array>
 	</dict>
 	<key>FacebookAppID</key>
-	<string>468741039850614</string>
-	<key>FacebookAppIDTest</key>
-	<string>468741039850614</string>
+	<string>$(FACEBOOK_APP_ID)</string>
 	<key>FacebookPermissions</key>
 	<array>
 		<string>offline_access</string>
