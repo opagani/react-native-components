@@ -1,7 +1,16 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'ssh://git@stash.sv2.trulia.com/mob/mob-podspecs.git'
+
 workspace 'ForRent.xcworkspace'
 
 target 'Trulia Rent' do
-	pod 'ios-core-library', :path => '../../mob-ioscore-lib/'
+	if ENV['IOS_CORE_VERSION'] != nil # set this to build the app against a specific version of core library
+        pod 'IosCoreLibrary', "#{ENV['IOS_CORE_VERSION']}"
+    elsif ENV['IOS_CORE_DIR'] != nil # set this in your .bash_profile  if you have mob-ioscore-lib cloned somewhere other than the same directory of this project
+        pod 'IosCoreLibrary', :path => ENV['IOS_CORE_DIR'] 
+    else
+        pod 'IosCoreLibrary', :path => '../../mob-ioscore-lib/'
+    end  
 end
 
 # The post install hook add certain compiler flags for JSONKit files so that
