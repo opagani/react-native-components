@@ -1,0 +1,160 @@
+#!/usr/bin/env ruby -wKU
+# require 'bundler/setup'
+# require "pathname"
+
+fastlane_version "1.40.0"
+default_platform :ios
+
+
+platform :ios do
+  before_all do
+    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+    # reset_git_repo(force:true)
+    
+    import_from_git(
+       url: 'git@stash.sv2.trulia.com:~fhaider/mob-build.git',
+       branch: 'master',
+       path: 'ios/fastlane/Fastfile'
+    )
+    # absolutePath = File.expand_path "../Code/Podfile"
+    # cocoapods(podfile: absolutePath)
+    # unlock_keychain(path: "~/Library/Keychains/login.keychain", password: "p@55w0rd")
+    
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    # snapshot
+  end
+
+  desc "Submit a new Stage to HockeyApp"
+  desc "This will also make sure the profile is up to date"
+  lane :stage do
+    
+    hockey_api_token = 'f9ea5344004d44cfa154efab77887b72'
+    hockey_app_id = '2f630c251bc349eabe27c556bf95b71a'
+    ENV["BUILD_NUMBER"] = next_hockey_version(api_token: hockey_api_token, app_id: hockey_app_id).to_s
+    
+    CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "EnterpriseIosRental",  skip_certificate_verification: true, app_identifier:"com.truliainc.IosRental")
+    absoluteIconPath = File.expand_path "../Code/Images.xcassets/AppIcon.appiconset"
+
+    build_and_upload(
+      # Not a production release, so add build number and do the color modulation of the icons
+      release:false,
+      # Modulate the colors of the icons by these degrees
+      modulation:66.6,
+      # Change the app name
+      app_name:"IosRental",
+      # Set the path to the certificate to use in building
+      certificate_path:"../mob-ioscore-lib/Credential/Enterprise/Trulia Inc Cert/EnterpriseDistributionCertificate.p12",
+      # Set the password of the p12 certificate file
+      certificate_password:"",
+      # What configuration to use, usefull for keeping different API keys etc between environments
+      configuration:"Stage",
+      # Export an enterprise app
+      export_method:"enterprise",
+      # the projectname, this is the name of the .xcodeproj file and the folder containing your code in the project
+      project_name:"Code/Trulia Rent.xcodeproj",
+      # workspace
+      workspace:"Code/ForRent.xcworkspace",
+      # the scheme to build
+      scheme:"TruliaRent",
+      # the build number to use, we use the build number from Jenkins
+      build_number: ENV["BUILD_NUMBER"],
+      # icons folder path so that we can update the icons
+      icon_folder_path: absoluteIconPath,
+      xcargs: "CUSTOM_PROVISIONING_PROFILE='#{CUSTOM_PROVISIONING_PROFILEID}'",
+      product_name: "IosRental",
+      # this is needed for the upload to mstage. This specifies the folder on the server to put the app and archive into
+      upload_dir_app_type: "IosRental",
+      # the subfolder within which to upload, generall it is qa, dev or rel;
+      upload_dir_build_type: "testdir",
+      # hockey app id to use
+      hockeyapp_id: "2f630c251bc349eabe27c556bf95b71a",
+      # hockey app token to use
+      hockeyapp_token:  'f9ea5344004d44cfa154efab77887b72'
+      
+    )
+  end
+  
+  def get_archive_path (appBinaryName)
+      cmd = "ls -dt ~/Library/Developer/Xcode/Archives/*/#{appBinaryName}*.xcarchive|head -1"
+      result = `#{cmd}`
+      result = result.strip
+  end
+
+  desc "Deploy a new version to the App Store"
+  lane :appstore do
+    
+    hockey_api_token = 'f9ea5344004d44cfa154efab77887b72'
+    hockey_app_id = '2f630c251bc349eabe27c556bf95b71a'
+    ENV["BUILD_NUMBER"] = next_hockey_version(api_token: hockey_api_token, app_id: hockey_app_id).to_s
+    
+    CUSTOM_PROVISIONING_PROFILEID = sigh( provisioning_name: "Appstore Distribution IosUniversal",  skip_certificate_verification: true, app_identifier:"com.trulia.Trulia")
+    absoluteIconPath = File.expand_path "../Code/Resources/AppAssets.xcassets/AppIcon.appiconset"
+    
+    build_and_upload(
+      # Not a production release, so add build number and do the color modulation of the icons
+      release:true,
+      # Modulate the colors of the icons by these degrees
+      modulation:66.6,
+      # Set the app id
+      certificate_path:"../mob-ioscore-lib/Credential/Production/Trulia,Inc Cert/AppstoreDistributionCertificate.p12",
+      # Set the password of the p12 certificate file
+      certificate_password:"truliaR0cks!",
+      # can be BStage, Stage, Appstore
+      configuration:"Appstore",
+      # Export an enterprise app
+      export_method:"app-store",
+      # the projectname, this is the name of the .xcodeproj file and the folder containing your code in the project
+      project_name:"Code/Trulia Rent.xcodeproj",
+      # workspace
+      workspace:"Code/ForRent.xcworkspace",
+      # the scheme to build
+      scheme:"TruliaRent",
+      # the build number to use, we use the build number from Jenkins
+      build_number: ENV["BUILD_NUMBER"],
+      # icon folder path
+      icon_folder_path: absoluteIconPath,
+      
+      xcargs: "CUSTOM_PROVISIONING_PROFILE='#{CUSTOM_PROVISIONING_PROFILEID}'",
+      
+      product_name: "IosRental",
+      # this is needed for the upload to mstage. This specifies the folder on the server to out the app and archive into
+      upload_dir_app_type: "IosRental",
+      # the subfolder within which to upload, generall it is qa, dev or rel;
+      upload_dir_build_type: "testdir",
+      # hockey app id to use
+      hockeyapp_id: "2f630c251bc349eabe27c556bf95b71a",
+      # hockey app token to use
+      hockeyapp_token:  'f9ea5344004d44cfa154efab77887b72'
+      
+    )
+    
+  end
+
+  # You can define as many lanes as you want
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+
+    clean_build_artifacts
+    # slack(
+    #   message: "Successfully deployed new App Update."
+    # )
+  end
+
+  error do |lane, exception|
+    # slack(
+    #   message: exception.message,
+    #   success: false
+    # )
+   clean_build_artifacts
+    
+  end
+  
+  
+end
+
+# More information about multiple platforms in fastlane: https://github.com/KrauseFx/fastlane/blob/master/docs/Platforms.md
+# All available actions: https://github.com/KrauseFx/fastlane/blob/master/docs/Actions.md
