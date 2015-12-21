@@ -2,7 +2,7 @@
 # require 'bundler/setup'
 # require "pathname"
 
-fastlane_version "1.40.0"
+# fastlane_version "1.40.0"
 default_platform :ios
 
 
@@ -22,14 +22,9 @@ platform :ios do
     
   end
 
-  desc "Runs all the tests"
-  lane :test do
-    # snapshot
-  end
-
   desc "Submit a new Stage to HockeyApp"
   desc "This will also make sure the profile is up to date"
-  lane :stage do
+  lane :deploy_qa do
     
     hockey_api_token = 'f9ea5344004d44cfa154efab77887b72'
     hockey_app_id = '2f630c251bc349eabe27c556bf95b71a'
@@ -64,7 +59,7 @@ platform :ios do
       # icons folder path so that we can update the icons
       icon_folder_path: absoluteIconPath,
       xcargs: "CUSTOM_PROVISIONING_PROFILE='#{CUSTOM_PROVISIONING_PROFILEID}'",
-      product_name: "IosRental",
+      product_name: "TruliaRent",
       # this is needed for the upload to mstage. This specifies the folder on the server to put the app and archive into
       upload_dir_app_type: "IosRental",
       # the subfolder within which to upload, generall it is qa, dev or rel;
@@ -73,6 +68,8 @@ platform :ios do
       hockeyapp_id: "2f630c251bc349eabe27c556bf95b71a",
       # hockey app token to use
       hockeyapp_token:  'f9ea5344004d44cfa154efab77887b72'
+      # the user to use to upload to mstage
+      mstage_user: 'web'
       
     )
   end
@@ -119,7 +116,7 @@ platform :ios do
       
       xcargs: "CUSTOM_PROVISIONING_PROFILE='#{CUSTOM_PROVISIONING_PROFILEID}'",
       
-      product_name: "IosRental",
+      product_name: "TruliaRent",
       # this is needed for the upload to mstage. This specifies the folder on the server to out the app and archive into
       upload_dir_app_type: "IosRental",
       # the subfolder within which to upload, generall it is qa, dev or rel;
@@ -128,6 +125,9 @@ platform :ios do
       hockeyapp_id: "2f630c251bc349eabe27c556bf95b71a",
       # hockey app token to use
       hockeyapp_token:  'f9ea5344004d44cfa154efab77887b72'
+      # the user to use to upload to mstage
+      mstage_user: 'web'
+      
       
     )
     
