@@ -1,0 +1,128 @@
+#!/usr/bin/env ruby -wKU
+
+fastlane_version '1.42.0'
+default_platform :ios
+
+platform :ios do
+  before_all do
+    cocoapods(podfile: 'Code/Podfile')
+  end
+
+  desc 'Runs all the tests'
+  lane :test do
+    # snapshot
+  end
+
+  desc 'Build and deploy a new beta version on Hockey'
+  lane :stage do |options|
+
+    #### configs ####
+    jira_host = 'jira.corp.trulia.com'
+    hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'
+    hockey_team_ids = '51656,51937,50690,50668,50687,50684,50683'
+    #################
+
+    import_from_git(
+      url: 'git@stash.sv2.trulia.com:mob/mob-build.git',
+      branch: 'master',
+      path: 'ios/fastlane/Fastfile'
+    )
+
+    # Unlock the keychain if needed/password provided
+    keychain_password = ENV['LOGIN_KEYCHAIN_PASSWORD']
+    unless keychain_password.nil?
+      unlock_keychain(path: '~/Library/Keychains/login.keychain', password: keychain_password)
+    end
+
+    sigh
+
+    absolute_icon_path = File.expand_path '../Code/Images.xcassets/AppIcon.appiconset'
+
+    build_and_upload(
+        # Not a production release, so add build number and do the color modulation of the icons
+        release: false,
+        # Modulate the colors of the icons by these degrees
+        modulation: 66.6,
+        # What configuration to use, usefull for keeping different API keys etc between environments
+        configuration: 'Stage',
+        # Export an enterprise app
+        export_method: 'enterprise',
+        # the projectname, this is the name of the .xcodeproj file and the folder containing your code in the project
+        project_name: 'Code/Trulia Rent.xcodeproj',
+        # workspace
+        workspace: 'Code/ForRent.xcworkspace',
+        # the scheme to build
+        scheme: 'TruliaRent',
+        # icons folder path so that we can update the icons
+        icon_folder_path: absolute_icon_path,
+        product_name: 'TruliaRent',
+        # this is needed for the upload to mstage. This specifies the folder on the server to put the app and archive into
+        upload_dir_app_type: 'IosRental',
+        # the subfolder within which to upload, generall it is qa, dev or rel;
+        upload_dir_build_type: 'testdir',
+        # hockey app id to use
+        hockeyapp_id: hockey_app_id,
+        # hockey app token to use
+        hockeyapp_token: ENV['HOCKEY_API_TOKEN'],
+        # the team IDs to notify when a new build is published
+        hockeyapp_team_ids: hockey_team_ids,
+        # the JIRA host to search for issues to update based on these changes
+        jira_host: jira_host
+    )
+  end
+
+
+  desc 'Build and deploy an appstore ready version'
+  lane :appstore do |options|
+
+    #### configs ####
+    hockey_app_id = 'b3ac9a1a07114380b4d0706c83efcde4'
+    #################
+
+    import_from_git(
+      url: 'git@stash.sv2.trulia.com:mob/mob-build.git',
+      branch: 'master',
+      path: 'ios/fastlane/Fastfile'
+    )
+
+
+    # Unlock the keychain if needed/password provided
+    keychain_password = ENV['LOGIN_KEYCHAIN_PASSWORD']
+    unless keychain_password.nil?
+      unlock_keychain(path: '~/Library/Keychains/login.keychain', password: keychain_password)
+    end
+
+    sigh
+
+    absolute_icon_path = File.expand_path '../Mortgage/Assets.xcassets/AppIcon.appiconset'
+
+    build_and_upload(
+        release: true,
+        # What configuration to use, usefull for keeping different API keys etc between environments
+        configuration: 'AppStore',
+        # Export an enterprise app
+        export_method: 'app-store',
+        # the projectname, this is the name of the .xcodeproj file and the folder containing your code in the project
+        project_name: 'Mortgage.xcodeproj',
+        # workspace
+        workspace: 'Mortgage.xcworkspace',
+        # the scheme to build
+        scheme: 'appstore',
+        # the build number to use, we use the build number from Jenkins
+        build_number: ENV['BUILD_NUMBER'],
+        # icons folder path so that we can update the icons
+        icon_folder_path: absolute_icon_path,
+        # xcargs: "CUSTOM_PROVISIONING_PROFILE='#{CUSTOM_PROVISIONING_PROFILEID}' WATCH_PROVISIONING_PROFILE='#{WATCH_PROVISIONING_PROFILEID}' WATCH_EXT_PROVISIONING_PROFILE='#{WATCH_EXT_PROVISIONING_PROFILEID}' ",
+        product_name: 'Mortgage',
+        # this is needed for the upload to mstage. This specifies the folder on the server to put the app and archive into
+        upload_dir_app_type: 'IosMortgage',
+        # the subfolder within which to upload, generall it is qa, dev or rel;
+        upload_dir_build_type: 'testdir',
+        # hockey app id to use
+        hockeyapp_id: hockey_app_id,
+        # hockey app token to use
+        hockeyapp_token: ENV['HOCKEY_API_TOKEN']
+    )
+
+  end
+end
