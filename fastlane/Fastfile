@@ -179,11 +179,11 @@ platform :ios do
   lane :appstore do |options|
     raise 'You must specify a custom build pod file' if options[:pod_binary_path].nil?
     # lets setup the pods first
+    hockey_app_id = '215568fb16f34b60aea835757b2634b9'
     sh ("(cd ../Code/ && #{options[:pod_binary_path] } install)")
     CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "Appstore Distribution IosRental",  skip_certificate_verification: true, app_identifier:"com.trulia.IosRental")
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
     build_number = ENV["BUILD_NUMBER"] || next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
-    hockey_app_id = '215568fb16f34b60aea835757b2634b9'
 
     build_and_upload(
         # Not a production release, so add build number and do the color modulation of the icons
