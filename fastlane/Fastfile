@@ -35,6 +35,8 @@ platform :ios do
     @mstage_user= 'web'
     @hockeyapp_token = 'f9ea5344004d44cfa154efab77887b72'
     @absolute_icon_path = File.expand_path "../Code/Images.xcassets/AppIcon.appiconset"
+    @hockey_team_ids = '51656,51937,50690,50668,50687,50684,50683'
+    
     undo_icon_file_changes
     
   end
@@ -49,7 +51,6 @@ platform :ios do
     #params for the build
     jira_host = 'jira.corp.trulia.com'
     hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'
-    hockey_team_ids = '51656,51937,50690,50668,50687,50684,50683'
     CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "EnterpriseIosRental",  skip_certificate_verification: true, app_identifier:"com.truliainc.IosRental")
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
     build_number = ENV["BUILD_NUMBER"] || next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
@@ -87,7 +88,7 @@ platform :ios do
         # hockey app token to use
         hockeyapp_token: @hockeyapp_token,
         # the team IDs to notify when a new build is published
-        hockeyapp_team_ids: hockey_team_ids,
+        hockeyapp_team_ids: @hockey_team_ids,
         # the user to use to upload to mstage
         mstage_user: @mstage_user,
         # the JIRA host to search for issues to update based on these changes
@@ -130,7 +131,7 @@ platform :ios do
         # hockey app token to use
         hockeyapp_token: @hockeyapp_token,
         # the team IDs to notify when a new build is published
-        hockeyapp_team_ids: hockey_team_ids,
+        hockeyapp_team_ids: @hockey_team_ids,
         # the user to use to upload to mstage
         mstage_user: @mstage_user,
     )
@@ -168,7 +169,7 @@ platform :ios do
         # hockey app token to use
         hockeyapp_token: @hockeyapp_token,
         # the team IDs to notify when a new build is published
-        hockeyapp_team_ids: hockey_team_ids,
+        hockeyapp_team_ids: @hockey_team_ids,
         # the user to use to upload to mstage
         mstage_user: @mstage_user,
     )
@@ -216,7 +217,7 @@ platform :ios do
         # hockey app token to use
         hockeyapp_token: @hockeyapp_token,
         # the team IDs to notify when a new build is published
-        hockeyapp_team_ids: hockey_team_ids,
+        hockeyapp_team_ids: @hockey_team_ids,
         # the user to use to upload to mstage
         mstage_user: @mstage_user,
     )
