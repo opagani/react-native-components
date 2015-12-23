@@ -1,18 +1,15 @@
 #!/usr/bin/env ruby -wKU
-app_identifier "com.truliainc.IosRental" # The bundle identifier of your app
-apple_id "truliaiosenterprise@gmail.com" # Your Apple email address
-team_name "Trulia Inc"
-team_id "9FBSWYKDXR"
 
-for_platform :ios do 
-	for_lane :appstore do
-		app_identifier "com.trulia.IosRental"
-		apple_id "truliaiosproduction@gmail.com"
-		team_name "Trulia, Inc"
-		team_id "9QV5QN2J8K"
-	end
+app_identifier 'com.truliainc.IosRental'
+apple_id 'truliaiosenterprise@gmail.com'
+team_name 'Trulia Inc'
+team_id '9FBSWYKDXR'
+
+for_platform :ios do
+  for_lane :appstore do
+    app_identifier 'com.trulia.IosRental'
+    apple_id 'truliaiosproduction@gmail.com'
+    team_name 'Trulia, Inc'
+    team_id '9QV5QN2J8K'
+  end
 end
-
-
-# you can even provide different app identifiers, Apple IDs and team names per lane:
-# https://github.com/KrauseFx/fastlane/blob/master/docs/Appfile.md

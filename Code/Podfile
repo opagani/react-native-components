@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby -wKU
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+workspace 'ForRent.xcworkspace'
+
+target 'Trulia Rent' do
+    if ENV['IOS_CORE_BRANCH'] != nil # set this to build the app against a specific branch of the library
+        pod 'IosCoreLibrary', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ioscore-lib.git', :branch => "#{ENV['IOS_CORE_BRANCH']}"
+    else
+        pod 'IosCoreLibrary', :path => '../../mob-ioscore-lib/'
+    end
+    
+end
+

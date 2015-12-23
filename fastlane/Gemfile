@@ -1,14 +1,18 @@
 source 'https://rubygems.org'
 
+gem 'cocoapods', '~>0.39.0'
+gem 'fastlane', '~>1.46.1'
+gem 'jira-ruby', '~>0.1.16'
 gem 'trollop', '~>2.1.2'
 gem 'POpen4', '~>0.1.4'
 gem 'rest-client', '~>1.8.0'
 gem 'shenzhen'
 gem 'ocunit2junit'
-gem 'jira-ruby'
-gem 'cocoapods', '~>0.39.0'
-gem 'fastlane'
 gem 'hockeyapp'
 gem 'fileutils'
-#gem 'find'
-# gem 'pathname'
+gem 'find'
+
+# These two gems should be on latest versions! And should probably be on the system, not just installed in the bundle path
+# Fixes
+gem 'sqlite3'
+gem 'CFPropertyList'
