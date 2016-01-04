@@ -106,7 +106,7 @@ platform :ios do
     # The build # for appstore is derived from stage build #.
     hockey_app_id = 'e9cef45d54a449c9b00e472f48fb47ce' 
     # since next_hockey_version gets us an incremented count, for appstore builds we keep the same build # as for the latest stage build
-    build_number = (next_hockey_version(api_token: @hockey_api_token, app_id: hockey_app_id) - 1).to_s
+    build_number = (next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id) - 1).to_s
     
     hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'
     sh ("(cd ../Code/ && #{options[:pod_binary_path] } install)")
