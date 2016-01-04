@@ -53,7 +53,7 @@ platform :ios do
     hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'
     CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "EnterpriseIosRental",  skip_certificate_verification: true, app_identifier:"com.truliainc.IosRental")
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
-    build_number = ENV["BUILD_NUMBER"] || next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
+    build_number = next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
 
     build_and_upload(
         # Not a production release, so add build number and do the color modulation of the icons
@@ -101,11 +101,17 @@ platform :ios do
   lane :appstore do |options|
     raise 'You must specify a custom build pod file' if options[:pod_binary_path].nil?
     # lets setup the pods first
-    hockey_app_id = '215568fb16f34b60aea835757b2634b9'
+    
+    
+    # The build # for appstore is derived from stage build #.
+    hockey_app_id = 'e9cef45d54a449c9b00e472f48fb47ce' 
+    # since next_hockey_version gets us an incremented count, for appstore builds we keep the same build # as for the latest stage build
+    build_number = (next_hockey_version(api_token: @hockey_api_token, app_id: hockey_app_id) - 1).to_s
+    
+    hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'
     sh ("(cd ../Code/ && #{options[:pod_binary_path] } install)")
     CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "Appstore Distribution IosRental",  skip_certificate_verification: true, app_identifier:"com.trulia.IosRental")
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
-    build_number = ENV["BUILD_NUMBER"] || next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
 
     build_and_upload(
         # Not a production release, so add build number and do the color modulation of the icons
