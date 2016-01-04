@@ -42,8 +42,6 @@
 		4C0CF0BE14D6634B00A1D325 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0CEEEA14D6634A00A1D325 /* main.m */; };
 		4C0CF0C414D6634B00A1D325 /* IRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0CEEF914D6634A00A1D325 /* IRAppDelegate.m */; };
 		4C0CF11214D6643E00A1D325 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6C1814CF51D1007F2584 /* CoreFoundation.framework */; };
-		4C0CF11D14D6648200A1D325 /* ICGeneral~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51DA6C2414CF5896007F2584 /* ICGeneral~iphone.plist */; };
-		4C0CF11E14D6648200A1D325 /* ICMetric~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51DA6C2514CF5896007F2584 /* ICMetric~iphone.plist */; };
 		4C0CF11F14D6648200A1D325 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51DA6C1D14CF51D1007F2584 /* InfoPlist.strings */; };
 		5142AD091565A88200BBB7F8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5142AD081565A88200BBB7F8 /* AudioToolbox.framework */; };
 		51802F4514CF793A00199144 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51802F4414CF793900199144 /* AVFoundation.framework */; };
@@ -66,11 +64,14 @@
 		7B3DD9541BE189EC009823CA /* ADBMobileConfigRelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B3DD9521BE189EC009823CA /* ADBMobileConfigRelease.json */; };
 		7B3DD9581BE28CF4009823CA /* LaunchSupport.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B3DD9571BE28CF4009823CA /* LaunchSupport.xcassets */; };
 		851D7F8C796178911F0DC19A /* libPods-Trulia Rent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B648E949E5051BCCADA9ECB4 /* libPods-Trulia Rent.a */; };
+		9D0989DA1C3AEB050093F3AA /* ICConfiguration-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0989D51C3AEB050093F3AA /* ICConfiguration-Info.plist */; };
+		9D0989DB1C3AEB050093F3AA /* ICGeneral~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0989D61C3AEB050093F3AA /* ICGeneral~ipad.plist */; };
+		9D0989DC1C3AEB050093F3AA /* ICGeneral~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0989D71C3AEB050093F3AA /* ICGeneral~iphone.plist */; };
+		9D0989DD1C3AEB050093F3AA /* ICMetric~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0989D81C3AEB050093F3AA /* ICMetric~ipad.plist */; };
+		9D0989DE1C3AEB050093F3AA /* ICMetric~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0989D91C3AEB050093F3AA /* ICMetric~iphone.plist */; };
 		9D23EC5E17205D300048E737 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D23EC5D17205D300048E737 /* ImageIO.framework */; };
 		9D94D26F161A0B5C0089CEEC /* copyright.html in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D248161A0B5C0089CEEC /* copyright.html */; };
 		9D94DEAC15D992F20068FC85 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D94DEAB15D992F20068FC85 /* OpenGLES.framework */; };
-		9D94F88A15E2FA590068FC85 /* ICGeneral~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F88815E2FA590068FC85 /* ICGeneral~ipad.plist */; };
-		9D94F88B15E2FA590068FC85 /* ICMetric~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D94F88915E2FA590068FC85 /* ICMetric~ipad.plist */; };
 		9DEF832B1607AE430087FA1A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEF832A1607AE430087FA1A /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B7EA94C51635E0CD00B02F3F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C41635E0CC00B02F3F /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B7EA94C71635E14800B02F3F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C61635E14800B02F3F /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -159,11 +160,8 @@
 		51DA6A1814CF2F0D007F2584 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		51DA6A1A14CF2F0D007F2584 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		51DA6C1814CF51D1007F2584 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		51DA6C1C14CF51D1007F2584 /* ICConfiguration-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ICConfiguration-Info.plist"; sourceTree = "<group>"; };
 		51DA6C1E14CF51D1007F2584 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		51DA6C2014CF51D1007F2584 /* ICConfiguration-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ICConfiguration-Prefix.pch"; sourceTree = "<group>"; };
-		51DA6C2414CF5896007F2584 /* ICGeneral~iphone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICGeneral~iphone.plist"; sourceTree = "<group>"; };
-		51DA6C2514CF5896007F2584 /* ICMetric~iphone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~iphone.plist"; sourceTree = "<group>"; };
 		51E1597A14D2218F00DB87CA /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		51E1597C14D2219800DB87CA /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		767A3C069A25871861F0B27F /* Pods-Trulia Rent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.debug.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +170,11 @@
 		7B3DD9521BE189EC009823CA /* ADBMobileConfigRelease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ADBMobileConfigRelease.json; path = Resources/jsons/ADBMobileConfigRelease.json; sourceTree = "<group>"; };
 		7B3DD9571BE28CF4009823CA /* LaunchSupport.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = LaunchSupport.xcassets; path = Resources/LaunchSupport.xcassets; sourceTree = "<group>"; };
 		9A6A075AFCE1984FF6ED4FD5 /* Pods-Trulia Rent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.release.xcconfig"; sourceTree = "<group>"; };
+		9D0989D51C3AEB050093F3AA /* ICConfiguration-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICConfiguration-Info.plist"; sourceTree = "<group>"; };
+		9D0989D61C3AEB050093F3AA /* ICGeneral~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICGeneral~ipad.plist"; sourceTree = "<group>"; };
+		9D0989D71C3AEB050093F3AA /* ICGeneral~iphone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICGeneral~iphone.plist"; sourceTree = "<group>"; };
+		9D0989D81C3AEB050093F3AA /* ICMetric~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~ipad.plist"; sourceTree = "<group>"; };
+		9D0989D91C3AEB050093F3AA /* ICMetric~iphone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~iphone.plist"; sourceTree = "<group>"; };
 		9D23EC5D17205D300048E737 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		9D37273016657DA00018B275 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
 		9D37273116657DA00018B275 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
@@ -182,13 +185,13 @@
 		9D37273616657DA00018B275 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		9D94D249161A0B5C0089CEEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = copyright.html; sourceTree = "<group>"; };
 		9D94DEAB15D992F20068FC85 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		9D94F88815E2FA590068FC85 /* ICGeneral~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICGeneral~ipad.plist"; sourceTree = "<group>"; };
-		9D94F88915E2FA590068FC85 /* ICMetric~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~ipad.plist"; sourceTree = "<group>"; };
 		9DEF832A1607AE430087FA1A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AC2965463F1BBA770A66828E /* Pods-Trulia Rent.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.appstore.xcconfig"; sourceTree = "<group>"; };
 		B648E949E5051BCCADA9ECB4 /* libPods-Trulia Rent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Trulia Rent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EA94C41635E0CC00B02F3F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		B7EA94C61635E14800B02F3F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		D09DA5C38F5E4A46E3F1F5A3 /* Pods-Trulia Rent.stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.stage.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.stage.xcconfig"; sourceTree = "<group>"; };
+		DDF0F66ACE5D4047BF97E357 /* Pods-Trulia Rent.enterpriserelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.enterpriserelease.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.enterpriserelease.xcconfig"; sourceTree = "<group>"; };
 		E052A209187E145E00B0A358 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		E052A20B187E147000B0A358 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		E052A20D187E148100B0A358 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
@@ -457,11 +460,11 @@
 		51DA6C1A14CF51D1007F2584 /* ICConfiguration */ = {
 			isa = PBXGroup;
 			children = (
-				9D94F88815E2FA590068FC85 /* ICGeneral~ipad.plist */,
-				9D94F88915E2FA590068FC85 /* ICMetric~ipad.plist */,
-				51DA6C2414CF5896007F2584 /* ICGeneral~iphone.plist */,
-				51DA6C2514CF5896007F2584 /* ICMetric~iphone.plist */,
-				51DA6C1C14CF51D1007F2584 /* ICConfiguration-Info.plist */,
+				9D0989D51C3AEB050093F3AA /* ICConfiguration-Info.plist */,
+				9D0989D61C3AEB050093F3AA /* ICGeneral~ipad.plist */,
+				9D0989D71C3AEB050093F3AA /* ICGeneral~iphone.plist */,
+				9D0989D81C3AEB050093F3AA /* ICMetric~ipad.plist */,
+				9D0989D91C3AEB050093F3AA /* ICMetric~iphone.plist */,
 				51DA6C1D14CF51D1007F2584 /* InfoPlist.strings */,
 				51DA6C2014CF51D1007F2584 /* ICConfiguration-Prefix.pch */,
 			);
@@ -506,6 +509,8 @@
 				D09DA5C38F5E4A46E3F1F5A3 /* Pods-Trulia Rent.stage.xcconfig */,
 				05A48E58B0A5F2C68BDBC914 /* Pods-Trulia Rent.bstage.xcconfig */,
 				9A6A075AFCE1984FF6ED4FD5 /* Pods-Trulia Rent.release.xcconfig */,
+				AC2965463F1BBA770A66828E /* Pods-Trulia Rent.appstore.xcconfig */,
+				DDF0F66ACE5D4047BF97E357 /* Pods-Trulia Rent.enterpriserelease.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -592,11 +597,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C0CF11D14D6648200A1D325 /* ICGeneral~iphone.plist in Resources */,
-				4C0CF11E14D6648200A1D325 /* ICMetric~iphone.plist in Resources */,
+				9D0989DD1C3AEB050093F3AA /* ICMetric~ipad.plist in Resources */,
 				4C0CF11F14D6648200A1D325 /* InfoPlist.strings in Resources */,
-				9D94F88A15E2FA590068FC85 /* ICGeneral~ipad.plist in Resources */,
-				9D94F88B15E2FA590068FC85 /* ICMetric~ipad.plist in Resources */,
+				9D0989DE1C3AEB050093F3AA /* ICMetric~iphone.plist in Resources */,
+				9D0989DB1C3AEB050093F3AA /* ICGeneral~ipad.plist in Resources */,
+				9D0989DA1C3AEB050093F3AA /* ICConfiguration-Info.plist in Resources */,
+				9D0989DC1C3AEB050093F3AA /* ICGeneral~iphone.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,31 +788,6 @@
 			};
 			name = Debug;
 		};
-		4C0CF11C14D6643E00A1D325 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ICConfiguration/ICConfiguration-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "ICConfiguration/ICConfiguration-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = macosx;
-				VALID_ARCHS = "armv7 i386";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		51DA6A3D14CF2F0D007F2584 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -820,7 +801,10 @@
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
+				CUSTOM_PROVISIONING_PROFILE = "";
+				CUSTOM_SIGNING_IDENTITY = "";
 				ENABLE_BITCODE = NO;
+				FACEBOOK_APP_ID = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -843,37 +827,6 @@
 			};
 			name = Debug;
 		};
-		51DA6A3E14CF2F0D007F2584 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
-				COMPRESS_PNG_FILES = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_BITCODE = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_NAME = ForRent;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 1;
-				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = armv7;
-			};
-			name = Release;
-		};
 		51DA6A4014CF2F0D007F2584 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 767A3C069A25871861F0B27F /* Pods-Trulia Rent.debug.xcconfig */;
@@ -883,12 +836,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
+				CUSTOM_PROVISIONING_PROFILE = "";
+				CUSTOM_SIGNING_IDENTITY = "iPhone Developer";
 				DEPLOYMENT_POSTPROCESSING = NO;
+				FACEBOOK_APP_ID = 468741039850614;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -903,8 +859,9 @@
 					"$(SRCROOT)/../../mob-ioscore-lib/**",
 				);
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental;
 				PRODUCT_NAME = TruliaRent;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "$(CUSTOM_PROVISIONING_PROFILE)";
 				SEPARATE_STRIP = YES;
 				SKIP_INSTALL = NO;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -913,147 +870,6 @@
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
-		};
-		51DA6A4114CF2F0D007F2584 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A6A075AFCE1984FF6ED4FD5 /* Pods-Trulia Rent.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_RESOURCE_RULES_PATH = "";
-				COMPRESS_PNG_FILES = NO;
-				COPY_PHASE_STRIP = NO;
-				DEPLOYMENT_POSTPROCESSING = NO;
-				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Trulia Rent-Prefix.pch";
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				INFOPLIST_FILE = "Trulia Rent-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					"$(SRCROOT)/../../mob-ioscore-lib/**",
-				);
-				PRODUCT_NAME = TruliaRent;
-				PROVISIONING_PROFILE = "";
-				SEPARATE_STRIP = YES;
-				SKIP_INSTALL = NO;
-				STRIP_INSTALLED_PRODUCT = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv7s armv7 arm64";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		7B680D4D1B8D6F5C004A95FD /* BStage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
-				COMPRESS_PNG_FILES = NO;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_BITCODE = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = ForRent;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = armv7;
-			};
-			name = BStage;
-		};
-		7B680D4E1B8D6F5C004A95FD /* BStage */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05A48E58B0A5F2C68BDBC914 /* Pods-Trulia Rent.bstage.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_RESOURCE_RULES_PATH = "";
-				COMPRESS_PNG_FILES = NO;
-				COPY_PHASE_STRIP = NO;
-				DEPLOYMENT_POSTPROCESSING = NO;
-				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Trulia Rent-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"BSTAGE=1",
-				);
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				INFOPLIST_FILE = "Trulia Rent-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					"$(SRCROOT)/../../mob-ioscore-lib/**",
-				);
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = TruliaRent;
-				PROVISIONING_PROFILE = "";
-				SEPARATE_STRIP = YES;
-				SKIP_INSTALL = NO;
-				STRIP_INSTALLED_PRODUCT = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv7s armv7 arm64";
-				WRAPPER_EXTENSION = app;
-			};
-			name = BStage;
-		};
-		7B680D4F1B8D6F5C004A95FD /* BStage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ICConfiguration/ICConfiguration-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "ICConfiguration/ICConfiguration-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = macosx;
-				VALID_ARCHS = "armv7 i386";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = BStage;
 		};
 		7B680D511B8D6F68004A95FD /* Stage */ = {
 			isa = XCBuildConfiguration;
@@ -1068,7 +884,10 @@
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
+				CUSTOM_PROVISIONING_PROFILE = "";
+				CUSTOM_SIGNING_IDENTITY = "";
 				ENABLE_BITCODE = NO;
+				FACEBOOK_APP_ID = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1096,12 +915,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
+				CUSTOM_PROVISIONING_PROFILE = EnterpriseIosRental.mobileprovision;
+				CUSTOM_SIGNING_IDENTITY = "iPhone Distribution: Trulia Inc";
 				DEPLOYMENT_POSTPROCESSING = NO;
+				FACEBOOK_APP_ID = 468741039850614;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1119,9 +941,10 @@
 					"$(SRCROOT)",
 					"$(SRCROOT)/../../mob-ioscore-lib/**",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental;
 				PRODUCT_NAME = TruliaRent;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "$(CUSTOM_PROVISIONING_PROFILE)";
 				SEPARATE_STRIP = YES;
 				SKIP_INSTALL = NO;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1157,6 +980,115 @@
 			};
 			name = Stage;
 		};
+		9D6A0B2B1C2B1BCE00C661FB /* Appstore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				COMPRESS_PNG_FILES = NO;
+				COPY_PHASE_STRIP = NO;
+				CUSTOM_PROVISIONING_PROFILE = "";
+				CUSTOM_SIGNING_IDENTITY = "";
+				ENABLE_BITCODE = NO;
+				FACEBOOK_APP_ID = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ForRent;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = armv7;
+			};
+			name = Appstore;
+		};
+		9D6A0B2C1C2B1BCE00C661FB /* Appstore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC2965463F1BBA770A66828E /* Pods-Trulia Rent.appstore.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
+				COMPRESS_PNG_FILES = NO;
+				COPY_PHASE_STRIP = NO;
+				CUSTOM_PROVISIONING_PROFILE = "";
+				CUSTOM_SIGNING_IDENTITY = "iPhone Distribution: Trulia, Inc (9QV5QN2J8K)";
+				DEPLOYMENT_POSTPROCESSING = NO;
+				FACEBOOK_APP_ID = 410970538982032;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trulia Rent-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"APPSTORE=1",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "Trulia Rent-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(SRCROOT)/../../mob-ioscore-lib/**",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trulia.IosRental;
+				PRODUCT_NAME = TruliaRent;
+				PROVISIONING_PROFILE = "$(CUSTOM_PROVISIONING_PROFILE)";
+				SEPARATE_STRIP = YES;
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7s armv7 arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Appstore;
+		};
+		9D6A0B2D1C2B1BCE00C661FB /* Appstore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ICConfiguration/ICConfiguration-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "ICConfiguration/ICConfiguration-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				VALID_ARCHS = "armv7 i386";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Appstore;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1165,33 +1097,30 @@
 			buildConfigurations = (
 				4C0CF11B14D6643E00A1D325 /* Debug */,
 				7B680D531B8D6F68004A95FD /* Stage */,
-				7B680D4F1B8D6F5C004A95FD /* BStage */,
-				4C0CF11C14D6643E00A1D325 /* Release */,
+				9D6A0B2D1C2B1BCE00C661FB /* Appstore */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "Trulia Rent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51DA6A3D14CF2F0D007F2584 /* Debug */,
 				7B680D511B8D6F68004A95FD /* Stage */,
-				7B680D4D1B8D6F5C004A95FD /* BStage */,
-				51DA6A3E14CF2F0D007F2584 /* Release */,
+				9D6A0B2B1C2B1BCE00C661FB /* Appstore */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		51DA6A3F14CF2F0D007F2584 /* Build configuration list for PBXNativeTarget "Trulia Rent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51DA6A4014CF2F0D007F2584 /* Debug */,
 				7B680D521B8D6F68004A95FD /* Stage */,
-				7B680D4E1B8D6F5C004A95FD /* BStage */,
-				51DA6A4114CF2F0D007F2584 /* Release */,
+				9D6A0B2C1C2B1BCE00C661FB /* Appstore */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

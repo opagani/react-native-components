@@ -4,39 +4,56 @@ fastlane_version '1.42.0'
 default_platform :ios
 
 platform :ios do
-  before_all do
-    cocoapods(podfile: 'Code/Podfile')
+  
+  def undo_icon_file_changes
+    checkout_command = "git checkout #{@absolute_icon_path}"
+    puts "executing #{checkout_command}"
+    sh (checkout_command)
   end
+  
+  before_all do
+    # cocoapods(podfile: 'Code/Podfile')
+    import_from_git(
+        url: 'git@stash.sv2.trulia.com:mob/mob-build.git',
+        branch: 'master',
+        path: 'ios/fastlane/Fastfile'
+    )
 
-  desc 'Runs all the tests'
-  lane :test do
-    # snapshot
+    # absolutePath = File.expand_path "../Code/Podfile"
+    # unless keychain_password.nil?
+    #   unlock_keychain(path: '~/Library/Keychains/login.keychain', password: keychain_password)
+    # end
+    
+    unlock_keychain(path: "~/Library/Keychains/login.keychain", password: "p@55w0rd")
+    @app_name = "Trulia" 
+    @modulation = 66.6
+    @project_name = "Code/Trulia Rent.xcodeproj"
+    @workspace = "Code/ForRent.xcworkspace"
+    @scheme = "TruliaRent"
+    @product_name = "TruliaRent"
+    @upload_dir_app_type = "IosRental"
+    @mstage_user= 'web'
+    @hockeyapp_token = 'f9ea5344004d44cfa154efab77887b72'
+    @absolute_icon_path = File.expand_path "../Code/Images.xcassets/AppIcon.appiconset"
+    @hockey_team_ids = '51656,51937,50690,50668,50687,50684,50683'
+    
+    undo_icon_file_changes
+    
   end
 
   desc 'Build and deploy a new beta version on Hockey'
   lane :stage do |options|
 
-    #### configs ####
+    raise 'You must specify a custom build pod file' if options[:pod_binary_path].nil?
+    # lets setup the pods first
+    sh ("(cd ../Code/ && #{options[:pod_binary_path] } install)")
+    
+    #params for the build
     jira_host = 'jira.corp.trulia.com'
     hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'
-    hockey_team_ids = '51656,51937,50690,50668,50687,50684,50683'
-    #################
-
-    import_from_git(
-      url: 'git@stash.sv2.trulia.com:mob/mob-build.git',
-      branch: 'master',
-      path: 'ios/fastlane/Fastfile'
-    )
-
-    # Unlock the keychain if needed/password provided
-    keychain_password = ENV['LOGIN_KEYCHAIN_PASSWORD']
-    unless keychain_password.nil?
-      unlock_keychain(path: '~/Library/Keychains/login.keychain', password: keychain_password)
-    end
-
-    sigh
-
-    absolute_icon_path = File.expand_path '../Code/Images.xcassets/AppIcon.appiconset'
+    CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "EnterpriseIosRental",  skip_certificate_verification: true, app_identifier:"com.truliainc.IosRental")
+    xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
+    build_number = next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
 
     build_and_upload(
         # Not a production release, so add build number and do the color modulation of the icons
@@ -48,81 +65,101 @@ platform :ios do
         # Export an enterprise app
         export_method: 'enterprise',
         # the projectname, this is the name of the .xcodeproj file and the folder containing your code in the project
-        project_name: 'Code/Trulia Rent.xcodeproj',
+        project_name: @project_name,
         # workspace
-        workspace: 'Code/ForRent.xcworkspace',
+        workspace: @workspace,
         # the scheme to build
-        scheme: 'TruliaRent',
+        scheme: @scheme,
+        # the build number to use, we use the build number + 1 from latest hockey app version uploaded to stage
+        build_number: build_number,
+        # the number prefix to use to bake into icons, S for stage, B for BStage, and R for enterprise_release.
+        build_number_prefix:"S",
         # icons folder path so that we can update the icons
-        icon_folder_path: absolute_icon_path,
-        product_name: 'TruliaRent',
+        icon_folder_path: @absolute_icon_path,
+        # passes in the mobile provisiong profile info explicitly
+        xcargs: xcargs,
+        product_name: @product_name,
         # this is needed for the upload to mstage. This specifies the folder on the server to put the app and archive into
-        upload_dir_app_type: 'IosRental',
+        upload_dir_app_type: @upload_dir_app_type,
         # the subfolder within which to upload, generall it is qa, dev or rel;
-        upload_dir_build_type: 'testdir',
+        upload_dir_build_type: 'qa',
         # hockey app id to use
         hockeyapp_id: hockey_app_id,
         # hockey app token to use
-        hockeyapp_token: ENV['HOCKEY_API_TOKEN'],
+        hockeyapp_token: @hockeyapp_token,
         # the team IDs to notify when a new build is published
-        hockeyapp_team_ids: hockey_team_ids,
+        hockeyapp_team_ids: @hockey_team_ids,
+        # the user to use to upload to mstage
+        mstage_user: @mstage_user,
         # the JIRA host to search for issues to update based on these changes
         jira_host: jira_host
     )
+    undo_icon_file_changes
   end
-
 
   desc 'Build and deploy an appstore ready version'
   lane :appstore do |options|
-
-    #### configs ####
-    hockey_app_id = 'b3ac9a1a07114380b4d0706c83efcde4'
-    #################
-
-    import_from_git(
-      url: 'git@stash.sv2.trulia.com:mob/mob-build.git',
-      branch: 'master',
-      path: 'ios/fastlane/Fastfile'
-    )
-
-
-    # Unlock the keychain if needed/password provided
-    keychain_password = ENV['LOGIN_KEYCHAIN_PASSWORD']
-    unless keychain_password.nil?
-      unlock_keychain(path: '~/Library/Keychains/login.keychain', password: keychain_password)
-    end
-
-    sigh
-
-    absolute_icon_path = File.expand_path '../Mortgage/Assets.xcassets/AppIcon.appiconset'
+    raise 'You must specify a custom build pod file' if options[:pod_binary_path].nil?
+    # lets setup the pods first
+    
+    
+    # The build # for appstore is derived from stage build #.
+    hockey_app_id = 'e9cef45d54a449c9b00e472f48fb47ce' 
+    # since next_hockey_version gets us an incremented count, for appstore builds we keep the same build # as for the latest stage build
+    build_number = (next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id) - 1).to_s
+    
+    hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'
+    sh ("(cd ../Code/ && #{options[:pod_binary_path] } install)")
+    CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "Appstore Distribution IosRental",  skip_certificate_verification: true, app_identifier:"com.trulia.IosRental")
+    xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
 
     build_and_upload(
+        # Not a production release, so add build number and do the color modulation of the icons
         release: true,
+        # Modulate the colors of the icons by these degrees
+        modulation: 66.6,
         # What configuration to use, usefull for keeping different API keys etc between environments
-        configuration: 'AppStore',
+        configuration: 'Appstore',
         # Export an enterprise app
         export_method: 'app-store',
         # the projectname, this is the name of the .xcodeproj file and the folder containing your code in the project
-        project_name: 'Mortgage.xcodeproj',
+        project_name: @project_name ,
         # workspace
-        workspace: 'Mortgage.xcworkspace',
+        workspace: @workspace,
         # the scheme to build
-        scheme: 'appstore',
-        # the build number to use, we use the build number from Jenkins
-        build_number: ENV['BUILD_NUMBER'],
+        scheme: @scheme,
+        # the build number to use, we use the build number + 1 from latest hockey app version uploaded to stage
+        build_number: build_number,
+        # the number prefix to use to bake into icons, S for stage, B for BStage, and R for enterprise_release.
+        build_number_prefix:"R",
         # icons folder path so that we can update the icons
-        icon_folder_path: absolute_icon_path,
-        # xcargs: "CUSTOM_PROVISIONING_PROFILE='#{CUSTOM_PROVISIONING_PROFILEID}' WATCH_PROVISIONING_PROFILE='#{WATCH_PROVISIONING_PROFILEID}' WATCH_EXT_PROVISIONING_PROFILE='#{WATCH_EXT_PROVISIONING_PROFILEID}' ",
-        product_name: 'Mortgage',
+        icon_folder_path: @absolute_icon_path,
+        product_name: @product_name,
         # this is needed for the upload to mstage. This specifies the folder on the server to put the app and archive into
-        upload_dir_app_type: 'IosMortgage',
+        upload_dir_app_type: @upload_dir_app_type,
         # the subfolder within which to upload, generall it is qa, dev or rel;
-        upload_dir_build_type: 'testdir',
+        upload_dir_build_type: 'rel',
         # hockey app id to use
         hockeyapp_id: hockey_app_id,
         # hockey app token to use
-        hockeyapp_token: ENV['HOCKEY_API_TOKEN']
+        hockeyapp_token: @hockeyapp_token,
+        # the team IDs to notify when a new build is published
+        hockeyapp_team_ids: @hockey_team_ids,
+        # the user to use to upload to mstage
+        mstage_user: @mstage_user,
     )
 
+
   end
+  
+  after_all do |lane|
+    undo_icon_file_changes
+    clean_build_artifacts
+  end
+
+  error do |lane, exception|
+    undo_icon_file_changes    
+    clean_build_artifacts
+  end
+  
 end
