@@ -13,3 +13,14 @@ target 'Trulia Rent' do
     
 end
 
+#TODO: We can remove this after https://github.com/CocoaPods/Xcodeproj/pull/351 is merged and that version of
+# Xcodeproj is integrated into CocoaPods
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if target.product_type == 'com.apple.product-type.bundle'
+      target.build_configurations.each do |config|
+        config.build_settings['TARGETED_DEVICE_FAMILY'] = '1,2'
+      end
+    end
+  end
+end
