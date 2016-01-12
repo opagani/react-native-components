@@ -45,6 +45,8 @@ platform :ios do
   lane :stage do |options|
 
     raise 'You must specify a custom build pod file' if options[:pod_binary_path].nil?
+    raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
+    
     # lets setup the pods first
     sh ("(cd ../Code/ && #{options[:pod_binary_path] } install)")
     
@@ -94,7 +96,9 @@ platform :ios do
         # the user to use to upload to mstage
         mstage_user: @mstage_user,
         # the JIRA host to search for issues to update based on these changes
-        jira_host: jira_host
+        jira_host: jira_host,
+        # core library path, this is used to get the change log for the core library
+        core_library_path:options[:core_library_path]
     )
     undo_icon_file_changes
   end
@@ -104,6 +108,7 @@ platform :ios do
   lane :rc do |options|
 
     raise 'You must specify a custom build pod file' if options[:pod_binary_path].nil?
+    raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
     # lets setup the pods first
     sh ("(cd ../Code/ && #{options[:pod_binary_path] } install)")
     
@@ -155,7 +160,9 @@ platform :ios do
         # the user to use to upload to mstage
         mstage_user: @mstage_user,
         # the JIRA host to search for issues to update based on these changes
-        jira_host: jira_host
+        jira_host: jira_host,
+        # core library path, this is used to get the change log for the core library
+        core_library_path:options[:core_library_path]
     )
     undo_icon_file_changes
   end
@@ -163,9 +170,10 @@ platform :ios do
 
   desc 'Build and deploy an appstore ready version'
   lane :appstore do |options|
-    raise 'You must specify a custom build pod file' if options[:pod_binary_path].nil?
-    # lets setup the pods first
     
+    raise 'You must specify a custom build pod file' if options[:pod_binary_path].nil?
+    raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
+    # lets setup the pods first
     
     # The build # for appstore is derived from stage build #.
     hockey_app_id = 'e9cef45d54a449c9b00e472f48fb47ce' 
@@ -213,6 +221,9 @@ platform :ios do
         hockeyapp_team_ids: @hockey_team_ids,
         # the user to use to upload to mstage
         mstage_user: @mstage_user,
+        # core library path, this is used to get the change log for the core library
+        core_library_path:options[:core_library_path]
+        
     )
 
 
