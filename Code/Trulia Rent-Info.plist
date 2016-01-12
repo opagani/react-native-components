@@ -68,6 +68,7 @@
 				<string>TruliaCollabInvitation</string>
 				<string>TruliaCollabAllBoards</string>
 				<string>TruliaBringToForegroundOnly</string>
+				<string>TruliaNotificationCenter</string>
 			</array>
 		</dict>
 	</array>
