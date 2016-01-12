@@ -45,6 +45,8 @@ platform :ios do
   lane :stage do |options|
 
     raise 'You must specify a custom build pod file' if options[:pod_binary_path].nil?
+    raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
+    
     # lets setup the pods first
     sh ("(cd ../Code/ && #{options[:pod_binary_path] } install)")
     
@@ -56,8 +58,10 @@ platform :ios do
     build_number = next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
 
     build_and_upload(
-        # Not a production release, so add build number and do the color modulation of the icons
-        release: false,
+        # update the icons if in stage
+        color_icon: true,
+        # bake the build number into icons
+        build_number_icon: true,
         # Modulate the colors of the icons by these degrees
         modulation: 66.6,
         # What configuration to use, usefull for keeping different API keys etc between environments
@@ -92,16 +96,84 @@ platform :ios do
         # the user to use to upload to mstage
         mstage_user: @mstage_user,
         # the JIRA host to search for issues to update based on these changes
-        jira_host: jira_host
+        jira_host: jira_host,
+        # core library path, this is used to get the change log for the core library
+        core_library_path:options[:core_library_path]
     )
     undo_icon_file_changes
   end
+  
+  
+  desc 'Build and deploy a release candidate version on Hockey'
+  lane :rc do |options|
+
+    raise 'You must specify a custom build pod file' if options[:pod_binary_path].nil?
+    raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
+    # lets setup the pods first
+    sh ("(cd ../Code/ && #{options[:pod_binary_path] } install)")
+    
+    #params for the build
+    jira_host = 'jira.corp.trulia.com'
+    hockey_app_id = 'a219c9215a4f4b9ea9f43358e6cb0a7a'
+    CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "EnterpriseIosRental",  skip_certificate_verification: true, app_identifier:"com.truliainc.IosRental")
+    xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
+    build_number = next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
+
+    build_and_upload(
+        # update the icons if in stage
+        color_icon: false,
+        # bake the build number into icons
+        build_number_icon: true,
+        # Not a production release, so add build number and do the color modulation of the icons
+        release: false,
+        # Modulate the colors of the icons by these degrees
+        modulation: 66.6,
+        # What configuration to use, usefull for keeping different API keys etc between environments
+        configuration: 'Stage',
+        # Export an enterprise app
+        export_method: 'enterprise',
+        # the projectname, this is the name of the .xcodeproj file and the folder containing your code in the project
+        project_name: @project_name,
+        # workspace
+        workspace: @workspace,
+        # the scheme to build
+        scheme: @scheme,
+        # the build number to use, we use the build number + 1 from latest hockey app version uploaded to stage
+        build_number: build_number,
+        # the number prefix to use to bake into icons, S for stage, B for BStage, and R for enterprise_release.
+        build_number_prefix:"RC",
+        # icons folder path so that we can update the icons
+        icon_folder_path: @absolute_icon_path,
+        # passes in the mobile provisiong profile info explicitly
+        xcargs: xcargs,
+        product_name: @product_name,
+        # this is needed for the upload to mstage. This specifies the folder on the server to put the app and archive into
+        upload_dir_app_type: @upload_dir_app_type,
+        # the subfolder within which to upload, generall it is qa, dev or rel;
+        upload_dir_build_type: 'qa',
+        # hockey app id to use
+        hockeyapp_id: hockey_app_id,
+        # hockey app token to use
+        hockeyapp_token: @hockeyapp_token,
+        # the team IDs to notify when a new build is published
+        hockeyapp_team_ids: @hockey_team_ids,
+        # the user to use to upload to mstage
+        mstage_user: @mstage_user,
+        # the JIRA host to search for issues to update based on these changes
+        jira_host: jira_host,
+        # core library path, this is used to get the change log for the core library
+        core_library_path:options[:core_library_path]
+    )
+    undo_icon_file_changes
+  end
+  
 
   desc 'Build and deploy an appstore ready version'
   lane :appstore do |options|
-    raise 'You must specify a custom build pod file' if options[:pod_binary_path].nil?
-    # lets setup the pods first
     
+    raise 'You must specify a custom build pod file' if options[:pod_binary_path].nil?
+    raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
+    # lets setup the pods first
     
     # The build # for appstore is derived from stage build #.
     hockey_app_id = 'e9cef45d54a449c9b00e472f48fb47ce' 
@@ -114,8 +186,10 @@ platform :ios do
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
 
     build_and_upload(
-        # Not a production release, so add build number and do the color modulation of the icons
-        release: true,
+        # update the icons if in stage
+        color_icon: false,
+        # bake the build number into icons
+        build_number_icon: false,
         # Modulate the colors of the icons by these degrees
         modulation: 66.6,
         # What configuration to use, usefull for keeping different API keys etc between environments
@@ -147,6 +221,9 @@ platform :ios do
         hockeyapp_team_ids: @hockey_team_ids,
         # the user to use to upload to mstage
         mstage_user: @mstage_user,
+        # core library path, this is used to get the change log for the core library
+        core_library_path:options[:core_library_path]
+        
     )
 
 
