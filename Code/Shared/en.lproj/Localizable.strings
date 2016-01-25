@@ -124,7 +124,7 @@
 "AccountExistsError"= "We have that email address on file. Please log in.";
 "PasswordLengthError"= "Your password must be 5-15 characters.";
 "WeakPasswordError" = "Your password is too weak";
-"NewPasswordSentMsg" = "We've sent the new password to your email. Please log in";
+"NewPasswordSentMsg" = "We’ve sent you an email with instructions for resetting your password.";
 
 /* Contact */
 "ContactMessageSuccessful"= "Done! Your email is on its way.";
