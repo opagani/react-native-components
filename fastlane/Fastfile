@@ -44,11 +44,10 @@ platform :ios do
   desc 'Build and deploy a new beta version on Hockey'
   lane :stage do |options|
 
-    raise 'You must specify a custom build pod file' if options[:pod_binary_path].nil?
     raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
     
     # lets setup the pods first
-    sh ("(cd ../Code/ && #{options[:pod_binary_path] } install)")
+    cocoapods(:podfile => 'Code/Podfile')
     
     #params for the build
     jira_host = 'jira.corp.trulia.com'
@@ -107,10 +106,9 @@ platform :ios do
   desc 'Build and deploy a release candidate version on Hockey'
   lane :rc do |options|
 
-    raise 'You must specify a custom build pod file' if options[:pod_binary_path].nil?
     raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
     # lets setup the pods first
-    sh ("(cd ../Code/ && #{options[:pod_binary_path] } install)")
+    cocoapods(:podfile => 'Code/Podfile')
     
     #params for the build
     jira_host = 'jira.corp.trulia.com'
@@ -171,7 +169,6 @@ platform :ios do
   desc 'Build and deploy an appstore ready version'
   lane :appstore do |options|
     
-    raise 'You must specify a custom build pod file' if options[:pod_binary_path].nil?
     raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
     # lets setup the pods first
     
@@ -181,7 +178,7 @@ platform :ios do
     build_number = (next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id) - 1).to_s
     
     hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'
-    sh ("(cd ../Code/ && #{options[:pod_binary_path] } install)")
+    cocoapods(:podfile => 'Code/Podfile')
     CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "Appstore Distribution IosRental",  skip_certificate_verification: true, app_identifier:"com.trulia.IosRental")
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
 
