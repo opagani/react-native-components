@@ -12,13 +12,13 @@ platform :ios do
   end
   
   before_all do
-    # cocoapods(podfile: 'Code/Podfile')
     import_from_git(
         url: 'git@stash.sv2.trulia.com:mob/mob-build.git',
         branch: 'master',
         path: 'ios/fastlane/Fastfile'
     )
 
+    # import '/Users/fhaider/Source/Git/mob-build/ios/fastlane/Fastfile'
     # absolutePath = File.expand_path "../Code/Podfile"
     # unless keychain_password.nil?
     #   unlock_keychain(path: '~/Library/Keychains/login.keychain', password: keychain_password)
@@ -170,16 +170,13 @@ platform :ios do
   lane :appstore do |options|
     
     raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
-    # lets setup the pods first
     
-    # The build # for appstore is derived from stage build #.
-    hockey_app_id = 'e9cef45d54a449c9b00e472f48fb47ce' 
     # since next_hockey_version gets us an incremented count, for appstore builds we keep the same build # as for the latest stage build
-    build_number = (next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id) - 1).to_s
-    
     hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'
+    build_number = options[:build_number] ||  (next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id) - 1).to_s
+    
     cocoapods(:podfile => 'Code/Podfile')
-    CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "Appstore Distribution IosRental",  skip_certificate_verification: true, app_identifier:"com.trulia.IosRental")
+    CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "Ad hoc Trulia IosRental", ignore_profiles_with_different_name:true ,skip_certificate_verification: true, adhoc: true)
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
 
     build_and_upload(
@@ -192,7 +189,7 @@ platform :ios do
         # What configuration to use, usefull for keeping different API keys etc between environments
         configuration: 'Appstore',
         # Export an enterprise app
-        export_method: 'app-store',
+        export_method: 'ad-hoc',
         # the projectname, this is the name of the .xcodeproj file and the folder containing your code in the project
         project_name: @project_name ,
         # workspace
@@ -205,6 +202,8 @@ platform :ios do
         build_number_prefix:"R",
         # icons folder path so that we can update the icons
         icon_folder_path: @absolute_icon_path,
+        # passes in the mobile provisiong profile info explicitly
+        xcargs: xcargs,
         product_name: @product_name,
         # this is needed for the upload to mstage. This specifies the folder on the server to put the app and archive into
         upload_dir_app_type: @upload_dir_app_type,
