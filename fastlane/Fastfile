@@ -171,8 +171,7 @@ platform :ios do
     
     raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
     
-    # since next_hockey_version gets us an incremented count, for appstore builds we keep the same build # as for the latest stage build
-    hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'
+    hockey_app_id = '215568fb16f34b60aea835757b2634b9'
     build_number = options[:build_number] ||  (next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id) - 1).to_s
     
     cocoapods(:podfile => 'Code/Podfile')
