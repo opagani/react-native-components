@@ -117,3 +117,9 @@ xcuserdata
 # ...none. Everything is now explained.
 
 .idea
+Pods
+
+fastlane/bin
+fastlane/.bundle
+fastlane/vendor
+fastlane/bundle

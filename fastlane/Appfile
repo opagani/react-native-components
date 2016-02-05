@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby -wKU
+
+app_identifier 'com.truliainc.IosRental'
+apple_id 'truliaiosenterprise@gmail.com'
+team_name 'Trulia Inc'
+team_id '9FBSWYKDXR'
+
+for_platform :ios do
+  for_lane :appstore do
+    app_identifier 'com.trulia.IosRental'
+    apple_id 'truliaiosproduction@gmail.com'
+    team_name 'Trulia, Inc'
+    team_id '9QV5QN2J8K'
+  end
+end
