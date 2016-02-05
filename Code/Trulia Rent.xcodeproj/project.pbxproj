@@ -41,8 +41,6 @@
 		3BF8D8BE170E4611003EE773 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF8D8BD170E4611003EE773 /* StoreKit.framework */; };
 		4C0CF0BE14D6634B00A1D325 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0CEEEA14D6634A00A1D325 /* main.m */; };
 		4C0CF0C414D6634B00A1D325 /* IRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0CEEF914D6634A00A1D325 /* IRAppDelegate.m */; };
-		4C0CF11214D6643E00A1D325 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA6C1814CF51D1007F2584 /* CoreFoundation.framework */; };
-		4C0CF11F14D6648200A1D325 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51DA6C1D14CF51D1007F2584 /* InfoPlist.strings */; };
 		5142AD091565A88200BBB7F8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5142AD081565A88200BBB7F8 /* AudioToolbox.framework */; };
 		51802F4514CF793A00199144 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51802F4414CF793900199144 /* AVFoundation.framework */; };
 		51802F4714CF794500199144 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51802F4614CF794500199144 /* CoreLocation.framework */; };
@@ -64,14 +62,14 @@
 		7B3DD9541BE189EC009823CA /* ADBMobileConfigRelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B3DD9521BE189EC009823CA /* ADBMobileConfigRelease.json */; };
 		7B3DD9581BE28CF4009823CA /* LaunchSupport.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B3DD9571BE28CF4009823CA /* LaunchSupport.xcassets */; };
 		851D7F8C796178911F0DC19A /* libPods-Trulia Rent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B648E949E5051BCCADA9ECB4 /* libPods-Trulia Rent.a */; };
-		9D0989DA1C3AEB050093F3AA /* ICConfiguration-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0989D51C3AEB050093F3AA /* ICConfiguration-Info.plist */; };
-		9D0989DB1C3AEB050093F3AA /* ICGeneral~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0989D61C3AEB050093F3AA /* ICGeneral~ipad.plist */; };
-		9D0989DC1C3AEB050093F3AA /* ICGeneral~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0989D71C3AEB050093F3AA /* ICGeneral~iphone.plist */; };
-		9D0989DD1C3AEB050093F3AA /* ICMetric~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0989D81C3AEB050093F3AA /* ICMetric~ipad.plist */; };
-		9D0989DE1C3AEB050093F3AA /* ICMetric~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0989D91C3AEB050093F3AA /* ICMetric~iphone.plist */; };
 		9D23EC5E17205D300048E737 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D23EC5D17205D300048E737 /* ImageIO.framework */; };
 		9D94D26F161A0B5C0089CEEC /* copyright.html in Resources */ = {isa = PBXBuildFile; fileRef = 9D94D248161A0B5C0089CEEC /* copyright.html */; };
 		9D94DEAC15D992F20068FC85 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D94DEAB15D992F20068FC85 /* OpenGLES.framework */; };
+		9DC22FB81C65419700F7EB35 /* ICConfiguration-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0989D51C3AEB050093F3AA /* ICConfiguration-Info.plist */; };
+		9DC22FB91C65419700F7EB35 /* ICGeneral~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0989D61C3AEB050093F3AA /* ICGeneral~ipad.plist */; };
+		9DC22FBA1C65419700F7EB35 /* ICGeneral~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0989D71C3AEB050093F3AA /* ICGeneral~iphone.plist */; };
+		9DC22FBB1C65419700F7EB35 /* ICMetric~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0989D81C3AEB050093F3AA /* ICMetric~ipad.plist */; };
+		9DC22FBC1C65419700F7EB35 /* ICMetric~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0989D91C3AEB050093F3AA /* ICMetric~iphone.plist */; };
 		9DEF832B1607AE430087FA1A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEF832A1607AE430087FA1A /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B7EA94C51635E0CD00B02F3F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C41635E0CC00B02F3F /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B7EA94C71635E14800B02F3F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA94C61635E14800B02F3F /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -81,18 +79,7 @@
 		E052A210187E148800B0A358 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E052A20F187E148800B0A358 /* EventKitUI.framework */; };
 		E07EAAC8194A30CF006BE023 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAAC7194A30CF006BE023 /* GLKit.framework */; };
 		E07EAACE194A34C3006BE023 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E07EAACD194A34C2006BE023 /* libc++.dylib */; };
-		E09140E5195DF983002890C6 /* ICConfiguration.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E09140E4195DF983002890C6 /* ICConfiguration.bundle */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E07EAAD7194A7947006BE023 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 51DA6A0914CF2F0D007F2584 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C0CF11014D6643E00A1D325;
-			remoteInfo = ICConfiguration;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		05315EF41ADC70E500406317 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -143,7 +130,6 @@
 		4C0CEEF914D6634A00A1D325 /* IRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRAppDelegate.m; sourceTree = "<group>"; };
 		4C0CEF1A14D6634A00A1D325 /* Trulia Rent-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Trulia Rent-Info.plist"; sourceTree = "<group>"; };
 		4C0CEF1B14D6634A00A1D325 /* Trulia Rent-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Trulia Rent-Prefix.pch"; sourceTree = "<group>"; };
-		4C0CF11114D6643E00A1D325 /* ICConfiguration.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICConfiguration.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		5142AD081565A88200BBB7F8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		51802F4414CF793900199144 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		51802F4614CF794500199144 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -160,8 +146,6 @@
 		51DA6A1814CF2F0D007F2584 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		51DA6A1A14CF2F0D007F2584 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		51DA6C1814CF51D1007F2584 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		51DA6C1E14CF51D1007F2584 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		51DA6C2014CF51D1007F2584 /* ICConfiguration-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ICConfiguration-Prefix.pch"; sourceTree = "<group>"; };
 		51E1597A14D2218F00DB87CA /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		51E1597C14D2219800DB87CA /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		767A3C069A25871861F0B27F /* Pods-Trulia Rent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,14 +187,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C0CF10E14D6643E00A1D325 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C0CF11214D6643E00A1D325 /* CoreFoundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		51DA6A0F14CF2F0D007F2584 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -405,7 +381,6 @@
 			isa = PBXGroup;
 			children = (
 				51DA6A1214CF2F0D007F2584 /* TruliaRent.app */,
-				4C0CF11114D6643E00A1D325 /* ICConfiguration.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -465,8 +440,6 @@
 				9D0989D71C3AEB050093F3AA /* ICGeneral~iphone.plist */,
 				9D0989D81C3AEB050093F3AA /* ICMetric~ipad.plist */,
 				9D0989D91C3AEB050093F3AA /* ICMetric~iphone.plist */,
-				51DA6C1D14CF51D1007F2584 /* InfoPlist.strings */,
-				51DA6C2014CF51D1007F2584 /* ICConfiguration-Prefix.pch */,
 			);
 			path = ICConfiguration;
 			sourceTree = "<group>";
@@ -518,23 +491,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C0CF11014D6643E00A1D325 /* ICConfiguration */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C0CF11A14D6643E00A1D325 /* Build configuration list for PBXNativeTarget "ICConfiguration" */;
-			buildPhases = (
-				4C0CF10D14D6643E00A1D325 /* Sources */,
-				4C0CF10E14D6643E00A1D325 /* Frameworks */,
-				4C0CF10F14D6643E00A1D325 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ICConfiguration;
-			productName = ICConfiguration;
-			productReference = 4C0CF11114D6643E00A1D325 /* ICConfiguration.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		51DA6A1114CF2F0D007F2584 /* Trulia Rent */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51DA6A3F14CF2F0D007F2584 /* Build configuration list for PBXNativeTarget "Trulia Rent" */;
@@ -550,7 +506,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				E07EAAD8194A7947006BE023 /* PBXTargetDependency */,
 			);
 			name = "Trulia Rent";
 			productName = Trulia;
@@ -566,9 +521,6 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Trulia Inc";
 				TargetAttributes = {
-					4C0CF11014D6643E00A1D325 = {
-						DevelopmentTeam = 9FBSWYKDXR;
-					};
 					51DA6A1114CF2F0D007F2584 = {
 						DevelopmentTeam = 9FBSWYKDXR;
 					};
@@ -587,30 +539,20 @@
 			projectRoot = "";
 			targets = (
 				51DA6A1114CF2F0D007F2584 /* Trulia Rent */,
-				4C0CF11014D6643E00A1D325 /* ICConfiguration */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4C0CF10F14D6643E00A1D325 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D0989DD1C3AEB050093F3AA /* ICMetric~ipad.plist in Resources */,
-				4C0CF11F14D6648200A1D325 /* InfoPlist.strings in Resources */,
-				9D0989DE1C3AEB050093F3AA /* ICMetric~iphone.plist in Resources */,
-				9D0989DB1C3AEB050093F3AA /* ICGeneral~ipad.plist in Resources */,
-				9D0989DA1C3AEB050093F3AA /* ICConfiguration-Info.plist in Resources */,
-				9D0989DC1C3AEB050093F3AA /* ICGeneral~iphone.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		51DA6A1014CF2F0D007F2584 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E09140E5195DF983002890C6 /* ICConfiguration.bundle in Resources */,
+				9DC22FB81C65419700F7EB35 /* ICConfiguration-Info.plist in Resources */,
+				9DC22FB91C65419700F7EB35 /* ICGeneral~ipad.plist in Resources */,
+				9DC22FBA1C65419700F7EB35 /* ICGeneral~iphone.plist in Resources */,
+				9DC22FBB1C65419700F7EB35 /* ICMetric~ipad.plist in Resources */,
+				9DC22FBC1C65419700F7EB35 /* ICMetric~iphone.plist in Resources */,
 				05E7344E1B66C84500E92FA9 /* Images.xcassets in Resources */,
 				2611965B1950F3F300C4F392 /* LocalInfoItems~iphone.json in Resources */,
 				269D198E19B925F0000440BC /* LocalInfoItems~ipad.json in Resources */,
@@ -698,13 +640,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4C0CF10D14D6643E00A1D325 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		51DA6A0E14CF2F0D007F2584 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -724,14 +659,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		E07EAAD8194A7947006BE023 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C0CF11014D6643E00A1D325 /* ICConfiguration */;
-			targetProxy = E07EAAD7194A7947006BE023 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		3B5EF549170B8DFC003F00ED /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -740,14 +667,6 @@
 			);
 			name = Localizable.strings;
 			path = Ipad/Shared;
-			sourceTree = "<group>";
-		};
-		51DA6C1D14CF51D1007F2584 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				51DA6C1E14CF51D1007F2584 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		9D94D248161A0B5C0089CEEC /* copyright.html */ = {
@@ -762,32 +681,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4C0CF11B14D6643E00A1D325 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ICConfiguration/ICConfiguration-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "ICConfiguration/ICConfiguration-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = macosx;
-				VALID_ARCHS = "armv7 i386";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		51DA6A3D14CF2F0D007F2584 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -954,32 +847,6 @@
 			};
 			name = Stage;
 		};
-		7B680D531B8D6F68004A95FD /* Stage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ICConfiguration/ICConfiguration-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "ICConfiguration/ICConfiguration-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = macosx;
-				VALID_ARCHS = "armv7 i386";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Stage;
-		};
 		9D6A0B2B1C2B1BCE00C661FB /* Appstore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1063,45 +930,9 @@
 			};
 			name = Appstore;
 		};
-		9D6A0B2D1C2B1BCE00C661FB /* Appstore */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/Build/";
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ICConfiguration/ICConfiguration-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "ICConfiguration/ICConfiguration-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = macosx;
-				VALID_ARCHS = "armv7 i386";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Appstore;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C0CF11A14D6643E00A1D325 /* Build configuration list for PBXNativeTarget "ICConfiguration" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4C0CF11B14D6643E00A1D325 /* Debug */,
-				7B680D531B8D6F68004A95FD /* Stage */,
-				9D6A0B2D1C2B1BCE00C661FB /* Appstore */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		51DA6A0C14CF2F0D007F2584 /* Build configuration list for PBXProject "Trulia Rent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
