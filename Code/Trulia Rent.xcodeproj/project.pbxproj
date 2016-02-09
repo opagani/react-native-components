@@ -153,6 +153,7 @@
 		7B3DD9511BE189EC009823CA /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ADBMobileConfig.json; path = Resources/jsons/ADBMobileConfig.json; sourceTree = "<group>"; };
 		7B3DD9521BE189EC009823CA /* ADBMobileConfigRelease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ADBMobileConfigRelease.json; path = Resources/jsons/ADBMobileConfigRelease.json; sourceTree = "<group>"; };
 		7B3DD9571BE28CF4009823CA /* LaunchSupport.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = LaunchSupport.xcassets; path = Resources/LaunchSupport.xcassets; sourceTree = "<group>"; };
+		7BA7B12A1C596B73009761AA /* TruliaRent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TruliaRent.entitlements; sourceTree = "<group>"; };
 		9A6A075AFCE1984FF6ED4FD5 /* Pods-Trulia Rent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.release.xcconfig"; sourceTree = "<group>"; };
 		9D0989D51C3AEB050093F3AA /* ICConfiguration-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICConfiguration-Info.plist"; sourceTree = "<group>"; };
 		9D0989D61C3AEB050093F3AA /* ICGeneral~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICGeneral~ipad.plist"; sourceTree = "<group>"; };
@@ -363,6 +364,7 @@
 		51DA6A0714CF2F0D007F2584 = {
 			isa = PBXGroup;
 			children = (
+				7BA7B12A1C596B73009761AA /* TruliaRent.entitlements */,
 				261196591950F3E200C4F392 /* Resources */,
 				4C0CEEEB14D6634A00A1D325 /* Shared */,
 				26E2056315FFE2CA00B29DE6 /* lib */,
@@ -523,6 +525,11 @@
 				TargetAttributes = {
 					51DA6A1114CF2F0D007F2584 = {
 						DevelopmentTeam = 9FBSWYKDXR;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -729,6 +736,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = TruliaRent.entitlements;
 				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "";
@@ -808,6 +816,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = TruliaRent.entitlements;
 				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "";
@@ -891,6 +900,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = TruliaRent.entitlements;
 				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "";
