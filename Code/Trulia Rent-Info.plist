@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>4.3</string>
+	<string>4.4</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes~ipad</key>
@@ -117,6 +117,8 @@
 	</dict>
 	<key>FacebookAppID</key>
 	<string>$(FACEBOOK_APP_ID)</string>
+	<key>FacebookDisplayName</key>
+	<string>Trulia - For Rent</string>
 	<key>FacebookPermissions</key>
 	<array>
 		<string>offline_access</string>
@@ -157,7 +159,7 @@
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Trulia needs your location to allow you to search and get updates on homes.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Trulia needs your location to allow you to search homes and get updates on homes you&apos;ll love.</string>
+	<string>Trulia needs your location to allow you to search homes and get updates on homes you'll love.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>OpenSans-SemiboldItalic.ttf</string>
@@ -190,7 +192,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>FacebookDisplayName</key>
-	<string>Trulia - For Rent</string>
 </dict>
 </plist>
