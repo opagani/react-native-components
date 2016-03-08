@@ -44,7 +44,7 @@ NSString * const kRentalsOnlyMessageDidShow = @"RentalsOnlyMessageDidShow";
     self.boardsViewController.collectionView.topInset += [self messageViewHeightAndPadding];
     
     NSString *text = @"Only saved rentals shown";
-    [self.messageView configureWithText:text color:[UIColor truliaGreen] target:self action:@selector(actionCloseMessage:)];
+    [self.messageView configureWithText:text color:[TUIColors green400] target:self action:@selector(actionCloseMessage:)];
     [self.boardsViewController.view addSubview:self.messageView];
     
     [self.messageView ic_pinViewToLeftAndRightEdgesOfSuperViewWithPadding:15];

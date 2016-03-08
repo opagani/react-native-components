@@ -8,15 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "ICAppDelegate.h"
-#import "ICListingParameters.h"
 #import "ICNavigationController.h"
 #import "ICOnboardingBaseViewController.h"
-#import "ICStartupViewControllerPhone.h"
 
 
 @class ICMainViewControllerPad, ICMenuContainerViewController;
 
-@interface IRAppDelegate : ICAppDelegate <ICOnboardingDelegate, ICStartupViewControllerDelegate>
+@interface IRAppDelegate : ICAppDelegate <ICOnboardingDelegate>
 @property (nonatomic, strong) UIWindow *window;
 
 @property (nonatomic, strong) ICOnboardingBaseViewController *onboardingController;

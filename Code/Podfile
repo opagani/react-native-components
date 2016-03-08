@@ -5,6 +5,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 workspace 'ForRent.xcworkspace'
 
 target 'Trulia Rent' do
+    pod 'ARAnalytics', :git => 'https://github.com/arifken/ARAnalytics.git', :branch => 'andy-fixes'
+    pod 'TUIKit', :path => '../../mob-tuikit'
     if ENV['IOS_CORE_BRANCH'] != nil # set this to build the app against a specific branch of the library
         pod 'IosCoreLibrary', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ioscore-lib.git', :branch => "#{ENV['IOS_CORE_BRANCH']}"
     else

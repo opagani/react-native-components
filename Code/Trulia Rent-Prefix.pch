@@ -19,4 +19,6 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "NSBundle+TruliaAdditions.h"
 #import "IC+UIDevice.h"
+#import "TUIKit.h"
+
 #endif

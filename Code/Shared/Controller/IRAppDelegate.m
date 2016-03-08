@@ -15,7 +15,6 @@
 #import "ICSyncController.h"
 #import "ICAccountController.h"
 #import "IRMainMenu.h"
-#import "IRURLCache.h"
 #import "IAConstants.h"
 #import "ICManagedNotification.h"
 #import "ICAppearance.h"
@@ -25,10 +24,10 @@
 
 //view controllers
 #import "ICDiscoveryViewController.h"
-#import "IRMainMenuViewController.h"
 
 //frameworks
 #import <Crashlytics/Crashlytics.h>
+#import "ICSearchFiltersViewController.h"
 
 @implementation IRAppDelegate
 
@@ -47,18 +46,9 @@ void uncaughtExceptionHandler(NSException *exception) {
      Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
      */
     CLSLog(@"%s ** memory warning **", __func__);
-    
-    [[ICAdSearchController sharedInstance] flush];
+
 }
 
-- (void)dealloc {
-    
-    [[ICAdSearchController sharedInstance] flush];
-    
-    if ([[NSURLCache sharedURLCache] isKindOfClass:[IRURLCache class]]) {
-        [(IRURLCache *)[NSURLCache sharedURLCache] flush];
-    }
-}
 
 #pragma mark - Overridden Methods
 
@@ -73,46 +63,31 @@ void uncaughtExceptionHandler(NSException *exception) {
 #pragma mark - Configuration Methods
 
 - (void)configureWindow {
-    [[UIApplication sharedApplication] setStatusBarHidden:NO];
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    if ([self.window respondsToSelector:@selector(tintColor)]) {
-        [self.window setTintColor:[UIColor truliaGreen]];
-    }
-    // the color background is white so that it natches with the background when status bar hides in the photoviewcontroller
-    self.window.backgroundColor = [UIColor whiteColor];
-    
     [ICAppearance applyDefaultStyle];
 }
 
 - (void)setupRentalConfigurations {
-    ICListingParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
-    currentParameters.indexType = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
-    [[ICListingSearchController sharedInstance] setCurrentParameters:currentParameters];
+
+    ICSearchParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
+    currentParameters.indexTypesArray = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
+    //FIXME - current parameters is read only now
+//    [ICListingSearchController sharedInstance].currentParameters = currentParameters;
     
+
+//
     [ICManagedSearch setDefaultIndexType:IC_INDEXTYPE_FORRENT];
 }
 
 - (void)initializeRootViewController
 {
-    IRMainMenuViewController *menuController = [[IRMainMenuViewController alloc] initWithMenu:[IRMainMenu new]];
-    
-    UIViewController *rootViewController = [self navigationRootViewController];
-    ICNavigationController *navCtr = [[ICNavigationController alloc] initWithRootViewController:rootViewController];
-    self.menuAndSrpContainerController = [[ICMenuContainerViewController alloc] initWithLeftViewController:menuController rightViewController:navCtr];
-    self.navController = navCtr;
-}
-
-- (UIViewController *)navigationRootViewController {
-    if ([UIDevice isPad]) {
-        return [ICSRPViewControllerDefault sharedInstance];
-    }
-    return [ICDiscoveryViewController new];
+    //FIXME - migrate to tab bar controller
 }
 
 - (void)setRootViewController
 {
-    [_window setRootViewController:self.menuAndSrpContainerController];
+    //FIXME - migrate to tab bar controller
+//    [_window setRootViewController:self.menuAndSrpContainerController];
+    [self.window setRootViewController:self.tabBarController];
     [_window makeKeyAndVisible];
 }
 
@@ -151,7 +126,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 }
 
 - (void)requestNotificationsPermission {
-    [self registerNotification];
+//    [self registerNotification];
 }
 
 #pragma mark - Splash Screen Delegate for iPhone
@@ -170,7 +145,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     [self setupRentalConfigurations];
     [self launchApp];
     
-    [ICListingRefineViewController setSegmentControlModes:@[@(ICListingRefineModeForRent)]];
+    [ICSearchFiltersViewController setSegmentControlModes:@[@(ICSearchFiltersFormTypeForRent)]];
     
     return YES;
 }
@@ -197,10 +172,11 @@ void uncaughtExceptionHandler(NSException *exception) {
      Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
      If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
      */
-    
+
+
     ICListingSearchController *controller = [ICListingSearchController sharedInstance];
-    if (![[controller currentSearch] isDeleted]) {
-        [[controller currentSearch] markAsViewed];
+    if (![[controller currentSearchResultsMeta] isDeleted]) {
+        [[controller currentSearchResultsMeta] markAsViewed];
     }
     
     [[ICCoreDataController sharedInstance] saveWithNotification:YES];
@@ -244,58 +220,60 @@ void uncaughtExceptionHandler(NSException *exception) {
     [[ICPreference sharedInstance] synchronize];
 }
 
+
+// FIXME: alert view has been deprecated
 //same for rate us app and upgrade app alert
-- (void)alertView:(UIAlertView *)appAlert clickedButtonAtIndex:(NSInteger)buttonIndex {
-    
-    //  **********************************************************************
-    //  **********************************************************************
-    //  be careful when adding here, make sure alertview underneath
-    //  (ICAppDelegate) gets its alertView:clickedButtonAtIndex: called
-    //  **********************************************************************
-    //  **********************************************************************
-    
-    NSInteger tag = appAlert.tag;
-    if (tag == TruliaAlertTypeUpdate || tag == TruliaPromoAlertTypeRateAppUniversal )
-    {
-        NSMutableString *trackingString = [NSMutableString stringWithString:@"promo"];
-        
-        if (appAlert.tag == TruliaPromoAlertTypeRateAppUniversal)
-        {
-            [trackingString appendString:@"|rate app"];
-        }
-        else
-        {
-            [trackingString appendString:@"|unknown alert"];
-        }
-        
-        // This could be prettier but since -[UIApplication openURL:] will bounce us out of the app, let's make sure all the tracking is taken care of cleanly first.
-        BOOL userConfirmed = buttonIndex == appAlert.firstOtherButtonIndex;
-        
-        if (userConfirmed)
-        {
-            [trackingString appendString:@"|yes"];
-        }
-        else if (buttonIndex == appAlert.cancelButtonIndex)
-        {
-            [trackingString appendString:@"|cancel"];
-        }
-        
-        [[ICAnalyticsController sharedInstance] trackActionClick:trackingString withPage:[[ICAnalyticsController sharedInstance] lastPageTrack]];
-        
-        
-        if (userConfirmed)
-        {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[ICConfiguration appStoreLink]]];
-        }
-    }
-    else
-    {
-        if([super respondsToSelector:@selector(alertView:clickedButtonAtIndex:)])
-        {
-            [super alertView:appAlert clickedButtonAtIndex:buttonIndex];
-        }
-    }
-}
+//- (void)alertView:(UIAlertView *)appAlert clickedButtonAtIndex:(NSInteger)buttonIndex {
+//    
+//    //  **********************************************************************
+//    //  **********************************************************************
+//    //  be careful when adding here, make sure alertview underneath
+//    //  (ICAppDelegate) gets its alertView:clickedButtonAtIndex: called
+//    //  **********************************************************************
+//    //  **********************************************************************
+//    
+//    NSInteger tag = appAlert.tag;
+//    if (tag == TruliaAlertTypeUpdate || tag == TruliaPromoAlertTypeRateAppUniversal )
+//    {
+//        NSMutableString *trackingString = [NSMutableString stringWithString:@"promo"];
+//        
+//        if (appAlert.tag == TruliaPromoAlertTypeRateAppUniversal)
+//        {
+//            [trackingString appendString:@"|rate app"];
+//        }
+//        else
+//        {
+//            [trackingString appendString:@"|unknown alert"];
+//        }
+//        
+//        // This could be prettier but since -[UIApplication openURL:] will bounce us out of the app, let's make sure all the tracking is taken care of cleanly first.
+//        BOOL userConfirmed = buttonIndex == appAlert.firstOtherButtonIndex;
+//        
+//        if (userConfirmed)
+//        {
+//            [trackingString appendString:@"|yes"];
+//        }
+//        else if (buttonIndex == appAlert.cancelButtonIndex)
+//        {
+//            [trackingString appendString:@"|cancel"];
+//        }
+//        
+//        [[ICAnalyticsController sharedInstance] trackActionClick:trackingString withPage:[[ICAnalyticsController sharedInstance] lastPageTrack]];
+//        
+//        
+//        if (userConfirmed)
+//        {
+//            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[ICConfiguration appStoreLink]]];
+//        }
+//    }
+//    else
+//    {
+//        if([super respondsToSelector:@selector(alertView:clickedButtonAtIndex:)])
+//        {
+//            [super alertView:appAlert clickedButtonAtIndex:buttonIndex];
+//        }
+//    }
+//}
 
 - (void)loadMyAccountWithId:(NSString *)notificationId andType:(NSInteger)notificationType {
     
@@ -458,11 +436,11 @@ void uncaughtExceptionHandler(NSException *exception) {
             case SAVEDSEARCHNEWLISTING_PUSH_NOTIFICATION:
             {
                 if ([[ICAccountController sharedInstance] isLoggedIn] && [UIDevice isPhone]){
-                    
-                    if ([self.menuAndSrpContainerController.left isKindOfClass:[IRMainMenuViewController class]]){
-                        IRMainMenuViewController* menuController = (IRMainMenuViewController*)self.menuAndSrpContainerController.left;
-                        [menuController actionNotificationsClicked:nil];
-                    }
+                    //FIXME: main menui view controller has been removed
+//                    if ([self.menuAndSrpContainerController.left isKindOfClass:[IRMainMenuViewController class]]){
+//                        IRMainMenuViewController* menuController = (IRMainMenuViewController*)self.menuAndSrpContainerController.left;
+//                        [menuController actionNotificationsClicked:nil];
+//                    }
                 }
                 break;
             }
