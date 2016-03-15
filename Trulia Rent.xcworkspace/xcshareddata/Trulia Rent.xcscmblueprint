@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "41CD56D7F891D8667990FD7881D8E0563597578B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A9EFB38B20D1BF1A211C859853043503F2D4A064" : 0,
+    "B0A276D0D3A8AA490C9608D90E9A256DBBB6913E" : 0,
+    "41CD56D7F891D8667990FD7881D8E0563597578B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "10228869-68E2-46BC-AB11-AC8D0FD6E17C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A9EFB38B20D1BF1A211C859853043503F2D4A064" : "mob-ioscore-lib\/",
+    "B0A276D0D3A8AA490C9608D90E9A256DBBB6913E" : "mob-tuikit\/",
+    "41CD56D7F891D8667990FD7881D8E0563597578B" : "mob-ios-rental-universal\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Trulia Rent",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Trulia Rent.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "stash.sv2.trulia.com:mob\/mob-ios-rental-universal.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "41CD56D7F891D8667990FD7881D8E0563597578B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "stash.sv2.trulia.com:mob\/mob-ioscore-lib.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A9EFB38B20D1BF1A211C859853043503F2D4A064"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/stash.sv2.trulia.com\/mob\/mob-tuikit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B0A276D0D3A8AA490C9608D90E9A256DBBB6913E"
+    }
+  ]
+}
