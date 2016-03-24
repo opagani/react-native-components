@@ -494,13 +494,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51DA6A3F14CF2F0D007F2584 /* Build configuration list for PBXNativeTarget "Trulia Rent" */;
 			buildPhases = (
-				2415DA6E34559CEF65954CFE /* Check Pods Manifest.lock */,
+				2415DA6E34559CEF65954CFE /* 📦 Check Pods Manifest.lock */,
 				51DA6A0E14CF2F0D007F2584 /* Sources */,
 				51DA6A0F14CF2F0D007F2584 /* Frameworks */,
 				51DA6A1014CF2F0D007F2584 /* Resources */,
 				3BEF4F571701674600BA8529 /* ShellScript */,
-				C19D259B3C6829B4D6A716C8 /* Embed Pods Frameworks */,
-				6BE16C24E5BAC9ED2BA9F75E /* Copy Pods Resources */,
+				C19D259B3C6829B4D6A716C8 /* 📦 Embed Pods Frameworks */,
+				6BE16C24E5BAC9ED2BA9F75E /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -582,14 +582,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2415DA6E34559CEF65954CFE /* Check Pods Manifest.lock */ = {
+		2415DA6E34559CEF65954CFE /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,14 +610,14 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${CONFIGURATION}\" != \"Debug\" ]; then\n\"${PODS_ROOT}/Fabric/run\" 69c46441eff2d4c6f8a043fd66d16ff159cd9812 1192e1497ab0deac603c36fb2464fd4c0a8452fee2494999c0c302fea55ff94c\nfi";
 		};
-		6BE16C24E5BAC9ED2BA9F75E /* Copy Pods Resources */ = {
+		6BE16C24E5BAC9ED2BA9F75E /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,14 +625,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C19D259B3C6829B4D6A716C8 /* Embed Pods Frameworks */ = {
+		C19D259B3C6829B4D6A716C8 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
