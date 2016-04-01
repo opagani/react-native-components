@@ -12,9 +12,7 @@
 @implementation IRMainMenuAppsSection
 - (instancetype)init
 {
-    NSArray * appItems = @[[ICConsumerAppLinkMenuItem menuItem],
-                           [ICAgentAppLinkMenuItem menuItem],
-                           [ICLuxeBlogMenuItem menuItem]];
+    NSArray * appItems = @[[ICConsumerAppLinkMenuItem menuItem]];
     
     NSString * title = ICLocalizedString(@"TRULIA APPS");
     return [super initWithTitle:title items:appItems];

@@ -108,6 +108,9 @@
 
 /* general error */
 "ListingsZoomedOutTooFar"= "Please zoom in to see your results.";
+"AmenitiesZoomedOutTooFar"= "Please zoom in to see amenities.";
+"SchoolsZoomedOutTooFar"= "Please zoom in to see schools.";
+
 "SearchManuallyInputLocationError"= "Location unknown. Try city & state for best results.";
 "NoListingsHere"= "No homes match your search. Adjust zoom levels or change your filters.";
 "LocationPermissionMessage" = "This helps us instantly show you homes near you, wherever you are.";
