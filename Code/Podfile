@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby -wKU
 
 source 'https://github.com/CocoaPods/Specs.git'
+source 'ssh://git@stash.sv2.trulia.com/mob/mob-podspecs.git'
 
 workspace 'ForRent.xcworkspace'
 
