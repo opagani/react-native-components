@@ -1,36 +1,39 @@
 {
-    "lastModified": "2014-12-12T07:04:02.504Z",
+    "lastModified": "2016-02-09T17:25:31.880Z",
     "marketingCloud": {
-        "org": ""
+        "org": "94641C8B532957EC0A490D4D@AdobeOrg"
     },
     "target": {
         "clientCode": "",
-        "timeout": 5
+        "timeout": 10
     },
     "audienceManager": {
-        "server": ""
+        "server": "",
+        "analyticsForwardingEnabled": false,
+        "timeout": 5
     },
     "acquisition": {
         "server": "c00.adobe.com",
-        "appid": "d80cc423a1b20d48901d81b02a1156f15e576296b913f42e5ee5d935594e1cf7"
+        "appid": "f4c1fcb9-0743-479e-966c-3eed763d8b92"
     },
     "analytics": {
         "rsids": "truliaexternalapps",
-        "server": "trulia.d2.sc.omtrdc.net",
+        "server": "metric.trulia.com",
         "ssl": false,
         "offlineEnabled": false,
         "charset": "UTF-8",
         "lifecycleTimeout": 300,
         "privacyDefault": "optedin",
         "batchLimit": 0,
-        "timezone": "PST",
-        "timezoneOffset": -480,
+        "timezone": "PDT",
+        "timezoneOffset": -420,
         "referrerTimeout": 5,
+        "backdateSessionInfo": false,
         "poi": []
     },
     "messages": [],
     "remotes": {
-        "analytics.poi": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-5453cc7a6235620016400400.json",
-        "messages": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-5453cc7a3764380016060500.json"
+        "analytics.poi": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-548b384134363300158d0500.json",
+        "messages": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-548b38413031300018700500.json"
     }
 }
