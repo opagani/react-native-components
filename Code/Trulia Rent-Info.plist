@@ -41,6 +41,7 @@
 				<string>trulia</string>
 				<string>TruliaMap</string>
 				<string>TruliaBringToForegroundOnly</string>
+				<string>TruliaDiscoveryForRent</string>
 			</array>
 		</dict>
 	</array>
@@ -69,6 +70,7 @@
 				<string>TruliaCollabAllBoards</string>
 				<string>TruliaBringToForegroundOnly</string>
 				<string>TruliaNotificationCenter</string>
+				<string>TruliaDiscoveryForRent</string>
 			</array>
 		</dict>
 	</array>
@@ -159,7 +161,7 @@
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Trulia needs your location to allow you to search and get updates on homes.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Trulia needs your location to allow you to search homes and get updates on homes you'll love.</string>
+	<string>Trulia needs your location to allow you to search homes and get updates on homes you&apos;ll love.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>OpenSans-SemiboldItalic.ttf</string>
