@@ -750,11 +750,6 @@
 				INFOPLIST_FILE = "Trulia Rent-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					"$(SRCROOT)/../../mob-ioscore-lib/**",
-				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental;
 				PRODUCT_NAME = TruliaRent;
@@ -834,11 +829,6 @@
 				INFOPLIST_FILE = "Trulia Rent-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					"$(SRCROOT)/../../mob-ioscore-lib/**",
-				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental;
 				PRODUCT_NAME = TruliaRent;
@@ -918,11 +908,6 @@
 				INFOPLIST_FILE = "Trulia Rent-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					"$(SRCROOT)/../../mob-ioscore-lib/**",
-				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.trulia.IosRental;
 				PRODUCT_NAME = TruliaRent;
