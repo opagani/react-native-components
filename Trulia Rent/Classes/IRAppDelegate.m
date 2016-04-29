@@ -14,13 +14,11 @@
 #import "ICCoreDataController.h"
 #import "ICSyncController.h"
 #import "ICAccountController.h"
-#import "IRMainMenu.h"
-#import "IAConstants.h"
-#import "ICManagedNotification.h"
 #import "ICAppearance.h"
 #import "ICLog.h"
 #import "ICUtility.h"
 #import "ICAnalyticsController.h"
+#import "ICManagedSearch.h"
 
 //view controllers
 #import "ICDiscoveryViewController.h"
@@ -30,9 +28,6 @@
 #import "ICSearchFiltersViewController.h"
 
 @implementation IRAppDelegate
-
-@synthesize window = _window;
-@synthesize navController = _navController;
 
 void uncaughtExceptionHandler(NSException *exception) {
     GRLogCError(@"CRASH: %@", exception);
@@ -52,14 +47,6 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 #pragma mark - Overridden Methods
 
--(void)setupCollaboration{
-    //updates the current sessions collab enabled flag to the collab flag in ICState
-    //these values may be different at various times during the apps life cycle
-    //eg. app/v1/query returns collab enabled flag after didFinishLaunching finishes
-    ICState * state                 = [ICState sharedInstance];
-    [ICPreference updateCollabEnabledPreferenceFromState:state];
-}
-
 #pragma mark - Configuration Methods
 
 - (void)configureWindow {
@@ -68,71 +55,9 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)setupRentalConfigurations {
 
-    ICSearchParameters *currentParameters = [[ICListingSearchController sharedInstance] currentParameters];
-    currentParameters.indexTypesArray = [[NSMutableArray alloc] initWithObjects:IC_INDEXTYPE_FORRENT, nil];
-    //FIXME - current parameters is read only now
-//    [ICListingSearchController sharedInstance].currentParameters = currentParameters;
-    
-
-//
     [ICManagedSearch setDefaultIndexType:IC_INDEXTYPE_FORRENT];
-}
+    [ICSearchFiltersViewController setSegmentControlModes:@[@(ICSearchFiltersFormTypeForRent)]];
 
-- (void)initializeRootViewController
-{
-    //FIXME - migrate to tab bar controller
-}
-
-- (void)setRootViewController
-{
-    //FIXME - migrate to tab bar controller
-//    [_window setRootViewController:self.menuAndSrpContainerController];
-    [self.window setRootViewController:self.tabBarController];
-    [_window makeKeyAndVisible];
-}
-
-- (void)launchApp {
-    [self initializeRootViewController];
-    
-    if ([self shouldShowOnboardingScreens]) {
-        [self showOnboardingScreens];
-    }
-    else {
-        [self setRootViewController];
-    }
-}
-
-- (BOOL) shouldShowOnboardingScreens {
-    return [ICUtility freshInstall];
-}
-
-- (void)showOnboardingScreens
-{
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ICOnboardingBaseViewController" bundle:[NSBundle coreResourcesBundle]];
-    
-    self.onboardingController = [storyboard instantiateInitialViewController];
-    self.onboardingController.delegate = self;
-    
-    [_window setRootViewController:self.onboardingController];
-    [_window makeKeyAndVisible];
-}
-
-
-#pragma mark - onboarding delegate
-
--(void)onBoardingScreensDimissed:(UIViewController *)onboardingVC {
-    [UIApplication sharedApplication].statusBarHidden = NO;
-    [self setRootViewController];
-}
-
-- (void)requestNotificationsPermission {
-//    [self registerNotification];
-}
-
-#pragma mark - Splash Screen Delegate for iPhone
-
--(void)dismissStartupScreen:(UIViewController*)viewController{
-    [self setRootViewController];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -143,9 +68,6 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     [self configureWindow];
     [self setupRentalConfigurations];
-    [self launchApp];
-    
-    [ICSearchFiltersViewController setSegmentControlModes:@[@(ICSearchFiltersFormTypeForRent)]];
     
     return YES;
 }
@@ -157,11 +79,6 @@ void uncaughtExceptionHandler(NSException *exception) {
      Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
      Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
      */
-    if ([UIDevice isPhone]){
-        
-        NSInteger unreadCount = MAX([ICManagedNotification numberofUnreadNotifications], 0);
-        [UIApplication sharedApplication].applicationIconBadgeNumber = unreadCount;
-    }
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
@@ -172,14 +89,6 @@ void uncaughtExceptionHandler(NSException *exception) {
      Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
      If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
      */
-
-
-    ICListingSearchController *controller = [ICListingSearchController sharedInstance];
-    if (![[controller currentSearchResultsMeta] isDeleted]) {
-        [[controller currentSearchResultsMeta] markAsViewed];
-    }
-    
-    [[ICCoreDataController sharedInstance] saveWithNotification:YES];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -188,18 +97,7 @@ void uncaughtExceptionHandler(NSException *exception) {
      Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
      */
     
-    if (![UIDevice isPhone]){
-        
-        [[ICCurrentLocationController sharedInstance].locationManager stopUpdatingLocation];
-        //[[GRCurrentLocationController sharedInstance] resetLocationStatusFlags];
-        [[ICPreference sharedInstance] resetSes];
-        
-        //	[self.viewController processRateUsAppPopup];
-        [[ICPreference sharedInstance] synchronize];
-    }
-    
     [super applicationWillEnterForeground:(UIApplication *)application];
-    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -217,7 +115,6 @@ void uncaughtExceptionHandler(NSException *exception) {
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
-    [[ICPreference sharedInstance] synchronize];
 }
 
 
@@ -274,12 +171,6 @@ void uncaughtExceptionHandler(NSException *exception) {
 //        }
 //    }
 //}
-
-- (void)loadMyAccountWithId:(NSString *)notificationId andType:(NSInteger)notificationType {
-    
-    [[ICSyncController sharedInstance] syncService:ICSYncServiceTypeNotification complete:nil];
-
-}
 
 
 #pragma mark - Deep Linking
@@ -417,50 +308,45 @@ void uncaughtExceptionHandler(NSException *exception) {
     }
 }*/
 
-- (NSString *)appIdentifier{
-    
-    return [[ICConfiguration sharedInstance] metricItem:@"Source"];
-}
-
 #pragma mark Handle Push Notifications
 
-- (void)handlePushNotification:(NSDictionary *)pushNotificationDictionary {
-    
-    [super handlePushNotification:pushNotificationDictionary];
-    NSString *pushNotificationType = [pushNotificationDictionary objectForKey:@"type"];
-    
-    if([pushNotificationType intValue] != 0) {
-        switch ([pushNotificationType intValue]) {
-            case AGENT_LEAD_PUSH_NOTIFICATION:
-                break;
-            case SAVEDSEARCHNEWLISTING_PUSH_NOTIFICATION:
-            {
-                if ([[ICAccountController sharedInstance] isLoggedIn] && [UIDevice isPhone]){
-                    //FIXME: main menui view controller has been removed
-//                    if ([self.menuAndSrpContainerController.left isKindOfClass:[IRMainMenuViewController class]]){
-//                        IRMainMenuViewController* menuController = (IRMainMenuViewController*)self.menuAndSrpContainerController.left;
-//                        [menuController actionNotificationsClicked:nil];
-//                    }
-                }
-                break;
-            }
-            case SAVEDSEARCHOPENHOUSE_PUSH_NOTIFICATION:
-                break;
-            case SAVEDHOMESTATUS_PUSH_NOTIFICATION:
-                break;
-            case SAVEDHOMEREDUCED_PUSH_NOTIFICATION:
-                break;
-            case SAVEDHOMEOPENHOUSE_PUSH_NOTIFICATION:
-                break;
-            case MESSAGE_PUSH_NOTIFICATION:
-                break;
-            case URL_PUSH_NOTIFICATION:
-                break;
-            default:
-                break;
-        }
-    }
-}
+//- (void)handlePushNotification:(NSDictionary *)pushNotificationDictionary {
+//    
+//    [super handlePushNotification:pushNotificationDictionary];
+//    NSString *pushNotificationType = [pushNotificationDictionary objectForKey:@"type"];
+//    
+//    if([pushNotificationType intValue] != 0) {
+//        switch ([pushNotificationType intValue]) {
+//            case AGENT_LEAD_PUSH_NOTIFICATION:
+//                break;
+//            case SAVEDSEARCHNEWLISTING_PUSH_NOTIFICATION:
+//            {
+//                if ([[ICAccountController sharedInstance] isLoggedIn] && [UIDevice isPhone]){
+//                    //FIXME: main menui view controller has been removed
+////                    if ([self.menuAndSrpContainerController.left isKindOfClass:[IRMainMenuViewController class]]){
+////                        IRMainMenuViewController* menuController = (IRMainMenuViewController*)self.menuAndSrpContainerController.left;
+////                        [menuController actionNotificationsClicked:nil];
+////                    }
+//                }
+//                break;
+//            }
+//            case SAVEDSEARCHOPENHOUSE_PUSH_NOTIFICATION:
+//                break;
+//            case SAVEDHOMESTATUS_PUSH_NOTIFICATION:
+//                break;
+//            case SAVEDHOMEREDUCED_PUSH_NOTIFICATION:
+//                break;
+//            case SAVEDHOMEOPENHOUSE_PUSH_NOTIFICATION:
+//                break;
+//            case MESSAGE_PUSH_NOTIFICATION:
+//                break;
+//            case URL_PUSH_NOTIFICATION:
+//                break;
+//            default:
+//                break;
+//        }
+//    }
+//}
 
 @end
 

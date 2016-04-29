@@ -8,17 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "ICAppDelegate.h"
-#import "ICNavigationController.h"
-#import "ICOnboardingBaseViewController.h"
 
-
-@class ICMainViewControllerPad, ICMenuContainerViewController;
-
-@interface IRAppDelegate : ICAppDelegate <ICOnboardingDelegate>
-@property (nonatomic, strong) UIWindow *window;
-
-@property (nonatomic, strong) ICOnboardingBaseViewController *onboardingController;
-@property (nonatomic, strong) ICNavigationController *navController;
+@interface IRAppDelegate : ICAppDelegate 
 
 void uncaughtExceptionHandler(NSException *exception);
 
