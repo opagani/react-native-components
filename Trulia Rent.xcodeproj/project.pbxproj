@@ -30,13 +30,7 @@
 		6B1C41591C9768AC00F0DB25 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C414A1C9768AC00F0DB25 /* OpenSans-Semibold.ttf */; };
 		6B1C415A1C9768AC00F0DB25 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C414B1C9768AC00F0DB25 /* OpenSans-SemiboldItalic.ttf */; };
 		6B1C415C1C9768EC00F0DB25 /* TruliaRent.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C415B1C9768EC00F0DB25 /* TruliaRent.entitlements */; };
-		6B1C416E1C97694F00F0DB25 /* IRBoardManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C41601C97694F00F0DB25 /* IRBoardManagerViewController.m */; };
 		6B1C416F1C97694F00F0DB25 /* IRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C41621C97694F00F0DB25 /* IRAppDelegate.m */; };
-		6B1C41701C97694F00F0DB25 /* IRMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C41651C97694F00F0DB25 /* IRMainMenu.m */; };
-		6B1C41711C97694F00F0DB25 /* IRMainMenuAppsSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C41671C97694F00F0DB25 /* IRMainMenuAppsSection.m */; };
-		6B1C41721C97694F00F0DB25 /* IRMainMenuMoreSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C41691C97694F00F0DB25 /* IRMainMenuMoreSection.m */; };
-		6B1C41731C97694F00F0DB25 /* IRMainMenuSearchSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C416B1C97694F00F0DB25 /* IRMainMenuSearchSection.m */; };
-		6B1C41741C97694F00F0DB25 /* IRMyBoardsMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C416D1C97694F00F0DB25 /* IRMyBoardsMenuItem.m */; };
 		6B1C417A1C97697000F0DB25 /* ICConfiguration-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41751C97697000F0DB25 /* ICConfiguration-Info.plist */; };
 		6B1C417B1C97697000F0DB25 /* ICGeneral~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41761C97697000F0DB25 /* ICGeneral~ipad.plist */; };
 		6B1C417C1C97697000F0DB25 /* ICGeneral~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41771C97697000F0DB25 /* ICGeneral~iphone.plist */; };
@@ -73,20 +67,8 @@
 		6B1C414A1C9768AC00F0DB25 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		6B1C414B1C9768AC00F0DB25 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		6B1C415B1C9768EC00F0DB25 /* TruliaRent.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TruliaRent.entitlements; sourceTree = "<group>"; };
-		6B1C415F1C97694F00F0DB25 /* IRBoardManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRBoardManagerViewController.h; sourceTree = "<group>"; };
-		6B1C41601C97694F00F0DB25 /* IRBoardManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRBoardManagerViewController.m; sourceTree = "<group>"; };
 		6B1C41611C97694F00F0DB25 /* IRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRAppDelegate.h; sourceTree = "<group>"; };
 		6B1C41621C97694F00F0DB25 /* IRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRAppDelegate.m; sourceTree = "<group>"; };
-		6B1C41641C97694F00F0DB25 /* IRMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMainMenu.h; sourceTree = "<group>"; };
-		6B1C41651C97694F00F0DB25 /* IRMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMainMenu.m; sourceTree = "<group>"; };
-		6B1C41661C97694F00F0DB25 /* IRMainMenuAppsSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMainMenuAppsSection.h; sourceTree = "<group>"; };
-		6B1C41671C97694F00F0DB25 /* IRMainMenuAppsSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMainMenuAppsSection.m; sourceTree = "<group>"; };
-		6B1C41681C97694F00F0DB25 /* IRMainMenuMoreSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMainMenuMoreSection.h; sourceTree = "<group>"; };
-		6B1C41691C97694F00F0DB25 /* IRMainMenuMoreSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMainMenuMoreSection.m; sourceTree = "<group>"; };
-		6B1C416A1C97694F00F0DB25 /* IRMainMenuSearchSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMainMenuSearchSection.h; sourceTree = "<group>"; };
-		6B1C416B1C97694F00F0DB25 /* IRMainMenuSearchSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMainMenuSearchSection.m; sourceTree = "<group>"; };
-		6B1C416C1C97694F00F0DB25 /* IRMyBoardsMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMyBoardsMenuItem.h; sourceTree = "<group>"; };
-		6B1C416D1C97694F00F0DB25 /* IRMyBoardsMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMyBoardsMenuItem.m; sourceTree = "<group>"; };
 		6B1C41751C97697000F0DB25 /* ICConfiguration-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICConfiguration-Info.plist"; sourceTree = "<group>"; };
 		6B1C41761C97697000F0DB25 /* ICGeneral~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICGeneral~ipad.plist"; sourceTree = "<group>"; };
 		6B1C41771C97697000F0DB25 /* ICGeneral~iphone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICGeneral~iphone.plist"; sourceTree = "<group>"; };
@@ -208,38 +190,10 @@
 		6B1C415D1C97694F00F0DB25 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6B1C415E1C97694F00F0DB25 /* Collab */,
 				6B1C41611C97694F00F0DB25 /* IRAppDelegate.h */,
 				6B1C41621C97694F00F0DB25 /* IRAppDelegate.m */,
-				6B1C41631C97694F00F0DB25 /* MainMenu */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		6B1C415E1C97694F00F0DB25 /* Collab */ = {
-			isa = PBXGroup;
-			children = (
-				6B1C415F1C97694F00F0DB25 /* IRBoardManagerViewController.h */,
-				6B1C41601C97694F00F0DB25 /* IRBoardManagerViewController.m */,
-			);
-			path = Collab;
-			sourceTree = "<group>";
-		};
-		6B1C41631C97694F00F0DB25 /* MainMenu */ = {
-			isa = PBXGroup;
-			children = (
-				6B1C41641C97694F00F0DB25 /* IRMainMenu.h */,
-				6B1C41651C97694F00F0DB25 /* IRMainMenu.m */,
-				6B1C41661C97694F00F0DB25 /* IRMainMenuAppsSection.h */,
-				6B1C41671C97694F00F0DB25 /* IRMainMenuAppsSection.m */,
-				6B1C41681C97694F00F0DB25 /* IRMainMenuMoreSection.h */,
-				6B1C41691C97694F00F0DB25 /* IRMainMenuMoreSection.m */,
-				6B1C416A1C97694F00F0DB25 /* IRMainMenuSearchSection.h */,
-				6B1C416B1C97694F00F0DB25 /* IRMainMenuSearchSection.m */,
-				6B1C416C1C97694F00F0DB25 /* IRMyBoardsMenuItem.h */,
-				6B1C416D1C97694F00F0DB25 /* IRMyBoardsMenuItem.m */,
-			);
-			path = MainMenu;
 			sourceTree = "<group>";
 		};
 		AC3FE94C825389BFC8F0506B /* Pods */ = {
@@ -405,14 +359,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B1C41701C97694F00F0DB25 /* IRMainMenu.m in Sources */,
-				6B1C41711C97694F00F0DB25 /* IRMainMenuAppsSection.m in Sources */,
-				6B1C41731C97694F00F0DB25 /* IRMainMenuSearchSection.m in Sources */,
 				6B1C416F1C97694F00F0DB25 /* IRAppDelegate.m in Sources */,
-				6B1C41721C97694F00F0DB25 /* IRMainMenuMoreSection.m in Sources */,
-				6B1C416E1C97694F00F0DB25 /* IRBoardManagerViewController.m in Sources */,
 				6B1C410F1C9765C800F0DB25 /* main.m in Sources */,
-				6B1C41741C97694F00F0DB25 /* IRMyBoardsMenuItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
