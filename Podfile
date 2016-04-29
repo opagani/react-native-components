@@ -9,8 +9,8 @@ target 'Trulia Rent' do
     pod 'ARAnalytics', :git => 'https://github.com/arifken/ARAnalytics.git', :branch => 'andy-fixes'
     pod 'TUIKit', :path => '../mob-tuikit'
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
-    # pod 'TRLMaps', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools.git', :branch => 'master'
-    pod 'TRLMaps', :path => '../mob-ios-map-tools'
+    pod 'TRLMaps', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools.git', :branch => 'master'
+    # pod 'TRLMaps', :path => '../mob-ios-map-tools'
     
 end
 
