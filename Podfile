@@ -1,15 +1,16 @@
 #!/usr/bin/env ruby -wKU
+source 'https://github.com/CocoaPods/Specs'
+source 'ssh://git@stash.sv2.trulia.com/mob/mob-podspecs.git'
 
-source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+install! 'cocoapods', :deterministic_uuids => false
 
 target 'Trulia Rent' do
     pod 'ARAnalytics', :git => 'https://github.com/arifken/ARAnalytics.git', :branch => 'andy-fixes'
     pod 'TUIKit', :path => '../mob-tuikit'
-    if ENV['IOS_CORE_BRANCH'] != nil # set this to build the app against a specific branch of the library
-        pod 'IosCoreLibrary', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ioscore-lib.git', :branch => "#{ENV['IOS_CORE_BRANCH']}"
-    else
-        pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
-    end
+    pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
+    # pod 'TRLMaps', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools.git', :branch => 'master'
+    pod 'TRLMaps', :path => '../mob-ios-map-tools'
     
 end
 
