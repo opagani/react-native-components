@@ -24,7 +24,6 @@
 #import "ICDiscoveryViewController.h"
 
 //frameworks
-#import <Crashlytics/Crashlytics.h>
 #import "ICSearchFiltersViewController.h"
 
 @implementation IRAppDelegate
@@ -32,16 +31,6 @@
 void uncaughtExceptionHandler(NSException *exception) {
     GRLogCError(@"CRASH: %@", exception);
     GRLogCError(@"Stack Trace: %@", [exception callStackSymbols]);
-}
-
-#pragma mark - Memory management
-
-- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
-    /*
-     Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
-     */
-    CLSLog(@"%s ** memory warning **", __func__);
-
 }
 
 

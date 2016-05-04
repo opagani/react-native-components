@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		658236A40197EFEDE9206DE1 /* Pods_Trulia_Rent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27F587BC457B72804F20410 /* Pods_Trulia_Rent.framework */; };
 		6B1C410F1C9765C800F0DB25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C410E1C9765C800F0DB25 /* main.m */; };
 		6B1C41181C9765C800F0DB25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41161C9765C800F0DB25 /* Main.storyboard */; };
 		6B1C411D1C9765C800F0DB25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C411B1C9765C800F0DB25 /* LaunchScreen.storyboard */; };
@@ -36,7 +37,6 @@
 		6B1C417C1C97697000F0DB25 /* ICGeneral~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41771C97697000F0DB25 /* ICGeneral~iphone.plist */; };
 		6B1C417D1C97697000F0DB25 /* ICMetric~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41781C97697000F0DB25 /* ICMetric~ipad.plist */; };
 		6B1C417E1C97697000F0DB25 /* ICMetric~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41791C97697000F0DB25 /* ICMetric~iphone.plist */; };
-		C79A256E2D0B66D8C34070ED /* libPods-Trulia Rent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA7E658E928207302EA9BB6 /* libPods-Trulia Rent.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,7 +76,7 @@
 		6B1C41791C97697000F0DB25 /* ICMetric~iphone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~iphone.plist"; sourceTree = "<group>"; };
 		6B1C41811C987D7C00F0DB25 /* TruliaRent-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TruliaRent-Prefix.pch"; sourceTree = "<group>"; };
 		A4FDF0BB8493A863BCC47F1F /* Pods-Trulia Rent.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.appstore.xcconfig"; sourceTree = "<group>"; };
-		AAA7E658E928207302EA9BB6 /* libPods-Trulia Rent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Trulia Rent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F27F587BC457B72804F20410 /* Pods_Trulia_Rent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trulia_Rent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C79A256E2D0B66D8C34070ED /* libPods-Trulia Rent.a in Frameworks */,
+				658236A40197EFEDE9206DE1 /* Pods_Trulia_Rent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +209,7 @@
 		E9652C4340560D749CF105E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AAA7E658E928207302EA9BB6 /* libPods-Trulia Rent.a */,
+				F27F587BC457B72804F20410 /* Pods_Trulia_Rent.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
