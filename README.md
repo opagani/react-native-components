@@ -9,7 +9,7 @@ Make sure you have bundler installed: `gem install bundler`
 
 1. cd `/path/to/mob-ios-rental-universal/fastlane`
 2. `bundle install --binstubs --path ./vendor/bundle` # This installs the dependent gems (e.g. cocoapods, fastlane) into a local directory in this project so that you don't have to worry about it conflicting with your system gems
-3. `bundle exec pod install --project-directory=../Code` # Run pod install using the version of cocoapods managed by bundler, and show cocoapods where to find the actual Xcodeproj. 
+3. `bundle exec pod install --project-directory=../` # Run pod install using the version of cocoapods managed by bundler, and show cocoapods where to find the actual Xcodeproj. 
 
 ## Generating a build
 
