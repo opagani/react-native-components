@@ -27,6 +27,7 @@ post_install do |installer|
   end
 
   installer.pods_project.build_configurations.each do |config|
+    config.build_settings['ENABLE_BITCODE'] = 'NO'  
     config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= []
     if config.name == 'Appstore'   
       config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'APPSTORE=1'
