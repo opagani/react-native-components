@@ -2,9 +2,9 @@ PODS:
   - Adjust (4.6.0):
     - Adjust/Core (= 4.6.0)
   - Adjust/Core (4.6.0)
-  - AdobeMobileSDK (4.8.6):
-    - AdobeMobileSDK/iOS (= 4.8.6)
-  - AdobeMobileSDK/iOS (4.8.6)
+  - AdobeMobileSDK (4.9.0):
+    - AdobeMobileSDK/iOS (= 4.9.0)
+  - AdobeMobileSDK/iOS (4.9.0)
   - AFNetworking (3.1.0):
     - AFNetworking/NSURLSession (= 3.1.0)
     - AFNetworking/Reachability (= 3.1.0)
@@ -163,24 +163,24 @@ EXTERNAL SOURCES:
     :branch: andy-fixes
     :git: https://github.com/arifken/ARAnalytics.git
   IosCoreLibrary:
-    :path: "../mob-ioscore-lib/"
+    :path: ../mob-ioscore-lib/
   TRLMaps:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools.git
   TUIKit:
-    :path: "../mob-tuikit"
+    :path: ../mob-tuikit
 
 CHECKOUT OPTIONS:
   ARAnalytics:
     :commit: a05eec778a64ecac84e84c49bb934b06d5f0137d
     :git: https://github.com/arifken/ARAnalytics.git
   TRLMaps:
-    :commit: fcc0e7f48d83f4e6872e4624b7dcaece001c55fa
+    :commit: 59bd6e459171bed68bb952a22bf1b76817467515
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools.git
 
 SPEC CHECKSUMS:
   Adjust: c6179ee5ab2d333a19e59688a489c02223e31477
-  AdobeMobileSDK: a7564ca68ef2399173ea501cd810e6c28365f436
+  AdobeMobileSDK: dd97522e35f0ac1e922df8f6190abcc281581b65
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   ARAnalytics: c8d53dbeb6977b9c47d5778b7a6331686fd2956d
   Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
@@ -213,4 +213,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: f7ead62a075d2b4895a44d9829ee16e1e4fe7231
 
-COCOAPODS: 1.0.0.rc.2
+COCOAPODS: 1.0.0.beta.5
