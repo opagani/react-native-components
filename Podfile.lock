@@ -180,7 +180,7 @@ CHECKOUT OPTIONS:
     :commit: ee28dc54051a54859386aa7f0d4017178b1d65ab
     :git: https://github.com/danielgindi/Charts.git
   TRLMaps:
-    :commit: f1f0f668f04c24c6cef62d6def790ecc9fb181a6
+    :commit: 52cc9b2ec49be65f11e3bb59f85b2dd0e053e72d
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools.git
 
 SPEC CHECKSUMS:
