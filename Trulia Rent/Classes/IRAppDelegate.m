@@ -19,6 +19,7 @@
 #import "ICUtility.h"
 #import "ICAnalyticsController.h"
 #import "ICManagedSearch.h"
+#import "ICDiscoveryParameterSet.h"
 
 //view controllers
 #import "ICDiscoveryViewController.h"
@@ -44,6 +45,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (void)setupRentalConfigurations {
 
+    [ICDiscoveryParameterSet setDefaultIndexType:IC_INDEXTYPE_FORRENT];
     [ICManagedSearch setDefaultIndexType:IC_INDEXTYPE_FORRENT];
     [ICSearchFiltersViewController setSegmentControlModes:@[@(ICSearchFiltersFormTypeForRent)]];
 
