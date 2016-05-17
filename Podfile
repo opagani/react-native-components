@@ -10,7 +10,7 @@ target 'Trulia Rent' do
     pod 'ARAnalytics', :git => 'https://github.com/arifken/ARAnalytics.git', :branch => 'andy-fixes'
     
     # Uncomment the following line to use a local version of TUIKit
-    # pod 'TUIKit', :path => '../mob-tuikit'
+    pod 'TUIKit', :path => '../mob-tuikit'
 
     pod 'Charts', :git => 'https://github.com/danielgindi/Charts.git', :branch => 'master'
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
