@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -18,22 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchscreen_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Lfh-jE-2aF">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-trulia" translatesAutoresizingMaskIntoConstraints="NO" id="eOU-nk-GW5">
-                                <rect key="frame" x="175" y="273" width="250" height="55"/>
+                                <rect key="frame" x="120" y="273" width="360" height="55"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.32549019610000002" green="0.70980392160000005" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="eOU-nk-GW5" firstAttribute="centerX" secondItem="Lfh-jE-2aF" secondAttribute="centerX" id="8FH-l3-0rc"/>
                             <constraint firstItem="eOU-nk-GW5" firstAttribute="width" relation="lessThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.5" id="F69-eO-sqS"/>
-                            <constraint firstAttribute="trailing" secondItem="Lfh-jE-2aF" secondAttribute="trailing" id="JPj-7t-VfB"/>
-                            <constraint firstItem="eOU-nk-GW5" firstAttribute="centerY" secondItem="Lfh-jE-2aF" secondAttribute="centerY" id="edC-Ew-MYq"/>
-                            <constraint firstItem="Lfh-jE-2aF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="uUl-R0-cpL"/>
-                            <constraint firstItem="Lfh-jE-2aF" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="uhB-Am-JNI"/>
-                            <constraint firstAttribute="bottom" secondItem="Lfh-jE-2aF" secondAttribute="bottom" id="yfy-C0-VKR"/>
+                            <constraint firstItem="eOU-nk-GW5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PdU-P3-Qfw"/>
+                            <constraint firstItem="eOU-nk-GW5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="eYW-Te-JoD"/>
+                            <constraint firstItem="eOU-nk-GW5" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.6" id="xZD-Gk-HW5"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -43,6 +37,7 @@
                         <variation key="widthClass=regular">
                             <mask key="constraints">
                                 <include reference="F69-eO-sqS"/>
+                                <exclude reference="xZD-Gk-HW5"/>
                             </mask>
                         </variation>
                     </view>
@@ -53,7 +48,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchscreen_bg" width="1024" height="768"/>
         <image name="logo-trulia" width="250" height="55"/>
     </resources>
 </document>
