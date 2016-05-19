@@ -144,11 +144,11 @@ PODS:
     - TUIKit/Colors (~> 0.9.2)
     - TUIKit/Fonts (~> 0.9.2)
   - TTTAttributedLabel (1.13.4)
-  - TUIKit (0.9.3):
-    - TUIKit/Core (= 0.9.3)
-  - TUIKit/Colors (0.9.3)
-  - TUIKit/Core (0.9.3)
-  - TUIKit/Fonts (0.9.3)
+  - TUIKit (0.9.4):
+    - TUIKit/Core (= 0.9.4)
+  - TUIKit/Colors (0.9.4)
+  - TUIKit/Core (0.9.4)
+  - TUIKit/Fonts (0.9.4)
   - ZGMortgageCalculators (0.1.0):
     - ActionSheetPicker-3.0
     - Alamofire
@@ -159,6 +159,7 @@ DEPENDENCIES:
   - ARAnalytics (from `https://github.com/arifken/ARAnalytics.git`, branch `andy-fixes`)
   - Charts (from `https://github.com/danielgindi/Charts.git`, branch `master`)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
+  - TUIKit (from `../mob-tuikit`)
 
 EXTERNAL SOURCES:
   ARAnalytics:
@@ -168,7 +169,9 @@ EXTERNAL SOURCES:
     :branch: master
     :git: https://github.com/danielgindi/Charts.git
   IosCoreLibrary:
-    :path: "../mob-ioscore-lib/"
+    :path: ../mob-ioscore-lib/
+  TUIKit:
+    :path: ../mob-tuikit
 
 CHECKOUT OPTIONS:
   ARAnalytics:
@@ -212,9 +215,9 @@ SPEC CHECKSUMS:
   TRLImageCache: 291fe5e0de7fdaaa5589fbdf846e47c9edcff360
   TRLMaps: 48736f00f2c5a3f119ad9abccb3392b591f7b08f
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
-  TUIKit: dcde4d6b80aff8bcc0c0b2150903dc2988fa9d54
+  TUIKit: 991b27c39f4041aaad4b144a3ac657285bbd5ad3
   ZGMortgageCalculators: 177133e890819a414cb24a890a9d3d9e4fc5eef7
 
-PODFILE CHECKSUM: d66a8326d32379fb40d58265e12a62779704e860
+PODFILE CHECKSUM: cce367d2d9e0ecef1402211049e69fb1f30bea95
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.0.0.rc.2
