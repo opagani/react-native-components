@@ -159,7 +159,7 @@
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Trulia needs your location to allow you to search and get updates on homes.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Trulia needs your location to allow you to search homes and get updates on homes you'll love.</string>
+	<string>Trulia needs your location to allow you to search homes and get updates on homes you&apos;ll love.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>OpenSans-SemiboldItalic.ttf</string>
@@ -172,7 +172,7 @@
 		<string>OpenSans-Regular.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
-	<string>Launch Screen</string>
+	<string>LaunchScreen</string>
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIRequiresFullScreen</key>
