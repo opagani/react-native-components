@@ -139,16 +139,16 @@ PODS:
     - TRLImageCache/iOS (= 1.0.3)
   - TRLImageCache/iOS (1.0.3):
     - AFNetworking (~> 3.0)
-  - TRLMaps (0.2.1):
+  - TRLMaps (0.2.4):
     - TRLImageCache (~> 1.0.3)
     - TUIKit/Colors (~> 0.9.2)
     - TUIKit/Fonts (~> 0.9.2)
   - TTTAttributedLabel (1.13.4)
-  - TUIKit (0.9.4):
-    - TUIKit/Core (= 0.9.4)
-  - TUIKit/Colors (0.9.4)
-  - TUIKit/Core (0.9.4)
-  - TUIKit/Fonts (0.9.4)
+  - TUIKit (0.9.3):
+    - TUIKit/Core (= 0.9.3)
+  - TUIKit/Colors (0.9.3)
+  - TUIKit/Core (0.9.3)
+  - TUIKit/Fonts (0.9.3)
   - ZGMortgageCalculators (0.1.0):
     - ActionSheetPicker-3.0
     - Alamofire
@@ -169,9 +169,9 @@ EXTERNAL SOURCES:
     :branch: master
     :git: https://github.com/danielgindi/Charts.git
   IosCoreLibrary:
-    :path: ../mob-ioscore-lib/
+    :path: "../mob-ioscore-lib/"
   TUIKit:
-    :path: ../mob-tuikit
+    :path: "../mob-tuikit"
 
 CHECKOUT OPTIONS:
   ARAnalytics:
@@ -200,7 +200,7 @@ SPEC CHECKSUMS:
   FormatterKit: bddde83e054edf9d9ee14f9de3b3a5103db256f4
   HockeySDK-Source: c6c66ea12e59f0d756fe9989cbc45eda017fc41c
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: c84b6bad3889a003a355470611bbaa5096238af7
+  IosCoreLibrary: 99f52a05123b8db360c978764d6fee295d76fa8f
   JLRoutes: d191a496b820f60d70225202d04289582da962df
   MAKVONotificationCenter: eddfb85e77040323ee43a0fddbe616926ec005a8
   Mantle: 299966b00759634931699f69cb6a30b9239b944d
@@ -213,11 +213,11 @@ SPEC CHECKSUMS:
   SWParallaxScrollView: 2de7a751033f9affcbe09c8b37e85034b77b0b1f
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: 291fe5e0de7fdaaa5589fbdf846e47c9edcff360
-  TRLMaps: 48736f00f2c5a3f119ad9abccb3392b591f7b08f
+  TRLMaps: be527d12e6c5e7dd8390f7cd898f6e834138a5ea
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
-  TUIKit: 991b27c39f4041aaad4b144a3ac657285bbd5ad3
+  TUIKit: dcde4d6b80aff8bcc0c0b2150903dc2988fa9d54
   ZGMortgageCalculators: 177133e890819a414cb24a890a9d3d9e4fc5eef7
 
 PODFILE CHECKSUM: cce367d2d9e0ecef1402211049e69fb1f30bea95
 
-COCOAPODS: 1.0.0.rc.2
+COCOAPODS: 1.0.0
