@@ -1,11 +1,11 @@
 PODS:
   - ActionSheetPicker-3.0 (2.1.0)
-  - Adjust (4.6.0):
-    - Adjust/Core (= 4.6.0)
-  - Adjust/Core (4.6.0)
-  - AdobeMobileSDK (4.9.0):
-    - AdobeMobileSDK/iOS (= 4.9.0)
-  - AdobeMobileSDK/iOS (4.9.0)
+  - Adjust (4.7.0):
+    - Adjust/Core (= 4.7.0)
+  - Adjust/Core (4.7.0)
+  - AdobeMobileSDK (4.10.0):
+    - AdobeMobileSDK/iOS (= 4.10.0)
+  - AdobeMobileSDK/iOS (4.10.0)
   - AFNetworking (3.1.0):
     - AFNetworking/NSURLSession (= 3.1.0)
     - AFNetworking/Reachability (= 3.1.0)
@@ -38,26 +38,21 @@ PODS:
   - Bolts/AppLinks (1.7.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.7.0)
-  - Charts (2.2.4):
-    - Charts/Core (= 2.2.4)
-  - Charts/Core (2.2.4)
-  - CocoaLumberjack (2.2.0):
-    - CocoaLumberjack/Default (= 2.2.0)
-    - CocoaLumberjack/Extensions (= 2.2.0)
-  - CocoaLumberjack/Core (2.2.0)
-  - CocoaLumberjack/Default (2.2.0):
+  - Charts (2.2.5):
+    - Charts/Core (= 2.2.5)
+  - Charts/Core (2.2.5)
+  - CocoaLumberjack (2.3.0):
+    - CocoaLumberjack/Default (= 2.3.0)
+    - CocoaLumberjack/Extensions (= 2.3.0)
+  - CocoaLumberjack/Core (2.3.0)
+  - CocoaLumberjack/Default (2.3.0):
     - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.2.0):
+  - CocoaLumberjack/Extensions (2.3.0):
     - CocoaLumberjack/Default
   - CSStickyHeaderFlowLayout (0.2.10)
-  - FBAllocationTracker (0.1.4)
-  - FBMemoryProfiler (0.1.3):
-    - FBAllocationTracker (~> 0.1)
-    - FBRetainCycleDetector (~> 0.1)
-  - FBRetainCycleDetector (0.1.2)
-  - FBSDKCoreKit (4.11.0):
+  - FBSDKCoreKit (4.12.0):
     - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.11.0):
+  - FBSDKLoginKit (4.12.0):
     - FBSDKCoreKit
   - FormatterKit (1.8.0):
     - FormatterKit/AddressFormatter (= 1.8.0)
@@ -80,46 +75,45 @@ PODS:
   - FormatterKit/URLRequestFormatter (1.8.0)
   - HockeySDK-Source (3.8.6)
   - HTAutocompleteTextField (1.3.2)
-  - IosCoreLibrary (2.0.0):
+  - IosCoreLibrary (3.0.0):
     - AFNetworking (= 3.1.0)
-    - CocoaLumberjack (= 2.2.0)
+    - CocoaLumberjack (= 2.3.0)
     - FormatterKit (= 1.8.0)
-    - IosCoreLibrary/iOS (= 2.0.0)
+    - IosCoreLibrary/iOS (= 3.0.0)
     - SFHFKeychainUtils (= 0.0.1)
-    - SSZipArchive (= 1.1)
+    - SSZipArchive (= 1.2)
     - TUIKit
-  - IosCoreLibrary/iOS (2.0.0):
-    - Adjust (= 4.6.0)
+  - IosCoreLibrary/iOS (3.0.0):
+    - Adjust (= 4.7.0)
     - AdobeMobileSDK
     - AFNetworking (= 3.1.0)
     - ARAnalytics/Adobe
     - ARAnalytics/DSL
-    - CocoaLumberjack (= 2.2.0)
+    - CocoaLumberjack (= 2.3.0)
     - CSStickyHeaderFlowLayout (= 0.2.10)
-    - FBMemoryProfiler
-    - FBSDKCoreKit (= 4.11.0)
-    - FBSDKLoginKit (= 4.11.0)
+    - FBSDKCoreKit (= 4.12.0)
+    - FBSDKLoginKit (= 4.12.0)
     - FormatterKit (= 1.8.0)
     - HockeySDK-Source (= 3.8.6)
     - HTAutocompleteTextField (= 1.3.2)
-    - JLRoutes (= 1.5.5)
+    - JLRoutes (= 1.6)
     - MAKVONotificationCenter (= 0.0.2)
-    - Mantle (= 2.0.6)
+    - Mantle (= 2.0.7)
     - OpenInGoogleMaps (= 0.1.0)
     - SFHFKeychainUtils (= 0.0.1)
-    - SSZipArchive (= 1.1)
+    - SSZipArchive (= 1.2)
     - SWParallaxScrollView (= 0.1.1)
     - TRLCurrentLocation (= 1.0.0)
     - TRLImageCache/iOS (~> 1.0.3)
     - TRLMaps (~> 0.2)
-    - TTTAttributedLabel (= 1.13.4)
+    - TTTAttributedLabel (= 2.0.0)
     - TUIKit
     - ZGMortgageCalculators
-  - JLRoutes (1.5.5)
+  - JLRoutes (1.6)
   - MAKVONotificationCenter (0.0.2)
-  - Mantle (2.0.6):
-    - Mantle/extobjc (= 2.0.6)
-  - Mantle/extobjc (2.0.6)
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
   - OpenInGoogleMaps (0.1.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -130,25 +124,25 @@ PODS:
     - ReactiveCocoa/Core
   - RSSwizzle (0.1.0)
   - SFHFKeychainUtils (0.0.1)
-  - SSZipArchive (1.1)
+  - SSZipArchive (1.2)
   - SwiftyJSON (2.3.2)
   - SWParallaxScrollView (0.1.1)
   - TRLCurrentLocation (1.0.0)
-  - TRLImageCache (1.0.3):
+  - TRLImageCache (1.0.4):
     - AFNetworking (~> 3.0)
-    - TRLImageCache/iOS (= 1.0.3)
-  - TRLImageCache/iOS (1.0.3):
+    - TRLImageCache/iOS (= 1.0.4)
+  - TRLImageCache/iOS (1.0.4):
     - AFNetworking (~> 3.0)
   - TRLMaps (0.2.4):
     - TRLImageCache (~> 1.0.3)
     - TUIKit/Colors (~> 0.9.2)
     - TUIKit/Fonts (~> 0.9.2)
-  - TTTAttributedLabel (1.13.4)
-  - TUIKit (0.9.3):
-    - TUIKit/Core (= 0.9.3)
-  - TUIKit/Colors (0.9.3)
-  - TUIKit/Core (0.9.3)
-  - TUIKit/Fonts (0.9.3)
+  - TTTAttributedLabel (2.0.0)
+  - TUIKit (0.9.4):
+    - TUIKit/Core (= 0.9.4)
+  - TUIKit/Colors (0.9.4)
+  - TUIKit/Core (0.9.4)
+  - TUIKit/Fonts (0.9.4)
   - ZGMortgageCalculators (0.1.1):
     - ActionSheetPicker-3.0
     - Alamofire
@@ -169,53 +163,50 @@ EXTERNAL SOURCES:
     :branch: master
     :git: https://github.com/danielgindi/Charts.git
   IosCoreLibrary:
-    :path: "../mob-ioscore-lib/"
+    :path: ../mob-ioscore-lib/
   TUIKit:
-    :path: "../mob-tuikit"
+    :path: ../mob-tuikit
 
 CHECKOUT OPTIONS:
   ARAnalytics:
     :commit: a05eec778a64ecac84e84c49bb934b06d5f0137d
     :git: https://github.com/arifken/ARAnalytics.git
   Charts:
-    :commit: 6406e6138bee43b93e4d2304c0d29b220c647e1d
+    :commit: 276076f1180a0676e4766fe27bb3fa48864df8dc
     :git: https://github.com/danielgindi/Charts.git
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: db66605feb85689279d328206c61f0e4f398df92
-  Adjust: c6179ee5ab2d333a19e59688a489c02223e31477
-  AdobeMobileSDK: dd97522e35f0ac1e922df8f6190abcc281581b65
+  Adjust: 12835049ba46dd25ef31cedee89db92c9fe206f4
+  AdobeMobileSDK: f2200eb91ebf65e1d9ce8871646143af2281a357
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
   ARAnalytics: c8d53dbeb6977b9c47d5778b7a6331686fd2956d
   Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
-  Charts: a9e735c83c6d376ade20f6612dcf0ba217394a49
-  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  Charts: b48fcc8d7190de910ff9e9748f5360c8ea7856e5
+  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   CSStickyHeaderFlowLayout: 5366582779d8b7c9ba9b9cc729c218cc23888776
-  FBAllocationTracker: 593c329f97edf6c719a9a9d7ce55a2a674d91982
-  FBMemoryProfiler: 623fc5f8a61f7d02ec75c87e3b97c90f621d8b02
-  FBRetainCycleDetector: 45462f9ed1af0cd77224a4cc4e6dacaca47371b4
-  FBSDKCoreKit: 686ac982723a14ec9ddb85e2f81235d7706c891b
-  FBSDKLoginKit: bade9fc78277764149ccc5bfaadbf13c83175c6a
+  FBSDKCoreKit: 6e56d5a2a64a755ad4efb5dbeee8f82fb1b99775
+  FBSDKLoginKit: 03f68a8d48c2c8bb81d7eb8097973d483543e1f6
   FormatterKit: bddde83e054edf9d9ee14f9de3b3a5103db256f4
   HockeySDK-Source: c6c66ea12e59f0d756fe9989cbc45eda017fc41c
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: 99f52a05123b8db360c978764d6fee295d76fa8f
-  JLRoutes: d191a496b820f60d70225202d04289582da962df
+  IosCoreLibrary: a84938badc40906a83c5e2eb0f0bce3086e233cc
+  JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
   MAKVONotificationCenter: eddfb85e77040323ee43a0fddbe616926ec005a8
-  Mantle: 299966b00759634931699f69cb6a30b9239b944d
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   OpenInGoogleMaps: 60dd887d2e2b2149166a03bd6dab1d4478a7d3e8
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
-  SSZipArchive: de3d215ab73f87db627f81f2ce24f1731e3886c3
+  SSZipArchive: 251093c65f98d6ea282c50bc404bfa631d9fd721
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   SWParallaxScrollView: 2de7a751033f9affcbe09c8b37e85034b77b0b1f
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
-  TRLImageCache: 291fe5e0de7fdaaa5589fbdf846e47c9edcff360
+  TRLImageCache: a0f5b47f5e3b734a7ff815974228ff282807b66c
   TRLMaps: be527d12e6c5e7dd8390f7cd898f6e834138a5ea
-  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
-  TUIKit: dcde4d6b80aff8bcc0c0b2150903dc2988fa9d54
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  TUIKit: 991b27c39f4041aaad4b144a3ac657285bbd5ad3
   ZGMortgageCalculators: d1b637fd3feb2988b5924b131b9100738e144c5e
 
 PODFILE CHECKSUM: cce367d2d9e0ecef1402211049e69fb1f30bea95
