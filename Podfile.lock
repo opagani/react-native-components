@@ -102,7 +102,6 @@ PODS:
     - OpenInGoogleMaps (= 0.1.0)
     - SFHFKeychainUtils (= 0.0.1)
     - SSZipArchive (= 1.2)
-    - SWParallaxScrollView (= 0.1.1)
     - TRLCurrentLocation (= 1.0.0)
     - TRLImageCache/iOS (~> 1.0.3)
     - TRLMaps (~> 0.2)
@@ -126,7 +125,6 @@ PODS:
   - SFHFKeychainUtils (0.0.1)
   - SSZipArchive (1.2)
   - SwiftyJSON (2.3.2)
-  - SWParallaxScrollView (0.1.1)
   - TRLCurrentLocation (1.0.0)
   - TRLImageCache (1.0.4):
     - AFNetworking (~> 3.0)
@@ -151,7 +149,6 @@ PODS:
 
 DEPENDENCIES:
   - ARAnalytics (from `https://github.com/arifken/ARAnalytics.git`, branch `andy-fixes`)
-  - Charts (from `https://github.com/danielgindi/Charts.git`, branch `master`)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
   - TUIKit (from `../mob-tuikit`)
 
@@ -159,9 +156,6 @@ EXTERNAL SOURCES:
   ARAnalytics:
     :branch: andy-fixes
     :git: https://github.com/arifken/ARAnalytics.git
-  Charts:
-    :branch: master
-    :git: https://github.com/danielgindi/Charts.git
   IosCoreLibrary:
     :path: "../mob-ioscore-lib/"
   TUIKit:
@@ -171,9 +165,6 @@ CHECKOUT OPTIONS:
   ARAnalytics:
     :commit: a05eec778a64ecac84e84c49bb934b06d5f0137d
     :git: https://github.com/arifken/ARAnalytics.git
-  Charts:
-    :commit: 276076f1180a0676e4766fe27bb3fa48864df8dc
-    :git: https://github.com/danielgindi/Charts.git
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: db66605feb85689279d328206c61f0e4f398df92
@@ -191,7 +182,7 @@ SPEC CHECKSUMS:
   FormatterKit: bddde83e054edf9d9ee14f9de3b3a5103db256f4
   HockeySDK-Source: c6c66ea12e59f0d756fe9989cbc45eda017fc41c
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: a84938badc40906a83c5e2eb0f0bce3086e233cc
+  IosCoreLibrary: 2f81ce8f70f3c5625f59e09e71ea82079f2687a8
   JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
   MAKVONotificationCenter: eddfb85e77040323ee43a0fddbe616926ec005a8
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
@@ -201,7 +192,6 @@ SPEC CHECKSUMS:
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 251093c65f98d6ea282c50bc404bfa631d9fd721
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
-  SWParallaxScrollView: 2de7a751033f9affcbe09c8b37e85034b77b0b1f
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: a0f5b47f5e3b734a7ff815974228ff282807b66c
   TRLMaps: 8ba56d06d3a93e3b30043a6a40b8c96d4bba8a37
@@ -209,6 +199,6 @@ SPEC CHECKSUMS:
   TUIKit: 991b27c39f4041aaad4b144a3ac657285bbd5ad3
   ZGMortgageCalculators: ad36257befc967d746e61ad7b659e26d4571bcf9
 
-PODFILE CHECKSUM: cce367d2d9e0ecef1402211049e69fb1f30bea95
+PODFILE CHECKSUM: 4be48d712681e592d6c6096aa3a6df014595e982
 
 COCOAPODS: 1.0.0
