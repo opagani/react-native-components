@@ -12,7 +12,6 @@ target 'Trulia Rent' do
     # Uncomment the following line to use a local version of TUIKit
     pod 'TUIKit', :path => '../mob-tuikit'
 
-    pod 'Charts', :git => 'https://github.com/danielgindi/Charts.git', :branch => 'master'
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
     
 end
