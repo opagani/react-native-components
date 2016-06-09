@@ -40,7 +40,7 @@ platform :ios do
     @mstage_user= 'web'
     @hockeyapp_token = 'f9ea5344004d44cfa154efab77887b72'
     @absolute_icon_path = File.expand_path "../Trulia\\ Rent/Resources/Assets.xcassets/AppIcon.appiconset"
-    @hockey_team_ids = '51656,51937,50690,50668,50687,50684,50683'
+    @hockey_team_ids = '51656,51937,50690,50668,50687,50684,50683,50685,68986'
     
     undo_icon_file_changes
     
