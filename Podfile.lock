@@ -22,14 +22,11 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Alamofire (3.4.0)
-  - ARAnalytics (3.9.1b):
-    - ARAnalytics/Adobe (= 3.9.1b)
-    - ARAnalytics/DSL (= 3.9.1b)
-  - ARAnalytics/Adobe (3.9.1b):
+  - ARAnalytics/Adobe (3.9.1):
     - AdobeMobileSDK
     - ARAnalytics/CoreIOS
-  - ARAnalytics/CoreIOS (3.9.1b)
-  - ARAnalytics/DSL (3.9.1b):
+  - ARAnalytics/CoreIOS (3.9.1)
+  - ARAnalytics/DSL (3.9.1):
     - ReactiveCocoa (~> 2.0)
     - RSSwizzle (~> 0.1.0)
   - Bolts (1.7.0):
@@ -131,40 +128,38 @@ PODS:
     - TRLImageCache/iOS (= 1.0.4)
   - TRLImageCache/iOS (1.0.4):
     - AFNetworking (~> 3.0)
-  - TRLMaps (0.2.5):
-    - TRLImageCache (~> 1.0.3)
-    - TUIKit/Colors (~> 0.9.2)
-    - TUIKit/Fonts (~> 0.9.2)
+  - TRLMaps (0.2.6):
+    - TRLImageCache (~> 1.0)
+    - TUIKit/Colors (~> 1.0)
+    - TUIKit/Fonts (~> 1.0)
   - TTTAttributedLabel (2.0.0)
-  - TUIKit (0.9.4):
-    - TUIKit/Core (= 0.9.4)
-  - TUIKit/Colors (0.9.4)
-  - TUIKit/Core (0.9.4)
-  - TUIKit/Fonts (0.9.4)
-  - ZGMortgageCalculators (0.1.2):
+  - TUIKit (1.0.0):
+    - TUIKit/Core (= 1.0.0)
+  - TUIKit/Colors (1.0.0)
+  - TUIKit/Core (1.0.0)
+  - TUIKit/Fonts (1.0.0)
+  - ZGMortgageCalculators (0.1.3):
     - ActionSheetPicker-3.0
     - Alamofire
     - Charts
     - SwiftyJSON
 
 DEPENDENCIES:
-  - ARAnalytics (from `https://github.com/arifken/ARAnalytics.git`, branch `andy-fixes`)
+  - ARAnalytics/Adobe (from `https://github.com/orta/ARAnalytics.git`, branch `master`)
+  - ARAnalytics/DSL (from `https://github.com/orta/ARAnalytics.git`, branch `master`)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
-  - TUIKit (from `../mob-tuikit`)
 
 EXTERNAL SOURCES:
   ARAnalytics:
-    :branch: andy-fixes
-    :git: https://github.com/arifken/ARAnalytics.git
+    :branch: master
+    :git: https://github.com/orta/ARAnalytics.git
   IosCoreLibrary:
     :path: "../mob-ioscore-lib/"
-  TUIKit:
-    :path: "../mob-tuikit"
 
 CHECKOUT OPTIONS:
   ARAnalytics:
-    :commit: a05eec778a64ecac84e84c49bb934b06d5f0137d
-    :git: https://github.com/arifken/ARAnalytics.git
+    :commit: 213ead12bf838becf567aff4ce1985b7b3c2fb6a
+    :git: https://github.com/orta/ARAnalytics.git
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: db66605feb85689279d328206c61f0e4f398df92
@@ -172,7 +167,7 @@ SPEC CHECKSUMS:
   AdobeMobileSDK: f2200eb91ebf65e1d9ce8871646143af2281a357
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
-  ARAnalytics: c8d53dbeb6977b9c47d5778b7a6331686fd2956d
+  ARAnalytics: c7c153bf95cbdab880d108bbbe6dfcad9f37da92
   Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
   Charts: b48fcc8d7190de910ff9e9748f5360c8ea7856e5
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
@@ -194,11 +189,11 @@ SPEC CHECKSUMS:
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: a0f5b47f5e3b734a7ff815974228ff282807b66c
-  TRLMaps: 8ba56d06d3a93e3b30043a6a40b8c96d4bba8a37
+  TRLMaps: 6f124f410ffeac7d9fcacc2c61b658d06e84b601
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
-  TUIKit: 991b27c39f4041aaad4b144a3ac657285bbd5ad3
-  ZGMortgageCalculators: ad36257befc967d746e61ad7b659e26d4571bcf9
+  TUIKit: 5b8a4fd7ea5f1eeed99b24cd979d70e0515a5630
+  ZGMortgageCalculators: 13800a77829046cba10df4adea95718284effb58
 
-PODFILE CHECKSUM: 4be48d712681e592d6c6096aa3a6df014595e982
+PODFILE CHECKSUM: e7e3310ed310cf50e26554e0d1375b267ad58f71
 
 COCOAPODS: 1.0.0
