@@ -52,7 +52,7 @@ platform :ios do
     raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
     
     # lets setup the pods first
-    cocoapods(:podfile => 'Code/Podfile')
+    cocoapods
     
     #params for the build
     jira_host = 'jira.corp.trulia.com'
@@ -113,7 +113,7 @@ platform :ios do
 
     raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
     # lets setup the pods first
-    cocoapods(:podfile => 'Code/Podfile')
+    cocoapods
     
     #params for the build
     jira_host = 'jira.corp.trulia.com'
@@ -179,7 +179,7 @@ platform :ios do
     hockey_app_id = '215568fb16f34b60aea835757b2634b9'
     build_number = options[:build_number] ||  (next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id) - 1).to_s
     
-    cocoapods(:podfile => 'Code/Podfile')
+    cocoapods
     CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "Ad hoc Trulia IosRental", ignore_profiles_with_different_name:true ,skip_certificate_verification: true, adhoc: true)
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
 
@@ -233,7 +233,7 @@ platform :ios do
     raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
     
     # lets setup the pods first
-    cocoapods(:podfile => 'Podfile')
+    cocoapods
     
     #params for the build
     jira_host = 'jira.corp.trulia.com'
