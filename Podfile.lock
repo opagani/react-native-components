@@ -128,7 +128,7 @@ PODS:
     - TRLImageCache/iOS (= 1.0.4)
   - TRLImageCache/iOS (1.0.4):
     - AFNetworking (~> 3.0)
-  - TRLMaps (0.2.6):
+  - TRLMaps (0.2.7):
     - TRLImageCache (~> 1.0)
     - TUIKit/Colors (~> 1.0)
     - TUIKit/Fonts (~> 1.0)
@@ -154,7 +154,7 @@ EXTERNAL SOURCES:
     :branch: master
     :git: https://github.com/orta/ARAnalytics.git
   IosCoreLibrary:
-    :path: "../mob-ioscore-lib/"
+    :path: ../mob-ioscore-lib/
 
 CHECKOUT OPTIONS:
   ARAnalytics:
@@ -189,11 +189,11 @@ SPEC CHECKSUMS:
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: a0f5b47f5e3b734a7ff815974228ff282807b66c
-  TRLMaps: 6f124f410ffeac7d9fcacc2c61b658d06e84b601
+  TRLMaps: 74047b63b0ed0ff2aee1f2be3e6eb95bd0b5a89b
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 5b8a4fd7ea5f1eeed99b24cd979d70e0515a5630
   ZGMortgageCalculators: 13800a77829046cba10df4adea95718284effb58
 
 PODFILE CHECKSUM: e7e3310ed310cf50e26554e0d1375b267ad58f71
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.0.1
