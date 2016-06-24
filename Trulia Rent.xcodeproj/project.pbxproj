@@ -528,7 +528,7 @@
 				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
 				INFOPLIST_FILE = "Trulia Rent/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trulia.IosRental;
 				PRODUCT_NAME = TruliaRent;
 				PROVISIONING_PROFILE = "$(CUSTOM_PROVISIONING_PROFILE)";
 			};
