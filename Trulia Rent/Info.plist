@@ -8,6 +8,8 @@
 	<string>Trulia Rentals</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -158,7 +160,7 @@
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Trulia needs your location to allow you to search and get updates on homes.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Trulia needs your location to allow you to search homes and get updates on homes you&apos;ll love.</string>
+	<string>Trulia needs your location to allow you to search homes and get updates on homes you'll love.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>OpenSans-SemiboldItalic.ttf</string>
@@ -176,6 +178,8 @@
 	<true/>
 	<key>UIRequiresFullScreen</key>
 	<false/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -190,6 +194,6 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
+	<true/>
 </dict>
 </plist>
