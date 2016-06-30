@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby -wKU
+system ('cd fastlane && bundle install --binstubs --path ./vendor/bundle')
+system ('cd fastlane && pod repo update')
+system ('cd fastlane && bundle exec pod install --project-directory=../')
