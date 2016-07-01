@@ -222,6 +222,7 @@
 				6B1C41061C9765C800F0DB25 /* Sources */,
 				6B1C41071C9765C800F0DB25 /* Frameworks */,
 				6B1C41081C9765C800F0DB25 /* Resources */,
+				9DCAA78D1D26E90400CB83C8 /* ShellScript */,
 				830E008AAAD52A49FE5E58A7 /* [CP] Embed Pods Frameworks */,
 				3B9083A701DF0F26AF114241 /* [CP] Copy Pods Resources */,
 			);
@@ -347,6 +348,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		9DCAA78D1D26E90400CB83C8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" != \"Debug\" ]; then\npwd\n\"${SRCROOT}/../mob-ioscore-lib/VendorStaticFrameworks/Fabric.framework/run\" 69c46441eff2d4c6f8a043fd66d16ff159cd9812 1192e1497ab0deac603c36fb2464fd4c0a8452fee2494999c0c302fea55ff94c\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
