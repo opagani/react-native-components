@@ -83,15 +83,15 @@ PODS:
     - FormatterKit/Resources
   - HockeySDK-Source (4.0.1)
   - HTAutocompleteTextField (1.3.2)
-  - IosCoreLibrary (3.0.0):
+  - IosCoreLibrary (3.0.1):
     - AFNetworking (= 3.1.0)
     - CocoaLumberjack (= 2.3.0)
     - FormatterKit (= 1.8.1)
-    - IosCoreLibrary/iOS (= 3.0.0)
+    - IosCoreLibrary/iOS (= 3.0.1)
     - SFHFKeychainUtils (= 0.0.1)
     - SSZipArchive (= 1.2)
     - TUIKit
-  - IosCoreLibrary/iOS (3.0.0):
+  - IosCoreLibrary/iOS (3.0.1):
     - Adjust (= 4.7.1)
     - AdobeMobileSDK (= 4.11.0)
     - AFNetworking (= 3.1.0)
@@ -186,7 +186,7 @@ SPEC CHECKSUMS:
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: 15a7316f450df6fb1965a3c8e404464d082f7d8a
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: 99db3945682c573bd2588b9793bb3f56f4370ba4
+  IosCoreLibrary: a59db12206c0b3636695b824f49bec775635e758
   JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   OpenInGoogleMaps: 60dd887d2e2b2149166a03bd6dab1d4478a7d3e8
