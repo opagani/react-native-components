@@ -52,24 +52,18 @@ platform :ios do
 
     raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
     
-    hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'  
-    update_info_plist(
-      xcodeproj: @project_name,
-      plist_path: @info_plist_path,
-      block: lambda { |plist|
-          plist['HockeyAppId'] = hockey_app_id
-        })
-    
     # lets setup the pods first
     cocoapods
     
     #params for the build
+    hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'  
     jira_host = 'jira.corp.trulia.com'
     CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "EnterpriseIosRental",  skip_certificate_verification: true, app_identifier:"com.truliainc.IosRental")
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
     build_number = next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
 
     build_and_upload(
+        info_plist_path: @info_plist_path,
         # update the icons if in stage
         color_icon: true,
         # bake the build number into icons
@@ -120,24 +114,19 @@ platform :ios do
   lane :rc do |options|
 
     raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
-    hockey_app_id = 'a219c9215a4f4b9ea9f43358e6cb0a7a'
-    update_info_plist(
-      xcodeproj: @project_name,
-      plist_path: @info_plist_path,
-      block: lambda { |plist|
-          plist['HockeyAppId'] = hockey_app_id
-        })
     
     # lets setup the pods first
     cocoapods
     
     #params for the build
+    hockey_app_id = 'a219c9215a4f4b9ea9f43358e6cb0a7a'
     jira_host = 'jira.corp.trulia.com'
     CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "EnterpriseIosRental",  skip_certificate_verification: true, app_identifier:"com.truliainc.IosRental")
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
     build_number = next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
 
     build_and_upload(
+        info_plist_path: @info_plist_path,
         # update the icons if in stage
         color_icon: false,
         # bake the build number into icons
@@ -192,12 +181,6 @@ platform :ios do
     raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
     
     hockey_app_id = '215568fb16f34b60aea835757b2634b9'
-    update_info_plist(
-      xcodeproj: @project_name,
-      plist_path: @info_plist_path,
-      block: lambda { |plist|
-          plist['HockeyAppId'] = hockey_app_id
-        })
     
     build_number = options[:build_number] ||  (next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id) - 1).to_s
     
@@ -206,6 +189,7 @@ platform :ios do
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
 
     build_and_upload(
+        info_plist_path: @info_plist_path,
         # update the icons if in stage
         color_icon: false,
         # bake the build number into icons
