@@ -300,7 +300,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" != \"Debug\" ]; then\npwd\n\"${SRCROOT}/../mob-ioscore-lib/VendorStaticFrameworks/Fabric.framework/run\" 69c46441eff2d4c6f8a043fd66d16ff159cd9812 1192e1497ab0deac603c36fb2464fd4c0a8452fee2494999c0c302fea55ff94c\nfi";
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Appstore\" ]; then\necho running fabric upload dsym script\n\"${SRCROOT}/../mob-ioscore-lib/Pod/VendorStaticFrameworks/Fabric.framework/run\" 69c46441eff2d4c6f8a043fd66d16ff159cd9812 1192e1497ab0deac603c36fb2464fd4c0a8452fee2494999c0c302fea55ff94c\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
