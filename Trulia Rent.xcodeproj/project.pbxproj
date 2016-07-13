@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		658236A40197EFEDE9206DE1 /* Pods_Trulia_Rent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27F587BC457B72804F20410 /* Pods_Trulia_Rent.framework */; };
+		6B1C410F1C9765C800F0DB25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C410E1C9765C800F0DB25 /* main.m */; };
+		6B1C41181C9765C800F0DB25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41161C9765C800F0DB25 /* Main.storyboard */; };
+		6B1C411D1C9765C800F0DB25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C411B1C9765C800F0DB25 /* LaunchScreen.storyboard */; };
+		6B1C41281C9767D700F0DB25 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41261C9767D700F0DB25 /* Localizable.strings */; };
+		6B1C412C1C97680500F0DB25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C412A1C97680500F0DB25 /* Assets.xcassets */; };
+		6B1C41301C97686A00F0DB25 /* copyright.html in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C412E1C97686A00F0DB25 /* copyright.html */; };
+		6B1C414C1C9768AC00F0DB25 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C413B1C9768AC00F0DB25 /* ADBMobileConfig.json */; };
+		6B1C414D1C9768AC00F0DB25 /* ADBMobileConfigRelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C413C1C9768AC00F0DB25 /* ADBMobileConfigRelease.json */; };
+		6B1C414E1C9768AC00F0DB25 /* LocalInfoItems~ipad.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C413D1C9768AC00F0DB25 /* LocalInfoItems~ipad.json */; };
+		6B1C414F1C9768AC00F0DB25 /* LocalInfoItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C413E1C9768AC00F0DB25 /* LocalInfoItems~iphone.json */; };
+		6B1C41501C9768AC00F0DB25 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41411C9768AC00F0DB25 /* LICENSE.txt */; };
+		6B1C41511C9768AC00F0DB25 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41421C9768AC00F0DB25 /* OpenSans-Bold.ttf */; };
+		6B1C41521C9768AC00F0DB25 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41431C9768AC00F0DB25 /* OpenSans-BoldItalic.ttf */; };
+		6B1C41531C9768AC00F0DB25 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41441C9768AC00F0DB25 /* OpenSans-ExtraBold.ttf */; };
+		6B1C41541C9768AC00F0DB25 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41451C9768AC00F0DB25 /* OpenSans-ExtraBoldItalic.ttf */; };
+		6B1C41551C9768AC00F0DB25 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41461C9768AC00F0DB25 /* OpenSans-Italic.ttf */; };
+		6B1C41561C9768AC00F0DB25 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41471C9768AC00F0DB25 /* OpenSans-Light.ttf */; };
+		6B1C41571C9768AC00F0DB25 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41481C9768AC00F0DB25 /* OpenSans-LightItalic.ttf */; };
+		6B1C41581C9768AC00F0DB25 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41491C9768AC00F0DB25 /* OpenSans-Regular.ttf */; };
+		6B1C41591C9768AC00F0DB25 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C414A1C9768AC00F0DB25 /* OpenSans-Semibold.ttf */; };
+		6B1C415A1C9768AC00F0DB25 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C414B1C9768AC00F0DB25 /* OpenSans-SemiboldItalic.ttf */; };
+		6B1C415C1C9768EC00F0DB25 /* TruliaRent.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C415B1C9768EC00F0DB25 /* TruliaRent.entitlements */; };
+		6B1C416F1C97694F00F0DB25 /* IRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C41621C97694F00F0DB25 /* IRAppDelegate.m */; };
+		6B1C417A1C97697000F0DB25 /* ICConfiguration-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41751C97697000F0DB25 /* ICConfiguration-Info.plist */; };
+		6B1C417B1C97697000F0DB25 /* ICGeneral~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41761C97697000F0DB25 /* ICGeneral~ipad.plist */; };
+		6B1C417C1C97697000F0DB25 /* ICGeneral~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41771C97697000F0DB25 /* ICGeneral~iphone.plist */; };
+		6B1C417D1C97697000F0DB25 /* ICMetric~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41781C97697000F0DB25 /* ICMetric~ipad.plist */; };
+		6B1C417E1C97697000F0DB25 /* ICMetric~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41791C97697000F0DB25 /* ICMetric~iphone.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1444F3402058237C39DE7AD1 /* Pods-Trulia Rent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.debug.xcconfig"; sourceTree = "<group>"; };
+		546891CAAD98A23F00BBC5DA /* Pods-Trulia Rent.stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.stage.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.stage.xcconfig"; sourceTree = "<group>"; };
+		6B1C410A1C9765C800F0DB25 /* TruliaRent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruliaRent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1C410E1C9765C800F0DB25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B1C41171C9765C800F0DB25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B1C411C1C9765C800F0DB25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B1C411E1C9765C800F0DB25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B1C41271C9767D700F0DB25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6B1C412A1C97680500F0DB25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B1C412F1C97686A00F0DB25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/copyright.html; sourceTree = "<group>"; };
+		6B1C413B1C9768AC00F0DB25 /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
+		6B1C413C1C9768AC00F0DB25 /* ADBMobileConfigRelease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfigRelease.json; sourceTree = "<group>"; };
+		6B1C413D1C9768AC00F0DB25 /* LocalInfoItems~ipad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "LocalInfoItems~ipad.json"; sourceTree = "<group>"; };
+		6B1C413E1C9768AC00F0DB25 /* LocalInfoItems~iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "LocalInfoItems~iphone.json"; sourceTree = "<group>"; };
+		6B1C41411C9768AC00F0DB25 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		6B1C41421C9768AC00F0DB25 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		6B1C41431C9768AC00F0DB25 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		6B1C41441C9768AC00F0DB25 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		6B1C41451C9768AC00F0DB25 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		6B1C41461C9768AC00F0DB25 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		6B1C41471C9768AC00F0DB25 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		6B1C41481C9768AC00F0DB25 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		6B1C41491C9768AC00F0DB25 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		6B1C414A1C9768AC00F0DB25 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		6B1C414B1C9768AC00F0DB25 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		6B1C415B1C9768EC00F0DB25 /* TruliaRent.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TruliaRent.entitlements; sourceTree = "<group>"; };
+		6B1C41611C97694F00F0DB25 /* IRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRAppDelegate.h; sourceTree = "<group>"; };
+		6B1C41621C97694F00F0DB25 /* IRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRAppDelegate.m; sourceTree = "<group>"; };
+		6B1C41751C97697000F0DB25 /* ICConfiguration-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICConfiguration-Info.plist"; sourceTree = "<group>"; };
+		6B1C41761C97697000F0DB25 /* ICGeneral~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICGeneral~ipad.plist"; sourceTree = "<group>"; };
+		6B1C41771C97697000F0DB25 /* ICGeneral~iphone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICGeneral~iphone.plist"; sourceTree = "<group>"; };
+		6B1C41781C97697000F0DB25 /* ICMetric~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~ipad.plist"; sourceTree = "<group>"; };
+		6B1C41791C97697000F0DB25 /* ICMetric~iphone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~iphone.plist"; sourceTree = "<group>"; };
+		6B1C41811C987D7C00F0DB25 /* TruliaRent-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TruliaRent-Prefix.pch"; sourceTree = "<group>"; };
+		A4FDF0BB8493A863BCC47F1F /* Pods-Trulia Rent.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.appstore.xcconfig"; sourceTree = "<group>"; };
+		F27F587BC457B72804F20410 /* Pods_Trulia_Rent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trulia_Rent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B1C41071C9765C800F0DB25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658236A40197EFEDE9206DE1 /* Pods_Trulia_Rent.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B1C41011C9765C800F0DB25 = {
+			isa = PBXGroup;
+			children = (
+				6B1C410C1C9765C800F0DB25 /* Trulia Rent */,
+				6B1C410B1C9765C800F0DB25 /* Products */,
+				AC3FE94C825389BFC8F0506B /* Pods */,
+				E9652C4340560D749CF105E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6B1C410B1C9765C800F0DB25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B1C410A1C9765C800F0DB25 /* TruliaRent.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B1C410C1C9765C800F0DB25 /* Trulia Rent */ = {
+			isa = PBXGroup;
+			children = (
+				6B1C415B1C9768EC00F0DB25 /* TruliaRent.entitlements */,
+				6B1C415D1C97694F00F0DB25 /* Classes */,
+				6B1C41291C97680500F0DB25 /* Resources */,
+				6B1C41161C9765C800F0DB25 /* Main.storyboard */,
+				6B1C411B1C9765C800F0DB25 /* LaunchScreen.storyboard */,
+				6B1C411E1C9765C800F0DB25 /* Info.plist */,
+				6B1C410D1C9765C800F0DB25 /* Supporting Files */,
+			);
+			path = "Trulia Rent";
+			sourceTree = "<group>";
+		};
+		6B1C410D1C9765C800F0DB25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B1C41811C987D7C00F0DB25 /* TruliaRent-Prefix.pch */,
+				6B1C412E1C97686A00F0DB25 /* copyright.html */,
+				6B1C41261C9767D700F0DB25 /* Localizable.strings */,
+				6B1C410E1C9765C800F0DB25 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B1C41291C97680500F0DB25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B1C413A1C9768AC00F0DB25 /* Configs */,
+				6B1C413F1C9768AC00F0DB25 /* Fonts */,
+				6B1C412A1C97680500F0DB25 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6B1C413A1C9768AC00F0DB25 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				6B1C41751C97697000F0DB25 /* ICConfiguration-Info.plist */,
+				6B1C41761C97697000F0DB25 /* ICGeneral~ipad.plist */,
+				6B1C41771C97697000F0DB25 /* ICGeneral~iphone.plist */,
+				6B1C41781C97697000F0DB25 /* ICMetric~ipad.plist */,
+				6B1C41791C97697000F0DB25 /* ICMetric~iphone.plist */,
+				6B1C413B1C9768AC00F0DB25 /* ADBMobileConfig.json */,
+				6B1C413C1C9768AC00F0DB25 /* ADBMobileConfigRelease.json */,
+				6B1C413D1C9768AC00F0DB25 /* LocalInfoItems~ipad.json */,
+				6B1C413E1C9768AC00F0DB25 /* LocalInfoItems~iphone.json */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		6B1C413F1C9768AC00F0DB25 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6B1C41401C9768AC00F0DB25 /* Open_Sans */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6B1C41401C9768AC00F0DB25 /* Open_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				6B1C41411C9768AC00F0DB25 /* LICENSE.txt */,
+				6B1C41421C9768AC00F0DB25 /* OpenSans-Bold.ttf */,
+				6B1C41431C9768AC00F0DB25 /* OpenSans-BoldItalic.ttf */,
+				6B1C41441C9768AC00F0DB25 /* OpenSans-ExtraBold.ttf */,
+				6B1C41451C9768AC00F0DB25 /* OpenSans-ExtraBoldItalic.ttf */,
+				6B1C41461C9768AC00F0DB25 /* OpenSans-Italic.ttf */,
+				6B1C41471C9768AC00F0DB25 /* OpenSans-Light.ttf */,
+				6B1C41481C9768AC00F0DB25 /* OpenSans-LightItalic.ttf */,
+				6B1C41491C9768AC00F0DB25 /* OpenSans-Regular.ttf */,
+				6B1C414A1C9768AC00F0DB25 /* OpenSans-Semibold.ttf */,
+				6B1C414B1C9768AC00F0DB25 /* OpenSans-SemiboldItalic.ttf */,
+			);
+			path = Open_Sans;
+			sourceTree = "<group>";
+		};
+		6B1C415D1C97694F00F0DB25 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6B1C41611C97694F00F0DB25 /* IRAppDelegate.h */,
+				6B1C41621C97694F00F0DB25 /* IRAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AC3FE94C825389BFC8F0506B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1444F3402058237C39DE7AD1 /* Pods-Trulia Rent.debug.xcconfig */,
+				A4FDF0BB8493A863BCC47F1F /* Pods-Trulia Rent.appstore.xcconfig */,
+				546891CAAD98A23F00BBC5DA /* Pods-Trulia Rent.stage.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9652C4340560D749CF105E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F27F587BC457B72804F20410 /* Pods_Trulia_Rent.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B1C41091C9765C800F0DB25 /* Trulia Rent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B1C41211C9765C800F0DB25 /* Build configuration list for PBXNativeTarget "Trulia Rent" */;
+			buildPhases = (
+				6B2E2B57F91F478D54B6CF08 /* [CP] Check Pods Manifest.lock */,
+				6B1C41061C9765C800F0DB25 /* Sources */,
+				6B1C41071C9765C800F0DB25 /* Frameworks */,
+				6B1C41081C9765C800F0DB25 /* Resources */,
+				9DCAA78D1D26E90400CB83C8 /* ShellScript */,
+				830E008AAAD52A49FE5E58A7 /* [CP] Embed Pods Frameworks */,
+				3B9083A701DF0F26AF114241 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trulia Rent";
+			productName = "Trulia Rent";
+			productReference = 6B1C410A1C9765C800F0DB25 /* TruliaRent.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B1C41021C9765C800F0DB25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Trulia Inc";
+				TargetAttributes = {
+					6B1C41091C9765C800F0DB25 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 6B1C41051C9765C800F0DB25 /* Build configuration list for PBXProject "Trulia Rent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B1C41011C9765C800F0DB25;
+			productRefGroup = 6B1C410B1C9765C800F0DB25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B1C41091C9765C800F0DB25 /* Trulia Rent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B1C41081C9765C800F0DB25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1C41511C9768AC00F0DB25 /* OpenSans-Bold.ttf in Resources */,
+				6B1C414F1C9768AC00F0DB25 /* LocalInfoItems~iphone.json in Resources */,
+				6B1C41501C9768AC00F0DB25 /* LICENSE.txt in Resources */,
+				6B1C417B1C97697000F0DB25 /* ICGeneral~ipad.plist in Resources */,
+				6B1C415A1C9768AC00F0DB25 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				6B1C41281C9767D700F0DB25 /* Localizable.strings in Resources */,
+				6B1C41521C9768AC00F0DB25 /* OpenSans-BoldItalic.ttf in Resources */,
+				6B1C411D1C9765C800F0DB25 /* LaunchScreen.storyboard in Resources */,
+				6B1C41561C9768AC00F0DB25 /* OpenSans-Light.ttf in Resources */,
+				6B1C414D1C9768AC00F0DB25 /* ADBMobileConfigRelease.json in Resources */,
+				6B1C417C1C97697000F0DB25 /* ICGeneral~iphone.plist in Resources */,
+				6B1C415C1C9768EC00F0DB25 /* TruliaRent.entitlements in Resources */,
+				6B1C41591C9768AC00F0DB25 /* OpenSans-Semibold.ttf in Resources */,
+				6B1C41541C9768AC00F0DB25 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				6B1C41531C9768AC00F0DB25 /* OpenSans-ExtraBold.ttf in Resources */,
+				6B1C417A1C97697000F0DB25 /* ICConfiguration-Info.plist in Resources */,
+				6B1C41551C9768AC00F0DB25 /* OpenSans-Italic.ttf in Resources */,
+				6B1C412C1C97680500F0DB25 /* Assets.xcassets in Resources */,
+				6B1C417D1C97697000F0DB25 /* ICMetric~ipad.plist in Resources */,
+				6B1C417E1C97697000F0DB25 /* ICMetric~iphone.plist in Resources */,
+				6B1C41571C9768AC00F0DB25 /* OpenSans-LightItalic.ttf in Resources */,
+				6B1C414E1C9768AC00F0DB25 /* LocalInfoItems~ipad.json in Resources */,
+				6B1C41301C97686A00F0DB25 /* copyright.html in Resources */,
+				6B1C41181C9765C800F0DB25 /* Main.storyboard in Resources */,
+				6B1C414C1C9768AC00F0DB25 /* ADBMobileConfig.json in Resources */,
+				6B1C41581C9768AC00F0DB25 /* OpenSans-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B9083A701DF0F26AF114241 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B2E2B57F91F478D54B6CF08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		830E008AAAD52A49FE5E58A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DCAA78D1D26E90400CB83C8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" != \"Debug\" ]; then\npwd\n\"${SRCROOT}/../mob-ioscore-lib/VendorStaticFrameworks/Fabric.framework/run\" 69c46441eff2d4c6f8a043fd66d16ff159cd9812 1192e1497ab0deac603c36fb2464fd4c0a8452fee2494999c0c302fea55ff94c\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B1C41061C9765C800F0DB25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1C416F1C97694F00F0DB25 /* IRAppDelegate.m in Sources */,
+				6B1C410F1C9765C800F0DB25 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B1C41161C9765C800F0DB25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1C41171C9765C800F0DB25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B1C411B1C9765C800F0DB25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1C411C1C9765C800F0DB25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6B1C41261C9767D700F0DB25 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1C41271C9767D700F0DB25 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		6B1C412E1C97686A00F0DB25 /* copyright.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1C412F1C97686A00F0DB25 /* Base */,
+			);
+			name = copyright.html;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B1C411F1C9765C800F0DB25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				COPY_PHASE_STRIP = NO;
+				CUSTOM_PROVISIONING_PROFILE = "";
+				CUSTOM_SIGNING_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FACEBOOK_APP_ID = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B1C41201C9765C800F0DB25 /* Appstore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				COPY_PHASE_STRIP = NO;
+				CUSTOM_PROVISIONING_PROFILE = "";
+				CUSTOM_SIGNING_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FACEBOOK_APP_ID = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Appstore;
+		};
+		6B1C41221C9765C800F0DB25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1444F3402058237C39DE7AD1 /* Pods-Trulia Rent.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Trulia Rent/TruliaRent.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				CUSTOM_PROVISIONING_PROFILE = "";
+				CUSTOM_SIGNING_IDENTITY = "iPhone Developer";
+				FACEBOOK_APP_ID = 468741039850614;
+				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
+				INFOPLIST_FILE = "Trulia Rent/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental;
+				PRODUCT_NAME = TruliaRent;
+				PROVISIONING_PROFILE = "$(CUSTOM_PROVISIONING_PROFILE)";
+			};
+			name = Debug;
+		};
+		6B1C41231C9765C800F0DB25 /* Appstore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4FDF0BB8493A863BCC47F1F /* Pods-Trulia Rent.appstore.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Trulia Rent/TruliaRent.entitlements";
+				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
+				COMPRESS_PNG_FILES = NO;
+				CUSTOM_PROVISIONING_PROFILE = "";
+				CUSTOM_SIGNING_IDENTITY = "iPhone Distribution: Trulia, Inc (9QV5QN2J8K)";
+				FACEBOOK_APP_ID = 410970538982032;
+				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
+				INFOPLIST_FILE = "Trulia Rent/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trulia.IosRental;
+				PRODUCT_NAME = TruliaRent;
+				PROVISIONING_PROFILE = "$(CUSTOM_PROVISIONING_PROFILE)";
+			};
+			name = Appstore;
+		};
+		6B1C417F1C976A5400F0DB25 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				COPY_PHASE_STRIP = NO;
+				CUSTOM_PROVISIONING_PROFILE = "";
+				CUSTOM_SIGNING_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FACEBOOK_APP_ID = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Stage;
+		};
+		6B1C41801C976A5400F0DB25 /* Stage */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 546891CAAD98A23F00BBC5DA /* Pods-Trulia Rent.stage.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Trulia Rent/TruliaRent.entitlements";
+				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
+				COMPRESS_PNG_FILES = NO;
+				CUSTOM_PROVISIONING_PROFILE = EnterpriseIosRental.mobileprovision;
+				CUSTOM_SIGNING_IDENTITY = "iPhone Distribution: Trulia Inc";
+				FACEBOOK_APP_ID = 468741039850614;
+				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
+				INFOPLIST_FILE = "Trulia Rent/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental;
+				PRODUCT_NAME = TruliaRent;
+				PROVISIONING_PROFILE = "$(CUSTOM_PROVISIONING_PROFILE)";
+			};
+			name = Stage;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B1C41051C9765C800F0DB25 /* Build configuration list for PBXProject "Trulia Rent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1C411F1C9765C800F0DB25 /* Debug */,
+				6B1C41201C9765C800F0DB25 /* Appstore */,
+				6B1C417F1C976A5400F0DB25 /* Stage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Appstore;
+		};
+		6B1C41211C9765C800F0DB25 /* Build configuration list for PBXNativeTarget "Trulia Rent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1C41221C9765C800F0DB25 /* Debug */,
+				6B1C41231C9765C800F0DB25 /* Appstore */,
+				6B1C41801C976A5400F0DB25 /* Stage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Appstore;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B1C41021C9765C800F0DB25 /* Project object */;
+}

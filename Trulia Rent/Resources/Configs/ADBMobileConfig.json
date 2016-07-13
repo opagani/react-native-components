@@ -1,0 +1,39 @@
+{
+    "lastModified": "2015-11-18T23:56:41.790Z",
+    "marketingCloud": {
+        "org": "94641C8B532957EC0A490D4D@AdobeOrg"
+    },
+    "target": {
+        "clientCode": "",
+        "timeout": 10
+    },
+    "audienceManager": {
+        "server": "",
+        "analyticsForwardingEnabled": false,
+        "timeout": 5
+    },
+    "acquisition": {
+        "server": "c00.adobe.com",
+        "appid": "f8002289bf454027ee4aacb7e3ab254106559564b33668562c0ce29658289a6b"
+    },
+    "analytics": {
+        "rsids": "truliamobiledev",
+        "server": "metric.trulia.com",
+        "ssl": false,
+        "offlineEnabled": false,
+        "charset": "UTF-8",
+        "lifecycleTimeout": 300,
+        "privacyDefault": "optedin",
+        "batchLimit": 0,
+        "timezone": "PDT",
+        "timezoneOffset": -420,
+        "referrerTimeout": 5,
+        "backdateSessionInfo": false,
+        "poi": []
+    },
+    "messages": [],
+    "remotes": {
+        "analytics.poi": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-559761a33134380014000172.json",
+        "messages": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-559761a23335341f58000541.json"
+    }
+}

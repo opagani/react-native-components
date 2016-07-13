@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby -wKU
+require 'git'
 
 fastlane_version '1.42.0'
 default_platform :ios
@@ -6,9 +7,13 @@ default_platform :ios
 platform :ios do
   
   def undo_icon_file_changes
+    # g = Git.open('../', :log => Logger.new(STDOUT))
+    # g.with_working(@absolute_icon_path) do
+    # g.checkout(@absolute_icon_path)
     checkout_command = "git checkout #{@absolute_icon_path}"
     puts "executing #{checkout_command}"
     sh (checkout_command)
+    
   end
   
   before_all do
@@ -27,15 +32,15 @@ platform :ios do
     unlock_keychain(path: "~/Library/Keychains/login.keychain", password: "p@55w0rd")
     @app_name = "Trulia" 
     @modulation = 66.6
-    @project_name = "Code/Trulia Rent.xcodeproj"
-    @workspace = "Code/ForRent.xcworkspace"
-    @scheme = "TruliaRent"
+    @project_name = "Trulia Rent.xcodeproj"
+    @workspace = "Trulia Rent.xcworkspace"
+    @scheme = "Trulia Rent"
     @product_name = "TruliaRent"
     @upload_dir_app_type = "IosRental"
     @mstage_user= 'web'
     @hockeyapp_token = 'f9ea5344004d44cfa154efab77887b72'
-    @absolute_icon_path = File.expand_path "../Code/Images.xcassets/AppIcon.appiconset"
-    @hockey_team_ids = '51656,51937,50690,50668,50687,50684,50683'
+    @absolute_icon_path = File.expand_path "../Trulia\\ Rent/Resources/Assets.xcassets/AppIcon.appiconset"
+    @hockey_team_ids = '51656,51937,50690,50668,50687,50684,50683,50685,68986'
     
     undo_icon_file_changes
     
@@ -47,11 +52,11 @@ platform :ios do
     raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
     
     # lets setup the pods first
-    cocoapods(:podfile => 'Code/Podfile')
+    cocoapods
     
     #params for the build
     jira_host = 'jira.corp.trulia.com'
-    hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'
+    hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'  
     CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "EnterpriseIosRental",  skip_certificate_verification: true, app_identifier:"com.truliainc.IosRental")
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
     build_number = next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
@@ -108,7 +113,7 @@ platform :ios do
 
     raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
     # lets setup the pods first
-    cocoapods(:podfile => 'Code/Podfile')
+    cocoapods
     
     #params for the build
     jira_host = 'jira.corp.trulia.com'
@@ -174,7 +179,7 @@ platform :ios do
     hockey_app_id = '215568fb16f34b60aea835757b2634b9'
     build_number = options[:build_number] ||  (next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id) - 1).to_s
     
-    cocoapods(:podfile => 'Code/Podfile')
+    cocoapods
     CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "Ad hoc Trulia IosRental", ignore_profiles_with_different_name:true ,skip_certificate_verification: true, adhoc: true)
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
 
@@ -221,8 +226,8 @@ platform :ios do
         
     )
 
-
   end
+  
   
   after_all do |lane|
     undo_icon_file_changes
