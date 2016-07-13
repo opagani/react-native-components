@@ -61,15 +61,6 @@ void uncaughtExceptionHandler(NSException *exception) {
     [self configureWindow];
     [self setupRentalConfigurations];
     
-    
-#ifdef STAGE
-    NSString *hockeyAppId = [[NSBundle mainBundle] infoDictionary][@"HockeyAppId"];
-    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:hockeyAppId];
-    [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
-    [[BITHockeyManager sharedHockeyManager] startManager];
-#endif
-
-    
     return YES;
 }
 
