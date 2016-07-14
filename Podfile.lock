@@ -72,15 +72,15 @@ PODS:
   - FormatterKit/URLRequestFormatter (1.8.0)
   - HockeySDK-Source (3.8.6)
   - HTAutocompleteTextField (1.3.2)
-  - IosCoreLibrary (3.0.0):
+  - IosCoreLibrary (3.0.1):
     - AFNetworking (= 3.1.0)
     - CocoaLumberjack (= 2.3.0)
     - FormatterKit (= 1.8.0)
-    - IosCoreLibrary/iOS (= 3.0.0)
+    - IosCoreLibrary/iOS (= 3.0.1)
     - SFHFKeychainUtils (= 0.0.1)
     - SSZipArchive (= 1.2)
     - TUIKit
-  - IosCoreLibrary/iOS (3.0.0):
+  - IosCoreLibrary/iOS (3.0.1):
     - Adjust (= 4.7.0)
     - AdobeMobileSDK
     - AFNetworking (= 3.1.0)
@@ -177,7 +177,7 @@ SPEC CHECKSUMS:
   FormatterKit: bddde83e054edf9d9ee14f9de3b3a5103db256f4
   HockeySDK-Source: c6c66ea12e59f0d756fe9989cbc45eda017fc41c
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: c202a297aacf4ae5c5e3559e7d4e25f792d9a999
+  IosCoreLibrary: eb2fd4115ac0372b75520fe76f7674728d4544d0
   JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
   MAKVONotificationCenter: eddfb85e77040323ee43a0fddbe616926ec005a8
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
