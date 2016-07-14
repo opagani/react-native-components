@@ -104,7 +104,7 @@ PODS:
     - TRLMaps (~> 0.2)
     - TTTAttributedLabel (= 2.0.0)
     - TUIKit
-    - ZGMortgageCalculators
+    - ZGMortgageCalculators (= 0.1.5)
   - JLRoutes (1.6)
   - MAKVONotificationCenter (0.0.2)
   - Mantle (2.0.7):
@@ -154,7 +154,7 @@ EXTERNAL SOURCES:
     :branch: master
     :git: https://github.com/orta/ARAnalytics.git
   IosCoreLibrary:
-    :path: "../mob-ioscore-lib/"
+    :path: ../mob-ioscore-lib/
 
 CHECKOUT OPTIONS:
   ARAnalytics:
@@ -177,7 +177,7 @@ SPEC CHECKSUMS:
   FormatterKit: bddde83e054edf9d9ee14f9de3b3a5103db256f4
   HockeySDK-Source: c6c66ea12e59f0d756fe9989cbc45eda017fc41c
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: f2a649d8a6f3cde53fff6491babfe2105c6acc15
+  IosCoreLibrary: c202a297aacf4ae5c5e3559e7d4e25f792d9a999
   JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
   MAKVONotificationCenter: eddfb85e77040323ee43a0fddbe616926ec005a8
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
