@@ -114,7 +114,7 @@ PODS:
     - TRLMaps (~> 0.2)
     - TTTAttributedLabel (= 2.0.0)
     - TUIKit
-    - ZGMortgageCalculators (= 0.1.5)
+    - ZGMortgageCalculators
   - JLRoutes (1.6)
   - Mantle (2.0.7):
     - Mantle/extobjc (= 2.0.7)
@@ -186,7 +186,7 @@ SPEC CHECKSUMS:
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: 15a7316f450df6fb1965a3c8e404464d082f7d8a
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: 9a6c6ade6a5eaaebdbfbec98bc0f943721238690
+  IosCoreLibrary: a13347abbd0978f619f15676dab807f5c22be27e
   JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   OpenInGoogleMaps: 60dd887d2e2b2149166a03bd6dab1d4478a7d3e8
