@@ -114,7 +114,7 @@ PODS:
     - TRLMaps (~> 0.2)
     - TTTAttributedLabel (= 2.0.0)
     - TUIKit
-    - ZGMortgageCalculators
+    - ZGMortgageCalculators (= 0.1.5)
   - JLRoutes (1.6)
   - Mantle (2.0.7):
     - Mantle/extobjc (= 2.0.7)
@@ -137,7 +137,7 @@ PODS:
     - TRLImageCache/iOS (= 1.0.4)
   - TRLImageCache/iOS (1.0.4):
     - AFNetworking (~> 3.0)
-  - TRLMaps (0.2.8):
+  - TRLMaps (0.3.0):
     - TRLImageCache (~> 1.0)
     - TUIKit/Colors (~> 1.0)
     - TUIKit/Fonts (~> 1.0)
@@ -163,7 +163,7 @@ EXTERNAL SOURCES:
     :branch: master
     :git: https://github.com/orta/ARAnalytics.git
   IosCoreLibrary:
-    :path: "../mob-ioscore-lib/"
+    :path: ../mob-ioscore-lib/
 
 CHECKOUT OPTIONS:
   ARAnalytics:
@@ -197,7 +197,7 @@ SPEC CHECKSUMS:
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: a0f5b47f5e3b734a7ff815974228ff282807b66c
-  TRLMaps: dad9c79170b7761c3e2209c8024b207bf2ec32f5
+  TRLMaps: 4e3dc885f9646575edeb4053e94b3586aca3769e
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 5b8a4fd7ea5f1eeed99b24cd979d70e0515a5630
   ZGMortgageCalculators: 843545a97f6bffd1b2a9ff8f26d0404c12f98096
