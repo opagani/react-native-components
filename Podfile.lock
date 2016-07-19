@@ -158,18 +158,25 @@ DEPENDENCIES:
   - ARAnalytics/Adobe (from `https://github.com/orta/ARAnalytics.git`, branch `master`)
   - ARAnalytics/DSL (from `https://github.com/orta/ARAnalytics.git`, branch `master`)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
+  - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
 EXTERNAL SOURCES:
   ARAnalytics:
     :branch: master
     :git: https://github.com/orta/ARAnalytics.git
   IosCoreLibrary:
-    :path: ../mob-ioscore-lib/
+    :path: "../mob-ioscore-lib/"
+  ZGMortgageCalculators:
+    :branch: master
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 CHECKOUT OPTIONS:
   ARAnalytics:
     :commit: 235f6ef196cd5a9da46b06f800a2033aa8ce9a10
     :git: https://github.com/orta/ARAnalytics.git
+  ZGMortgageCalculators:
+    :commit: 27208585186c030c079820dd9b2ae112b67a5a5e
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
@@ -187,7 +194,7 @@ SPEC CHECKSUMS:
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: 15a7316f450df6fb1965a3c8e404464d082f7d8a
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: 9a6c6ade6a5eaaebdbfbec98bc0f943721238690
+  IosCoreLibrary: a13347abbd0978f619f15676dab807f5c22be27e
   JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   OpenInGoogleMaps: 60dd887d2e2b2149166a03bd6dab1d4478a7d3e8
@@ -201,8 +208,8 @@ SPEC CHECKSUMS:
   TRLMaps: 4e3dc885f9646575edeb4053e94b3586aca3769e
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 5b8a4fd7ea5f1eeed99b24cd979d70e0515a5630
-  ZGMortgageCalculators: c36409db9604bcb2bedecd0b2c6c1cc13513f573
+  ZGMortgageCalculators: 5ddebff44888e4cf6a70233a65a167a1a4f37905
 
-PODFILE CHECKSUM: e7e3310ed310cf50e26554e0d1375b267ad58f71
+PODFILE CHECKSUM: d9eb88ad1476e92394503387f8041f32196d307b
 
 COCOAPODS: 1.0.1
