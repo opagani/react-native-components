@@ -142,11 +142,11 @@ PODS:
     - TUIKit/Colors (~> 1.0)
     - TUIKit/Fonts (~> 1.0)
   - TTTAttributedLabel (2.0.0)
-  - TUIKit (1.0.0):
-    - TUIKit/Core (= 1.0.0)
-  - TUIKit/Colors (1.0.0)
-  - TUIKit/Core (1.0.0)
-  - TUIKit/Fonts (1.0.0)
+  - TUIKit (1.0.1):
+    - TUIKit/Core (= 1.0.1)
+  - TUIKit/Colors (1.0.1)
+  - TUIKit/Core (1.0.1)
+  - TUIKit/Fonts (1.0.1)
   - ZGMortgageCalculators (0.2.0):
     - ActionSheetPicker-3.0
     - Alamofire
@@ -165,7 +165,7 @@ EXTERNAL SOURCES:
     :branch: master
     :git: https://github.com/orta/ARAnalytics.git
   IosCoreLibrary:
-    :path: ../mob-ioscore-lib/
+    :path: "../mob-ioscore-lib/"
   ZGMortgageCalculators:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
@@ -194,7 +194,7 @@ SPEC CHECKSUMS:
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: 15a7316f450df6fb1965a3c8e404464d082f7d8a
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: 8479d244ee8a36001b853400aa8eb0162e678404
+  IosCoreLibrary: a13347abbd0978f619f15676dab807f5c22be27e
   JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   OpenInGoogleMaps: 60dd887d2e2b2149166a03bd6dab1d4478a7d3e8
@@ -207,7 +207,7 @@ SPEC CHECKSUMS:
   TRLImageCache: a0f5b47f5e3b734a7ff815974228ff282807b66c
   TRLMaps: df1b53a9d245092ba8b0ea6c8da8ea3ce626b89f
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
-  TUIKit: 5b8a4fd7ea5f1eeed99b24cd979d70e0515a5630
+  TUIKit: 72662ebd6b75fd881c2b746eef3b9e97ee6f8ae7
   ZGMortgageCalculators: 5ddebff44888e4cf6a70233a65a167a1a4f37905
 
 PODFILE CHECKSUM: d9eb88ad1476e92394503387f8041f32196d307b
