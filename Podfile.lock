@@ -165,7 +165,7 @@ EXTERNAL SOURCES:
     :branch: master
     :git: https://github.com/orta/ARAnalytics.git
   IosCoreLibrary:
-    :path: "../mob-ioscore-lib/"
+    :path: ../mob-ioscore-lib/
   ZGMortgageCalculators:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
@@ -175,7 +175,7 @@ CHECKOUT OPTIONS:
     :commit: fc3cb047ab0d0e31d8b75e25293727b9eae4a10a
     :git: https://github.com/orta/ARAnalytics.git
   ZGMortgageCalculators:
-    :commit: 27208585186c030c079820dd9b2ae112b67a5a5e
+    :commit: 7865aa04249091ae3a8c6515a24e4483800cff3b
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 SPEC CHECKSUMS:
@@ -194,7 +194,7 @@ SPEC CHECKSUMS:
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: 15a7316f450df6fb1965a3c8e404464d082f7d8a
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: a13347abbd0978f619f15676dab807f5c22be27e
+  IosCoreLibrary: 8479d244ee8a36001b853400aa8eb0162e678404
   JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   OpenInGoogleMaps: 60dd887d2e2b2149166a03bd6dab1d4478a7d3e8
