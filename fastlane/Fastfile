@@ -40,7 +40,8 @@ platform :ios do
     @mstage_user= 'web'
     @hockeyapp_token = 'f9ea5344004d44cfa154efab77887b72'
     @absolute_icon_path = File.expand_path "../Trulia\\ Rent/Resources/Assets.xcassets/AppIcon.appiconset"
-    @hockey_team_ids = '51656,51937,50690,50668,50687,50684,50683,50685,68986'
+    # NOTE : using @hockey_team_ids to upload to hockey app makes it diffiocult to implement the app upgrade options.
+    # @hockey_team_ids = '51656,51937,50690,50668,50687,50684,50683,50685,68986'
     @info_plist_path =  "./Trulia Rent/Info.plist"
     
     undo_icon_file_changes
@@ -98,7 +99,7 @@ platform :ios do
         # hockey app token to use
         hockeyapp_token: @hockeyapp_token,
         # the team IDs to notify when a new build is published
-        hockeyapp_team_ids: @hockey_team_ids,
+        # hockeyapp_team_ids: @hockey_team_ids,
         # the user to use to upload to mstage
         mstage_user: @mstage_user,
         # the JIRA host to search for issues to update based on these changes
@@ -163,7 +164,7 @@ platform :ios do
         # hockey app token to use
         hockeyapp_token: @hockeyapp_token,
         # the team IDs to notify when a new build is published
-        hockeyapp_team_ids: @hockey_team_ids,
+        # hockeyapp_team_ids: @hockey_team_ids,
         # the user to use to upload to mstage
         mstage_user: @mstage_user,
         # the JIRA host to search for issues to update based on these changes
@@ -224,7 +225,7 @@ platform :ios do
         # hockey app token to use
         hockeyapp_token: @hockeyapp_token,
         # the team IDs to notify when a new build is published
-        hockeyapp_team_ids: @hockey_team_ids,
+        # hockeyapp_team_ids: @hockey_team_ids,
         # the user to use to upload to mstage
         mstage_user: @mstage_user,
         # core library path, this is used to get the change log for the core library

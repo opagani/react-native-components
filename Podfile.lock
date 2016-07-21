@@ -29,12 +29,12 @@ PODS:
   - ARAnalytics/DSL (3.10.2):
     - ReactiveCocoa (~> 2.0)
     - RSSwizzle (~> 0.1.0)
-  - Bolts (1.8.1):
-    - Bolts/AppLinks (= 1.8.1)
-    - Bolts/Tasks (= 1.8.1)
-  - Bolts/AppLinks (1.8.1):
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
-  - Bolts/Tasks (1.8.1)
+  - Bolts/Tasks (1.8.4)
   - Charts (2.2.5):
     - Charts/Core (= 2.2.5)
   - Charts/Core (2.2.5)
@@ -83,15 +83,15 @@ PODS:
     - FormatterKit/Resources
   - HockeySDK-Source (4.0.1)
   - HTAutocompleteTextField (1.3.2)
-  - IosCoreLibrary (3.0.1):
+  - IosCoreLibrary (3.1.0):
     - AFNetworking (= 3.1.0)
     - CocoaLumberjack (= 2.3.0)
     - FormatterKit (= 1.8.1)
-    - IosCoreLibrary/iOS (= 3.0.1)
+    - IosCoreLibrary/iOS (= 3.1.0)
     - SFHFKeychainUtils (= 0.0.1)
     - SSZipArchive (= 1.2)
     - TUIKit
-  - IosCoreLibrary/iOS (3.0.1):
+  - IosCoreLibrary/iOS (3.1.0):
     - Adjust (= 4.7.1)
     - AdobeMobileSDK (= 4.11.0)
     - AFNetworking (= 3.1.0)
@@ -137,7 +137,7 @@ PODS:
     - TRLImageCache/iOS (= 1.0.4)
   - TRLImageCache/iOS (1.0.4):
     - AFNetworking (~> 3.0)
-  - TRLMaps (0.2.8):
+  - TRLMaps (0.3.1):
     - TRLImageCache (~> 1.0)
     - TUIKit/Colors (~> 1.0)
     - TUIKit/Fonts (~> 1.0)
@@ -147,16 +147,18 @@ PODS:
   - TUIKit/Colors (1.0.0)
   - TUIKit/Core (1.0.0)
   - TUIKit/Fonts (1.0.0)
-  - ZGMortgageCalculators (0.1.8):
+  - ZGMortgageCalculators (0.2.0):
     - ActionSheetPicker-3.0
     - Alamofire
     - Charts
     - SwiftyJSON
+    - TUIKit
 
 DEPENDENCIES:
   - ARAnalytics/Adobe (from `https://github.com/orta/ARAnalytics.git`, branch `master`)
   - ARAnalytics/DSL (from `https://github.com/orta/ARAnalytics.git`, branch `master`)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
+  - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
 EXTERNAL SOURCES:
   ARAnalytics:
@@ -164,11 +166,17 @@ EXTERNAL SOURCES:
     :git: https://github.com/orta/ARAnalytics.git
   IosCoreLibrary:
     :path: "../mob-ioscore-lib/"
+  ZGMortgageCalculators:
+    :branch: master
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 CHECKOUT OPTIONS:
   ARAnalytics:
-    :commit: 235f6ef196cd5a9da46b06f800a2033aa8ce9a10
+    :commit: fc3cb047ab0d0e31d8b75e25293727b9eae4a10a
     :git: https://github.com/orta/ARAnalytics.git
+  ZGMortgageCalculators:
+    :commit: 27208585186c030c079820dd9b2ae112b67a5a5e
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
@@ -177,7 +185,7 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   ARAnalytics: 0c76796d08134479ede1c2e9df497790d9380434
-  Bolts: 89c0c6dd1b9c975a3452a62d57a6be6739e5f433
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   Charts: b48fcc8d7190de910ff9e9748f5360c8ea7856e5
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   CSStickyHeaderFlowLayout: 5366582779d8b7c9ba9b9cc729c218cc23888776
@@ -186,7 +194,7 @@ SPEC CHECKSUMS:
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: 15a7316f450df6fb1965a3c8e404464d082f7d8a
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: a59db12206c0b3636695b824f49bec775635e758
+  IosCoreLibrary: a13347abbd0978f619f15676dab807f5c22be27e
   JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   OpenInGoogleMaps: 60dd887d2e2b2149166a03bd6dab1d4478a7d3e8
@@ -197,11 +205,11 @@ SPEC CHECKSUMS:
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: a0f5b47f5e3b734a7ff815974228ff282807b66c
-  TRLMaps: dad9c79170b7761c3e2209c8024b207bf2ec32f5
+  TRLMaps: df1b53a9d245092ba8b0ea6c8da8ea3ce626b89f
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 5b8a4fd7ea5f1eeed99b24cd979d70e0515a5630
-  ZGMortgageCalculators: a4906958f5e9e3bda90d6b2bb7d73d27d6165736
+  ZGMortgageCalculators: 5ddebff44888e4cf6a70233a65a167a1a4f37905
 
-PODFILE CHECKSUM: e7e3310ed310cf50e26554e0d1375b267ad58f71
+PODFILE CHECKSUM: d9eb88ad1476e92394503387f8041f32196d307b
 
 COCOAPODS: 1.0.1
