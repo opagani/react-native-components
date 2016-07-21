@@ -44,7 +44,7 @@ GEM
       fuzzy_match (~> 2.0.4)
       nap (~> 1.0)
     cocoapods-deintegrate (1.0.0)
-    cocoapods-downloader (1.0.1)
+    cocoapods-downloader (1.1.0)
     cocoapods-plugins (1.0.0)
       nap
     cocoapods-search (1.0.0)
@@ -52,7 +52,7 @@ GEM
     cocoapods-trunk (1.0.0)
       nap (>= 0.8, < 2.0)
       netrc (= 0.7.8)
-    cocoapods-try (1.0.0)
+    cocoapods-try (1.1.0)
     colored (1.2)
     commander (4.3.5)
       highline (~> 1.7.2)
@@ -310,7 +310,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
-    xcodeproj (1.1.0)
+    xcodeproj (1.2.0)
       activesupport (>= 3)
       claide (>= 1.0.0, < 2.0)
       colored (~> 1.2)
@@ -333,4 +333,4 @@ DEPENDENCIES
   trollop (= 2.1.2)
 
 BUNDLED WITH
-   1.12.1
+   1.12.5
