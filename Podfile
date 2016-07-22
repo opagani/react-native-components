@@ -2,6 +2,8 @@
 source 'https://github.com/CocoaPods/Specs'
 source 'ssh://git@stash.sv2.trulia.com/mob/mob-podspecs.git'
 
+raise "Please run pod install using Bundler (bundle exec pod install)" unless ENV['BUNDLE_GEMFILE'] != nil
+
 platform :ios, '9.0'
 use_frameworks!
 install! 'cocoapods', :deterministic_uuids => false
