@@ -137,7 +137,7 @@ PODS:
     - TRLImageCache/iOS (= 1.0.4)
   - TRLImageCache/iOS (1.0.4):
     - AFNetworking (~> 3.0)
-  - TRLMaps (0.3.1):
+  - TRLMaps (0.3.2):
     - TRLImageCache (~> 1.0)
     - TUIKit/Colors (~> 1.0)
     - TUIKit/Fonts (~> 1.0)
@@ -205,7 +205,7 @@ SPEC CHECKSUMS:
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: a0f5b47f5e3b734a7ff815974228ff282807b66c
-  TRLMaps: df1b53a9d245092ba8b0ea6c8da8ea3ce626b89f
+  TRLMaps: c91c62921e3878b3c4f31cedbbc376cd5dc2c44d
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 72662ebd6b75fd881c2b746eef3b9e97ee6f8ae7
   ZGMortgageCalculators: 5ddebff44888e4cf6a70233a65a167a1a4f37905
