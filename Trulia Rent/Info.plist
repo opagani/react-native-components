@@ -192,7 +192,7 @@
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>Saved Homes</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>view.user.saved.homes</string>
+			<string>viewTruliaSavesAllHomes</string>
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemIconType</key>
