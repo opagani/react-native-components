@@ -146,11 +146,11 @@ PODS:
     - TUIKit/Colors (~> 1.0)
     - TUIKit/Fonts (~> 1.0)
   - TTTAttributedLabel (2.0.0)
-  - TUIKit (1.0.3):
-    - TUIKit/Core (= 1.0.3)
-  - TUIKit/Colors (1.0.3)
-  - TUIKit/Core (1.0.3)
-  - TUIKit/Fonts (1.0.3)
+  - TUIKit (1.0.5):
+    - TUIKit/Core (= 1.0.5)
+  - TUIKit/Colors (1.0.5)
+  - TUIKit/Core (1.0.5)
+  - TUIKit/Fonts (1.0.5)
   - ZGMortgageCalculators (0.2.0):
     - ActionSheetPicker-3.0
     - Alamofire
@@ -212,7 +212,7 @@ SPEC CHECKSUMS:
   TRLLocalInfo: 49b2dc7ca277b3ff0927a514dedef24ba61278c3
   TRLMaps: c91c62921e3878b3c4f31cedbbc376cd5dc2c44d
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
-  TUIKit: 55fd78963a350bc8698ce0aac8abbe9a24b6cf35
+  TUIKit: 67e632fceb61efa0d650e8b271e3a53b528a39ce
   ZGMortgageCalculators: 5ddebff44888e4cf6a70233a65a167a1a4f37905
 
 PODFILE CHECKSUM: dae79fd3bf7fe7d963feeaf74fdab9e1882eac53
