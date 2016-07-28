@@ -111,6 +111,7 @@ PODS:
     - SSZipArchive (= 1.2)
     - TRLCurrentLocation (= 1.0.0)
     - TRLImageCache/iOS (~> 1.0.3)
+    - TRLLocalInfo
     - TRLMaps (~> 0.2)
     - TTTAttributedLabel (= 2.0.0)
     - TUIKit
@@ -137,16 +138,19 @@ PODS:
     - TRLImageCache/iOS (= 1.0.4)
   - TRLImageCache/iOS (1.0.4):
     - AFNetworking (~> 3.0)
+  - TRLLocalInfo (0.1.2):
+    - TRLMaps
+    - TUIKit
   - TRLMaps (0.3.2):
     - TRLImageCache (~> 1.0)
     - TUIKit/Colors (~> 1.0)
     - TUIKit/Fonts (~> 1.0)
   - TTTAttributedLabel (2.0.0)
-  - TUIKit (1.0.1):
-    - TUIKit/Core (= 1.0.1)
-  - TUIKit/Colors (1.0.1)
-  - TUIKit/Core (1.0.1)
-  - TUIKit/Fonts (1.0.1)
+  - TUIKit (1.0.3):
+    - TUIKit/Core (= 1.0.3)
+  - TUIKit/Colors (1.0.3)
+  - TUIKit/Core (1.0.3)
+  - TUIKit/Fonts (1.0.3)
   - ZGMortgageCalculators (0.2.0):
     - ActionSheetPicker-3.0
     - Alamofire
@@ -194,7 +198,7 @@ SPEC CHECKSUMS:
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: 15a7316f450df6fb1965a3c8e404464d082f7d8a
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: d51adde9b1c3d9257e879041165a7eddfc59d95e
+  IosCoreLibrary: 2214abdd55f0b3e223a5e9b36d870348a483987e
   JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   OpenInGoogleMaps: 60dd887d2e2b2149166a03bd6dab1d4478a7d3e8
@@ -205,9 +209,10 @@ SPEC CHECKSUMS:
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: a0f5b47f5e3b734a7ff815974228ff282807b66c
+  TRLLocalInfo: 49b2dc7ca277b3ff0927a514dedef24ba61278c3
   TRLMaps: c91c62921e3878b3c4f31cedbbc376cd5dc2c44d
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
-  TUIKit: 72662ebd6b75fd881c2b746eef3b9e97ee6f8ae7
+  TUIKit: 55fd78963a350bc8698ce0aac8abbe9a24b6cf35
   ZGMortgageCalculators: 5ddebff44888e4cf6a70233a65a167a1a4f37905
 
 PODFILE CHECKSUM: dae79fd3bf7fe7d963feeaf74fdab9e1882eac53
