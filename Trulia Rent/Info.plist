@@ -45,6 +45,7 @@
 				<string>TruliaCollabBoard</string>
 				<string>TruliaNotificationCenter</string>
 				<string>TruliaDiscoveryForRent</string>
+				<string>TruliaUserProfileHome</string>
 			</array>
 		</dict>
 	</array>
@@ -71,6 +72,7 @@
 				<string>TruliaBringToForegroundOnly</string>
 				<string>TruliaNotificationCenter</string>
 				<string>TruliaDiscoveryForRent</string>
+				<string>TruliaUserProfileHome</string>
 			</array>
 		</dict>
 	</array>
@@ -97,6 +99,7 @@
 				<string>TruliaBringToForegroundOnly</string>
 				<string>TruliaNotificationCenter</string>
 				<string>TruliaDiscoveryForRent</string>
+				<string>TruliaUserProfileHome</string>
 			</array>
 		</dict>
 	</array>
@@ -162,7 +165,26 @@
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Trulia needs your location to allow you to search and get updates on homes.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Trulia needs your location to allow you to search homes and get updates on homes you&apos;ll love.</string>
+	<string>Trulia needs your location to allow you to search homes and get updates on homes you'll love.</string>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeLove</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Saved Homes</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>viewTruliaSavesAllHomes</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeSearch</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Search Nearby</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>viewTruliaSRPforSale.Rentals</string>
+		</dict>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIPrerenderedIcon</key>
@@ -183,25 +205,6 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationPortrait</string>
-	</array>
-	<key>UIApplicationShortcutItems</key>
-	<array>
-		<dict>
-			<key>UIApplicationShortcutItemIconType</key>
-			<string>UIApplicationShortcutIconTypeLove</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Saved Homes</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>viewTruliaSavesAllHomes</string>
-		</dict>
-		<dict>
-			<key>UIApplicationShortcutItemIconType</key>
-			<string>UIApplicationShortcutIconTypeSearch</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Search Nearby</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>viewTruliaSRPforSale.Rentals</string>
-		</dict>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
