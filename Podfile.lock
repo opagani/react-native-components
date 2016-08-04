@@ -138,7 +138,7 @@ PODS:
     - TRLImageCache/iOS (= 1.0.4)
   - TRLImageCache/iOS (1.0.4):
     - AFNetworking (~> 3.0)
-  - TRLLocalInfo (0.1.3):
+  - TRLLocalInfo (0.1.4):
     - TRLMaps
     - TUIKit
   - TRLMaps (0.3.2):
@@ -202,7 +202,7 @@ SPEC CHECKSUMS:
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: a0f5b47f5e3b734a7ff815974228ff282807b66c
-  TRLLocalInfo: 809b752732ed599b86b5424fd8400d40f0d70ac9
+  TRLLocalInfo: 0555581d00a2978c89e665657ccc781aba4dad87
   TRLMaps: c91c62921e3878b3c4f31cedbbc376cd5dc2c44d
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 67e632fceb61efa0d650e8b271e3a53b528a39ce
