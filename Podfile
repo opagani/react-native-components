@@ -12,7 +12,7 @@ target 'Trulia Rent' do
     pod 'ARAnalytics', :subspecs => ['DSL', 'Adobe'], :git => 'https://github.com/orta/ARAnalytics.git', :branch => 'master'
     
     # Uncomment the following line to use a local version of TUIKit
-    # pod 'TUIKit', :path => '../mob-tuikit'
+    pod 'TUIKit', :path => '../mob-tuikit'
 
     #------------
     # Uncomment the following line if you are actively developing the Mortgage Calculators pod. This will point to
@@ -20,6 +20,7 @@ target 'Trulia Rent' do
     # pod 'ZGMortgageCalculators', :path => '../../mob-ios-mortgage-calculators'
     #------------
 
+    pod 'TRLActivityFeed', :path => '../mob-ios-activity-feed'
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
     
 end
@@ -33,7 +34,15 @@ post_install do |installer|
         config.build_settings['TARGETED_DEVICE_FAMILY'] = '1,2'
       end
     end
+
+    if target.name == 'IosCoreLibrary'
+      target.build_configurations.each do |config|
+        config.build_settings['OTHER_LDFLAGS'] = ['$(inherited)', '-ObjC']
+      end
+    end
+
   end
+
 
   installer.pods_project.build_configurations.each do |config|
     config.build_settings['ENABLE_BITCODE'] = 'NO'  
