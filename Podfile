@@ -2,6 +2,8 @@
 source 'https://github.com/CocoaPods/Specs'
 source 'ssh://git@stash.sv2.trulia.com/mob/mob-podspecs.git'
 
+raise "The bundle is not installed in this directory. please run `bundle install` and then run this command again" unless ENV['BUNDLE_GEMFILE'] != nil
+
 platform :ios, '9.0'
 use_frameworks!
 install! 'cocoapods', :deterministic_uuids => false
@@ -11,6 +13,12 @@ target 'Trulia Rent' do
     
     # Uncomment the following line to use a local version of TUIKit
     # pod 'TUIKit', :path => '../mob-tuikit'
+
+    #------------
+    # Uncomment the following line if you are actively developing the Mortgage Calculators pod. This will point to
+    # the branch on your local machine
+    # pod 'ZGMortgageCalculators', :path => '../../mob-ios-mortgage-calculators'
+    #------------
 
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
     

@@ -18,17 +18,6 @@
 		6B1C414D1C9768AC00F0DB25 /* ADBMobileConfigRelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C413C1C9768AC00F0DB25 /* ADBMobileConfigRelease.json */; };
 		6B1C414E1C9768AC00F0DB25 /* LocalInfoItems~ipad.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C413D1C9768AC00F0DB25 /* LocalInfoItems~ipad.json */; };
 		6B1C414F1C9768AC00F0DB25 /* LocalInfoItems~iphone.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C413E1C9768AC00F0DB25 /* LocalInfoItems~iphone.json */; };
-		6B1C41501C9768AC00F0DB25 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41411C9768AC00F0DB25 /* LICENSE.txt */; };
-		6B1C41511C9768AC00F0DB25 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41421C9768AC00F0DB25 /* OpenSans-Bold.ttf */; };
-		6B1C41521C9768AC00F0DB25 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41431C9768AC00F0DB25 /* OpenSans-BoldItalic.ttf */; };
-		6B1C41531C9768AC00F0DB25 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41441C9768AC00F0DB25 /* OpenSans-ExtraBold.ttf */; };
-		6B1C41541C9768AC00F0DB25 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41451C9768AC00F0DB25 /* OpenSans-ExtraBoldItalic.ttf */; };
-		6B1C41551C9768AC00F0DB25 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41461C9768AC00F0DB25 /* OpenSans-Italic.ttf */; };
-		6B1C41561C9768AC00F0DB25 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41471C9768AC00F0DB25 /* OpenSans-Light.ttf */; };
-		6B1C41571C9768AC00F0DB25 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41481C9768AC00F0DB25 /* OpenSans-LightItalic.ttf */; };
-		6B1C41581C9768AC00F0DB25 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41491C9768AC00F0DB25 /* OpenSans-Regular.ttf */; };
-		6B1C41591C9768AC00F0DB25 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C414A1C9768AC00F0DB25 /* OpenSans-Semibold.ttf */; };
-		6B1C415A1C9768AC00F0DB25 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C414B1C9768AC00F0DB25 /* OpenSans-SemiboldItalic.ttf */; };
 		6B1C415C1C9768EC00F0DB25 /* TruliaRent.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C415B1C9768EC00F0DB25 /* TruliaRent.entitlements */; };
 		6B1C416F1C97694F00F0DB25 /* IRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C41621C97694F00F0DB25 /* IRAppDelegate.m */; };
 		6B1C417A1C97697000F0DB25 /* ICConfiguration-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41751C97697000F0DB25 /* ICConfiguration-Info.plist */; };
@@ -53,17 +42,6 @@
 		6B1C413C1C9768AC00F0DB25 /* ADBMobileConfigRelease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfigRelease.json; sourceTree = "<group>"; };
 		6B1C413D1C9768AC00F0DB25 /* LocalInfoItems~ipad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "LocalInfoItems~ipad.json"; sourceTree = "<group>"; };
 		6B1C413E1C9768AC00F0DB25 /* LocalInfoItems~iphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "LocalInfoItems~iphone.json"; sourceTree = "<group>"; };
-		6B1C41411C9768AC00F0DB25 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		6B1C41421C9768AC00F0DB25 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		6B1C41431C9768AC00F0DB25 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
-		6B1C41441C9768AC00F0DB25 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
-		6B1C41451C9768AC00F0DB25 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		6B1C41461C9768AC00F0DB25 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
-		6B1C41471C9768AC00F0DB25 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
-		6B1C41481C9768AC00F0DB25 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		6B1C41491C9768AC00F0DB25 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		6B1C414A1C9768AC00F0DB25 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
-		6B1C414B1C9768AC00F0DB25 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		6B1C415B1C9768EC00F0DB25 /* TruliaRent.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TruliaRent.entitlements; sourceTree = "<group>"; };
 		6B1C41611C97694F00F0DB25 /* IRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRAppDelegate.h; sourceTree = "<group>"; };
 		6B1C41621C97694F00F0DB25 /* IRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRAppDelegate.m; sourceTree = "<group>"; };
@@ -136,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				6B1C413A1C9768AC00F0DB25 /* Configs */,
-				6B1C413F1C9768AC00F0DB25 /* Fonts */,
 				6B1C412A1C97680500F0DB25 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -156,32 +133,6 @@
 				6B1C413E1C9768AC00F0DB25 /* LocalInfoItems~iphone.json */,
 			);
 			path = Configs;
-			sourceTree = "<group>";
-		};
-		6B1C413F1C9768AC00F0DB25 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				6B1C41401C9768AC00F0DB25 /* Open_Sans */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		6B1C41401C9768AC00F0DB25 /* Open_Sans */ = {
-			isa = PBXGroup;
-			children = (
-				6B1C41411C9768AC00F0DB25 /* LICENSE.txt */,
-				6B1C41421C9768AC00F0DB25 /* OpenSans-Bold.ttf */,
-				6B1C41431C9768AC00F0DB25 /* OpenSans-BoldItalic.ttf */,
-				6B1C41441C9768AC00F0DB25 /* OpenSans-ExtraBold.ttf */,
-				6B1C41451C9768AC00F0DB25 /* OpenSans-ExtraBoldItalic.ttf */,
-				6B1C41461C9768AC00F0DB25 /* OpenSans-Italic.ttf */,
-				6B1C41471C9768AC00F0DB25 /* OpenSans-Light.ttf */,
-				6B1C41481C9768AC00F0DB25 /* OpenSans-LightItalic.ttf */,
-				6B1C41491C9768AC00F0DB25 /* OpenSans-Regular.ttf */,
-				6B1C414A1C9768AC00F0DB25 /* OpenSans-Semibold.ttf */,
-				6B1C414B1C9768AC00F0DB25 /* OpenSans-SemiboldItalic.ttf */,
-			);
-			path = Open_Sans;
 			sourceTree = "<group>";
 		};
 		6B1C415D1C97694F00F0DB25 /* Classes */ = {
@@ -272,32 +223,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B1C41511C9768AC00F0DB25 /* OpenSans-Bold.ttf in Resources */,
 				6B1C414F1C9768AC00F0DB25 /* LocalInfoItems~iphone.json in Resources */,
-				6B1C41501C9768AC00F0DB25 /* LICENSE.txt in Resources */,
 				6B1C417B1C97697000F0DB25 /* ICGeneral~ipad.plist in Resources */,
-				6B1C415A1C9768AC00F0DB25 /* OpenSans-SemiboldItalic.ttf in Resources */,
 				6B1C41281C9767D700F0DB25 /* Localizable.strings in Resources */,
-				6B1C41521C9768AC00F0DB25 /* OpenSans-BoldItalic.ttf in Resources */,
 				6B1C411D1C9765C800F0DB25 /* LaunchScreen.storyboard in Resources */,
-				6B1C41561C9768AC00F0DB25 /* OpenSans-Light.ttf in Resources */,
 				6B1C414D1C9768AC00F0DB25 /* ADBMobileConfigRelease.json in Resources */,
 				6B1C417C1C97697000F0DB25 /* ICGeneral~iphone.plist in Resources */,
 				6B1C415C1C9768EC00F0DB25 /* TruliaRent.entitlements in Resources */,
-				6B1C41591C9768AC00F0DB25 /* OpenSans-Semibold.ttf in Resources */,
-				6B1C41541C9768AC00F0DB25 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
-				6B1C41531C9768AC00F0DB25 /* OpenSans-ExtraBold.ttf in Resources */,
 				6B1C417A1C97697000F0DB25 /* ICConfiguration-Info.plist in Resources */,
-				6B1C41551C9768AC00F0DB25 /* OpenSans-Italic.ttf in Resources */,
 				6B1C412C1C97680500F0DB25 /* Assets.xcassets in Resources */,
 				6B1C417D1C97697000F0DB25 /* ICMetric~ipad.plist in Resources */,
 				6B1C417E1C97697000F0DB25 /* ICMetric~iphone.plist in Resources */,
-				6B1C41571C9768AC00F0DB25 /* OpenSans-LightItalic.ttf in Resources */,
 				6B1C414E1C9768AC00F0DB25 /* LocalInfoItems~ipad.json in Resources */,
 				6B1C41301C97686A00F0DB25 /* copyright.html in Resources */,
 				6B1C41181C9765C800F0DB25 /* Main.storyboard in Resources */,
 				6B1C414C1C9768AC00F0DB25 /* ADBMobileConfig.json in Resources */,
-				6B1C41581C9768AC00F0DB25 /* OpenSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +300,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" != \"Debug\" ]; then\npwd\n\"${SRCROOT}/../mob-ioscore-lib/VendorStaticFrameworks/Fabric.framework/run\" 69c46441eff2d4c6f8a043fd66d16ff159cd9812 1192e1497ab0deac603c36fb2464fd4c0a8452fee2494999c0c302fea55ff94c\nfi";
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Appstore\" ]; then\necho running fabric upload dsym script\n\"${SRCROOT}/../mob-ioscore-lib/Pod/VendorStaticFrameworks/Fabric.framework/run\" 69c46441eff2d4c6f8a043fd66d16ff159cd9812 1192e1497ab0deac603c36fb2464fd4c0a8452fee2494999c0c302fea55ff94c\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -17,7 +17,7 @@
 #import "ICAppearance.h"
 #import "ICLog.h"
 #import "ICUtility.h"
-#import "ICAnalyticsController.h"
+#import "ICMarketingAnalyticsController.h"
 #import "ICManagedSearch.h"
 #import "ICDiscoveryParameterSet.h"
 
@@ -26,6 +26,7 @@
 
 //frameworks
 #import "ICSearchFiltersViewController.h"
+#import "HockeySDK.h"
 
 @implementation IRAppDelegate
 

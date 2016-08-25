@@ -40,7 +40,9 @@ platform :ios do
     @mstage_user= 'web'
     @hockeyapp_token = 'f9ea5344004d44cfa154efab77887b72'
     @absolute_icon_path = File.expand_path "../Trulia\\ Rent/Resources/Assets.xcassets/AppIcon.appiconset"
-    @hockey_team_ids = '51656,51937,50690,50668,50687,50684,50683,50685,68986'
+    # NOTE : using @hockey_team_ids to upload to hockey app makes it diffiocult to implement the app upgrade options.
+    # @hockey_team_ids = '51656,51937,50690,50668,50687,50684,50683,50685,68986'
+    @info_plist_path =  "./Trulia Rent/Info.plist"
     
     undo_icon_file_changes
     
@@ -55,13 +57,14 @@ platform :ios do
     cocoapods
     
     #params for the build
-    jira_host = 'jira.corp.trulia.com'
     hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'  
+    jira_host = 'jira.corp.trulia.com'
     CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "EnterpriseIosRental",  skip_certificate_verification: true, app_identifier:"com.truliainc.IosRental")
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
     build_number = next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
 
     build_and_upload(
+        info_plist_path: @info_plist_path,
         # update the icons if in stage
         color_icon: true,
         # bake the build number into icons
@@ -96,7 +99,7 @@ platform :ios do
         # hockey app token to use
         hockeyapp_token: @hockeyapp_token,
         # the team IDs to notify when a new build is published
-        hockeyapp_team_ids: @hockey_team_ids,
+        # hockeyapp_team_ids: @hockey_team_ids,
         # the user to use to upload to mstage
         mstage_user: @mstage_user,
         # the JIRA host to search for issues to update based on these changes
@@ -112,17 +115,19 @@ platform :ios do
   lane :rc do |options|
 
     raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
+    
     # lets setup the pods first
     cocoapods
     
     #params for the build
-    jira_host = 'jira.corp.trulia.com'
     hockey_app_id = 'a219c9215a4f4b9ea9f43358e6cb0a7a'
+    jira_host = 'jira.corp.trulia.com'
     CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "EnterpriseIosRental",  skip_certificate_verification: true, app_identifier:"com.truliainc.IosRental")
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
     build_number = next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
 
     build_and_upload(
+        info_plist_path: @info_plist_path,
         # update the icons if in stage
         color_icon: false,
         # bake the build number into icons
@@ -159,7 +164,7 @@ platform :ios do
         # hockey app token to use
         hockeyapp_token: @hockeyapp_token,
         # the team IDs to notify when a new build is published
-        hockeyapp_team_ids: @hockey_team_ids,
+        # hockeyapp_team_ids: @hockey_team_ids,
         # the user to use to upload to mstage
         mstage_user: @mstage_user,
         # the JIRA host to search for issues to update based on these changes
@@ -177,6 +182,7 @@ platform :ios do
     raise 'You must specify a path to the ioscore library' if options[:core_library_path].nil?
     
     hockey_app_id = '215568fb16f34b60aea835757b2634b9'
+    
     build_number = options[:build_number] ||  (next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id) - 1).to_s
     
     cocoapods
@@ -184,6 +190,7 @@ platform :ios do
     xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
 
     build_and_upload(
+        info_plist_path: @info_plist_path,
         # update the icons if in stage
         color_icon: false,
         # bake the build number into icons
@@ -218,7 +225,7 @@ platform :ios do
         # hockey app token to use
         hockeyapp_token: @hockeyapp_token,
         # the team IDs to notify when a new build is published
-        hockeyapp_team_ids: @hockey_team_ids,
+        # hockeyapp_team_ids: @hockey_team_ids,
         # the user to use to upload to mstage
         mstage_user: @mstage_user,
         # core library path, this is used to get the change log for the core library
@@ -228,6 +235,57 @@ platform :ios do
 
   end
   
+  desc 'Build and archive a new beta locally'
+  lane :local do |options|
+    
+    # lets setup the pods first
+    cocoapods
+    
+    #params for the build
+    hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'  
+    jira_host = 'jira.corp.trulia.com'
+    CUSTOM_PROVISIONING_PROFILEID = sigh(provisioning_name: "EnterpriseIosRental",  skip_certificate_verification: true, app_identifier:"com.truliainc.IosRental")
+    xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
+    build_number = next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
+    core_library_path = File.expand_path File.join(File.dirname(__FILE__), '..', '..', 'mob-ioscore-lib')
+
+    build_and_upload(
+        info_plist_path: @info_plist_path,
+        # update the icons if in stage
+        color_icon: true,
+        # bake the build number into icons
+        build_number_icon: true,
+        # Modulate the colors of the icons by these degrees
+        modulation: 66.6,
+        # What configuration to use, usefull for keeping different API keys etc between environments
+        configuration: 'Stage',
+        # Export an enterprise app
+        export_method: 'enterprise',
+        # the projectname, this is the name of the .xcodeproj file and the folder containing your code in the project
+        project_name: @project_name,
+        # workspace
+        workspace: @workspace,
+        # the scheme to build
+        scheme: @scheme,
+        # the build number to use, we use the build number + 1 from latest hockey app version uploaded to stage
+        build_number: build_number,
+        # the number prefix to use to bake into icons, S for stage, B for BStage, and R for enterprise_release.
+        build_number_prefix:"S",
+        # icons folder path so that we can update the icons
+        icon_folder_path: @absolute_icon_path,
+        # passes in the mobile provisiong profile info explicitly
+        xcargs: xcargs,
+        product_name: @product_name,
+        # hockey app id to use
+        hockeyapp_id: hockey_app_id,
+        # the JIRA host to search for issues to update based on these changes
+        jira_host: jira_host,
+        # core library path, this is used to get the change log for the core library
+        core_library_path:options[:core_library_path]
+    )
+    undo_icon_file_changes
+  end
+
   
   after_all do |lane|
     undo_icon_file_changes
