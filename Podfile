@@ -25,6 +25,11 @@ target 'Trulia Rent' do
 
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
     
+    #----iOS 10/Swift 2.3 migration related.
+    # should be replaced when stable versions of swift 3.0 become available 
+    pod 'Alamofire', :git => 'git@github.com:Alamofire/Alamofire.git', :branch => 'swift2.3'
+    pod 'Charts', :git => 'https://github.com/FawadHa1der/Charts.git', :branch => 'master'
+    
 end
 
 #TODO: We can remove this after https://github.com/CocoaPods/Xcodeproj/pull/351 is merged and that version of
@@ -35,6 +40,11 @@ post_install do |installer|
       target.build_configurations.each do |config|
         config.build_settings['TARGETED_DEVICE_FAMILY'] = '1,2'
       end
+    end
+    
+    target.build_configurations.each do |config|
+      config.build_settings['SWIFT_VERSION'] = '2.3'
+      config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf-with-dsym'
     end
   end
 
