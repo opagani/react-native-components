@@ -162,8 +162,6 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Trulia needs your location to allow you to search and get updates on homes.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Trulia needs your location to allow you to search homes and get updates on homes you'll love.</string>
 	<key>UIApplicationShortcutItems</key>
