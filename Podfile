@@ -12,7 +12,7 @@ target 'Trulia Rent' do
     pod 'ARAnalytics', :subspecs => ['DSL', 'Adobe'], :git => 'https://github.com/orta/ARAnalytics.git', :branch => 'master'
     
     # Uncomment the following line to use a local version of TUIKit
-    pod 'TUIKit', :path => '../mob-tuikit'
+    # pod 'TUIKit', :path => '../mob-tuikit'
 
     #------------
     # Uncomment the following line if you are actively developing the Mortgage Calculators pod. This will point to
@@ -23,7 +23,9 @@ target 'Trulia Rent' do
     # If you are NOT actively developing the Mortgage Calculators pod, this line should be enabled instead
     pod 'ZGMortgageCalculators', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git', :branch => 'master'
 
-    pod 'TRLActivityFeed', :path => '../mob-ios-activity-feed'
+    # pod 'TRLActivityFeed', :path => '../mob-ios-activity-feed'
+    pod 'TRLActivityFeed', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git', :branch => 'develop'
+
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
     
 end
