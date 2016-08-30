@@ -12,7 +12,6 @@
 #import "ICPreference.h"
 #import "ICConfiguration.h"
 #import "ICCoreDataController.h"
-#import "ICSyncController.h"
 #import "ICAccountController.h"
 #import "ICAppearance.h"
 #import "ICLog.h"
