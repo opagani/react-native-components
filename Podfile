@@ -23,6 +23,9 @@ target 'Trulia Rent' do
     # If you are NOT actively developing the Mortgage Calculators pod, this line should be enabled instead
     pod 'ZGMortgageCalculators', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git', :branch => 'master'
 
+    # pod 'TRLActivityFeed', :path => '../mob-ios-activity-feed'
+    pod 'TRLActivityFeed', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git', :branch => 'develop'
+
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
     
 end
@@ -36,7 +39,15 @@ post_install do |installer|
         config.build_settings['TARGETED_DEVICE_FAMILY'] = '1,2'
       end
     end
+
+    if target.name == 'IosCoreLibrary'
+      target.build_configurations.each do |config|
+        config.build_settings['OTHER_LDFLAGS'] = ['$(inherited)', '-ObjC']
+      end
+    end
+
   end
+
 
   installer.pods_project.build_configurations.each do |config|
     config.build_settings['ENABLE_BITCODE'] = 'NO'  

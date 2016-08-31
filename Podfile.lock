@@ -22,6 +22,11 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Alamofire (3.4.1)
+  - AlamofireImage (2.4.1):
+    - Alamofire (~> 3.3)
+  - AlamofireObjectMapper (3.0.2):
+    - Alamofire (~> 3.2)
+    - ObjectMapper (~> 1.0)
   - ARAnalytics/Adobe (3.10.2):
     - AdobeMobileSDK
     - ARAnalytics/CoreIOS
@@ -46,6 +51,8 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.3.0):
     - CocoaLumberjack/Default
+  - CocoaLumberjack/Swift (2.3.0):
+    - CocoaLumberjack/Extensions
   - CSStickyHeaderFlowLayout (0.2.10)
   - FBSDKCoreKit (4.13.1):
     - Bolts (~> 1.7)
@@ -109,6 +116,7 @@ PODS:
     - OpenInGoogleMaps (= 0.1.0)
     - SFHFKeychainUtils (= 0.0.1)
     - SSZipArchive (= 1.2)
+    - TRLActivityFeed
     - TRLCurrentLocation (= 1.0.0)
     - TRLImageCache/iOS (~> 1.0.9)
     - TRLLocalInfo
@@ -120,6 +128,9 @@ PODS:
   - Mantle (2.0.7):
     - Mantle/extobjc (= 2.0.7)
   - Mantle/extobjc (2.0.7)
+  - ObjectMapper (1.3.0)
+  - ObjectMapperTransforms (1.0.2):
+    - ObjectMapper
   - OpenInGoogleMaps (0.1.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -132,6 +143,14 @@ PODS:
   - SFHFKeychainUtils (0.0.1)
   - SSZipArchive (1.2)
   - SwiftyJSON (2.3.2)
+  - TRLActivityFeed (0.1.0):
+    - Alamofire
+    - AlamofireImage
+    - AlamofireObjectMapper
+    - CocoaLumberjack/Swift (~> 2.3)
+    - ObjectMapper (~> 1.3.0)
+    - ObjectMapperTransforms (~> 1.0.2)
+    - TUIKit
   - TRLCurrentLocation (1.0.0)
   - TRLImageCache (1.0.9):
     - AFNetworking (~> 3.0)
@@ -146,11 +165,11 @@ PODS:
     - TUIKit/Colors (~> 1.0)
     - TUIKit/Fonts (~> 1.0)
   - TTTAttributedLabel (2.0.0)
-  - TUIKit (1.0.5):
-    - TUIKit/Core (= 1.0.5)
-  - TUIKit/Colors (1.0.5)
-  - TUIKit/Core (1.0.5)
-  - TUIKit/Fonts (1.0.5)
+  - TUIKit (1.0.6):
+    - TUIKit/Core (= 1.0.6)
+  - TUIKit/Colors (1.0.6)
+  - TUIKit/Core (1.0.6)
+  - TUIKit/Fonts (1.0.6)
   - ZGMortgageCalculators (0.2.3):
     - ActionSheetPicker-3.0
     - Alamofire
@@ -162,6 +181,7 @@ DEPENDENCIES:
   - ARAnalytics/Adobe (from `https://github.com/orta/ARAnalytics.git`, branch `master`)
   - ARAnalytics/DSL (from `https://github.com/orta/ARAnalytics.git`, branch `master`)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
+  - TRLActivityFeed (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git`, branch `develop`)
   - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
 EXTERNAL SOURCES:
@@ -170,6 +190,9 @@ EXTERNAL SOURCES:
     :git: https://github.com/orta/ARAnalytics.git
   IosCoreLibrary:
     :path: "../mob-ioscore-lib/"
+  TRLActivityFeed:
+    :branch: develop
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   ZGMortgageCalculators:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
@@ -178,6 +201,9 @@ CHECKOUT OPTIONS:
   ARAnalytics:
     :commit: d4adea5ba2c0584f579486d92383efa8c16bbd40
     :git: https://github.com/orta/ARAnalytics.git
+  TRLActivityFeed:
+    :commit: b2f7e02970e169527493ec70c6de718ef4afd85c
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   ZGMortgageCalculators:
     :commit: 954248c8efb275366da2a31904727c75cb124057
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
@@ -188,6 +214,8 @@ SPEC CHECKSUMS:
   AdobeMobileSDK: 3f5efa07f2dc848641bbc833a9235580167f75fb
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  AlamofireImage: 3ccf3347d9ea24580dc11fb892770a0be6a29826
+  AlamofireObjectMapper: 70f97cbf45c01c48d26aa07a1a7059a60ed7411d
   ARAnalytics: 9c11262ccc35010ba573a8ed79b4dc8f966ab55e
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   Charts: b48fcc8d7190de910ff9e9748f5360c8ea7856e5
@@ -198,23 +226,26 @@ SPEC CHECKSUMS:
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: 15a7316f450df6fb1965a3c8e404464d082f7d8a
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: 64ce6c3a2ea4ef8bd469601c5d989207f95268a7
+  IosCoreLibrary: c46b79f7df6219029e13a27a10cbf47c61598853
   JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
+  ObjectMapperTransforms: 8e4e54cdc58ceb6dd92614402b4ba36ca51bdd0d
   OpenInGoogleMaps: 60dd887d2e2b2149166a03bd6dab1d4478a7d3e8
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 251093c65f98d6ea282c50bc404bfa631d9fd721
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  TRLActivityFeed: 5900c2fc86238f806c1a4ea88ccc0bd7d22b88a1
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: cb6a9c507086d7efb976da6e9c01935d01af5840
   TRLLocalInfo: 0555581d00a2978c89e665657ccc781aba4dad87
   TRLMaps: c91c62921e3878b3c4f31cedbbc376cd5dc2c44d
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
-  TUIKit: 67e632fceb61efa0d650e8b271e3a53b528a39ce
+  TUIKit: 8aeae8c897ca0da5a264f7665e855707eba2b5c1
   ZGMortgageCalculators: 24ffb295e1c3a7018d80afdee79836c12a33fd27
 
-PODFILE CHECKSUM: 884e2f5da2fba4e9e06e9d39c89cf923d30fcae6
+PODFILE CHECKSUM: 20b1a84e95f262592ac10d9a042223b81ff0c762
 
 COCOAPODS: 1.0.1
