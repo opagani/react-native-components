@@ -203,7 +203,7 @@ CHECKOUT OPTIONS:
     :commit: d4adea5ba2c0584f579486d92383efa8c16bbd40
     :git: https://github.com/orta/ARAnalytics.git
   TRLActivityFeed:
-    :commit: 63a59a87fbd62beb5990d9cf19f2e0f318a6810d
+    :commit: 0e74d7708e74054f06db815c4418261e9432d088
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   ZGMortgageCalculators:
     :commit: 954248c8efb275366da2a31904727c75cb124057
