@@ -23,11 +23,15 @@ target 'Trulia Rent' do
     # If you are NOT actively developing the Mortgage Calculators pod, this line should be enabled instead
     pod 'ZGMortgageCalculators', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git', :branch => 'master'
 
+    # pod 'TRLActivityFeed', :path => '../mob-ios-activity-feed'
+    pod 'TRLActivityFeed', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git', :branch => 'iOS10'
+
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
     
     #----iOS 10/Swift 2.3 migration related.
     # should be replaced when stable versions of swift 3.0 become available 
     pod 'Alamofire', :git => 'git@github.com:Alamofire/Alamofire.git', :branch => 'swift2.3'
+    pod 'AlamofireImage', :path => '../AlamofireImage' , :branch => 'swift2.3'
     pod 'Charts', :git => 'https://github.com/FawadHa1der/Charts.git', :branch => 'master'
     
 end
@@ -41,12 +45,17 @@ post_install do |installer|
         config.build_settings['TARGETED_DEVICE_FAMILY'] = '1,2'
       end
     end
-    
+    if target.name == 'IosCoreLibrary'
+      target.build_configurations.each do |config|
+        config.build_settings['OTHER_LDFLAGS'] = ['$(inherited)', '-ObjC']
+      end
+    end
     target.build_configurations.each do |config|
       config.build_settings['SWIFT_VERSION'] = '2.3'
       config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf-with-dsym'
     end
   end
+
 
   installer.pods_project.build_configurations.each do |config|
     config.build_settings['ENABLE_BITCODE'] = 'NO'  
