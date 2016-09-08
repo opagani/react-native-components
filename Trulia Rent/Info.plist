@@ -48,6 +48,7 @@
 				<string>TruliaNotificationCenter</string>
 				<string>TruliaDiscoveryForRent</string>
 				<string>TruliaUserProfileHome</string>
+				<string>TruliaUserProfileRenterResume</string>
 			</array>
 		</dict>
 	</array>
@@ -75,6 +76,7 @@
 				<string>TruliaNotificationCenter</string>
 				<string>TruliaDiscoveryForRent</string>
 				<string>TruliaUserProfileHome</string>
+				<string>TruliaUserProfileRenterResume</string>
 			</array>
 		</dict>
 	</array>
@@ -102,6 +104,7 @@
 				<string>TruliaNotificationCenter</string>
 				<string>TruliaDiscoveryForRent</string>
 				<string>TruliaUserProfileHome</string>
+				<string>TruliaUserProfileRenterResume</string>
 			</array>
 		</dict>
 	</array>
@@ -165,7 +168,7 @@
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Trulia needs your location to allow you to search homes and get updates on homes you'll love.</string>
+	<string>Trulia needs your location to allow you to search homes and get updates on homes you&apos;ll love.</string>
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
