@@ -211,5 +211,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+    <key>NSContactsUsageDescription</key>
+    <string>Need to access contacts to send an invite to other users to join user boards</string>
+    <key>NSCalendarsUsageDescription</key>
+    <string>Permission to calendar needed to add the property tour event.</string>
 </dict>
 </plist>
