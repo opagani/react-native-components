@@ -9,7 +9,7 @@ use_frameworks!
 install! 'cocoapods', :deterministic_uuids => false
 
 target 'Trulia Rent' do
-    pod 'ARAnalytics', :subspecs => ['DSL', 'Adobe'], :git => 'https://github.com/orta/ARAnalytics.git', :branch => 'master'
+    # pod 'ARAnalytics', :subspecs => ['DSL', 'Adobe'], :git => 'https://github.com/orta/ARAnalytics.git', :branch => 'master'
     
     # Uncomment the following line to use a local version of TUIKit
     # pod 'TUIKit', :path => '../mob-tuikit'
@@ -30,8 +30,8 @@ target 'Trulia Rent' do
     
     #----iOS 10/Swift 2.3 migration related.
     # should be replaced when stable versions of swift 3.0 become available 
-    pod 'Alamofire', :git => 'git@github.com:Alamofire/Alamofire.git', :branch => 'swift2.3'
-    pod 'AlamofireImage', :path => '../AlamofireImage' , :branch => 'swift2.3'
+    pod 'AlamofireImage', '2.5.0'
+    pod 'Alamofire', '3.5.0'
     pod 'Charts', :git => 'https://github.com/FawadHa1der/Charts.git', :branch => 'master'
     
 end
