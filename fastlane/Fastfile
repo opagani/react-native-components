@@ -185,6 +185,8 @@ platform :ios do
     
     build_number = options[:build_number] ||  (next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id) - 1).to_s
     
+    #Note : Only for appstore builds, since the advent of Xcode 8 we have to manually change the app groups and team Id. 
+    # Previously this was done automaticaly but now has to be configured manually.
     project_file = File.expand_path "../" + @project_name
     update_project_team(path: project_file, teamid: "9QV5QN2J8K")
     
