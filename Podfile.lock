@@ -181,7 +181,7 @@ DEPENDENCIES:
   - AlamofireImage (= 2.5.0)
   - Charts (from `https://github.com/FawadHa1der/Charts.git`, branch `master`)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
-  - TRLActivityFeed (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git`, branch `iOS10`)
+  - TRLActivityFeed (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git`, branch `develop`)
   - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
 EXTERNAL SOURCES:
@@ -191,7 +191,7 @@ EXTERNAL SOURCES:
   IosCoreLibrary:
     :path: "../mob-ioscore-lib/"
   TRLActivityFeed:
-    :branch: iOS10
+    :branch: develop
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   ZGMortgageCalculators:
     :branch: master
@@ -202,7 +202,7 @@ CHECKOUT OPTIONS:
     :commit: 6f3ba2a6e65778c86c053d2a88f73ef47baf9af0
     :git: https://github.com/FawadHa1der/Charts.git
   TRLActivityFeed:
-    :commit: a53d8576d886e9db6faed9844b5cb2c5dba34ee7
+    :commit: 22c0c285c5bf1cb63eec2a35f551b76e51f9cc84
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   ZGMortgageCalculators:
     :commit: 777a53a90054c1278364624b20e2c9ba53b21f8e
@@ -245,6 +245,6 @@ SPEC CHECKSUMS:
   TUIKit: 8aeae8c897ca0da5a264f7665e855707eba2b5c1
   ZGMortgageCalculators: 24ffb295e1c3a7018d80afdee79836c12a33fd27
 
-PODFILE CHECKSUM: 41272a65a6191d32929ab095cc6efbe87e217bde
+PODFILE CHECKSUM: 861bbafe1277a373e7a1f0b9d6ea951bbf7f5ce1
 
 COCOAPODS: 1.0.1
