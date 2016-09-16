@@ -141,7 +141,7 @@ PODS:
   - SFHFKeychainUtils (0.0.1)
   - SSZipArchive (1.2)
   - SwiftyJSON (2.3.2)
-  - TRLActivityFeed (0.1.2):
+  - TRLActivityFeed (1.0.0):
     - Alamofire (= 3.5.0)
     - AlamofireImage (= 2.5.0)
     - AlamofireObjectMapper
@@ -181,7 +181,6 @@ DEPENDENCIES:
   - AlamofireImage (= 2.5.0)
   - Charts (from `https://github.com/FawadHa1der/Charts.git`, branch `master`)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
-  - TRLActivityFeed (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git`, branch `develop`)
   - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
 EXTERNAL SOURCES:
@@ -190,9 +189,6 @@ EXTERNAL SOURCES:
     :git: https://github.com/FawadHa1der/Charts.git
   IosCoreLibrary:
     :path: "../mob-ioscore-lib/"
-  TRLActivityFeed:
-    :branch: develop
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   ZGMortgageCalculators:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
@@ -201,9 +197,6 @@ CHECKOUT OPTIONS:
   Charts:
     :commit: 6f3ba2a6e65778c86c053d2a88f73ef47baf9af0
     :git: https://github.com/FawadHa1der/Charts.git
-  TRLActivityFeed:
-    :commit: efadd1b0487a0f7cceb310bef306454f52060efb
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   ZGMortgageCalculators:
     :commit: 2b115bdca4cf56557e9c83f25d8ecd5bc8c3f901
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
@@ -236,7 +229,7 @@ SPEC CHECKSUMS:
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 251093c65f98d6ea282c50bc404bfa631d9fd721
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
-  TRLActivityFeed: b2287e13f79879724d9a0bb25d1fc9d17d7c4aef
+  TRLActivityFeed: 1086d93a3e96a51eac0b851fdff33765b4a2e263
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: 0095cafd3b6ceacbdaae0268a64cfe125f332aca
   TRLLocalInfo: 0555581d00a2978c89e665657ccc781aba4dad87
@@ -245,6 +238,6 @@ SPEC CHECKSUMS:
   TUIKit: 9e31e96ad2e722c61fb2273737b89b9ecc184f1a
   ZGMortgageCalculators: 24ffb295e1c3a7018d80afdee79836c12a33fd27
 
-PODFILE CHECKSUM: 861bbafe1277a373e7a1f0b9d6ea951bbf7f5ce1
+PODFILE CHECKSUM: 5075481273897d2dbcdcc76a4217f6d03ecba50a
 
 COCOAPODS: 1.0.1

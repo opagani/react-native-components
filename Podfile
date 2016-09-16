@@ -24,7 +24,6 @@ target 'Trulia Rent' do
     pod 'ZGMortgageCalculators', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git', :branch => 'master'
 
     # pod 'TRLActivityFeed', :path => '../mob-ios-activity-feed'
-    pod 'TRLActivityFeed', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git', :branch => 'develop'
 
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
     
