@@ -211,9 +211,13 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
-    <key>NSContactsUsageDescription</key>
-    <string>Need to access contacts to send an invite to other users to join user boards</string>
-    <key>NSCalendarsUsageDescription</key>
-    <string>Permission to calendar needed to add the property tour event.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>App needs to access contacts to send an invite to other users to join your board</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>App needs permission to add the property tour event to device's calendar</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App needs permission to save pictures to your device's photo library</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>App needs permission to support continuity between devices</string>
 </dict>
 </plist>
