@@ -379,7 +379,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
-				CUSTOM_PROVISIONING_PROFILE = "";
 				CUSTOM_SIGNING_IDENTITY = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
@@ -432,7 +431,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
-				CUSTOM_PROVISIONING_PROFILE = "";
 				CUSTOM_SIGNING_IDENTITY = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_BITCODE = NO;
@@ -466,9 +464,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				CUSTOM_PROVISIONING_PROFILE = "";
 				CUSTOM_SIGNING_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				FACEBOOK_APP_ID = 468741039850614;
 				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
 				INFOPLIST_FILE = "Trulia Rent/Info.plist";
@@ -492,9 +489,8 @@
 				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				CUSTOM_PROVISIONING_PROFILE = "";
 				CUSTOM_SIGNING_IDENTITY = "iPhone Distribution: Trulia, Inc (9QV5QN2J8K)";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9QV5QN2J8K;
 				FACEBOOK_APP_ID = 410970538982032;
 				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
 				INFOPLIST_FILE = "Trulia Rent/Info.plist";
@@ -531,7 +527,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
-				CUSTOM_PROVISIONING_PROFILE = "";
 				CUSTOM_SIGNING_IDENTITY = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_BITCODE = NO;
@@ -565,9 +560,8 @@
 				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				CUSTOM_PROVISIONING_PROFILE = EnterpriseIosRental.mobileprovision;
 				CUSTOM_SIGNING_IDENTITY = "iPhone Distribution: Trulia Inc";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				FACEBOOK_APP_ID = 468741039850614;
 				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
 				INFOPLIST_FILE = "Trulia Rent/Info.plist";
