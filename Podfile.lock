@@ -141,7 +141,7 @@ PODS:
   - SFHFKeychainUtils (0.0.1)
   - SSZipArchive (1.2)
   - SwiftyJSON (2.3.2)
-  - TRLActivityFeed (1.0.0):
+  - TRLActivityFeed (1.0.1):
     - Alamofire (= 3.5.0)
     - AlamofireImage (= 2.5.0)
     - AlamofireObjectMapper
@@ -156,7 +156,7 @@ PODS:
     - TRLImageCache/iOS (= 1.0.10)
   - TRLImageCache/iOS (1.0.10):
     - AFNetworking (~> 3.0)
-  - TRLLocalInfo (0.1.4):
+  - TRLLocalInfo (0.1.6):
     - TRLMaps
     - TUIKit
   - TRLMaps (0.3.3):
@@ -167,11 +167,11 @@ PODS:
     - TruliaCharts/Core (= 2.2.13)
   - TruliaCharts/Core (2.2.13)
   - TTTAttributedLabel (2.0.0)
-  - TUIKit (1.0.7):
-    - TUIKit/Core (= 1.0.7)
-  - TUIKit/Colors (1.0.7)
-  - TUIKit/Core (1.0.7)
-  - TUIKit/Fonts (1.0.7)
+  - TUIKit (1.0.8):
+    - TUIKit/Core (= 1.0.8)
+  - TUIKit/Colors (1.0.8)
+  - TUIKit/Core (1.0.8)
+  - TUIKit/Fonts (1.0.8)
   - ZGMortgageCalculators (1.0.1):
     - ActionSheetPicker-3.0
     - Alamofire (= 3.5.0)
@@ -232,14 +232,14 @@ SPEC CHECKSUMS:
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 251093c65f98d6ea282c50bc404bfa631d9fd721
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
-  TRLActivityFeed: 1086d93a3e96a51eac0b851fdff33765b4a2e263
+  TRLActivityFeed: 3b8853497697b0c929e70868cbe162a2c76f80c1
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: 0095cafd3b6ceacbdaae0268a64cfe125f332aca
-  TRLLocalInfo: 0555581d00a2978c89e665657ccc781aba4dad87
+  TRLLocalInfo: 4419f2b898155a195921654198b9afd0b88baa43
   TRLMaps: d99040b1fded66319bb501322115982e09345dc5
   TruliaCharts: 0d712d586c9728037fa4c3b87c5467ca0b480ede
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
-  TUIKit: 9e31e96ad2e722c61fb2273737b89b9ecc184f1a
+  TUIKit: a14f331ee30d534e3e92f4b4d36fcacf60f9bcf7
   ZGMortgageCalculators: f01b045f8e6696c8db3cb04d5eba1bafe4f0662c
 
 PODFILE CHECKSUM: 5075481273897d2dbcdcc76a4217f6d03ecba50a
