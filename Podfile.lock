@@ -40,9 +40,6 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
-  - Charts (2.2.5):
-    - Charts/Core (= 2.2.5)
-  - Charts/Core (2.2.5)
   - CocoaLumberjack (2.3.0):
     - CocoaLumberjack/Default (= 2.3.0)
     - CocoaLumberjack/Extensions (= 2.3.0)
@@ -141,7 +138,7 @@ PODS:
   - SFHFKeychainUtils (0.0.1)
   - SSZipArchive (1.2)
   - SwiftyJSON (2.3.2)
-  - TRLActivityFeed (1.0.0):
+  - TRLActivityFeed (1.0.1):
     - Alamofire (= 3.5.0)
     - AlamofireImage (= 2.5.0)
     - AlamofireObjectMapper
@@ -156,50 +153,37 @@ PODS:
     - TRLImageCache/iOS (= 1.0.10)
   - TRLImageCache/iOS (1.0.10):
     - AFNetworking (~> 3.0)
-  - TRLLocalInfo (0.1.4):
+  - TRLLocalInfo (0.1.6):
     - TRLMaps
     - TUIKit
   - TRLMaps (0.3.3):
     - TRLImageCache (~> 1.0)
     - TUIKit/Colors (~> 1.0)
     - TUIKit/Fonts (~> 1.0)
+  - TruliaCharts (2.2.13):
+    - TruliaCharts/Core (= 2.2.13)
+  - TruliaCharts/Core (2.2.13)
   - TTTAttributedLabel (2.0.0)
-  - TUIKit (1.0.7):
-    - TUIKit/Core (= 1.0.7)
-  - TUIKit/Colors (1.0.7)
-  - TUIKit/Core (1.0.7)
-  - TUIKit/Fonts (1.0.7)
-  - ZGMortgageCalculators (0.2.3):
+  - TUIKit (1.0.8):
+    - TUIKit/Core (= 1.0.8)
+  - TUIKit/Colors (1.0.8)
+  - TUIKit/Core (1.0.8)
+  - TUIKit/Fonts (1.0.8)
+  - ZGMortgageCalculators (1.0.1):
     - ActionSheetPicker-3.0
-    - Alamofire
-    - Charts
+    - Alamofire (= 3.5.0)
     - SwiftyJSON
-    - TUIKit
+    - TruliaCharts (= 2.2.13)
+    - TUIKit (~> 1.0.6)
 
 DEPENDENCIES:
   - Alamofire (= 3.5.0)
   - AlamofireImage (= 2.5.0)
-  - Charts (from `https://github.com/FawadHa1der/Charts.git`, branch `master`)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
-  - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
 EXTERNAL SOURCES:
-  Charts:
-    :branch: master
-    :git: https://github.com/FawadHa1der/Charts.git
   IosCoreLibrary:
     :path: "../mob-ioscore-lib/"
-  ZGMortgageCalculators:
-    :branch: master
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
-
-CHECKOUT OPTIONS:
-  Charts:
-    :commit: 6f3ba2a6e65778c86c053d2a88f73ef47baf9af0
-    :git: https://github.com/FawadHa1der/Charts.git
-  ZGMortgageCalculators:
-    :commit: 2b115bdca4cf56557e9c83f25d8ecd5bc8c3f901
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
@@ -211,7 +195,6 @@ SPEC CHECKSUMS:
   AlamofireObjectMapper: 70f97cbf45c01c48d26aa07a1a7059a60ed7411d
   ARAnalytics: 0c76796d08134479ede1c2e9df497790d9380434
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  Charts: 1ef8d3b1684eadb14e61f74eb5db5ef58eef3422
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   FBSDKCoreKit: fc7fa53d16b095ee3fd53f0cd59f1df8bcbb634d
   FBSDKLoginKit: 073f79b3b2e762fc6f54a283fe15f45372d59f5f
@@ -229,15 +212,16 @@ SPEC CHECKSUMS:
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 251093c65f98d6ea282c50bc404bfa631d9fd721
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
-  TRLActivityFeed: 1086d93a3e96a51eac0b851fdff33765b4a2e263
+  TRLActivityFeed: 3b8853497697b0c929e70868cbe162a2c76f80c1
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: 0095cafd3b6ceacbdaae0268a64cfe125f332aca
-  TRLLocalInfo: 0555581d00a2978c89e665657ccc781aba4dad87
+  TRLLocalInfo: 4419f2b898155a195921654198b9afd0b88baa43
   TRLMaps: d99040b1fded66319bb501322115982e09345dc5
+  TruliaCharts: 0d712d586c9728037fa4c3b87c5467ca0b480ede
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
-  TUIKit: 9e31e96ad2e722c61fb2273737b89b9ecc184f1a
-  ZGMortgageCalculators: 24ffb295e1c3a7018d80afdee79836c12a33fd27
+  TUIKit: a14f331ee30d534e3e92f4b4d36fcacf60f9bcf7
+  ZGMortgageCalculators: f7b7b6e69f651edb874f0100b11c9846e6889e75
 
-PODFILE CHECKSUM: 5075481273897d2dbcdcc76a4217f6d03ecba50a
+PODFILE CHECKSUM: 40fc2e2a7176dc8170c2132f1b2fca1068feda9e
 
 COCOAPODS: 1.0.1
