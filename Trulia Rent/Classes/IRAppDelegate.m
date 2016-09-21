@@ -30,8 +30,8 @@
 @implementation IRAppDelegate
 
 void uncaughtExceptionHandler(NSException *exception) {
-    GRLogCError(@"CRASH: %@", exception);
-    GRLogCError(@"Stack Trace: %@", [exception callStackSymbols]);
+    DDLogError(@"CRASH: %@", exception);
+    DDLogError(@"Stack Trace: %@", [exception callStackSymbols]);
 }
 
 
