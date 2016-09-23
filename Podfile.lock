@@ -138,7 +138,7 @@ PODS:
   - SFHFKeychainUtils (0.0.1)
   - SSZipArchive (1.2)
   - SwiftyJSON (2.4.0)
-  - TRLActivityFeed (1.0.1):
+  - TRLActivityFeed (1.0.2):
     - Alamofire (= 3.5.0)
     - AlamofireImage (= 2.5.0)
     - AlamofireObjectMapper
@@ -184,7 +184,7 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   IosCoreLibrary:
-    :path: ../mob-ioscore-lib/
+    :path: "../mob-ioscore-lib/"
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
@@ -213,7 +213,7 @@ SPEC CHECKSUMS:
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 251093c65f98d6ea282c50bc404bfa631d9fd721
   SwiftyJSON: 96918c1bf505efa50c4f72957018dd3452090c9c
-  TRLActivityFeed: 3b8853497697b0c929e70868cbe162a2c76f80c1
+  TRLActivityFeed: 8adeae375b2a4ff2d3959e3a51558731dfdaa05d
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: 0095cafd3b6ceacbdaae0268a64cfe125f332aca
   TRLLocalInfo: 4419f2b898155a195921654198b9afd0b88baa43
@@ -223,6 +223,6 @@ SPEC CHECKSUMS:
   TUIKit: a14f331ee30d534e3e92f4b4d36fcacf60f9bcf7
   ZGMortgageCalculators: d1d5487c8ac762f1cdd14a72578deea629c462fb
 
-PODFILE CHECKSUM: 226e93521c8adf9a4c882f3347994107a710429e
+PODFILE CHECKSUM: c62d7e41bdd27fdae5dfb5e130f3f104ee79508e
 
 COCOAPODS: 1.0.1
