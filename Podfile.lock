@@ -137,7 +137,7 @@ PODS:
   - RSSwizzle (0.1.0)
   - SFHFKeychainUtils (0.0.1)
   - SSZipArchive (1.2)
-  - SwiftyJSON (2.3.2)
+  - SwiftyJSON (2.4.0)
   - TRLActivityFeed (1.0.1):
     - Alamofire (= 3.5.0)
     - AlamofireImage (= 2.5.0)
@@ -169,10 +169,10 @@ PODS:
   - TUIKit/Colors (1.0.8)
   - TUIKit/Core (1.0.8)
   - TUIKit/Fonts (1.0.8)
-  - ZGMortgageCalculators (1.0.1):
+  - ZGMortgageCalculators (1.1.1):
     - ActionSheetPicker-3.0
     - Alamofire (= 3.5.0)
-    - SwiftyJSON
+    - SwiftyJSON (= 2.4.0)
     - TruliaCharts (= 2.2.13)
     - TUIKit (~> 1.0.6)
 
@@ -180,10 +180,11 @@ DEPENDENCIES:
   - Alamofire (= 3.5.0)
   - AlamofireImage (= 2.5.0)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
+  - ZGMortgageCalculators (= 1.1.1)
 
 EXTERNAL SOURCES:
   IosCoreLibrary:
-    :path: "../mob-ioscore-lib/"
+    :path: ../mob-ioscore-lib/
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
@@ -211,7 +212,7 @@ SPEC CHECKSUMS:
   RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 251093c65f98d6ea282c50bc404bfa631d9fd721
-  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  SwiftyJSON: 96918c1bf505efa50c4f72957018dd3452090c9c
   TRLActivityFeed: 3b8853497697b0c929e70868cbe162a2c76f80c1
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: 0095cafd3b6ceacbdaae0268a64cfe125f332aca
@@ -220,8 +221,8 @@ SPEC CHECKSUMS:
   TruliaCharts: 0d712d586c9728037fa4c3b87c5467ca0b480ede
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: a14f331ee30d534e3e92f4b4d36fcacf60f9bcf7
-  ZGMortgageCalculators: f7b7b6e69f651edb874f0100b11c9846e6889e75
+  ZGMortgageCalculators: d1d5487c8ac762f1cdd14a72578deea629c462fb
 
-PODFILE CHECKSUM: 40fc2e2a7176dc8170c2132f1b2fca1068feda9e
+PODFILE CHECKSUM: 226e93521c8adf9a4c882f3347994107a710429e
 
 COCOAPODS: 1.0.1

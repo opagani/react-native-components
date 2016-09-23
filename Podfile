@@ -23,6 +23,8 @@ target 'Trulia Rent' do
     # If you are NOT actively developing the Mortgage Calculators pod, this line should be enabled instead
     # pod 'ZGMortgageCalculators', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git', :branch => 'master'
 
+    pod 'ZGMortgageCalculators', '1.1.1'
+
     # pod 'TRLActivityFeed', :path => '../mob-ios-activity-feed'
 
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
