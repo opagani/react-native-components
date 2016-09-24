@@ -21,12 +21,12 @@ target 'Trulia Rent' do
     #------------
     
     # If you are NOT actively developing the Mortgage Calculators pod, this line should be enabled instead
-    # pod 'ZGMortgageCalculators', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git', :branch => 'master'
+    pod 'ZGMortgageCalculators', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git', :branch => 'master'
 
     # pod 'TRLActivityFeed', :path => '../mob-ios-activity-feed'
 
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
-    
+ 
     #----iOS 10/Swift 2.3 migration related.
     # should be replaced when stable versions of swift 3.0 become available 
     pod 'AlamofireImage', '2.5.0'

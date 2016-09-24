@@ -180,10 +180,19 @@ DEPENDENCIES:
   - Alamofire (= 3.5.0)
   - AlamofireImage (= 2.5.0)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
+  - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
 EXTERNAL SOURCES:
   IosCoreLibrary:
     :path: "../mob-ioscore-lib/"
+  ZGMortgageCalculators:
+    :branch: master
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
+
+CHECKOUT OPTIONS:
+  ZGMortgageCalculators:
+    :commit: b59fe601e68c45a3ec7acc59fd9cdf5420d03083
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
@@ -220,8 +229,8 @@ SPEC CHECKSUMS:
   TruliaCharts: 0d712d586c9728037fa4c3b87c5467ca0b480ede
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 25ac35c425e677fee389206d7a803510f2e0a035
-  ZGMortgageCalculators: 52f3c4861b7bcdb585d7b4d2757128bfa2699786
+  ZGMortgageCalculators: bc92f1f068cddf1d79263b79b195d1cf6e00643e
 
-PODFILE CHECKSUM: 40fc2e2a7176dc8170c2132f1b2fca1068feda9e
+PODFILE CHECKSUM: 022e3405a915d7e46f16a7b6f81e4ecf32bbbb9b
 
 COCOAPODS: 1.0.1
