@@ -180,6 +180,7 @@ DEPENDENCIES:
   - Alamofire (= 3.5.0)
   - AlamofireImage (= 2.5.0)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
+  - ZGMortgageCalculators (= 1.1.1)
 
 EXTERNAL SOURCES:
   IosCoreLibrary:
@@ -222,6 +223,6 @@ SPEC CHECKSUMS:
   TUIKit: 25ac35c425e677fee389206d7a803510f2e0a035
   ZGMortgageCalculators: 52f3c4861b7bcdb585d7b4d2757128bfa2699786
 
-PODFILE CHECKSUM: 40fc2e2a7176dc8170c2132f1b2fca1068feda9e
+PODFILE CHECKSUM: c62d7e41bdd27fdae5dfb5e130f3f104ee79508e
 
 COCOAPODS: 1.0.1
