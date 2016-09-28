@@ -27,11 +27,11 @@ PODS:
   - AlamofireObjectMapper (3.0.2):
     - Alamofire (~> 3.2)
     - ObjectMapper (~> 1.0)
-  - ARAnalytics/Adobe (3.10.2):
+  - ARAnalytics/Adobe (4.0.0):
     - AdobeMobileSDK
     - ARAnalytics/CoreIOS
-  - ARAnalytics/CoreIOS (3.10.2)
-  - ARAnalytics/DSL (3.10.2):
+  - ARAnalytics/CoreIOS (4.0.0)
+  - ARAnalytics/DSL (4.0.0):
     - ReactiveCocoa (~> 2.0)
     - RSSwizzle (~> 0.1.0)
   - Bolts (1.8.4):
@@ -40,19 +40,19 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
-  - CocoaLumberjack (2.3.0):
-    - CocoaLumberjack/Default (= 2.3.0)
-    - CocoaLumberjack/Extensions (= 2.3.0)
-  - CocoaLumberjack/Core (2.3.0)
-  - CocoaLumberjack/Default (2.3.0):
+  - CocoaLumberjack (2.4.0):
+    - CocoaLumberjack/Default (= 2.4.0)
+    - CocoaLumberjack/Extensions (= 2.4.0)
+  - CocoaLumberjack/Core (2.4.0)
+  - CocoaLumberjack/Default (2.4.0):
     - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.3.0):
+  - CocoaLumberjack/Extensions (2.4.0):
     - CocoaLumberjack/Default
-  - CocoaLumberjack/Swift (2.3.0):
+  - CocoaLumberjack/Swift (2.4.0):
     - CocoaLumberjack/Extensions
-  - FBSDKCoreKit (4.15.1):
+  - FBSDKCoreKit (4.16.0):
     - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.15.1):
+  - FBSDKLoginKit (4.16.0):
     - FBSDKCoreKit
   - FormatterKit (1.8.1):
     - FormatterKit/AddressFormatter (= 1.8.1)
@@ -88,7 +88,7 @@ PODS:
   - HTAutocompleteTextField (1.3.2)
   - IosCoreLibrary (3.3.0):
     - AFNetworking (= 3.1.0)
-    - CocoaLumberjack (= 2.3.0)
+    - CocoaLumberjack (= 2.4.0)
     - FormatterKit (= 1.8.1)
     - IosCoreLibrary/iOS (= 3.3.0)
     - SFHFKeychainUtils (= 0.0.1)
@@ -98,11 +98,11 @@ PODS:
     - Adjust (= 4.10.1)
     - AdobeMobileSDK (= 4.13.0)
     - AFNetworking (= 3.1.0)
-    - ARAnalytics/Adobe (= 3.10.2)
-    - ARAnalytics/DSL (= 3.10.2)
-    - CocoaLumberjack (= 2.3.0)
-    - FBSDKCoreKit (= 4.15.1)
-    - FBSDKLoginKit (= 4.15.1)
+    - ARAnalytics/Adobe (= 4.0.0)
+    - ARAnalytics/DSL (= 4.0.0)
+    - CocoaLumberjack (= 2.4.0)
+    - FBSDKCoreKit (= 4.16.0)
+    - FBSDKLoginKit (= 4.16.0)
     - FormatterKit (= 1.8.1)
     - HockeySDK-Source (= 4.1.1)
     - HTAutocompleteTextField (= 1.3.2)
@@ -138,7 +138,7 @@ PODS:
   - SFHFKeychainUtils (0.0.1)
   - SSZipArchive (1.2)
   - SwiftyJSON (2.4.0)
-  - TRLActivityFeed (1.0.1):
+  - TRLActivityFeed (1.0.2):
     - Alamofire (= 3.5.0)
     - AlamofireImage (= 2.5.0)
     - AlamofireObjectMapper
@@ -202,15 +202,15 @@ SPEC CHECKSUMS:
   Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
   AlamofireImage: 2d34936e5201270bb17a316a786e90e83b4a249d
   AlamofireObjectMapper: 70f97cbf45c01c48d26aa07a1a7059a60ed7411d
-  ARAnalytics: 0c76796d08134479ede1c2e9df497790d9380434
+  ARAnalytics: d8a0eee8da481d146ca8af5a9ac632b5c4d17a81
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
-  FBSDKCoreKit: fc7fa53d16b095ee3fd53f0cd59f1df8bcbb634d
-  FBSDKLoginKit: 073f79b3b2e762fc6f54a283fe15f45372d59f5f
+  CocoaLumberjack: aa9dcab71bdf9eaf2a63bbd9ddc87863efe45457
+  FBSDKCoreKit: 7a6baaed4a2b2a244ba253346713bdbc74df135b
+  FBSDKLoginKit: 9a514a55a7d05190f64d4ef09502737588b5b561
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: a86f75afee838fc50826eb7a17875dea66844a37
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: 19158cc8b0163d73ac6224c01e1e3b7939514c51
+  IosCoreLibrary: 6db295bd6a5519c7623b703e7804a63b069d1b35
   JLRoutes: 00671e008acb226b8b4c2385318dc1c583ef0dcf
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
@@ -221,7 +221,7 @@ SPEC CHECKSUMS:
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 251093c65f98d6ea282c50bc404bfa631d9fd721
   SwiftyJSON: 96918c1bf505efa50c4f72957018dd3452090c9c
-  TRLActivityFeed: 3b8853497697b0c929e70868cbe162a2c76f80c1
+  TRLActivityFeed: 8adeae375b2a4ff2d3959e3a51558731dfdaa05d
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: 0095cafd3b6ceacbdaae0268a64cfe125f332aca
   TRLLocalInfo: 4419f2b898155a195921654198b9afd0b88baa43
