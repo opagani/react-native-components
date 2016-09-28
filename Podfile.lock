@@ -164,11 +164,11 @@ PODS:
     - TruliaCharts/Core (= 2.2.13)
   - TruliaCharts/Core (2.2.13)
   - TTTAttributedLabel (2.0.0)
-  - TUIKit (1.0.9):
-    - TUIKit/Core (= 1.0.9)
-  - TUIKit/Colors (1.0.9)
-  - TUIKit/Core (1.0.9)
-  - TUIKit/Fonts (1.0.9)
+  - TUIKit (1.0.10):
+    - TUIKit/Core (= 1.0.10)
+  - TUIKit/Colors (1.0.10)
+  - TUIKit/Core (1.0.10)
+  - TUIKit/Fonts (1.0.10)
   - ZGMortgageCalculators (2.0.4):
     - ActionSheetPicker-3.0
     - Alamofire (= 3.5.0)
@@ -210,7 +210,7 @@ SPEC CHECKSUMS:
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: a86f75afee838fc50826eb7a17875dea66844a37
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: ecd67e52dae74cc7d2544b82e6301cfae5954bb3
+  IosCoreLibrary: 19158cc8b0163d73ac6224c01e1e3b7939514c51
   JLRoutes: 00671e008acb226b8b4c2385318dc1c583ef0dcf
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
@@ -228,7 +228,7 @@ SPEC CHECKSUMS:
   TRLMaps: c986e0128a175e074b9bda41b7ce9b02192e8667
   TruliaCharts: 0d712d586c9728037fa4c3b87c5467ca0b480ede
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
-  TUIKit: 25ac35c425e677fee389206d7a803510f2e0a035
+  TUIKit: 9ee01d20811f85adb9d053faf6cc4978df18e03e
   ZGMortgageCalculators: bc92f1f068cddf1d79263b79b195d1cf6e00643e
 
 PODFILE CHECKSUM: 022e3405a915d7e46f16a7b6f81e4ecf32bbbb9b
