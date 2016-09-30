@@ -40,15 +40,15 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
-  - CocoaLumberjack (2.4.0):
-    - CocoaLumberjack/Default (= 2.4.0)
-    - CocoaLumberjack/Extensions (= 2.4.0)
-  - CocoaLumberjack/Core (2.4.0)
-  - CocoaLumberjack/Default (2.4.0):
+  - CocoaLumberjack (2.3.0):
+    - CocoaLumberjack/Default (= 2.3.0)
+    - CocoaLumberjack/Extensions (= 2.3.0)
+  - CocoaLumberjack/Core (2.3.0)
+  - CocoaLumberjack/Default (2.3.0):
     - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.4.0):
+  - CocoaLumberjack/Extensions (2.3.0):
     - CocoaLumberjack/Default
-  - CocoaLumberjack/Swift (2.4.0):
+  - CocoaLumberjack/Swift (2.3.0):
     - CocoaLumberjack/Extensions
   - FBSDKCoreKit (4.16.0):
     - Bolts (~> 1.7)
@@ -88,7 +88,7 @@ PODS:
   - HTAutocompleteTextField (1.3.2)
   - IosCoreLibrary (3.3.0):
     - AFNetworking (= 3.1.0)
-    - CocoaLumberjack (= 2.4.0)
+    - CocoaLumberjack (= 2.3.0)
     - FormatterKit (= 1.8.1)
     - IosCoreLibrary/iOS (= 3.3.0)
     - SFHFKeychainUtils (= 0.0.1)
@@ -100,7 +100,7 @@ PODS:
     - AFNetworking (= 3.1.0)
     - ARAnalytics/Adobe (= 4.0.0)
     - ARAnalytics/DSL (= 4.0.0)
-    - CocoaLumberjack (= 2.4.0)
+    - CocoaLumberjack (= 2.3.0)
     - FBSDKCoreKit (= 4.16.0)
     - FBSDKLoginKit (= 4.16.0)
     - FormatterKit (= 1.8.1)
@@ -191,7 +191,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ZGMortgageCalculators:
-    :commit: b59fe601e68c45a3ec7acc59fd9cdf5420d03083
+    :commit: a933c322920f1d9e35c39dfb1c56e7019df79f50
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 SPEC CHECKSUMS:
@@ -204,13 +204,13 @@ SPEC CHECKSUMS:
   AlamofireObjectMapper: 70f97cbf45c01c48d26aa07a1a7059a60ed7411d
   ARAnalytics: d8a0eee8da481d146ca8af5a9ac632b5c4d17a81
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  CocoaLumberjack: aa9dcab71bdf9eaf2a63bbd9ddc87863efe45457
+  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   FBSDKCoreKit: 7a6baaed4a2b2a244ba253346713bdbc74df135b
   FBSDKLoginKit: 9a514a55a7d05190f64d4ef09502737588b5b561
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: a86f75afee838fc50826eb7a17875dea66844a37
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: 6db295bd6a5519c7623b703e7804a63b069d1b35
+  IosCoreLibrary: 98daa573d7dbd83a75c9883110d298a358f707c2
   JLRoutes: 00671e008acb226b8b4c2385318dc1c583ef0dcf
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
