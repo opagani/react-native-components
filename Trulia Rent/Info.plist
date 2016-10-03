@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ApptimizeAppKey</key>
+	<string>$(APPTIMIZE_APP_KEY)</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -19,7 +21,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>5.1</string>
+	<string>5.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes~ipad</key>
@@ -46,6 +48,7 @@
 				<string>TruliaNotificationCenter</string>
 				<string>TruliaDiscoveryForRent</string>
 				<string>TruliaUserProfileHome</string>
+				<string>TruliaUserProfileRenterResume</string>
 			</array>
 		</dict>
 	</array>
@@ -73,6 +76,7 @@
 				<string>TruliaNotificationCenter</string>
 				<string>TruliaDiscoveryForRent</string>
 				<string>TruliaUserProfileHome</string>
+				<string>TruliaUserProfileRenterResume</string>
 			</array>
 		</dict>
 	</array>
@@ -100,6 +104,7 @@
 				<string>TruliaNotificationCenter</string>
 				<string>TruliaDiscoveryForRent</string>
 				<string>TruliaUserProfileHome</string>
+				<string>TruliaUserProfileRenterResume</string>
 			</array>
 		</dict>
 	</array>
@@ -162,10 +167,8 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Trulia needs your location to allow you to search and get updates on homes.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Trulia needs your location to allow you to search homes and get updates on homes you'll love.</string>
+	<string>Trulia needs your location to allow you to search homes and get updates on homes you&apos;ll love.</string>
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
@@ -208,5 +211,13 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+	<key>NSContactsUsageDescription</key>
+	<string>App needs to access contacts to send an invite to other users to join your board</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>App needs permission to add the property tour event to device's calendar</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App needs permission to save pictures to your device's photo library</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>App needs permission to support continuity between devices</string>
 </dict>
 </plist>

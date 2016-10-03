@@ -192,11 +192,14 @@
 		6B1C41021C9765C800F0DB25 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Trulia Inc";
 				TargetAttributes = {
 					6B1C41091C9765C800F0DB25 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 9FBSWYKDXR;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -356,6 +359,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPTIMIZE_APP_KEY = D6GCzg4hp3bkyNEdEchfSeYPe6acRk4;
+				APS_ENVIRONMENT = development;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -365,15 +370,16 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
-				CUSTOM_PROVISIONING_PROFILE = "";
 				CUSTOM_SIGNING_IDENTITY = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
@@ -406,6 +412,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPTIMIZE_APP_KEY = BVbJAmAtgdbudAjzwcyJUUaaREFjFkM;
+				APS_ENVIRONMENT = production;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -415,15 +423,16 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
-				CUSTOM_PROVISIONING_PROFILE = "";
 				CUSTOM_SIGNING_IDENTITY = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_BITCODE = NO;
@@ -450,20 +459,24 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1444F3402058237C39DE7AD1 /* Pods-Trulia Rent.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Trulia Rent/TruliaRent.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				CUSTOM_PROVISIONING_PROFILE = "";
 				CUSTOM_SIGNING_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				FACEBOOK_APP_ID = 468741039850614;
 				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
 				INFOPLIST_FILE = "Trulia Rent/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental;
 				PRODUCT_NAME = TruliaRent;
-				PROVISIONING_PROFILE = "$(CUSTOM_PROVISIONING_PROFILE)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -471,20 +484,24 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4FDF0BB8493A863BCC47F1F /* Pods-Trulia Rent.appstore.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Trulia Rent/TruliaRent.entitlements";
 				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				CUSTOM_PROVISIONING_PROFILE = "";
 				CUSTOM_SIGNING_IDENTITY = "iPhone Distribution: Trulia, Inc (9QV5QN2J8K)";
+				DEVELOPMENT_TEAM = 9QV5QN2J8K;
 				FACEBOOK_APP_ID = 410970538982032;
 				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
 				INFOPLIST_FILE = "Trulia Rent/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trulia.IosRental;
 				PRODUCT_NAME = TruliaRent;
-				PROVISIONING_PROFILE = "$(CUSTOM_PROVISIONING_PROFILE)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Appstore;
 		};
@@ -492,6 +509,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPTIMIZE_APP_KEY = D6GCzg4hp3bkyNEdEchfSeYPe6acRk4;
+				APS_ENVIRONMENT = production;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -501,15 +520,16 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
-				CUSTOM_PROVISIONING_PROFILE = "";
 				CUSTOM_SIGNING_IDENTITY = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_BITCODE = NO;
@@ -536,20 +556,24 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 546891CAAD98A23F00BBC5DA /* Pods-Trulia Rent.stage.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Trulia Rent/TruliaRent.entitlements";
 				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				CUSTOM_PROVISIONING_PROFILE = EnterpriseIosRental.mobileprovision;
 				CUSTOM_SIGNING_IDENTITY = "iPhone Distribution: Trulia Inc";
+				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				FACEBOOK_APP_ID = 468741039850614;
 				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
 				INFOPLIST_FILE = "Trulia Rent/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental;
 				PRODUCT_NAME = TruliaRent;
-				PROVISIONING_PROFILE = "$(CUSTOM_PROVISIONING_PROFILE)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Stage;
 		};

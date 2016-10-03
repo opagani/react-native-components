@@ -9,7 +9,7 @@ use_frameworks!
 install! 'cocoapods', :deterministic_uuids => false
 
 target 'Trulia Rent' do
-    pod 'ARAnalytics', :subspecs => ['DSL', 'Adobe'], :git => 'https://github.com/orta/ARAnalytics.git', :branch => 'master'
+    # pod 'ARAnalytics', :subspecs => ['DSL', 'Adobe'], :git => 'https://github.com/orta/ARAnalytics.git', :branch => 'master'
     
     # Uncomment the following line to use a local version of TUIKit
     # pod 'TUIKit', :path => '../mob-tuikit'
@@ -19,8 +19,20 @@ target 'Trulia Rent' do
     # the branch on your local machine
     # pod 'ZGMortgageCalculators', :path => '../../mob-ios-mortgage-calculators'
     #------------
+    
+    # If you are NOT actively developing the Mortgage Calculators pod, this line should be enabled instead
+    # pod 'ZGMortgageCalculators', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git', :branch => 'master'
+
+    # pod 'TRLActivityFeed', :path => '../mob-ios-activity-feed'
 
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
+   
+    pod 'ZGMortgageCalculators', '1.1.1'
+ 
+    #----iOS 10/Swift 2.3 migration related.
+    # should be replaced when stable versions of swift 3.0 become available 
+    pod 'AlamofireImage', '2.5.0'
+    pod 'Alamofire', '3.5.0'
     
 end
 
@@ -33,7 +45,17 @@ post_install do |installer|
         config.build_settings['TARGETED_DEVICE_FAMILY'] = '1,2'
       end
     end
+    if target.name == 'IosCoreLibrary'
+      target.build_configurations.each do |config|
+        config.build_settings['OTHER_LDFLAGS'] = ['$(inherited)', '-ObjC']
+      end
+    end
+    target.build_configurations.each do |config|
+      config.build_settings['SWIFT_VERSION'] = '2.3'
+      config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf-with-dsym'
+    end
   end
+
 
   installer.pods_project.build_configurations.each do |config|
     config.build_settings['ENABLE_BITCODE'] = 'NO'  
