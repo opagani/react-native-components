@@ -138,7 +138,7 @@ PODS:
   - SFHFKeychainUtils (0.0.1)
   - SSZipArchive (1.2)
   - SwiftyJSON (2.4.0)
-  - TRLActivityFeed (1.0.2):
+  - TRLActivityFeed (1.1.0):
     - Alamofire (= 3.5.0)
     - AlamofireImage (= 2.5.0)
     - AlamofireObjectMapper
@@ -221,7 +221,7 @@ SPEC CHECKSUMS:
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 251093c65f98d6ea282c50bc404bfa631d9fd721
   SwiftyJSON: 96918c1bf505efa50c4f72957018dd3452090c9c
-  TRLActivityFeed: 8adeae375b2a4ff2d3959e3a51558731dfdaa05d
+  TRLActivityFeed: 7999e804756f3aab33acf0fddddef9384350bd9d
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: 0095cafd3b6ceacbdaae0268a64cfe125f332aca
   TRLLocalInfo: 4419f2b898155a195921654198b9afd0b88baa43
