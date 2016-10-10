@@ -153,7 +153,7 @@ PODS:
     - TRLImageCache/iOS (= 1.0.10)
   - TRLImageCache/iOS (1.0.10):
     - AFNetworking (~> 3.0)
-  - TRLLocalInfo (0.2.0):
+  - TRLLocalInfo (0.2.1):
     - TRLMaps
     - TUIKit
   - TRLMaps (0.4.1):
@@ -224,7 +224,7 @@ SPEC CHECKSUMS:
   TRLActivityFeed: 7999e804756f3aab33acf0fddddef9384350bd9d
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: 0095cafd3b6ceacbdaae0268a64cfe125f332aca
-  TRLLocalInfo: 36782fbbb8e63b126480215e2f43f1bd1311d03f
+  TRLLocalInfo: eab73793a3bff994f42453bcf8674183c9ddaea7
   TRLMaps: 1a4fbb7c47c6ac01ee4ff75d8bd05be459c90c2a
   TruliaCharts: 0d712d586c9728037fa4c3b87c5467ca0b480ede
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
