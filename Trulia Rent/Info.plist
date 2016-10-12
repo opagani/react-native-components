@@ -162,21 +162,59 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>App needs permission to support continuity between devices</string>
 	<key>NSCalendarsUsageDescription</key>
-	<string>App needs permission to add the property tour event to device's calendar</string>
+	<string>App needs permission to add the property tour event to device&apos;s calendar</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>trulia.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+			<key>zillow.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+			<key>c00.adobe.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+			<key>metric.trulia.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+			<key>dpm.demdex.net</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
 	<key>NSContactsUsageDescription</key>
 	<string>App needs to access contacts to send an invite to other users to join your board</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Trulia needs your location to allow you to search homes and get updates on homes you'll love.</string>
+	<string>Trulia needs your location to allow you to search homes and get updates on homes you&apos;ll love.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>App needs permission to save pictures to your device's photo library</string>
+	<string>App needs permission to save pictures to your device&apos;s photo library</string>
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
