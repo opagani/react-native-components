@@ -86,15 +86,15 @@ PODS:
     - FormatterKit/Resources
   - HockeySDK-Source (4.1.1)
   - HTAutocompleteTextField (1.3.2)
-  - IosCoreLibrary (3.3.0):
+  - IosCoreLibrary (3.4.0):
     - AFNetworking (= 3.1.0)
     - CocoaLumberjack (= 2.3.0)
     - FormatterKit (= 1.8.1)
-    - IosCoreLibrary/iOS (= 3.3.0)
+    - IosCoreLibrary/iOS (= 3.4.0)
     - SFHFKeychainUtils (= 0.0.1)
     - SSZipArchive (= 1.2)
     - TUIKit
-  - IosCoreLibrary/iOS (3.3.0):
+  - IosCoreLibrary/iOS (3.4.0):
     - Adjust (= 4.10.1)
     - AdobeMobileSDK (= 4.13.0)
     - AFNetworking (= 3.1.0)
@@ -106,6 +106,7 @@ PODS:
     - FormatterKit (= 1.8.1)
     - HockeySDK-Source (= 4.1.1)
     - HTAutocompleteTextField (= 1.3.2)
+    - iRate (= 1.11.6)
     - JLRoutes (= 1.6.2)
     - Mantle (= 2.0.7)
     - OpenInGoogleMaps (= 0.1.0)
@@ -119,6 +120,7 @@ PODS:
     - TTTAttributedLabel (= 2.0.0)
     - TUIKit
     - ZGMortgageCalculators
+  - iRate (1.11.6)
   - JLRoutes (1.6.2)
   - Mantle (2.0.7):
     - Mantle/extobjc (= 2.0.7)
@@ -183,7 +185,7 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   IosCoreLibrary:
-    :path: ../mob-ioscore-lib/
+    :path: "../mob-ioscore-lib/"
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
@@ -201,7 +203,8 @@ SPEC CHECKSUMS:
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: a86f75afee838fc50826eb7a17875dea66844a37
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: 98daa573d7dbd83a75c9883110d298a358f707c2
+  IosCoreLibrary: 4e98a18e63afe9e108478accdf11d4bd08010663
+  iRate: 61e558919c4a7fde63b3c22ebbd6c114a1eee658
   JLRoutes: 00671e008acb226b8b4c2385318dc1c583ef0dcf
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
