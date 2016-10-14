@@ -209,7 +209,7 @@
 "LoginCreateAcccountDisclaimerText" = "By tapping submit, you are indicating that you have read and agree to Trulia's Terms of Use and Privacy Policy.";
 "LoginForgotPasswordText"="Forgot your password? Reset password.";
 
-/* Appirater */
+/* Rating Messages */
 "Rating Message" = "Enjoying our app? Please take a minute to rate us in the App store.";
 "Rating Title" = "Rate the App";
 "No, Thanks" = "No thanks";

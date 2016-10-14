@@ -405,10 +405,6 @@
 	<array>
 		<integer>2</integer>
 	</array>
-	<key>AppiraterNumberOfSignificantEvents</key>
-	<integer>5</integer>
-	<key>AppiraterUseCountThreshold</key>
-	<integer>5</integer>
 	<key>adUnitIdPrefix</key>
 	<string>/7449/Trulia_iPad_Rentals_App</string>
 	<key>adUnitIds</key>
