@@ -230,6 +230,11 @@ platform :ios do
 
   end
   
+  desc 'Downloads the dsyms from itunes and uploads to crashlytics'
+  lane :refresh_dsyms do |options| 
+    refresh_dsyms_from_itc(fabric_binary_path: @upload_symbols_binary_path, )
+  end
+  
   desc 'Build and archive a new beta locally'
   lane :local do |options|
     

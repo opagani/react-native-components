@@ -12,4 +12,12 @@ for_platform :ios do
     team_name 'Trulia, Inc'
     team_id '9QV5QN2J8K'
   end
+  
+	for_lane :refresh_dsyms do
+    app_identifier 'com.trulia.IosRental'
+    apple_id 'truliaiosproduction@gmail.com'
+    team_name 'Trulia, Inc'
+    team_id '9QV5QN2J8K'
+  end
+  
 end
