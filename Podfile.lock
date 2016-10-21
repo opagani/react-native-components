@@ -158,7 +158,7 @@ PODS:
   - TRLLocalInfo (0.2.1):
     - TRLMaps
     - TUIKit
-  - TRLMaps (0.4.2):
+  - TRLMaps (0.4.5):
     - TRLImageCache (~> 1.0)
     - TUIKit/Colors (~> 1.0)
     - TUIKit/Fonts (~> 1.0)
@@ -166,11 +166,11 @@ PODS:
     - TruliaCharts/Core (= 2.2.13)
   - TruliaCharts/Core (2.2.13)
   - TTTAttributedLabel (2.0.0)
-  - TUIKit (1.0.14):
-    - TUIKit/Core (= 1.0.14)
-  - TUIKit/Colors (1.0.14)
-  - TUIKit/Core (1.0.14)
-  - TUIKit/Fonts (1.0.14)
+  - TUIKit (1.0.15):
+    - TUIKit/Core (= 1.0.15)
+  - TUIKit/Colors (1.0.15)
+  - TUIKit/Core (1.0.15)
+  - TUIKit/Fonts (1.0.15)
   - ZGMortgageCalculators (2.0.5):
     - ActionSheetPicker-3.0
     - Alamofire (= 3.5.0)
@@ -219,10 +219,10 @@ SPEC CHECKSUMS:
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: 0095cafd3b6ceacbdaae0268a64cfe125f332aca
   TRLLocalInfo: eab73793a3bff994f42453bcf8674183c9ddaea7
-  TRLMaps: b204b049b8f6c10529bc517a531d88a0f1c79d23
+  TRLMaps: d3f7924d68ca68421d2dbe12f4d5afcf120c6cb3
   TruliaCharts: 0d712d586c9728037fa4c3b87c5467ca0b480ede
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
-  TUIKit: ff0692a22fbe109083add9b6596b049388eee96c
+  TUIKit: 997d30a6cfa7427309f903a6a7a59b5d77d71ddf
   ZGMortgageCalculators: 43ec2fc7de5ca80b5de1bfbde1c921795c283b4c
 
 PODFILE CHECKSUM: 4078b6b5fece4490ed521190a6ea636aadb6d458
