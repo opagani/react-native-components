@@ -26,8 +26,6 @@ target 'Trulia Rent' do
     # pod 'TRLActivityFeed', :path => '../mob-ios-activity-feed'
 
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
-   
-    pod 'ZGMortgageCalculators', '1.1.1'
  
     #----iOS 10/Swift 2.3 migration related.
     # should be replaced when stable versions of swift 3.0 become available 
