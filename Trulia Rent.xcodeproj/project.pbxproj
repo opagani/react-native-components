@@ -468,6 +468,7 @@
 				COMPRESS_PNG_FILES = NO;
 				CUSTOM_SIGNING_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9FBSWYKDXR;
+				ENABLE_BITCODE = YES;
 				FACEBOOK_APP_ID = 468741039850614;
 				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
 				INFOPLIST_FILE = "Trulia Rent/Info.plist";
@@ -493,6 +494,7 @@
 				COMPRESS_PNG_FILES = NO;
 				CUSTOM_SIGNING_IDENTITY = "iPhone Distribution: Trulia, Inc (9QV5QN2J8K)";
 				DEVELOPMENT_TEAM = 9QV5QN2J8K;
+				ENABLE_BITCODE = YES;
 				FACEBOOK_APP_ID = 410970538982032;
 				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
 				INFOPLIST_FILE = "Trulia Rent/Info.plist";
@@ -565,6 +567,7 @@
 				COMPRESS_PNG_FILES = NO;
 				CUSTOM_SIGNING_IDENTITY = "iPhone Distribution: Trulia Inc";
 				DEVELOPMENT_TEAM = 9FBSWYKDXR;
+				ENABLE_BITCODE = YES;
 				FACEBOOK_APP_ID = 468741039850614;
 				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
 				INFOPLIST_FILE = "Trulia Rent/Info.plist";
