@@ -223,12 +223,16 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>App needs permission to support continuity between devices</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>App needs permission to add the property tour event to device's calendar</string>
 	<key>NSContactsUsageDescription</key>
 	<string>App needs to access contacts to send an invite to other users to join your board</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Trulia needs your location to allow you to search homes and get updates on homes you&apos;ll love.</string>
+	<string>Trulia needs your location to allow you to search homes and get updates on homes you'll love.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>App needs permission to save pictures to your device&apos;s photo library</string>
+	<string>App needs permission to save pictures to your device's photo library</string>
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
