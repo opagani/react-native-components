@@ -1,11 +1,11 @@
 PODS:
   - ActionSheetPicker-3.0 (2.2.0)
-  - Adjust (4.10.1):
-    - Adjust/Core (= 4.10.1)
-  - Adjust/Core (4.10.1)
-  - AdobeMobileSDK (4.13.0):
-    - AdobeMobileSDK/iOS (= 4.13.0)
-  - AdobeMobileSDK/iOS (4.13.0)
+  - Adjust (4.10.2):
+    - Adjust/Core (= 4.10.2)
+  - Adjust/Core (4.10.2)
+  - AdobeMobileSDK (4.13.1):
+    - AdobeMobileSDK/iOS (= 4.13.1)
+  - AdobeMobileSDK/iOS (4.13.1)
   - AFNetworking (3.1.0):
     - AFNetworking/NSURLSession (= 3.1.0)
     - AFNetworking/Reachability (= 3.1.0)
@@ -27,11 +27,11 @@ PODS:
   - AlamofireObjectMapper (3.0.2):
     - Alamofire (~> 3.2)
     - ObjectMapper (~> 1.0)
-  - ARAnalytics/Adobe (4.0.0):
+  - ARAnalytics/Adobe (4.0.1):
     - AdobeMobileSDK
     - ARAnalytics/CoreIOS
-  - ARAnalytics/CoreIOS (4.0.0)
-  - ARAnalytics/DSL (4.0.0):
+  - ARAnalytics/CoreIOS (4.0.1)
+  - ARAnalytics/DSL (4.0.1):
     - ReactiveCocoa (~> 2.0)
     - RSSwizzle (~> 0.1.0)
   - Bolts (1.8.4):
@@ -50,9 +50,9 @@ PODS:
     - CocoaLumberjack/Default
   - CocoaLumberjack/Swift (2.3.0):
     - CocoaLumberjack/Extensions
-  - FBSDKCoreKit (4.16.0):
+  - FBSDKCoreKit (4.17.0):
     - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.16.0):
+  - FBSDKLoginKit (4.17.0):
     - FBSDKCoreKit
   - FormatterKit (1.8.1):
     - FormatterKit/AddressFormatter (= 1.8.1)
@@ -84,7 +84,7 @@ PODS:
     - FormatterKit/Resources
   - FormatterKit/URLRequestFormatter (1.8.1):
     - FormatterKit/Resources
-  - HockeySDK-Source (4.1.1)
+  - HockeySDK-Source (4.1.2)
   - HTAutocompleteTextField (1.3.2)
   - IosCoreLibrary (3.4.0):
     - AFNetworking (= 3.1.0)
@@ -95,16 +95,16 @@ PODS:
     - SSZipArchive (= 1.2)
     - TUIKit
   - IosCoreLibrary/iOS (3.4.0):
-    - Adjust (= 4.10.1)
-    - AdobeMobileSDK (= 4.13.0)
+    - Adjust (= 4.10.2)
+    - AdobeMobileSDK (= 4.13.1)
     - AFNetworking (= 3.1.0)
-    - ARAnalytics/Adobe (= 4.0.0)
-    - ARAnalytics/DSL (= 4.0.0)
+    - ARAnalytics/Adobe (= 4.0.1)
+    - ARAnalytics/DSL (= 4.0.1)
     - CocoaLumberjack (= 2.3.0)
-    - FBSDKCoreKit (= 4.16.0)
-    - FBSDKLoginKit (= 4.16.0)
+    - FBSDKCoreKit (= 4.17.0)
+    - FBSDKLoginKit (= 4.17.0)
     - FormatterKit (= 1.8.1)
-    - HockeySDK-Source (= 4.1.1)
+    - HockeySDK-Source (= 4.1.2)
     - HTAutocompleteTextField (= 1.3.2)
     - iRate (= 1.11.6)
     - JLRoutes (= 1.6.2)
@@ -171,7 +171,7 @@ PODS:
   - TUIKit/Colors (1.0.15)
   - TUIKit/Core (1.0.15)
   - TUIKit/Fonts (1.0.15)
-  - ZGMortgageCalculators (2.0.5):
+  - ZGMortgageCalculators (2.0.6):
     - ActionSheetPicker-3.0
     - Alamofire (= 3.5.0)
     - SwiftyJSON (= 2.4.0)
@@ -189,21 +189,21 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
-  Adjust: fc4653527bb3fd50411427510116ba786d403be5
-  AdobeMobileSDK: 52c3fbf43b5b054132393b1486ecbefca0ba01db
+  Adjust: f254dfb61a326629df96e0a49e78e009be5b1963
+  AdobeMobileSDK: f773e2192b7a1b55e494134885a11e37614a37b2
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
   AlamofireImage: 2d34936e5201270bb17a316a786e90e83b4a249d
   AlamofireObjectMapper: 70f97cbf45c01c48d26aa07a1a7059a60ed7411d
-  ARAnalytics: d8a0eee8da481d146ca8af5a9ac632b5c4d17a81
+  ARAnalytics: 85e7bb999e2a40cea7d2394e71e8ecbafa50f2d0
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
-  FBSDKCoreKit: 7a6baaed4a2b2a244ba253346713bdbc74df135b
-  FBSDKLoginKit: 9a514a55a7d05190f64d4ef09502737588b5b561
+  FBSDKCoreKit: 30a21d2d7b92984b3d80497113433c00824c35e9
+  FBSDKLoginKit: 42b7129ac0373ca99eaf4cbebf4d07bd42371f59
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
-  HockeySDK-Source: a86f75afee838fc50826eb7a17875dea66844a37
+  HockeySDK-Source: 58d09800c495347a144e0bd7e7c7087c7831f617
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: 13768e15dfccba979fe8589430645df2673e21f5
+  IosCoreLibrary: b9eb249abae7e1b02aaf6f6d19e491e146fe3424
   iRate: 61e558919c4a7fde63b3c22ebbd6c114a1eee658
   JLRoutes: 00671e008acb226b8b4c2385318dc1c583ef0dcf
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
@@ -223,7 +223,7 @@ SPEC CHECKSUMS:
   TruliaCharts: 0d712d586c9728037fa4c3b87c5467ca0b480ede
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 997d30a6cfa7427309f903a6a7a59b5d77d71ddf
-  ZGMortgageCalculators: 43ec2fc7de5ca80b5de1bfbde1c921795c283b4c
+  ZGMortgageCalculators: c7d3c620e6e23d5f5f6bddf53386137734da3382
 
 PODFILE CHECKSUM: 96fbbe07e1fa07660056421a289ed6be1a66a92f
 
