@@ -166,26 +166,36 @@ PODS:
     - TruliaCharts/Core (= 2.2.13)
   - TruliaCharts/Core (2.2.13)
   - TTTAttributedLabel (2.0.0)
-  - TUIKit (1.0.15):
-    - TUIKit/Core (= 1.0.15)
-  - TUIKit/Colors (1.0.15)
-  - TUIKit/Core (1.0.15)
-  - TUIKit/Fonts (1.0.15)
+  - TUIKit (1.0.16):
+    - TUIKit/Core (= 1.0.16)
+  - TUIKit/Colors (1.0.16)
+  - TUIKit/Core (1.0.16)
+  - TUIKit/Fonts (1.0.16)
   - ZGMortgageCalculators (2.0.6):
     - ActionSheetPicker-3.0
     - Alamofire (= 3.5.0)
     - SwiftyJSON (= 2.4.0)
     - TruliaCharts (= 2.2.13)
+    - TTTAttributedLabel (= 2.0.0)
     - TUIKit (~> 1.0.6)
 
 DEPENDENCIES:
   - Alamofire (= 3.5.0)
   - AlamofireImage (= 2.5.0)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
+  - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
 EXTERNAL SOURCES:
   IosCoreLibrary:
     :path: "../mob-ioscore-lib/"
+  ZGMortgageCalculators:
+    :branch: master
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
+
+CHECKOUT OPTIONS:
+  ZGMortgageCalculators:
+    :commit: b29bee749963fcbaea7f7602165f571bdc6d9ded
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
@@ -222,9 +232,9 @@ SPEC CHECKSUMS:
   TRLMaps: 17a88fa9caa9f6d10f4aad20283f8e95f4c16074
   TruliaCharts: 0d712d586c9728037fa4c3b87c5467ca0b480ede
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
-  TUIKit: 997d30a6cfa7427309f903a6a7a59b5d77d71ddf
-  ZGMortgageCalculators: c7d3c620e6e23d5f5f6bddf53386137734da3382
+  TUIKit: 2b99a7d0df06f9cd7a6f3e5c780afc7afad02031
+  ZGMortgageCalculators: cec0376ced241473a61fb1d9d481396f6e6ced13
 
-PODFILE CHECKSUM: 96fbbe07e1fa07660056421a289ed6be1a66a92f
+PODFILE CHECKSUM: 091187fc7984e9d160174272c74cdb4dfc052bae
 
 COCOAPODS: 1.0.1
