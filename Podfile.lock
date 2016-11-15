@@ -194,7 +194,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ZGMortgageCalculators:
-    :commit: 3882d7d6d6fb125eaef4ff0a1fe34c78d48a04ab
+    :commit: 66ae8d71a254e1c6d21a85a74029a4ac631bd997
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 SPEC CHECKSUMS:
