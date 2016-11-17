@@ -158,7 +158,7 @@ PODS:
   - TRLLocalInfo (0.3.0):
     - TRLMaps
     - TUIKit
-  - TRLMaps (0.5.0):
+  - TRLMaps (0.6.0):
     - TRLImageCache (~> 1.0)
     - TUIKit/Colors (~> 1.0)
     - TUIKit/Fonts (~> 1.0)
@@ -229,7 +229,7 @@ SPEC CHECKSUMS:
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: 0095cafd3b6ceacbdaae0268a64cfe125f332aca
   TRLLocalInfo: d41ab9af2adc9656c022a4012d885ade134dda40
-  TRLMaps: 17a88fa9caa9f6d10f4aad20283f8e95f4c16074
+  TRLMaps: ffd3c12a266808381081e8a76a6a6a7dea53385c
   TruliaCharts: 0d712d586c9728037fa4c3b87c5467ca0b480ede
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 0bd19fa822da571b88f426464c199360d4d14db8
