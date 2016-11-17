@@ -11,8 +11,9 @@ install! 'cocoapods', :deterministic_uuids => false
 target 'Trulia Rent' do
     # pod 'ARAnalytics', :subspecs => ['DSL', 'Adobe'], :git => 'https://github.com/orta/ARAnalytics.git', :branch => 'master'
     
-    # Uncomment the following line to use a local version of TUIKit
+    # Uncomment this line in place of the following to use a local version of TUIKit
     # pod 'TUIKit', :path => '../mob-tuikit'
+    pod 'TUIKit', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-tuikit.git', :branch => 'master'
 
     #------------
     # Uncomment the following line if you are actively developing the Mortgage Calculators pod. This will point to
