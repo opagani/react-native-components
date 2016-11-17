@@ -20,6 +20,8 @@ target 'Trulia Rent' do
     # the branch on your local machine
     # pod 'ZGMortgageCalculators', :path => '../../mob-ios-mortgage-calculators'
     #------------
+
+    pod 'TRLLocalInfo', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git', :branch => 'develop'
     
     # If you are NOT actively developing the Mortgage Calculators pod, this line should be enabled instead
      pod 'ZGMortgageCalculators', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git', :branch => 'master'
