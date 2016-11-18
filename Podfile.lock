@@ -187,14 +187,14 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   IosCoreLibrary:
-    :path: "../mob-ioscore-lib/"
+    :path: ../mob-ioscore-lib/
   ZGMortgageCalculators:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 CHECKOUT OPTIONS:
   ZGMortgageCalculators:
-    :commit: 2d75c5bc7209e1c211da9e5d0c37d316864a965f
+    :commit: 9777022a5640f28473c3ce0bf965ae7fd53a7372
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 SPEC CHECKSUMS:
