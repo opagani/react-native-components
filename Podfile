@@ -9,24 +9,26 @@ use_frameworks!
 install! 'cocoapods', :deterministic_uuids => false
 
 target 'Trulia Rent' do
-    # pod 'ARAnalytics', :subspecs => ['DSL', 'Adobe'], :git => 'https://github.com/orta/ARAnalytics.git', :branch => 'master'
-    
-    # Uncomment this line in place of the following to use a local version of TUIKit
+    # Uncomment the following lines if you are actively developing a pod and would like to point to your local copy
+    # pod 'TRLActivityFeed', :path => '../../mob-ios-activity-feed'
     # pod 'TUIKit', :path => '../mob-tuikit'
-    pod 'TUIKit', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-tuikit.git', :branch => 'master'
+    # pod 'TRLMaps', :path => '../mob-ios-map-tools'
+    # pod 'TRLLocalInfo', :path => '../mob-ios-local-info'
+    # pod 'ZGMortgageCalculators', :path => '../mob-ios-mortgage-calculators'
+    # pod 'TRLImageCache/Base', :path => '../mob-ios-image-cache'
+    # pod 'TRLImageCache/iOS', :path => '../mob-ios-image-cache'
+    # pod 'TRLCurrentLocation', :path => '../mob-ios-corelocation'
 
-    #------------
-    # Uncomment the following line if you are actively developing the Mortgage Calculators pod. This will point to
-    # the branch on your local machine
-    # pod 'ZGMortgageCalculators', :path => '../../mob-ios-mortgage-calculators'
-    #------------
-
-    pod 'TRLLocalInfo', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git', :branch => 'develop'
-    
-    # If you are NOT actively developing the Mortgage Calculators pod, this line should be enabled instead
-     pod 'ZGMortgageCalculators', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git', :branch => 'master'
-
-    # pod 'TRLActivityFeed', :path => '../mob-ios-activity-feed'
+    # If you are NOT actively developing a pod, these lines should be enabled instead
+    # pod 'ARAnalytics', :subspecs => ['DSL', 'Adobe'], :git => 'https://github.com/orta/ARAnalytics.git', :branch => 'master'  
+    pod 'ZGMortgageCalculators', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git', :branch => 'master'
+    # pod 'TUIKit', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-tuikit', :branch => 'master'
+    # pod 'TRLMaps', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools', :branch => 'master'
+    # pod 'TRLActivityFeed', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed', :branch => 'master'
+    pod 'TRLLocalInfo', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git', :branch => 'master'
+    # pod 'TRLCurrentLocation', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-corelocation.git', :branch => 'master'
+    # pod 'TRLImageCache/Base', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git', :branch => 'master'
+    # pod 'TRLImageCache/iOS', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git', :branch => 'master'
 
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
  
