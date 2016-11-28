@@ -166,11 +166,11 @@ PODS:
     - TruliaCharts/Core (= 2.2.13)
   - TruliaCharts/Core (2.2.13)
   - TTTAttributedLabel (2.0.0)
-  - TUIKit (1.0.17):
-    - TUIKit/Core (= 1.0.17)
-  - TUIKit/Colors (1.0.17)
-  - TUIKit/Core (1.0.17)
-  - TUIKit/Fonts (1.0.17)
+  - TUIKit (1.0.16):
+    - TUIKit/Core (= 1.0.16)
+  - TUIKit/Colors (1.0.16)
+  - TUIKit/Core (1.0.16)
+  - TUIKit/Fonts (1.0.16)
   - ZGMortgageCalculators (2.0.6):
     - ActionSheetPicker-3.0
     - Alamofire (= 3.5.0)
@@ -184,6 +184,7 @@ DEPENDENCIES:
   - AlamofireImage (= 2.5.0)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
   - TRLLocalInfo (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git`, branch `master`)
+  - TUIKit (from `ssh://git@stash.sv2.trulia.com/mob/mob-tuikit`, branch `master`)
   - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
 EXTERNAL SOURCES:
@@ -192,6 +193,9 @@ EXTERNAL SOURCES:
   TRLLocalInfo:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git
+  TUIKit:
+    :branch: master
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-tuikit
   ZGMortgageCalculators:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
@@ -200,6 +204,9 @@ CHECKOUT OPTIONS:
   TRLLocalInfo:
     :commit: fa18840e90e75f166326e31a3123ad5087b115d3
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git
+  TUIKit:
+    :commit: 01036b687c1863ffe780cd26509bf754c10ede09
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-tuikit
   ZGMortgageCalculators:
     :commit: b3e924a6a6bec771d8e348d952300b3ed9a8ae6f
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
@@ -239,9 +246,9 @@ SPEC CHECKSUMS:
   TRLMaps: ffd3c12a266808381081e8a76a6a6a7dea53385c
   TruliaCharts: 0d712d586c9728037fa4c3b87c5467ca0b480ede
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
-  TUIKit: 0bd19fa822da571b88f426464c199360d4d14db8
+  TUIKit: 44e2e8a1af81cc09aafeae8a2adb460a948140a8
   ZGMortgageCalculators: cec0376ced241473a61fb1d9d481396f6e6ced13
 
-PODFILE CHECKSUM: c0d3eee8f58e07535fbfc3571c4ecd15f076f6e1
+PODFILE CHECKSUM: ab036322df4008def811661d59944de0aa0a560d
 
 COCOAPODS: 1.0.1
