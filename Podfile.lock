@@ -171,7 +171,7 @@ PODS:
   - TUIKit/Colors (1.0.17)
   - TUIKit/Core (1.0.17)
   - TUIKit/Fonts (1.0.17)
-  - ZGMortgageCalculators (2.1.1):
+  - ZGMortgageCalculators (2.1.2):
     - ActionSheetPicker-3.0
     - Alamofire (= 3.5.0)
     - SwiftyJSON (= 2.4.0)
@@ -224,7 +224,7 @@ SPEC CHECKSUMS:
   TruliaCharts: 0d712d586c9728037fa4c3b87c5467ca0b480ede
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 0bd19fa822da571b88f426464c199360d4d14db8
-  ZGMortgageCalculators: 4e3680df6f7e3705eb7466f3d7b4081fd59c9479
+  ZGMortgageCalculators: e67ad38146f49906e29db93a8f73494e56eae062
 
 PODFILE CHECKSUM: 96fbbe07e1fa07660056421a289ed6be1a66a92f
 
