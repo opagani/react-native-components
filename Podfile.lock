@@ -171,7 +171,7 @@ PODS:
   - TUIKit/Colors (1.0.16)
   - TUIKit/Core (1.0.16)
   - TUIKit/Fonts (1.0.16)
-  - ZGMortgageCalculators (2.0.6):
+  - ZGMortgageCalculators (2.1.2):
     - ActionSheetPicker-3.0
     - Alamofire (= 3.5.0)
     - SwiftyJSON (= 2.4.0)
@@ -208,7 +208,7 @@ CHECKOUT OPTIONS:
     :commit: 01036b687c1863ffe780cd26509bf754c10ede09
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-tuikit
   ZGMortgageCalculators:
-    :commit: b3e924a6a6bec771d8e348d952300b3ed9a8ae6f
+    :commit: 6033c58ec2ec53d74e6b6352931550acc24c102b
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 SPEC CHECKSUMS:
@@ -247,7 +247,7 @@ SPEC CHECKSUMS:
   TruliaCharts: 0d712d586c9728037fa4c3b87c5467ca0b480ede
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 44e2e8a1af81cc09aafeae8a2adb460a948140a8
-  ZGMortgageCalculators: cec0376ced241473a61fb1d9d481396f6e6ced13
+  ZGMortgageCalculators: db1cfb03d4c2d08408e27b5ca29dfe8ad250acdb
 
 PODFILE CHECKSUM: ab036322df4008def811661d59944de0aa0a560d
 
