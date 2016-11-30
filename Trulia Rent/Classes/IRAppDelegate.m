@@ -15,7 +15,6 @@
 #import "ICAccountController.h"
 #import "ICAppearance.h"
 #import "ICLog.h"
-#import "ICUtility.h"
 #import "ICMarketingAnalyticsController.h"
 #import "ICManagedSearch.h"
 #import "ICDiscoveryParameterSet.h"
