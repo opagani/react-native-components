@@ -71,5 +71,17 @@ post_install do |installer|
     elsif config.name == 'Stage'
       config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'STAGE=1'
     end
+
+    #
+    # This next bit of configuration is necessary to allow IBDesignables to render correctly inside
+    # Interface Builder. It however cannot be included in Stage/AppStore builds because it causes
+    # the app on one device (QA's iPad Air 2, running iOS 9.3.x) to crash on startup.
+    #
+    if config.name == 'Debug'
+      config.build_settings['LD_RUNPATH_SEARCH_PATHS'] = [
+        '$(FRAMEWORK_SEARCH_PATHS)',
+        '"/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator"'
+      ]
+    end  
   end
 end
