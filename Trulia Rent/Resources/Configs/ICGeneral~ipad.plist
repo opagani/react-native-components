@@ -39,21 +39,6 @@
 	</dict>
 	<key>SupportsComscore</key>
 	<true/>
-	<key>Experian</key>
-	<dict>
-		<key>PostLeadImpressionTrackerURL</key>
-		<string>http://ad.doubleclick.net/ad/N3973.132720.9991984390421/B7722660.108637630;</string>
-		<key>PostLeadCTRTrackerURL</key>
-		<string>http://ad.doubleclick.net/ddm/clk/281874799;108637630;y</string>
-		<key>PostLeadLogoTrackerURL</key>
-		<string>http://ad.doubleclick.net/ddm/clk/282403287;109241547;e</string>
-		<key>ImpressionURL</key>
-		<string>http://ad.doubleclick.net/ad/N3973.132720.9991984390421/B7722660.108619911;</string>
-		<key>CTRTrackerURL</key>
-		<string>http://ad.doubleclick.net/ddm/clk/281867838;108619911;w</string>
-		<key>LogoTrackerURL</key>
-		<string>http://ad.doubleclick.net/ddm/clk/282400591;109238360;y</string>
-	</dict>
 	<key>validSortKeys</key>
 	<array>
 		<string>Best Match</string>
@@ -174,51 +159,51 @@
 		<string>Chicago, IL</string>
 		<string>Los Angeles, CA</string>
 	</array>
-    <key>validForSoldPriceValues</key>
-    <array>
-        <integer>0</integer>
-        <integer>10000</integer>
-        <integer>20000</integer>
-        <integer>30000</integer>
-        <integer>50000</integer>
-        <integer>100000</integer>
-        <integer>130000</integer>
-        <integer>150000</integer>
-        <integer>200000</integer>
-        <integer>250000</integer>
-        <integer>300000</integer>
-        <integer>350000</integer>
-        <integer>400000</integer>
-        <integer>450000</integer>
-        <integer>500000</integer>
-        <integer>550000</integer>
-        <integer>600000</integer>
-        <integer>650000</integer>
-        <integer>700000</integer>
-        <integer>750000</integer>
-        <integer>800000</integer>
-        <integer>850000</integer>
-        <integer>900000</integer>
-        <integer>950000</integer>
-        <integer>1000000</integer>
-        <integer>1100000</integer>
-        <integer>1200000</integer>
-        <integer>1250000</integer>
-        <integer>1400000</integer>
-        <integer>1500000</integer>
-        <integer>1600000</integer>
-        <integer>1700000</integer>
-        <integer>1750000</integer>
-        <integer>1800000</integer>
-        <integer>1900000</integer>
-        <integer>2000000</integer>
-        <integer>2250000</integer>
-        <integer>2500000</integer>
-        <integer>2750000</integer>
-        <integer>3000000</integer>
-        <integer>3500000</integer>
-        <integer>4000000</integer>
-    </array>
+	<key>validForSoldPriceValues</key>
+	<array>
+		<integer>0</integer>
+		<integer>10000</integer>
+		<integer>20000</integer>
+		<integer>30000</integer>
+		<integer>50000</integer>
+		<integer>100000</integer>
+		<integer>130000</integer>
+		<integer>150000</integer>
+		<integer>200000</integer>
+		<integer>250000</integer>
+		<integer>300000</integer>
+		<integer>350000</integer>
+		<integer>400000</integer>
+		<integer>450000</integer>
+		<integer>500000</integer>
+		<integer>550000</integer>
+		<integer>600000</integer>
+		<integer>650000</integer>
+		<integer>700000</integer>
+		<integer>750000</integer>
+		<integer>800000</integer>
+		<integer>850000</integer>
+		<integer>900000</integer>
+		<integer>950000</integer>
+		<integer>1000000</integer>
+		<integer>1100000</integer>
+		<integer>1200000</integer>
+		<integer>1250000</integer>
+		<integer>1400000</integer>
+		<integer>1500000</integer>
+		<integer>1600000</integer>
+		<integer>1700000</integer>
+		<integer>1750000</integer>
+		<integer>1800000</integer>
+		<integer>1900000</integer>
+		<integer>2000000</integer>
+		<integer>2250000</integer>
+		<integer>2500000</integer>
+		<integer>2750000</integer>
+		<integer>3000000</integer>
+		<integer>3500000</integer>
+		<integer>4000000</integer>
+	</array>
 	<key>validSqftValues</key>
 	<array>
 		<integer>0</integer>
@@ -342,16 +327,6 @@
 		<key>PublisherSecret</key>
 		<string>ada334158b059052e7cfc0606003ff41</string>
 	</dict>
-	<key>HasOffersConversionKey</key>
-	<string>82ede779dbe629124139125f19d180f0</string>
-	<key>HasOffersAdvertiserID</key>
-	<string>3050</string>
-	<key>HasOffersSendLeadEventID</key>
-	<string>823281206</string>
-	<key>HasOffersRegistrationEventID</key>
-	<string>823281490</string>
-	<key>HasOffersSaveEventID</key>
-	<string>823281438</string>
 	<key>IndexTypes</key>
 	<array>
 		<string>for rent</string>
@@ -364,47 +339,8 @@
 	<string>com.Trulia.IosRental</string>
 	<key>ListingSearchPageSize</key>
 	<integer>50</integer>
-	<key>NearbySearchDistance</key>
-	<string>0.25</string>
-	<key>SyncService</key>
-	<array>
-		<string>Account</string>
-		<string>Home</string>
-		<string>Search</string>
-		<string>State</string>
-		<string>Log</string>
-	</array>
-	<key>NearbyText</key>
-	<string>Current Location</string>
-	<key>MapAreaText</key>
-	<string>Viewable Map Area</string>
-	<key>RentOnlySearches</key>
-	<integer>1</integer>
-	<key>RentOnlyListings</key>
-	<integer>1</integer>
-	<key>MBSAdParameters</key>
-	<dict>
-		<key>MBSAdAppID</key>
-		<string>E3872E80124A0130638B12313D276CB2</string>
-		<key>MBSAdMode</key>
-		<string>stage</string>
-		<key>MBSAdProduct</key>
-		<string>${PRODUCT_NAME}</string>
-		<key>MBSAdPublisherID</key>
-		<string>111228</string>
-		<key>MBSAdServer</key>
-		<string>http://mrp.rubiconproject.com/</string>
-		<key>MBSAdTestAdID</key>
-		<string>0</string>
-	</dict>
-	<key>DFPAdIDForSRP</key>
-	<string>/7449/iPad_Rentals_App/iPad_Rentals_App_SearchResults</string>
 	<key>AppstoreAppID</key>
 	<string>508163604</string>
-	<key>NotificationsSupported</key>
-	<array>
-		<integer>2</integer>
-	</array>
 	<key>adUnitIdPrefix</key>
 	<string>/7449/Trulia_iPad_Rentals_App</string>
 	<key>adUnitIds</key>
