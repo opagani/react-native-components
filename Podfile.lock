@@ -209,7 +209,7 @@ CHECKOUT OPTIONS:
     :commit: b0969d96387d16ecc14792f7cdabffc4842ee2ca
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-tuikit
   ZGMortgageCalculators:
-    :commit: 3f0672aea72075bf04681f8038e53d365c4c9479
+    :commit: b848a10ad46c5aafd7098b93e7fdbbca427c86ea
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 SPEC CHECKSUMS:
