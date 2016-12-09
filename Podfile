@@ -9,6 +9,10 @@ use_frameworks!
 install! 'cocoapods', :deterministic_uuids => false
 
 target 'Trulia Rent' do
+    # We need to use this forked version of CocoaLumberjack, because WatchKit 1.0 has a problem with CocoaLumberjack not specifying its modulemap
+    # See https://github.com/CocoaLumberjack/CocoaLumberjack/issues/815
+    pod 'CocoaLumberjack', :git => 'https://github.com/arifken/CocoaLumberjack.git', :branch => 'master'
+
     # Uncomment the following lines if you are actively developing a pod and would like to point to your local copy
     # pod 'TRLActivityFeed', :path => '../../mob-ios-activity-feed'
     # pod 'TUIKit', :path => '../mob-tuikit'

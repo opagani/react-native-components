@@ -43,9 +43,7 @@ PODS:
   - CocoaLumberjack (3.0.0):
     - CocoaLumberjack/Default (= 3.0.0)
     - CocoaLumberjack/Extensions (= 3.0.0)
-  - CocoaLumberjack/Core (3.0.0)
-  - CocoaLumberjack/Default (3.0.0):
-    - CocoaLumberjack/Core
+  - CocoaLumberjack/Default (3.0.0)
   - CocoaLumberjack/Extensions (3.0.0):
     - CocoaLumberjack/Default
   - CocoaLumberjack/Swift (3.0.0):
@@ -180,6 +178,7 @@ PODS:
 DEPENDENCIES:
   - ARAnalytics/Adobe (from `https://github.com/orta/ARAnalytics.git`, branch `master`)
   - ARAnalytics/DSL (from `https://github.com/orta/ARAnalytics.git`, branch `master`)
+  - CocoaLumberjack (from `https://github.com/arifken/CocoaLumberjack.git`, branch `master`)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
   - TRLActivityFeed (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git`, branch `master`)
   - TRLImageCache/Base (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git`, branch `master`)
@@ -193,6 +192,9 @@ EXTERNAL SOURCES:
   ARAnalytics:
     :branch: master
     :git: https://github.com/orta/ARAnalytics.git
+  CocoaLumberjack:
+    :branch: master
+    :git: https://github.com/arifken/CocoaLumberjack.git
   IosCoreLibrary:
     :path: "../mob-ioscore-lib/"
   TRLActivityFeed:
@@ -218,6 +220,9 @@ CHECKOUT OPTIONS:
   ARAnalytics:
     :commit: ced51e56ca362f95442310f3c20905266d1a7a8b
     :git: https://github.com/orta/ARAnalytics.git
+  CocoaLumberjack:
+    :commit: cb7b53215723c2f883f4278422429b0cdc5251cf
+    :git: https://github.com/arifken/CocoaLumberjack.git
   TRLActivityFeed:
     :commit: d89d866bf67352c46186e89c55d996abbb1eb143
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
@@ -247,7 +252,7 @@ SPEC CHECKSUMS:
   ARAnalytics: 85e7bb999e2a40cea7d2394e71e8ecbafa50f2d0
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   Charts: 0e84f4418e87dad6a9edde221fba37ebb51d3ba7
-  CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
+  CocoaLumberjack: bffe362db4f1efb635d62dc1db8adca86aa18523
   FBSDKCoreKit: 15fef8804a4629f98c6f4e55e81a76c9d725d85e
   FBSDKLoginKit: 6773073e970b2b15fb12e451ce7f11da0532b880
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
@@ -274,6 +279,6 @@ SPEC CHECKSUMS:
   TUIKit: 44e2e8a1af81cc09aafeae8a2adb460a948140a8
   ZGMortgageCalculators: 11fcdd12c3dd67909b588d399925a468cee1c050
 
-PODFILE CHECKSUM: ab6a0f496e2990b18966cc1dfd161ea3a4870fe7
+PODFILE CHECKSUM: 9be2f8607c20428ebb0a4f2290589affb658b11c
 
 COCOAPODS: 1.0.1
