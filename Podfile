@@ -23,7 +23,7 @@ target 'Trulia Rent' do
     # pod 'ARAnalytics', :subspecs => ['DSL', 'Adobe'], :git => 'https://github.com/orta/ARAnalytics.git', :branch => 'master'  
     pod 'ZGMortgageCalculators', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git', :branch => 'master'
     pod 'TUIKit', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-tuikit', :branch => 'master'
-    # pod 'TRLMaps', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools', :branch => 'master'
+    pod 'TRLMaps', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools', :branch => 'master'
     # pod 'TRLActivityFeed', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed', :branch => 'master'
     pod 'TRLLocalInfo', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git', :branch => 'master'
     pod 'TRLActivityFeed', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git', :branch => 'master'

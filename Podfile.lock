@@ -179,6 +179,7 @@ DEPENDENCIES:
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
   - TRLActivityFeed (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git`, branch `master`)
   - TRLLocalInfo (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git`, branch `master`)
+  - TRLMaps (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools`, branch `master`)
   - TUIKit (from `ssh://git@stash.sv2.trulia.com/mob/mob-tuikit`, branch `master`)
   - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
@@ -191,6 +192,9 @@ EXTERNAL SOURCES:
   TRLLocalInfo:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git
+  TRLMaps:
+    :branch: master
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools
   TUIKit:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-tuikit
@@ -205,6 +209,9 @@ CHECKOUT OPTIONS:
   TRLLocalInfo:
     :commit: e9883e11038975bd07feecc53abb1839b92cc871
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git
+  TRLMaps:
+    :commit: 5f872e0587afb0da156e5de8ea928dd398f2f5d7
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools
   TUIKit:
     :commit: b0969d96387d16ecc14792f7cdabffc4842ee2ca
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-tuikit
@@ -243,12 +250,12 @@ SPEC CHECKSUMS:
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLImageCache: 0095cafd3b6ceacbdaae0268a64cfe125f332aca
   TRLLocalInfo: b284708d89821704c1a2e922be047f0435cae8eb
-  TRLMaps: ffd3c12a266808381081e8a76a6a6a7dea53385c
+  TRLMaps: 39f11d107c5c9bbc615186bbaff17c5b3a95758c
   TRLObjectMapperTransforms: 9c1dfb967bb4e07ed73959d3a4a142c26c834924
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 44e2e8a1af81cc09aafeae8a2adb460a948140a8
   ZGMortgageCalculators: 11fcdd12c3dd67909b588d399925a468cee1c050
 
-PODFILE CHECKSUM: 6f3520bb1cd84c1e6213fe3961be86f55f1a5f49
+PODFILE CHECKSUM: 4854b215b7d78ad7546558db8342ee7a1d7e0c09
 
 COCOAPODS: 1.0.1
