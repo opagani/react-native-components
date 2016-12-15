@@ -39,21 +39,6 @@
 	</dict>
 	<key>SupportsComscore</key>
 	<true/>
-	<key>Experian</key>
-	<dict>
-		<key>PostLeadImpressionTrackerURL</key>
-		<string>http://ad.doubleclick.net/ad/N3973.132720.9991984390421/B7722660.108636961;</string>
-		<key>PostLeadCTRTrackerURL</key>
-		<string>http://ad.doubleclick.net/ddm/clk/281874479;108636961;z</string>
-		<key>PostLeadLogoTrackerURL</key>
-		<string>http://ad.doubleclick.net/ddm/clk/282401899;109239040;g</string>
-		<key>ImpressionURL</key>
-		<string>http://ad.doubleclick.net/ad/N3973.132720.9991984390421/B7722660.108619678;</string>
-		<key>CTRTrackerURL</key>
-		<string>http://ad.doubleclick.net/ddm/clk/281867859;108619678;j</string>
-		<key>LogoTrackerURL</key>
-		<string>http://ad.doubleclick.net/ddm/clk/282400956;109237803;e</string>
-	</dict>
 	<key>comScore</key>
 	<dict>
 		<key>CustomerC2</key>
@@ -61,8 +46,6 @@
 		<key>PublisherSecret</key>
 		<string>ada334158b059052e7cfc0606003ff41</string>
 	</dict>
-	<key>SupportsGeofencing</key>
-	<false/>
 	<key>validBathValues</key>
 	<array>
 		<integer>0</integer>
@@ -344,14 +327,8 @@
 		<integer>9750</integer>
 		<integer>10000</integer>
 	</array>
-	<key>ShowIntroForUpdate</key>
-	<true/>
 	<key>AccountType</key>
 	<string>Renter</string>
-	<key>RentOnlyListings</key>
-	<string>1</string>
-	<key>RentOnlySearches</key>
-	<string>1</string>
 	<key>Settings</key>
 	<array>
 		<dict>
@@ -373,58 +350,12 @@
 	<string>com.Trulia.IosRental</string>
 	<key>ListingSearchPageSize</key>
 	<integer>25</integer>
-	<key>NearbySearchDistance</key>
-	<string>0.25</string>
-	<key>SyncService</key>
-	<array>
-		<string>Account</string>
-		<string>Home</string>
-		<string>Search</string>
-		<string>State</string>
-		<string>Notification</string>
-		<string>Log</string>
-	</array>
-	<key>NearbyText</key>
-	<string>Current Location</string>
-	<key>MapAreaText</key>
-	<string>Viewable Map Area</string>
-	<key>TapSenseAppId</key>
-	<string>288487321</string>
 	<key>IndexTypes</key>
 	<array>
 		<string>for rent</string>
 	</array>
 	<key>adUnitIdForProperty</key>
 	<string>/7449/iPhone_Main_App/iPhone_App_Property_Results</string>
-	<key>NotificationsSupported</key>
-	<array>
-		<integer>2</integer>
-	</array>
-	<key>MBSAdParameters</key>
-	<dict>
-		<key>MBSAdAppID</key>
-		<string>44D965502C500130643912313D276CB2</string>
-		<key>MBSAdMode</key>
-		<string>stage</string>
-		<key>MBSAdProduct</key>
-		<string>${PRODUCT_NAME}</string>
-		<key>MBSAdPublisherID</key>
-		<string>111228</string>
-		<key>MBSAdServer</key>
-		<string>http://mrp.rubiconproject.com/</string>
-		<key>MBSAdTestAdID</key>
-		<string>0</string>
-	</dict>
-	<key>HasOffersConversionKey</key>
-	<string>82ede779dbe629124139125f19d180f0</string>
-	<key>HasOffersAdvertiserID</key>
-	<string>3050</string>
-	<key>HasOffersSendLeadEventID</key>
-	<string>823281206</string>
-	<key>HasOffersRegistrationEventID</key>
-	<string>823281490</string>
-	<key>HasOffersSaveEventID</key>
-	<string>823281438</string>
 	<key>AppstoreAppID</key>
 	<string>508163604</string>
 	<key>adUnitIdPrefix</key>

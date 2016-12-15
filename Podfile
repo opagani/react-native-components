@@ -4,11 +4,15 @@ source 'ssh://git@stash.sv2.trulia.com/mob/mob-podspecs.git'
 
 raise "The bundle is not installed in this directory. please run `bundle install` and then run this command again" unless ENV['BUNDLE_GEMFILE'] != nil
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 use_frameworks!
 install! 'cocoapods', :deterministic_uuids => false
 
 target 'Trulia Rent' do
+    # We need to use this forked version of CocoaLumberjack, because WatchKit 1.0 has a problem with CocoaLumberjack not specifying its modulemap
+    # See https://github.com/CocoaLumberjack/CocoaLumberjack/issues/815
+    pod 'CocoaLumberjack', :git => 'https://github.com/arifken/CocoaLumberjack.git', :branch => 'master'
+
     # Uncomment the following lines if you are actively developing a pod and would like to point to your local copy
     # pod 'TRLActivityFeed', :path => '../../mob-ios-activity-feed'
     # pod 'TUIKit', :path => '../mob-tuikit'
@@ -20,23 +24,18 @@ target 'Trulia Rent' do
     # pod 'TRLCurrentLocation', :path => '../mob-ios-corelocation'
 
     # If you are NOT actively developing a pod, these lines should be enabled instead
-    # pod 'ARAnalytics', :subspecs => ['DSL', 'Adobe'], :git => 'https://github.com/orta/ARAnalytics.git', :branch => 'master'  
+    pod 'ARAnalytics', :subspecs => ['DSL', 'Adobe'], :git => 'https://github.com/orta/ARAnalytics.git', :branch => 'master'  
     pod 'ZGMortgageCalculators', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git', :branch => 'master'
     pod 'TUIKit', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-tuikit', :branch => 'master'
-    # pod 'TRLMaps', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools', :branch => 'master'
-    # pod 'TRLActivityFeed', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed', :branch => 'master'
+    pod 'TRLMaps', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools', :branch => 'master'
     pod 'TRLLocalInfo', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git', :branch => 'master'
+    pod 'TRLActivityFeed', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git', :branch => 'master'
     # pod 'TRLCurrentLocation', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-corelocation.git', :branch => 'master'
-    # pod 'TRLImageCache/Base', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git', :branch => 'master'
-    # pod 'TRLImageCache/iOS', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git', :branch => 'master'
+    pod 'TRLImageCache/Base', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git', :branch => 'master'
+    pod 'TRLImageCache/iOS', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git', :branch => 'master'
 
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
  
-    #----iOS 10/Swift 2.3 migration related.
-    # should be replaced when stable versions of swift 3.0 become available 
-    pod 'AlamofireImage', '2.5.0'
-    pod 'Alamofire', '3.5.0'
-    
 end
 
 #TODO: We can remove this after https://github.com/CocoaPods/Xcodeproj/pull/351 is merged and that version of
@@ -54,7 +53,7 @@ post_install do |installer|
       end
     end
     target.build_configurations.each do |config|
-      config.build_settings['SWIFT_VERSION'] = '2.3'
+      config.build_settings['SWIFT_VERSION'] = '3.0'
       config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf-with-dsym'
       config.build_settings['ENABLE_BITCODE'] = 'YES'
     end
@@ -79,8 +78,7 @@ post_install do |installer|
     #
     if config.name == 'Debug'
       config.build_settings['LD_RUNPATH_SEARCH_PATHS'] = [
-        '$(FRAMEWORK_SEARCH_PATHS)',
-        '"/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator"'
+        '$(FRAMEWORK_SEARCH_PATHS)'
       ]
     end  
   end
