@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'fastlane'
-gem 'cocoapods', '~>1.0.0'
+gem 'cocoapods', '~>1.1'
 
 gem 'hockeyapp', '0.0.15'
 gem 'jira-ruby', '0.1.17'
