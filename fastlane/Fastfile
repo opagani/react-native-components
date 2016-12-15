@@ -60,7 +60,7 @@ platform :ios do
     #params for the build
     hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'  
     jira_host = 'jira.corp.trulia.com'
-    sigh(provisioning_name: "EnterpriseIosRental", app_identifier:"com.truliainc.IosRental", ignore_profiles_with_different_name:true)
+    sigh(app_identifier:"com.truliainc.IosRental")
     # xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
     build_number = next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
 
@@ -85,7 +85,7 @@ platform :ios do
         # the build number to use, we use the build number + 1 from latest hockey app version uploaded to stage
         build_number: build_number,
         # the number prefix to use to bake into icons, S for stage, B for BStage, and R for enterprise_release.
-        build_number_prefix:"S",
+        build_number_prefix:"B",
         # icons folder path so that we can update the icons
         icon_folder_path: @absolute_icon_path,
         # passes in the mobile provisiong profile info explicitly
@@ -125,7 +125,7 @@ platform :ios do
     #params for the build
     hockey_app_id = 'a219c9215a4f4b9ea9f43358e6cb0a7a'
     jira_host = 'jira.corp.trulia.com'
-    sigh(provisioning_name: "EnterpriseIosRental", app_identifier:"com.truliainc.IosRental", ignore_profiles_with_different_name:true)
+    sigh(app_identifier:"com.truliainc.IosRental")
     build_number = next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
 
     build_and_upload(
@@ -189,7 +189,7 @@ platform :ios do
     
     cocoapods
     
-    sigh(provisioning_name: "Ad hoc Trulia IosRental", app_identifier:"com.trulia.IosRental", ignore_profiles_with_different_name:true, adhoc: true)
+    sigh(app_identifier:"com.trulia.IosRental", adhoc: true)
     
     build_and_upload(
         info_plist_path: @info_plist_path,
@@ -250,7 +250,7 @@ platform :ios do
     #params for the build
     hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'  
     jira_host = 'jira.corp.trulia.com'
-    sigh(provisioning_name: "EnterpriseIosRental",  skip_certificate_verification: true, app_identifier:"com.truliainc.IosRental")
+    sigh(app_identifier:"com.truliainc.IosRental")
     build_number = next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
     core_library_path = File.expand_path File.join(File.dirname(__FILE__), '..', '..', 'mob-ioscore-lib')
 
