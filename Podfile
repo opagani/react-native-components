@@ -22,6 +22,7 @@ target 'Trulia Rent' do
     # pod 'TRLImageCache/Base', :path => '../mob-ios-image-cache'
     # pod 'TRLImageCache/iOS', :path => '../mob-ios-image-cache'
     # pod 'TRLCurrentLocation', :path => '../mob-ios-corelocation'
+    # pod 'TRLDisplayFormatters', :path => '../mob-ios-display-formatters'
 
     # If you are NOT actively developing a pod, these lines should be enabled instead
     pod 'ARAnalytics', :subspecs => ['DSL', 'Adobe'], :git => 'https://github.com/orta/ARAnalytics.git', :branch => 'master'  
@@ -32,7 +33,8 @@ target 'Trulia Rent' do
     pod 'TRLActivityFeed', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git', :branch => 'master'
     # pod 'TRLCurrentLocation', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-corelocation.git', :branch => 'master'
     pod 'TRLImageCache/Base', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git', :branch => 'master'
-
+    pod 'TRLDisplayFormatters', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-display-formatters.git', :branch => 'master'
+  
     pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
  
 end
