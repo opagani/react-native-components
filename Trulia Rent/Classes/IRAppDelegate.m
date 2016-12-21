@@ -17,6 +17,7 @@
 #import "ICMarketingAnalyticsController.h"
 #import "ICManagedSearch.h"
 #import "ICDiscoveryParameterSet.h"
+#import "IRAdUnitConfiguration.h"
 
 //view controllers
 #import "ICDiscoveryViewController.h"
@@ -26,6 +27,7 @@
 #import "HockeySDK.h"
 
 @implementation IRAppDelegate
+@synthesize adConfig = _adConfig;
 
 void uncaughtExceptionHandler(NSException *exception) {
     DDLogError(@"CRASH: %@", exception);
@@ -103,6 +105,13 @@ void uncaughtExceptionHandler(NSException *exception) {
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
+}
+
+-(id<ICAdUnitConfiguration>)adConfig{
+    if(!_adConfig){
+        _adConfig = [IRAdUnitConfiguration new];
+    }
+    return _adConfig;
 }
 
 
