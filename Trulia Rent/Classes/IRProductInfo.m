@@ -34,4 +34,8 @@
     return source;
 }
 
+-(NSString *)appStoreId{
+    return @"508163604";
+}
+
 @end
