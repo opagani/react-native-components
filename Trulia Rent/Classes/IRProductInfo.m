@@ -6,9 +6,17 @@
 //  Copyright © 2016 Trulia Inc. All rights reserved.
 //
 
-#import "IRMetricsConfig.h"
+#import "IRProductInfo.h"
 
-@implementation IRMetricsConfig
+@implementation IRProductInfo
+-(ICAppProductType)type{
+    return ICAppProductRentals;
+}
+
+-(NSString *)name{
+    return @"Rentals";
+}
+
 -(NSString*)source{
     NSString * source = nil;
     

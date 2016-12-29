@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		645A31281E0B36AB00F749C0 /* IRAdUnitConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 645A31271E0B36AB00F749C0 /* IRAdUnitConfiguration.m */; };
-		645A31301E14499800F749C0 /* IRMetricsConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 645A312F1E14499800F749C0 /* IRMetricsConfig.m */; };
+		645A31301E14499800F749C0 /* IRProductInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 645A312F1E14499800F749C0 /* IRProductInfo.m */; };
 		658236A40197EFEDE9206DE1 /* Pods_Trulia_Rent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27F587BC457B72804F20410 /* Pods_Trulia_Rent.framework */; };
 		6B1C410F1C9765C800F0DB25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C410E1C9765C800F0DB25 /* main.m */; };
 		6B1C41181C9765C800F0DB25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41161C9765C800F0DB25 /* Main.storyboard */; };
@@ -34,8 +34,8 @@
 		546891CAAD98A23F00BBC5DA /* Pods-Trulia Rent.stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.stage.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.stage.xcconfig"; sourceTree = "<group>"; };
 		645A31261E0B36AB00F749C0 /* IRAdUnitConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRAdUnitConfiguration.h; sourceTree = "<group>"; };
 		645A31271E0B36AB00F749C0 /* IRAdUnitConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRAdUnitConfiguration.m; sourceTree = "<group>"; };
-		645A312E1E14499800F749C0 /* IRMetricsConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMetricsConfig.h; sourceTree = "<group>"; };
-		645A312F1E14499800F749C0 /* IRMetricsConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMetricsConfig.m; sourceTree = "<group>"; };
+		645A312E1E14499800F749C0 /* IRProductInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRProductInfo.h; sourceTree = "<group>"; };
+		645A312F1E14499800F749C0 /* IRProductInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRProductInfo.m; sourceTree = "<group>"; };
 		6B1C410A1C9765C800F0DB25 /* TruliaRent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruliaRent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B1C410E1C9765C800F0DB25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B1C41171C9765C800F0DB25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -148,8 +148,8 @@
 				6B1C41621C97694F00F0DB25 /* IRAppDelegate.m */,
 				645A31261E0B36AB00F749C0 /* IRAdUnitConfiguration.h */,
 				645A31271E0B36AB00F749C0 /* IRAdUnitConfiguration.m */,
-				645A312E1E14499800F749C0 /* IRMetricsConfig.h */,
-				645A312F1E14499800F749C0 /* IRMetricsConfig.m */,
+				645A312E1E14499800F749C0 /* IRProductInfo.h */,
+				645A312F1E14499800F749C0 /* IRProductInfo.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -322,7 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				645A31301E14499800F749C0 /* IRMetricsConfig.m in Sources */,
+				645A31301E14499800F749C0 /* IRProductInfo.m in Sources */,
 				6B1C416F1C97694F00F0DB25 /* IRAppDelegate.m in Sources */,
 				645A31281E0B36AB00F749C0 /* IRAdUnitConfiguration.m in Sources */,
 				6B1C410F1C9765C800F0DB25 /* main.m in Sources */,

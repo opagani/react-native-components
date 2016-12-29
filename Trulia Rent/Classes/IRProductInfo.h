@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ICAppMetricConfig.h"
+#import "ICAppProduct.h"
 
-@interface IRMetricsConfig : NSObject
+@interface IRProductInfo : NSObject <ICAppProduct>
 
 @end
