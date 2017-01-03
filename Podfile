@@ -4,7 +4,7 @@ source 'ssh://git@stash.sv2.trulia.com/mob/mob-podspecs.git'
 
 raise "The bundle is not installed in this directory. please run `bundle install` and then run this command again" unless ENV['BUNDLE_GEMFILE'] != nil
 
-platform :ios, '10.0'
+platform :ios, '9.0'
 use_frameworks!
 install! 'cocoapods', :deterministic_uuids => false
 
