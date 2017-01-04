@@ -224,7 +224,7 @@ CHECKOUT OPTIONS:
     :commit: cb7b53215723c2f883f4278422429b0cdc5251cf
     :git: https://github.com/arifken/CocoaLumberjack.git
   TRLActivityFeed:
-    :commit: 54a5ae1a4d5ce6bc8e59d62925fce7bc396137c7
+    :commit: c7156ac65351fd0f38206dc4c963f8d8dc901e87
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   TRLDisplayFormatters:
     :commit: 130ceded504a92fe544998fbffefcfffb830c8fa
@@ -261,7 +261,7 @@ SPEC CHECKSUMS:
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: 05f045d91770f3fef32bf150d049dca3b054d883
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: 61e12a7e67a557469a9cb730c3d24a89bf5cd7b8
+  IosCoreLibrary: 304e48e5b11c459aaefcde1c10192a85cd0ab02f
   iRate: adae3f183d83c925ac42d7a2e86e89e838963f57
   JLRoutes: 00671e008acb226b8b4c2385318dc1c583ef0dcf
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
@@ -283,6 +283,6 @@ SPEC CHECKSUMS:
   TUIKit: e2da0fcbee386a4834777289d0d7620c6727e6b6
   ZGMortgageCalculators: 11fcdd12c3dd67909b588d399925a468cee1c050
 
-PODFILE CHECKSUM: 47de9d2a1ce03da851876ff639dd931a9a2e0436
+PODFILE CHECKSUM: 01dea4ee27bdb901d004ce134f3b6f31c9af9c90
 
 COCOAPODS: 1.1.1
