@@ -224,7 +224,7 @@ CHECKOUT OPTIONS:
     :commit: cb7b53215723c2f883f4278422429b0cdc5251cf
     :git: https://github.com/arifken/CocoaLumberjack.git
   TRLActivityFeed:
-    :commit: 54a5ae1a4d5ce6bc8e59d62925fce7bc396137c7
+    :commit: c7156ac65351fd0f38206dc4c963f8d8dc901e87
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   TRLDisplayFormatters:
     :commit: 130ceded504a92fe544998fbffefcfffb830c8fa
