@@ -18,6 +18,7 @@
 #import "ICManagedSearch.h"
 #import "ICDiscoveryParameterSet.h"
 #import "IRAdUnitConfiguration.h"
+#import "IRProductInfo.h"
 
 //view controllers
 #import "ICDiscoveryViewController.h"
@@ -27,7 +28,7 @@
 #import "HockeySDK.h"
 
 @implementation IRAppDelegate
-@synthesize adConfig = _adConfig;
+@synthesize adConfig = _adConfig, product = _product;
 
 void uncaughtExceptionHandler(NSException *exception) {
     DDLogError(@"CRASH: %@", exception);
@@ -114,6 +115,12 @@ void uncaughtExceptionHandler(NSException *exception) {
     return _adConfig;
 }
 
+-(id<ICAppProduct>)product{
+    if(!_product){
+        _product = [IRProductInfo new];
+    }
+    return _product;
+}
 
 // FIXME: alert view has been deprecated
 //same for rate us app and upgrade app alert
