@@ -19,6 +19,7 @@
 #import "ICDiscoveryParameterSet.h"
 #import "IRAdUnitConfiguration.h"
 #import "IRProductInfo.h"
+#import "ICListingSearchController.h"
 
 //view controllers
 #import "ICDiscoveryViewController.h"
@@ -48,6 +49,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 
     [ICDiscoveryParameterSet setDefaultIndexType:IC_INDEXTYPE_FORRENT];
     [ICSearchFiltersViewController setSegmentControlModes:@[@(ICSearchFiltersFormTypeForRent)]];
+    [[ICListingSearchController sharedInstance] setInitialIndexTypes:@[IC_INDEXTYPE_FORRENT]];
 
 }
 
