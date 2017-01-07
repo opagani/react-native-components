@@ -28,15 +28,6 @@
 			<string>x3vg9d</string>
 		</dict>
 	</dict>
-	<key>SupportsForceReg</key>
-	<true/>
-	<key>GoogleAPIKey</key>
-	<dict>
-		<key>com.trulia.IosRental</key>
-		<string>AIzaSyDaqoVTkn61OASjdVCHisA5JBpnsP7jaUo</string>
-		<key>com.truliainc.IosRental</key>
-		<string>AIzaSyBg2s4i7ObOQDtRlkswxPjTAE5ALs3IkKI</string>
-	</dict>
 	<key>SupportsComscore</key>
 	<true/>
 	<key>comScore</key>
@@ -46,19 +37,9 @@
 		<key>PublisherSecret</key>
 		<string>ada334158b059052e7cfc0606003ff41</string>
 	</dict>
-	<key>IndexTypes</key>
-	<array>
-		<string>for rent</string>
-	</array>
 	<key>AccountType</key>
 	<string>Renter</string>
-	<key>Product</key>
-	<string>IpadRental</string>
 	<key>KeychainService</key>
 	<string>com.Trulia.IosRental</string>
-	<key>ListingSearchPageSize</key>
-	<integer>50</integer>
-	<key>AppstoreAppID</key>
-	<string>508163604</string>
 </dict>
 </plist>
