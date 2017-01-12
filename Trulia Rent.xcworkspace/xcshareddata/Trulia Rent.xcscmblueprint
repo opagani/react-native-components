@@ -4,20 +4,22 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : 9223372036854775807,
     "A9EFB38B20D1BF1A211C859853043503F2D4A064" : 0,
     "4BC6E9A0E9560A61F9F3647C450666CDCF7E68C1" : 0,
-    "163466FA14584BA3B72C24DD066CD466C06A1F7E" : 0,
+    "3E95EE87DDBD5A5A7C2225B7521617FF5C33995B" : 9223372036854775807,
     "B0A276D0D3A8AA490C9608D90E9A256DBBB6913E" : 0,
+    "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : 9223372036854775807,
+    "163466FA14584BA3B72C24DD066CD466C06A1F7E" : 0,
     "41CD56D7F891D8667990FD7881D8E0563597578B" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "10228869-68E2-46BC-AB11-AC8D0FD6E17C",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : "AlamofireImage\/",
     "A9EFB38B20D1BF1A211C859853043503F2D4A064" : "mob-ioscore-lib\/",
     "4BC6E9A0E9560A61F9F3647C450666CDCF7E68C1" : "mob-ios-activity-feed\/",
-    "163466FA14584BA3B72C24DD066CD466C06A1F7E" : "mob-ios-map-tools\/",
+    "3E95EE87DDBD5A5A7C2225B7521617FF5C33995B" : "mob-ios-display-formatters\/",
     "B0A276D0D3A8AA490C9608D90E9A256DBBB6913E" : "mob-tuikit\/",
+    "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : "AlamofireImage\/",
+    "163466FA14584BA3B72C24DD066CD466C06A1F7E" : "mob-ios-map-tools\/",
     "41CD56D7F891D8667990FD7881D8E0563597578B" : "mob-ios-rental-universal\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Trulia Rent",
@@ -28,6 +30,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/stash.sv2.trulia.com\/mob\/mob-ios-map-tools.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "163466FA14584BA3B72C24DD066CD466C06A1F7E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/stash.sv2.trulia.com\/mob\/mob-ios-display-formatters.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3E95EE87DDBD5A5A7C2225B7521617FF5C33995B"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "stash.sv2.trulia.com:mob\/mob-ios-rental-universal.git",

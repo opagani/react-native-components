@@ -13,7 +13,6 @@
 		6B1C410F1C9765C800F0DB25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C410E1C9765C800F0DB25 /* main.m */; };
 		6B1C41181C9765C800F0DB25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41161C9765C800F0DB25 /* Main.storyboard */; };
 		6B1C411D1C9765C800F0DB25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C411B1C9765C800F0DB25 /* LaunchScreen.storyboard */; };
-		6B1C41281C9767D700F0DB25 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41261C9767D700F0DB25 /* Localizable.strings */; };
 		6B1C412C1C97680500F0DB25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C412A1C97680500F0DB25 /* Assets.xcassets */; };
 		6B1C41301C97686A00F0DB25 /* copyright.html in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C412E1C97686A00F0DB25 /* copyright.html */; };
 		6B1C414C1C9768AC00F0DB25 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C413B1C9768AC00F0DB25 /* ADBMobileConfig.json */; };
@@ -238,7 +237,6 @@
 			files = (
 				6B1C414F1C9768AC00F0DB25 /* LocalInfoItems~iphone.json in Resources */,
 				6B1C417B1C97697000F0DB25 /* ICGeneral~ipad.plist in Resources */,
-				6B1C41281C9767D700F0DB25 /* Localizable.strings in Resources */,
 				6B1C411D1C9765C800F0DB25 /* LaunchScreen.storyboard in Resources */,
 				6B1C414D1C9768AC00F0DB25 /* ADBMobileConfigRelease.json in Resources */,
 				6B1C417C1C97697000F0DB25 /* ICGeneral~iphone.plist in Resources */,
@@ -471,7 +469,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1444F3402058237C39DE7AD1 /* Pods-Trulia Rent.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Trulia Rent/TruliaRent.entitlements";
@@ -496,7 +493,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4FDF0BB8493A863BCC47F1F /* Pods-Trulia Rent.appstore.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Trulia Rent/TruliaRent.entitlements";
@@ -568,7 +564,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 546891CAAD98A23F00BBC5DA /* Pods-Trulia Rent.stage.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Trulia Rent/TruliaRent.entitlements";
