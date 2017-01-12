@@ -28,15 +28,6 @@
 			<string>x3vg9d</string>
 		</dict>
 	</dict>
-	<key>SupportsComscore</key>
-	<true/>
-	<key>comScore</key>
-	<dict>
-		<key>CustomerC2</key>
-		<string>6036206</string>
-		<key>PublisherSecret</key>
-		<string>ada334158b059052e7cfc0606003ff41</string>
-	</dict>
 	<key>AccountType</key>
 	<string>Renter</string>
 	<key>KeychainService</key>
