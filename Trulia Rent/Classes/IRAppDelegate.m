@@ -49,7 +49,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 
     [ICDiscoveryParameterSet setDefaultIndexType:IC_INDEXTYPE_FORRENT];
     [ICSearchFiltersViewController setSegmentControlModes:@[@(ICSearchFiltersFormTypeForRent)]];
-    [ICSearchParameters setDefaultIndexTypes:@[IC_INDEXTYPE_FORRENT]];
+    [[ICListingSearchController sharedInstance] setInitialIndexTypes:@[IC_INDEXTYPE_FORRENT]];
 
 }
 
