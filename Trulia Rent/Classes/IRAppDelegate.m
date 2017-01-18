@@ -9,7 +9,6 @@
 #import "IRAppDelegate.h"
 
 //utility
-#import "ICPreference.h"
 #import "ICConfiguration.h"
 #import "ICCoreDataController.h"
 #import "ICAccountController.h"
@@ -18,6 +17,9 @@
 #import "ICMarketingAnalyticsController.h"
 #import "ICManagedSearch.h"
 #import "ICDiscoveryParameterSet.h"
+#import "IRAdUnitConfiguration.h"
+#import "IRProductInfo.h"
+#import "ICListingSearchController.h"
 
 //view controllers
 #import "ICDiscoveryViewController.h"
@@ -27,6 +29,7 @@
 #import "HockeySDK.h"
 
 @implementation IRAppDelegate
+@synthesize adConfig = _adConfig, product = _product;
 
 void uncaughtExceptionHandler(NSException *exception) {
     DDLogError(@"CRASH: %@", exception);
@@ -46,6 +49,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 
     [ICDiscoveryParameterSet setDefaultIndexType:IC_INDEXTYPE_FORRENT];
     [ICSearchFiltersViewController setSegmentControlModes:@[@(ICSearchFiltersFormTypeForRent)]];
+    [[ICListingSearchController sharedInstance] setInitialIndexTypes:@[IC_INDEXTYPE_FORRENT]];
 
 }
 
@@ -106,6 +110,19 @@ void uncaughtExceptionHandler(NSException *exception) {
      */
 }
 
+-(id<ICAdUnitConfiguration>)adConfig{
+    if(!_adConfig){
+        _adConfig = [IRAdUnitConfiguration new];
+    }
+    return _adConfig;
+}
+
+-(id<ICAppProduct>)product{
+    if(!_product){
+        _product = [IRProductInfo new];
+    }
+    return _product;
+}
 
 // FIXME: alert view has been deprecated
 //same for rate us app and upgrade app alert
