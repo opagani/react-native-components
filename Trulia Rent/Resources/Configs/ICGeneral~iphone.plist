@@ -2,32 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AdjustSDK</key>
-	<dict>
-		<key>AdjustAppToken</key>
-		<string>qh2bicxj3ojk</string>
-		<key>AdjustEventTokens</key>
-		<dict>
-			<key>ForRentSingleUnitPDPView</key>
-			<string>sji8bf</string>
-			<key>ForRentComunityPDPView</key>
-			<string>yieh3f</string>
-			<key>ForRentSingleUnitLeadEmail</key>
-			<string>4lib2b</string>
-			<key>ForRentSingleUnitLeadPhone</key>
-			<string>oonen4</string>
-			<key>ForRentCommunityLeadEmail</key>
-			<string>86phfr</string>
-			<key>ForRentCommunityLeadPhone</key>
-			<string>j8avro</string>
-			<key>Registration</key>
-			<string>q1quz5</string>
-			<key>SaveListing</key>
-			<string>k5vzpb</string>
-			<key>SaveSearch</key>
-			<string>x3vg9d</string>
-		</dict>
-	</dict>
 	<key>AccountType</key>
 	<string>Renter</string>
 	<key>KeychainService</key>
