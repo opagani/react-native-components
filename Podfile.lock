@@ -107,7 +107,7 @@ PODS:
     - HockeySDK-Source (= 4.1.3)
     - HTAutocompleteTextField (= 1.3.2)
     - iRate (= 1.11.7)
-    - JLRoutes (= 1.6.2)
+    - JLRoutes (= 2.0.1)
     - Mantle (= 2.1.0)
     - OpenInGoogleMaps (= 0.1.0)
     - SFHFKeychainUtils (= 0.0.1)
@@ -122,7 +122,7 @@ PODS:
     - TUIKit
     - ZGMortgageCalculators
   - iRate (1.11.7)
-  - JLRoutes (1.6.2)
+  - JLRoutes (2.0.1)
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
@@ -138,8 +138,8 @@ PODS:
   - RSSwizzle (0.1.0)
   - SFHFKeychainUtils (0.0.1)
   - SSZipArchive (1.6.2)
-  - SwiftyJSON (3.1.3)
-  - TRLActivityFeed (1.3.0):
+  - SwiftyJSON (3.1.4)
+  - TRLActivityFeed (1.4.0):
     - Alamofire (~> 4.0.0)
     - AlamofireImage (~> 3.0.0)
     - CocoaLumberjack/Swift (~> 3.0)
@@ -149,28 +149,28 @@ PODS:
     - TRLObjectMapperTransforms (~> 1.1.0)
     - TUIKit
   - TRLCurrentLocation (1.0.0)
-  - TRLDisplayFormatters (0.1.0)
-  - TRLImageCache/Base (1.0.10):
+  - TRLDisplayFormatters (0.1.1)
+  - TRLImageCache/Base (1.1.0):
     - AFNetworking (~> 3.0)
-  - TRLLocalInfo (0.3.0):
+  - TRLLocalInfo (0.4.0):
     - TRLMaps
     - TUIKit
-  - TRLMaps (0.7.0):
-    - TRLImageCache/Base (~> 1.0)
-    - TUIKit (~> 1.0)
+  - TRLMaps (1.0.0):
+    - TRLImageCache/Base
+    - TUIKit
   - TRLObjectMapperTransforms (1.1.0):
     - ObjectMapper
   - TTTAttributedLabel (2.0.0)
-  - TUIKit (1.0.16):
-    - TUIKit/Core (= 1.0.16)
-  - TUIKit/Core (1.0.16)
-  - ZGMortgageCalculators (2.1.2):
+  - TUIKit (1.1.0):
+    - TUIKit/Core (= 1.1.0)
+  - TUIKit/Core (1.1.0)
+  - ZGMortgageCalculators (2.2.2):
     - ActionSheetPicker-3.0
     - Alamofire
     - Charts
     - SwiftyJSON
     - TTTAttributedLabel (= 2.0.0)
-    - TUIKit (~> 1.0.6)
+    - TUIKit
 
 DEPENDENCIES:
   - ARAnalytics/Adobe (from `https://github.com/orta/ARAnalytics.git`, branch `master`)
@@ -224,25 +224,25 @@ CHECKOUT OPTIONS:
     :commit: cb7b53215723c2f883f4278422429b0cdc5251cf
     :git: https://github.com/arifken/CocoaLumberjack.git
   TRLActivityFeed:
-    :commit: c7156ac65351fd0f38206dc4c963f8d8dc901e87
+    :commit: 6bb757d15a77020d56f33500d0c86fe013ab082f
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   TRLDisplayFormatters:
-    :commit: 130ceded504a92fe544998fbffefcfffb830c8fa
+    :commit: 1629d4e0f4ce890f7cc28f5865be8468b7be3cb8
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-display-formatters.git
   TRLImageCache:
-    :commit: a88ae5ec227169b96a412935877113ec39912b56
+    :commit: 341ee807883d4ef577bc3d00b3a1009cae5ad270
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git
   TRLLocalInfo:
-    :commit: e9883e11038975bd07feecc53abb1839b92cc871
+    :commit: acd127f5db117fe2dc750c056525668680665367
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git
   TRLMaps:
-    :commit: d70e47716005c757d9e282a70f631697424baa8f
+    :commit: 8217d70f87fcb03f35c66af70911f640216d60b2
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools
   TUIKit:
-    :commit: d660335ae6db3a22f927c728c4e4f7a87f317567
+    :commit: 724726efae60b1a86e5d91608e753686de22d79a
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-tuikit
   ZGMortgageCalculators:
-    :commit: aa7cef341e1612c76e4769960a64cab3e4b30b4e
+    :commit: f84e8d8bad3902a39213b05d47f15fb424bdea69
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 SPEC CHECKSUMS:
@@ -261,9 +261,9 @@ SPEC CHECKSUMS:
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: 05f045d91770f3fef32bf150d049dca3b054d883
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: 8e98895820e711a57c452b8c64651ebf08e72b9c
+  IosCoreLibrary: cd604f0c507124973faf1d0d8a089f3e995808bc
   iRate: adae3f183d83c925ac42d7a2e86e89e838963f57
-  JLRoutes: 00671e008acb226b8b4c2385318dc1c583ef0dcf
+  JLRoutes: 3652abe3b4ac51bc93ec3a371353d762e8566092
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
   OpenInGoogleMaps: 60dd887d2e2b2149166a03bd6dab1d4478a7d3e8
@@ -271,17 +271,17 @@ SPEC CHECKSUMS:
   RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 428eb1ac8d37dd133404d30f422b23958c1f9acc
-  SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
-  TRLActivityFeed: 5c7d895376c9d57695db0055af82880f22d6ccfd
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  TRLActivityFeed: 872571f31bd7f555ba632656fa47091f0499c75c
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
-  TRLDisplayFormatters: 1032e5fb23353b5748d7895f95b8e391ffaa065c
-  TRLImageCache: 58e258b7940c15a09b924234cc7c0b5de0670ea4
-  TRLLocalInfo: b284708d89821704c1a2e922be047f0435cae8eb
-  TRLMaps: 68bbbb32854508353db3c6e85c99a63d230650a4
+  TRLDisplayFormatters: d21ebafbaab000ad98fad6c4ba25e51e0cfe67fc
+  TRLImageCache: 71cbab40203260256e80ff5ae1bb127c6e0517f5
+  TRLLocalInfo: ef6ec022faf2ed1c5183ad883109e4c1d5aeb81f
+  TRLMaps: 53a1ca3b90cf13d3e7f30efdcf8cf2a31923bdeb
   TRLObjectMapperTransforms: 9c1dfb967bb4e07ed73959d3a4a142c26c834924
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
-  TUIKit: e2da0fcbee386a4834777289d0d7620c6727e6b6
-  ZGMortgageCalculators: 11fcdd12c3dd67909b588d399925a468cee1c050
+  TUIKit: 64175d5790ea29928ab2442d3f4a61bbee9b98b7
+  ZGMortgageCalculators: 1b798ec291993485f8deb7497cd38e4cca57f053
 
 PODFILE CHECKSUM: 01dea4ee27bdb901d004ce134f3b6f31c9af9c90
 
