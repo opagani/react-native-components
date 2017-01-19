@@ -20,7 +20,8 @@
 #import "IRAdUnitConfiguration.h"
 #import "IRProductInfo.h"
 #import "ICListingSearchController.h"
-
+#import "IRComscoreConfiguration.h"
+#import "IRAdjustSDKConfig.h"
 //view controllers
 #import "ICDiscoveryViewController.h"
 
@@ -29,7 +30,7 @@
 #import "HockeySDK.h"
 
 @implementation IRAppDelegate
-@synthesize adConfig = _adConfig, product = _product;
+@synthesize adConfig = _adConfig, product = _product, comscoreConfig = _comscoreConfig, adjustConfig = _adjustConfig;
 
 void uncaughtExceptionHandler(NSException *exception) {
     DDLogError(@"CRASH: %@", exception);
@@ -122,6 +123,20 @@ void uncaughtExceptionHandler(NSException *exception) {
         _product = [IRProductInfo new];
     }
     return _product;
+}
+
+-(id<ICComScoreConfiguration>)comscoreConfig{
+    if(!_comscoreConfig){
+        _comscoreConfig = [IRComscoreConfiguration new];
+    }
+    return _comscoreConfig;
+}
+
+-(id<ICAdjustSDKConfiguration>)adjustConfig{
+    if(!_adjustConfig){
+        _adjustConfig = [IRAdjustSDKConfig new];
+    }
+    return _adjustConfig;
 }
 
 // FIXME: alert view has been deprecated
