@@ -9,7 +9,6 @@
 #import "IRAppDelegate.h"
 
 //utility
-#import "ICConfiguration.h"
 #import "ICCoreDataController.h"
 #import "ICAccountController.h"
 #import "ICAppearance.h"
