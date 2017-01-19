@@ -22,6 +22,8 @@
 #import "ICListingSearchController.h"
 #import "IRComscoreConfiguration.h"
 #import "IRAdjustSDKConfig.h"
+#import "IRAccountConfig.h"
+
 //view controllers
 #import "ICDiscoveryViewController.h"
 
@@ -137,6 +139,10 @@ void uncaughtExceptionHandler(NSException *exception) {
         _adjustConfig = [IRAdjustSDKConfig new];
     }
     return _adjustConfig;
+}
+
+-(id<ICAccountServiceConfiguration>)accountConfig{
+    return [IRAccountConfig new];
 }
 
 // FIXME: alert view has been deprecated

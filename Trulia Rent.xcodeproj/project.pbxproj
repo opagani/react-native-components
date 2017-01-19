@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640374401E3038C1006CFAA6 /* IRAccountConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6403743F1E3038C1006CFAA6 /* IRAccountConfig.m */; };
 		645A31281E0B36AB00F749C0 /* IRAdUnitConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 645A31271E0B36AB00F749C0 /* IRAdUnitConfiguration.m */; };
 		645A31301E14499800F749C0 /* IRProductInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 645A312F1E14499800F749C0 /* IRProductInfo.m */; };
 		64F739B51E280F89002A7CB5 /* IRComscoreConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F739B41E280F89002A7CB5 /* IRComscoreConfiguration.m */; };
@@ -33,6 +34,8 @@
 /* Begin PBXFileReference section */
 		1444F3402058237C39DE7AD1 /* Pods-Trulia Rent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.debug.xcconfig"; sourceTree = "<group>"; };
 		546891CAAD98A23F00BBC5DA /* Pods-Trulia Rent.stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.stage.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.stage.xcconfig"; sourceTree = "<group>"; };
+		6403743E1E3038C1006CFAA6 /* IRAccountConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRAccountConfig.h; sourceTree = "<group>"; };
+		6403743F1E3038C1006CFAA6 /* IRAccountConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRAccountConfig.m; sourceTree = "<group>"; };
 		645A31261E0B36AB00F749C0 /* IRAdUnitConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRAdUnitConfiguration.h; sourceTree = "<group>"; };
 		645A31271E0B36AB00F749C0 /* IRAdUnitConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRAdUnitConfiguration.m; sourceTree = "<group>"; };
 		645A312E1E14499800F749C0 /* IRProductInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRProductInfo.h; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				64F739B41E280F89002A7CB5 /* IRComscoreConfiguration.m */,
 				64F739B61E281373002A7CB5 /* IRAdjustSDKConfig.h */,
 				64F739B71E281373002A7CB5 /* IRAdjustSDKConfig.m */,
+				6403743E1E3038C1006CFAA6 /* IRAccountConfig.h */,
+				6403743F1E3038C1006CFAA6 /* IRAccountConfig.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -334,6 +339,7 @@
 				645A31301E14499800F749C0 /* IRProductInfo.m in Sources */,
 				64F739B51E280F89002A7CB5 /* IRComscoreConfiguration.m in Sources */,
 				6B1C416F1C97694F00F0DB25 /* IRAppDelegate.m in Sources */,
+				640374401E3038C1006CFAA6 /* IRAccountConfig.m in Sources */,
 				645A31281E0B36AB00F749C0 /* IRAdUnitConfiguration.m in Sources */,
 				6B1C410F1C9765C800F0DB25 /* main.m in Sources */,
 			);
