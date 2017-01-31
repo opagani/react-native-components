@@ -575,7 +575,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_ENTITLEMENTS = MessagesExtension/MessagesExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
@@ -748,6 +748,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SHARED_DEFAULTS_SUITE = group.com.truliainc.IosRental.sharedDefaults;
 				SWIFT_VERSION = 3.0;
@@ -797,6 +798,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				NEW_SETTING = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SHARED_DEFAULTS_SUITE = group.com.trulia.IosRental.sharedDefaults;
 				SWIFT_VERSION = 3.0;
@@ -840,7 +842,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				CUSTOM_SIGNING_IDENTITY = "iPhone Distribution: Trulia, Inc (9QV5QN2J8K)";
-				DEVELOPMENT_TEAM = 9FBSWYKDXR;
+				DEVELOPMENT_TEAM = 9QV5QN2J8K;
 				ENABLE_BITCODE = YES;
 				FACEBOOK_APP_ID = 410970538982032;
 				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
@@ -895,6 +897,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				NEW_SETTING = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SHARED_DEFAULTS_SUITE = group.com.truliainc.IosRental.sharedDefaults;
 				SWIFT_VERSION = 3.0;
