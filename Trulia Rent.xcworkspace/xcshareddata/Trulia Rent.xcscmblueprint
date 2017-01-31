@@ -7,8 +7,9 @@
     "A9EFB38B20D1BF1A211C859853043503F2D4A064" : 0,
     "4BC6E9A0E9560A61F9F3647C450666CDCF7E68C1" : 0,
     "3E95EE87DDBD5A5A7C2225B7521617FF5C33995B" : 9223372036854775807,
-    "B0A276D0D3A8AA490C9608D90E9A256DBBB6913E" : 0,
+    "CB1A66A5197AC6E48B4F04088896210876199C9D" : 9223372036854775807,
     "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : 9223372036854775807,
+    "B0A276D0D3A8AA490C9608D90E9A256DBBB6913E" : 0,
     "163466FA14584BA3B72C24DD066CD466C06A1F7E" : 0,
     "41CD56D7F891D8667990FD7881D8E0563597578B" : 0
   },
@@ -17,8 +18,9 @@
     "A9EFB38B20D1BF1A211C859853043503F2D4A064" : "mob-ioscore-lib\/",
     "4BC6E9A0E9560A61F9F3647C450666CDCF7E68C1" : "mob-ios-activity-feed\/",
     "3E95EE87DDBD5A5A7C2225B7521617FF5C33995B" : "mob-ios-display-formatters\/",
-    "B0A276D0D3A8AA490C9608D90E9A256DBBB6913E" : "mob-tuikit\/",
+    "CB1A66A5197AC6E48B4F04088896210876199C9D" : "mob-ios-imessage\/",
     "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : "AlamofireImage\/",
+    "B0A276D0D3A8AA490C9608D90E9A256DBBB6913E" : "mob-tuikit\/",
     "163466FA14584BA3B72C24DD066CD466C06A1F7E" : "mob-ios-map-tools\/",
     "41CD56D7F891D8667990FD7881D8E0563597578B" : "mob-ios-rental-universal\/"
   },
@@ -55,6 +57,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/stash.sv2.trulia.com\/mob\/mob-tuikit.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B0A276D0D3A8AA490C9608D90E9A256DBBB6913E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/stash.sv2.trulia.com\/~v-jjarosz\/mob-ios-imessage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CB1A66A5197AC6E48B4F04088896210876199C9D"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/FawadHa1der\/AlamofireImage.git",

@@ -8,35 +8,47 @@ platform :ios, '9.0'
 use_frameworks!
 install! 'cocoapods', :deterministic_uuids => false
 
-target 'Trulia Rent' do
-    # We need to use this forked version of CocoaLumberjack, because WatchKit 1.0 has a problem with CocoaLumberjack not specifying its modulemap
-    # See https://github.com/CocoaLumberjack/CocoaLumberjack/issues/815
-    pod 'CocoaLumberjack', :git => 'https://github.com/arifken/CocoaLumberjack.git', :branch => 'master'
+abstract_target 'TruliaBase' do
 
     # Uncomment the following lines if you are actively developing a pod and would like to point to your local copy
-    # pod 'TRLActivityFeed', :path => '../../mob-ios-activity-feed'
     # pod 'TUIKit', :path => '../mob-tuikit'
-    # pod 'TRLMaps', :path => '../mob-ios-map-tools'
-    # pod 'TRLLocalInfo', :path => '../mob-ios-local-info'
-    # pod 'ZGMortgageCalculators', :path => '../mob-ios-mortgage-calculators'
-    # pod 'TRLImageCache/Base', :path => '../mob-ios-image-cache'
-    # pod 'TRLImageCache/iOS', :path => '../mob-ios-image-cache'
-    # pod 'TRLCurrentLocation', :path => '../mob-ios-corelocation'
-    # pod 'TRLDisplayFormatters', :path => '../mob-ios-display-formatters'
 
     # If you are NOT actively developing a pod, these lines should be enabled instead
-    pod 'ARAnalytics', :subspecs => ['DSL', 'Adobe'], :git => 'https://github.com/orta/ARAnalytics.git', :branch => 'master'  
-    pod 'ZGMortgageCalculators', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git', :branch => 'master'
     pod 'TUIKit', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-tuikit', :branch => 'master'
-    pod 'TRLMaps', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools', :branch => 'master'
-    pod 'TRLLocalInfo', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git', :branch => 'master'
-    pod 'TRLActivityFeed', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git', :branch => 'master'
-    # pod 'TRLCurrentLocation', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-corelocation.git', :branch => 'master'
+
+    # We need to use this forked version of CocoaLumberjack, because WatchKit 1.0 has a problem with CocoaLumberjack not specifying its modulemap
+    # See https://github.com/CocoaLumberjack/CocoaLumberjack/issues/815
+    pod 'CocoaLumberjack/Swift', :git => 'https://github.com/arifken/CocoaLumberjack.git', :branch => 'master'
+
     pod 'TRLImageCache/Base', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git', :branch => 'master'
-    pod 'TRLDisplayFormatters', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-display-formatters.git', :branch => 'master'
-  
-    pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
- 
+
+    target 'Trulia Rent' do
+        # Uncomment the following lines if you are actively developing a pod and would like to point to your local copy
+        # pod 'TRLActivityFeed', :path => '../../mob-ios-activity-feed'
+        # pod 'TRLMaps', :path => '../mob-ios-map-tools'
+        # pod 'TRLLocalInfo', :path => '../mob-ios-local-info'
+        # pod 'ZGMortgageCalculators', :path => '../mob-ios-mortgage-calculators'
+        # pod 'TRLImageCache/Base', :path => '../mob-ios-image-cache'
+        # pod 'TRLImageCache/iOS', :path => '../mob-ios-image-cache'
+        # pod 'TRLCurrentLocation', :path => '../mob-ios-corelocation'
+        # pod 'TRLDisplayFormatters', :path => '../mob-ios-display-formatters'
+
+        # If you are NOT actively developing a pod, these lines should be enabled instead
+        # pod 'ARAnalytics', :subspecs => ['DSL', 'Adobe'], :git => 'https://github.com/orta/ARAnalytics.git', :branch => 'master'
+        pod 'ZGMortgageCalculators', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git', :branch => 'master'
+        pod 'TRLMaps', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools', :branch => 'master'
+        pod 'TRLLocalInfo', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git', :branch => 'master'
+        pod 'TRLActivityFeed', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git', :branch => 'master'
+        # pod 'TRLCurrentLocation', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-corelocation.git', :branch => 'master'
+        pod 'TRLDisplayFormatters', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-display-formatters.git', :branch => 'master'
+
+        pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
+    end
+
+    target 'MessagesExtension' do
+        #pod 'TRLMessageExtension',:git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git', :branch => 'master'
+        pod 'TRLMessageExtension', :path => '../mob-ios-imessage/'
+    end
 end
 
 #TODO: We can remove this after https://github.com/CocoaPods/Xcodeproj/pull/351 is merged and that version of
@@ -48,11 +60,19 @@ post_install do |installer|
         config.build_settings['TARGETED_DEVICE_FAMILY'] = '1,2'
       end
     end
+
+    if target.name == 'TRLMessageExtension'
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '10.0'
+      end
+    end
+
     if target.name == 'IosCoreLibrary'
       target.build_configurations.each do |config|
         config.build_settings['OTHER_LDFLAGS'] = ['$(inherited)', '-ObjC']
       end
     end
+
     target.build_configurations.each do |config|
       config.build_settings['SWIFT_VERSION'] = '3.0'
       config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf-with-dsym'

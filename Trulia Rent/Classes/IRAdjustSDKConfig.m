@@ -15,6 +15,7 @@
 }
 -(NSDictionary *)eventTokenMapping{
     return @{
+             @"ForSalePDPView": @"377y35",
              @"ForRentSingleUnitPDPView" : @"sji8bf",
              @"ForRentComunityPDPView": @"yieh3f",
              @"ForRentSingleUnitLeadEmail": @"4lib2b",
