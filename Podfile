@@ -46,8 +46,8 @@ abstract_target 'TruliaBase' do
     end
 
     target 'MessagesExtension' do
-        #pod 'TRLMessageExtension',:git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git', :branch => 'master'
-        pod 'TRLMessageExtension', :path => '../mob-ios-imessage/'
+        pod 'TRLMessageExtension',:git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git', :branch => 'master'
+        #pod 'TRLMessageExtension', :path => '../mob-ios-imessage/'
     end
 end
 

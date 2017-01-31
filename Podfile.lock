@@ -183,7 +183,7 @@ DEPENDENCIES:
   - TRLImageCache/Base (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git`, branch `master`)
   - TRLLocalInfo (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git`, branch `master`)
   - TRLMaps (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools`, branch `master`)
-  - TRLMessageExtension (from `../mob-ios-imessage/`)
+  - TRLMessageExtension (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git`, branch `master`)
   - TUIKit (from `ssh://git@stash.sv2.trulia.com/mob/mob-tuikit`, branch `master`)
   - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
@@ -209,7 +209,8 @@ EXTERNAL SOURCES:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools
   TRLMessageExtension:
-    :path: "../mob-ios-imessage/"
+    :branch: master
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
   TUIKit:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-tuikit
@@ -236,6 +237,9 @@ CHECKOUT OPTIONS:
   TRLMaps:
     :commit: 8217d70f87fcb03f35c66af70911f640216d60b2
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools
+  TRLMessageExtension:
+    :commit: aaf69b394f6db88133a2580364933329207a0c09
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
   TUIKit:
     :commit: 724726efae60b1a86e5d91608e753686de22d79a
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-tuikit
@@ -282,6 +286,6 @@ SPEC CHECKSUMS:
   TUIKit: 64175d5790ea29928ab2442d3f4a61bbee9b98b7
   ZGMortgageCalculators: 1b798ec291993485f8deb7497cd38e4cca57f053
 
-PODFILE CHECKSUM: cb035922466cd95b8436a3bbbd484089a2a8c158
+PODFILE CHECKSUM: 3c7f596d6d3e6b7d1edc52281af232b21a63ac6f
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0.beta.3
