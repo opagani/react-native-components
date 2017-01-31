@@ -38,6 +38,7 @@
 				<string>gsd-TruliaMap</string>
 				<string>TruliaSRPForRent</string>
 				<string>TruliaPDPForRent</string>
+				<string>TruliaPDPMessageApp</string>
 				<string>trulia</string>
 				<string>TruliaMap</string>
 				<string>TruliaBringToForegroundOnly</string>
@@ -66,6 +67,7 @@
 				<string>gsd-TruliaSRPForRent</string>
 				<string>TruliaSRPForRent</string>
 				<string>TruliaPDPForRent</string>
+				<string>TruliaPDPMessageApp</string>
 				<string>trulia</string>
 				<string>TruliaIphone</string>
 				<string>TruliaCollabNewProperty</string>
@@ -94,6 +96,7 @@
 				<string>gsd-TruliaSRPForRent</string>
 				<string>TruliaSRPForRent</string>
 				<string>TruliaPDPForRent</string>
+				<string>TruliaPDPMessageApp</string>
 				<string>trulia</string>
 				<string>TruliaIphone</string>
 				<string>TruliaCollabNewProperty</string>
