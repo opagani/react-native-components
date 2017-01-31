@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2234D88E1E3F9A470098DE6C /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2234D88D1E3F9A470098DE6C /* Messages.framework */; };
+		2234D8941E3F9A470098DE6C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2234D8921E3F9A470098DE6C /* MainInterface.storyboard */; };
+		2234D8961E3F9A470098DE6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2234D8951E3F9A470098DE6C /* Assets.xcassets */; };
+		2234D89A1E3F9A470098DE6C /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2234D88C1E3F9A470098DE6C /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		22AA72691E3FB6C0001AF6EC /* DummyPlaceholderObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AA72681E3FB6C0001AF6EC /* DummyPlaceholderObject.m */; };
 		640374401E3038C1006CFAA6 /* IRAccountConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6403743F1E3038C1006CFAA6 /* IRAccountConfig.m */; };
 		645A31281E0B36AB00F749C0 /* IRAdUnitConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 645A31271E0B36AB00F749C0 /* IRAdUnitConfiguration.m */; };
 		645A31301E14499800F749C0 /* IRProductInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 645A312F1E14499800F749C0 /* IRProductInfo.m */; };
 		64F739B51E280F89002A7CB5 /* IRComscoreConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F739B41E280F89002A7CB5 /* IRComscoreConfiguration.m */; };
 		64F739B81E281373002A7CB5 /* IRAdjustSDKConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F739B71E281373002A7CB5 /* IRAdjustSDKConfig.m */; };
-		658236A40197EFEDE9206DE1 /* Pods_Trulia_Rent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27F587BC457B72804F20410 /* Pods_Trulia_Rent.framework */; };
 		6B1C410F1C9765C800F0DB25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C410E1C9765C800F0DB25 /* main.m */; };
 		6B1C41181C9765C800F0DB25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41161C9765C800F0DB25 /* Main.storyboard */; };
 		6B1C411D1C9765C800F0DB25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C411B1C9765C800F0DB25 /* LaunchScreen.storyboard */; };
@@ -29,11 +33,48 @@
 		6B1C417C1C97697000F0DB25 /* ICGeneral~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41771C97697000F0DB25 /* ICGeneral~iphone.plist */; };
 		6B1C417D1C97697000F0DB25 /* ICMetric~ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41781C97697000F0DB25 /* ICMetric~ipad.plist */; };
 		6B1C417E1C97697000F0DB25 /* ICMetric~iphone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B1C41791C97697000F0DB25 /* ICMetric~iphone.plist */; };
+		7D89BD83DFEE2E272070B119 /* Pods_TruliaBase_MessagesExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E75397BA215E9E0AF3ABC67 /* Pods_TruliaBase_MessagesExtension.framework */; };
+		B098481F3BB273E5806559BB /* Pods_TruliaBase_Trulia_Rent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F631898D8F1115901C2E78F8 /* Pods_TruliaBase_Trulia_Rent.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2234D8981E3F9A470098DE6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B1C41021C9765C800F0DB25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2234D88B1E3F9A470098DE6C;
+			remoteInfo = MessagesExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2234D89F1E3F9A470098DE6C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2234D89A1E3F9A470098DE6C /* MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1444F3402058237C39DE7AD1 /* Pods-Trulia Rent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.debug.xcconfig"; sourceTree = "<group>"; };
+		1EBCCE42D3B96C7051AAA6A7 /* Pods-TruliaBase-MessagesExtension.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruliaBase-MessagesExtension.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-TruliaBase-MessagesExtension/Pods-TruliaBase-MessagesExtension.appstore.xcconfig"; sourceTree = "<group>"; };
+		2234D88C1E3F9A470098DE6C /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2234D88D1E3F9A470098DE6C /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		2234D8931E3F9A470098DE6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2234D8951E3F9A470098DE6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2234D8971E3F9A470098DE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22AA72661E3FB6C0001AF6EC /* MessagesExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MessagesExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		22AA72671E3FB6C0001AF6EC /* DummyPlaceholderObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyPlaceholderObject.h; sourceTree = "<group>"; };
+		22AA72681E3FB6C0001AF6EC /* DummyPlaceholderObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyPlaceholderObject.m; sourceTree = "<group>"; };
+		22AA726A1E3FB85F001AF6EC /* MessagesExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MessagesExtension.entitlements; sourceTree = "<group>"; };
 		546891CAAD98A23F00BBC5DA /* Pods-Trulia Rent.stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.stage.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.stage.xcconfig"; sourceTree = "<group>"; };
+		5660D15F7E4B63EA4325125C /* Pods-TruliaBase-MessagesExtension.stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruliaBase-MessagesExtension.stage.xcconfig"; path = "Pods/Target Support Files/Pods-TruliaBase-MessagesExtension/Pods-TruliaBase-MessagesExtension.stage.xcconfig"; sourceTree = "<group>"; };
 		6403743E1E3038C1006CFAA6 /* IRAccountConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRAccountConfig.h; sourceTree = "<group>"; };
 		6403743F1E3038C1006CFAA6 /* IRAccountConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRAccountConfig.m; sourceTree = "<group>"; };
 		645A31261E0B36AB00F749C0 /* IRAdUnitConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRAdUnitConfiguration.h; sourceTree = "<group>"; };
@@ -65,26 +106,56 @@
 		6B1C41781C97697000F0DB25 /* ICMetric~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~ipad.plist"; sourceTree = "<group>"; };
 		6B1C41791C97697000F0DB25 /* ICMetric~iphone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~iphone.plist"; sourceTree = "<group>"; };
 		6B1C41811C987D7C00F0DB25 /* TruliaRent-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TruliaRent-Prefix.pch"; sourceTree = "<group>"; };
+		7DE7C1B680C9EB6494FCCB62 /* Pods-TruliaBase-Trulia Rent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruliaBase-Trulia Rent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruliaBase-Trulia Rent/Pods-TruliaBase-Trulia Rent.debug.xcconfig"; sourceTree = "<group>"; };
+		860BFC7070DB8DF9C9EDFF3B /* Pods-TruliaBase-Trulia Rent.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruliaBase-Trulia Rent.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-TruliaBase-Trulia Rent/Pods-TruliaBase-Trulia Rent.appstore.xcconfig"; sourceTree = "<group>"; };
+		8615227DD122E134C97F0A43 /* Pods-TruliaBase-Trulia Rent.stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruliaBase-Trulia Rent.stage.xcconfig"; path = "Pods/Target Support Files/Pods-TruliaBase-Trulia Rent/Pods-TruliaBase-Trulia Rent.stage.xcconfig"; sourceTree = "<group>"; };
+		8E75397BA215E9E0AF3ABC67 /* Pods_TruliaBase_MessagesExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruliaBase_MessagesExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FDF0BB8493A863BCC47F1F /* Pods-Trulia Rent.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trulia Rent.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent.appstore.xcconfig"; sourceTree = "<group>"; };
+		D22B9916956798BEA87781DC /* Pods-TruliaBase-MessagesExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruliaBase-MessagesExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruliaBase-MessagesExtension/Pods-TruliaBase-MessagesExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		F27F587BC457B72804F20410 /* Pods_Trulia_Rent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trulia_Rent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F631898D8F1115901C2E78F8 /* Pods_TruliaBase_Trulia_Rent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruliaBase_Trulia_Rent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2234D8891E3F9A470098DE6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2234D88E1E3F9A470098DE6C /* Messages.framework in Frameworks */,
+				7D89BD83DFEE2E272070B119 /* Pods_TruliaBase_MessagesExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B1C41071C9765C800F0DB25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				658236A40197EFEDE9206DE1 /* Pods_Trulia_Rent.framework in Frameworks */,
+				B098481F3BB273E5806559BB /* Pods_TruliaBase_Trulia_Rent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2234D88F1E3F9A470098DE6C /* MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				22AA726A1E3FB85F001AF6EC /* MessagesExtension.entitlements */,
+				22AA72671E3FB6C0001AF6EC /* DummyPlaceholderObject.h */,
+				22AA72681E3FB6C0001AF6EC /* DummyPlaceholderObject.m */,
+				2234D8921E3F9A470098DE6C /* MainInterface.storyboard */,
+				2234D8951E3F9A470098DE6C /* Assets.xcassets */,
+				2234D8971E3F9A470098DE6C /* Info.plist */,
+				22AA72661E3FB6C0001AF6EC /* MessagesExtension-Bridging-Header.h */,
+			);
+			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
 		6B1C41011C9765C800F0DB25 = {
 			isa = PBXGroup;
 			children = (
 				6B1C410C1C9765C800F0DB25 /* Trulia Rent */,
+				2234D88F1E3F9A470098DE6C /* MessagesExtension */,
 				6B1C410B1C9765C800F0DB25 /* Products */,
 				AC3FE94C825389BFC8F0506B /* Pods */,
 				E9652C4340560D749CF105E7 /* Frameworks */,
@@ -95,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				6B1C410A1C9765C800F0DB25 /* TruliaRent.app */,
+				2234D88C1E3F9A470098DE6C /* MessagesExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,6 +246,12 @@
 				1444F3402058237C39DE7AD1 /* Pods-Trulia Rent.debug.xcconfig */,
 				A4FDF0BB8493A863BCC47F1F /* Pods-Trulia Rent.appstore.xcconfig */,
 				546891CAAD98A23F00BBC5DA /* Pods-Trulia Rent.stage.xcconfig */,
+				D22B9916956798BEA87781DC /* Pods-TruliaBase-MessagesExtension.debug.xcconfig */,
+				1EBCCE42D3B96C7051AAA6A7 /* Pods-TruliaBase-MessagesExtension.appstore.xcconfig */,
+				5660D15F7E4B63EA4325125C /* Pods-TruliaBase-MessagesExtension.stage.xcconfig */,
+				7DE7C1B680C9EB6494FCCB62 /* Pods-TruliaBase-Trulia Rent.debug.xcconfig */,
+				860BFC7070DB8DF9C9EDFF3B /* Pods-TruliaBase-Trulia Rent.appstore.xcconfig */,
+				8615227DD122E134C97F0A43 /* Pods-TruliaBase-Trulia Rent.stage.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -182,6 +260,9 @@
 			isa = PBXGroup;
 			children = (
 				F27F587BC457B72804F20410 /* Pods_Trulia_Rent.framework */,
+				2234D88D1E3F9A470098DE6C /* Messages.framework */,
+				8E75397BA215E9E0AF3ABC67 /* Pods_TruliaBase_MessagesExtension.framework */,
+				F631898D8F1115901C2E78F8 /* Pods_TruliaBase_Trulia_Rent.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,6 +270,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2234D88B1E3F9A470098DE6C /* MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2234D89E1E3F9A470098DE6C /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
+			buildPhases = (
+				09FB416021EDA90C2EA89DA2 /* [CP] Check Pods Manifest.lock */,
+				2234D8881E3F9A470098DE6C /* Sources */,
+				2234D8891E3F9A470098DE6C /* Frameworks */,
+				2234D88A1E3F9A470098DE6C /* Resources */,
+				93EF18A15619A4EB404D9256 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagesExtension;
+			productName = MessagesExtension;
+			productReference = 2234D88C1E3F9A470098DE6C /* MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 		6B1C41091C9765C800F0DB25 /* Trulia Rent */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B1C41211C9765C800F0DB25 /* Build configuration list for PBXNativeTarget "Trulia Rent" */;
@@ -200,10 +300,12 @@
 				9DCAA78D1D26E90400CB83C8 /* ShellScript */,
 				830E008AAAD52A49FE5E58A7 /* [CP] Embed Pods Frameworks */,
 				3B9083A701DF0F26AF114241 /* [CP] Copy Pods Resources */,
+				2234D89F1E3F9A470098DE6C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2234D8991E3F9A470098DE6C /* PBXTargetDependency */,
 			);
 			name = "Trulia Rent";
 			productName = "Trulia Rent";
@@ -216,14 +318,31 @@
 		6B1C41021C9765C800F0DB25 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Trulia Inc";
 				TargetAttributes = {
+					2234D88B1E3F9A470098DE6C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9FBSWYKDXR;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					6B1C41091C9765C800F0DB25 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 9FBSWYKDXR;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -241,11 +360,21 @@
 			projectRoot = "";
 			targets = (
 				6B1C41091C9765C800F0DB25 /* Trulia Rent */,
+				2234D88B1E3F9A470098DE6C /* MessagesExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2234D88A1E3F9A470098DE6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2234D8961E3F9A470098DE6C /* Assets.xcassets in Resources */,
+				2234D8941E3F9A470098DE6C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B1C41081C9765C800F0DB25 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,6 +399,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		09FB416021EDA90C2EA89DA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		3B9083A701DF0F26AF114241 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,7 +426,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruliaBase-Trulia Rent/Pods-TruliaBase-Trulia Rent-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6B2E2B57F91F478D54B6CF08 /* [CP] Check Pods Manifest.lock */ = {
@@ -312,7 +456,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trulia Rent/Pods-Trulia Rent-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruliaBase-Trulia Rent/Pods-TruliaBase-Trulia Rent-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93EF18A15619A4EB404D9256 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruliaBase-MessagesExtension/Pods-TruliaBase-MessagesExtension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9DCAA78D1D26E90400CB83C8 /* ShellScript */ = {
@@ -331,6 +490,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2234D8881E3F9A470098DE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22AA72691E3FB6C0001AF6EC /* DummyPlaceholderObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B1C41061C9765C800F0DB25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,7 +514,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2234D8991E3F9A470098DE6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2234D88B1E3F9A470098DE6C /* MessagesExtension */;
+			targetProxy = 2234D8981E3F9A470098DE6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		2234D8921E3F9A470098DE6C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2234D8931E3F9A470098DE6C /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		6B1C41161C9765C800F0DB25 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -383,6 +566,139 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2234D89B1E3F9A470098DE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D22B9916956798BEA87781DC /* Pods-TruliaBase-MessagesExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = MessagesExtension/MessagesExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9FBSWYKDXR;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_DEFAULTS_SUITE = group.com.truliainc.IosRental.sharedDefaults;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "MessagesExtension/MessagesExtension-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2234D89C1E3F9A470098DE6C /* Appstore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EBCCE42D3B96C7051AAA6A7 /* Pods-TruliaBase-MessagesExtension.appstore.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = MessagesExtension/MessagesExtension.entitlements;
+				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9QV5QN2J8K;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SHARED_DEFAULTS_SUITE = group.com.trulia.IosRental.sharedDefaults;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MessagesExtension/MessagesExtension-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Appstore;
+		};
+		2234D89D1E3F9A470098DE6C /* Stage */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5660D15F7E4B63EA4325125C /* Pods-TruliaBase-MessagesExtension.stage.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = MessagesExtension/MessagesExtension.entitlements;
+				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9FBSWYKDXR;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SHARED_DEFAULTS_SUITE = group.com.truliainc.IosRental.sharedDefaults;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MessagesExtension/MessagesExtension-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Stage;
+		};
 		6B1C411F1C9765C800F0DB25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -430,8 +746,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SHARED_DEFAULTS_SUITE = group.com.truliainc.IosRental.sharedDefaults;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -477,7 +796,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				NEW_SETTING = "";
 				SDKROOT = iphoneos;
+				SHARED_DEFAULTS_SUITE = group.com.trulia.IosRental.sharedDefaults;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -485,7 +807,7 @@
 		};
 		6B1C41221C9765C800F0DB25 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1444F3402058237C39DE7AD1 /* Pods-Trulia Rent.debug.xcconfig */;
+			baseConfigurationReference = 7DE7C1B680C9EB6494FCCB62 /* Pods-TruliaBase-Trulia Rent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -509,7 +831,7 @@
 		};
 		6B1C41231C9765C800F0DB25 /* Appstore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4FDF0BB8493A863BCC47F1F /* Pods-Trulia Rent.appstore.xcconfig */;
+			baseConfigurationReference = 860BFC7070DB8DF9C9EDFF3B /* Pods-TruliaBase-Trulia Rent.appstore.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -518,7 +840,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				CUSTOM_SIGNING_IDENTITY = "iPhone Distribution: Trulia, Inc (9QV5QN2J8K)";
-				DEVELOPMENT_TEAM = 9QV5QN2J8K;
+				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				ENABLE_BITCODE = YES;
 				FACEBOOK_APP_ID = 410970538982032;
 				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
@@ -572,7 +894,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				NEW_SETTING = "";
 				SDKROOT = iphoneos;
+				SHARED_DEFAULTS_SUITE = group.com.truliainc.IosRental.sharedDefaults;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -580,7 +905,7 @@
 		};
 		6B1C41801C976A5400F0DB25 /* Stage */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 546891CAAD98A23F00BBC5DA /* Pods-Trulia Rent.stage.xcconfig */;
+			baseConfigurationReference = 8615227DD122E134C97F0A43 /* Pods-TruliaBase-Trulia Rent.stage.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -605,6 +930,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2234D89E1E3F9A470098DE6C /* Build configuration list for PBXNativeTarget "MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2234D89B1E3F9A470098DE6C /* Debug */,
+				2234D89C1E3F9A470098DE6C /* Appstore */,
+				2234D89D1E3F9A470098DE6C /* Stage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Appstore;
+		};
 		6B1C41051C9765C800F0DB25 /* Build configuration list for PBXProject "Trulia Rent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
