@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'fastlane'
 gem 'cocoapods', '1.2.0.beta.3'
-
+gem 'cocoapods-dependencies'
 gem 'hockeyapp', '0.0.15'
 gem 'jira-ruby', '0.1.17'
 gem 'trollop', '2.1.2'
