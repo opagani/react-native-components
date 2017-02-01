@@ -61,6 +61,7 @@ platform :ios do
     hockey_app_id = 'b9d5c909ff044ee09be8524e2d773352'  
     jira_host = 'jira.corp.trulia.com'
     sigh(app_identifier:"com.truliainc.IosRental")
+    sigh(app_identifier:"com.truliainc.IosRental.MessagesExtension")
     # xcargs = "CUSTOM_PROVISIONING_PROFILE=\"#{CUSTOM_PROVISIONING_PROFILEID}\" "
     build_number = next_hockey_version(api_token: @hockeyapp_token, app_id: hockey_app_id).to_s
 
