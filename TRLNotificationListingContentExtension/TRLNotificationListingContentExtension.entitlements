@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.truliainc.IosRental.sharedDefaults</string>
+		<string>$(SHARED_DEFAULTS_SUITE)</string>
 	</array>
 </dict>
 </plist>
