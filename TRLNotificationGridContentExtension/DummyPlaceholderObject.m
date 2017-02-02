@@ -8,6 +8,10 @@
 
 #import "DummyPlaceholderObject.h"
 
-@implementation DummyPlaceholderObject
+/*
+ * This class exists simply to make Xcode happy when building the TRLNotificationGridContentExtension. It is referenced by no code; its
+ * mere existenct is enough to allow the app to be packaged correctly for installation on a real device.
+ */
 
+@implementation DummyPlaceholderObject
 @end
