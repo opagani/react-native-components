@@ -49,6 +49,22 @@ abstract_target 'TruliaBase' do
         pod 'TRLMessageExtension',:git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git', :branch => 'master'
         #pod 'TRLMessageExtension', :path => '../mob-ios-imessage/'
     end
+
+    # Originaly this pod should be inside advanced notification extensions. But when we run
+    # pod install and diferent extensions has same pod we have got error
+    # [!] The 'Pods-TruliaBase-Trulia' target has frameworks with conflicting names: trladvancednotifications.
+    pod 'TRLAdvancedNotifications', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git', :branch => 'master' 
+    # pod 'TRLAdvancedNotifications', :path => '../mob-ios-advanced-notifications'
+    target 'TRLNotificationListingContentExtension' do
+      # do not delete
+    end
+    target 'TRLNotificationGridContentExtension' do
+      # do not delete
+    end
+    target 'TRLNotificationServiceExtension' do
+     # do not delete
+    end
+
 end
 
 #TODO: We can remove this after https://github.com/CocoaPods/Xcodeproj/pull/351 is merged and that version of
@@ -58,6 +74,12 @@ post_install do |installer|
     if target.product_type == 'com.apple.product-type.bundle'
       target.build_configurations.each do |config|
         config.build_settings['TARGETED_DEVICE_FAMILY'] = '1,2'
+      end
+    end
+
+    if target.name == 'TRLAdvancedNotifications'
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '10.0'
       end
     end
 
