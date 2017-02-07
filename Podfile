@@ -96,7 +96,6 @@ post_install do |installer|
     end
 
     target.build_configurations.each do |config|
-      config.build_settings['SWIFT_VERSION'] = '3.0'
       config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf-with-dsym'
       config.build_settings['ENABLE_BITCODE'] = 'YES'
     end
