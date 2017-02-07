@@ -535,12 +535,12 @@
 				TargetAttributes = {
 					20D3F75B1E41792100D0633E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 9QV5QN2J8K;
+						DevelopmentTeam = 9FBSWYKDXR;
 						ProvisioningStyle = Automatic;
 					};
 					20D3F76B1E41799B00D0633E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 9QV5QN2J8K;
+						DevelopmentTeam = 9FBSWYKDXR;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -550,12 +550,12 @@
 					};
 					20D3F7831E4179C000D0633E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 9QV5QN2J8K;
+						DevelopmentTeam = 9FBSWYKDXR;
 						ProvisioningStyle = Automatic;
 					};
 					2234D88B1E3F9A470098DE6C = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 9QV5QN2J8K;
+						DevelopmentTeam = 9FBSWYKDXR;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -566,7 +566,7 @@
 					};
 					6B1C41091C9765C800F0DB25 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 9QV5QN2J8K;
+						DevelopmentTeam = 9FBSWYKDXR;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -985,7 +985,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1035,7 +1034,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Appstore;
@@ -1086,7 +1084,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Stage;
@@ -1343,7 +1340,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "MessagesExtension/MessagesExtension-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1395,7 +1391,6 @@
 				SHARED_DEFAULTS_SUITE = group.trulia.IosRental.sharedDefaults;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "MessagesExtension/MessagesExtension-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Appstore;
@@ -1448,7 +1443,6 @@
 				SHARED_DEFAULTS_SUITE = group.com.truliainc.IosRental.sharedDefaults;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "MessagesExtension/MessagesExtension-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Stage;
@@ -1567,7 +1561,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7DE7C1B680C9EB6494FCCB62 /* Pods-TruliaBase-Trulia Rent.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Trulia Rent/TruliaRent.entitlements";
@@ -1591,7 +1584,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 860BFC7070DB8DF9C9EDFF3B /* Pods-TruliaBase-Trulia Rent.appstore.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Trulia Rent/TruliaRent.entitlements";
@@ -1667,7 +1659,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8615227DD122E134C97F0A43 /* Pods-TruliaBase-Trulia Rent.stage.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Trulia Rent/TruliaRent.entitlements";
