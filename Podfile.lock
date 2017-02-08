@@ -124,6 +124,8 @@ PODS:
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
   - ObjectMapper (2.0.0)
+  - ObjectMapperTransforms (2.0.2):
+    - ObjectMapper
   - OpenInGoogleMaps (0.1.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -137,13 +139,13 @@ PODS:
   - SSZipArchive (1.7)
   - SwiftyJSON (3.1.4)
   - TRLActivityFeed (1.4.0):
-    - Alamofire (~> 4.0.0)
-    - AlamofireImage (~> 3.0.0)
-    - CocoaLumberjack/Swift (~> 3.0)
-    - ObjectMapper (~> 2.0.0)
+    - Alamofire (= 4.0.1)
+    - AlamofireImage (= 3.0.0)
+    - CocoaLumberjack/Swift (= 3.0)
+    - ObjectMapper (= 2.0.0)
+    - ObjectMapperTransforms (= 2.0.2)
     - TRLDisplayFormatters
     - TRLImageCache/Base
-    - TRLObjectMapperTransforms (~> 1.1.0)
     - TUIKit
   - TRLAdvancedNotifications (0.1.0):
     - Alamofire
@@ -164,9 +166,8 @@ PODS:
     - AlamofireImage (= 3.0.0)
     - CocoaLumberjack/Swift (= 3.0)
     - ObjectMapper (= 2.0.0)
+    - ObjectMapperTransforms (= 2.0.2)
     - TUIKit
-  - TRLObjectMapperTransforms (1.1.0):
-    - ObjectMapper
   - TTTAttributedLabel (2.0.0)
   - TUIKit (1.1.0):
     - TUIKit/Core (= 1.1.0)
@@ -231,7 +232,7 @@ CHECKOUT OPTIONS:
     :commit: cb7b53215723c2f883f4278422429b0cdc5251cf
     :git: https://github.com/arifken/CocoaLumberjack.git
   TRLActivityFeed:
-    :commit: 6bb757d15a77020d56f33500d0c86fe013ab082f
+    :commit: bb2675338dd53b1654d8351ee2cd3bc7b60d468f
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   TRLAdvancedNotifications:
     :commit: c6b3f5388e4036b55930d40626460f27da2bbcf5
@@ -249,7 +250,7 @@ CHECKOUT OPTIONS:
     :commit: 8217d70f87fcb03f35c66af70911f640216d60b2
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools
   TRLMessageExtension:
-    :commit: aaf69b394f6db88133a2580364933329207a0c09
+    :commit: 72ccf027f344660a4a5d6ca9ede219b51ec9f14e
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
   TUIKit:
     :commit: 724726efae60b1a86e5d91608e753686de22d79a
@@ -279,21 +280,21 @@ SPEC CHECKSUMS:
   JLRoutes: 3652abe3b4ac51bc93ec3a371353d762e8566092
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
+  ObjectMapperTransforms: 0c0eabcc186e4dc7de8b69909d2d4d470a7273af
   OpenInGoogleMaps: 60dd887d2e2b2149166a03bd6dab1d4478a7d3e8
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 63f8e11cfcc33e03e4cd666b4359ea8bd6facd0c
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
-  TRLActivityFeed: 872571f31bd7f555ba632656fa47091f0499c75c
+  TRLActivityFeed: 4edee2ff71d9ea51e592f2f4e6e4bd7172e663d4
   TRLAdvancedNotifications: b58eb38102b2240671c3b547541f9807a34c1558
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLDisplayFormatters: d21ebafbaab000ad98fad6c4ba25e51e0cfe67fc
   TRLImageCache: 71cbab40203260256e80ff5ae1bb127c6e0517f5
   TRLLocalInfo: ef6ec022faf2ed1c5183ad883109e4c1d5aeb81f
   TRLMaps: 53a1ca3b90cf13d3e7f30efdcf8cf2a31923bdeb
-  TRLMessageExtension: 4c3ea53c222325ced0ab9353c42ee513da9a3b95
-  TRLObjectMapperTransforms: 9c1dfb967bb4e07ed73959d3a4a142c26c834924
+  TRLMessageExtension: 8f0d253eb9a86f8e8ba713b5a9a3a1b845d7426e
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 64175d5790ea29928ab2442d3f4a61bbee9b98b7
   ZGMortgageCalculators: 1b798ec291993485f8deb7497cd38e4cca57f053
