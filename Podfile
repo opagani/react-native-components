@@ -20,7 +20,10 @@ abstract_target 'TruliaBase' do
     # See https://github.com/CocoaLumberjack/CocoaLumberjack/issues/815
     pod 'CocoaLumberjack/Swift', :git => 'https://github.com/arifken/CocoaLumberjack.git', :branch => 'master'
 
+    # The extensions use TRLImageCache directly, so it needs to be included here, either by tagged version (second option), or
+    # by git url and branch (first option)
     # pod 'TRLImageCache/Base', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git', :branch => 'master'
+    pod 'TRLImageCache/Base' 
 
     target 'Trulia Rent' do
         # Uncomment the following lines if you are actively developing a pod and would like to point to your local copy

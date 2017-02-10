@@ -184,6 +184,7 @@ DEPENDENCIES:
   - CocoaLumberjack/Swift (from `https://github.com/arifken/CocoaLumberjack.git`, branch `master`)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
   - TRLAdvancedNotifications (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git`, branch `master`)
+  - TRLImageCache/Base
   - TRLMessageExtension (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git`, branch `master`)
   - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
@@ -257,6 +258,6 @@ SPEC CHECKSUMS:
   TUIKit: a1cc911d1431ea7dbd01e8a3ac1e59b25d0f9b3a
   ZGMortgageCalculators: 1b798ec291993485f8deb7497cd38e4cca57f053
 
-PODFILE CHECKSUM: f439072451b493bea802b4bf96baf49093f3cb7c
+PODFILE CHECKSUM: 871cd28282785869d973867c10575f6c18e801aa
 
 COCOAPODS: 1.2.0
