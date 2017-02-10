@@ -215,7 +215,7 @@ CHECKOUT OPTIONS:
     :commit: 72ccf027f344660a4a5d6ca9ede219b51ec9f14e
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
   ZGMortgageCalculators:
-    :commit: da90a676e142213d5b70e98195e470438c8d0da8
+    :commit: bbf10b49a68c3ccc7ce70af11987000393b7619e
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 SPEC CHECKSUMS:
