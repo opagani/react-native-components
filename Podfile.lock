@@ -138,7 +138,7 @@ PODS:
   - SFHFKeychainUtils (0.0.1)
   - SSZipArchive (1.7)
   - SwiftyJSON (3.1.4)
-  - TRLActivityFeed (1.4.0):
+  - TRLActivityFeed (1.5.0):
     - Alamofire (= 4.0.1)
     - AlamofireImage (= 3.0.0)
     - CocoaLumberjack/Swift (= 3.0)
@@ -152,8 +152,8 @@ PODS:
     - SwiftyJSON
     - TUIKit
   - TRLCurrentLocation (1.0.0)
-  - TRLDisplayFormatters (0.1.1)
-  - TRLImageCache/Base (1.1.0):
+  - TRLDisplayFormatters (1.0.0)
+  - TRLImageCache/Base (1.2.0):
     - AFNetworking (~> 3.0)
   - TRLLocalInfo (0.4.0):
     - TRLMaps
@@ -183,14 +183,8 @@ PODS:
 DEPENDENCIES:
   - CocoaLumberjack/Swift (from `https://github.com/arifken/CocoaLumberjack.git`, branch `master`)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
-  - TRLActivityFeed (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git`, branch `master`)
   - TRLAdvancedNotifications (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git`, branch `master`)
-  - TRLDisplayFormatters (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-display-formatters.git`, branch `master`)
-  - TRLImageCache/Base (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git`, branch `master`)
-  - TRLLocalInfo (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git`, branch `master`)
-  - TRLMaps (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools`, branch `master`)
   - TRLMessageExtension (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git`, branch `master`)
-  - TUIKit (from `ssh://git@stash.sv2.trulia.com/mob/mob-tuikit`, branch `master`)
   - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
 EXTERNAL SOURCES:
@@ -199,30 +193,12 @@ EXTERNAL SOURCES:
     :git: https://github.com/arifken/CocoaLumberjack.git
   IosCoreLibrary:
     :path: "../mob-ioscore-lib/"
-  TRLActivityFeed:
-    :branch: master
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   TRLAdvancedNotifications:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git
-  TRLDisplayFormatters:
-    :branch: master
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-display-formatters.git
-  TRLImageCache:
-    :branch: master
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git
-  TRLLocalInfo:
-    :branch: master
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git
-  TRLMaps:
-    :branch: master
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools
   TRLMessageExtension:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
-  TUIKit:
-    :branch: master
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-tuikit
   ZGMortgageCalculators:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
@@ -231,30 +207,12 @@ CHECKOUT OPTIONS:
   CocoaLumberjack:
     :commit: cb7b53215723c2f883f4278422429b0cdc5251cf
     :git: https://github.com/arifken/CocoaLumberjack.git
-  TRLActivityFeed:
-    :commit: bb2675338dd53b1654d8351ee2cd3bc7b60d468f
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   TRLAdvancedNotifications:
-    :commit: c6b3f5388e4036b55930d40626460f27da2bbcf5
+    :commit: 6e4d73cc77dec961a639cc4908d4c33b119920e1
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git
-  TRLDisplayFormatters:
-    :commit: 1629d4e0f4ce890f7cc28f5865be8468b7be3cb8
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-display-formatters.git
-  TRLImageCache:
-    :commit: 341ee807883d4ef577bc3d00b3a1009cae5ad270
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git
-  TRLLocalInfo:
-    :commit: acd127f5db117fe2dc750c056525668680665367
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git
-  TRLMaps:
-    :commit: 8217d70f87fcb03f35c66af70911f640216d60b2
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools
   TRLMessageExtension:
     :commit: 72ccf027f344660a4a5d6ca9ede219b51ec9f14e
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
-  TUIKit:
-    :commit: 724726efae60b1a86e5d91608e753686de22d79a
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-tuikit
   ZGMortgageCalculators:
     :commit: da90a676e142213d5b70e98195e470438c8d0da8
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
@@ -287,18 +245,18 @@ SPEC CHECKSUMS:
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 63f8e11cfcc33e03e4cd666b4359ea8bd6facd0c
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
-  TRLActivityFeed: 4edee2ff71d9ea51e592f2f4e6e4bd7172e663d4
+  TRLActivityFeed: 8477ee221c8024b95a05d59417422d7c34c38fdc
   TRLAdvancedNotifications: b58eb38102b2240671c3b547541f9807a34c1558
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
-  TRLDisplayFormatters: d21ebafbaab000ad98fad6c4ba25e51e0cfe67fc
-  TRLImageCache: 71cbab40203260256e80ff5ae1bb127c6e0517f5
-  TRLLocalInfo: ef6ec022faf2ed1c5183ad883109e4c1d5aeb81f
-  TRLMaps: 53a1ca3b90cf13d3e7f30efdcf8cf2a31923bdeb
+  TRLDisplayFormatters: eadb64e9ff38a7c17f174f21a815355b1af5d35d
+  TRLImageCache: f0806cfbfa69f8482066cd75175e5c4fd200ff6e
+  TRLLocalInfo: 171163a0edba7bbe81ef937c85510f50144d6674
+  TRLMaps: 36e1a5c68c8a3c43a504ba325b777460d758972e
   TRLMessageExtension: 8f0d253eb9a86f8e8ba713b5a9a3a1b845d7426e
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
-  TUIKit: 64175d5790ea29928ab2442d3f4a61bbee9b98b7
+  TUIKit: a1cc911d1431ea7dbd01e8a3ac1e59b25d0f9b3a
   ZGMortgageCalculators: 1b798ec291993485f8deb7497cd38e4cca57f053
 
-PODFILE CHECKSUM: 0dc3e7ead12b4dd2b7df8641fd8e480365dd988c
+PODFILE CHECKSUM: f439072451b493bea802b4bf96baf49093f3cb7c
 
 COCOAPODS: 1.2.0

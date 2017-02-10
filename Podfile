@@ -20,7 +20,7 @@ abstract_target 'TruliaBase' do
     # See https://github.com/CocoaLumberjack/CocoaLumberjack/issues/815
     pod 'CocoaLumberjack/Swift', :git => 'https://github.com/arifken/CocoaLumberjack.git', :branch => 'master'
 
-    pod 'TRLImageCache/Base', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git', :branch => 'master'
+    # pod 'TRLImageCache/Base', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git', :branch => 'master'
 
     target 'Trulia Rent' do
         # Uncomment the following lines if you are actively developing a pod and would like to point to your local copy
@@ -40,7 +40,7 @@ abstract_target 'TruliaBase' do
         # pod 'TRLLocalInfo', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git', :branch => 'master'
         # pod 'TRLActivityFeed', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git', :branch => 'master'
         # pod 'TRLCurrentLocation', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-corelocation.git', :branch => 'master'
-        pod 'TRLDisplayFormatters', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-display-formatters.git', :branch => 'master'
+        # pod 'TRLDisplayFormatters', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-display-formatters.git', :branch => 'master'
 
         pod 'IosCoreLibrary', :path => '../mob-ioscore-lib/'
     end
