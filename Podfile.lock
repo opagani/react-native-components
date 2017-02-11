@@ -172,7 +172,7 @@ PODS:
   - TUIKit (1.1.0):
     - TUIKit/Core (= 1.1.0)
   - TUIKit/Core (1.1.0)
-  - ZGMortgageCalculators (2.2.2):
+  - ZGMortgageCalculators (2.3.0):
     - ActionSheetPicker-3.0
     - Alamofire
     - Charts
@@ -186,7 +186,6 @@ DEPENDENCIES:
   - TRLAdvancedNotifications (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git`, branch `master`)
   - TRLImageCache/Base
   - TRLMessageExtension (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git`, branch `master`)
-  - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
 EXTERNAL SOURCES:
   CocoaLumberjack:
@@ -200,9 +199,6 @@ EXTERNAL SOURCES:
   TRLMessageExtension:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
-  ZGMortgageCalculators:
-    :branch: master
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 CHECKOUT OPTIONS:
   CocoaLumberjack:
@@ -214,9 +210,6 @@ CHECKOUT OPTIONS:
   TRLMessageExtension:
     :commit: 72ccf027f344660a4a5d6ca9ede219b51ec9f14e
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
-  ZGMortgageCalculators:
-    :commit: bbf10b49a68c3ccc7ce70af11987000393b7619e
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
@@ -256,8 +249,8 @@ SPEC CHECKSUMS:
   TRLMessageExtension: 8f0d253eb9a86f8e8ba713b5a9a3a1b845d7426e
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: a1cc911d1431ea7dbd01e8a3ac1e59b25d0f9b3a
-  ZGMortgageCalculators: 1b798ec291993485f8deb7497cd38e4cca57f053
+  ZGMortgageCalculators: 71a3f3993660169b693c7f8904cdfa16f42ee31e
 
-PODFILE CHECKSUM: 871cd28282785869d973867c10575f6c18e801aa
+PODFILE CHECKSUM: 1cfe3e972df5db683d736e6adbd837b4060d0f29
 
 COCOAPODS: 1.2.0
