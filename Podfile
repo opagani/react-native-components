@@ -100,7 +100,6 @@ post_install do |installer|
 
     target.build_configurations.each do |config|
       config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf-with-dsym'
-      config.build_settings['ENABLE_BITCODE'] = 'YES'
     end
   end
 
