@@ -205,7 +205,7 @@ CHECKOUT OPTIONS:
     :commit: cb7b53215723c2f883f4278422429b0cdc5251cf
     :git: https://github.com/arifken/CocoaLumberjack.git
   TRLAdvancedNotifications:
-    :commit: 7dbb009de6f338da030352101ca4868f8c3ffa56
+    :commit: 114308f435046e43340ae4a157d965f161ce370e
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git
   TRLMessageExtension:
     :commit: 72ccf027f344660a4a5d6ca9ede219b51ec9f14e
