@@ -208,7 +208,7 @@ CHECKOUT OPTIONS:
     :commit: 114308f435046e43340ae4a157d965f161ce370e
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git
   TRLMessageExtension:
-    :commit: 72ccf027f344660a4a5d6ca9ede219b51ec9f14e
+    :commit: 1d386b1e1566c32d99df0884714f5b601e94f260
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
 
 SPEC CHECKSUMS:
