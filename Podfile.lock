@@ -132,6 +132,8 @@ PODS:
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
   - ObjectMapper (2.0.0)
+  - ObjectMapperTransforms (2.0.2):
+    - ObjectMapper
   - OpenInGoogleMaps (0.1.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -144,22 +146,22 @@ PODS:
   - SFHFKeychainUtils (0.0.1)
   - SSZipArchive (1.7)
   - SwiftyJSON (3.1.4)
-  - TRLActivityFeed (1.4.0):
-    - Alamofire (~> 4.0.0)
-    - AlamofireImage (~> 3.0.0)
-    - CocoaLumberjack/Swift (~> 3.0)
-    - ObjectMapper (~> 2.0.0)
+  - TRLActivityFeed (1.5.0):
+    - Alamofire (= 4.0.1)
+    - AlamofireImage (= 3.0.0)
+    - CocoaLumberjack/Swift (= 3.0)
+    - ObjectMapper (= 2.0.0)
+    - ObjectMapperTransforms (= 2.0.2)
     - TRLDisplayFormatters
     - TRLImageCache/Base
-    - TRLObjectMapperTransforms (~> 1.1.0)
     - TUIKit
   - TRLAdvancedNotifications (0.1.0):
     - Alamofire
     - SwiftyJSON
     - TUIKit
   - TRLCurrentLocation (1.0.0)
-  - TRLDisplayFormatters (0.1.1)
-  - TRLImageCache/Base (1.1.0):
+  - TRLDisplayFormatters (1.0.0)
+  - TRLImageCache/Base (1.2.0):
     - AFNetworking (~> 3.0)
   - TRLLocalInfo (0.4.0):
     - TRLMaps
@@ -172,17 +174,16 @@ PODS:
     - AlamofireImage (= 3.0.0)
     - CocoaLumberjack/Swift (= 3.0)
     - ObjectMapper (= 2.0.0)
+    - ObjectMapperTransforms (= 2.0.2)
     - TUIKit
   - TRLNetworkingTools (0.1.0):
     - Alamofire (~> 4.0)
     - AlamofireObjectMapper (~> 4.0)
-  - TRLObjectMapperTransforms (1.1.0):
-    - ObjectMapper
   - TTTAttributedLabel (2.0.0)
   - TUIKit (1.1.0):
     - TUIKit/Core (= 1.1.0)
   - TUIKit/Core (1.1.0)
-  - ZGMortgageCalculators (2.2.2):
+  - ZGMortgageCalculators (2.3.0):
     - ActionSheetPicker-3.0
     - Alamofire
     - Charts
@@ -246,16 +247,16 @@ CHECKOUT OPTIONS:
     :commit: cb7b53215723c2f883f4278422429b0cdc5251cf
     :git: https://github.com/arifken/CocoaLumberjack.git
   TRLActivityFeed:
-    :commit: 6bb757d15a77020d56f33500d0c86fe013ab082f
+    :commit: 69ff6670308797edb10cc2b4528c979cd37746aa
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   TRLAdvancedNotifications:
-    :commit: c6b3f5388e4036b55930d40626460f27da2bbcf5
+    :commit: 114308f435046e43340ae4a157d965f161ce370e
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git
   TRLDisplayFormatters:
-    :commit: 1629d4e0f4ce890f7cc28f5865be8468b7be3cb8
+    :commit: e37c1ddb5c70e9dbff1016802e526630410a5598
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-display-formatters.git
   TRLImageCache:
-    :commit: 341ee807883d4ef577bc3d00b3a1009cae5ad270
+    :commit: 68c0a76c64b9dbc1a7afc79d9095b4d3d9989e67
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git
   TRLLocalInfo:
     :commit: acd127f5db117fe2dc750c056525668680665367
@@ -264,16 +265,16 @@ CHECKOUT OPTIONS:
     :commit: 8217d70f87fcb03f35c66af70911f640216d60b2
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools
   TRLMessageExtension:
-    :commit: aaf69b394f6db88133a2580364933329207a0c09
+    :commit: 1d386b1e1566c32d99df0884714f5b601e94f260
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
   TRLNetworkingTools:
     :commit: 819229e329eac0805d154ab9c06caa6a275f3c54
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-api-tools.git
   TUIKit:
-    :commit: 724726efae60b1a86e5d91608e753686de22d79a
+    :commit: 9983b4413ab02cb2f384779e8376975e395021a5
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-tuikit
   ZGMortgageCalculators:
-    :commit: c644614379ac92e249edcc661633a1829b7ffd7b
+    :commit: ad829799dea9ab2fef0943b6d44b6d366ce8c47e
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 SPEC CHECKSUMS:
@@ -298,25 +299,25 @@ SPEC CHECKSUMS:
   JLRoutes: 3652abe3b4ac51bc93ec3a371353d762e8566092
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
+  ObjectMapperTransforms: 0c0eabcc186e4dc7de8b69909d2d4d470a7273af
   OpenInGoogleMaps: 60dd887d2e2b2149166a03bd6dab1d4478a7d3e8
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 63f8e11cfcc33e03e4cd666b4359ea8bd6facd0c
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
-  TRLActivityFeed: 872571f31bd7f555ba632656fa47091f0499c75c
+  TRLActivityFeed: 919e0a23be7175df47b8c0be7533d8e6407b1b17
   TRLAdvancedNotifications: b58eb38102b2240671c3b547541f9807a34c1558
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
-  TRLDisplayFormatters: d21ebafbaab000ad98fad6c4ba25e51e0cfe67fc
-  TRLImageCache: 71cbab40203260256e80ff5ae1bb127c6e0517f5
+  TRLDisplayFormatters: 58edc330d979299ba66d92b3557ad812ae2400ef
+  TRLImageCache: c0a765ffb9a9905d23df238cf522af55d0411836
   TRLLocalInfo: ef6ec022faf2ed1c5183ad883109e4c1d5aeb81f
   TRLMaps: 53a1ca3b90cf13d3e7f30efdcf8cf2a31923bdeb
-  TRLMessageExtension: 4c3ea53c222325ced0ab9353c42ee513da9a3b95
+  TRLMessageExtension: 8f0d253eb9a86f8e8ba713b5a9a3a1b845d7426e
   TRLNetworkingTools: 7c78f051ee701b30977a376f997cc82238142abf
-  TRLObjectMapperTransforms: 9c1dfb967bb4e07ed73959d3a4a142c26c834924
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 64175d5790ea29928ab2442d3f4a61bbee9b98b7
-  ZGMortgageCalculators: 1b798ec291993485f8deb7497cd38e4cca57f053
+  ZGMortgageCalculators: 6de8233d634a45f05677737933ab114a972ce912
 
 PODFILE CHECKSUM: 9e14b5c930d9ee4fc0752856d6841352c76796c9
 
