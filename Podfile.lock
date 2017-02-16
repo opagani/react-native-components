@@ -147,7 +147,7 @@ PODS:
     - TRLDisplayFormatters
     - TRLImageCache/Base
     - TUIKit
-  - TRLAdvancedNotifications (0.1.0):
+  - TRLAdvancedNotifications (1.0.0):
     - Alamofire
     - SwiftyJSON
     - TUIKit
@@ -161,7 +161,7 @@ PODS:
   - TRLMaps (1.0.0):
     - TRLImageCache/Base
     - TUIKit
-  - TRLMessageExtension (0.1.0):
+  - TRLMessageExtension (1.0.0):
     - Alamofire (= 4.0.1)
     - AlamofireImage (= 3.0.0)
     - CocoaLumberjack/Swift (= 3.0)
@@ -183,9 +183,9 @@ PODS:
 DEPENDENCIES:
   - CocoaLumberjack/Swift (from `https://github.com/arifken/CocoaLumberjack.git`, branch `master`)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
-  - TRLAdvancedNotifications (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git`, branch `master`)
+  - TRLAdvancedNotifications
   - TRLImageCache/Base
-  - TRLMessageExtension (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git`, branch `master`)
+  - TRLMessageExtension
 
 EXTERNAL SOURCES:
   CocoaLumberjack:
@@ -193,23 +193,11 @@ EXTERNAL SOURCES:
     :git: https://github.com/arifken/CocoaLumberjack.git
   IosCoreLibrary:
     :path: "../mob-ioscore-lib/"
-  TRLAdvancedNotifications:
-    :branch: master
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git
-  TRLMessageExtension:
-    :branch: master
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
 
 CHECKOUT OPTIONS:
   CocoaLumberjack:
     :commit: cb7b53215723c2f883f4278422429b0cdc5251cf
     :git: https://github.com/arifken/CocoaLumberjack.git
-  TRLAdvancedNotifications:
-    :commit: 114308f435046e43340ae4a157d965f161ce370e
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git
-  TRLMessageExtension:
-    :commit: 1d386b1e1566c32d99df0884714f5b601e94f260
-    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
@@ -240,17 +228,17 @@ SPEC CHECKSUMS:
   SSZipArchive: 63f8e11cfcc33e03e4cd666b4359ea8bd6facd0c
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   TRLActivityFeed: 8477ee221c8024b95a05d59417422d7c34c38fdc
-  TRLAdvancedNotifications: b58eb38102b2240671c3b547541f9807a34c1558
+  TRLAdvancedNotifications: ace078cc317a739565a92f665abd9523b0bba165
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLDisplayFormatters: eadb64e9ff38a7c17f174f21a815355b1af5d35d
   TRLImageCache: f0806cfbfa69f8482066cd75175e5c4fd200ff6e
   TRLLocalInfo: 171163a0edba7bbe81ef937c85510f50144d6674
   TRLMaps: 36e1a5c68c8a3c43a504ba325b777460d758972e
-  TRLMessageExtension: 8f0d253eb9a86f8e8ba713b5a9a3a1b845d7426e
+  TRLMessageExtension: b3221bb1336e6111e1f59e6d96c1fa4c97f9a2a9
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: a1cc911d1431ea7dbd01e8a3ac1e59b25d0f9b3a
   ZGMortgageCalculators: 71a3f3993660169b693c7f8904cdfa16f42ee31e
 
-PODFILE CHECKSUM: 4d925bec77cb3eaa4bc72d21acc39e5ad8a9b98b
+PODFILE CHECKSUM: 78a7a3a3d5c80d800277683f9872a6c820df91ac
 
 COCOAPODS: 1.2.0

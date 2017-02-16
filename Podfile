@@ -49,14 +49,16 @@ abstract_target 'TruliaBase' do
     end
 
     target 'MessagesExtension' do
-        pod 'TRLMessageExtension',:git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git', :branch => 'master'
+        pod 'TRLMessageExtension'
+        # pod 'TRLMessageExtension',:git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git', :branch => 'master'
         # pod 'TRLMessageExtension', :path => '../mob-ios-imessage/'
     end
 
     # Originaly this pod should be inside advanced notification extensions. But when we run
     # pod install and diferent extensions has same pod we have got error
     # [!] The 'Pods-TruliaBase-Trulia' target has frameworks with conflicting names: trladvancednotifications.
-    pod 'TRLAdvancedNotifications', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git', :branch => 'master' 
+    pod 'TRLAdvancedNotifications'
+    # pod 'TRLAdvancedNotifications', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git', :branch => 'master' 
     # pod 'TRLAdvancedNotifications', :path => '../mob-ios-advanced-notifications'
     target 'TRLNotificationListingContentExtension' do
       # do not delete
