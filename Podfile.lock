@@ -195,12 +195,12 @@ DEPENDENCIES:
   - CocoaLumberjack/Swift (from `https://github.com/arifken/CocoaLumberjack.git`, branch `master`)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
   - TRLActivityFeed (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git`, branch `master`)
-  - TRLAdvancedNotifications
+  - TRLAdvancedNotifications (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git`, branch `master`)
   - TRLDisplayFormatters (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-display-formatters.git`, branch `master`)
   - TRLImageCache/Base (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git`, branch `master`)
   - TRLLocalInfo (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-local-info.git`, branch `master`)
   - TRLMaps (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools`, branch `master`)
-  - TRLMessageExtension
+  - TRLMessageExtension (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git`, branch `master`)
   - TRLNetworkingTools (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-api-tools.git`, branch `master`)
   - TUIKit (from `ssh://git@stash.sv2.trulia.com/mob/mob-tuikit`, branch `master`)
   - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
@@ -214,6 +214,9 @@ EXTERNAL SOURCES:
   TRLActivityFeed:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
+  TRLAdvancedNotifications:
+    :branch: master
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git
   TRLDisplayFormatters:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-display-formatters.git
@@ -226,6 +229,9 @@ EXTERNAL SOURCES:
   TRLMaps:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools
+  TRLMessageExtension:
+    :branch: master
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
   TRLNetworkingTools:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-api-tools.git
@@ -243,6 +249,9 @@ CHECKOUT OPTIONS:
   TRLActivityFeed:
     :commit: 35c9a65ce111914cf14bf232fe9f89f6b96217da
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
+  TRLAdvancedNotifications:
+    :commit: 1ed085f039aabcd60920c3076ece0f4de013d089
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git
   TRLDisplayFormatters:
     :commit: e37c1ddb5c70e9dbff1016802e526630410a5598
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-display-formatters.git
@@ -255,6 +264,9 @@ CHECKOUT OPTIONS:
   TRLMaps:
     :commit: 8217d70f87fcb03f35c66af70911f640216d60b2
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools
+  TRLMessageExtension:
+    :commit: 01ba98b8093416d22cb2791dc8e25cc740d693fa
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
   TRLNetworkingTools:
     :commit: fd80a062e8453001522671044b53c2fe1a97c892
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-api-tools.git
@@ -295,18 +307,18 @@ SPEC CHECKSUMS:
   SSZipArchive: 63f8e11cfcc33e03e4cd666b4359ea8bd6facd0c
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   TRLActivityFeed: 919e0a23be7175df47b8c0be7533d8e6407b1b17
-  TRLAdvancedNotifications: ace078cc317a739565a92f665abd9523b0bba165
+  TRLAdvancedNotifications: facfee4d35f7f75c8eef0a5e720eab5e3efc0023
   TRLCurrentLocation: d51bbe17808dec0bb541ff7af82e799d2cefa614
   TRLDisplayFormatters: 58edc330d979299ba66d92b3557ad812ae2400ef
   TRLImageCache: c0a765ffb9a9905d23df238cf522af55d0411836
   TRLLocalInfo: ef6ec022faf2ed1c5183ad883109e4c1d5aeb81f
   TRLMaps: 53a1ca3b90cf13d3e7f30efdcf8cf2a31923bdeb
-  TRLMessageExtension: b3221bb1336e6111e1f59e6d96c1fa4c97f9a2a9
+  TRLMessageExtension: af5aa94b260b7a14150d0e077acd4b72e6bc2785
   TRLNetworkingTools: 7c78f051ee701b30977a376f997cc82238142abf
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 64175d5790ea29928ab2442d3f4a61bbee9b98b7
   ZGMortgageCalculators: 6de8233d634a45f05677737933ab114a972ce912
 
-PODFILE CHECKSUM: 9812955d0a14d4a2d73fffeecc62d25c68ee1340
+PODFILE CHECKSUM: 8a05a7b8aa05e29f96de6141d5422388bac7d7a6
 
 COCOAPODS: 1.2.0
