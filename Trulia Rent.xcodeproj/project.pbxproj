@@ -166,6 +166,8 @@
 		6B1C41781C97697000F0DB25 /* ICMetric~ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~ipad.plist"; sourceTree = "<group>"; };
 		6B1C41791C97697000F0DB25 /* ICMetric~iphone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICMetric~iphone.plist"; sourceTree = "<group>"; };
 		6B1C41811C987D7C00F0DB25 /* TruliaRent-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TruliaRent-Prefix.pch"; sourceTree = "<group>"; };
+		6B937FAB1E49A5D7001D3586 /* TRLNotificationGridContentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TRLNotificationGridContentExtension.entitlements; sourceTree = "<group>"; };
+		6B937FAC1E49A5E1001D3586 /* TRLNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TRLNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
 		7260E91DFCB1185388A3A36F /* Pods-TruliaBase-TRLNotificationListingContentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruliaBase-TRLNotificationListingContentExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruliaBase-TRLNotificationListingContentExtension/Pods-TruliaBase-TRLNotificationListingContentExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		7DE7C1B680C9EB6494FCCB62 /* Pods-TruliaBase-Trulia Rent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruliaBase-Trulia Rent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruliaBase-Trulia Rent/Pods-TruliaBase-Trulia Rent.debug.xcconfig"; sourceTree = "<group>"; };
 		7EECD44971FA07E8040C6577 /* Pods-TruliaBase-TRLNotificationServiceExtension.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruliaBase-TRLNotificationServiceExtension.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-TruliaBase-TRLNotificationServiceExtension/Pods-TruliaBase-TRLNotificationServiceExtension.appstore.xcconfig"; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 		20D3F75D1E41792100D0633E /* TRLNotificationServiceExtension */ = {
 			isa = PBXGroup;
 			children = (
+				6B937FAC1E49A5E1001D3586 /* TRLNotificationServiceExtension.entitlements */,
 				20D3F75E1E41792100D0633E /* NotificationService.swift */,
 				20D3F7601E41792100D0633E /* Info.plist */,
 			);
@@ -256,6 +259,7 @@
 		20D3F7871E4179C000D0633E /* TRLNotificationGridContentExtension */ = {
 			isa = PBXGroup;
 			children = (
+				6B937FAB1E49A5D7001D3586 /* TRLNotificationGridContentExtension.entitlements */,
 				20D3F79C1E417A7900D0633E /* DummyPlaceholderObject.h */,
 				20D3F79D1E417A7900D0633E /* DummyPlaceholderObject.m */,
 				20D3F78B1E4179C000D0633E /* MainInterface.storyboard */,
@@ -970,9 +974,9 @@
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = TRLNotificationServiceExtension/TRLNotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = TRLNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -982,7 +986,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1008,11 +1011,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = TRLNotificationServiceExtension/TRLNotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9QV5QN2J8K;
 				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1028,12 +1031,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental.TRLNotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trulia.IosRental.TRLNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Appstore;
@@ -1060,11 +1062,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = TRLNotificationServiceExtension/TRLNotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1085,7 +1087,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Stage;
@@ -1099,7 +1100,6 @@
 				CODE_SIGN_ENTITLEMENTS = TRLNotificationListingContentExtension/TRLNotificationListingContentExtension.entitlements;
 				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = TRLNotificationListingContentExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1137,7 +1137,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9QV5QN2J8K;
 				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1153,7 +1152,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental.TRLNotificationListingContentExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trulia.IosRental.TRLNotificationListingContentExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1188,7 +1187,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1218,9 +1216,9 @@
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = TRLNotificationGridContentExtension/TRLNotificationGridContentExtension.entitlements;
 				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = TRLNotificationGridContentExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1253,11 +1251,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = TRLNotificationGridContentExtension/TRLNotificationGridContentExtension.entitlements;
 				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9QV5QN2J8K;
 				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1273,7 +1271,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental.TRLNotificationGridContentExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trulia.IosRental.TRLNotificationGridContentExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1303,11 +1301,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = TRLNotificationGridContentExtension/TRLNotificationGridContentExtension.entitlements;
 				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1342,7 +1340,6 @@
 				CODE_SIGN_ENTITLEMENTS = MessagesExtension/MessagesExtension.entitlements;
 				CODE_SIGN_IDENTITY = "$(CUSTOM_SIGNING_IDENTITY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1353,7 +1350,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "MessagesExtension/MessagesExtension-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1385,7 +1381,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9QV5QN2J8K;
 				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1401,13 +1396,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.truliainc.IosRental.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trulia.IosRental.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SHARED_DEFAULTS_SUITE = group.com.trulia.IosRental.sharedDefaults;
+				SHARED_DEFAULTS_SUITE = group.trulia.IosRental.sharedDefaults;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "MessagesExtension/MessagesExtension-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Appstore;
@@ -1440,7 +1434,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1462,7 +1455,6 @@
 				SHARED_DEFAULTS_SUITE = group.com.truliainc.IosRental.sharedDefaults;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "MessagesExtension/MessagesExtension-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Stage;
@@ -1570,7 +1562,7 @@
 				NEW_SETTING = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
-				SHARED_DEFAULTS_SUITE = group.com.trulia.IosRental.sharedDefaults;
+				SHARED_DEFAULTS_SUITE = group.trulia.IosRental.sharedDefaults;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1581,7 +1573,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7DE7C1B680C9EB6494FCCB62 /* Pods-TruliaBase-Trulia Rent.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Trulia Rent/TruliaRent.entitlements";
@@ -1589,7 +1580,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				CUSTOM_SIGNING_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				ENABLE_BITCODE = YES;
 				FACEBOOK_APP_ID = 468741039850614;
 				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
@@ -1606,7 +1596,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 860BFC7070DB8DF9C9EDFF3B /* Pods-TruliaBase-Trulia Rent.appstore.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Trulia Rent/TruliaRent.entitlements";
@@ -1614,7 +1603,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				CUSTOM_SIGNING_IDENTITY = "iPhone Distribution: Trulia, Inc (9QV5QN2J8K)";
-				DEVELOPMENT_TEAM = 9QV5QN2J8K;
 				ENABLE_BITCODE = YES;
 				FACEBOOK_APP_ID = 410970538982032;
 				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";
@@ -1683,7 +1671,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8615227DD122E134C97F0A43 /* Pods-TruliaBase-Trulia Rent.stage.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Trulia Rent/TruliaRent.entitlements";
@@ -1691,7 +1678,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				CUSTOM_SIGNING_IDENTITY = "iPhone Distribution: Trulia Inc";
-				DEVELOPMENT_TEAM = 9FBSWYKDXR;
 				ENABLE_BITCODE = YES;
 				FACEBOOK_APP_ID = 468741039850614;
 				GCC_PREFIX_HEADER = "Trulia Rent/TruliaRent-Prefix.pch";

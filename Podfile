@@ -20,7 +20,10 @@ abstract_target 'TruliaBase' do
     # See https://github.com/CocoaLumberjack/CocoaLumberjack/issues/815
     pod 'CocoaLumberjack/Swift', :git => 'https://github.com/arifken/CocoaLumberjack.git', :branch => 'master'
 
+    # The extensions use TRLImageCache directly, so it needs to be included here, either by tagged version (second option), or
+    # by git url and branch (first option)
     pod 'TRLImageCache/Base', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git', :branch => 'master'
+    # pod 'TRLImageCache/Base' 
 
     target 'Trulia Rent' do
         # Uncomment the following lines if you are actively developing a pod and would like to point to your local copy
@@ -47,13 +50,15 @@ abstract_target 'TruliaBase' do
     end
 
     target 'MessagesExtension' do
+        # pod 'TRLMessageExtension'
         pod 'TRLMessageExtension',:git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git', :branch => 'master'
-        #pod 'TRLMessageExtension', :path => '../mob-ios-imessage/'
+        # pod 'TRLMessageExtension', :path => '../mob-ios-imessage/'
     end
 
     # Originaly this pod should be inside advanced notification extensions. But when we run
     # pod install and diferent extensions has same pod we have got error
     # [!] The 'Pods-TruliaBase-Trulia' target has frameworks with conflicting names: trladvancednotifications.
+    # pod 'TRLAdvancedNotifications'
     pod 'TRLAdvancedNotifications', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git', :branch => 'master' 
     # pod 'TRLAdvancedNotifications', :path => '../mob-ios-advanced-notifications'
     target 'TRLNotificationListingContentExtension' do
@@ -97,15 +102,12 @@ post_install do |installer|
     end
 
     target.build_configurations.each do |config|
-      config.build_settings['SWIFT_VERSION'] = '3.0'
       config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf-with-dsym'
-      config.build_settings['ENABLE_BITCODE'] = 'YES'
     end
   end
 
 
-  installer.pods_project.build_configurations.each do |config|
-    config.build_settings['ENABLE_BITCODE'] = 'NO'  
+  installer.pods_project.build_configurations.each do |config|  
     config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= []
     if config.name == 'Appstore'   
       config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'APPSTORE=1'
