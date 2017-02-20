@@ -91,6 +91,7 @@ PODS:
     - CocoaLumberjack/Swift (~> 3.0)
     - FormatterKit (= 1.8.1)
     - IosCoreLibrary/iOS (= 3.7.0)
+    - SAMKeychain
     - SFHFKeychainUtils (= 0.0.1)
     - SSZipArchive (= 1.7)
     - TRLDisplayFormatters
@@ -114,6 +115,7 @@ PODS:
     - JLRoutes (= 2.0.1)
     - Mantle (= 2.1.0)
     - OpenInGoogleMaps (= 0.1.0)
+    - SAMKeychain
     - SFHFKeychainUtils (= 0.0.1)
     - SSZipArchive (= 1.7)
     - TRLActivityFeed
@@ -143,6 +145,7 @@ PODS:
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
   - RSSwizzle (0.1.0)
+  - SAMKeychain (1.5.2)
   - SFHFKeychainUtils (0.0.1)
   - SSZipArchive (1.7)
   - SwiftyJSON (3.1.4)
@@ -294,7 +297,7 @@ SPEC CHECKSUMS:
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: 05f045d91770f3fef32bf150d049dca3b054d883
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: f3be5dbb21cd71282432686ed360920ce1e7f7ca
+  IosCoreLibrary: de5e3bc4877fda7fa9a1dbb31a8271f681598cb5
   iRate: adae3f183d83c925ac42d7a2e86e89e838963f57
   JLRoutes: 3652abe3b4ac51bc93ec3a371353d762e8566092
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
@@ -303,6 +306,7 @@ SPEC CHECKSUMS:
   OpenInGoogleMaps: 60dd887d2e2b2149166a03bd6dab1d4478a7d3e8
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
+  SAMKeychain: 1865333198217411f35327e8da61b43de79b635b
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 63f8e11cfcc33e03e4cd666b4359ea8bd6facd0c
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
