@@ -1,5 +1,5 @@
 {
-    "lastModified": "2016-02-09T17:25:31.880Z",
+    "lastModified": "2017-02-27T17:25:31.880Z",
     "marketingCloud": {
         "org": "94641C8B532957EC0A490D4D@AdobeOrg"
     },
@@ -18,15 +18,15 @@
     },
     "analytics": {
         "rsids": "truliaexternalapps",
-        "server": "metric.trulia.com",
-        "ssl": false,
+        "server": "smetric.trulia.com",
+        "ssl": true,
         "offlineEnabled": false,
         "charset": "UTF-8",
         "lifecycleTimeout": 300,
         "privacyDefault": "optedin",
         "batchLimit": 0,
         "timezone": "PDT",
-        "timezoneOffset": -420,
+        "timezoneOffset": -480,
         "referrerTimeout": 5,
         "backdateSessionInfo": false,
         "poi": []
