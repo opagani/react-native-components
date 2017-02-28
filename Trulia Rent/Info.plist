@@ -195,13 +195,6 @@
 				<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
 				<true/>
 			</dict>
-			<key>metric.trulia.com</key>
-			<dict>
-				<key>NSIncludesSubdomains</key>
-				<true/>
-				<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-			</dict>
 			<key>test-image-proxy.zillow.net</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
