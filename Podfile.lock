@@ -275,7 +275,7 @@ CHECKOUT OPTIONS:
     :commit: 72e58eafabb51540859230d3c208d6688d7fb8f5
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
   TRLNetworkingTools:
-    :commit: 372a31f85e1a37766cd9d25f73aa210d0fddf351
+    :commit: 70adaf4a643e3f860ff7eb29461079d0394fd3e5
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-api-tools.git
   TUIKit:
     :commit: 09e43276e237e91f85ec6260bdc0e3782889354a
