@@ -251,7 +251,7 @@ CHECKOUT OPTIONS:
     :commit: cb7b53215723c2f883f4278422429b0cdc5251cf
     :git: https://github.com/arifken/CocoaLumberjack.git
   TRLActivityFeed:
-    :commit: b4b3c497146a0c4d8754a30b13e6d63a320b78f7
+    :commit: bd6972a41a6b2bfec3116c5da06a992a830b9027
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   TRLAdvancedNotifications:
     :commit: cff22e22110b5d04a858e04e9256f1ebc43ac4c5
@@ -263,7 +263,7 @@ CHECKOUT OPTIONS:
     :commit: b7271fa8daf19926b8a2a816a1a1fe4f80db4165
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-display-formatters.git
   TRLImageCache:
-    :commit: 5ef321a7239c0b5b5c934334d9e3cb08cca9c98b
+    :commit: a84aede5ff9545ec7121feb855c6dc63c63964c6
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-image-cache.git
   TRLLocalInfo:
     :commit: b8acfb221862b804d7c20f4804f01969da9ca574
