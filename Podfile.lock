@@ -272,7 +272,7 @@ CHECKOUT OPTIONS:
     :commit: 5775ad500346e45e09a08f6918aea5e567db5462
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools
   TRLMessageExtension:
-    :commit: 72e58eafabb51540859230d3c208d6688d7fb8f5
+    :commit: 88c9b8e0215162f97cf66dcc7655d618bc9ad8bc
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
   TRLNetworkingTools:
     :commit: 70adaf4a643e3f860ff7eb29461079d0394fd3e5
