@@ -235,6 +235,8 @@
 	<string>Trulia needs your location to allow you to search homes and get updates on homes you'll love.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>App needs permission to save pictures to your device's photo library</string>
+	<key>NSCameraUsageDescription</key>
+	<string>App needs permission to take pictures from your camera</string>
 	<key>TRLSharedDefaultsSuiteName</key>
 	<string>$(SHARED_DEFAULTS_SUITE)</string>
 	<key>UIApplicationShortcutItems</key>
