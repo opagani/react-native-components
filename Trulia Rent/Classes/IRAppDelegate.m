@@ -14,7 +14,6 @@
 #import "ICAppearance.h"
 #import "ICLog.h"
 #import "ICMarketingAnalyticsController.h"
-#import "ICManagedSearch.h"
 #import "ICDiscoveryParameterSet.h"
 #import "IRAdUnitConfiguration.h"
 #import "IRProductInfo.h"

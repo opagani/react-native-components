@@ -96,6 +96,7 @@ PODS:
     - SSZipArchive (= 1.7)
     - TRLDisplayFormatters
     - TRLImageCache/Base
+    - TRLSearchAPI
     - TUIKit
   - IosCoreLibrary/iOS (3.8.0):
     - Adjust (= 4.11.0)
@@ -125,6 +126,7 @@ PODS:
     - TRLLocalInfo
     - TRLMaps
     - TRLNetworkingTools
+    - TRLSearchAPI
     - TTTAttributedLabel (= 2.0.0)
     - TUIKit
     - ZGMortgageCalculators
@@ -181,6 +183,13 @@ PODS:
   - TRLNetworkingTools (0.1.0):
     - Alamofire (= 4.4.0)
     - AlamofireObjectMapper (= 4.0.2)
+  - TRLSearchAPI (0.1.0):
+    - Alamofire (~> 4.0)
+    - AlamofireImage (~> 3.0)
+    - CocoaLumberjack/Swift (~> 3.0)
+    - ObjectMapper (~> 2.0)
+    - ObjectMapperTransforms (~> 2.0)
+    - TRLNetworkingTools
   - TTTAttributedLabel (2.0.0)
   - TUIKit (1.1.0):
     - TUIKit/Core (= 1.1.0)
@@ -205,6 +214,7 @@ DEPENDENCIES:
   - TRLMaps (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools`, branch `master`)
   - TRLMessageExtension (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git`, branch `master`)
   - TRLNetworkingTools (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-api-tools.git`, branch `master`)
+  - TRLSearchAPI (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-search-api.git`, branch `master`)
   - TUIKit (from `ssh://git@stash.sv2.trulia.com/mob/mob-tuikit`, branch `master`)
   - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
@@ -241,6 +251,9 @@ EXTERNAL SOURCES:
   TRLNetworkingTools:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-api-tools.git
+  TRLSearchAPI:
+    :branch: master
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-search-api.git
   TUIKit:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-tuikit
@@ -279,6 +292,9 @@ CHECKOUT OPTIONS:
   TRLNetworkingTools:
     :commit: 70adaf4a643e3f860ff7eb29461079d0394fd3e5
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-api-tools.git
+  TRLSearchAPI:
+    :commit: 2494da738dede3a0bfa8bfda7d551f3409fb875e
+    :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-search-api.git
   TUIKit:
     :commit: 09e43276e237e91f85ec6260bdc0e3782889354a
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-tuikit
@@ -304,7 +320,7 @@ SPEC CHECKSUMS:
   FormatterKit: 11ad17b983200629246a5a466f6f1bfa2df823cb
   HockeySDK-Source: 5bdf74ccf516d9751f04b755464bfd83f0d3be32
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: d42ef876f06f9d9eca8ae6ee7add6ab8721cd1c0
+  IosCoreLibrary: ef3e062a866be30bb975a14e59c82986a56a6e36
   iRate: adae3f183d83c925ac42d7a2e86e89e838963f57
   JLRoutes: 3652abe3b4ac51bc93ec3a371353d762e8566092
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
@@ -325,10 +341,11 @@ SPEC CHECKSUMS:
   TRLMaps: b32714a524cff44f8501046f042c20594f3e5c4b
   TRLMessageExtension: 43fcd7023f969b2d2bb54fd82e2ddfb8f430c830
   TRLNetworkingTools: 33d44ddc643906a91d24eb5886e4c4c54a4c2bc9
+  TRLSearchAPI: 7b5b16c69f713e201e5ffe689b5107a4dc8618f6
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: fbde2c9cdbd4ef5b7f0b13c3901d56b203a45441
   ZGMortgageCalculators: ce4ee7ca225ac34543dde72d646f3f35f6ff1c13
 
-PODFILE CHECKSUM: 2bb5a7414868c416565ddaabc7b82ec4c16672b3
+PODFILE CHECKSUM: 9da6a622c89902983278423bce416fe145ecb62a
 
 COCOAPODS: 1.2.0
