@@ -16,6 +16,9 @@ abstract_target 'TruliaBase' do
     # If you are NOT actively developing a pod, these lines should be enabled instead
     pod 'TUIKit', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-tuikit', :branch => 'master'
 
+    # pod 'TRLSearchAPI', :path => '../mob-ios-search-api'    
+    pod 'TRLSearchAPI', :git => 'ssh://git@stash.sv2.trulia.com/mob/mob-ios-search-api.git', :branch => 'master
+
     # We need to use this forked version of CocoaLumberjack, because WatchKit 1.0 has a problem with CocoaLumberjack not specifying its modulemap
     # See https://github.com/CocoaLumberjack/CocoaLumberjack/issues/815
     pod 'CocoaLumberjack/Swift', :git => 'https://github.com/arifken/CocoaLumberjack.git', :branch => 'master'
