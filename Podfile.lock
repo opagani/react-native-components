@@ -44,11 +44,9 @@ PODS:
   - Charts (3.0.1):
     - Charts/Core (= 3.0.1)
   - Charts/Core (3.0.1)
-  - CocoaLumberjack/Default (3.0.0)
-  - CocoaLumberjack/Extensions (3.0.0):
+  - CocoaLumberjack/Default (3.1.0)
+  - CocoaLumberjack/Swift (3.1.0):
     - CocoaLumberjack/Default
-  - CocoaLumberjack/Swift (3.0.0):
-    - CocoaLumberjack/Extensions
   - FBSDKCoreKit (4.20.2):
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.20.2):
@@ -59,7 +57,7 @@ PODS:
     - AFNetworking (= 3.1.0)
     - Alamofire (= 4.4.0)
     - AlamofireObjectMapper (= 4.1.0)
-    - CocoaLumberjack/Swift (= 3.0.0)
+    - CocoaLumberjack/Swift (= 3.1.0)
     - IosCoreLibrary/iOS (= 3.8.0)
     - SFHFKeychainUtils (= 0.0.1)
     - SSZipArchive (= 1.7)
@@ -76,7 +74,7 @@ PODS:
     - Apptimize (= 2.18.1)
     - ARAnalytics/Adobe (= 4.0.1)
     - ARAnalytics/DSL (= 4.0.1)
-    - CocoaLumberjack/Swift (= 3.0.0)
+    - CocoaLumberjack/Swift (= 3.1.0)
     - FBSDKCoreKit (= 4.20.2)
     - FBSDKLoginKit (= 4.20.2)
     - HockeySDK-Source (= 4.1.4)
@@ -121,7 +119,7 @@ PODS:
   - TRLActivityFeed (1.6.0):
     - Alamofire (= 4.4.0)
     - AlamofireImage (= 3.2.0)
-    - CocoaLumberjack/Swift (= 3.0.0)
+    - CocoaLumberjack/Swift (= 3.1.0)
     - ObjectMapper (= 2.2.5)
     - ObjectMapperTransforms (= 2.0.2)
     - TRLDisplayFormatters
@@ -144,7 +142,7 @@ PODS:
   - TRLMessageExtension (1.1.0):
     - Alamofire (= 4.4.0)
     - AlamofireImage (= 3.2.0)
-    - CocoaLumberjack/Swift (= 3.0.0)
+    - CocoaLumberjack/Swift (= 3.1.0)
     - ObjectMapper (= 2.2.5)
     - ObjectMapperTransforms (= 2.0.2)
     - TUIKit
@@ -152,11 +150,11 @@ PODS:
     - Alamofire (= 4.4.0)
     - AlamofireObjectMapper (= 4.1.0)
   - TRLSearchAPI (0.1.0):
-    - Alamofire (~> 4.0)
-    - AlamofireImage (~> 3.0)
-    - CocoaLumberjack/Swift (~> 3.0)
-    - ObjectMapper (~> 2.0)
-    - ObjectMapperTransforms (~> 2.0)
+    - Alamofire (= 4.4.0)
+    - AlamofireImage (= 3.2.0)
+    - CocoaLumberjack/Swift (= 3.1.0)
+    - ObjectMapper (= 2.2.5)
+    - ObjectMapperTransforms (= 2.0.2)
     - TRLNetworkingTools
   - TTTAttributedLabel (2.0.0)
   - TUIKit (1.2.0):
@@ -171,7 +169,6 @@ PODS:
     - TUIKit
 
 DEPENDENCIES:
-  - CocoaLumberjack/Swift (from `https://github.com/arifken/CocoaLumberjack.git`, branch `master`)
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
   - TRLActivityFeed (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git`, branch `master`)
   - TRLAdvancedNotifications (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git`, branch `master`)
@@ -187,9 +184,6 @@ DEPENDENCIES:
   - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
 EXTERNAL SOURCES:
-  CocoaLumberjack:
-    :branch: master
-    :git: https://github.com/arifken/CocoaLumberjack.git
   IosCoreLibrary:
     :path: "../mob-ioscore-lib/"
   TRLActivityFeed:
@@ -230,11 +224,8 @@ EXTERNAL SOURCES:
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
 
 CHECKOUT OPTIONS:
-  CocoaLumberjack:
-    :commit: cb7b53215723c2f883f4278422429b0cdc5251cf
-    :git: https://github.com/arifken/CocoaLumberjack.git
   TRLActivityFeed:
-    :commit: bc9e7dba3d9cb77634d837bc4cd83b4944d7cc9d
+    :commit: 8e8950b16bf6babf3d78c274e928e0590fd51140
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   TRLAdvancedNotifications:
     :commit: 3b9e24245aebfead2ec7ea8e39773b857f543daa
@@ -255,13 +246,13 @@ CHECKOUT OPTIONS:
     :commit: 639d78e312a6e7a830686993d3da886515521dc3
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-map-tools
   TRLMessageExtension:
-    :commit: b2f85b6eb274652cd3d83f425219e0bcfe19f46e
+    :commit: 0357db2d95228297096872e6cd081d8b5ec5e787
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-imessage.git
   TRLNetworkingTools:
     :commit: 7b2c147d4d099f5c251802add5a82a84e5c14d7d
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-api-tools.git
   TRLSearchAPI:
-    :commit: 2494da738dede3a0bfa8bfda7d551f3409fb875e
+    :commit: 0288e749a0a7d3dc1cd0701acc17eb7df748ba5d
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-search-api.git
   TUIKit:
     :commit: fd0c7ae20eb294e9c52a740cd5adf6d790268ed9
@@ -282,12 +273,12 @@ SPEC CHECKSUMS:
   ARAnalytics: 85e7bb999e2a40cea7d2394e71e8ecbafa50f2d0
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   Charts: 0e84f4418e87dad6a9edde221fba37ebb51d3ba7
-  CocoaLumberjack: bffe362db4f1efb635d62dc1db8adca86aa18523
+  CocoaLumberjack: 8311463ddf9ee86a06ef92a071dd656c89244500
   FBSDKCoreKit: 82eac696eb6157da5f4266c3a241f00e9bd72471
   FBSDKLoginKit: 2211bede07c83391349eacc1fd86cf6d9289ce38
   HockeySDK-Source: 5bdf74ccf516d9751f04b755464bfd83f0d3be32
   HTAutocompleteTextField: ce809f04875e843e20f214ab973bb496ba7a93b1
-  IosCoreLibrary: a290c029ec0fc9ef548c62d0641ed0d13173f24c
+  IosCoreLibrary: 9424b430ccb9ed8f4b0532241a4008748819e0ab
   iRate: adae3f183d83c925ac42d7a2e86e89e838963f57
   JLRoutes: eb078e0c1dbc7dfe321a014b4a2b9ef739d5fa8e
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
@@ -299,20 +290,20 @@ SPEC CHECKSUMS:
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 63f8e11cfcc33e03e4cd666b4359ea8bd6facd0c
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
-  TRLActivityFeed: 80aaadc1bb5ea552d186dafa148115537b3cf572
+  TRLActivityFeed: ff7b74460016691502629f1ea4d9997eabd6c714
   TRLAdvancedNotifications: 9c1fbe29b51361d8a42e854f029a6be396e924bb
   TRLCurrentLocation: e81e79afde024f5b1cedb3bf08f619f5b475a387
   TRLDisplayFormatters: cd70f6984e295e1e273d18060fdb06f952d9be39
   TRLImageCache: 1af553d53be4dc83764605d865d17a57d4ec59f0
   TRLLocalInfo: 4767314663994bb7eeab60a5c454968b1e92f956
   TRLMaps: f6fe65c27ec8623882a45465a1720dfa83a2b23d
-  TRLMessageExtension: 71780da892147fbf63084868b67a9cafe6a3357e
+  TRLMessageExtension: 9bca883acecd1ac25464e84b451ced6bd0e46613
   TRLNetworkingTools: 3a5862d035704834e069d8a5768315a97b79dac5
-  TRLSearchAPI: 7b5b16c69f713e201e5ffe689b5107a4dc8618f6
+  TRLSearchAPI: 331275e3a3d6c1a1403218b70cbb823073a66d5a
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 10e3cee104cbd0eef950a7b302570f8cc6918811
   ZGMortgageCalculators: 68a7cd98062e9ff05dbe5aeea12d84a7cdbda7a8
 
-PODFILE CHECKSUM: 9da6a622c89902983278423bce416fe145ecb62a
+PODFILE CHECKSUM: 4dd8eb9e84c7fc9eda88c6deb32bd3d4b2f54003
 
 COCOAPODS: 1.2.0
