@@ -70,6 +70,19 @@ abstract_target 'TruliaBase' do
      # do not delete
     end
 
+    target 'RoomForRent' do
+      pod 'React', :path =>
+      './RoomForRent/js/node_modules/react-native', :subspecs => [
+        'Core',
+        'RCTText',
+        'RCTNetwork',
+        'RCTWebSocket', # needed for debugging
+        # Add any other subspecs you want to use in your project
+      ]
+
+      pod "Yoga", :path => './RoomForRent/js/node_modules/react-native/ReactCommon/yoga'
+    end
+
 end
 
 #TODO: We can remove this after https://github.com/CocoaPods/Xcodeproj/pull/351 is merged and that version of
@@ -101,6 +114,7 @@ post_install do |installer|
     end
 
     target.build_configurations.each do |config|
+      config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'NO'
       config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf-with-dsym'
     end
   end

@@ -105,6 +105,18 @@ PODS:
   - ObjectMapperTransforms (2.0.2):
     - ObjectMapper
   - OpenInGoogleMaps (0.1.0)
+  - React/Core (0.42.0):
+    - React/cxxreact
+    - Yoga (= 0.42.0.React)
+  - React/cxxreact (0.42.0):
+    - React/jschelpers
+  - React/jschelpers (0.42.0)
+  - React/RCTNetwork (0.42.0):
+    - React/Core
+  - React/RCTText (0.42.0):
+    - React/Core
+  - React/RCTWebSocket (0.42.0):
+    - React/Core
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -127,7 +139,7 @@ PODS:
     - TUIKit
   - TRLAdvancedNotifications (1.1.0):
     - Alamofire (= 4.4.0)
-    - SwiftyJSON (= 3.1.4)
+    - TRLSearchAPI
     - TUIKit
   - TRLCurrentLocation (1.1.0)
   - TRLDisplayFormatters (1.1.0)
@@ -160,6 +172,7 @@ PODS:
   - TUIKit (1.2.0):
     - TUIKit/Core (= 1.2.0)
   - TUIKit/Core (1.2.0)
+  - Yoga (0.42.0.React)
   - ZGMortgageCalculators (2.4.0):
     - ActionSheetPicker-3.0 (= 2.2.0)
     - Alamofire (= 4.4.0)
@@ -170,6 +183,10 @@ PODS:
 
 DEPENDENCIES:
   - IosCoreLibrary (from `../mob-ioscore-lib/`)
+  - React/Core (from `./RoomForRent/js/node_modules/react-native`)
+  - React/RCTNetwork (from `./RoomForRent/js/node_modules/react-native`)
+  - React/RCTText (from `./RoomForRent/js/node_modules/react-native`)
+  - React/RCTWebSocket (from `./RoomForRent/js/node_modules/react-native`)
   - TRLActivityFeed (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git`, branch `master`)
   - TRLAdvancedNotifications (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git`, branch `master`)
   - TRLCurrentLocation (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-corelocation.git`, branch `master`)
@@ -181,11 +198,14 @@ DEPENDENCIES:
   - TRLNetworkingTools (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-api-tools.git`, branch `master`)
   - TRLSearchAPI (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-search-api.git`, branch `master`)
   - TUIKit (from `ssh://git@stash.sv2.trulia.com/mob/mob-tuikit`, branch `master`)
+  - Yoga (from `./RoomForRent/js/node_modules/react-native/ReactCommon/yoga`)
   - ZGMortgageCalculators (from `ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git`, branch `master`)
 
 EXTERNAL SOURCES:
   IosCoreLibrary:
     :path: "../mob-ioscore-lib/"
+  React:
+    :path: "./RoomForRent/js/node_modules/react-native"
   TRLActivityFeed:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
@@ -219,6 +239,8 @@ EXTERNAL SOURCES:
   TUIKit:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-tuikit
+  Yoga:
+    :path: "./RoomForRent/js/node_modules/react-native/ReactCommon/yoga"
   ZGMortgageCalculators:
     :branch: master
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-mortgage-calculators.git
@@ -228,7 +250,7 @@ CHECKOUT OPTIONS:
     :commit: 8e8950b16bf6babf3d78c274e928e0590fd51140
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-activity-feed.git
   TRLAdvancedNotifications:
-    :commit: 3b9e24245aebfead2ec7ea8e39773b857f543daa
+    :commit: b2d9e1f305bd009ab37ceb03f7d8017be6742c18
     :git: ssh://git@stash.sv2.trulia.com/mob/mob-ios-advanced-notifications.git
   TRLCurrentLocation:
     :commit: 9a5c50cba794c5182edeb15e99c5f6c05a25dd4a
@@ -285,13 +307,14 @@ SPEC CHECKSUMS:
   ObjectMapper: fb30f71e08470d1e5a20b199fafe1246281db898
   ObjectMapperTransforms: 0c0eabcc186e4dc7de8b69909d2d4d470a7273af
   OpenInGoogleMaps: 60dd887d2e2b2149166a03bd6dab1d4478a7d3e8
+  React: 8ec97f0d79ba31892c526cf56425937926cc9b48
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
   SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
   SSZipArchive: 63f8e11cfcc33e03e4cd666b4359ea8bd6facd0c
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   TRLActivityFeed: ff7b74460016691502629f1ea4d9997eabd6c714
-  TRLAdvancedNotifications: 9c1fbe29b51361d8a42e854f029a6be396e924bb
+  TRLAdvancedNotifications: 55c522e052f83dccaac8f87da452239da85c1477
   TRLCurrentLocation: e81e79afde024f5b1cedb3bf08f619f5b475a387
   TRLDisplayFormatters: cd70f6984e295e1e273d18060fdb06f952d9be39
   TRLImageCache: 1af553d53be4dc83764605d865d17a57d4ec59f0
@@ -302,8 +325,9 @@ SPEC CHECKSUMS:
   TRLSearchAPI: 331275e3a3d6c1a1403218b70cbb823073a66d5a
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TUIKit: 10e3cee104cbd0eef950a7b302570f8cc6918811
+  Yoga: 4183cc70cae189d73f996b1e40c3078aca9f96ef
   ZGMortgageCalculators: 68a7cd98062e9ff05dbe5aeea12d84a7cdbda7a8
 
-PODFILE CHECKSUM: 4dd8eb9e84c7fc9eda88c6deb32bd3d4b2f54003
+PODFILE CHECKSUM: a9b092634f6c3d7711d24b3a1044815b09805872
 
 COCOAPODS: 1.2.0
